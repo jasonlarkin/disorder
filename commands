@@ -1,0 +1,3 @@
+git reflog expire --expire=now --all
+
+du -hc --exclude=work > diskuse.txt
