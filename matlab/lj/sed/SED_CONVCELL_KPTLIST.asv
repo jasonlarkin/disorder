@@ -1,0 +1,4 @@
+
+NUM_CELL_COPIES = 8;
+
+for i1=-(NUM_CELL_COPIES/2-1:1:

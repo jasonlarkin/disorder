@@ -1,0 +1,113 @@
+%--------------------------------------------------------------------------
+%INPUT
+%LJ Potential and Material Parameters
+LJ.eps = 1.67E-21;              %aJ (1.67E-21 Joules) aJ=1E-18 J
+LJ.sigma = 3.4E-10;                 %Angstroms 3.4E-10 meters
+LJ.mass = 6.6326E-26;               %1E-28 kg (6.6326E-26 kg)
+LJ.tau = sqrt((LJ.mass*(LJ.sigma^2))/LJ.eps);
+constant.kb = 1.3806E-23;                    %aJ/k (1.3806E-23 J/K)
+constant.hbar = 1.054E-34;                %J/s
+constant.i = sqrt(-1);
+constant.c = 29979245800.00019;      %cm/s
+constant.s2ps = 1E-12;
+constant.ang2m = 1E-10;
+constant.eV2J = 1.60217646E-19;
+
+%--------------------------------------------------------------------------
+    [tmp,LD.str.main]=system('pwd');
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+LD.alloy_conc = 0.0;
+%--------------------------------------------------------------------------
+    LD.m(1) = 0.5;
+%--------------------------------------------------------------------------
+    LD.m(2) = 1.5;
+%--------------------------------------------------------------------------
+    LD.NUM_ATOMS_TYPE = 2;
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+%number of unit cell copies in the directions    
+    LD.Nx = 39; LD.Ny = 3; LD.Nz = 3;
+%--------------------------------------------------------------------------
+SD = 1:5;
+%--------------------------------------------------------------------------
+
+% alat = 5.269/3.4        %0K 
+alat = 5.290/3.4;       %10K
+% alat = 5.315/3.4;       %20K
+% alat = 5.341/3.4;       %30K
+% alat = 5.370/3.4;       %40K
+% alat = 5.401/3.4;       %50K
+% alat = 5.436/3.4;       %60K
+% alat = 5.476/3.4;       %70K
+% alat = 5.527/3.4;       %80K
+%--------------------------------------------------------------------------
+
+
+%Unit cell and lattice vectors
+dummy = [   1.0 0.0  0.0 
+            0.0  1.0 0.0 
+            0.0  0.0  1.0
+            0.0  0.0  0.0
+            0.5  0.5  0.0
+            0.5  0.0  0.5
+            0.0  0.5  0.5];
+    
+    %Define box size and conventional cell lattice parameters
+    LD.latvec(1,1) = dummy(1,1); LD.latvec(1,2) = dummy(1,2); LD.latvec(1,3) = dummy(1,3);
+    LD.latvec(2,1) = dummy(2,1); LD.latvec(2,2) = dummy(2,2); LD.latvec(2,3) = dummy(2,3);    
+    LD.latvec(3,1) = dummy(3,1); LD.latvec(3,2) = dummy(3,2); LD.latvec(3,3) = dummy(3,3);
+    
+    LD.latvec = alat*LD.latvec;
+    
+    %first 3 rows are the lattice vectors
+    LD.x.direct = dummy(4:length(dummy),:);
+    
+    LD.x.cart(:,1) = LD.x.direct(:,1)*LD.latvec(1,1) + LD.x.direct(:,2)*LD.latvec(2,1) + LD.x.direct(:,3)*LD.latvec(3,1) ;
+	LD.x.cart(:,2) = LD.x.direct(:,1)*LD.latvec(1,2) + LD.x.direct(:,2)*LD.latvec(2,2) + LD.x.direct(:,3)*LD.latvec(3,2) ;
+	LD.x.cart(:,3) = LD.x.direct(:,1)*LD.latvec(1,3) + LD.x.direct(:,2)*LD.latvec(2,3) + LD.x.direct(:,3)*LD.latvec(3,3) ;
+
+%--------------------------------------------------------------------------
+
+%build supercell
+
+N_cnt = 1;
+for iNx = 0:LD.Nx
+    for iNy = 0:LD.Ny
+        for iNz = 0:LD.Nz
+            LD.SC.x( (N_cnt-1)*size(LD.x.direct,1)+1:(N_cnt)*size(LD.x.direct,1) ,3) = LD.x.cart(:,1) + iNx * LD.latvec(1,1) + iNy*LD.latvec(2,1) + iNz*LD.latvec(3,1); 
+            LD.SC.x( (N_cnt-1)*size(LD.x.direct,1)+1:(N_cnt)*size(LD.x.direct,1) ,4) = LD.x.cart(:,2) + iNx * LD.latvec(1,2) + iNy*LD.latvec(2,2) + iNz*LD.latvec(3,2);
+            LD.SC.x( (N_cnt-1)*size(LD.x.direct,1)+1:(N_cnt)*size(LD.x.direct,1) ,5) = LD.x.cart(:,3) + iNx * LD.latvec(1,3) + iNy*LD.latvec(2,3) + iNz*LD.latvec(3,3);
+            N_cnt =N_cnt+1;
+        end
+    end
+end
+
+LD.NUM_ATOMS = size(LD.SC.x,1);
+
+%create seed randomized structures
+
+system('cp ./submit_temp.sh ./lmp_submit.sh');
+
+for iseed=1:size(SD,2)
+    
+    str.cmd = ['mkdir -p ./' int2str(iseed)];
+    system(str.cmd);
+            
+    %randomize masses
+    LD.SC.x(:,1) = 1:size(LD.SC.x,1);
+    LD.SC.x(:,2) = 1;
+    rng(SD(iseed));
+    [I,J] = find(randperm(size(LD.SC.x(:,1),1))'<ceil(LD.alloy_conc*size(LD.SC.x,1)));
+    LD.SC.x(I,2) = 2;
+
+%output universal
+    str.write=strcat(LD.str.main,'/x0_',num2str(LD.alloy_conc),'_',int2str(iseed),'.data');
+    output = [size(LD.SC.x,1) size(LD.x.cart,1) LD.latvec(1,1)*(LD.Nx+1) LD.latvec(2,2)*(LD.Ny+1) LD.latvec(3,3)*(LD.Nz+1) ];
+    dlmwrite(str.write,output,'-append','delimiter',' ');
+    dlmwrite(str.write,LD.SC.x,'-append','delimiter',' ');
+    
+end
+

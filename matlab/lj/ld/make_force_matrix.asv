@@ -1,0 +1,11 @@
+function [Phi] = make_force_matrix(phi1,phi2,r2,rij,ralpha,rbeta)
+
+         phi1 = first_deriv(r2);
+         phi2 = second_deriv(r2);
+         
+         for i=1:3
+             for j=1:3
+                 if i=j
+                    Phi(i,j) =  (ra
+
+end

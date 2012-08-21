@@ -1,0 +1,169 @@
+function [D] = dynam_matrix_2(a2,x,x_ucell,m,kappa)
+%FUNCTION: find dynamical matrix
+%update: trying to get rid of C-style programing to speed up matlab
+    %clear old force constants
+    A=size(x);
+    N=A(1,1);
+    i=sqrt(-1);
+    Phi(1:3,1:3)=0;
+    D( 1:3*N, 1:3*N ) = 0;
+    cnt=0;
+    for i1=1:N
+        for i2=1:N
+            
+            rij(:,1) = x_ucell(i2:N:length(x_ucell),1) - x(i1,1);
+            rij(:,2) = x_ucell(i2:N:length(x_ucell),2) - x(i1,2);
+            rij(:,3) = x_ucell(i2:N:length(x_ucell),3) - x(i1,3);
+            r2 = rij(:,1).^2 + rij(:,2).^2 + rij(:,3).^2;
+            ralpha(:,1:3) =  rij(:,1:3);
+            rbeta(:,1:3) =  rij(:,1:3);  
+            
+            %k,k',m
+            [I] = find(r2(:)<a2, x(i1,1)~=x_ucell(i2:N:length(x_ucell),1) & x(i1,2)~=x_ucell(i2:N:length(x_ucell),2) & x(i1,3)~=x_ucell(i2:N:length(x_ucell),3));
+            Isize = size(I);
+                for i3=1:Isize(1,1)
+                    Phi(1:3,1:3)=0;
+                    Phi = -1*(make_force_matrix(r2(i3),ralpha(i3,1:3),rbeta(i3,1:3)));
+                    D( 1+(i1-1)*3:3*i1, 1+(i2-1)*3:3*i2 ) = D( 1+(i1-1)*3:3*i1, 1+(i2-1)*3:3*i2 ) + Phi*exp(sqrt(-1)*dot(kappa,rij(i3,1:3)));
+                    Phi(1:3,1:3)=0;
+                end
+                
+                            D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) = ( (1/sqrt((m(i1)*m(j)))) )*D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j );
+                
+            %The self term
+            [I] = find(r2(:)<a2,x(i1,1)~=x_ucell(:,1) & x(i1,2)~=x_ucell(:,2) & x(i1,3)~=x_ucell(:,3));
+            Isize = size(I);
+                for i3=1:Isize(1,1)
+                    Phi(1:3,1:3)=0;
+                    Phi = -1*(make_force_matrix(r2(i3),ralpha(i3,1:3),rbeta(i3,1:3)));
+                    D( 1+(i1-1)*3:3*i1, 1+(i2-1)*3:3*i2 ) = D( 1+(i1-1)*3:3*i1, 1+(i2-1)*3:3*i2 ) + Phi*exp(sqrt(-1)*dot(kappa,rij(i3,1:3)));
+                    Phi(1:3,1:3)=0;
+                end
+             
+            
+            
+                                %skip over the same atom in unit cell and images  
+                                Phi(1:3,1:3)=0;
+                                    for i2 = 1:length(x_ucell)
+                                        rij(1,1:3) = x_ucell(i2,1:3) - x(i1,1:3);
+                                        r2 = rij(1,1)^2 + rij(1,2)^2 + rij(1,3)^2;
+                                        ralpha(1,1:3) =  rij(1,1:3);
+                                        rbeta(1,1:3) =  rij(1,1:3);  
+                                            if x(i1,1)==x_ucell(i2,1) & x(i1,2)==x_ucell(i2,2) & x(i1,3)==x_ucell(i2,3) 
+                                                % don't use self-term
+                                            elseif r2<a2
+                                                Phi = Phi + make_force_matrix(r2,ralpha,rbeta);
+                                            end
+                                    end
+                                    rij(1,1:3) = x_ucell(k,1:3) - x(i1,1:3);
+                                    D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) = D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) + Phi;
+                                    Phi(1:3,1:3)=0;
+            
+                          
+        end
+    end
+    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+            for k=j:N:length(x_ucell)    
+                Phi(1:3,1:3)=0;
+                rij(1,1:3) = x_ucell(k,1:3) - x(i1,1:3);
+                %pause
+                r2 = rij(1,1)^2 + rij(1,2)^2 + rij(1,3)^2;
+                ralpha(1,1:3) =  rij(1,1:3);
+                rbeta(1,1:3) =  rij(1,1:3);  
+                
+                    if r2<a2
+                        if x(i1,1)==x_ucell(k,1) & x(i1,2)==x_ucell(k,2) & x(i1,3)==x_ucell(k,3)
+                                %skip over the same atom in unit cell and images  
+                                Phi(1:3,1:3)=0;
+                                    for i2 = 1:length(x_ucell)
+                                        rij(1,1:3) = x_ucell(i2,1:3) - x(i1,1:3);
+                                        r2 = rij(1,1)^2 + rij(1,2)^2 + rij(1,3)^2;
+                                        ralpha(1,1:3) =  rij(1,1:3);
+                                        rbeta(1,1:3) =  rij(1,1:3);  
+                                            if x(i1,1)==x_ucell(i2,1) & x(i1,2)==x_ucell(i2,2) & x(i1,3)==x_ucell(i2,3) 
+                                                % don't use self-term
+                                            elseif r2<a2
+                                                Phi = Phi + make_force_matrix(r2,ralpha,rbeta);
+                                            end
+                                    end
+                                    rij(1,1:3) = x_ucell(k,1:3) - x(i1,1:3);
+                                    D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) = D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) + Phi;
+                                    Phi(1:3,1:3)=0;
+                        else
+                                    Phi(1:3,1:3)=0;
+                                    Phi = -1*(make_force_matrix(r2,ralpha,rbeta));
+                                    D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) = D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) + Phi*exp(sqrt(-1)*dot(kappa,rij));
+                                    Phi(1:3,1:3)=0;
+                        end
+                    else
+                        %do nothing
+                    end
+            end
+            D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j ) = ( (1/sqrt((m(i1)*m(j)))) )*D( 1+(i1-1)*3:3*i1, 1+(j-1)*3:3*j );
+        end
+    end
+    
+     D2=D;
+
+%     for i=1:N
+%         for j=i:N
+%             for k=j:N:length(x_ucell)    
+%                 rij(1,1:3) = x_ucell(k,1:3) - x(i,1:3);
+%                 r2 = rij(1,1)^2 + rij(1,2)^2 + rij(1,3)^2;
+%                 ralpha(1,1:3) =  rij(1,1:3);
+%                 rbeta(1,1:3) =  rij(1,1:3);  
+%                 
+%                     if r2<a2 & i~=j
+%                         if x(i,1)==x_ucell(k,1) & x(i,2)==x_ucell(k,2) & x(i,3)==x_ucell(k,3)
+%                                 %skip over the same atom in unit cell and images
+%                                 Phi(1:3,1:3)=0;
+%                                     for i2 = 1:length(x_ucell)
+%                                         rij(1,1:3) = x_ucell(i2,1:3) - x(i,1:3);
+%                                         r2 = rij(1,1)^2 + rij(1,2)^2 + rij(1,3)^2;
+%                                         ralpha(1,1:3) =  rij(1,1:3);
+%                                         rbeta(1,1:3) =  rij(1,1:3);  
+%                                             if x(i,1)==x_ucell(i2,1) & x(i,2)==x_ucell(i2,2) & x(i,3)==x_ucell(i2,3) 
+%                                                 % don't use self-term
+%                                             else
+%                                                 Phi = Phi + make_force_matrix(r2,ralpha,rbeta);
+%                                             end
+%                                     end
+%                                     D( 1+(j-1)*3:3*j , 1+(i-1)*3:3*i ) = D( 1+(j-1)*3:3*j , 1+(i-1)*3:3*i ) + Phi*exp(I*dot(kappa,rij));
+%                                     Phi(1:3,1:3)=0;
+%                         else
+%                                     Phi(1:3,1:3)=0;
+%                                     Phi = -1*(make_force_matrix(r2,ralpha,rbeta));
+%                                     D( 1+(j-1)*3:3*j , 1+(i-1)*3:3*i ) = D( 1+(j-1)*3:3*j , 1+(i-1)*3:3*i ) - Phi*exp(I*dot(kappa,rij));
+%                                     Phi(1:3,1:3)=0;
+%                         end
+%                     else
+%                         %do nothing
+%                     end
+%             end
+%         end
+%     end
+    
+
+% D2=D;
+% 
+% D2(4:6,1:3) = conj(D2(1:3,4:6)');
+% D2(7:9,1:3) = conj(D2(1:3,7:9)');
+% D2(10:12,1:3) = conj(D2(1:3,10:12)');
+% 
+% D2(7:9,4:6) = conj(D2(4:6,7:9)');
+% D2(10:12,4:6) = conj(D2(4:6,10:12)');
+% 
+% D2(10:12,7:9) = conj(D2(7:9,10:12)');
+
+        
+        
+        
+    
+    
+   

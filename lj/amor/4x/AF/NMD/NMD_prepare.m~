@@ -1,0 +1,137 @@
+%--------------INPUT-------------------------------------------------------
+
+%LJ Potential and Material Parameters
+NMD.epsilon_Ar = 1.67E-21;              %aJ (1.67E-21 Joules) aJ=1E-18 J
+NMD.sigma_Ar = 3.4E-10;                 %Angstroms 3.4E-10 meters
+NMD.mass_Ar = 6.6326E-26;               %1E-28 kg (6.6326E-26 kg)
+NMD.tau_Ar = sqrt((NMD.mass_Ar*(NMD.sigma_Ar^2))/NMD.epsilon_Ar);
+NMD.kb = 1.3806E-23;                    %aJ/k (1.3806E-23 J/K)
+NMD.hbar = 1.054E-34;                %J/s
+NMD.i = sqrt(-1);
+
+%--------------------------------------------------------------------------
+    [tmp,NMD.str.main]=system('pwd');
+%--------------------------------------------------------------------------
+
+%NMD PARAMETERS------------------------------------------------------------ 
+
+%KPTLIST
+    str_read=strcat(NMD.str.main,'/kptlist.dat');
+    NMD.kptmaster(:,1:3) = load(str_read); 
+    NMD.NUM_KPTS = size(NMD.kptmaster(:,1:3),1);
+    NMD.kptmaster_index = 1:NMD.NUM_KPTS;
+%INITIAL POSITIONS: Set initial positions for id matching
+    str_read=strcat(NMD.str.main,'/LJ_amor_1.pos');
+    NMD.x0 = load(str_read);
+%Define number of atoms
+    NMD.NUM_ATOMS = NMD.x0(1,1); NMD.NUM_ATOMS_UCELL = NMD.x0(1,2); 
+    NMD.NUM_UCELL_COPIES=NMD.NUM_ATOMS/NMD.NUM_ATOMS_UCELL; 
+    NMD.NUM_MODES = NMD.NUM_ATOMS_UCELL*3;
+%Works for cubic unit cell
+    NMD.NUM_UCELL_INX = (NMD.NUM_ATOMS/NMD.NUM_ATOMS_UCELL)^(1/3);  
+%Define box size 
+    NMD.L(1) = NMD.x0(1,3); NMD.L(2) = NMD.x0(1,4); NMD.L(3) = NMD.x0(1,5); 
+%chop off first line of input
+    NMD.x0 = NMD.x0(2:length(NMD.x0),:);
+
+%SED PARAMETERS------------------------------------------------------------    
+
+
+%ISEED---------------------------------------------------------------------
+    NMD.NUM_SEEDS = 5;
+%--------------------------------------------------------------------------   
+
+%---IKSLICE----------------------------------------------------------------
+NMD.NUM_KSLICES = 1;
+%--------------------------------------------------------------------------   
+
+%TIMES---------------------------------------------------------------------
+	NMD.t_total = 2^16; NMD.t_step = 2^4; NMD.dt = 0.002;
+NMD.NUM_FFTS = 2^19/NMD.t_total;
+    NMD.NUM_TSTEPS = NMD.t_total/NMD.t_step; 
+%-------------------------------------------------------------------------- 
+
+%FREQS---------------------------------------------------------------------
+    NMD.w_step = 2*pi/(NMD.t_total*NMD.dt); NMD.w_max = 2*pi/(NMD.t_step*NMD.dt*2);
+    NMD.NUM_OMEGAS = NMD.t_total/(2*NMD.t_step); 
+%-------------------------------------------------------------------------- 
+
+    
+%CREATE PROGRAM FILES------------------------------------------------------   
+
+
+%KPT LISTS-----------------------------------------------------------------
+
+slice_length = size(NMD.kptmaster,1)/NMD.NUM_KSLICES;
+% remainder_length = size(NMD.kptlist,1) - slice_length*(NMD.NUM_KSLICE-1);
+for ikslice = 1:NMD.NUM_KSLICES
+    NMD.kpt(:,1:3,ikslice) =...
+        NMD.kptmaster( (ikslice-1)*slice_length+1:(ikslice)*slice_length,1:3);
+    
+    NMD.kpt_index(:,ikslice) =...
+        NMD.kptmaster_index( (ikslice-1)*slice_length+1:(ikslice)*slice_length);
+end
+
+
+%MAKES JOB FILES-----------------------------------------------------------
+
+system('cp ./NMD_submit_temp.sh ./NMD_submit.sh');
+
+for iseed=1:NMD.NUM_SEEDS
+
+    for ikslice = 1:NMD.NUM_KSLICES
+%NMD_ISEED_IKSLICE.sh------------------------------------------------------        
+        str.orig = 'NMD_temp';
+        str.change = ['NMD_' int2str(iseed) '_' int2str(ikslice)];
+        
+        str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        
+        str.orig = 'runpath';
+        str.change = strcat(NMD.str.main);
+        
+        str.temp = strcat('-e ''s|',str.orig,'|',str.change);
+        str.cmd2 = [str.temp '|g'' '];
+        
+        str.orig = 'NMD_TEMP.m';
+        str.change = ['NMD_' int2str(iseed) '_' int2str(ikslice) '.m'];
+        
+        str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+    
+    str.cmd4 = ['NMD_temp.sh > NMD_' int2str(iseed) '_' int2str(ikslice) '.sh'];
+    
+    str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4];
+    
+        system(str.cmd);
+        
+%NMD_ISEED_IKSLICE.m-------------------------------------------------------        
+
+        str.orig = 'ISEED';
+        str.change = [int2str(iseed)];
+        
+        str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        
+        str.orig = 'IKSLICE';
+        str.change = [int2str(ikslice)];
+        
+        str.cmd2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+    
+        str.cmd3 = ['NMD_temp.m > NMD_' int2str(iseed) '_' int2str(ikslice) '.m'];
+        
+        str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3];
+        
+        system(str.cmd);
+        
+%NMD_submit.sh------------------------------------------------------------- 
+
+    output = ['qsub NMD_' int2str(iseed) '_' int2str(ikslice) '.sh'];
+    str.write = strcat(NMD.str.main,'/NMD_submit.sh');
+    dlmwrite(str.write,output,'-append','delimiter','');
+
+    end
+end
+
+
+%SAVE NMD structure--------------------------------------------------------  
+
+save(strcat(NMD.str.main,'/NMD.mat'), '-struct', 'NMD');
+    

@@ -1,0 +1,145 @@
+
+%--------------INPUT-------------------------------------------------------
+
+
+sample_rate = input('Enter sample rate: ');
+dummy = importdata('E:\CMU\work\Phonons\SED\Matlab\SEDseed_avg.txt','\t');
+num_kpts = length(dummy(:,1)) / (sample_rate+1);
+
+    for i1=1:num_kpts
+    SED.freq(:,i1) = dummy((i1-1)*(sample_rate+1)+2:(i1)*(sample_rate+1),1);
+    SED.kpt(i1,1:3) = dummy((i1-1)*(sample_rate+1)+1,1:3);
+    end
+
+%------FIND IRR KPTS-------------------------------------------------------    
+    
+    % Identify irreducible k-points, store in SED.irrkpt
+    SED.irrkpt(1,1:3) = SED.kpt(1,1:3); SED.degen(1)=0; SED.numirr=1;
+    for i1=2:num_kpts
+        tempcnt = 0.0;
+        for i2=1:SED.numirr 
+            if issym(SED.irrkpt(i2,1:3),SED.kpt(i1,1:3)) == 1.0;
+                 tempcnt = 1.0; 
+            end
+        end
+        if tempcnt==0.0
+        SED.numirr = SED.numirr +1;
+        SED.irrkpt(SED.numirr,1:3) = SED.kpt(i1,1:3);
+        SED.degen(i1)=0;
+        %SED.numdegen(i2) = SED.numdegen(i2) +1;
+        %SED.avgfreq(:,SED.numirr) = SED.avgfreq(:,SED.numirr) + SED.freq(:,i1); 
+        else
+        SED.degen(i1)=1;
+        end
+       
+    end
+
+%------AVG DEGEN KPTS------------------------------------------------------    
+
+    SED.numdegen(1:SED.numirr)=0;
+    SED.freqavg(1:sample_rate,1:SED.numirr)=0;
+    for i1=1:SED.numirr
+        for i2=1:num_kpts
+            if issym(SED.irrkpt(i1,1:3),SED.kpt(i2,1:3)) == 1.0;
+                 SED.numdegen(i1) = SED.numdegen(i1) +1.0;
+                 SED.freqavg(:,i1) = SED.freqavg(:,i1) + SED.freq(:,i2);
+            end
+        end
+        SED.freqavg(:,i1) = SED.freqavg(:,i1)/SED.numdegen(i1);
+    end
+pause   
+%------FIND SED PEAKS------------------------------------------------------    
+% for i1=1:SED.numirr    
+%     
+%     
+%         threshlist=10:10:150; mpdlist=5:1:20;
+%         for i2=1:length(threshlist)
+%             for i3=1:length(mpdlist)
+%                 [pks,loc] = findpeaks(SED.freqavg(:,i1),'threshold',threshlist(i2),'minpeakdistance',mpdlist(i3));
+%                 numpks(i2,i3) = length(pks);
+%             end
+%         end    
+%         surf(mpdlist,threshlist,numpks)
+%         i1
+%         pause
+%         semilogy(1:length(SED.freqavg(:,i1)),SED.freqavg(:,i1),loc,pks,'.')
+%     
+% end
+
+
+%------FIND SED PEAKS------------------------------------------------------
+
+%The inline version
+func = inline('(c(1)*c(2))./((w - c(3)).^2 + (c(2)/2).^2)','c','w');  
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE THIS TO ACTUAL FREQUENCY VALUES
+w(:,1)=1:length(SED.freqavg);
+
+
+
+for i1=1:SED.numirr    
+    [pks,loc] = findpeaks(SED.freqavg(:,i1),'threshold',100,'minpeakdistance',10);
+    %initial parameter guess
+    
+    for i2=1:length(loc)
+
+    %Find wleft    
+            [I,J] = find(0.5*SED.freqavg(loc(i2),i1)>SED.freqavg(1:loc(i2),i1) );
+            wleft = w(I(length(I)));
+    %Find wrigth
+            [I,J] = find(0.5*SED.freqavg(loc(i2),i1)>SED.freqavg(loc(i2):length(SED.freqavg),i1) );
+            wright = w(I(1)+loc(i2));
+            gamma_guess = wright-wleft; buffer = ceil(gamma_guess*0.75);
+            c0 = [ gamma_guess*SED.freqavg(loc(i2),i1)/4, gamma_guess, w(loc(i2)) ];
+            
+            [c,r,j] = nlinfit(w( (wleft-buffer):(wright+buffer)),SED.freqavg((wleft-buffer):(wright+buffer),i1),func,c0);
+            semilogy(w( (wleft-buffer):(wright+buffer)),SED.freqavg((wleft-buffer):(wright+buffer),i1),w( (wleft-buffer):(wright+buffer)),func(c,w( (wleft-buffer):(wright+buffer))))
+            pause
+    end
+    semilogy(1:length(SED.freqavg(:,i1)),SED.freqavg(:,i1),loc,pks,'.')
+    pause
+                    clear I J buffer wleft wright c0 pks loc    
+end
+
+
+%Function to fit lorentzians
+
+%X = LSQCURVEFIT(@fun_lorentzian(,X0,XDATA,YDATA);
+
+
+
+
+%Portion to see how number of peaks found varies with threhold value.
+SED(:,1) =load( 'E:\CMU\work\Phonons\SED\Matlab\SED210.txt');
+
+
+
+
+
+%[xmax,imax,xmin,imin] = extrema(SED(:,1))
+
+%-------------FUNCTIONS----------------------------------------------------
+
+
+% function istrue=issym(kptlist,kpt2)
+% istrue=0.0;
+% sizekpt1 = size(kpt1);
+%     for i1=1:sizekpt1(1,1)
+%         %kpt1 = kptlist(i1,1:3);
+%         for i2=-1:2:1
+%             for i3=-1:2:1
+%                 for i4=-1:2:1
+%                     
+%                     temp(1) = i2*kpt2(1); temp(2) = i3*kpt2(2); temp(3) = i4*kpt2(3);
+%                     
+%                     tmp1 = find(temp(1)==kpt1); tmp2 = find(temp(2)==kpt1); tmp3 = find(temp(3)==kpt1);
+%                     
+%                     if tmp1~=0.0 & tmp2~=0.0 & tmp3~=0.0
+%                         istrue=1;
+%                     end
+%                 end
+%             end
+%         end
+%     end
+%             
+            

@@ -1,0 +1,412 @@
+
+function SED_fit_JL_040111
+
+%--------------INPUT-------------------------------------------------------
+
+%LJ Potential and Material Parameters
+epsilon_Ar = 1.67E-21;              %aJ (1.67E-21 Joules) aJ=1E-18 J
+sigma_Ar = 3.4E-10;                 %Angstroms 3.4E-10 meters
+a_0 = 5.2686E-10/sigma_Ar;            %the lattice constant of Ar: http://www.infoplease.com/periodictable.php?id=18
+mass_Ar = 6.6326E-26;               %1E-28 kg (6.6326E-26 kg)
+%mass_Ar = mass_Ar/mass_Ar;
+tau_Ar = sqrt((mass_Ar*(sigma_Ar^2))/epsilon_Ar);
+kb = 1.3806E-23;                    %aJ/k (1.3806E-23 J/K)
+hbar = 1.054E-34;                %J/s
+
+w_step = 2*pi/(2^16)/(5E-15);
+w_max = 2*pi/(2^6)/(5E-15);
+
+NUM_SEEDS=1;
+
+        SAMPLE_RATE = input('Enter sample rate: ');
+        NUM_UCELLS = input('Enter number of unit cells: ');
+        NUM_MODES = input('Enter number of modes to expect: ');
+        %dummy is a dummy array to store all the SED over all kpts.  It has size
+        %dummy((1024+1)*numkpts,3).  The portion of the column data that contains
+        %the SED for different frequencies will have 3 columns, 1 with actual SED
+        %data the other 2 with NaNs.  Just omit these.
+
+        %Initialize SED object to do averaging over seeds
+        %str_main=strcat('E:\CMU\work\Phonons\SED\defect\sigma\8x8x8\1.1\5K\');
+        %str_main=strcat('E:\CMU\work\Phonons\SED\defect\mass\8x8x8\m3\5K\');
+        %str_main=strcat('E:\CMU\work\Phonons\SED\perfect\alex\20K\');
+        %str=strcat(str_main,'seed1\SpectralEnergy.txt');
+        
+        str_main=strcat('E:\CMU\work\Phonons\SED\perfect\alex\40K\');
+        str=strcat(str_main,'SEDseed_avg.txt');
+
+        dummy = importdata(str,'\t');  
+            %This figures out how many kpts are being read in by checking the length
+            %of dummy and dividing by the number of kpt sections SAMPLE_RATE+1.  
+            %we've been having SAMPLE_RATE=1024;
+        NUM_KPTS = length(dummy(:,1)) / (SAMPLE_RATE+1);
+        SED.redkpt.sed(1:SAMPLE_RATE,1:NUM_KPTS) = 0.0;
+        
+%------AVG OVER SEEDS------------------------------------------------------
+    for i1=1:NUM_SEEDS
+        
+            %str=strcat(str_main,'seed',int2str(i1),'\SpectralEnergy.txt');
+            
+            str=strcat(str_main,'SEDseed_avg.txt');
+
+            dummy = importdata(str,'\t');  
+            %This figures out how many kpts are being read in by checking the length
+            %of dummy and dividing by the number of kpt sections SAMPLE_RATE+1.  
+            %we've been having SAMPLE_RATE=1024;
+            NUM_KPTS = length(dummy(:,1)) / (SAMPLE_RATE+1);
+
+            %This takes the SED data in dummy and puts it in the object SED.freq.  The
+            %data is stored SED.freq(1:1024,1:NUM_KPTS).  The kpt data is stored in
+            %SED.kpt(1:NUM_KPTS,1:3) => [kx ky kz];
+                for i2=1:NUM_KPTS
+                SED.redkpt.sed(:,i2) = SED.redkpt.sed(:,i2) + dummy((i2-1)*(SAMPLE_RATE+1)+2:(i2)*(SAMPLE_RATE+1),1);
+                SED.redkpt.kpt(i2,1:3) = dummy((i2-1)*(SAMPLE_RATE+1)+1,1:3);
+                end
+    end
+    SED.redkpt.sed(:,:) = SED.redkpt.sed(:,:)/NUM_SEEDS;
+
+
+%------FIND NUMBER IRR KPTS------------------------------------------------ 
+    
+    % Identify irreducible k-points, store in SED.irrkpt
+    % The first kpt is automatically a irreducible point.
+    SED.irrkpt.kpt(1,1:3) = SED.redkpt.kpt(1,1:3); SED.irrkpt.numdegen(1)=0; SED.irrkpt.numirr=1;
+    for i1=2:NUM_KPTS
+        tempcnt = 0.0;
+        for i2=1:SED.irrkpt.numirr 
+            if issym(SED.irrkpt.kpt(i2,1:3),SED.redkpt.kpt(i1,1:3)) == 1.0;
+                 tempcnt = 1.0;
+                 degen = i2;
+            end
+        end
+        if tempcnt==0.0
+        SED.irrkpt.numirr = SED.irrkpt.numirr +1;
+        SED.irrkpt.kpt(SED.irrkpt.numirr,1:3) = SED.redkpt.kpt(i1,1:3);
+        %SED.irrkpt.numdegen(i2) = SED.irrkpt.numdegen(i2) +1; 
+        %SED.irrkpt.degen(i1)=0;
+        %SED.numdegen(i2) = SED.numdegen(i2) +1;
+        %SED.avgfreq(:,SED.numirr) = SED.avgfreq(:,SED.numirr) + SED.freq(:,i1); 
+        else
+        SED.redkpt.degen(i1)=1;
+        end
+       
+    end
+
+%------AVG DEGEN KPTS------------------------------------------------------
+    SED.irrkpt.numdegen(1:SED.irrkpt.numirr)=0;
+    SED.irrkpt.sedavg(1:SAMPLE_RATE,1:SED.irrkpt.numirr)=0;
+    for i1=1:SED.irrkpt.numirr
+        for i2=1:NUM_KPTS
+            if issym(SED.irrkpt.kpt(i1,1:3),SED.redkpt.kpt(i2,1:3)) == 1.0;
+                 SED.irrkpt.numdegen(i1) = SED.irrkpt.numdegen(i1) +1.0;
+                 SED.irrkpt.sedavg(:,i1) = SED.irrkpt.sedavg(:,i1) + SED.redkpt.sed(:,i2);
+            end
+        end
+        SED.irrkpt.sedavg(:,i1) = SED.irrkpt.sedavg(:,i1)/SED.irrkpt.numdegen(i1);
+    end
+%pause   
+
+
+%RE-DO LIST
+    REDO=0; 
+    AUTO=1;
+%8x m3 0.01    
+    %redo_list=  [7 10 14 15 18 19 20 21 23 24 26 27 28 30 33 34];
+    %redo_list=  [35];
+%6x m3 0.01
+    redo_list = 1:SED.irrkpt.numirr;
+%Perfect 5K
+    %HLD_SCALING_PCT=0.98;
+%Perfect 20K
+    %HLD_SCALING_PCT=0.97;
+    %LC = 1.56328;        % For HLD peak calculation
+%Perfect 40K
+    HLD_SCALING_PCT=1.04;
+    LC = 1.57931;        % For HLD peak calculation
+%m3 0.01
+    %HLD_SCALING_PCT=0.8;
+%m3 0.05
+    %HLD_SCALING_PCT=0.8;
+%m10 0.01
+    %HLD_SCALING_PCT=0.87;
+    
+%FIND SED PEAKS
+
+if REDO==1
+    kpt_list = redo_list;
+else
+    kpt_list = 1:SED.irrkpt.numirr;
+end
+    
+    for kpt_cnt=1:length(kpt_list)
+        
+        %PRINT CURRENT KPT
+                    SED.irrkpt.kpt(kpt_list(kpt_cnt),1:3)
+
+                    
+                    
+        %REDO OR AUTOMATIC
+        %MANUALLY ENTER PK LOC
+%REDO        
+        if REDO==1
+            semilogy(1:length(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt))),SED.irrkpt.sedavg(:,kpt_list(kpt_cnt)),'.')
+            number_pks = input('Enter the number of peaks: ');
+            for i2=1:number_pks
+                str_input = strcat('Enter peak  ',int2str(i2),' location: ');
+                loc(i2) = input(str_input);
+            end
+%AUTOMATIC FROM HLD
+        elseif AUTO==1
+            
+        %CALCULATE HLD PEAKS 
+        
+                if SED.irrkpt.kpt(kpt_list(kpt_cnt),1)/NUM_cells==0.5
+                    SED.irrkpt.kpt(kpt_list(kpt_cnt),1) = SED.irrkpt.kpt(kpt_list(kpt_cnt),1)/NUM_cells
+        
+                    [HLDpks,eig,vel] = LDAr_FCC([LC LC LC],SED.irrkpt.kpt(kpt_list(kpt_cnt),1:3)/NUM_UCELLS);
+                    SED.irrkpt.HLDfreq(1:length(HLDpks),kpt_cnt) = HLDpks/tau_Ar;
+                    ceil(HLDpks/tau_Ar/w_step*HLD_SCALING_PCT)
+                    %Convert to m/s
+                    SED.irrkpt.HLDvel(1:length(HLDpks),1:3,kpt_cnt) = vel*(sigma_Ar/tau_Ar);
+        %FIND # OF NON_DEGENERATE PEAKS
+                    DEGEN_PCT=0.00001;
+                    [HLDndpks,numndpks] = ndpks_HLD(ceil(HLDpks/tau_Ar/w_step*HLD_SCALING_PCT),DEGEN_PCT);
+                    loc=HLDndpks
+                    if SED.irrkpt.kpt(kpt_list(kpt_cnt),1)==0 & SED.irrkpt.kpt(kpt_list(kpt_cnt),2)==0 &SED.irrkpt.kpt(kpt_list(kpt_cnt),3)==0
+                        loctemp=loc; clear loc
+                        loc=(loctemp(2:length(loctemp)))
+                    end
+                    DEGEN_WIDTH=0.001;
+                    HLDdegenlist = group_peaks(HLDpks,DEGEN_WIDTH);
+%MPD/THRESH              
+        else
+            
+                    %SCAN THRESH AND MPD 
+                    threshlist=10:10:60; mpdlist=3:1:15;
+                    for i2=1:length(threshlist)
+                        for i3=1:length(mpdlist)
+                            [pks,loc] = findpeaks(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt)),'threshold',threshlist(i2),'minpeakdistance',mpdlist(i3));
+                            numpks(i2,i3) = length(pks);
+                        end
+                    end  
+            
+            %USER INPUT THRESH AND MPD
+                str_loop=0;
+                while str_loop==0
+                        subplot(2,1,1), surf(mpdlist,threshlist,numpks)
+                        subplot(2,1,2), semilogy(1:length(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt))),SED.irrkpt.sedavg(:,kpt_list(kpt_cnt)),'.')
+                        thresh = input('Enter thresh: ');
+                        minpd = input('Enter minpd: ');
+                        [pks,loc] = findpeaks(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt)),'threshold',thresh,'minpeakdistance',minpd);
+                        %initial parameter guess
+                        subplot(2,1,2), semilogy(1:length(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt))),SED.irrkpt.sedavg(:,kpt_list(kpt_cnt)),loc,pks,'.')
+                        %SED.marked(kpt_list(kpt_cnt)) = input('Mark?: ');
+                        str_loop = input('Good find?: ');
+                end                      
+            %Store thresh and minpd selected for each irrkpt, just in case... 
+                SED.irrkpt.mpid(kpt_cnt) = thresh;
+                SED.irrkpt.mpid(kpt_cnt) = minpd;  
+        end
+
+    semilogy(1:length(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt))),SED.irrkpt.sedavg(:,kpt_list(kpt_cnt)),'.')
+    pause        
+        
+%Set freq to 1:sample_size
+                w(:,1)=(1:length(SED.irrkpt.sedavg(:,kpt_list(kpt_cnt))));   
+%Run over all peak locations found
+                str_func= '';
+                %GROUP LOCATION WIDTH        
+                GROUP_LOCATION_WIDTH=10;
+                %GROUP PEAKS FOR SINGLE OR MULTIPLE FITS        
+                group_loc = group_peaks(loc,GROUP_LOCATION_WIDTH);
+%BUILD LORENTZIAN FUNCTIONS SINGLE AND MULTIPLE     
+    %Pad the frequencies and lifetimes by the 0 freqs from HLD
+                HLD_FREQ_TOL = 0.01;
+                Ipad = find(abs(SED.irrkpt.HLDfreq(:,kpt_cnt))<HLD_FREQ_TOL);
+                SED.irrkpt.sedfreq(1:length(Ipad),kpt_cnt) = SED.irrkpt.HLDfreq(1:length(Ipad),kpt_cnt);
+                
+    %Loop over grouped peaks and fit 
+        %Keep track of pk count w.r.t. HLD degen
+        pk_cnt=1;
+        for i2 = 1:group_loc(length(group_loc)) 
+                        
+            Igroup = find(group_loc==i2);  
+            str_func= '';
+            for i3=1:length(Igroup)
+                if length(Igroup)==1
+                strtemp= strcat('(c(',int2str(i3),')*c(',int2str(i3+1),'))./((w - c(',int2str(i3+2),')).^2 + (c(',int2str(i3+1),')/2).^2)');
+                str_func = strcat(str_func,strtemp);
+                else
+                strtemp= strcat(' + (c(',int2str(3*(i3-1)+1),')*c(',int2str(3*(i3-1)+2),'))./((w - c(',int2str(3*(i3-1)+3),')).^2 + (c(',int2str(3*(i3-1)+2),')/2).^2)');
+                str_func = strcat(str_func,strtemp);
+                end  
+            end
+
+        %LORENTZIAN FUNCTION FOR SINGLE AND MULTIPLE PEAKS            
+                               lor_func = inline(str_func,'c','w');
+        %PERCENT PAST PEAKS
+                                PT_PERC = 0.75;
+            %Find wleft    
+                                [I,J] = find(PT_PERC*SED.irrkpt.sedavg(loc(Igroup(1)),kpt_list(kpt_cnt))>SED.irrkpt.sedavg(1:loc(Igroup(1)),kpt_list(kpt_cnt)) );
+                                wleft = w(I(length(I)));
+            %Find wright
+                                    [I,J] = find(PT_PERC*SED.irrkpt.sedavg(loc(Igroup(length(Igroup))),kpt_list(kpt_cnt))>SED.irrkpt.sedavg(loc(Igroup(length(Igroup))):length(SED.irrkpt.sedavg),kpt_list(kpt_cnt)) );
+                                    wright = w(loc(Igroup(length(Igroup)))+I(1)  );
+                                    gamma_guess = wright-wleft; 
+                                    buffer = ceil(gamma_guess*0.25);
+
+                                    for i3=1:length(Igroup)   
+                                        if length(Igroup)==1
+                                        c0(1+(i3-1)*3:i3*3) = [ gamma_guess*SED.irrkpt.sedavg(loc(Igroup(i3)),kpt_list(kpt_cnt))/4, gamma_guess, w(loc(Igroup(i3))) ];
+                                        else
+                                        %make gamma_guess/length(Igroup) to make a guess that all
+                                        %multiple lorentzians have 1/N (1/3 for N=3 example) the width
+                                        c0(1+(i3-1)*3:i3*3) = [ (gamma_guess/(length(Igroup)))*SED.irrkpt.sedavg(loc(Igroup(i3)),kpt_list(kpt_cnt))/4, gamma_guess/(length(Igroup)), w(loc(Igroup(i3))) ];    
+                                        end
+                                    end 
+            %FIT THE LORENTZIAN(S)
+            [cfit,r,j] = nlinfit(w(wleft:wright),SED.irrkpt.sedavg(wleft:wright,kpt_list(kpt_cnt)),lor_func,c0);
+
+            %Store separate liftimes and frequencies for single and MULTIPLE FITS
+                    Igroup = find(group_loc==i2);
+                        for i3=1:length(Igroup)  
+                            if length(Ipad)==0
+                                Idegen = find(HLDdegenlist==pk_cnt);
+                            else
+                                Idegen = find(HLDdegenlist==pk_cnt+1);
+                            end
+                            center=cfit(3*i3)*w_step;
+                            lifetime=1/cfit(2*i3)/w_step;
+                            %Store in rads/ps
+                            SED.irrkpt.sedfreq( Idegen ,kpt_cnt) = center;
+                            %Store in ps
+                            SED.irrkpt.life( Idegen ,kpt_cnt) = lifetime;
+                            %Keep track of pk position taking
+                            %into account degen w.r.t. HLD
+                            pk_cnt = pk_cnt +1;
+                        end
+            %Plot each fit, single and multiple
+                        plot(w(wleft:wright),SED.irrkpt.sedavg(wleft:wright,kpt_list(kpt_cnt)),w(wleft:wright),lor_func(cfit,w(wleft:wright)))
+                        %pause
+        end
+                disp(sprintf('%s', 'SED FREQ:'));
+                SED.irrkpt.sedfreq(:,kpt_cnt)
+                disp(sprintf('%s', 'SED LIFE:'));
+                SED.irrkpt.life(:,kpt_cnt) 
+        %1=yes, 0=no
+        %SED.irrkpt.flag(kpt_cnt) = input('Flag?: ');
+    clear I J buffer wleft wright c0 pks loc str_func lifetime center
+
+    end
+
+
+
+%--------------------OUTPUT DATA-------------------------------------------  
+
+    str_loop = input('Write data to file?: ');
+    str_loop=1;
+    if str_loop ==1
+        NUM_MODES = length(SED.irrkpt.HLDfreq(:,1));
+        for kpt_cnt=1:length(kpt_list)
+            %Write the wavevector first
+            dlmwrite(str,SED.irrkpt.kpt(kpt_list(kpt_cnt),1:3),'-append');
+            %Write the number of degenerate kpts for mult factor
+            dlmwrite(str,SED.irrkpt.numdegen(kpt_list(kpt_cnt)),'-append');
+
+            for i2=1:NUM_MODES
+
+                whld = SED.irrkpt.HLDfreq(i2,kpt_cnt);
+                wsed = SED.irrkpt.sedfreq(i2,kpt_cnt);
+                lifetau = SED.irrkpt.life(i2,kpt_cnt);
+
+                velx = SED.irrkpt.HLDvel(i2,1,kpt_cnt);
+                vely = SED.irrkpt.HLDvel(i2,2,kpt_cnt);
+                velz = SED.irrkpt.HLDvel(i2,3,kpt_cnt);
+
+                svelx = velx*(wsed/whld);
+                svely = vely*(wsed/whld);
+                svelz = velz*(wsed/whld);
+                if wsed<(w_max*10^12) && wsed>(w_step) && lifetau<(10^-10) && lifetau>(10^-13)
+                output_format = [whld wsed lifetau velx vely velz svelx svely svelz]; 
+                else
+                output_format = [0 0 0 0 0 0 0 0 0]; 
+                end
+                str=strcat(str_main,'SED_data.dat');
+                dlmwrite(str,output_format,'-append');
+            end
+        end
+    end
+    
+
+end
+
+
+
+%-------------FUNCTIONS----------------------------------------------------
+
+
+function istrue=issym(kpt1,kpt2)
+istrue=0.0;
+istrue1=0.0; istrue2=0.0;
+        for i2=-1:2:1
+            for i3=-1:2:1
+                for i4=-1:2:1
+                    
+                    temp(1) = i2*kpt2(1); temp(2) = i3*kpt2(2); temp(3) = i4*kpt2(3);
+
+                    if kpt1(1) == temp(1) && kpt1(2) == temp(2) && kpt1(3) == temp(3)
+                        istrue=1.0;
+                    elseif kpt1(1) == temp(3) && kpt1(2) == temp(1) && kpt1(3) == temp(2)
+                        istrue=1.0;
+                    elseif kpt1(1) == temp(2) && kpt1(2) == temp(3) && kpt1(3) == temp(1)
+                        istrue=1.0;
+                    elseif kpt1(1) == temp(1) && kpt1(2) == temp(3) && kpt1(3) == temp(2)
+                        istrue=1.0;
+                    elseif kpt1(1) == temp(3) && kpt1(2) == temp(2) && kpt1(3) == temp(1)
+                        istrue=1.0;
+                    elseif kpt1(1) == temp(2) && kpt1(2) == temp(1) && kpt1(3) == temp(3)
+                        istrue=1.0;
+                    end
+                end
+            end
+        end
+end
+
+
+     
+function group_loc = group_peaks(loc,groupdis)
+    sup_peak_dist = groupdis;
+    clear fitpks
+    for i=1:length(loc)-1
+        dist(i) = loc(i+1) - loc(i);
+    end
+
+    id = 1;
+    for i=1:length(loc) - 1
+        fitpks(i) = id;
+        if (dist(i) > sup_peak_dist)
+            id = id + 1;
+        end
+    end
+    fitpks(i + 1) = id;
+    group_loc = fitpks; 
+end
+
+function [HLDndpks,numndpks] = ndpks_HLD(HLDpks,DEGEN_PCT)
+    numndpks = 1;
+    HLDndpks(1) = HLDpks(1);
+    for j=2:length(HLDpks) %should be equal to 12
+        degencount = 0;
+        for k=1:numndpks
+            if abs((HLDpks(j)-HLDndpks(k))/HLDndpks(k)) < DEGEN_PCT
+                degencount = 1;
+            end
+        end
+        if degencount == 0
+            numndpks = numndpks +1;
+            HLDndpks(numndpks) = HLDpks(j);
+        end
+    end
+end
+
+

@@ -1,0 +1,62 @@
+ModuleCmd_Load.c(200):ERROR:105: Unable to locate a modulefile for 'ase-devel'
+ModuleCmd_Load.c(200):ERROR:105: Unable to locate a modulefile for 'dacapo-j'
+ModuleCmd_Load.c(200):ERROR:105: Unable to locate a modulefile for 'atat'
+/home/jason/.bashrc: line 56: /home/jason/.bashDirB: No such file or directory
+ModuleCmd_Load.c(200):ERROR:105: Unable to locate a modulefile for 'my-ase'
+/home/jason/.bashrc: line 83: export: `=': not a valid identifier
+/home/jason/.bashrc: line 83: export: `/home/jason/qe/espresso-4.3.2/bin/': not a valid identifier
+/home/jason/.bashrc: line 84: export: `=': not a valid identifier
+/home/jason/.bashrc: line 84: export: `/home/jason/qe/espresso-4.3.2/pseudo/': not a valid identifier
+/home/jason/.bashrc: line 85: export: `=': not a valid identifier
+/home/jason/.bashrc: line 85: export: `/home/jason/tmp/': not a valid identifier
+CMA: unable to open /dev/infiniband/rdma_cm
+--------------------------------------------------------------------------
+WARNING: There is at least one OpenFabrics device found but there are
+no active ports detected (or Open MPI was unable to use them).  This
+is most certainly not what you wanted.  Check your cables, subnet
+manager configuration, etc.  The openib BTL will be ignored for this
+job.
+
+  Local host: n19
+--------------------------------------------------------------------------
+LAMMPS (2 Nov 2010)
+Reading data file ...
+  orthogonal box = (0 0 0) to (6.2235 6.2235 6.2235)
+  1 by 1 by 1 processor grid
+  256 atoms
+Setting up run ...
+Memory usage per processor = 1.38005 Mbytes
+Step Temp Press TotEng Volume 
+       0  0.082673677  -0.71664588   -7.3350923     241.0483 
+    1000  0.086478265  0.036025014     -7.20443     241.0483 
+    2000  0.073677958  0.047936404     -7.21926     241.0483 
+    3000  0.086110424  0.047380477   -7.2039443     241.0483 
+    4000  0.081195521  0.081239345    -7.203942     241.0483 
+    5000   0.08858359  0.022542159   -7.2039387     241.0483 
+    6000  0.081785784  0.072729218   -7.2039412     241.0483 
+    7000  0.077050624  0.021845181   -7.2189112     241.0483 
+    8000  0.085796322 -0.042469168    -7.218913     241.0483 
+    9000  0.079909364 -0.0038880912   -7.2189098     241.0483 
+   10000   0.08354562 -0.029096612   -7.2189207     241.0483 
+   11000  0.081829698  -0.01450287   -7.2189227     241.0483 
+   12000  0.080611915 -0.0049142153   -7.2189148     241.0483 
+   13000  0.083269084 -0.025954495   -7.2189137     241.0483 
+   14000  0.078105956  0.016239557   -7.2188566     241.0483 
+   15000  0.080577282 -0.0064441427   -7.2188524     241.0483 
+   16000   0.08601742 -0.051365328   -7.2188594     241.0483 
+   17000  0.080001001 -0.0024429432   -7.2188602     241.0483 
+   18000   0.08185398 -0.017741161   -7.2188588     241.0483 
+   19000  0.081126895 -0.012003703   -7.2188563     241.0483 
+   20000  0.085601718 -0.048384171    -7.218863     241.0483 
+   21000  0.078593535 0.0070378591   -7.2188611     241.0483 
+   22000  0.080649874 -0.0071398245   -7.2188604     241.0483 
+   23000  0.079409667 0.0033276554   -7.2188598     241.0483 
+   24000  0.084667519 -0.039042234   -7.2188634     241.0483 
+   25000  0.080249739 -0.0038510834   -7.2188554     241.0483 
+mpirun: killing job...
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 98209 on node n19 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+

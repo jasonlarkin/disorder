@@ -1,0 +1,56 @@
+
+str.AF = '/home/jason/lammps/LJ/alloy/10K/0.5/12x/NMD/';
+AF = load(strcat(str.AF,'AF_DSF.mat'));
+str.NMD = '/home/jason/lammps/LJ/alloy/10K/0.5/12x/NMD/1/';
+NMD=load(strcat(str.NMD,'NMDdata.mat'));
+SED=load(strcat(str.NMD,'SEDdata.mat'));
+%convert freq to cols
+SED = nmd_convert_data(NMD,SED);
+%convert to LJ units
+SED.freq = SED.freq*NMD.LJ.tau;
+
+%remove degenerate k_norm
+AF.kpt_norm =...
+    sqrt(...
+    AF.kpt(:,1).^2+AF.kpt(:,2).^2+AF.kpt(:,3).^2);
+[Inorm,Jnorm] = unique(AF.kpt_norm);
+AF.kpt_norm_unique(1:size(Jnorm,1)) = AF.kpt_norm(Jnorm);
+
+AF.kpt_norm_dk =...
+    (max(AF.kpt_norm_unique) - min(AF.kpt_norm_unique))/...
+    size(AF.kpt_norm_unique,2);
+
+%rangek = 0:AF.kpt_norm_dk:max(AF.kpt_norm_unique);
+rangek = 0:AF.kpt_norm_dk:max(AF.kpt_norm_unique);
+%remove degenerate freq
+[Ifreq,Jfreq] = unique(AF.freq);
+AF.freq_unique = AF.freq(Jfreq);
+AF.DSF_unique(1:size(Jfreq,1),1:size(Jnorm,1)) = AF.DSF(Jfreq,Jnorm); 
+AF.dw = (max(AF.freq_unique) - min(AF.freq_unique))/size(AF.freq_unique,1);
+rangew = 0:AF.dw:max(AF.freq_unique);
+
+mesh(AF.kpt_norm_unique,AF.freq_unique,AF.DSF_unique)
+
+size(tsmovavg(AF.DSF_unique(:,1),'s',50,1) )
+
+
+mesh(...
+    AF.kpt_norm_unique,...
+    AF.freq_unique,...
+    bsxfun(...
+    @times,tsmovavg(AF.DSF_unique(:,:),'s',10,1),...
+    1./max(tsmovavg(AF.DSF_unique(:,:),'s',10,1)) )...
+    )
+
+camup([0 1 0]);
+
+ZMIN = 0.01;
+
+axis(...
+    [...
+    min(AF.kpt_norm)...
+    max(AF.kpt_norm)...
+    min(AF.freq_unique)...
+    max(AF.freq_unique)...
+    ZMIN...
+    max(max(AF.DSF_unique))])

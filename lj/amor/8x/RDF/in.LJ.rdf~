@@ -1,0 +1,33 @@
+label loop_a
+variable a loop 5
+variable seed index 55555 66666 77777 88888 99999 
+clear
+
+# Lennard-Jones Melt
+#------------Prepare Geometry---------------------------------------------------------------
+units			lj
+atom_style		atomic
+read_data		in.data
+#------------Initialize Structure-----------------------------------------------------------
+#mass           	1  1.0
+#group         	Ar type = 1
+#------------LJ Potentials------------------------------------------------------------------
+pair_style		lj/cut 2.5
+pair_coeff		* * 1.0 1.0
+pair_modify          	shift yes
+#pair_modify   	tail no
+#------------Variables----------------------------------------------------------------------
+#------------LJ Parameters
+variable    	kB 		equal 1.3806504e-23 	# [J/K] Boltzmann
+variable	sigma_Ar 	equal 3.4e-10 		# m
+variable	eps_Ar		equal 1.67e-21		# J
+variable	mass_Ar		equal 6.63e-26		# kg
+variable	tau_Ar		equal 2.1423e-12	# s
+
+#------------RDF-----------------------------------------------------------
+
+compute myRDF all rdf 50
+fix 1 all ave/time 1 1 1 c_myRDF file tmp.rdf mode vector 
+
+
+

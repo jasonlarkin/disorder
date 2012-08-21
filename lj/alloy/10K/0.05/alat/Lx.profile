@@ -1,0 +1,7 @@
+# Time-averaged data for fix myLx
+# TimeStep v_myLx
+200000 6.22617
+300000 6.22316
+400000 6.22587
+500000 6.22519
+600000 6.22415
