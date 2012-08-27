@@ -27,25 +27,38 @@ SED=load(strcat(str.NMD,'/SEDavg.mat'));
 
 XCORR_RANGE = 4000;
 
-for imode=1:size(SED.modemaster,2)      
+for imode=4:size(SED.modemaster,2)      
 
     imode
+    SED.HLDfreq(imode)
 
-    I = find( SED.sed(1:XCORR_RANGE,imode) < 0);
-    
     plot(...
         SED.omega(1:XCORR_RANGE),...
         SED.sed(1:XCORR_RANGE,imode),...
         SED.omega(1:XCORR_RANGE),...
         cumtrapz((SED.sed(1:XCORR_RANGE,imode))*SED.omega(1))...
         )
-    
-    SED.HLDfreq(imode)
-
-    SED.life(imode) = max(cumtrapz(SED.sed(:,imode))*SED.omega(1))
-    
+    SED.life(imode) = max(cumtrapz(SED.sed(:,imode))*SED.omega(1));
+    SED.life(imode)
 %--------------------------------------------------------------------------
-%pause
+pause
+%--------------------------------------------------------------------------
+    I = find( SED.sed(1:XCORR_RANGE,imode) < 0);
+    semilogy(SED.omega(1:I(1)),SED.sed(1:I(1),imode),'.')
+    weights = ones(I(1),1);
+    exp_func = @(tau,t)weights.*( exp(-t/tau) );
+    options =...
+        optimset(...
+        'MaxIter',5000,'MaxFunEvals',5000,'TolFun',1e-6,'TolX',1e-6); 
+    c0 = [ SED.life(imode) ];
+    lb(1) = 0.0; ub(1) = 100000.0;
+    [c_fit] =...
+        lsqcurvefit( exp_func,c0,SED.omega(1:I(1)),...
+        SED.sed(1:I(1),imode).*weights,...
+        lb,ub,options);
+    c_fit
+%--------------------------------------------------------------------------
+pause
 %--------------------------------------------------------------------------
 end
 

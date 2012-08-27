@@ -1,27 +1,44 @@
 
 
 
-str.NMD = '/home/jason/orderdisorder/lj/alloy/10K/0.0/8x/NMD/1';
+% str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/8x/NMD/1/work';
+% NMD=load(strcat(str.NMD,'/NMDdata.mat'));
+% SED=load(strcat(str.NMD,'/SEDdata.mat'));
+% SED = nmd_convert_data(NMD,SED);
+% 
+% str.NMD_AF = '/home/jason/disorder/lj/alloy/10K/0.0/8x/NMD_AF/1/work';
+% NMD_AF=load(strcat(str.NMD_AF,'/NMDfit.mat'));
+% SED_AF=load(strcat(str.NMD_AF,'/SEDfit.mat'));
+% 
+% str.NMD_X = '/home/jason/disorder/lj/alloy/10K/0.0/8x/XCORR_AF/1/work';
+% NMD_X=load(strcat(str.NMD_X,'/NMDfit.mat'));
+% SED_X=load(strcat(str.NMD_X,'/SEDfit.mat'));
+
+str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/NMD/1/work';
 NMD=load(strcat(str.NMD,'/NMDdata.mat'));
 SED=load(strcat(str.NMD,'/SEDdata.mat'));
-
 SED = nmd_convert_data(NMD,SED);
 
-str.NMD_AF = '/home/jason/orderdisorder/lj/alloy/10K/0.0/8x/NMD_AF/1';
+str.NMD_AF = '/home/jason/disorder/lj/alloy/10K/0.0/4x/NMD_AF/1/work';
 NMD_AF=load(strcat(str.NMD_AF,'/NMDfit.mat'));
 SED_AF=load(strcat(str.NMD_AF,'/SEDfit.mat'));
 
-str.NMD_X = '/home/jason/orderdisorder/lj/alloy/10K/0.0/8x/XCORR_AF/1';
+str.NMD_X = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
 NMD_X=load(strcat(str.NMD_X,'/NMDfit.mat'));
 SED_X=load(strcat(str.NMD_X,'/SEDfit.mat'));
 
 loglog(...
-    SED.freq*NMD.LJ.tau,SED.life/NMD.LJ.tau,'.',...
+    SED.freq,SED.life,'.',...
     SED_X.HLDfreq,SED_X.life,'.'...
     )
 pause
 loglog(...
-    SED.freq*NMD.LJ.tau,SED.life/NMD.LJ.tau,'.',...
+    SED.freq,SED.life,'.',...
+    SED_AF.HLDfreq,SED_AF.life,'.'...
+    )
+pause
+loglog(...
+    SED_X.HLDfreq,SED_X.life,'.',...
     SED_AF.HLDfreq,SED_AF.life,'.'...
     )
 
