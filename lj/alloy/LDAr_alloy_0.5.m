@@ -33,7 +33,7 @@ LD.mass(1) = 1.0; LD.mass(2) = 3.0;
 
 %--------------------------------------------------------------------------
 [tmp,str.main] = system('pwd'); str.main_write = str.main;
-str.main = strcat('/home/jason/lammps/LJ/alloy/10K/0.5/8x/NMD/');
+str.main = strcat('/home/jason/disorder/lj/alloy/10K/0.5/8x/work');
 
 %--------------------------------------------------------------------------
 tic

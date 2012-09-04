@@ -32,7 +32,7 @@ LD.mass(1) = 1.0; LD.mass(2) = 3.0;
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-str.main = strcat('/home/jason/lammps/LJ/alloy/10K/0.5/8x/NMD/');
+str.main = strcat('/home/jason/disorder/lj/alloy/10K/0.5/8x/work/');
 %--------------------------------------------------------------------------
 tic
 %--------------------------------------------------------------------------
@@ -312,7 +312,7 @@ LD.Sij_z(1:LD.NUM_MODES+1:LD.NUM_MODES*LD.NUM_MODES) = 0;
 LD=rmfield(LD,'vij_x'); LD=rmfield(LD,'vij_y'); LD=rmfield(LD,'vij_z');
 
 %Lorentzian
-LD.dw_avg = real(mean(LD.freq(2:LD.NUM_MODES)-LD.freq(1:LD.NUM_MODES-1)));
+LD.dw_avg = real(mean(LD.freq(5:LD.NUM_MODES)-LD.freq(4:LD.NUM_MODES-1)));
 LD.delwij = ...
     repmat(LD.freq,1,LD.NUM_MODES) - repmat(LD.freq',LD.NUM_MODES,1 ) ;
 LD.lor = (1.0/pi)*(LD.dw_avg./( LD.delwij.^2 + LD.dw_avg^2 ) );
@@ -351,7 +351,7 @@ AF.Di = LD.Di;
 AF.kappa = LD.kappa;
 
 save(...
-    strcat(NMD.str.main,'AF.mat'),...
+    strcat(str.main,'AF.mat'),...
     '-struct', 'AF');
 
 %--------------------------------------------------------------------------

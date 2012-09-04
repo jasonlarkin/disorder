@@ -1,18 +1,30 @@
 
+%4x
+str.nmd = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
+nmdx(1).nmd = load(strcat(str.nmd,'/NMDfit.mat'));
+nmdx(1).sed = load(strcat(str.nmd,'/SEDfit.mat'));
+%4x_2
+str.nmd = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/tmp/1';
+nmdx(2).nmd = load(strcat(str.nmd,'/NMDfit.mat'));
+nmdx(2).sed = load(strcat(str.nmd,'/SEDfit.mat'));
+%4x_3
+str.nmd = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/work/1';
+nmdx(3).nmd = load(strcat(str.nmd,'/NMDfit.mat'));
+nmdx(3).sed = load(strcat(str.nmd,'/SEDfit.mat'));
+%4x_4
+str.nmd = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/219/1';
+nmdx(4).nmd = load(strcat(str.nmd,'/NMDfit.mat'));
+nmdx(4).sed = load(strcat(str.nmd,'/SEDfit.mat'));
 
-
-% str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/8x/NMD/1/work';
-% NMD=load(strcat(str.NMD,'/NMDdata.mat'));
-% SED=load(strcat(str.NMD,'/SEDdata.mat'));
-% SED = nmd_convert_data(NMD,SED);
-% 
-% str.NMD_AF = '/home/jason/disorder/lj/alloy/10K/0.0/8x/NMD_AF/1/work';
-% NMD_AF=load(strcat(str.NMD_AF,'/NMDfit.mat'));
-% SED_AF=load(strcat(str.NMD_AF,'/SEDfit.mat'));
-% 
-% str.NMD_X = '/home/jason/disorder/lj/alloy/10K/0.0/8x/XCORR_AF/1/work';
-% NMD_X=load(strcat(str.NMD_X,'/NMDfit.mat'));
-% SED_X=load(strcat(str.NMD_X,'/SEDfit.mat'));
+loglog(...
+    nmdx(1).sed.HLDfreq,nmdx(1).sed.life,'.',...
+    nmdx(2).sed.HLDfreq,nmdx(2).sed.life,'.',...
+    nmdx(3).sed.HLDfreq,nmdx(3).sed.life,'.',...
+    nmdx(4).sed.HLDfreq,nmdx(4).sed.life,'.'...
+    )
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
 
 str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/NMD/1/work';
 NMD=load(strcat(str.NMD,'/NMDdata.mat'));
@@ -23,7 +35,8 @@ str.NMD_AF = '/home/jason/disorder/lj/alloy/10K/0.0/4x/NMD_AF/1/work';
 NMD_AF=load(strcat(str.NMD_AF,'/NMDfit.mat'));
 SED_AF=load(strcat(str.NMD_AF,'/SEDfit.mat'));
 
-str.NMD_X = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
+%str.NMD_X = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
+str.NMD_X = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/tmp/1';
 NMD_X=load(strcat(str.NMD_X,'/NMDfit.mat'));
 SED_X=load(strcat(str.NMD_X,'/SEDfit.mat'));
 
@@ -41,94 +54,29 @@ loglog(...
     SED_X.HLDfreq,SED_X.life,'.',...
     SED_AF.HLDfreq,SED_AF.life,'.'...
     )
-
-
-
-
-% [tmp,str.main]=system('pwd');
-% 
-% XCORR_RANGE = 150; NMD_RANGE = 1000;
-% 
-% %0.15 469
-% 
-% for imode=1:size(SED.modemaster,2)      
-% 
-%     imode
-%     
-%     plot(...
-%         SED.omega(1:XCORR_RANGE),...
-%         SED.sed(1:XCORR_RANGE,imode),...
-%         SED.omega(1:XCORR_RANGE),...
-%         cumtrapz(SED.sed(1:XCORR_RANGE,imode))*SED.omega(1)*NMD.LJ.tau*1E12...
-%         )
-% 
-% %     plot(...
-% %         NMD_SED.omega(1:NMD_RANGE),...
-% %         NMD_SED.sed(1:NMD_RANGE,imode)/max(NMD_SED.sed(1:NMD_RANGE,imode)),...
-% %         SED.omega(1:XCORR_RANGE),...
-% %         SED.sed(1:XCORR_RANGE,imode)...
-% %         )
-% 
-% % subplot(2,1,1), ...
-% %     plot(...
-% %     SED.omega(1:XCORR_RANGE),...
-% %     SED.sed(1:XCORR_RANGE,imode)...
-% %     )
-% % subplot(2,1,2), ...
-% %     plot(...
-% %     NMD_SED.omega(1:NMD_RANGE),...
-% %     NMD_SED.sed(1:NMD_RANGE,imode)/max(NMD_SED.sed(1:NMD_RANGE,imode))...
-% %     )
-% 
-% 
-% %--------------------------------------------------------------------------
-% %dual plot
-% %--------------------------------------------------------------------------
-% 
-% % hl1 =...
-% %     line(...
-% %     SED.omega(1:XCORR_RANGE),...
-% %     SED.sed(1:XCORR_RANGE,imode),'Color','r');
-% % ax1 = gca;
-% % set(ax1,'XColor','r','YColor','r')
-% % 
-% % ax2 = axes('Position',get(ax1,'Position'),...
-% %            'XAxisLocation','top',...
-% %            'YAxisLocation','right',...
-% %            'Color','none',...
-% %            'XColor','k','YColor','k');
-% % hl2 =...
-% %     line(...
-% %     SED.omega(1:XCORR_RANGE),...
-% %     cumtrapz(SED.sed(1:XCORR_RANGE,imode))*SED.omega(1)*NMD.LJ.tau*1E12,...
-% %     'Color','k','Parent',ax2);
-% 
-% %--------------------------------------------------------------------------
-% %dual plot
-% %--------------------------------------------------------------------------
-% 
-% XCORR_compare_SED_createfigure(...
-%     SED.omega(1:XCORR_RANGE),...
-%     SED.sed(1:XCORR_RANGE,imode),...
-%     cumtrapz(SED.sed(1:XCORR_RANGE,imode))*SED.omega(1)*NMD.LJ.tau*1E12...
-%     )
-% 
-% 
-% %--------------------------------------------------------------------------
-% pause
-% %--------------------------------------------------------------------------
-% end
-
-% %save only the fit properties
-% SEDfit.HLDfreq = SED.HLDfreq;
-% SEDfit.life = SED.life;
-%     
-% save(strcat(str.NMD,'/NMDfit.mat'), '-struct', 'NMD');
-% save(strcat(str.NMD,'/SEDfit.mat'), '-struct', 'SEDfit');
-% 
-% figure
-% 
-% loglog(SED.HLDfreq(:),SED.life(:),'.')
-
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+loglog(...
+    SED.freq,SED.life,'.',...
+    nmdx(3).sed.HLDfreq,nmdx(3).sed.life,'.'...
+    )
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+loglog(...
+    SED_AF.HLDfreq,SED_AF.life,'.',...
+    nmdx(3).sed.HLDfreq,nmdx(3).sed.life,'.'...
+    )
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+loglog(...
+    SED_AF.HLDfreq,SED_AF.life,'.',...
+    nmdx(4).sed.HLDfreq,nmdx(4).sed.life,'.'...
+    )
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
 
 

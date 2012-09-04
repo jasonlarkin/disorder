@@ -16,11 +16,18 @@ tic
 
 for imode = 1:size(freq,1)
 
-KX = kpt(:,1)./abs(kpt(:,1));
+% KX = kpt(:,1)./abs(kpt(:,1));
+% Inan = find(isnan(KX)==1); KX(Inan)=0;
+% KY = kpt(:,2)./abs(kpt(:,2));
+% Inan = find(isnan(KY)==1); KY(Inan)=0;
+% KZ = kpt(:,3)./abs(kpt(:,3));
+% Inan = find(isnan(KZ)==1); KZ(Inan)=0;
+
+KX = kpt(:,1);
 Inan = find(isnan(KX)==1); KX(Inan)=0;
-KY = kpt(:,2)./abs(kpt(:,2));
+KY = kpt(:,2);
 Inan = find(isnan(KY)==1); KY(Inan)=0;
-KZ = kpt(:,3)./abs(kpt(:,3));
+KZ = kpt(:,3);
 Inan = find(isnan(KZ)==1); KZ(Inan)=0;
 
 
@@ -72,8 +79,9 @@ end
 
 DSF.kpt = kpt;
 DSF.dsf = dsf;
+DSF.freq = freq;
 
-save(strcat(str,'DSF.mat'), '-struct', 'DSF');
+save(strcat(str,'DSF_long.mat'), '-struct', 'DSF');
 %--------------------------------------------------------------------------
 toc
 %--------------------------------------------------------------------------

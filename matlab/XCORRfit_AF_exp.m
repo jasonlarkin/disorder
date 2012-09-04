@@ -3,8 +3,11 @@
 %0.0
 %--------------------------------------------------------------------------
 %4x
-str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
-
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
+% %4x_2
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/tmp/1';
+%4x_3
+str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/work/1';
 
 %--------------------------------------------------------------------------
 %amor

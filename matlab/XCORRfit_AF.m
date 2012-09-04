@@ -3,8 +3,15 @@
 %0.0
 %--------------------------------------------------------------------------
 %4x
-str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
+% %4x_2
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/tmp/1';
+%4x_3
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/work/1';
+%4x_4
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/219/1';
 
+str.NMD = '/home/jason/disorder/lj/alloy/10K/0.5/10x/XCORR_AF/219/1';
 
 %--------------------------------------------------------------------------
 %amor
@@ -14,7 +21,7 @@ str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/1/work';
 %8x
 %str.NMD = '/home/jason/lammps/LJ/amorphous/8x/XCORR_AF/1';
 %10x
-% str.NMD = '/home/jason/lammps/LJ/amorphous/10x/XCORR_AF/1';
+%str.NMD = '/home/jason/disorder/lj/amor/10x/XCORR_AF/219/1';
 
 
 
@@ -25,13 +32,15 @@ SED=load(strcat(str.NMD,'/SEDavg.mat'));
 
 [tmp,str.main]=system('pwd');
 
-XCORR_RANGE = 4000;
+XCORR_RANGE = 4096;
 
 for imode=1:size(SED.modemaster,2)      
 
     imode
 
-    I = find( SED.sed(1:XCORR_RANGE,imode) < 0);
+% %subtract long time average
+%     SED.sed(:,imode) =...
+%         SED.sed(:,imode) - mean(SED.sed(1000:XCORR_RANGE,imode));
     
     plot(...
         SED.omega(1:XCORR_RANGE),...
@@ -45,7 +54,7 @@ for imode=1:size(SED.modemaster,2)
     SED.life(imode) = max(cumtrapz(SED.sed(:,imode))*SED.omega(1))
     
 %--------------------------------------------------------------------------
-%pause
+pause
 %--------------------------------------------------------------------------
 end
 
@@ -58,7 +67,10 @@ save(strcat(str.NMD,'/SEDfit.mat'), '-struct', 'SEDfit');
 
 figure
 
-loglog(SED.HLDfreq(:),SED.life(:),'.')
+loglog(...
+    SED.HLDfreq(:),SED.life(:),'.',...
+    SED.HLDfreq(:),1E3*SED.HLDfreq(:).^(-4)...
+    )
 
 
 
