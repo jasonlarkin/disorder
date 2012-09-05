@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_mfp_jl_090512.aux
+The style file: apsrev.bst
+Database file #1: references.bib
+I was expecting an "="---line 12353 of file references.bib
+ : TY  
+ :     - JOUR
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 12713 of file references.bib
+ : 
+ : URL = {http://pubs.acs.org/doi/abs/10.1021/ja063695y},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140106128165816.
+You've used 21 entries,
+            3411 wiz_defined-function locations,
+            1281 strings with 13142 characters,
+and the built_in function-call counts, 13181 in all, are:
+= -- 741
+> -- 379
+< -- 62
++ -- 292
+- -- 94
+* -- 1737
+:= -- 1470
+add.period$ -- 21
+call.type$ -- 21
+change.case$ -- 85
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 1210
+empty$ -- 1188
+format.name$ -- 244
+if$ -- 2509
+int.to.chr$ -- 2
+int.to.str$ -- 22
+missing$ -- 193
+newline$ -- 78
+num.names$ -- 64
+pop$ -- 341
+preamble$ -- 1
+purify$ -- 84
+quote$ -- 0
+skip$ -- 500
+stack$ -- 0
+substring$ -- 449
+swap$ -- 917
+text.length$ -- 49
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 112
+warning$ -- 0
+while$ -- 57
+width$ -- 0
+write$ -- 218
+(There were 2 error messages)
