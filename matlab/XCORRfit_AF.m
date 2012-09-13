@@ -11,17 +11,17 @@
 %4x_4
 %str.NMD = '/home/jason/disorder/lj/alloy/10K/0.0/4x/XCORR_AF/219/1';
 
-str.NMD = '/home/jason/disorder/lj/alloy/10K/0.5/10x/XCORR_AF/219/1';
+%str.NMD = '/home/jason/disorder/lj/alloy/10K/0.05/10x/XCORR_AF/220/1/work';
 
 %--------------------------------------------------------------------------
 %amor
 %--------------------------------------------------------------------------
 %4x
-%str.NMD = '/home/jason/lammps/LJ/amorphous/4x/XCORR_AF/1';
+str.NMD = '/home/jason/disorder/lj/amor/4x/XCORR_AF/220/1/work';
 %8x
 %str.NMD = '/home/jason/lammps/LJ/amorphous/8x/XCORR_AF/1';
 %10x
-%str.NMD = '/home/jason/disorder/lj/amor/10x/XCORR_AF/219/1';
+%str.NMD = '/home/jason/disorder/lj/amor/10x/XCORR_AF/220/1/work';
 
 
 
@@ -38,9 +38,9 @@ for imode=1:size(SED.modemaster,2)
 
     imode
 
-% %subtract long time average
-%     SED.sed(:,imode) =...
-%         SED.sed(:,imode) - mean(SED.sed(1000:XCORR_RANGE,imode));
+%subtract long time average
+    SED.sed(:,imode) =...
+        SED.sed(:,imode) - mean(SED.sed(250:1000,imode));
     
     plot(...
         SED.omega(1:XCORR_RANGE),...
@@ -69,6 +69,7 @@ figure
 
 loglog(...
     SED.HLDfreq(:),SED.life(:),'.',...
+    SED.HLDfreq(:),1E3*SED.HLDfreq(:).^(-2),...
     SED.HLDfreq(:),1E3*SED.HLDfreq(:).^(-4)...
     )
 

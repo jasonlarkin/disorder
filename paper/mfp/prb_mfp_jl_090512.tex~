@@ -1403,7 +1403,6 @@ H \approx 2\sum_{\pmb{\kappa},\nu}^{N,3n}\langle T\kvt\rangle = \sum_{\pmb{\kapp
 %\caption{\label{FIG:amor_vel} plot comparison of phonon diffusivity versus AF mode diffusivity for LJ 4x.}
 %\end{figure}
 \clearpage
-\addcontentsline{toc}{section}{8 \hspace{1mm} References}
-\bibliographystyle{plain}
-\bibliography{ref_lj_amor}
+\bibliographystyle{apsrev}
+\bibliography{references}
 \end{document}

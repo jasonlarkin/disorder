@@ -18,6 +18,9 @@ SED.ETOT(...
 for iseed = 1:NMD.NUM_SEEDS
     
 for ifft = 1:NMD.NUM_FFTS  
+%--------------------------------------------------------------------------
+tic  
+%--------------------------------------------------------------------------
 %VElOCITIES
     str_read=...
         strcat(...
@@ -26,26 +29,9 @@ for ifft = 1:NMD.NUM_FFTS
     fid=fopen(str_read);
     dummy = textscan(fid,'%f%f%f','Delimiter',' ','commentStyle', '--'); 
     fclose(fid);
-%POSITIONS
-    str_read=...
-        strcat(...
-	NMD.str.main,'/',int2str(NMD.seed.alloy),...
-        '/work/dump_',int2str(iseed),'_',int2str(ifft),'.pos');
-    fid=fopen(str_read);
-    dummy2 = textscan(fid,'%f%f%f','Delimiter',' ','commentStyle', '--'); 
-    fclose(fid);
-%Store velocity data of all atoms: subtract off the last time step
     velx = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
     vely = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
     velz = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
-
-    posx = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
-    posy = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
-    posz = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
-
-%--------------------------------------------------------------------------
-tic  
-%--------------------------------------------------------------------------
     for iatom = 1:NMD.NUM_ATOMS  
         velx(iatom,1:NMD.NUM_TSTEPS) =...
             dummy{1}...
@@ -56,7 +42,22 @@ tic
         velz(iatom,1:NMD.NUM_TSTEPS) =...
             dummy{3}...
             (iatom:NMD.NUM_ATOMS:(length(dummy{1}(:))-NMD.NUM_ATOMS));
-
+    end
+%Remove dummy
+    clear dummy
+%POSITIONS
+    str_read=...
+        strcat(...
+	NMD.str.main,'/',int2str(NMD.seed.alloy),...
+        '/work/dump_',int2str(iseed),'_',int2str(ifft),'.pos');
+    fid=fopen(str_read);
+    dummy2 = textscan(fid,'%f%f%f','Delimiter',' ','commentStyle', '--'); 
+    fclose(fid);
+%Store velocity data of all atoms: subtract off the last time step
+    posx = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
+    posy = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
+    posz = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
+    for iatom = 1:NMD.NUM_ATOMS  
     	posx(iatom,1:NMD.NUM_TSTEPS) =...
 	    dummy2{1}(iatom:NMD.NUM_ATOMS:(length(dummy2{1}(:))-NMD.NUM_ATOMS))- ...
 		NMD.x0(iatom,3);
@@ -67,11 +68,12 @@ tic
 	    dummy2{3}(iatom:NMD.NUM_ATOMS:(length(dummy2{1}(:))-NMD.NUM_ATOMS))-...
 		NMD.x0(iatom,5);
     end
+%Remove dummy
+    clear dummy2
 %--------------------------------------------------------------------------
 toc
 %--------------------------------------------------------------------------
-%Remove dummy
-    clear dummy dummy2
+
 %Set mass array
 %     m = repmat(NMD.mass(:,1),1,NMD.NUM_TSTEPS);     
     m = NMD.mass(:,1);

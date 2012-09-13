@@ -1,0 +1,85 @@
+LAMMPS (2 Nov 2010)
+
+#--------------------------------------------------------------------------
+units			lj
+atom_style		atomic
+read_data		lmp.in.x0
+  orthogonal box = (0 0 0) to (6.3454 6.3454 6.3454)
+  1 by 1 by 1 processor grid
+  256 atoms
+#--------------------------------------------------------------------------
+pair_style		lj/cut 2.5
+pair_coeff		* * 1.0 1.0
+pair_modify          	shift yes
+#--------------------------------------------------------------------------
+
+dump min all custom 10000 relax.pos x y z
+dump_modify min sort id
+minimize 0 1e-6 1000 10000
+WARNING: Resetting reneighboring criteria during minimization
+Memory usage per processor = 2.21012 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0   -6.8766114            0   -6.8766114  -0.77647166 
+      59            0   -6.8766989            0   -6.8766989  -0.76740318 
+Loop time of 0.182547 on 1 procs for 59 steps with 256 atoms
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -6.87661136366     -6.87669888991     -6.87669888991
+  Force two-norm initial, final = 2.00767 0.0363194
+  Force max component initial, final = 0.262479 0.0125788
+  Final line search alpha, max atom move = 0.00195312 2.4568e-05
+  Iterations, force evaluations = 59 529
+
+Pair  time (%) = 0.170133 (93.1993)
+Neigh time (%) = 0.000640154 (0.350679)
+Comm  time (%) = 0.00667977 (3.65921)
+Outpt time (%) = 0 (0)
+Other time (%) = 0.00509453 (2.7908)
+
+Nlocal:    256 ave 256 max 256 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    1443 ave 1443 max 1443 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    11419 ave 11419 max 11419 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 11419
+Ave neighs/atom = 44.6055
+Neighbor list builds = 1
+Dangerous builds = 0
+#fix 1 all box/relax iso 0.0 vmax 0.001
+#unfix 1
+
+#--------------------------------------------------------------------------
+	fix			1 all nve
+	dump 			force all custom 1 lmp.dump.force fx fy fz
+	dump_modify 		force sort id
+	dump 			pos all custom 1 lmp.dump.pos x y z
+	dump_modify 		pos sort id
+	run	1
+Memory usage per processor = 1.76993 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      59            0   -6.8766989            0   -6.8766989  -0.76740318 
+      60 4.2940239e-11   -6.8766989            0   -6.8766989   -0.7674032 
+Loop time of 0.00106215 on 1 procs for 1 steps with 256 atoms
+
+Pair  time (%) = 0.000439882 (41.4141)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 1.62125e-05 (1.52637)
+Outpt time (%) = 0.000593185 (55.8474)
+Other time (%) = 1.28746e-05 (1.21212)
+
+Nlocal:    256 ave 256 max 256 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    1447 ave 1447 max 1447 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    11434 ave 11434 max 11434 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 11434
+Ave neighs/atom = 44.6641
+Neighbor list builds = 0
+Dangerous builds = 0
+

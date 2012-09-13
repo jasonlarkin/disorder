@@ -1,5 +1,5 @@
 
-function DSF = m_dsf_long( str , kpt , x0 , freq, eigvec )
+function DSF = m_dsf_long( str , kpt , x0 , freq, eigvec, alat )
 %M_DSF_LONG
 %	m_dsf_long( str , kpt , x0 , freq, eigvec )
 %	
@@ -23,11 +23,11 @@ for imode = 1:size(freq,1)
 % KZ = kpt(:,3)./abs(kpt(:,3));
 % Inan = find(isnan(KZ)==1); KZ(Inan)=0;
 
-KX = kpt(:,1);
+KX = kpt(:,1)/alat;
 Inan = find(isnan(KX)==1); KX(Inan)=0;
-KY = kpt(:,2);
+KY = kpt(:,2)/alat;
 Inan = find(isnan(KY)==1); KY(Inan)=0;
-KZ = kpt(:,3);
+KZ = kpt(:,3)/alat;
 Inan = find(isnan(KZ)==1); KZ(Inan)=0;
 
 

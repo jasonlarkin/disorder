@@ -1,20 +1,20 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_mfp_jl_090512.aux
 The style file: apsrev.bst
-Database file #1: references.bib
-I was expecting an "="---line 12353 of file references.bib
+Database file #1: /home/jason/ntpl-ref/references.bib
+I was expecting an "="---line 12353 of file /home/jason/ntpl-ref/references.bib
  : TY  
  :     - JOUR
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12713 of file references.bib
+I was expecting a `,' or a `}'---line 12713 of file /home/jason/ntpl-ref/references.bib
  : 
  : URL = {http://pubs.acs.org/doi/abs/10.1021/ja063695y},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Reallocated wiz_functions (elt_size=4) to 6000 items from 140106128165816.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140728898423736.
 You've used 21 entries,
             3411 wiz_defined-function locations,
-            1281 strings with 13142 characters,
+            1281 strings with 13163 characters,
 and the built_in function-call counts, 13181 in all, are:
 = -- 741
 > -- 379

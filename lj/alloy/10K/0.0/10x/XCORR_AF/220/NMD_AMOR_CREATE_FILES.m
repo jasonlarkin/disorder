@@ -34,7 +34,7 @@ NMD.constant.eV2J = 1.60217646E-19;
 %--------------------------------------------------------------------------
 
 NMD.walltime.lammps = 8; NMD.cpu.lammps = 8; 
-NMD.walltime.matlab = 24; NMD.cpu.matlab = 6; NMD.mem.matlab = 14;
+NMD.walltime.matlab = 24; NMD.cpu.matlab = 8; NMD.mem.matlab = 16;
 
 %--------------------------------------------------------------------------
     NMD.Nx = 10; NMD.Ny = 10; NMD.Nz = 10;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  5 SEP 2012 09:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  7 SEP 2012 13:12
 entering extended mode
  %&-line parsing enabled.
 **prb_mfp_jl_090512.tex
@@ -477,12 +477,7 @@ l.941 ...le=0,width=70.0mm]{LJ_NMD_SED_COND_2.eps}
 ? 
 File: LJ_NMD_SED_COND_2.eps Graphic file (type eps)
 <LJ_NMD_SED_COND_2.eps> [10] [11] [12] (./prb_mfp_jl_090512.bbl [13]) [14]
-(./prb_mfp_jl_090512.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./prb_mfp_jl_090512.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -493,7 +488,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3566 strings out of 493849
  43343 string characters out of 1152846
- 158227 words of memory out of 3000000
+ 158211 words of memory out of 3000000
  6800 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191

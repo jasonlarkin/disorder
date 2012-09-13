@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_mfp_jl_090612.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason.bib
+Warning--I didn't find a database entry for "schelling2002"
+Warning--I didn't find a database entry for "Garg2011"
+Warning--I didn't find a database entry for "dove1993"
+Warning--I didn't find a database entry for "wallace1972"
+Warning--I didn't find a database entry for "rudin1987"
+Warning--I didn't find a database entry for "maradudin1962"
+Warning--I didn't find a database entry for "ladd1986"
+Warning--I didn't find a database entry for "mcquarrie2000"
+Warning--I didn't find a database entry for "ashcroft1976"
+Warning--I didn't find a database entry for "turney2009a"
+Warning--I didn't find a database entry for "mcgaughey2004a"
+Warning--I didn't find a database entry for "mcgaughey2006b"
+Warning--I didn't find a database entry for "ziman2001"
+Warning--I didn't find a database entry for "mcgaughey2004c"
+Warning--I didn't find a database entry for "goicochea2010"
+Warning--I didn't find a database entry for "He2011a"
+Warning--I didn't find a database entry for "sellan2010b"
+Warning--I didn't find a database entry for "Larkin2012"
+Warning--I didn't find a database entry for "maradudin1974"
+Warning--I didn't find a database entry for "srivastava1990"
+Warning--I didn't find a database entry for "turneythesis"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140282221824952.
+You've used 2 entries,
+            3411 wiz_defined-function locations,
+            1190 strings with 10754 characters,
+and the built_in function-call counts, 1616 in all, are:
+= -- 88
+> -- 58
+< -- 7
++ -- 48
+- -- 14
+* -- 221
+:= -- 173
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 137
+empty$ -- 130
+format.name$ -- 34
+if$ -- 300
+int.to.chr$ -- 1
+int.to.str$ -- 3
+missing$ -- 21
+newline$ -- 21
+num.names$ -- 6
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 62
+stack$ -- 0
+substring$ -- 60
+swap$ -- 112
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 34
+(There were 21 warnings)

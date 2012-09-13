@@ -1,0 +1,15 @@
+# Si primitive	
+
+NUM_ATOMS atoms
+1 atom types	
+
+0.0 LX xlo xhi
+0.0 LY ylo yhi
+0.0 LZ zlo zhi
+
+Masses
+
+1 1.0
+
+Atoms				
+

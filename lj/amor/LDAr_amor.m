@@ -23,7 +23,7 @@ constant.eV2J = 1.60217646E-19;
 
 %--------------------------------------------------------------------------
 [tmp,str.main] = system('pwd'); str.main_write = str.main;
-str.main = strcat(str.main,'/4x/AF/');
+str.main = strcat(str.main,'/4x/work/10K_relax/2/');
 
 %--------------------------------------------------------------------------
 iseed = 1;
@@ -39,7 +39,7 @@ tic
 %--------------------------------------------------------------------------
 
 %read data
-    dummy = dlmread(strcat(str.main,'LJ_amor_',int2str(iseed),'.pos'));
+    dummy = dlmread(strcat(str.main,'x0.data'));
     LD.param = dummy(1,:);
     LD.id = dummy(2:size(dummy,1),1);
     LD.m = LD.mass(dummy(2:size(dummy,1),2))';
@@ -202,7 +202,9 @@ LD=rmfield(LD,'Phisum');
 %--------------------------------------------------------------------------
 %pause
 %--------------------------------------------------------------------------     
-    
+
+LD.Dynam = (1/2)*(LD.Dynam' + LD.Dynam);    
+
 [LD.eigvec LD.eigval] = eig(LD.Dynam);
 LD.freq = sqrt(diag(LD.eigval));
 %get rid of small imag for first 3 acoustic modes
@@ -338,28 +340,28 @@ Inan = isnan(LD.Di); I = Inan==1; LD.Di(I) = 0.0;
 
 LD=rmfield(LD,'Sij_x'); LD=rmfield(LD,'Sij_y'); LD=rmfield(LD,'Sij_z');
 
-figure
-plot3(LD.x,LD.y,LD.z,'.')
+%figure
+%plot3(LD.x,LD.y,LD.z,'.')
 
-figure
-plot(LD.Di)
+%figure
+%plot(LD.Di)
 
 LD.kappa =...
     sum(LD.Di)*((LJ.sigma^2)/LJ.tau)*constant.kb/(LD.VOLUME*LJ.sigma^3);
 
 %output
 output = [LD.freq LD.Di];
-str.write = strcat(str.main,'Di(wi)_',int2str(iseed),'.dat');
+str.write = strcat(str.main,'AF_Di(wi)_',int2str(iseed),'.dat');
 dlmwrite(str.write,output,'delimiter',' ');
 
-str.write = strcat(str.main,'freq_',int2str(iseed),'.dat');
+str.write = strcat(str.main,'AF_freq_',int2str(iseed),'.dat');
 dlmwrite(str.write,LD.freq,'delimiter',' ');
 
-str.write = strcat(str.main,'eigvec_',int2str(iseed),'.dat');
+str.write = strcat(str.main,'AF_eigvec_',int2str(iseed),'.dat');
 dlmwrite(str.write,LD.eigvec,'delimiter',' ');
 
 output = [LD.kappa];
-str.write = strcat(str.main,'kappa.dat');
+str.write = strcat(str.main,'AF_kappa.dat');
 dlmwrite(str.write,output,'-append','delimiter',' ');
 
 %--------------------------------------------------------------------------
