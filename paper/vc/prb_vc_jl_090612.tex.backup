@@ -252,28 +252,34 @@ mean free paths. Estimating an effective dispersion
 relation is required for calulating group velocities for 
 disordered modes, which is crucial for transforming lifetimes to MFPs.
 The spectrum of phonon MFPs and the accumulated thermal conductivity 
-are predicted for a model of amorphous silicon which 
+are predicted for a model of amorphous silicon. Predictions of thermal 
+conductivity using a boundary scattering model demonstrates  
 
 
 
 \section{\label{S:}Determining Propagating and Localized Modes}
 %--------------------------------------------------------------------------
 
-\section{\label{S-Motivation}Determining Propagating and Localized Modes}
+Klemens scattering paper showing rayleigh \cite{klemens_scattering_1955}.
 
-Determine by Ioffe-Regel limit:
+Duda shows the reduction in group velocity of disordered systems.
+\cite{duda_reducing_2011}
 
-$\tau ~ 1/\omega$
+Garg show that the virtual crystal approximation works well for Si-Ge 
+\cite{garg_role_2011}
 
-Determine by mean free path condition:
+Duda shows that taking a perfect alloy and disordering via an order 
+parameter allows control of thermal conductivity.
+\cite{duda_controlling_2012}
 
-$\Lambda \gt \lambda$
+Tamura gives an expression for mass defect scattering which is harmonic and 
+given by \cite{tamura_isotope_1983}:
 
-It is difficult to assign a wavevector (and hence a wavelength) to disordered mode.  Therefore, some limit must be imposed:
+The Rayleigh scattering limit is observed in the low-frequency limit, 
+where the DOS is approximately Debye.
 
-$\Lambda \gt a$
 
-Where a is the lattice spacing.
+
 
 \section{\label{S-Motivation}Ordered Alloys}
 

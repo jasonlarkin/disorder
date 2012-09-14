@@ -260,21 +260,37 @@ conductivity using a boundary scattering model demonstrates
 \section{\label{S:}Determining Propagating and Localized Modes}
 %--------------------------------------------------------------------------
 
-\section{\label{S-Motivation}Determining Propagating and Localized Modes}
+Klemens scattering paper showing rayleigh \cite{klemens_scattering_1955}.
 
-Determine by Ioffe-Regel limit:
+Duda shows the reduction in group velocity of disordered systems.
+\cite{duda_reducing_2011}
 
-$\tau ~ 1/\omega$
+Garg show that the virtual crystal approximation works well for Si-Ge 
+\cite{garg_role_2011}
 
-Determine by mean free path condition:
+Duda shows that taking a perfect alloy and disordering via an order 
+parameter allows control of thermal conductivity.
+\cite{duda_controlling_2012}
 
-$\Lambda \gt \lambda$
+Tamura gives an expression for mass defect scattering which is harmonic and 
+given by \cite{tamura_isotope_1983}:
 
-It is difficult to assign a wavevector (and hence a wavelength) to disordered mode.  Therefore, some limit must be imposed:
+The Rayleigh scattering limit is observed in the low-frequency limit, 
+where the DOS is approximately Debye.
 
-$\Lambda \gt a$
+Cahill shows that conductivty of Ge-doped Si epitaxial layers agrees with 
+the defect scaling cross section is captured mostly by the mass disorder.
+\cite{cahill_thermal_2004}
 
-Where a is the lattice spacing.
+Cahill shows that even though the mass difference between Si and Ge is 
+larger than the mass of Si, the defect scaling agrees with experimental 
+measurements of thermal conductivity in dilute SiGe epitaxial layers.
+\cite{cahill_thermal_2005}
+
+Tian showed, using ab initio calculations, that the virtual crystal 
+appromxation with defect scalings work well for predicting the thermal 
+conductivity of PbSe/PbTe alloys.\cite{tian_phonon_2012}
+
 
 \section{\label{S-Motivation}Ordered Alloys}
 

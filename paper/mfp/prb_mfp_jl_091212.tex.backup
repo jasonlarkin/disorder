@@ -245,9 +245,17 @@ frequencies, it does not correctly predict the lifetimes.
 \clearpage
 \section{\label{S:Introduction}Introduction}
 %--------------------------------------------------------------------------
+Thermal conductivity of amorphous solids\cite{freeman_thermal_1986}, which 
+unique temperature dependance compared to ordered solids.
+
 Measurements by Moon.  Measurements by all the refs from Galli paper.  The 
 key to understanding such measurement is to estimate a MFP for the 
 vibrational modes in disordered systems. 
+
+Cahill showed that the lattice vibrations in a disordered crystal are 
+essentially the same as those of an amorhous solid.
+\cite{cahill_lower_1992} 
+
 
 
 The goal of this work is to predict the MFP of vibrational modes in 
@@ -271,14 +279,29 @@ velocity should be.\cite{he_heat_2011}
 
 k = sum over modes
 
+Diffusons, locons and propagons \cite{allen_diffusons_1999}.
+
+
+
 \section{\label{S:Lifetimes}Lifetimes of Disordered Modes}
 %--------------------------------------------------------------------------
 
-Thermal diffusivity has been predicted before using a wave-packet method
-
-Lifetimes in amorphous silicon predicted before using the
+Lifetimes in amorphous silicon predicted before using a normal mode 
+approach, but mode-by-mode properties were not presented.
  \cite{bickham_calculation_1998}
 
+Lifetimes were predicted using anharmonic lattice dynamics, but no thermal 
+transport properties were predicted.\cite{fabian_anharmonic_1996}
+
+Thermal diffusivity was predicted for a percolation network which showed 
+Rayleigh type scattering dependance in the low-frequency limit.
+\cite{sheng_heat_1991}
+
+
+Thermal diffusivity has been predicted using a wave-packet method
+
+\section{\label{S:Lifetimes}Thermal Conductivity Diffusivity}
+%--------------------------------------------------------------------------
 
 
 In this work, we predict the lifetimes of vibrational modes using normal 
@@ -287,16 +310,41 @@ mode decomposition \cite{turney_predicting_2009-1}.
 
 Previous studies \cite{he_heat_2011}.
 
-\subsection{\label{S:Lifetimes:}Characterization of Vibrational Modes}
+\section{\label{S-Motivation}Allen Feldman Diffusivity}
+%--------------------------------------------------------------------------
 
+Allen Feldman theory \cite{allen_thermal_1993}.
+
+Feldman measure the DOS using the average level spacing.
+\cite{feldman_numerical_1999} 
+
+Predictions for a-Si, also effects of mass disorder.
+\cite{feldman_thermal_1993}: is Di pinned near a value of Di~(1/3)va?
+
+
+\subsection{\label{S:Lifetimes:}Characterization of Vibrational Modes}
+%--------------------------------------------------------------------------
 If determined by the Ioffe-Regel limit, $\tau \kv < 1/\omega \kv$.
 \cite{taraskin_determination_1999} However, for thermal transport 
-analysis this definition is not useful. 
+analysis this definition is not useful on its own. Show that Anderson 
+loclization is exponetial depenance of mode excitation on distance from 
+some local center\cite{feldman_numerical_1999}. If Ioffe-Regel limit is 
 
-Dynamic structure factor:
+According to Cahill, the lifetimes of vibrations in amorphous materials 
+is taken to be one half the period, $\tau = \pi/\omega $.
+\cite{cahill_heat_1989}
+
+The dynamic structure factor can be useful for demonstrating the 
+plane-wave character of low-frequency vibrations.  However, on a 
+mode-by-mode basis, it is unable in general to characterize a given mode 
+as either localized or delocalized.  In fact, results   
+frequency modes in a disordered systems
 
 Participation ratio:
 For a finite system, the participation is limited by system size.
+evolution of a vibrational wave packet on a disordered chain.
+\cite{allen_evolution_1998}, shows participation ratio limitation. Also 
+\cite{garber_numerical_2001}.
 
 
 \subsection{\label{S:Lifetimes:}Localization of Disordered Modes}
@@ -323,7 +371,25 @@ Discuss why real-space method is necessary in this case.
 
 \section{\label{S:GroupVeloctiy}Effective Mode Velocity}
 
-- compare versus virtual crystal
+\subsection{\label{S:Lifetimes:}Dynamic Structrue Factor}
+
+If all modes are summed over, this gives the frequency spectrum
+needed to construct a (nonstationary) propagating state with a
+pure wave vector Q and pure longitudinal or transverse polarization
+ \cite{feldman_thermal_1993}
+
+Only low-frequency vibrations have an (approximate) wavevector in 
+disordered systems, and there is no theorem guranteeing this.
+\cite{feldman_numerical_1999}
+
+There is no theorem requiring extended
+states ͑which probably exist only in dimensionality DϾ2) to
+have an approximate wave vector. In D= 1 or 2, the exis-
+tence of an approximate wave vector Q=2 ␲ /␭ does not
+protect a state from localization with ␰ ӷ␭, but in Dϭ3 an
+approximate wave vector is sufficient ͑but not necessary͒ to
+prevent localization.
+
 
 \section{\label{S-Motivation}Characterization}
 %--------------------------------------------------------------------------
@@ -1411,5 +1477,5 @@ where $A$ is a constant. This procedure is necessary because the first Brillouin
 %\end{figure}
 \clearpage
 \bibliographystyle{apsrev}
-\bibliography{/home/jason/ntpl-ref/ntpl-jason/ntpl-jason}
+\bibliography{/home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091212}
 \end{document}
