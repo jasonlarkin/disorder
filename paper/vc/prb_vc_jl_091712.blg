@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_091712.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091712.bib
+Warning--I didn't find a database entry for "garg_phonon_2012"
+Warning--I didn't find a database entry for "turneythesis"
+Warning--I didn't find a database entry for "dove1993"
+Warning--I didn't find a database entry for "wallace1972"
+Warning--I didn't find a database entry for "ashcroft1976"
+Warning--I didn't find a database entry for "turney2009a"
+Warning--I didn't find a database entry for "mcgaughey2004a"
+Warning--I didn't find a database entry for "ziman2001"
+Warning--I didn't find a database entry for "mcquarrie2000"
+Warning--I didn't find a database entry for "mcgaughey2004c"
+Warning--I didn't find a database entry for "goicochea2010"
+Warning--I didn't find a database entry for "mcgaughey2006b"
+Warning--I didn't find a database entry for "He2011a"
+Warning--I didn't find a database entry for "sellan2010b"
+Warning--I didn't find a database entry for "Larkin2012"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140393890974648.
+You've used 15 entries,
+            3411 wiz_defined-function locations,
+            1278 strings with 13811 characters,
+and the built_in function-call counts, 11819 in all, are:
+= -- 691
+> -- 393
+< -- 55
++ -- 326
+- -- 96
+* -- 1612
+:= -- 1253
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 60
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 987
+empty$ -- 979
+format.name$ -- 239
+if$ -- 2286
+int.to.chr$ -- 1
+int.to.str$ -- 16
+missing$ -- 153
+newline$ -- 60
+num.names$ -- 45
+pop$ -- 245
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 483
+stack$ -- 0
+substring$ -- 560
+swap$ -- 799
+text.length$ -- 48
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 0
+while$ -- 45
+width$ -- 0
+write$ -- 176
+(There were 15 warnings)
