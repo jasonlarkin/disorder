@@ -23,7 +23,7 @@ constant.eV2J = 1.60217646E-19;
 
 %--------------------------------------------------------------------------
 [tmp,str.main] = system('pwd'); str.main_write = str.main;
-str.main = strcat(str.main,'/4x/work/10K_relax/');
+str.main = strcat(str.main,'/4x/work/2_10K_relax/time/');
 
 %--------------------------------------------------------------------------
 iseed = 1;

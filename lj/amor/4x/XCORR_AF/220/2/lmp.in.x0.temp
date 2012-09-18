@@ -1,0 +1,14 @@
+	
+NUM_ATOMS atoms
+NUM_ATOMS_TYPE atom types	
+
+0.0 LX xlo xhi
+0.0 LY ylo yhi
+0.0 LZ zlo zhi
+
+Masses
+
+ATOM_MASS_1
+
+Atoms				
+

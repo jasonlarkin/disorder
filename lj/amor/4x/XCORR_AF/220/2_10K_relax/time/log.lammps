@@ -1,75 +1,85 @@
 LAMMPS (2 Nov 2010)
 
-# Lennard-Jones
-#------------Prepare Geometry------------------------------------
+#--------------------------------------------------------------------------
 units			lj
 atom_style		atomic
 read_data		lmp.in.x0
   orthogonal box = (0 0 0) to (6.3454 6.3454 6.3454)
   1 by 1 by 1 processor grid
   256 atoms
-#------------Initialize Structure--------------------------------
-#mass           	1  1.0
-#group         		Ar type = 1
-#------------LJ Potentials---------------------------------------
+#--------------------------------------------------------------------------
 pair_style		lj/cut 2.5
 pair_coeff		* * 1.0 1.0
 pair_modify          	shift yes
-#pair_modify   	tail no
+#--------------------------------------------------------------------------
 
-#------------Variables-------------------------------------------
-#LJ Parameters
-variable    	kB 		equal 1.3806504e-23 	# [J/K] 
-variable	sigma_Ar 	equal 3.4e-10 		# m
-variable	eps_Ar		equal 1.67e-21		# J
-variable	mass_Ar		equal 6.63e-26		# kg
-variable	tau_Ar		equal 2.1423e-12	# s
-#thermo Parameters
-variable    	T_melt 		equal 300*(${kB}/${eps_Ar})
-variable    	T_melt 		equal 300*(1.3806504e-23/${eps_Ar})
-variable    	T_melt 		equal 300*(1.3806504e-23/1.67e-21)
-variable	T_0K		equal 0.00001
-variable	T_2_5K		equal 2.5*(${kB}/${eps_Ar})
-variable	T_2_5K		equal 2.5*(1.3806504e-23/${eps_Ar})
-variable	T_2_5K		equal 2.5*(1.3806504e-23/1.67e-21)
-variable	T_5K		equal 5*(${kB}/${eps_Ar})
-variable	T_5K		equal 5*(1.3806504e-23/${eps_Ar})
-variable	T_5K		equal 5*(1.3806504e-23/1.67e-21)
-variable	T_10K		equal 10*(${kB}/${eps_Ar})
-variable	T_10K		equal 10*(1.3806504e-23/${eps_Ar})
-variable	T_10K		equal 10*(1.3806504e-23/1.67e-21)
-variable	T_15K		equal 15*(${kB}/${eps_Ar})
-variable	T_15K		equal 15*(1.3806504e-23/${eps_Ar})
-variable	T_15K		equal 15*(1.3806504e-23/1.67e-21)
+dump min all custom 10000 relax.pos x y z
+dump_modify min sort id
+minimize 0 1e-6 1000 10000
+WARNING: Resetting reneighboring criteria during minimization
+Memory usage per processor = 2.21012 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0   -6.8766985            0   -6.8766985  -0.76742402 
+       4            0   -6.8766989            0   -6.8766989   -0.7674098 
+Loop time of 0.019275 on 1 procs for 4 steps with 256 atoms
 
-variable   	dt 		equal 0.002
-variable	quench_rate	equal 1.0
-variable	quench_length 	equal 10000
-#kappa parameters
-variable    	p 		equal 1000 		# correlation length
-variable    	s 		equal 5  		# sample interval
-variable    	d 		equal $p*$s 		# dump interval 
-variable    	d 		equal 1000*$s 		variable    	d 		equal 1000*5 		
-#SED parameters
-variable	w_step		equal 32		
-variable	w_total		equal 1048576
-variable	t_total		equal 1048576
-variable	num_ffts	equal ${t_total}/${w_total}
-variable	num_ffts	equal 1048576/${w_total}
-variable	num_ffts	equal 1048576/1048576
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -6.87669854053     -6.87669889295     -6.87669889295
+  Force two-norm initial, final = 0.29363 0.0389991
+  Force max component initial, final = 0.0381514 0.00516862
+  Final line search alpha, max atom move = 0.00195312 1.0095e-05
+  Iterations, force evaluations = 4 40
 
-#label loop2
-#variable b loop 3
-#variable T_run index ${T_1} ${T_2} ${T_3}
+Pair  time (%) = 0.0176418 (91.527)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0.000697136 (3.6168)
+Outpt time (%) = 0 (0)
+Other time (%) = 0.000936031 (4.85621)
 
-##########SEED####################################################
-variable iseed equal 1
-variable seed equal 1111
+Nlocal:    256 ave 256 max 256 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    1447 ave 1447 max 1447 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    11434 ave 11434 max 11434 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
 
-#------------ RUN TEMP ---------------------------------------------	
-variable 	T_run 		equal ${T_10K}
-variable 	T_run 		equal 0.08267367665
-#------------ RUN TEMP ---------------------------------------------	
+Total # of neighbors = 11434
+Ave neighs/atom = 44.6641
+Neighbor list builds = 0
+Dangerous builds = 0
+#fix 1 all box/relax iso 0.0 vmax 0.001
+#unfix 1
 
-log 	log_heat_${iseed}.lammps
-log 	log_heat_1.lammps
+#--------------------------------------------------------------------------
+	fix			1 all nve
+	dump 			force all custom 1 lmp.dump.force fx fy fz
+	dump_modify 		force sort id
+	dump 			pos all custom 1 lmp.dump.pos x y z
+	dump_modify 		pos sort id
+	run	1
+Memory usage per processor = 1.76993 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       4            0   -6.8766989            0   -6.8766989   -0.7674098 
+       5 4.9411755e-11   -6.8766989            0   -6.8766989   -0.7674098 
+Loop time of 0.00119901 on 1 procs for 1 steps with 256 atoms
+
+Pair  time (%) = 0.000461102 (38.4569)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 1.69277e-05 (1.41181)
+Outpt time (%) = 0.00070405 (58.7194)
+Other time (%) = 1.69277e-05 (1.41181)
+
+Nlocal:    256 ave 256 max 256 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    1447 ave 1447 max 1447 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    11434 ave 11434 max 11434 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 11434
+Ave neighs/atom = 44.6641
+Neighbor list builds = 0
+Dangerous builds = 0
+

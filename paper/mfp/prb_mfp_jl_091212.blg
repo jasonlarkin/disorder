@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_mfp_jl_091212.aux
 The style file: apsrev.bst
-Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091212.bib
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091412.bib
 Warning--I didn't find a database entry for "schelling2002"
 Warning--I didn't find a database entry for "Garg2011"
 Warning--I didn't find a database entry for "dove1993"
@@ -20,46 +20,46 @@ Warning--I didn't find a database entry for "mcgaughey2006b"
 Warning--I didn't find a database entry for "He2011a"
 Warning--I didn't find a database entry for "sellan2010b"
 Warning--I didn't find a database entry for "Larkin2012"
-Reallocated wiz_functions (elt_size=4) to 6000 items from 140471200385976.
-You've used 5 entries,
+Reallocated wiz_functions (elt_size=4) to 6000 items from 139981574114232.
+You've used 23 entries,
             3411 wiz_defined-function locations,
-            1215 strings with 11487 characters,
-and the built_in function-call counts, 3669 in all, are:
-= -- 223
-> -- 109
-< -- 16
-+ -- 84
-- -- 26
-* -- 503
-:= -- 398
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 20
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 312
-empty$ -- 305
-format.name$ -- 73
-if$ -- 703
+            1340 strings with 15255 characters,
+and the built_in function-call counts, 18015 in all, are:
+= -- 1059
+> -- 605
+< -- 83
++ -- 492
+- -- 146
+* -- 2491
+:= -- 1896
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 92
+chr.to.int$ -- 23
+cite$ -- 23
+duplicate$ -- 1525
+empty$ -- 1486
+format.name$ -- 377
+if$ -- 3474
 int.to.chr$ -- 1
-int.to.str$ -- 6
-missing$ -- 48
-newline$ -- 30
-num.names$ -- 15
-pop$ -- 75
+int.to.str$ -- 24
+missing$ -- 235
+newline$ -- 84
+num.names$ -- 69
+pop$ -- 384
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 92
 quote$ -- 0
-skip$ -- 143
+skip$ -- 715
 stack$ -- 0
-substring$ -- 159
-swap$ -- 251
-text.length$ -- 13
+substring$ -- 803
+swap$ -- 1246
+text.length$ -- 73
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
+type$ -- 138
 warning$ -- 0
-while$ -- 15
+while$ -- 69
 width$ -- 0
-write$ -- 70
+write$ -- 263
 (There were 18 warnings)

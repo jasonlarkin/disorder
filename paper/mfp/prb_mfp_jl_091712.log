@@ -1,0 +1,942 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  18 SEP 2012 12:28
+entering extended mode
+ %&-line parsing enabled.
+**prb_mfp_jl_091712.tex
+(./prb_mfp_jl_091712.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count90
+\c@table=\count91
+
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count92
+)
+\widetext@top=\box32
+\widetext@bot=\box33
+
+(/usr/share/texmf-texlive/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Info: Redefining \frak on input line 99.
+LaTeX Info: Redefining \Bbb on input line 101.
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen102
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen103
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip11
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks18
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks19
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks20
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/usr/share/texmf-texlive/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+\epsfxsize=\dimen113
+\epsfysize=\dimen114
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+))
+(/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen117
+)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen118
+\lightrulewidth=\dimen119
+\cmidrulewidth=\dimen120
+\belowrulesep=\dimen121
+\belowbottomsep=\dimen122
+\aboverulesep=\dimen123
+\abovetopsep=\dimen124
+\cmidrulesep=\dimen125
+\cmidrulekern=\dimen126
+\defaultaddspace=\dimen127
+\@cmidla=\count105
+\@cmidlb=\count106
+\@aboverulesep=\dimen128
+\@belowrulesep=\dimen129
+\@thisruleclass=\count107
+\@lastruleclass=\count108
+\@thisrulewidth=\dimen130
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen131
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen132
+\subfiglabelskip=\skip53
+\c@subfigure=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@lotdepth=\count112
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen133
+\WF@size=\dimen134
+\c@WF@wrappedlines=\count113
+\WF@box=\box36
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen135
+\Hy@linkcounter=\count114
+\Hy@pagecounter=\count115
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+LaTeX Info: Redefining \url on input line 3428.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count116
+\Field@Width=\dimen136
+\Fld@charsize=\dimen137
+\Field@toks=\toks25
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
+)
+*hyperref using default driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
+\pdf@docset=\toks26
+\pdf@box=\box37
+\pdf@toks=\toks27
+\pdf@defaulttoks=\toks28
+\Fld@listcount=\count120
+))
+(./prb_mfp_jl_091712.aux
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `EQ:k_sum' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+
+
+LaTeX Warning: Label `E:udot_HLD' multiply defined.
+
+)
+\openout1 = `prb_mfp_jl_091712.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 200.
+LaTeX Font Info:    ... okay on input line 200.
+Class revtex4 Info: Patching array package. on input line 200.
+Class revtex4 Info: cite was not loaded (OK!) on input line 200.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 200.
+Package hyperref Info: Link coloring OFF on input line 200.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count121
+)
+LaTeX Info: Redefining \ref on input line 200.
+LaTeX Info: Redefining \pageref on input line 200.
+
+(./prb_mfp_jl_091712.out) (./prb_mfp_jl_091712.out)
+\@outlinefile=\write3
+\openout3 = `prb_mfp_jl_091712.out'.
+
+\AtBeginShipoutBox=\box38
+LaTeX Font Info:    Try loading font information for U+msa on input line 239.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 239.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1]
+
+Package natbib Warning: Citation `einstein1911' on page 2 undefined on input li
+ne 267.
+
+
+Package natbib Warning: Citation `kittel1949' on page 2 undefined on input line
+ 267.
+
+
+Package natbib Warning: Citation `cahill1992' on page 2 undefined on input line
+ 267.
+
+File: LJ_amor_GK.eps Graphic file (type eps)
+<LJ_amor_GK.eps>
+
+Package natbib Warning: Citation `mcgaughey2004a' on page 2 undefined on input 
+line 298.
+
+
+LaTeX Warning: Reference `EQ:M:tau_p-p' on page 2 undefined on input line 298.
+
+
+Package natbib Warning: Citation `mcgaughey2004a' on page 2 undefined on input 
+line 298.
+
+
+LaTeX Warning: Reference `EQ:M:tau_p-p' on page 2 undefined on input line 298.
+
+[2] [3]
+
+Package natbib Warning: Citation `PhysRevB.46.6131' on page 4 undefined on inpu
+t line 345.
+
+
+LaTeX Warning: Reference `S-Prelim-Phonon-Scattering' on page 4 undefined on in
+put line 368.
+
+
+Package natbib Warning: Citation `klemens1955' on page 4 undefined on input lin
+e 369.
+
+
+Package natbib Warning: Citation `klemens1957' on page 4 undefined on input lin
+e 369.
+
+
+Package natbib Warning: Citation `allen1993' on page 4 undefined on input line 
+375.
+
+
+Package natbib Warning: Citation `freeman1986' on page 4 undefined on input lin
+e 379.
+
+
+Package natbib Warning: Citation `cahill1992' on page 4 undefined on input line
+ 379.
+
+
+LaTeX Warning: Reference `S-Prelim-Phonon-Scattering' on page 4 undefined on in
+put line 385.
+
+[4]
+
+Package natbib Warning: Citation `allen1993' on page 5 undefined on input line 
+394.
+
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 5 undefined on inp
+ut line 398.
+
+Missing character: There is no Î in font cmr12!
+Missing character: There is no º in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no « in font cmr12!
+[5]
+
+LaTeX Warning: Reference `EQ:M:k_l,sum' on page 6 undefined on input line 436.
+
+
+Package natbib Warning: Citation `dove1993' on page 6 undefined on input line 4
+60.
+
+
+LaTeX Warning: Reference `S-Prelim-Phonon-Dispersion' on page 6 undefined on in
+put line 462.
+
+
+LaTeX Warning: Reference `S-Prelim-Phonon-Scattering' on page 6 undefined on in
+put line 469.
+
+
+LaTeX Warning: Reference `S-Prelim-Phonon-Dispersion' on page 6 undefined on in
+put line 469.
+
+
+Package natbib Warning: Citation `allen1993' on page 6 undefined on input line 
+471.
+
+
+Package natbib Warning: Citation `shenogin2009' on page 6 undefined on input li
+ne 471.
+
+
+Package natbib Warning: Citation `shenogin2009' on page 6 undefined on input li
+ne 474.
+
+File: /home/jason/thesis/proposal/paper/phonon_diff.eps Graphic file (type eps)
+
+</home/jason/thesis/proposal/paper/phonon_diff.eps> [6]
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 7 undefined on inp
+ut line 502.
+
+
+Package natbib Warning: Citation `He2011a' on page 7 undefined on input line 50
+8.
+
+
+Package natbib Warning: Citation `He2011a' on page 7 undefined on input line 51
+0.
+
+File: /home/jason/disorder/matlab/galli_si_k_tf.eps Graphic file (type eps)
+</home/jason/disorder/matlab/galli_si_k_tf.eps> [7]
+Underfull \hbox (badness 1997) in paragraph at lines 539--541
+[]\OT1/cmr/m/n/12 The life-times of vi-bra-tional modes in a-Si were pre-dicted
+ us-ing nor-mal mode
+ []
+
+File: /home/jason/disorder/lj/alloy/xcorr_alloy_cum_cond.eps Graphic file (type
+ eps)
+</home/jason/disorder/lj/alloy/xcorr_alloy_cum_cond.eps>
+File: /home/jason/disorder/lj/alloy/LJ_alloy_life_period.eps Graphic file (type
+ eps)
+
+</home/jason/disorder/lj/alloy/LJ_alloy_life_period.eps>
+File: /home/jason/disorder/lj/alloy/LJ_alloy_amorphous_life_period.eps Graphic 
+file (type eps)
+
+</home/jason/disorder/lj/alloy/LJ_alloy_amorphous_life_period.eps> [8]
+File: /home/jason/disorder/lj/alloy/LJ_alloy_vaf_2.eps Graphic file (type eps)
+
+</home/jason/disorder/lj/alloy/LJ_alloy_vaf_2.eps> [9]
+File: /home/jason/disorder/lj/alloy/LJ_alloy_vaf.eps Graphic file (type eps)
+
+</home/jason/disorder/lj/alloy/LJ_alloy_vaf.eps> [10]
+File: /home/jason/disorder/matlab/LJ_DSF.eps Graphic file (type eps)
+
+</home/jason/disorder/matlab/LJ_DSF.eps> [11]
+
+Package natbib Warning: Citation `dove1993' on page 12 undefined on input line 
+726.
+
+
+Package natbib Warning: Citation `wallace1972' on page 12 undefined on input li
+ne 726.
+
+
+Package natbib Warning: Citation `dove1993' on page 12 undefined on input line 
+729.
+
+
+Package natbib Warning: Citation `dove1993' on page 12 undefined on input line 
+739.
+
+[12]
+
+Package natbib Warning: Citation `rudin1987' on page 13 undefined on input line
+ 758.
+
+
+LaTeX Warning: Reference `A-Derivation-SED' on page 13 undefined on input line 
+764.
+
+
+Package natbib Warning: Citation `maradudin1962' on page 13 undefined on input 
+line 771.
+
+
+Package natbib Warning: Citation `ladd1986' on page 13 undefined on input line 
+771.
+
+
+Package natbib Warning: Citation `mcquarrie2000' on page 13 undefined on input 
+line 777.
+
+
+LaTeX Warning: Reference `E:qdot_HLD' on page 13 undefined on input line 783.
+
+
+LaTeX Warning: Reference `A:E:ave_T_w1' on page 13 undefined on input line 783.
+
+
+
+LaTeX Warning: Reference `A:E:Lorentzian_NMD' on page 13 undefined on input lin
+e 783.
+
+
+Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
+789.
+
+
+Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
+789.
+
+[13]
+
+Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
+ine 802.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
+ine 809.
+
+
+Package natbib Warning: Citation `turney2009a' on page 14 undefined on input li
+ne 809.
+
+
+Package natbib Warning: Citation `mcgaughey2004a' on page 14 undefined on input
+ line 809.
+
+[14]
+
+Package natbib Warning: Citation `ashcroft1976' on page 15 undefined on input l
+ine 815.
+
+
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 815.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 15 undefined on input l
+ine 815.
+
+
+Package natbib Warning: Citation `ziman2001' on page 15 undefined on input line
+ 826.
+
+
+Overfull \hbox (2.61108pt too wide) detected at line 831
+[] []
+ []
+
+
+Package natbib Warning: Citation `mcquarrie2000' on page 15 undefined on input 
+line 833.
+
+
+Package natbib Warning: Citation `mcgaughey2004c' on page 15 undefined on input
+ line 834.
+
+
+Package natbib Warning: Citation `goicochea2010' on page 15 undefined on input 
+line 834.
+
+
+Package natbib Warning: Citation `mcgaughey2006b' on page 15 undefined on input
+ line 835.
+
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 15 undefined on in
+put line 839.
+
+
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 840.
+
+
+Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 8
+40.
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 839--846
+[]\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
+simulation-size scal-ing
+ []
+
+[15]
+
+Package natbib Warning: Citation `turney2009a' on page 16 undefined on input li
+ne 856.
+
+
+Package natbib Warning: Citation `sellan2010b' on page 16 undefined on input li
+ne 856.
+
+
+Package natbib Warning: Citation `Larkin2012' on page 16 undefined on input lin
+e 862.
+
+
+Package natbib Warning: Citation `turney2009a' on page 16 undefined on input li
+ne 862.
+
+
+Package natbib Warning: Citation `He2011a' on page 16 undefined on input line 8
+62.
+
+
+Package natbib Warning: Citation `turney2009a' on page 16 undefined on input li
+ne 862.
+
+
+Package natbib Warning: Citation `Larkin2012' on page 16 undefined on input lin
+e 862.
+
+
+Package natbib Warning: Citation `turney2009a' on page 16 undefined on input li
+ne 862.
+
+
+Package natbib Warning: Citation `He2011a' on page 16 undefined on input line 8
+62.
+
+
+Package natbib Warning: Citation `turney2009a' on page 16 undefined on input li
+ne 862.
+
+(./prb_mfp_jl_091712.bbl [16]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 1478) in paragraph at lines 40--46
+[]\OT1/cmr/m/n/10.95 B. L. Zink, R. Pietri, and F. Hell-man, Phys. Rev. Lett. \
+OT1/cmr/bx/n/10.95 96\OT1/cmr/m/n/10.95 , 055902 (2006), URL
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 49--60
+[]\OT1/cmr/m/n/10.95 H.-S. Yang, D. G. Cahill, X. Liu, J. L. Feld-man, R. S. Cr
+an-dall, B. A.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--60
+\OT1/cmr/m/n/10.95 Sper-ling, and J. R. Abel-son, Phys. Rev. B \OT1/cmr/bx/n/10
+.95 81\OT1/cmr/m/n/10.95 , 104203 (2010), URL
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 2582) in paragraph at lines 71--79
+[]\OT1/cmr/m/n/10.95 B. S. W. Kuo, J. C. M. Li, and A. W. Schmid, Ap-plied Phys
+ics A: Ma-te-ri-als
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 71--79
+\OT1/cmr/m/n/10.95 Sci-ence & Pro-cess-ing \OT1/cmr/bx/n/10.95 55\OT1/cmr/m/n/1
+0.95 , 289296 (1992), ISSN 0947-8396, 10.1007/BF00348399, URL
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+[17]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 3302) in paragraph at lines 169--174
+[]\OT1/cmr/m/n/10.95 S. R. Bick-ham and J. L. Feld-man, Phys. Rev. B \OT1/cmr/b
+x/n/10.95 57\OT1/cmr/m/n/10.95 , 1223412238 (1998), URL
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--181
+[]\OT1/cmr/m/n/10.95 J. Fabian and P. B. Allen, Phys. Rev. Lett. \OT1/cmr/bx/n/
+10.95 77\OT1/cmr/m/n/10.95 , 38393842 (1996), URL
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--188
+[]\OT1/cmr/m/n/10.95 P. Sheng and M. Zhou, Sci-ence \OT1/cmr/bx/n/10.95 253\OT1
+/cmr/m/n/10.95 , 539542 (1991), URL
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--241
+[]\OT1/cmr/m/n/10.95 W. Gar-ber, F. M. Tanger-man, P. B. Allen, and J. L. Feld-
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--241
+\OT1/cmr/m/n/10.95 man, Philo-soph-i-cal Mag-a-zine Let-ters \OT1/cmr/bx/n/10.9
+5 81\OT1/cmr/m/n/10.95 , 433439 (2001), URL
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+)
+
+Package natbib Warning: There were undefined citations.
+
+[18] (./prb_mfp_jl_091712.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6899 strings out of 493849
+ 95100 string characters out of 1152846
+ 210472 words of memory out of 3000000
+ 10038 multiletter control sequences out of 15000+50000
+ 16902 words of font info for 62 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 38i,25n,29p,770b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on prb_mfp_jl_091712.dvi (18 pages, 80284 bytes).

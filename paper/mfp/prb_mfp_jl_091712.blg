@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_mfp_jl_091712.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091712.bib
+Warning--I didn't find a database entry for "einstein1911"
+Warning--I didn't find a database entry for "kittel1949"
+Warning--I didn't find a database entry for "cahill1992"
+Warning--I didn't find a database entry for "mcgaughey2004a"
+Warning--I didn't find a database entry for "PhysRevB.46.6131"
+Warning--I didn't find a database entry for "klemens1955"
+Warning--I didn't find a database entry for "klemens1957"
+Warning--I didn't find a database entry for "allen1993"
+Warning--I didn't find a database entry for "freeman1986"
+Warning--I didn't find a database entry for "dove1993"
+Warning--I didn't find a database entry for "shenogin2009"
+Warning--I didn't find a database entry for "He2011a"
+Warning--I didn't find a database entry for "wallace1972"
+Warning--I didn't find a database entry for "rudin1987"
+Warning--I didn't find a database entry for "maradudin1962"
+Warning--I didn't find a database entry for "ladd1986"
+Warning--I didn't find a database entry for "mcquarrie2000"
+Warning--I didn't find a database entry for "ashcroft1976"
+Warning--I didn't find a database entry for "turney2009a"
+Warning--I didn't find a database entry for "ziman2001"
+Warning--I didn't find a database entry for "mcgaughey2004c"
+Warning--I didn't find a database entry for "goicochea2010"
+Warning--I didn't find a database entry for "mcgaughey2006b"
+Warning--I didn't find a database entry for "sellan2010b"
+Warning--I didn't find a database entry for "Larkin2012"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140196322479032.
+You've used 27 entries,
+            3411 wiz_defined-function locations,
+            1369 strings with 16027 characters,
+and the built_in function-call counts, 21744 in all, are:
+= -- 1313
+> -- 687
+< -- 95
++ -- 556
+- -- 166
+* -- 2950
+:= -- 2287
+add.period$ -- 27
+call.type$ -- 27
+change.case$ -- 108
+chr.to.int$ -- 27
+cite$ -- 27
+duplicate$ -- 1768
+empty$ -- 1810
+format.name$ -- 429
+if$ -- 4271
+int.to.chr$ -- 1
+int.to.str$ -- 28
+missing$ -- 273
+newline$ -- 96
+num.names$ -- 81
+pop$ -- 438
+preamble$ -- 1
+purify$ -- 108
+quote$ -- 0
+skip$ -- 919
+stack$ -- 0
+substring$ -- 1184
+swap$ -- 1436
+text.length$ -- 83
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 0
+while$ -- 81
+width$ -- 0
+write$ -- 305
+(There were 25 warnings)

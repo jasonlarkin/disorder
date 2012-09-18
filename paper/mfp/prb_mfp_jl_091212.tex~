@@ -262,8 +262,6 @@ Cahill argued that the lattice vibrations in a disordered crystal are
 essentially the same as those of an amorhous solid.
 \cite{cahill_lower_1992} 
 
-
-
 The goal of this work is to predict the MFP of vibrational modes in 
 disordered systems. Simple Lennard-Jones systems will be studied.  A 
 perfect LJ crystal are alloyed with a species of differing mass and 
@@ -693,5 +691,5 @@ where $A$ is a constant. This procedure is necessary because the first Brillouin
 
 \clearpage
 \bibliographystyle{apsrev}
-\bibliography{/home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091212}
+\bibliography{/home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091412}
 \end{document}

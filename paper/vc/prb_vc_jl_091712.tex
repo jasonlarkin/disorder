@@ -1,0 +1,674 @@
+%\documentclass[aps,prb,twocolumn,superscriptaddress,preprintnumbers,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+%\documentclass[aps,prl,onecolumn,groupedaddress,amsmath,amssymb,12pt]{revtex4}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{bm}% bold math
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+
+
+%Definition of new commands
+\newcommand{\f}[2]{\ensuremath{\frac{\displaystyle{#1}}{\displaystyle{#2}}}}
+\newcommand{\lr}[1]{\langle{#1}\rangle}
+\newcommand{\colv}[2] {\left(\begin{array}{c} #1 \\ #2 \end{array}\right)}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\be} {\begin{eqnarray}}
+\newcommand{\ee} {\end{eqnarray}}
+%--------------------------------------------------------------------------
+%EQ COMMANDS
+%--------------------------------------------------------------------------
+\newcommand{\two}{\mspace{-2.0mu}}
+\newcommand{\four}{\mspace{-4.0mu}}
+\newcommand{\plus}{\mspace{-4.5mu}+\mspace{-3.5mu}}
+\newcommand{\minus}{\mspace{-4.5mu}-\mspace{-3.5mu}}
+\newcommand{\pp}{'\mspace{-2.0mu}'}
+\newcommand{\xlb}[4]{#1\ifthenelse{\equal{#2}{0}}{}{_{\alpha #2}}
+\mspace{-2.0mu}\genfrac{(}{)}{0pt}{1}{\ifthenelse{\equal{#3}{0}}{0}{l #3}} 
+{\ifthenelse{\equal{#4}{0}}{0}{b #4}}}
+
+\newcommand{\xkv}[4]{#1\mspace{-5.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}#2\four{}\four{}\mspace{-8.0mu}&\pmb{\kappa}#3\\&\nu 
+#4\end{smallmatrix}\mspace{-5.0mu}\right)}
+
+\newcommand{\evect}[6]{#1\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}#2\mspace{-8.0mu}&\pmb{\kappa} #3 &b #5\\&\nu #4 &
+\alpha #6\end{smallmatrix}\mspace{-5.0mu}\right)}
+
+\newcommand{\varmat}[8]{\mspace{-5.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}\ifthenelse{\equal{#3}{0}}{\mspace{-8.0mu}&b_{#1}&b_{#2}
+\\&\alpha_{#1}&\alpha_{#2}} {\ifthenelse{\equal{#7}{0}}{#1\mspace{-8.0mu}&
+\pmb{\kappa}#2#3\mspace{-8.0mu}&\pmb{\kappa}#4#5\mspace{-8.0mu}&\pmb{\kappa}
+#6\\&\nu#2&\nu#4&\nu#6} {#1\mspace{-8.0mu}&\pmb{\kappa}#2#3\mspace{-8.0mu}&
+\pmb{\kappa}#4#5\mspace{-8.0mu}&\pmb{\kappa}#6#7\mspace{-8.0mu}&\pmb{\kappa}
+#8\\&\nu#2&\nu#4&\nu#6&\nu#8}}\end{smallmatrix}\mspace{-5.0mu}\right)}
+
+\newcommand{\EXP}[1]{\exp\mspace{-5.0mu}\left[#1\right]\mspace{-3.0mu}}
+
+\newcommand{\tpp}[2]{\left(\mspace{-2.0mu}\xkv{\omega}{}{}{}#1\xkv{\omega}
+{}{'}{'}#2\xkv{\omega}{}{\pp}{\pp}\mspace{-2.0mu}\right)}
+
+
+
+%--------------------------------------------------------------------------
+\newcommand{\SUM}[2]{\ifthenelse{\equal{#1}{0}}{\sum_{
+\alpha_{#2},b_{#2},l_{#2}}^{3,n,N}} {\ifthenelse{\equal{#1}{1}}{\sum_{
+\alpha_{#2},b_{#2}}^{3,n}}{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\SUMprime}[2]{\ifthenelse{\equal{#1}{0}}
+{\sum_{\alpha_{#2},b_{#2},l_{#2}}^{3,n,N}} 
+{\ifthenelse{\equal{#1}{1}}{\sum_{\alpha_{#2},b_{#2}}^{3,n}}
+{\sum_{\pmb{\kappa}^{'}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\SUMalpha}[2]{\ifthenelse{\equal{#1}{0}}
+{\sum_{\alpha_{#2}}^{3}} {\ifthenelse{\equal{#1}{1}}
+{\sum_{\alpha_{#2},b_{#2}}^{3,n}}{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+%--------------------------------------------------------------------------
+\newcommand{\SUMalphap}[2]{\ifthenelse{\equal{#1}{0}}
+{\sum_{\alpha'_{#2}}^{3}} {\ifthenelse{\equal{#1}{1}}
+{\sum_{\alpha'_{#2},b'_{#2}}^{3,n}}{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\SUMb}[2]{\ifthenelse{\equal{#1}{0}}{\sum_{b_{#2}}^{n}}
+ {\ifthenelse{\equal{#1}{1}}{\sum_{\alpha_{#2},b_{#2}}^{3,n}}
+{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\SUMbp}[2]{\ifthenelse{\equal{#1}{0}}{\sum_{b'_{#2}}^{n}}
+ {\ifthenelse{\equal{#1}{1}}{\sum_{\alpha'_{#2},b'_{#2}}^{3,n}}
+{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\SUMl}[2]{\ifthenelse{\equal{#1}{0}}{\sum_{l_{#2}}^{N}}
+ {\ifthenelse{\equal{#1}{1}}{\sum_{\alpha_{#2},b_{#2}}^{3,n}}
+{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\SUMlp}[2]{\ifthenelse{\equal{#1}{0}}{\sum_{l'_{#2}}^{N}}
+ {\ifthenelse{\equal{#1}{1}}{\sum_{\alpha'_{#2},b'_{#2}}^{3,n}}
+{\sum_{\pmb{\kappa}#2,\nu#2}^{N,3n}}}}
+
+\newcommand{\abcdt}[5]{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\ifthenelse{\equal{#1}{}}{a}{#1}&\ifthenelse
+{\equal{#3}{}}{c}{#3}\\&\ifthenelse{\equal{#2}{}}{b}{#2}&\ifthenelse
+{\equal{#4}{}}{d}{#4}\end{smallmatrix}\mspace{-2.0mu};\ifthenelse
+{\equal{#5}{}}{t}{#5}\right)}
+
+\newcommand{\abcd}[4]{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\ifthenelse{\equal{#1}{}}{a}{#1}&\ifthenelse
+{\equal{#3}{}}{c}{#3}\\&\ifthenelse{\equal{#2}{}}{b}{#2}&\ifthenelse
+{\equal{#4}{}}{d}{#4}\end{smallmatrix}\mspace{-3.0mu}\right)}
+
+\newcommand{\abt}[3]{\mspace{-4.0mu}\left(\mspace{-8.0mu}\begin
+{smallmatrix}&\ifthenelse{\equal{#1}{}}{a}{#1} \\&\ifthenelse{
+\equal{#2}{}}{b}{#2}\end{smallmatrix}\mspace{-2.0mu};
+\ifthenelse{\equal{#3}{}}{t}{#3}\right)}
+
+\newcommand{\ab}[2]{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\ifthenelse{\equal{#1}{}}{a}{#1} \\&\ifthenelse
+{\equal{#2}{}}{b}{#2}\end{smallmatrix}\mspace{-3.0mu}\right)}
+
+\newcommand{\kvbat}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b \\ &\nu &\alpha\end{smallmatrix}
+\mspace{-2.0mu};t\right)}
+%--------------------------------------------------------------------------
+\newcommand{\kvbatp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b' \\ &\nu &\alpha'\end{smallmatrix}
+\mspace{-2.0mu};t\right)}
+
+\newcommand{\kvbaw}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b \\ &\nu &\alpha\end{smallmatrix}
+\mspace{-2.0mu};\omega\right)}
+
+\newcommand{\kvbawp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b' \\ &\nu &\alpha'\end{smallmatrix}
+\mspace{-2.0mu};\omega\right)}
+
+\newcommand{\kvba}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b \\ &\nu &\alpha\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kvbap}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b' \\ &\nu &\alpha'\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+%--------------------------------------------------------------------------
+\newcommand{\kpvba}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa}^{'} &b \\ &\nu &\alpha\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kva}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} \\ &\nu &\alpha\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kvap}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} \\ &\nu &\alpha'\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kvb}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b \\ &\nu \end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kvbp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa} &b' \\ &\nu \end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kvt}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
+\mspace{-2.0mu};t\right)}
+
+\newcommand{\kpvt}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa}^{'} \\&\nu\end{smallmatrix}
+\mspace{-2.0mu};t\right)}
+
+\newcommand{\kvw}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
+\mspace{-2.0mu};\omega\right)}
+
+\newcommand{\kv}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kpvp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa'} \\&\nu'\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+%--------------------------------------------------------------------------
+\newcommand{\lbt}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&l \\&b\end{smallmatrix}\mspace{-2.0mu};t\right)}
+
+\newcommand{\lbtp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&l' \\&b'\end{smallmatrix}\mspace{-2.0mu};t\right)}
+
+\newcommand{\lt}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&l\end{smallmatrix}\mspace{-2.0mu};t\right)}
+
+\newcommand{\ltp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&l'\end{smallmatrix}\mspace{-2.0mu};t\right)}
+
+\newcommand{\lb}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&l \\&b\end{smallmatrix}\mspace{-3.0mu}\right)}
+
+\newcommand{\lbp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&l' \\&b'\end{smallmatrix}\mspace{-3.0mu}\right)}
+%--------------------------------------------------------------------------
+%COMMANDS
+%--------------------------------------------------------------------------
+
+\begin{document}
+
+
+\title{Predicting Vibrational Mean Free Paths in Disordered Systems}
+
+\author{Jason M. Larkin}
+\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
+University\\Pittsburgh, PA 15213}
+\author{Joseph E. Turney}
+\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
+University\\Pittsburgh, PA 15213}
+\author{Alexandre D. Massicotte}
+\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
+University\\Pittsburgh, PA 15213}
+\author{Cristina H. Amon}
+\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
+University\\Pittsburgh, PA 15213}
+\affiliation{
+Department of Mechanical \& Industrial Engineering, University of Toronto,
+Toronto, Ontario, Canada M5S 3G8}
+\author{A. J. H. McGaughey}
+\email{mcgaughey@cmu.edu}
+\affiliation{Department of Mechanical Engineering\\
+Carnegie Mellon University\\Pittsburgh, PA 15213}
+
+%--------------------------------------------------------------------------
+
+\date{\today}
+
+\begin{abstract}
+
+\end{abstract}
+
+
+\maketitle
+%--------------------------------------------------------------------------
+\clearpage
+\section{\label{S:Intro}Introduction}
+
+Measurements by Moon.  Measurements by all the refs from Galli paper.  The 
+key to understanding such measurement is to estimate a MFP for the 
+vibrational modes in disordere systems. 
+Ref Cahill paper, vg=vs. Ref Galli paper, its unclear what the group 
+velocity should be. 
+
+The goal of this work is to predict the MFP of vibrational modes in 
+disordered systems. Simple Lennard-Jones systems will be studied.  
+LJ crystals are alloyed with a species of differing mass and 
+amorphous samples are prepared. The vibrational modes in these disordered 
+systems are characterized as propagating (phonon) and 
+non-propagating (diffuson) modes by predicting the mode lifetimes and 
+mean free paths. Estimating an effective dispersion
+relation is required for calulating group velocities for 
+disordered modes, which is crucial for transforming lifetimes to MFPs.
+The spectrum of phonon MFPs and the accumulated thermal conductivity 
+are predicted for a model of amorphous silicon. Predictions of thermal 
+conductivity using a boundary scattering model demonstrates  
+
+
+
+\section{\label{S:}Determining Propagating and Localized Modes}
+%--------------------------------------------------------------------------
+
+Klemens scattering paper showing rayleigh \cite{klemens_scattering_1955}.
+
+Duda shows the reduction in group velocity of disordered systems.
+\cite{duda_reducing_2011}
+
+Garg show that the virtual crystal approximation works well for Si-Ge 
+\cite{garg_role_2011}
+
+Duda shows that taking a perfect alloy and disordering via an order 
+parameter allows control of thermal conductivity.
+\cite{duda_controlling_2012}
+
+Tamura gives an expression for mass defect scattering which is harmonic and 
+given by \cite{tamura_isotope_1983}: The Rayleigh scattering limit is 
+observed in the low-frequency limit, where the DOS is approximately Debye.
+
+Cahill shows that conductivty of Ge-doped Si epitaxial layers agrees with 
+the defect scaling cross section is captured mostly by the mass disorder.
+\cite{cahill_thermal_2004}
+
+Cahill shows that even though the mass difference between Si and Ge is 
+larger than the mass of Si, the defect scaling agrees with experimental 
+measurements of thermal conductivity in dilute SiGe epitaxial layers.
+\cite{cahill_thermal_2005}
+
+Tian showed, using ab initio calculations, that the virtual crystal 
+appromxation with defect scalings work well for predicting the thermal 
+conductivity of PbSe/PbTe alloys.\cite{tian_phonon_2012}
+
+Bouchard show that alloy DOS varies smoothly with concentration.
+\cite{bouchard_vibrational_1988}
+
+\section{\label{S:Lifetimes}Thermal Conductivity Predictions from 
+Molecular Dynamics}
+%--------------------------------------------------------------------------
+The thermal conductivity of amorphous solids at low temperatures contain 
+quantum statistical effects.\cite{freeman_thermal_1986} Molecular dynamics 
+simulations are not able to capture quantum statistical effects.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.6]
+{/home/jason/thesis/proposal/paper/LJ_alloy_GK.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:gk_alloy} The vibrational conductivity of LJ alloys 
+predicted using MD simulations and the Green-Kubo method. The predicted 
+thermal conductivities are for a LJ alloy of the form $m^a_{1-c}m^b_{c}$, 
+where $m^a =$ 1, $m^b=$ 3, and $m_r = m^a/m^b=$ 3 (in LJ units). As the 
+alloy concentration is increased perturbatively, the vibrational 
+conductivity drops quickly and saturates to a minimum at $c=0.5$. For 
+$c=0.5$ the system is heavily disordered and the vibrational conductivity 
+approaches that of an amorphous system.}
+\end{figure}
+
+\section{\label{S:Lifetimes}Kinetic Theory}
+%--------------------------------------------------------------------------
+
+k = sum over modes
+
+For a perfect system, all vibrational modes are phonons.  It is thus easy 
+to evaluate.
+
+Diffusons, locons and propagons \cite{allen_diffusons_1999}.
+
+\begin{equation}\label{EQ:M:k_mode}
+\begin{split}
+k_{vib,\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph}\kv \pmb{v}^{2}_{g,\mathbf{n}}\kv \tau\kv.
+\end{split}
+\end{equation}
+
+\begin{equation}\label{EQ:M:phonon_mfp}
+\begin{split}
+\Lambda\kv = |\pmb{v}_{g}| \tau\kv,
+\end{split}
+\end{equation}
+
+%--------------------------------------------------------------------------
+\section{\label{S:}Phonon Lifetimes}
+%--------------------------------------------------------------------------
+
+\begin{equation}\label{EQ:M:tau_matthiessen}
+\frac{1}{\tau} = \frac{1}{\tau_{p-p}} + \frac{1}{\tau_{b}} + 
+\frac{1}{\tau_{d}},
+\end{equation}
+where $\tau_{p-p}$ accounts for phonon-phonon scattering, $\tau_{b}$ 
+accounts for boundary scattering, $\tau_{d}$ accounts for defect 
+scattering.
+
+\begin{equation}\label{EQ:M:tau_p-p}
+\tau_{p-p} = \frac{(6 \pi^2)^{1/3} \bar m v_g v_p^2}{2 V^{1/3} \omega^2 
+\gamma^2 T },
+\end{equation}
+
+\begin{equation}\label{EQ:M:tau_d}
+\frac{1}{\tau_{d}} = \frac{V \omega^4}{4 \pi v_p^2 v_g} 
+( \sum_i c_i(1-m_i/\bar m)^2 + \sum_i c_i(1-r_i/\bar r)^2 ),
+\end{equation}
+
+where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius of 
+species i and $\bar r$ is the average atomic radius.
+\cite{klemens_scattering_1955,klemens_thermal_1957} 
+The frequency dependence is the same as 
+Rayleigh scattering, where high frequency modes are scattered most 
+strongly. 
+
+\begin{equation}\label{EQ:M:tau_b}
+\tau_{b} = L/v_g.
+\end{equation}
+
+Boundary scattering is responsible for decreasing the long lifetimes 
+(mean free paths) of low frequency phonons which carry a significant 
+amount of heat, making it particularly effective at decreasing the 
+thermal conductivity of systems with length scale of 100s of $\mu$m and 
+less.\cite{mcgaughey_nanostructure_2012}
+
+%--------------------------------------------------------------------------
+\subsection{\label{S:}Virtual Crystal Approximation}
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.6]
+{/home/jason/disorder/lj/alloy/xcorr_alloy_vc_life.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} virtual crystal results}
+\end{figure}
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.6]
+{/home/jason/disorder/lj/alloy/xcorr_alloy_gamma_life.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} gamma point results}
+\end{figure}
+%--------------------------------------------------------------------------
+
+
+\subsection{\label{S:}Bond Disorder}
+%--------------------------------------------------------------------------
+The decreased vibrational conductivity of systems which are highly 
+anharmonic, such as weak covalently and Van der Waals bonded systems,? is 
+accounted for by the Gruneisen parameter. For a purely harmonic system, 
+the mode specific Gruneisen parameter is zero and the phonon lifetimes 
+are infinite.
+
+\begin{equation}\label{EQ:M:tau_{d}}
+\begin{split}
+\frac{1}{\tau_{d}} = \frac{\pi}{2N}\omega^2\kv 
+\sum_{\pmb{\kappa'},\nu'}^{N,3n} \delta(\omega\kv - \omega\kpvp) 
+\sum_{b}^{n}g(b)|e^*\kvba \dot e\kvba|^2 , \\
+\end{split}
+\end{equation}
+
+$g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+
+\subsection{\label{S:}Mass Disorder}
+%--------------------------------------------------------------------------
+why not bond disorder?  This has been investigated such as in Schelling 
+Si/Ge \cite{skye_thermal_2008}, where it was shown that mass disorder is 
+the dominant scattering mechanism. Also, a first principle study of Si/Ge
+demonstrates that virtual crystal approxmation Marzari Si/Ge PRL \cite{garg_role_2011}.  
+Although, detailed study of PbTe/PbSe systems demonstrate the importance 
+of bond environment for alloys.\cite{garg_phonon_2012}
+
+\subsection{\label{S:}Group Velocity}
+%--------------------------------------------------------------------------
+
+The reduced vibrational conductivity of germanium compared to silicon can 
+be explained in both in terms of the $\bar m$ (germanium has a larger 
+density $\rho$ than silicon) and the group velocity (germanium has a smaller 
+bulk modulus $B$, and $v_g \propto \sqrt{B/\rho}$.
+
+- $v_g(m_{r})$
+
+- two masses with $v_g(m_{r})$, maybe compare with 4 masses with higher mass ratio.  
+
+- Keep  $m_{avg}$ constant for all.
+
+- run a system with a "softer" and "stiffer" LJ (smaller/bigger eps or sigma). 
+This can be used as a comparison for the phonon/diffuson spectrums which will be shown later.  
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.6]
+{/home/jason/thesis/proposal/paper/GULP_disp_mass_ratio.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:crys_disp_mass_ratio} Dispersion plots for 
+Lennard-Jones systems with varying number of atoms in the unit cell 
+($b=1..4$) and mass ratio ($m_r$) for wavevectors in the direction 
+$2\pi/a[1 0 0]$. (a) Dispersion plot using the FCC primitive unit cell 
+($b=1$), which shows that only acoustic phonon branches exist in the 
+system. The edge of the Brillouin zone in this direction is 
+$2\pi/a[1 0 0]$. (b) Dispersion plot using the cubic conventional unit 
+cell ($b=4$), where every atom in the unit cell is identical ($m_r=1$). 
+Compared to the primitive cell, the Brillouin zone edge is at 
+$\pi/a[1 0 0]$ where the acoustic branches have been "folded in".
+\cite{turneythesis} Other than these considerations, the choice of unit 
+cell for the single species system does not affect the dispersion. (c) 
+System with two unique atom types in the conventional unit cell with a 
+mass ratio $m_r=3$, which creates optical branches with low group 
+velocity and reduced group velocity acoustic branches. (d) System with 
+$b=4$ unique atoms types in the unit cell with high mass ratio 
+($m_r=12$), which increases the number of optical branches and further 
+reduces the acoustic group velocities. }
+\end{figure}
+
+\subsection{\label{S-Introduction-OrderedAlloy-PhonoLife}Phonon Lifetimes}
+%--------------------------------------------------------------------------
+- compare lifetimes from 2 atom alloy, 4 atom alloy.  Is the reduction in 
+thermal conductivity mostly due to the reduction in group 
+velocities/introduction of optical modes?
+
+
+
+
+
+\section{\label{S-Motivation}Disordered Alloys}
+
+\subsection{\label{S-Motivation-Amorphous}Effective Phonon Dispersion}
+
+- compare versus virtual crystal
+
+\subsection{\label{S-Motivation-Amorphous}Effective Phonon Lifetimes}
+
+- compare c=0.0,0.05,0.15
+
+
+
+$g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+
+\subsection{\label{S-Motivation-Amorphous}Disappearance of SED Peaks}
+
+- show SED plot of mode peaks from c=0.0,0.05,0.15,0.5 for any mode where a peak still shows in 0.5
+
+\subsection{\label{S-Motivation-Amorphous}Propagating Modes in Heavily Disordered Alloys}
+
+- Analysis of c=0.5 modes at gamma, which modes are plane-wave like? 
+
+
+\section{\label{S-Motivation} Heat Transport in Amorphous System}
+
+\subsection{\label{S-Motivation-Amorphous}Effective Phonon Dispersion}
+
+- compare predicted sound speeds from finite dispersion acoustic branch (dk~pi/100L), bulk modulus
+
+\subsection{\label{S-Motivation-Amorphous}Allen Feldman Diffuson Theory}
+
+- thermal transport in terms of a diffusivity, no need for a propagation velocity
+
+\subsection{\label{S-Motivation-Amorphous}Diffuson Lifetimes}
+
+- measured using NMD and anharmonic MD.
+
+- extract effective Diffuson velocity, compare to sound speed
+
+- use sound speed to predict a phonon MFP, establish a MFP cut-off criteria to call something a phonon or not.  Could be MFP > lattice constant or something.  However, there are no wavelengths (yet).
+
+\subsection{\label{S-Motivation-Amorphous}Propagating Modes in Amorphous System}
+
+- Analysis of c=0.5 modes at gamma, which modes are plane-wave like? This will be the key to the length scale needed to compare with the MFP predicted above. The plane-wave like modes will be identified by fourier transforming the eigvec.  It should show content at a small number of wavevectors, and 1 should be dominant and of the order of pi/L. 
+
+\subsection{\label{S-Motivation-Amorphous}Role of Anharmonicity in Disordered Thermal Transport}
+
+- run harmoninc FC MD, predict thermal conductivity using GK
+
+- compare anharmonic GK, harmonic GK, and AF predictions. May possibly need to run "stiffer" system to compare with $k_{si} = k_{ph} + k{AF} = 0.5+0.5$. 
+
+\section{\label{S-Motivation} Thermal Diffusivity in Ordered and Disordered Systems}
+
+
+
+- plot AF and phonon diffusivities for all systems above.  
+
+- Show that for high mass ratio ordered alloys and disordered alloys, the thermal diffusivities are on the order of amorphous system. 
+
+- For high mass ratio ordered alloys, it is the reduction of the group velocities through decreased acoustic and introduced optical branches. 
+
+- For the disordered alloys, the phonon lifetimes of high frequency modes are drastically reduced as alloy concentration is increased.  Should show that this effect is less drastic for "soft" (soft bond) or "acoustically" matched systems (low mass ratio). It is more drastic for large acoustically mismatched systems (high mass ratio) or stiff systems.
+
+- For amorphous systems, there is not a unique choice of the phonon MFP. Instead, it is helpful to consider the diffusons and their thermal diffusitivty. Compared to high mass ratio ordered alloys and heavily disordered alloys, these thermal diffusivities are comparable.  
+
+- Compare high mass ratio ordered alloys optical branch group velocities/lifetimes (diffusivities) to amorphous diffusivities ("group velocity" and "lifetime"). Are they really distinguishable?
+
+
+\appendix
+\section{\label{A-Predicting-Phonons}Predicting Phonon Properties}
+\subsection{\label{A-Phonon-Normal-Modes}Vibrations in Ordered and Disordered Solids}
+In a crystal (periodic) system, the vibrations of atoms are described by a basis of eigenfunctions called phonon normal modes, which are determined by the properties of the crystal (see Appendix \ref{A-Allowed-Wavevectors-Ordered}). The eigenvalues of this basis are the phonon mode frequencies (energies).\cite{dove1993,wallace1972} The atomic velocities can be represented by the velocity normal mode coordinate, defined as 
+\cite{dove1993}
+\begin{equation}\label{E:udot_HLD}
+\begin{split}
+\dot{u}_{\alpha}\lbt = &\SUMprime{2}{} \frac{1}{\sqrt{m_bN}} \EXP{i\pmb{\kappa}^{'}\cdot\mathbf{r}_0\ab{l}{0}} e^*\kvba \dot{q}\kvt{}{}{}.
+\end{split}
+\end{equation}
+Here, $\dot{q}\kvt{}{}{}$ represents the kinetic energy $T \kvt$ of the mode with phonon frequency $\omega_0\kv$ by
+\cite{dove1993}
+\begin{equation}\label{E:udot_HLD}
+\begin{split}
+T \kvt= \frac{\dot{q}^*\kvt{}{}{}\dot{q}\kvt{}{}{}}{2}.
+\end{split}
+\end{equation}
+The phonon mode kinetic energies $T \kvt$ are used to calculate the phonon spectral energy denisty in Appendix \ref{A-Phonon-Life-SED}.
+\subsection{\label{A-Phonon-Life-SED}Predicting Phonon Lifetimes using Spectral Energy Denisty}
+The phonon normal mode coordinate is,
+\begin{equation}\label{EQ:NMD:qdot}
+\begin{split}
+\dot{q}\kvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}\lbt e^*\kvba\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}},
+\end{split}
+\end{equation}
+which form the basis for vibrations in ordered materials and represents the phonon mode kinetic energy. The normal mode kinetic energy can be transformed from the time domain $t$ to the
+frequency domain $\omega$ by Parseval's theorem,\cite{rudin1987}
+\begin{equation}\label{EQ:NMD:KE_single}
+\begin{split}
+T\kvw=&\lim_{\tau_0\rightarrow\infty}\frac{1}{2\tau_0}\left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kvt\exp(-i\omega t)dt\right|^2.
+\end{split}
+\end{equation}
+Here, $T\kvw$ represents the spectral energy of the phonon normal mode with frequency $\omega\kvw$. Following the derivation in Appendix \ref{A-Derivation-SED}, one arrives at the expression for the SED of a single phonon mode,
+\begin{equation}\label{E:Lorentzian_NMD_2}
+\begin{split}
+T\kvw = \frac{C_0\kv}{2}\frac{\Gamma\kv/\pi}{[\omega_0\kv-\omega]^2+\Gamma^2\kv},
+\end{split}
+\end{equation}
+which is a Lorentzian function with center at $\omega_0\kv$ and a half-width at half-maximum (linewidth) of
+$\Gamma\kv$ and $C_0\kv$ is a constant. We know from anharmonic lattice dynamics theory that the phonon linewidth is related to the phonon lifetime, $\tau\kv$, by\cite{maradudin1962,ladd1986}
+\begin{equation}\label{E:lifetime}
+\begin{split}
+\tau\kv=&\frac{1}{2\Gamma\kv}.
+\end{split}
+\end{equation}
+The MD simulations we perform here are classical. For a classical system in the harmonic limit (i.e., temperature approaching zero) there is an equipartition of energy and $\sum_{\nu}^{3n} T\kvw = \sum_{\nu}^{3n} V\kvw$.\cite{mcquarrie2000} In an anharmonic system (i.e., a MD simulation), the assumption of equipartition of energy can be tested by predicting the system-level specific heat. By assuming equipartition of energy, the phonon SED at a particular wavevector is
+\begin{equation}\label{EQ:NMD-LorLorentzian_NMD}
+\begin{split}
+\Phi(\pmb{\kappa},\omega) = 2\sum_{\nu}^{3n} T\kvw =& \sum_{\nu}^{3n}C_0\kv\frac{\Gamma\kv/\pi}{[\omega_0\kv-\omega]^2+\Gamma^2\kv},
+\end{split}
+\end{equation}
+which is a superposition of $3n$ Lorentzian functions with centers at $\omega_0\kv$ (one for each polarization). For simplicity, we refer to $\Phi(\pmb{\kappa},\omega)$ as $\Phi$. Given a set of atomic velocities, $\Phi$ can be calculated using Eq$.$ \eqref{E:qdot_HLD} and \eqref{A:E:ave_T_w1}, and then fit using Eq$.$ \eqref{A:E:Lorentzian_NMD} to extract the phonon properties $\omega_0\kv$ and $\tau\kv$.
+\begin{figure}
+\begin{center}
+%\includegraphics[angle=0,width=70.0mm]{lj_fit_peak.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:LJ_FIT_PEAK} The SED ($\Phi$) for the first three polarizations at the wavevector $[\pi/4a,\pi/4a,\pi/4a]$ for LJ argon at a temperature of 20 K. There are two degenerate transverse acoustic polarizations and one longitudinal acoustic polarization (of higher frequency).\cite{dove1993} When fitting the SED, the different polarizations can be fit individually using single Lorentzian peaks or as a superposition of peaks. Here the two peaks are fit individually with $\Phi$ plotted as a superposition. The predicted lifetimes of these polarizations, which are inversely proportional to the peak widths $\Gamma$, are provided in the legend.}
+\end{figure}
+
+\subsection{\label{A-Allowed-Wavevectors-Ordered}Allowed Wavevectors in Ordered Systems}
+The phonon spectral energy is defined for the allowed wavevectors of a crystal, which can be specified from the crystal structure's Bravais lattice and its basis, i.e. unit cell. A $D$-dimensional Bravais lattice is a collection of points with
+positions
+\begin{equation}\label{crys_pos}
+\begin{split}
+\mathbf{u}_0\ab{l}{0} =& \sum^D_{\alpha} N_{\alpha}\mathbf{a}_{\alpha}
+\end{split}
+\end{equation}
+where $N_{\alpha}$ and the summations if over the lattice vectors, $\mathbf{a}_{\alpha}$.\cite{ashcroft1976} The basis (or unit cell) is the building block of the crystal and they are arranged on the points defined by the Bravais lattice. The equillibrium position of any atom in the crystal can be described by
+\begin{equation}\label{crys_pos2}
+\begin{split}
+\mathbf{u}_0\ab{l}{b} = \mathbf{u}_0\ab{l}{0} + \mathbf{u}_0\ab{0}{b}
+\end{split}
+\end{equation}
+where $\mathbf{u}_0\ab{l}{0}$ is the equilibrium position of the $l^{\textrm{th}}$ unit cell and $\mathbf{u}_0\ab{0}{b}$ is the equilibrium position of the and $b^{\textrm{th}}$ atom in the unit cell relative to $\mathbf{u}_0\ab{l}{0}$.
+For the LJ systems studied here, the cubic conventional cells are used with four atoms per unit cell.\cite{ashcroft1976} For our MD simulations, cubic simulation domains with periodic boundary conditions are used with $N_1 = N_2 = N_3 = N_0$.\cite{turney2009a,mcgaughey2004a} The allowed wavevectors for such crystal structures are
+\begin{equation}\label{crys_pos3}
+\begin{split}
+\pmb{\kappa} = \sum_{\alpha} \mathbf{b}_{\alpha} \frac{n_{\alpha}}{N_{\alpha}},
+\end{split}
+\end{equation}
+where $\mathbf{b}_{\alpha}$ are the reciprocal lattice vectors\cite{ashcroft1976} and $-N_{\alpha}/2 < n_{\alpha} \leq N_{\alpha}/2$, where $n_{\alpha}$ are integers and $N_{\alpha}$ are even integers.\cite{turney2009a} The wavevectors are taken to be in the first Brioullin zone.\cite{ashcroft1976}
+
+\subsubsection*{Allowed Wavevectors in Disordered Materials}
+
+Strictly speaking, the only allowed wavector in a disordered system is the gamma point ($\kappa = [0 0 0]$). As such, the lattice dynamics calculations are performed at the gamma point:
+
+
+\subsection{\label{A:ThermalCond}Thermal Conductivity}
+Once the lifetimes (MFPs) and group velocities of all virbrational modes in the
+Brillouin zone are obtained, the bulk thermal conductivity in direction
+$\mathbf{n}$, $k_{\mathbf{n}}$, can be calculated from \cite{ziman2001}
+\begin{equation}\label{E-size:k_bulk}\
+\begin{split}
+k_{\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph} \kv v^{2}_{g,\mathbf{n}} \kv \tau \kv.
+\end{split}
+\end{equation}
+Here, $c_{ph}$ is the phonon volumetric specific heat and ${v}_{g,\mathbf{n}}$ is
+the component of the group velocity vector in direction $\mathbf{n}$. Since the systems we consider are classical and obey Maxwell-Boltzmann statistics,\cite{mcquarrie2000} the
+specific heat is $k_{B}/V$ per mode in the harmonic limit where $V$ is the system volume. This approximation is used here and has been shown to be suitable for LJ argon\cite{mcgaughey2004c} and SW silicon.\cite{goicochea2010} The group
+velocity vector is the gradient of the dispersion curves (i.e., $\partial \omega / \partial \pmb{\kappa}$), which can be calculated from the frequencies and wavevectors using finite differences. In this work, the group velocities are calculated using finite difference and quasi-harmonic lattice dynamics because a very small finite difference can be used which reduces the error.\cite{mcgaughey2006b} To predict a bulk thermal conductivity, it is necessary to perform a finite simulation size scaling procedure as discussed in Appendix \ref{A-Finite-Sim}.
+\section{\label{A-Finite-Sim}Finite Simulation-Size Scaling for Thermal Conductivity}
+For the LJ argon system studied in Section \ref{S-Prelim-Vib-Cond-Ordered}, a finite simulation-size scaling procedure\cite{turney2009a,He2011a} is used to compare the thermal conductivity predictions from $\Phi$ and $\Phi'$ to those from the Green-Kubo method. The scaling procedure is demonstrated in Fig$.$ \ref{FIG:LJ_COND}. The thermal conductivity is predicted from $\Phi$ or $\Phi'$ and MD simulations with $N_0 = 4,6,8,$ and $10$. The bulk conductivity, $k_{\infty}$, is then estimated by fitting the data to
+\begin{equation}\label{k_size}
+\begin{split}
+1/k = 1/k_{\infty} + A/N_0,
+\end{split}
+\end{equation}
+where $A$ is a constant. This procedure is necessary because the first Brillouin zone is only sampled at a finite number of points for a finite simulation size, with no contribution from the volume at its center. To predict a bulk thermal conductivity, it is important to sample points near the Brillouin zone center, where the modes can have large lifetimes and group velocities.\cite{turney2009a,sellan2010b} 
+%This method has been validated for non-equilibrium MD simulations \cite{sellan2010a}, but has not been validated for equilibrium MD.
+\begin{figure}
+\begin{center}
+%\includegraphics[angle=0,width=70.0mm]{LJ_NMD_SED_COND_2.eps}
+\end{center}
+\caption{\label{FIG:LJ_COND} Thermal conductivity predictions for LJ argon calculated using phonon lifetimes predicted by $\Phi$ and $\Phi'$.\cite{Larkin2012} (a) The finite simulation-size scaling extrapolation \cite{turney2009a,He2011a} is used to compare the results to bulk predictions made using the Green-Kubo method. (b) The bulk results for $\Phi$ and Green-Kubo are in good agreement temperatures of $20$ and $40$ K with those of other atomistic simulation methods.\cite{turney2009a}}
+\end{figure}
+
+
+
+\clearpage
+\bibliographystyle{apsrev}
+\bibliography{/home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091712}
+\end{document}

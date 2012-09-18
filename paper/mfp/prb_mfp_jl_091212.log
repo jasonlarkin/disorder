@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.11)  13 SEP 2012 13:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.11)  17 SEP 2012 13:28
 entering extended mode
  %&-line parsing enabled.
 **prb_mfp_jl_091212.tex
@@ -247,7 +247,7 @@ LaTeX Warning: Label `S:Lifetimes' multiply defined.
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
-LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
@@ -256,7 +256,10 @@ LaTeX Warning: Label `S:Lifetimes:' multiply defined.
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
 
 
-LaTeX Warning: Label `S-Motivation' multiply defined.
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
 
 
 LaTeX Warning: Label `S-Motivation' multiply defined.
@@ -265,19 +268,10 @@ LaTeX Warning: Label `S-Motivation' multiply defined.
 LaTeX Warning: Label `S-Motivation' multiply defined.
 
 
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
 LaTeX Warning: Label `S-Motivation' multiply defined.
 
 
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+LaTeX Warning: Label `S-Motivation' multiply defined.
 
 
 LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
@@ -296,6 +290,21 @@ LaTeX Warning: Label `S-Motivation' multiply defined.
 
 
 LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+
+
+LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+
+
+LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+
+
+LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+
+
+LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
+
+
+LaTeX Warning: Label `S-Motivation' multiply defined.
 
 
 LaTeX Warning: Label `E:udot_HLD' multiply defined.
@@ -331,24 +340,20 @@ Class revtex4 Info: multicol was not loaded (OK!) on input line 198.
 \MPnumerator=\count118
 \everyMPtoPDFconversion=\toks25
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 243.
+LaTeX Font Info:    Try loading font information for U+msa on input line 232.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 243.
+LaTeX Font Info:    Try loading font information for U+msb on input line 232.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 1997) in paragraph at lines 308--310
+[]\OT1/cmr/m/n/12 The life-times of vi-bra-tional modes in a-Si were pre-dicted
+ us-ing nor-mal mode
+ []
 
-Package natbib Warning: Citation `schelling2002' on page 4 undefined on input l
-ine 393.
-
-
-Package natbib Warning: Citation `Garg2011' on page 4 undefined on input line 3
-93.
-
-[4] [5] [6]
 Missing character: There is no Î in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no Ì in font cmr12!
@@ -361,183 +366,218 @@ Missing character: There is no ˆ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no ‰ in font cmr12!
 Missing character: There is no « in font cmr12!
-
-Underfull \hbox (badness 2617) in paragraph at lines 490--494
-[]\OT1/cmr/m/n/12 DSF /home/jason/Downloads/papers/disorder/PhysRevB.59.3551.pd
-f Fourier Mode
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+[]\OT1/cmr/m/n/12 /home/jason/Downloads/papers/disorder/PhysRevB.43.6573.pdf
  []
 
+[4] [5]
 
-Package natbib Warning: Citation `dove1993' on page 7 undefined on input line 1
-003.
-
-
-Package natbib Warning: Citation `wallace1972' on page 7 undefined on input lin
-e 1003.
+Package natbib Warning: Citation `schelling2002' on page 6 undefined on input l
+ine 485.
 
 
-Package natbib Warning: Citation `dove1993' on page 7 undefined on input line 1
-004.
+Package natbib Warning: Citation `Garg2011' on page 6 undefined on input line 4
+85.
 
-[7]
+[6] [7]
 
-Package natbib Warning: Citation `dove1993' on page 8 undefined on input line 1
-011.
-
-
-Package natbib Warning: Citation `rudin1987' on page 8 undefined on input line 
-1026.
+Package natbib Warning: Citation `dove1993' on page 8 undefined on input line 5
+65.
 
 
-LaTeX Warning: Reference `A-Derivation-SED' on page 8 undefined on input line 1
-032.
+Package natbib Warning: Citation `wallace1972' on page 8 undefined on input lin
+e 565.
 
 
-Package natbib Warning: Citation `maradudin1962' on page 8 undefined on input l
-ine 1039.
-
-
-Package natbib Warning: Citation `ladd1986' on page 8 undefined on input line 1
-039.
-
-
-Package natbib Warning: Citation `mcquarrie2000' on page 8 undefined on input l
-ine 1045.
+Package natbib Warning: Citation `dove1993' on page 8 undefined on input line 5
+66.
 
 [8]
 
-LaTeX Warning: Reference `E:qdot_HLD' on page 9 undefined on input line 1051.
+Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 5
+73.
 
 
-LaTeX Warning: Reference `A:E:ave_T_w1' on page 9 undefined on input line 1051.
+Package natbib Warning: Citation `rudin1987' on page 9 undefined on input line 
+588.
 
 
-
-LaTeX Warning: Reference `A:E:Lorentzian_NMD' on page 9 undefined on input line
- 1051.
-
-
-Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 1
-057.
+LaTeX Warning: Reference `A-Derivation-SED' on page 9 undefined on input line 5
+94.
 
 
-Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 1
-057.
+Package natbib Warning: Citation `maradudin1962' on page 9 undefined on input l
+ine 601.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 9 undefined on input li
-ne 1068.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 9 undefined on input li
-ne 1075.
-
-
-Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 1075.
-
-
-Package natbib Warning: Citation `mcgaughey2004a' on page 9 undefined on input 
-line 1075.
+Package natbib Warning: Citation `ladd1986' on page 9 undefined on input line 6
+01.
 
 [9]
 
-Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 1081.
-
-
-Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 1081.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 1081.
-
-
-Package natbib Warning: Citation `ziman2001' on page 10 undefined on input line
- 1091.
-
-
-Overfull \hbox (2.61108pt too wide) detected at line 1096
- []
- []
-
-
 Package natbib Warning: Citation `mcquarrie2000' on page 10 undefined on input 
-line 1098.
+line 607.
 
 
-Package natbib Warning: Citation `mcgaughey2004c' on page 10 undefined on input
- line 1099.
+LaTeX Warning: Reference `E:qdot_HLD' on page 10 undefined on input line 613.
 
 
-Package natbib Warning: Citation `goicochea2010' on page 10 undefined on input 
-line 1099.
+LaTeX Warning: Reference `A:E:ave_T_w1' on page 10 undefined on input line 613.
 
 
-Package natbib Warning: Citation `mcgaughey2006b' on page 10 undefined on input
- line 1100.
+
+LaTeX Warning: Reference `A:E:Lorentzian_NMD' on page 10 undefined on input lin
+e 613.
 
 
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 10 undefined on in
-put line 1102.
+Package natbib Warning: Citation `dove1993' on page 10 undefined on input line 
+619.
 
 
-Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 1102.
+Package natbib Warning: Citation `dove1993' on page 10 undefined on input line 
+619.
 
 
-Package natbib Warning: Citation `He2011a' on page 10 undefined on input line 1
-102.
+Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
+ine 630.
+
+[10]
+
+Package natbib Warning: Citation `ashcroft1976' on page 11 undefined on input l
+ine 637.
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 1102--1103
+Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
+ne 637.
+
+
+Package natbib Warning: Citation `mcgaughey2004a' on page 11 undefined on input
+ line 637.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 11 undefined on input l
+ine 643.
+
+
+Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
+ne 643.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 11 undefined on input l
+ine 643.
+
+
+Package natbib Warning: Citation `ziman2001' on page 11 undefined on input line
+ 653.
+
+
+Overfull \hbox (2.61108pt too wide) detected at line 658
+ []
+ []
+
+
+Package natbib Warning: Citation `mcquarrie2000' on page 11 undefined on input 
+line 660.
+
+
+Package natbib Warning: Citation `mcgaughey2004c' on page 11 undefined on input
+ line 661.
+
+
+Package natbib Warning: Citation `goicochea2010' on page 11 undefined on input 
+line 661.
+
+
+Package natbib Warning: Citation `mcgaughey2006b' on page 11 undefined on input
+ line 662.
+
+[11]
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 12 undefined on in
+put line 664.
+
+
+Package natbib Warning: Citation `turney2009a' on page 12 undefined on input li
+ne 664.
+
+
+Package natbib Warning: Citation `He2011a' on page 12 undefined on input line 6
+64.
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 664--665
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
-[10]
 
-Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 1108.
-
-
-Package natbib Warning: Citation `sellan2010b' on page 11 undefined on input li
-ne 1108.
+Package natbib Warning: Citation `turney2009a' on page 12 undefined on input li
+ne 670.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 11 undefined on input lin
-e 1114.
+Package natbib Warning: Citation `sellan2010b' on page 12 undefined on input li
+ne 670.
 
 
-Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 1114.
+Package natbib Warning: Citation `Larkin2012' on page 12 undefined on input lin
+e 676.
 
 
-Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 1
-114.
+Package natbib Warning: Citation `turney2009a' on page 12 undefined on input li
+ne 676.
 
 
-Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 1114.
+Package natbib Warning: Citation `He2011a' on page 12 undefined on input line 6
+76.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 11 undefined on input lin
-e 1114.
+Package natbib Warning: Citation `turney2009a' on page 12 undefined on input li
+ne 676.
 
 
-Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 1114.
+Package natbib Warning: Citation `Larkin2012' on page 12 undefined on input lin
+e 676.
 
 
-Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 1
-114.
+Package natbib Warning: Citation `turney2009a' on page 12 undefined on input li
+ne 676.
 
 
-Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 1114.
+Package natbib Warning: Citation `He2011a' on page 12 undefined on input line 6
+76.
 
-(./prb_mfp_jl_091212.bbl [11]
+
+Package natbib Warning: Citation `turney2009a' on page 12 undefined on input li
+ne 676.
+
+(./prb_mfp_jl_091212.bbl [12]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [13]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -545,7 +585,7 @@ Missing character: There is no “ in font cmr10!
 
 Package natbib Warning: There were undefined citations.
 
-[12] (./prb_mfp_jl_091212.aux)
+[14] (./prb_mfp_jl_091212.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -554,13 +594,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3884 strings out of 493848
- 47460 string characters out of 1152823
- 143530 words of memory out of 3000000
- 7114 multiletter control sequences out of 15000+50000
+ 3954 strings out of 493848
+ 49170 string characters out of 1152823
+ 140522 words of memory out of 3000000
+ 7181 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,25n,30p,1376b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,25n,30p,760b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
@@ -577,9 +617,9 @@ r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb>
-Output written on prb_mfp_jl_091212.pdf (12 pages, 256498 bytes).
+Output written on prb_mfp_jl_091212.pdf (14 pages, 264780 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

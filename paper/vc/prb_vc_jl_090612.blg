@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_090612.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091412.bib
+Warning--I didn't find a database entry for "garg_phonon_2012"
+Warning--I didn't find a database entry for "dove1993"
+Warning--I didn't find a database entry for "wallace1972"
+Warning--I didn't find a database entry for "rudin1987"
+Warning--I didn't find a database entry for "maradudin1962"
+Warning--I didn't find a database entry for "ladd1986"
+Warning--I didn't find a database entry for "mcquarrie2000"
+Warning--I didn't find a database entry for "ashcroft1976"
+Warning--I didn't find a database entry for "turney2009a"
+Warning--I didn't find a database entry for "mcgaughey2004a"
+Warning--I didn't find a database entry for "ziman2001"
+Warning--I didn't find a database entry for "mcgaughey2004c"
+Warning--I didn't find a database entry for "goicochea2010"
+Warning--I didn't find a database entry for "mcgaughey2006b"
+Warning--I didn't find a database entry for "He2011a"
+Warning--I didn't find a database entry for "sellan2010b"
+Warning--I didn't find a database entry for "Larkin2012"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 139672336468920.
+You've used 10 entries,
+            3411 wiz_defined-function locations,
+            1247 strings with 12797 characters,
+and the built_in function-call counts, 7980 in all, are:
+= -- 450
+> -- 286
+< -- 39
++ -- 242
+- -- 70
+* -- 1105
+:= -- 841
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 40
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 679
+empty$ -- 652
+format.name$ -- 170
+if$ -- 1520
+int.to.chr$ -- 1
+int.to.str$ -- 11
+missing$ -- 105
+newline$ -- 45
+num.names$ -- 30
+pop$ -- 169
+preamble$ -- 1
+purify$ -- 40
+quote$ -- 0
+skip$ -- 315
+stack$ -- 0
+substring$ -- 326
+swap$ -- 556
+text.length$ -- 35
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 60
+warning$ -- 0
+while$ -- 30
+width$ -- 0
+write$ -- 122
+(There were 17 warnings)
