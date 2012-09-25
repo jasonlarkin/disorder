@@ -1,0 +1,64 @@
+VARIABLES
+  $a = 5.30e-10
+
+LATTICE = 3 %Comment
+  a1 = $a,0,0
+  a2 = 0,$a,0
+  a3 = 0,0,$a
+  BC1 = Periodic
+  BC2 = Periodic
+  BC3 = Periodic
+  N1 = 12
+  N2 = 12
+  N3 = 12
+
+MATERIAL = 1
+  Ar = 6.63e-26
+
+POTENTIAL = LJ 1 Ar
+  epsilon = 1.67e-21
+  sigma   = 3.40e-10
+  cutoff  = 2.5*3.4e-10
+  Acutoff = 2.5*3.4e-10
+
+SYMMETRY = 1
+  wave_vector = false
+
+DISPERSION = 500
+  Coordinate = Cartesian
+  Begin      = 0,0,0
+  End        = 1/$a,0,0
+
+UNIT_CELL = 4
+  Coordinate = Direct
+  Ar 0 0 0
+  Ar 0.5 0.5 0
+  Ar 0.5 0 0.5
+  Ar 0 0.5 0.5
+
+PREPROCESS = false
+  optimization = 0
+  structure    = true
+  energy       = true
+
+HARMONIC = true
+  frequency = true
+  velocity  = true
+  evector   = true
+  DOS       = true
+
+POSTPROCESS = true
+  TC_beg   = 3
+  TC_end   = 10
+  data_itr = 10
+  data_beg = 0 0 0
+  data_inc = 0 0 1
+  data_num = 10
+  data_fBZ = no_symmetry
+
+ANHARMONIC = 10
+  temperature  = 10
+  fs_guess     = 0.02
+  lw_guess     = 0.03
+  conductivity = true
+  continue     = 0

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  18 SEP 2012 13:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  20 SEP 2012 20:29
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_091712.tex
@@ -249,9 +249,6 @@ LaTeX Warning: Label `S:' multiply defined.
 LaTeX Warning: Label `S:' multiply defined.
 
 
-LaTeX Warning: Label `S:' multiply defined.
-
-
 LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
@@ -261,34 +258,7 @@ LaTeX Warning: Label `S:' multiply defined.
 LaTeX Warning: Label `S:' multiply defined.
 
 
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
-
-
-LaTeX Warning: Label `S-Motivation' multiply defined.
+LaTeX Warning: Label `S:' multiply defined.
 
 
 LaTeX Warning: Label `E:udot_HLD' multiply defined.
@@ -311,74 +281,55 @@ LaTeX Font Info:    ... okay on input line 198.
 Class revtex4 Info: Patching array package. on input line 198.
 Class revtex4 Info: cite was not loaded (OK!) on input line 198.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 198.
-LaTeX Font Info:    Try loading font information for U+msa on input line 232.
+LaTeX Font Info:    Try loading font information for U+msa on input line 220.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 232.
+LaTeX Font Info:    Try loading font information for U+msb on input line 220.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1]
 
-Package natbib Warning: Citation `klemens_scattering_1955' on page 2 undefined 
-on input line 243.
+Package natbib Warning: Citation `chen_recent_2003' on page 2 undefined on inpu
+t line 228.
 
 
-Package natbib Warning: Citation `duda_reducing_2011' on page 2 undefined on in
-put line 246.
+Package natbib Warning: Citation `dresselhaus_new_2007' on page 2 undefined on 
+input line 228.
 
 
-Package natbib Warning: Citation `garg_role_2011' on page 2 undefined on input 
-line 249.
+Package natbib Warning: Citation `he_thermoelectric_2006' on page 2 undefined o
+n input line 232.
 
 
-Package natbib Warning: Citation `duda_controlling_2012' on page 2 undefined on
- input line 253.
+Package natbib Warning: Citation `huang_filler-reduced_2010' on page 2 undefine
+d on input line 232.
 
 
-Package natbib Warning: Citation `tamura_isotope_1983' on page 2 undefined on i
-nput line 256.
+Package natbib Warning: Citation `toberer_phonon_2011' on page 2 undefined on i
+nput line 232.
 
 
-Package natbib Warning: Citation `cahill_thermal_2004' on page 2 undefined on i
-nput line 261.
+Package natbib Warning: Citation `abeles_lattice_1963' on page 2 undefined on i
+nput line 243.
 
-
-Package natbib Warning: Citation `cahill_thermal_2005' on page 2 undefined on i
-nput line 266.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 270.
-
-
-Package natbib Warning: Citation `bouchard_vibrational_1988' on page 2 undefine
-d on input line 273.
-
-
-Package natbib Warning: Citation `freeman_thermal_1986' on page 2 undefined on 
-input line 279.
-
+[2]
 File: /home/jason/thesis/proposal/paper/LJ_alloy_GK.eps Graphic file (type eps)
 
-</home/jason/thesis/proposal/paper/LJ_alloy_GK.eps> [2]
+ </home/jason/thesis/proposal/paper/LJ_alloy_GK.eps>
 
-Package natbib Warning: Citation `allen_diffusons_1999' on page 3 undefined on 
-input line 306.
+Package natbib Warning: Citation `abeles_lattice_1963' on page 3 undefined on i
+nput line 334.
 
 [3]
 
-Package natbib Warning: Citation `klemens_scattering_1955' on page 4 undefined 
-on input line 345.
+Package natbib Warning: Citation `turney_predicting_2009' on page 4 undefined o
+n input line 354.
 
 
-Package natbib Warning: Citation `klemens_thermal_1957' on page 4 undefined on 
-input line 345.
-
-
-Package natbib Warning: Citation `mcgaughey_nanostructure_2012' on page 4 undef
-ined on input line 358.
+Package natbib Warning: Citation `turney_predicting_2009' on page 4 undefined o
+n input line 360.
 
 File: /home/jason/disorder/lj/alloy/xcorr_alloy_vc_life.eps Graphic file (type 
 eps)
@@ -386,164 +337,144 @@ eps)
 File: /home/jason/disorder/lj/alloy/xcorr_alloy_gamma_life.eps Graphic file (ty
 pe eps)
 
-</home/jason/disorder/lj/alloy/xcorr_alloy_gamma_life.eps> [4]
+</home/jason/disorder/lj/alloy/xcorr_alloy_gamma_life.eps> [4] [5]
 
-Package natbib Warning: Citation `skye_thermal_2008' on page 5 undefined on inp
-ut line 412.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 5 undefined on input 
-line 414.
-
-
-Package natbib Warning: Citation `garg_phonon_2012' on page 5 undefined on inpu
-t line 416.
-
-[5]
-File: /home/jason/thesis/proposal/paper/GULP_disp_mass_ratio.eps Graphic file (
-type eps)
- </home/jason/thesis/proposal/paper/GULP_disp_mass_ratio.eps>
-
-Package natbib Warning: Citation `turneythesis' on page 6 undefined on input li
-ne 458.
-
-
-Package natbib Warning: Citation `turneythesis' on page 6 undefined on input li
-ne 458.
+Package natbib Warning: Citation `garg_phonon_2012' on page 6 undefined on inpu
+t line 449.
 
 
 Package natbib Warning: Citation `dove1993' on page 6 undefined on input line 4
-76.
+99.
 
 
 Package natbib Warning: Citation `wallace1972' on page 6 undefined on input lin
-e 476.
+e 499.
 
 
-Package natbib Warning: Citation `dove1993' on page 6 undefined on input line 4
-79.
-
-
-Package natbib Warning: Citation `dove1993' on page 6 undefined on input line 4
-89.
+Package natbib Warning: Citation `dove1993' on page 6 undefined on input line 5
+02.
 
 [6]
 
-Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
-ne 512.
+Package natbib Warning: Citation `dove1993' on page 7 undefined on input line 5
+12.
+
+
+LaTeX Warning: Reference `A-Phonon-Life-SED' on page 7 undefined on input line 
+519.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
-ne 526.
+ne 535.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
+ne 549.
 
 
 Package natbib Warning: Citation `turney2009a' on page 7 undefined on input lin
-e 528.
+e 551.
 
 
 Package natbib Warning: Citation `mcgaughey2004a' on page 7 undefined on input 
-line 528.
+line 551.
 
 [7]
 
 Package natbib Warning: Citation `ashcroft1976' on page 8 undefined on input li
-ne 537.
+ne 560.
 
 
 Package natbib Warning: Citation `turney2009a' on page 8 undefined on input lin
-e 539.
+e 562.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 8 undefined on input li
-ne 540.
-
-
-Package natbib Warning: Citation `turney_predicting_2009-1' on page 8 undefined
- on input line 554.
+ne 563.
 
 
 Package natbib Warning: Citation `ziman2001' on page 8 undefined on input line 
-566.
+589.
 
 
-Overfull \hbox (2.61108pt too wide) detected at line 572
+Overfull \hbox (2.61108pt too wide) detected at line 595
  []
  []
 
 
 Package natbib Warning: Citation `mcquarrie2000' on page 8 undefined on input l
-ine 577.
+ine 600.
 
 
 Package natbib Warning: Citation `mcgaughey2004c' on page 8 undefined on input 
-line 580.
+line 603.
 
 
 Package natbib Warning: Citation `goicochea2010' on page 8 undefined on input l
-ine 581.
+ine 604.
 
 
 Package natbib Warning: Citation `mcgaughey2006b' on page 8 undefined on input 
-line 587.
+line 610.
 
 [8]
 
 LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 9 undefined on inp
-ut line 595.
+ut line 618.
 
 
 Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 596.
+e 619.
 
 
-Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 59
-6.
+Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 61
+9.
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 595--602
+Underfull \hbox (badness 1072) in paragraph at lines 618--625
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
 
 Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 612.
+e 635.
 
 
 Package natbib Warning: Citation `sellan2010b' on page 9 undefined on input lin
-e 612.
+e 635.
 
 
 Package natbib Warning: Citation `Larkin2012' on page 9 undefined on input line
- 618.
+ 641.
 
 
 Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 618.
+e 641.
 
 
-Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 61
-8.
+Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 64
+1.
 
 
 Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 618.
+e 641.
 
 
 Package natbib Warning: Citation `Larkin2012' on page 9 undefined on input line
- 618.
+ 641.
 
 
 Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 618.
+e 641.
 
 
-Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 61
-8.
+Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 64
+1.
 
 
 Package natbib Warning: Citation `turney2009a' on page 9 undefined on input lin
-e 618.
+e 641.
 
 (./prb_vc_jl_091712.bbl [9]
 Missing character: There is no â in font cmr10!
@@ -552,13 +483,29 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 148.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
+[10]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
 )
 
 Class revtex4 Warning: Endnote numbers changed: rerun LaTeX.
@@ -566,7 +513,7 @@ Class revtex4 Warning: Endnote numbers changed: rerun LaTeX.
 
 Package natbib Warning: There were undefined citations.
 
-[10] (./prb_vc_jl_091712.aux
+[11] (./prb_vc_jl_091712.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
@@ -580,12 +527,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3572 strings out of 493849
- 43906 string characters out of 1152846
- 126594 words of memory out of 3000000
- 6799 multiletter control sequences out of 15000+50000
+ 3585 strings out of 493849
+ 44315 string characters out of 1152846
+ 124236 words of memory out of 3000000
+ 6813 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,25n,30p,1280b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,25n,30p,632b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_091712.dvi (10 pages, 25308 bytes).
+Output written on prb_vc_jl_091712.dvi (11 pages, 27204 bytes).

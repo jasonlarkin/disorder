@@ -1,4 +1,6 @@
 
+m_alloy
+
 str.NMD = '/home/jason/orderdisorder/lj/alloy/10K/0.0/10x/NMD/1';
 
 SEDper=load(strcat(str.NMD,'/SEDdata.mat'));

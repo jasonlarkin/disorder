@@ -1,4 +1,9 @@
-str='';
-for i=685421:685620
-str = [str;'qdel ' int2str(i)]
+function gilgamesh_qdel( id_start, id_stop)
+%gilgamesh_qdel( id_start, id_stop)
+
+for i=id_start:id_stop
+str = ['qdel ' int2str(i)];
+disp(str)
+end
+
 end

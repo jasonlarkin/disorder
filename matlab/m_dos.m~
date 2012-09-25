@@ -1,0 +1,18 @@
+function [DOSX DOSY] = m_dos(freq, DOS_BIN, NUM_ATOMS)
+%--------------------------------------------------------------------------
+%[DOSX DOSY] = m_dos(freq, DOS_BIN, NUM_ATOMS)
+%--------------------------------------------------------------------------
+
+I = find( 
+
+[DOSY DOSX]= hist(freq,ceil(NUM_ATOMS/DOS_BIN));
+DOSY = DOSY/sum(DOSY);
+
+end
+
+
+
+
+
+
+

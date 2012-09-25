@@ -195,83 +195,191 @@
 %COMMANDS
 %--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
 \begin{document}
+%--------------------------------------------------------------------------
 
-
-\title{Predicting Vibrational Mean Free Paths in Disordered Systems}
-
+%--------------------------------------------------------------------------
+\title{Evaluation of the Virtual Crystal Approximation}
+%--------------------------------------------------------------------------
 \author{Jason M. Larkin}
 \affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
 University\\Pittsburgh, PA 15213}
-\author{Joseph E. Turney}
-\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
-University\\Pittsburgh, PA 15213}
-\author{Alexandre D. Massicotte}
-\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
-University\\Pittsburgh, PA 15213}
-\author{Cristina H. Amon}
-\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
-University\\Pittsburgh, PA 15213}
-\affiliation{
-Department of Mechanical \& Industrial Engineering, University of Toronto,
-Toronto, Ontario, Canada M5S 3G8}
 \author{A. J. H. McGaughey}
 \email{mcgaughey@cmu.edu}
 \affiliation{Department of Mechanical Engineering\\
 Carnegie Mellon University\\Pittsburgh, PA 15213}
-
 %--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
 \date{\today}
+%--------------------------------------------------------------------------
 
+
+%--------------------------------------------------------------------------
 \begin{abstract}
+%--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
 \end{abstract}
+%--------------------------------------------------------------------------
 
 
+%--------------------------------------------------------------------------
 \maketitle
 %--------------------------------------------------------------------------
 \clearpage
+%--------------------------------------------------------------------------
 \section{\label{S:Intro}Introduction}
-
-The goal of this work is to predict 
-
-
-\section{\label{S:}Determining Propagating and Localized Modes}
 %--------------------------------------------------------------------------
 
-Klemens scattering paper showing rayleigh \cite{klemens_scattering_1955}.
+For thermolectric device applications, minimizing a thermoelectric 
+material's thermal 
+conductivity has become a promising technique for increasing $ZT>3$.
+\cite{chen_recent_2003,dresselhaus_new_2007} In semiconductor alloys, 
+understanding the effect of disorder is necessary for optimizing 
+ZT by further lowering thermal conductivity.
+\cite{he_thermoelectric_2006,huang_filler-reduced_2010,
+toberer_phonon_2011,tian_phonon_2012}
 
-Duda shows the reduction in group velocity of disordered systems.
-\cite{duda_reducing_2011}
+Recently, work using ab-initio calculations\cite{garg_role_2011}
 
-Garg show that the virtual crystal approximation works well for Si-Ge 
-\cite{garg_role_2011}
 
-Duda shows that taking a perfect alloy and disordering via an order 
-parameter allows control of thermal conductivity.
-\cite{duda_controlling_2012}
 
-Tamura gives an expression for mass defect scattering which is harmonic and 
-given by \cite{tamura_isotope_1983}: The Rayleigh scattering limit is 
-observed in the low-frequency limit, where the DOS is approximately Debye.
+it is not known what effect, if any,
+mass disorder has on anharmonic scattering of phonons.
 
-Cahill shows that conductivty of Ge-doped Si epitaxial layers agrees with 
-the defect scaling cross section is captured mostly by the mass disorder.
-\cite{cahill_thermal_2004}
+Abeles introduced the idea of using a virtual crystal to replace 
+a disordered one, computing the
+thermal conductivity of Si/Ge alloys by treating both
+disorder and anharmonicity as perturbations.
+\cite{abeles_lattice_1963} 
+
+
+
+The goal of this work is to verify the 
+
+
+
+%--------------------------------------------------------------------------
+\section{\label{S:Lifetimes}Kinetic Theory}
+%--------------------------------------------------------------------------
+
+For a perfect system, all vibrational modes are phonons.
+
+Diffusons, locons and propagons \cite{allen_diffusons_1999}.
+
+\begin{equation}\label{EQ:M:k_mode}
+\begin{split}
+k_{vib,\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph}\kv 
+\pmb{v}^{2}_{g,\mathbf{n}}\kv \tau\kv.
+\end{split}
+\end{equation}
+
+Finally, we adopt the single-mode relaxation
+time approximation [16] as an approximate solution of
+the Boltzmann transport equation [17,18];
+
+
+Abeles introduced the idea of using a virtual (perfect) crystal 
+to replace a disordered one, computing the
+thermal conductivity of Si/Ge alloys by treating both
+disorder and anharmonicity as perturbations.
+\cite{abeles_lattice_1963} 
+
+%--------------------------------------------------------------------------
+\section{\label{S:}Phonon Lifetimes}
+%--------------------------------------------------------------------------
+
+\begin{equation}\label{EQ:M:tau_matthiessen}
+\frac{1}{\tau} = \frac{1}{\tau_{p-p}} + \frac{1}{\tau_{b}} + 
+\frac{1}{\tau_{d}},
+\end{equation}
+where $\tau_{p-p}$ accounts for phonon-phonon scattering, $\tau_{b}$ 
+accounts for boundary scattering, $\tau_{d}$ accounts for defect 
+scattering.
+
+\begin{equation}\label{EQ:M:tau_b}
+\tau_{b} = L/v_g.
+\end{equation}
+
+Phonon-phonon scattering ($\tau_{p-p}$) is typically treated 
+using anharmonic perturbation theory including only 3-phonon 
+processes.\cite{turney_predicting_2009,garg_role_2011,tian_phonon_2012} 
+At low frequencies,
+$\tau_{p-p}$ follows a scaling due to both normal ($B_1\omega^2$) 
+and umklapp ($B_2\omega^2$) 3-phonon scattering processes, where 
+the density of states is Debye-like. The 
+constants $B_1$ and $B_2$ are typically fit to experimental data.
+ Higher 
+order n-phonon process can become important at higher temperatures.
+\cite{turney_predicting_2009} 
+
+At low frequencies, the phonon scattering due to point-defects is 
+given by
+
+\begin{equation}\label{EQ:M:tau_d_D}
+\frac{1}{\tau_{d}} = \frac{V \omega^4}{4 \pi v_p^2 v_g} 
+( \sum_i c_i(1-m_i/\bar m)^2 + \sum_i c_i(1-r_i/\bar r)^2 ),
+\end{equation}
+
+where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius of 
+species i and $\bar r$ is the average atomic radius.
+\cite{klemens_scattering_1955,klemens_thermal_1957} 
+The frequency dependence is the same as 
+Rayleigh scattering, which is valid at low frequency in the Debye limit.
+
+Tamura gives a general expression for point defect scattering 
+which is harmonic \cite{tamura_isotope_1983}
+
+\begin{equation}\label{EQ:M:tau_d}
+\frac{1}{\tau_{\mathbf{q}s}^m} = \frac{\pi}{2N}\omega_{\mathbf{q}s}^2 
+\sum_{\mathbf{q'}s'} \delta( \omega_{\mathbf{q}s} - 
+\omega_{\mathbf{q'}s'} ) \sum_{\sigma} g_{2}(\sigma) 
+|e_{\mathbf{q'}s'}^*(\sigma) \cdot e_{\mathbf{q}s}(\sigma) |^2 ,
+\end{equation}
+
+where 
+$g_2(\sigma) = \sum_i f_i(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}]^2$
+
+$g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+
+Though the
+expression for harmonic scattering [Eq. (2)] is valid for
+small mass disorder, its use leads to good agreement with
+experimentally measured phonon linewidths, even in the
+case of the Ni0:55 Pd0:45 alloy, where the atomic species
+are chemically similar but mass disorder is large
+(mPd =mNi 1⁄4 1:812) [20].
 
 Cahill shows that even though the mass difference between Si and Ge is 
 larger than the mass of Si, the defect scaling agrees with experimental 
 measurements of thermal conductivity in dilute SiGe epitaxial layers.
 \cite{cahill_thermal_2005}
 
-Tian showed, using ab initio calculations, that the virtual crystal 
-appromxation with defect scalings work well for predicting the thermal 
-conductivity of PbSe/PbTe alloys.\cite{tian_phonon_2012}
+
+
+%--------------------------------------------------------------------------
+\section{\label{S:}Virtual Crystal Approximation}
+%--------------------------------------------------------------------------
+
+We calculate at any com-
+position the phonon modes of the virtual crystal (which has
+a 2-atom diamond unit cell and lattice parameter, mass, and
+force constants appropriate to that particular composition)
+and derive from those the frequencies, group velocities,
+and populations that enter into the calculation of thermal
+conductivity. The force constants and lattice parameter are
+interpolated quadratically at any composition using the end
+points (pure Si and Ge) and the virtual crystal at x 1⁄4 0:5
+
+Garg show that the virtual crystal approximation works well for Si-Ge 
+\cite{garg_role_2011}
 
 Bouchard show that alloy DOS varies smoothly with concentration.
 \cite{bouchard_vibrational_1988}
 
+%--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Thermal Conductivity Predictions from 
 Molecular Dynamics}
 %--------------------------------------------------------------------------
@@ -279,6 +387,22 @@ The thermal conductivity of amorphous solids at low temperatures contain
 quantum statistical effects.\cite{freeman_thermal_1986} Molecular dynamics 
 simulations are not able to capture quantum statistical effects.
 
+An addition of as little as 10\% Ge is sufficient to reduce the thermal 
+conductivity to the minimum value achievable through alloying. 
+Theoretically, mass disorder is found to increase the 
+anharmonic scattering of phonons 
+through a modification of their vibration eigenmodes. 
+Notably, the thermal conductivity is found
+to drop sharply after only a small amount of alloying. This
+is due to the strong harmonic scattering of phonons even
+in the dilute alloy limit.
+
+
+Duda shows that taking a perfect alloy and disordering via an order 
+parameter allows control of thermal conductivity.
+\cite{duda_controlling_2012}
+
+%--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.6]
@@ -294,76 +418,14 @@ conductivity drops quickly and saturates to a minimum at $c=0.5$. For
 $c=0.5$ the system is heavily disordered and the vibrational conductivity 
 approaches that of an amorphous system.}
 \end{figure}
-
-\section{\label{S:Lifetimes}Kinetic Theory}
 %--------------------------------------------------------------------------
 
-k = sum over modes
-
-For a perfect system, all vibrational modes are phonons.  It is thus easy 
-to evaluate.
-
-Diffusons, locons and propagons \cite{allen_diffusons_1999}.
-
-\begin{equation}\label{EQ:M:k_mode}
-\begin{split}
-k_{vib,\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph}\kv 
-\pmb{v}^{2}_{g,\mathbf{n}}\kv \tau\kv.
-\end{split}
-\end{equation}
-
-\begin{equation}\label{EQ:M:phonon_mfp}
-\begin{split}
-\Lambda\kv = |\pmb{v}_{g}| \tau\kv,
-\end{split}
-\end{equation}
-
 %--------------------------------------------------------------------------
-\section{\label{S:}Phonon Lifetimes}
+\section{\label{S:}Normal Mode Decomposition}
 %--------------------------------------------------------------------------
 
-\begin{equation}\label{EQ:M:tau_matthiessen}
-\frac{1}{\tau} = \frac{1}{\tau_{p-p}} + \frac{1}{\tau_{b}} + 
-\frac{1}{\tau_{d}},
-\end{equation}
-where $\tau_{p-p}$ accounts for phonon-phonon scattering, $\tau_{b}$ 
-accounts for boundary scattering, $\tau_{d}$ accounts for defect 
-scattering.
-
-\begin{equation}\label{EQ:M:tau_p-p}
-\tau_{p-p} = \frac{(6 \pi^2)^{1/3} \bar m v_g v_p^2}{2 V^{1/3} \omega^2 
-\gamma^2 T },
-\end{equation}
-
-\begin{equation}\label{EQ:M:tau_d}
-\frac{1}{\tau_{d}} = \frac{V \omega^4}{4 \pi v_p^2 v_g} 
-( \sum_i c_i(1-m_i/\bar m)^2 + \sum_i c_i(1-r_i/\bar r)^2 ),
-\end{equation}
-
-where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius of 
-species i and $\bar r$ is the average atomic radius.
-\cite{klemens_scattering_1955,klemens_thermal_1957} 
-The frequency dependence is the same as 
-Rayleigh scattering, where high frequency modes are scattered most 
-strongly. 
-
-\begin{equation}\label{EQ:M:tau_b}
-\tau_{b} = L/v_g.
-\end{equation}
-
-Boundary scattering is responsible for decreasing the long lifetimes 
-(mean free paths) of low frequency phonons which carry a significant 
-amount of heat, making it particularly effective at decreasing the 
-thermal conductivity of systems with length scale of 100s of $\mu$m and 
-less.\cite{mcgaughey_nanostructure_2012}
-
-- compare lifetimes from 2 atom alloy, 4 atom alloy.  Is the reduction in 
-thermal conductivity mostly due to the reduction in group 
-velocities/introduction of optical modes?
-
-%--------------------------------------------------------------------------
-\subsection{\label{S:}Virtual Crystal Approximation}
-%--------------------------------------------------------------------------
+Essentially, the normal mode mappings are performed using eigenvectors 
+which are plane waves.\cite{}
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -388,13 +450,19 @@ velocities/introduction of optical modes?
 %--------------------------------------------------------------------------
 
 
-\subsection{\label{S:}Bond Disorder}
+%--------------------------------------------------------------------------
+\subsection{\label{S:}Bond and Mass Disorder}
 %--------------------------------------------------------------------------
 The decreased vibrational conductivity of systems which are highly 
-anharmonic, such as weak covalently and Van der Waals bonded systems,? is 
+anharmonic, such as weak covalently and Van der Waals bonded systems,
+\cite{} is 
 accounted for by the Gruneisen parameter. For a purely harmonic system, 
 the mode specific Gruneisen parameter is zero and the phonon lifetimes 
 are infinite.
+
+Cahill shows that conductivty of Ge-doped Si epitaxial layers agrees with 
+the defect scaling cross section is captured mostly by the mass disorder.
+\cite{cahill_thermal_2004}
 
 \begin{equation}\label{EQ:M:tau_{d}}
 \begin{split}
@@ -404,59 +472,65 @@ are infinite.
 \end{split}
 \end{equation}
 
-$g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
 
-\subsection{\label{S:}Mass Disorder}
-%--------------------------------------------------------------------------
-why not bond disorder?  This has been investigated such as in Schelling 
+The effect of bond and mass disorder has been investigated by Skye and 
+Schelling for  
 Si/Ge \cite{skye_thermal_2008}, where it was shown that mass disorder is 
 the dominant scattering mechanism. Also, a first principle study of Si/Ge
-demonstrates that virtual crystal approxmation Marzari Si/Ge PRL \cite{garg_role_2011}.  
-Although, detailed study of PbTe/PbSe systems demonstrate the importance 
+demonstrates that virtual crystal approxmation Marzari 
+Si/Ge PRL \cite{garg_role_2011}.  
+A detailed study of PbTe/PbSe systems demonstrate the importance 
 of bond environment for alloys.\cite{garg_phonon_2012}
 
+%--------------------------------------------------------------------------
 \subsection{\label{S:}Group Velocity}
 %--------------------------------------------------------------------------
 
-The reduced vibrational conductivity of germanium compared to silicon can 
-be explained in both in terms of the $\bar m$ (germanium has a larger 
-density $\rho$ than silicon) and the group velocity (germanium has a smaller 
-bulk modulus $B$, and $v_g \propto \sqrt{B/\rho}$.
+In ordered systems, the group velocity generally scales with both the 
+density and stiffness of the material. For example, 
+the reduced vibrational conductivity of Ge compared to Si can 
+be (partially) explained in both in terms of the $\bar m$ 
+(germanium has a larger density $\rho$ than silicon) 
+and the group velocity (germanium has a smaller bulk modulus $B$, 
+and $v_g \propto \sqrt{B/\rho}$.
 
-- $v_g(m_{r})$
+Thus, for alloys, there should also be a corrsponding scaling 
+of the group velocity with the alloy's concentration (mass
+density).
 
-- two masses with $v_g(m_{r})$, maybe compare with 4 masses with higher mass ratio.  
+Duda shows the reduction in group velocity of disordered systems.
+\cite{duda_reducing_2011}
 
-- Keep  $m_{avg}$ constant for all.
+\begin{equation}\label{EQ:M:phonon_mfp}
+\begin{split}
+\Lambda\kv = |\pmb{v}_{g}| \tau\kv,
+\end{split}
+\end{equation}
 
-- run a system with a "softer" and "stiffer" LJ (smaller/bigger eps or sigma). 
-This can be used as a comparison for the phonon/diffuson spectrums which will be shown later.  
+Boundary scattering is responsible for decreasing the long lifetimes 
+(mean free paths) of low frequency phonons which carry a significant 
+amount of heat, making it particularly effective at decreasing the 
+thermal conductivity of systems with length scale of 100s of nm and 
+less.\cite{mcgaughey_nanostructure_2012}
 
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.6]
-{/home/jason/thesis/proposal/paper/GULP_disp_mass_ratio.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{FIG:crys_disp_mass_ratio} Dispersion plots for 
-Lennard-Jones systems with varying number of atoms in the unit cell 
-($b=1..4$) and mass ratio ($m_r$) for wavevectors in the direction 
-$2\pi/a[1 0 0]$. (a) Dispersion plot using the FCC primitive unit cell 
-($b=1$), which shows that only acoustic phonon branches exist in the 
-system. The edge of the Brillouin zone in this direction is 
-$2\pi/a[1 0 0]$. (b) Dispersion plot using the cubic conventional unit 
-cell ($b=4$), where every atom in the unit cell is identical ($m_r=1$). 
-Compared to the primitive cell, the Brillouin zone edge is at 
-$\pi/a[1 0 0]$ where the acoustic branches have been "folded in".
-\cite{turneythesis} Other than these considerations, the choice of unit 
-cell for the single species system does not affect the dispersion. (c) 
-System with two unique atom types in the conventional unit cell with a 
-mass ratio $m_r=3$, which creates optical branches with low group 
-velocity and reduced group velocity acoustic branches. (d) System with 
-$b=4$ unique atoms types in the unit cell with high mass ratio 
-($m_r=12$), which increases the number of optical branches and further 
-reduces the acoustic group velocities. }
-\end{figure}
+First-principles calculations on some thermoelectric
+materials show that phonons have a wide MFP distribution,
+and hence relatively large nanostructures can reduce their
+lattice thermal conductivity.5,18,19 On the other hand, recent
+first-principles calculations have shown that the distribution is
+much narrower for PbTe,20 and thus, further characterizations
+of the distributions and the associated detailed heat conduction
+of lead chalcogenides are important for better material design.
+
+
+- compare lifetimes from 2 atom alloy, 4 atom alloy.  Is the reduction in 
+thermal conductivity mostly due to the reduction in group 
+velocities/introduction of optical modes?
+
+%--------------------------------------------------------------------------
+\section{\label{S:}Anharmonic Lattice Dynamics}
+%--------------------------------------------------------------------------
+
 
 
 %--------------------------------------------------------------------------

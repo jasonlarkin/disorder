@@ -2,8 +2,8 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_vc_jl_091712.aux
 The style file: apsrev.bst
 Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091712.bib
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "garg_phonon_2012"
-Warning--I didn't find a database entry for "turneythesis"
 Warning--I didn't find a database entry for "dove1993"
 Warning--I didn't find a database entry for "wallace1972"
 Warning--I didn't find a database entry for "ashcroft1976"
@@ -17,46 +17,46 @@ Warning--I didn't find a database entry for "mcgaughey2006b"
 Warning--I didn't find a database entry for "He2011a"
 Warning--I didn't find a database entry for "sellan2010b"
 Warning--I didn't find a database entry for "Larkin2012"
-Reallocated wiz_functions (elt_size=4) to 6000 items from 140393890974648.
-You've used 15 entries,
+Reallocated wiz_functions (elt_size=4) to 6000 items from 139826955291576.
+You've used 22 entries,
             3411 wiz_defined-function locations,
-            1278 strings with 13811 characters,
-and the built_in function-call counts, 11819 in all, are:
-= -- 691
-> -- 393
-< -- 55
-+ -- 326
-- -- 96
-* -- 1612
-:= -- 1253
-add.period$ -- 15
-call.type$ -- 15
-change.case$ -- 60
-chr.to.int$ -- 15
-cite$ -- 15
-duplicate$ -- 987
-empty$ -- 979
-format.name$ -- 239
-if$ -- 2286
+            1330 strings with 15297 characters,
+and the built_in function-call counts, 17360 in all, are:
+= -- 1004
+> -- 596
+< -- 83
++ -- 498
+- -- 146
+* -- 2383
+:= -- 1837
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 89
+chr.to.int$ -- 22
+cite$ -- 22
+duplicate$ -- 1455
+empty$ -- 1430
+format.name$ -- 358
+if$ -- 3344
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 153
-newline$ -- 60
-num.names$ -- 45
-pop$ -- 245
+int.to.str$ -- 23
+missing$ -- 224
+newline$ -- 81
+num.names$ -- 66
+pop$ -- 358
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 88
 quote$ -- 0
-skip$ -- 483
+skip$ -- 702
 stack$ -- 0
-substring$ -- 560
-swap$ -- 799
-text.length$ -- 48
+substring$ -- 795
+swap$ -- 1189
+text.length$ -- 73
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
+type$ -- 132
 warning$ -- 0
-while$ -- 45
+while$ -- 64
 width$ -- 0
-write$ -- 176
+write$ -- 252
 (There were 15 warnings)

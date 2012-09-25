@@ -1,0 +1,1350 @@
+Parallel job using 12 processing elements.
+Processing element 0 (Master) reports.
+Processing element 1 (Slave) reports.
+Processing element 2 (Slave) reports.
+Processing element 3 (Slave) reports.
+Processing element 4 (Slave) reports.
+Processing element 5 (Slave) reports.
+Processing element 6 (Slave) reports.
+Processing element 7 (Slave) reports.
+Processing element 8 (Slave) reports.
+Processing element 9 (Slave) reports.
+Processing element 10 (Slave) reports.
+Processing element 11 (Slave) reports.
+INITIALIZED AND RUNNING '/home/jason/LD/LD_300/joe_mpic++'.
+
+
+Parsing File 'ald.in' For Input Data...
+
+Unexpected expression: FREQUENCY
+Unexpected expression: TRUE
+Unexpected expression: VELOCITY
+Unexpected expression: TRUE
+Unexpected expression: EVECTOR
+Unexpected expression: TRUE
+Unexpected expression: DOS
+Unexpected expression: TRUE
+WARNING: The 'conductivity' flag is no longer used.  The thermal conductivity is always computed.
+
+Done reading input file.  Outputing stored data to log file for error checking...
+
+VARIABLES
+  $a = 5.3e-10
+
+LATTICE = 3
+  a1 = 5.3e-10 0 0
+  a2 = 0 5.3e-10 0
+  a3 = 0 0 5.3e-10
+  BC1 = 0
+  BC2 = 0
+  BC3 = 0
+  N1  = 16
+  N2  = 16
+  N3  = 16
+  Volume = 1.48877e-28
+  b1 = 1.88679e+09 0 0
+  b2 = 0 1.88679e+09 0
+  b3 = 0 0 1.88679e+09
+
+MATERIAL = 1
+  Ar = 6.63e-26
+
+UNIT_CELL = 4
+  Ar  0 0 0
+  Ar  2.65e-10 2.65e-10 0
+  Ar  2.65e-10 0 2.65e-10
+  Ar  0 2.65e-10 2.65e-10
+
+SYMMETRY = 1
+  wave_vector = false
+
+PREPROCESS = false
+
+DISPERSION = 500
+  Begin = 0 0 0
+  End = 1.88679e+09 0 0
+
+HARMONIC = true
+
+ANHARMONIC = 10
+  continue     = 0
+  temperature  = 10
+  fs_guess     = 0.02
+  lw_guess     = 0.03
+
+POSTPROCESS = true
+  TC_beg   = 3
+  TC_end   = 10
+  data_itr = 10
+  data_beg = 0 0 0
+  data_inc = 0 0 1
+  data_num = 10
+  data_fBZ = no_symmetry
+
+POTENTIAL LJ 1 Ar
+  epsilon = 1.67e-21 J
+  sigma   = 3.4e-10 m
+  cutoff  = 8.5e-10 m
+  Acutoff = 8.5e-10 m
+
+
+
+Computing Harmonic Force Constants...
+
+Harmonic force constants for atom 0: N1, N2 = 1, 78
+Harmonic force constants for atom 1: N1, N2 = 1, 78
+Harmonic force constants for atom 2: N1, N2 = 1, 78
+Harmonic force constants for atom 3: N1, N2 = 1, 78
+
+
+Begining Dispersion Relation Calculation.
+
+Dispersion is 2% complete. k* = < 0.022 0 0 >, |k*| = 0.022
+Dispersion is 4% complete. k* = < 0.0459999 0 0 >, |k*| = 0.0459999
+Dispersion is 7% complete. k* = < 0.0699999 0 0 >, |k*| = 0.0699999
+Dispersion is 9% complete. k* = < 0.0939999 0 0 >, |k*| = 0.0939999
+Dispersion is 11% complete. k* = < 0.118 0 0 >, |k*| = 0.118
+Dispersion is 14% complete. k* = < 0.142 0 0 >, |k*| = 0.142
+Dispersion is 16% complete. k* = < 0.166 0 0 >, |k*| = 0.166
+Dispersion is 19% complete. k* = < 0.19 0 0 >, |k*| = 0.19
+Dispersion is 21% complete. k* = < 0.214 0 0 >, |k*| = 0.214
+Dispersion is 23% complete. k* = < 0.238 0 0 >, |k*| = 0.238
+Dispersion is 26% complete. k* = < 0.262 0 0 >, |k*| = 0.262
+Dispersion is 28% complete. k* = < 0.286 0 0 >, |k*| = 0.286
+Dispersion is 31% complete. k* = < 0.31 0 0 >, |k*| = 0.31
+Dispersion is 33% complete. k* = < 0.334 0 0 >, |k*| = 0.334
+Dispersion is 35% complete. k* = < 0.358 0 0 >, |k*| = 0.358
+Dispersion is 38% complete. k* = < 0.382 0 0 >, |k*| = 0.382
+Dispersion is 40% complete. k* = < 0.405999 0 0 >, |k*| = 0.405999
+Dispersion is 43% complete. k* = < 0.429999 0 0 >, |k*| = 0.429999
+Dispersion is 45% complete. k* = < 0.453999 0 0 >, |k*| = 0.453999
+Dispersion is 47% complete. k* = < 0.477999 0 0 >, |k*| = 0.477999
+Dispersion is 50% complete. k* = < 0.501999 0 0 >, |k*| = 0.501999
+Dispersion is 52% complete. k* = < 0.525999 0 0 >, |k*| = 0.525999
+Dispersion is 55% complete. k* = < 0.549999 0 0 >, |k*| = 0.549999
+Dispersion is 57% complete. k* = < 0.573999 0 0 >, |k*| = 0.573999
+Dispersion is 59% complete. k* = < 0.597999 0 0 >, |k*| = 0.597999
+Dispersion is 62% complete. k* = < 0.621999 0 0 >, |k*| = 0.621999
+Dispersion is 64% complete. k* = < 0.645999 0 0 >, |k*| = 0.645999
+Dispersion is 67% complete. k* = < 0.669999 0 0 >, |k*| = 0.669999
+Dispersion is 69% complete. k* = < 0.693999 0 0 >, |k*| = 0.693999
+Dispersion is 71% complete. k* = < 0.717999 0 0 >, |k*| = 0.717999
+Dispersion is 74% complete. k* = < 0.741999 0 0 >, |k*| = 0.741999
+Dispersion is 76% complete. k* = < 0.765999 0 0 >, |k*| = 0.765999
+Dispersion is 79% complete. k* = < 0.789999 0 0 >, |k*| = 0.789999
+Dispersion is 81% complete. k* = < 0.813999 0 0 >, |k*| = 0.813999
+Dispersion is 83% complete. k* = < 0.837999 0 0 >, |k*| = 0.837999
+Dispersion is 86% complete. k* = < 0.861999 0 0 >, |k*| = 0.861999
+Dispersion is 88% complete. k* = < 0.885999 0 0 >, |k*| = 0.885999
+Dispersion is 91% complete. k* = < 0.909999 0 0 >, |k*| = 0.909999
+Dispersion is 93% complete. k* = < 0.933999 0 0 >, |k*| = 0.933999
+Dispersion is 95% complete. k* = < 0.957999 0 0 >, |k*| = 0.957999
+Dispersion is 98% complete. k* = < 0.981999 0 0 >, |k*| = 0.981999
+Dispersion is 100% complete. k* = < 0.999999 0 0 >, |k*| = 0.999999
+
+
+Beginning Density of States and Velocity Calculation. (Using 50 bins)
+
+DOS Calculation is 1 % Complete.  300 of 28908 waves calculated.
+DOS Calculation is 2 % Complete.  588 of 28908 waves calculated.
+DOS Calculation is 3 % Complete.  876 of 28908 waves calculated.
+DOS Calculation is 4 % Complete.  1164 of 28908 waves calculated.
+DOS Calculation is 5 % Complete.  1452 of 28908 waves calculated.
+DOS Calculation is 6 % Complete.  1740 of 28908 waves calculated.
+DOS Calculation is 7 % Complete.  2028 of 28908 waves calculated.
+DOS Calculation is 8 % Complete.  2316 of 28908 waves calculated.
+DOS Calculation is 9 % Complete.  2604 of 28908 waves calculated.
+DOS Calculation is 10 % Complete.  2892 of 28908 waves calculated.
+DOS Calculation is 11 % Complete.  3180 of 28908 waves calculated.
+DOS Calculation is 12 % Complete.  3480 of 28908 waves calculated.
+DOS Calculation is 13 % Complete.  3768 of 28908 waves calculated.
+DOS Calculation is 14 % Complete.  4056 of 28908 waves calculated.
+DOS Calculation is 15 % Complete.  4344 of 28908 waves calculated.
+DOS Calculation is 16 % Complete.  4632 of 28908 waves calculated.
+DOS Calculation is 17 % Complete.  4920 of 28908 waves calculated.
+DOS Calculation is 18 % Complete.  5208 of 28908 waves calculated.
+DOS Calculation is 19 % Complete.  5496 of 28908 waves calculated.
+DOS Calculation is 20 % Complete.  5784 of 28908 waves calculated.
+DOS Calculation is 21 % Complete.  6072 of 28908 waves calculated.
+DOS Calculation is 22 % Complete.  6360 of 28908 waves calculated.
+DOS Calculation is 23 % Complete.  6660 of 28908 waves calculated.
+DOS Calculation is 24 % Complete.  6948 of 28908 waves calculated.
+DOS Calculation is 25 % Complete.  7236 of 28908 waves calculated.
+DOS Calculation is 26 % Complete.  7524 of 28908 waves calculated.
+DOS Calculation is 27 % Complete.  7812 of 28908 waves calculated.
+DOS Calculation is 28 % Complete.  8100 of 28908 waves calculated.
+DOS Calculation is 29 % Complete.  8388 of 28908 waves calculated.
+DOS Calculation is 30 % Complete.  8676 of 28908 waves calculated.
+DOS Calculation is 31 % Complete.  8964 of 28908 waves calculated.
+DOS Calculation is 32 % Complete.  9252 of 28908 waves calculated.
+DOS Calculation is 33 % Complete.  9540 of 28908 waves calculated.
+DOS Calculation is 34 % Complete.  9840 of 28908 waves calculated.
+DOS Calculation is 35 % Complete.  10128 of 28908 waves calculated.
+DOS Calculation is 36 % Complete.  10416 of 28908 waves calculated.
+DOS Calculation is 37 % Complete.  10704 of 28908 waves calculated.
+DOS Calculation is 38 % Complete.  10992 of 28908 waves calculated.
+DOS Calculation is 39 % Complete.  11280 of 28908 waves calculated.
+DOS Calculation is 40 % Complete.  11568 of 28908 waves calculated.
+DOS Calculation is 41 % Complete.  11856 of 28908 waves calculated.
+DOS Calculation is 42 % Complete.  12144 of 28908 waves calculated.
+DOS Calculation is 43 % Complete.  12432 of 28908 waves calculated.
+DOS Calculation is 44 % Complete.  12720 of 28908 waves calculated.
+DOS Calculation is 45 % Complete.  13020 of 28908 waves calculated.
+DOS Calculation is 46 % Complete.  13308 of 28908 waves calculated.
+DOS Calculation is 47 % Complete.  13596 of 28908 waves calculated.
+DOS Calculation is 48 % Complete.  13884 of 28908 waves calculated.
+DOS Calculation is 49 % Complete.  14172 of 28908 waves calculated.
+DOS Calculation is 50 % Complete.  14460 of 28908 waves calculated.
+DOS Calculation is 51 % Complete.  14748 of 28908 waves calculated.
+DOS Calculation is 52 % Complete.  15036 of 28908 waves calculated.
+DOS Calculation is 53 % Complete.  15324 of 28908 waves calculated.
+DOS Calculation is 54 % Complete.  15612 of 28908 waves calculated.
+DOS Calculation is 55 % Complete.  15900 of 28908 waves calculated.
+DOS Calculation is 56 % Complete.  16200 of 28908 waves calculated.
+DOS Calculation is 57 % Complete.  16488 of 28908 waves calculated.
+DOS Calculation is 58 % Complete.  16776 of 28908 waves calculated.
+DOS Calculation is 59 % Complete.  17064 of 28908 waves calculated.
+DOS Calculation is 60 % Complete.  17352 of 28908 waves calculated.
+DOS Calculation is 61 % Complete.  17640 of 28908 waves calculated.
+DOS Calculation is 62 % Complete.  17928 of 28908 waves calculated.
+DOS Calculation is 63 % Complete.  18216 of 28908 waves calculated.
+DOS Calculation is 64 % Complete.  18504 of 28908 waves calculated.
+DOS Calculation is 65 % Complete.  18792 of 28908 waves calculated.
+DOS Calculation is 66 % Complete.  19080 of 28908 waves calculated.
+DOS Calculation is 67 % Complete.  19380 of 28908 waves calculated.
+DOS Calculation is 68 % Complete.  19668 of 28908 waves calculated.
+DOS Calculation is 69 % Complete.  19956 of 28908 waves calculated.
+DOS Calculation is 70 % Complete.  20244 of 28908 waves calculated.
+DOS Calculation is 71 % Complete.  20532 of 28908 waves calculated.
+DOS Calculation is 72 % Complete.  20820 of 28908 waves calculated.
+DOS Calculation is 73 % Complete.  21108 of 28908 waves calculated.
+DOS Calculation is 74 % Complete.  21396 of 28908 waves calculated.
+DOS Calculation is 75 % Complete.  21684 of 28908 waves calculated.
+DOS Calculation is 76 % Complete.  21972 of 28908 waves calculated.
+DOS Calculation is 77 % Complete.  22260 of 28908 waves calculated.
+DOS Calculation is 78 % Complete.  22560 of 28908 waves calculated.
+DOS Calculation is 79 % Complete.  22848 of 28908 waves calculated.
+DOS Calculation is 80 % Complete.  23136 of 28908 waves calculated.
+DOS Calculation is 81 % Complete.  23424 of 28908 waves calculated.
+DOS Calculation is 82 % Complete.  23712 of 28908 waves calculated.
+DOS Calculation is 83 % Complete.  24000 of 28908 waves calculated.
+DOS Calculation is 84 % Complete.  24288 of 28908 waves calculated.
+DOS Calculation is 85 % Complete.  24576 of 28908 waves calculated.
+DOS Calculation is 86 % Complete.  24864 of 28908 waves calculated.
+DOS Calculation is 87 % Complete.  25152 of 28908 waves calculated.
+DOS Calculation is 88 % Complete.  25440 of 28908 waves calculated.
+DOS Calculation is 89 % Complete.  25740 of 28908 waves calculated.
+DOS Calculation is 90 % Complete.  26028 of 28908 waves calculated.
+DOS Calculation is 91 % Complete.  26316 of 28908 waves calculated.
+DOS Calculation is 92 % Complete.  26604 of 28908 waves calculated.
+DOS Calculation is 93 % Complete.  26892 of 28908 waves calculated.
+DOS Calculation is 94 % Complete.  27180 of 28908 waves calculated.
+DOS Calculation is 95 % Complete.  27468 of 28908 waves calculated.
+DOS Calculation is 96 % Complete.  27756 of 28908 waves calculated.
+DOS Calculation is 97 % Complete.  28044 of 28908 waves calculated.
+DOS Calculation is 98 % Complete.  28332 of 28908 waves calculated.
+DOS Calculation is 99 % Complete.  28620 of 28908 waves calculated.
+DOS Calculation is 100 % Complete.  28908 of 28908 waves calculated.
+
+
+Computing Anharmonic Force Constants...
+
+Anharmonic force constants for atom 0: N1, N2, N3, N4 = 1, 78, 0, 0
+Anharmonic force constants for atom 1: N1, N2, N3, N4 = 1, 78, 0, 0
+Anharmonic force constants for atom 2: N1, N2, N3, N4 = 1, 78, 0, 0
+Anharmonic force constants for atom 3: N1, N2, N3, N4 = 1, 78, 0, 0
+
+Building Files of Initial Guesses...
+  For quantum system from harmonic frequencies.
+  For classical system from harmonic frequencies.
+
+
+Computing frequency shift and linewidth (iter 1)...
+
+Anharmonic calculation is 1% complete after 1.31667 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.53333 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.78333 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5.01667 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.23333 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.48333 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.7 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.91667 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1833 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4167 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6333 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.8667 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.05 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.25 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4333 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.6167 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7833 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.9667 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.15 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3333 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5167 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7333 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.9833 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1667 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.35 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5667 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7333 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.9167 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.1167 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.3 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.4833 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6833 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.8833 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.1167 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.3167 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.5 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.6833 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.8667 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.0333 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.2167 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.4 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.5833 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8333 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.05 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.3 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.5333 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.7167 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9333 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.1333 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.3333 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.5667 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.7667 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 63.9667 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.1833 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.3667 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.6 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.7833 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.9667 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.1333 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.3167 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.5 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.6833 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.8667 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.0667 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.2667 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.4667 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.7167 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.9 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.0833 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.25 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.45 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.6333 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.8167 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.0167 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.2333 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.4167 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.6 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.8333 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.0167 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.1833 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.35 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.5333 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.7167 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.9 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.1 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.317 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.5 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.7 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.933 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.1 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.3 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.517 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.75 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 112.967 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.2 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.483 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.7 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.933 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.15 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.367 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 1)...
+
+
+Computing frequency shift and linewidth (iter 2)...
+
+Anharmonic calculation is 1% complete after 1.31667 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.53333 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.78333 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5.01667 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.21667 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.46667 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.68333 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.9 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1667 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6167 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.85 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0333 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2333 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4167 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.6 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7667 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.95 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.15 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3333 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5167 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7333 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.9667 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1667 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.35 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.55 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7333 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.9167 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.1167 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.3 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.4833 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6833 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.8833 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.1167 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.3 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.4833 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.6667 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.85 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.0333 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.2167 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.4 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.5833 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8167 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.0333 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.3 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.5333 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.7167 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9333 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.15 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.35 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.5833 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.7833 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 63.9833 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.2 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.3833 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.6167 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.8 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.9833 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.15 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.35 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.5167 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.7167 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.8833 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.0833 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.2833 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.4833 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.75 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.9333 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.1167 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.2833 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.4833 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.65 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.85 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.05 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.25 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.4333 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.6167 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.8667 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.0333 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.2167 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.3833 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.55 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.75 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.917 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.117 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.35 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.533 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.733 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.967 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.133 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.333 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.55 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.767 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 112.983 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.217 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.5 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.717 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.95 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.167 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.383 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 2)...
+
+
+Computing frequency shift and linewidth (iter 3)...
+
+Anharmonic calculation is 1% complete after 1.31667 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.53333 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.78333 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5.01667 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.25 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.48333 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.71667 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.93333 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1833 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4167 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6333 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.8667 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.05 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2333 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4167 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.6 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7833 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.9667 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.15 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.35 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5333 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7333 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.9833 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1667 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.3667 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5667 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7333 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.9167 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.1167 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.3167 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.5 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6833 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.9 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.1333 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.3333 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.5167 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.7 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.8667 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.05 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.25 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.4333 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.6 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8333 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.0667 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.3167 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.55 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.75 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.95 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.1667 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.3667 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.5833 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.7833 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 64 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.2 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.3833 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.6167 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.8 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.9833 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.1667 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.35 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.5167 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.7167 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.8833 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.0833 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.2833 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.4833 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.7333 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.9167 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.1 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.2833 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.45 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.65 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.8333 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.05 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.25 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.4333 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.6167 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.8667 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.0333 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.2 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.3667 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.55 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.75 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.933 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.117 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.35 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.517 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.717 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.95 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.133 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.333 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.55 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.783 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 113 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.233 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.517 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.733 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.967 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.183 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.383 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 3)...
+
+
+Computing frequency shift and linewidth (iter 4)...
+
+Anharmonic calculation is 1% complete after 1.3 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.51667 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.76667 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5.01667 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.23333 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.46667 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.68333 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.9 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1667 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.3833 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.8333 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0167 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2167 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.5833 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.75 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.9333 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.1333 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3167 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.4833 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.9333 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1167 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.3167 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5167 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.8833 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.0667 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.2667 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.45 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6333 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.8333 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.0833 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.2667 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.45 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.6333 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.8167 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.1833 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.3667 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.5333 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.7833 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.25 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.4833 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.6833 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.1 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.3 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.5333 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.7333 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 63.9333 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.1333 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.3167 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.55 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.7333 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.9167 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.1 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.2833 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.45 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.65 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.8167 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.0167 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.2167 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.4167 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.65 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.8333 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.0167 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.2 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.3667 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.5667 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.75 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 88.95 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.15 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.3333 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.5167 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.7667 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 94.95 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.1167 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.2833 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.4667 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.6667 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.85 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.033 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.267 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.433 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.633 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.867 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.033 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.233 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.45 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.667 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 112.9 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.117 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.417 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.633 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.867 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.083 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.3 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 4)...
+
+
+Computing frequency shift and linewidth (iter 5)...
+
+Anharmonic calculation is 1% complete after 1.3 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.51667 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.76667 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.21667 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.45 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.66667 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.9 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.15 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.3833 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.8333 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0167 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2167 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.5667 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.75 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.9333 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.1333 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3167 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.95 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1333 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.3167 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5167 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.8833 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.0833 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.2833 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.4667 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6667 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.8667 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.1 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.3 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.4833 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.6667 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.8333 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.0167 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.2 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.3833 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.5667 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.0167 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.2667 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.5 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.7 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9167 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.1167 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.3333 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.55 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.75 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 63.9667 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.1667 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.35 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.5833 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.7667 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.9333 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.1167 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.3 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.4667 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.6667 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.85 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.05 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.25 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.45 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.7 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.8833 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.05 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.2333 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.4333 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.6167 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.8 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.2 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.3833 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.5667 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.8 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 94.9833 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.1667 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.3333 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.5333 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.7333 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.933 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.117 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.333 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.517 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.717 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.95 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.117 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.317 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.533 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.75 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 112.967 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.2 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.5 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.717 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.95 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.167 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.383 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 5)...
+
+
+Computing frequency shift and linewidth (iter 6)...
+
+Anharmonic calculation is 1% complete after 1.31667 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.53333 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.78333 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.23333 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.46667 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.7 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.91667 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1833 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4167 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6333 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.8667 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.05 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.25 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.45 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.6333 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.8167 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 22 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.2 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3833 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5667 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7833 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 28.0333 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.2333 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.4167 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.6333 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.8 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.9833 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.1833 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.3833 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.5667 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.75 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.9667 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.1833 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.3833 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.5667 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.75 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.9167 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.1167 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.3 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.5 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.6833 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.9167 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.1333 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.3833 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.6167 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.8167 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 58.0167 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.2333 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.4333 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.6667 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.8667 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 64.0833 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.2833 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.4667 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.7167 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.8833 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 70.0667 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.25 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.4333 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.6167 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.8167 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 76 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.2 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.4 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.5833 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.8333 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 82.0167 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.2 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.3833 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.5667 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.7667 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.95 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.15 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.3667 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.55 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.7333 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.9667 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.15 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.3167 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.4833 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.6667 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.85 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 101.033 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.233 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.45 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.633 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.833 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 107.067 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.25 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.45 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.667 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.883 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 113.1 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.333 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.617 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.85 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 118.067 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.3 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.517 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 6)...
+
+
+Computing frequency shift and linewidth (iter 7)...
+
+Anharmonic calculation is 1% complete after 1.3 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.53333 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.76667 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.21667 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.46667 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.68333 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.91667 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1667 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6167 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.85 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0333 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2333 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4167 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.6 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7833 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.9667 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.15 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.35 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5333 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7333 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.9833 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1667 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.35 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.55 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7333 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.9167 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.1167 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 37.0167 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 39.3833 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 41.5333 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 42.8 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 44.0333 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 45.2167 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 46.4 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 47.5833 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 48.75 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 49.9333 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 51.1167 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 52.3 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 53.5 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 54.7333 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 55.95 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 57.2 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 58.4333 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 59.6167 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 60.8333 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 62.05 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 63.25 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 64.4667 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 65.6833 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 66.8833 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 68.0833 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 69.2833 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 70.5333 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 71.7167 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 72.9 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 74.05 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 75.25 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 76.4167 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 77.6167 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 78.8 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 80 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 81.2 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 82.4 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 83.6333 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 84.8333 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 86.0167 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 87.1833 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 88.3667 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 89.5667 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 90.75 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 91.95 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 93.1667 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 94.35 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 95.5333 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 96.7667 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 97.95 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 99.1167 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 100.283 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 101.467 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 102.65 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 103.833 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 105.033 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 106.25 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 107.433 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 108.617 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 109.867 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 111.033 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 112.233 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 113.45 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 114.683 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 115.9 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 117.133 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 118.417 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 119.633 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 120.85 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 122.067 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 123.3 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 7)...
+
+
+Computing frequency shift and linewidth (iter 8)...
+
+Anharmonic calculation is 1% complete after 1.3 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.51667 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.76667 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.23333 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.46667 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.68333 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.91667 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1667 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6167 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.85 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0167 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2167 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.5833 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7667 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.95 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.1333 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3333 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.95 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1333 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.3333 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5333 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.8833 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.0833 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.2833 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.4667 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6667 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.8667 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.0833 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.2667 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.45 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.6333 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.8167 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.1833 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.3833 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.5667 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.0167 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.2667 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.5 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.7 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.1167 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.3333 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.55 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.75 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 63.9667 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.1667 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.35 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.5833 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.7667 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.95 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.1167 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.3 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.4833 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.6833 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.8667 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.0667 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.2667 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.4667 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.7167 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.9 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.0833 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.25 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.4333 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.6167 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.8167 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.0167 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.2333 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.4167 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.6 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.85 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.0167 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.2 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.3667 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.55 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.7333 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.933 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.117 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.35 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.533 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.717 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.95 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.133 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.333 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.55 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.767 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 113 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.217 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.5 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.717 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.95 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.167 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.4 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 8)...
+
+
+Computing frequency shift and linewidth (iter 9)...
+
+Anharmonic calculation is 1% complete after 1.3 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.53333 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.76667 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.23333 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.46667 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.68333 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.91667 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.1833 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.4 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6167 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.85 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0333 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2333 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.4167 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.6 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7833 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.9667 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.1667 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.35 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5167 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7333 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.9833 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1667 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.3833 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5833 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.75 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.9333 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.1333 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.3333 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.5333 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.7167 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.9333 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.1667 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.35 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.55 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.7333 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.9 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.0833 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.2833 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.4667 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.65 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8833 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.1 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.35 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.5833 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.7833 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9833 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.2 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.4 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.6333 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.8333 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 64.05 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.25 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.4333 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.6833 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.8667 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 70.05 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.2333 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.4167 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.5833 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.7833 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.9667 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.1667 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.3667 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.5667 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.8 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 82 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.1833 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.35 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.5333 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.7333 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.9167 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.1333 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.3333 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.5167 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.7 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.95 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.1167 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.3 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.4667 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.65 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.8333 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 101.017 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.217 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.433 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.617 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.817 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 107.05 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.233 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.417 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.633 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.867 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 113.083 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.317 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.6 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.817 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 118.05 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.267 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.5 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 9)...
+
+
+Computing frequency shift and linewidth (iter 10)...
+
+Anharmonic calculation is 1% complete after 1.3 minutes.  300 of 28908 waves calculated.
+Anharmonic calculation is 2% complete after 2.51667 minutes.  588 of 28908 waves calculated.
+Anharmonic calculation is 3% complete after 3.76667 minutes.  876 of 28908 waves calculated.
+Anharmonic calculation is 4% complete after 5 minutes.  1164 of 28908 waves calculated.
+Anharmonic calculation is 5% complete after 6.21667 minutes.  1452 of 28908 waves calculated.
+Anharmonic calculation is 6% complete after 7.45 minutes.  1740 of 28908 waves calculated.
+Anharmonic calculation is 7% complete after 8.68333 minutes.  2028 of 28908 waves calculated.
+Anharmonic calculation is 8% complete after 9.9 minutes.  2316 of 28908 waves calculated.
+Anharmonic calculation is 9% complete after 11.15 minutes.  2604 of 28908 waves calculated.
+Anharmonic calculation is 10% complete after 12.3833 minutes.  2892 of 28908 waves calculated.
+Anharmonic calculation is 11% complete after 13.6 minutes.  3180 of 28908 waves calculated.
+Anharmonic calculation is 12% complete after 14.8167 minutes.  3480 of 28908 waves calculated.
+Anharmonic calculation is 13% complete after 16.0167 minutes.  3768 of 28908 waves calculated.
+Anharmonic calculation is 14% complete after 17.2 minutes.  4056 of 28908 waves calculated.
+Anharmonic calculation is 15% complete after 18.3833 minutes.  4344 of 28908 waves calculated.
+Anharmonic calculation is 16% complete after 19.5833 minutes.  4632 of 28908 waves calculated.
+Anharmonic calculation is 17% complete after 20.7667 minutes.  4920 of 28908 waves calculated.
+Anharmonic calculation is 18% complete after 21.95 minutes.  5208 of 28908 waves calculated.
+Anharmonic calculation is 19% complete after 23.1333 minutes.  5496 of 28908 waves calculated.
+Anharmonic calculation is 20% complete after 24.3167 minutes.  5784 of 28908 waves calculated.
+Anharmonic calculation is 21% complete after 25.5 minutes.  6072 of 28908 waves calculated.
+Anharmonic calculation is 22% complete after 26.7167 minutes.  6360 of 28908 waves calculated.
+Anharmonic calculation is 23% complete after 27.95 minutes.  6660 of 28908 waves calculated.
+Anharmonic calculation is 24% complete after 29.1333 minutes.  6948 of 28908 waves calculated.
+Anharmonic calculation is 25% complete after 30.3333 minutes.  7236 of 28908 waves calculated.
+Anharmonic calculation is 26% complete after 31.5333 minutes.  7524 of 28908 waves calculated.
+Anharmonic calculation is 27% complete after 32.7 minutes.  7812 of 28908 waves calculated.
+Anharmonic calculation is 28% complete after 33.8833 minutes.  8100 of 28908 waves calculated.
+Anharmonic calculation is 29% complete after 35.0833 minutes.  8388 of 28908 waves calculated.
+Anharmonic calculation is 30% complete after 36.2833 minutes.  8676 of 28908 waves calculated.
+Anharmonic calculation is 31% complete after 37.4833 minutes.  8964 of 28908 waves calculated.
+Anharmonic calculation is 32% complete after 38.6667 minutes.  9252 of 28908 waves calculated.
+Anharmonic calculation is 33% complete after 39.8667 minutes.  9540 of 28908 waves calculated.
+Anharmonic calculation is 34% complete after 41.0833 minutes.  9840 of 28908 waves calculated.
+Anharmonic calculation is 35% complete after 42.2833 minutes.  10128 of 28908 waves calculated.
+Anharmonic calculation is 36% complete after 43.4667 minutes.  10416 of 28908 waves calculated.
+Anharmonic calculation is 37% complete after 44.6667 minutes.  10704 of 28908 waves calculated.
+Anharmonic calculation is 38% complete after 45.8333 minutes.  10992 of 28908 waves calculated.
+Anharmonic calculation is 39% complete after 47.0167 minutes.  11280 of 28908 waves calculated.
+Anharmonic calculation is 40% complete after 48.2 minutes.  11568 of 28908 waves calculated.
+Anharmonic calculation is 41% complete after 49.3833 minutes.  11856 of 28908 waves calculated.
+Anharmonic calculation is 42% complete after 50.5667 minutes.  12144 of 28908 waves calculated.
+Anharmonic calculation is 43% complete after 51.8 minutes.  12432 of 28908 waves calculated.
+Anharmonic calculation is 44% complete after 53.0167 minutes.  12720 of 28908 waves calculated.
+Anharmonic calculation is 45% complete after 54.2667 minutes.  13020 of 28908 waves calculated.
+Anharmonic calculation is 46% complete after 55.5 minutes.  13308 of 28908 waves calculated.
+Anharmonic calculation is 47% complete after 56.7 minutes.  13596 of 28908 waves calculated.
+Anharmonic calculation is 48% complete after 57.9 minutes.  13884 of 28908 waves calculated.
+Anharmonic calculation is 49% complete after 59.1167 minutes.  14172 of 28908 waves calculated.
+Anharmonic calculation is 50% complete after 60.3167 minutes.  14460 of 28908 waves calculated.
+Anharmonic calculation is 51% complete after 61.55 minutes.  14748 of 28908 waves calculated.
+Anharmonic calculation is 52% complete after 62.75 minutes.  15036 of 28908 waves calculated.
+Anharmonic calculation is 53% complete after 63.9667 minutes.  15324 of 28908 waves calculated.
+Anharmonic calculation is 54% complete after 65.1667 minutes.  15612 of 28908 waves calculated.
+Anharmonic calculation is 55% complete after 66.35 minutes.  15900 of 28908 waves calculated.
+Anharmonic calculation is 56% complete after 67.5833 minutes.  16200 of 28908 waves calculated.
+Anharmonic calculation is 57% complete after 68.7667 minutes.  16488 of 28908 waves calculated.
+Anharmonic calculation is 58% complete after 69.95 minutes.  16776 of 28908 waves calculated.
+Anharmonic calculation is 59% complete after 71.1333 minutes.  17064 of 28908 waves calculated.
+Anharmonic calculation is 60% complete after 72.3167 minutes.  17352 of 28908 waves calculated.
+Anharmonic calculation is 61% complete after 73.5 minutes.  17640 of 28908 waves calculated.
+Anharmonic calculation is 62% complete after 74.6833 minutes.  17928 of 28908 waves calculated.
+Anharmonic calculation is 63% complete after 75.8667 minutes.  18216 of 28908 waves calculated.
+Anharmonic calculation is 64% complete after 77.0667 minutes.  18504 of 28908 waves calculated.
+Anharmonic calculation is 65% complete after 78.2667 minutes.  18792 of 28908 waves calculated.
+Anharmonic calculation is 66% complete after 79.4667 minutes.  19080 of 28908 waves calculated.
+Anharmonic calculation is 67% complete after 80.7167 minutes.  19380 of 28908 waves calculated.
+Anharmonic calculation is 68% complete after 81.9 minutes.  19668 of 28908 waves calculated.
+Anharmonic calculation is 69% complete after 83.0833 minutes.  19956 of 28908 waves calculated.
+Anharmonic calculation is 70% complete after 84.25 minutes.  20244 of 28908 waves calculated.
+Anharmonic calculation is 71% complete after 85.4333 minutes.  20532 of 28908 waves calculated.
+Anharmonic calculation is 72% complete after 86.6333 minutes.  20820 of 28908 waves calculated.
+Anharmonic calculation is 73% complete after 87.8167 minutes.  21108 of 28908 waves calculated.
+Anharmonic calculation is 74% complete after 89.0167 minutes.  21396 of 28908 waves calculated.
+Anharmonic calculation is 75% complete after 90.2333 minutes.  21684 of 28908 waves calculated.
+Anharmonic calculation is 76% complete after 91.4167 minutes.  21972 of 28908 waves calculated.
+Anharmonic calculation is 77% complete after 92.6 minutes.  22260 of 28908 waves calculated.
+Anharmonic calculation is 78% complete after 93.8333 minutes.  22560 of 28908 waves calculated.
+Anharmonic calculation is 79% complete after 95.0167 minutes.  22848 of 28908 waves calculated.
+Anharmonic calculation is 80% complete after 96.1833 minutes.  23136 of 28908 waves calculated.
+Anharmonic calculation is 81% complete after 97.3667 minutes.  23424 of 28908 waves calculated.
+Anharmonic calculation is 82% complete after 98.5333 minutes.  23712 of 28908 waves calculated.
+Anharmonic calculation is 83% complete after 99.7333 minutes.  24000 of 28908 waves calculated.
+Anharmonic calculation is 84% complete after 100.917 minutes.  24288 of 28908 waves calculated.
+Anharmonic calculation is 85% complete after 102.1 minutes.  24576 of 28908 waves calculated.
+Anharmonic calculation is 86% complete after 103.333 minutes.  24864 of 28908 waves calculated.
+Anharmonic calculation is 87% complete after 104.517 minutes.  25152 of 28908 waves calculated.
+Anharmonic calculation is 88% complete after 105.717 minutes.  25440 of 28908 waves calculated.
+Anharmonic calculation is 89% complete after 106.967 minutes.  25740 of 28908 waves calculated.
+Anharmonic calculation is 90% complete after 108.133 minutes.  26028 of 28908 waves calculated.
+Anharmonic calculation is 91% complete after 109.317 minutes.  26316 of 28908 waves calculated.
+Anharmonic calculation is 92% complete after 110.533 minutes.  26604 of 28908 waves calculated.
+Anharmonic calculation is 93% complete after 111.767 minutes.  26892 of 28908 waves calculated.
+Anharmonic calculation is 94% complete after 112.983 minutes.  27180 of 28908 waves calculated.
+Anharmonic calculation is 95% complete after 114.217 minutes.  27468 of 28908 waves calculated.
+Anharmonic calculation is 96% complete after 115.5 minutes.  27756 of 28908 waves calculated.
+Anharmonic calculation is 97% complete after 116.733 minutes.  28044 of 28908 waves calculated.
+Anharmonic calculation is 98% complete after 117.95 minutes.  28332 of 28908 waves calculated.
+Anharmonic calculation is 99% complete after 119.167 minutes.  28620 of 28908 waves calculated.
+Anharmonic calculation is 0% complete after 120.383 minutes.  28908 of 28908 waves calculated.
+
+Computing thermal conductivity (iter 10)...
+
+
+Computing thermal conductivity (iter 3)...
+
+
+Computing thermal conductivity (iter 4)...
+
+
+Computing thermal conductivity (iter 5)...
+
+
+Computing thermal conductivity (iter 6)...
+
+
+Computing thermal conductivity (iter 7)...
+
+
+Computing thermal conductivity (iter 8)...
+
+
+Computing thermal conductivity (iter 9)...
+
+
+Computing thermal conductivity (iter 10)...
+
+
+
+Printing Data Along Specified Direction and/or For Full BZ
+
+# PE = 12
+Total Run Time = 0 d  20 h  10 m  6 s.

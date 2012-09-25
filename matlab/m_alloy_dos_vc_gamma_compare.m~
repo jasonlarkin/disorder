@@ -1,0 +1,15 @@
+function m_alloy_dos_vc_gamma_compare(str_nmd,str_af,DOS_NUM_BINS)
+%--------------------------------------------------------------------------
+%m_alloy_dos_vc_gamma_compare(str_nmd,str_af)
+%--------------------------------------------------------------------------
+
+
+af = m_af_load( str_af );
+sed = load(str_nmd,'SEDdata.mat');
+
+
+[af.dosx af.dosy] = m_dos(af.freq, DOS_NUM_BINS, af.NUM_ATOMS);
+[sed.dosx af.dosy] = m_dos(af.freq, DOS_NUM_BINS, af.NUM_ATOMS);
+
+
+end

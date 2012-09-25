@@ -1,0 +1,267 @@
+Parallel job using 11 processing elements.
+Processing element 0 (Master) reports.
+Processing element 1 (Slave) reports.
+Processing element 2 (Slave) reports.
+Processing element 3 (Slave) reports.
+Processing element 4 (Slave) reports.
+Processing element 5 (Slave) reports.
+Processing element 6 (Slave) reports.
+Processing element 7 (Slave) reports.
+Processing element 8 (Slave) reports.
+Processing element 9 (Slave) reports.
+Processing element 10 (Slave) reports.
+INITIALIZED AND RUNNING '/home/jason/LD/LD_300/joe_mpic++'.
+
+
+Parsing File 'ald.in' For Input Data...
+
+Unexpected expression: FREQUENCY
+Unexpected expression: TRUE
+Unexpected expression: VELOCITY
+Unexpected expression: TRUE
+Unexpected expression: EVECTOR
+Unexpected expression: TRUE
+Unexpected expression: DOS
+Unexpected expression: TRUE
+WARNING: The 'conductivity' flag is no longer used.  The thermal conductivity is always computed.
+
+Done reading input file.  Outputing stored data to log file for error checking...
+
+VARIABLES
+  $a = 5.3e-10
+
+LATTICE = 3
+  a1 = 5.3e-10 0 0
+  a2 = 0 5.3e-10 0
+  a3 = 0 0 5.3e-10
+  BC1 = 0
+  BC2 = 0
+  BC3 = 0
+  N1  = 20
+  N2  = 20
+  N3  = 20
+  Volume = 1.48877e-28
+  b1 = 1.88679e+09 0 0
+  b2 = 0 1.88679e+09 0
+  b3 = 0 0 1.88679e+09
+
+MATERIAL = 1
+  Ar = 6.63e-26
+
+UNIT_CELL = 4
+  Ar  0 0 0
+  Ar  2.65e-10 2.65e-10 0
+  Ar  2.65e-10 0 2.65e-10
+  Ar  0 2.65e-10 2.65e-10
+
+SYMMETRY = 1
+  wave_vector = false
+
+PREPROCESS = false
+
+DISPERSION = 500
+  Begin = 0 0 0
+  End = 1.88679e+09 0 0
+
+HARMONIC = true
+
+ANHARMONIC = 10
+  continue     = 0
+  temperature  = 10
+  fs_guess     = 0.02
+  lw_guess     = 0.03
+
+POSTPROCESS = true
+  TC_beg   = 3
+  TC_end   = 10
+  data_itr = 10
+  data_beg = 0 0 0
+  data_inc = 0 0 1
+  data_num = 10
+  data_fBZ = no_symmetry
+
+POTENTIAL LJ 1 Ar
+  epsilon = 1.67e-21 J
+  sigma   = 3.4e-10 m
+  cutoff  = 8.5e-10 m
+  Acutoff = 8.5e-10 m
+
+
+
+Computing Harmonic Force Constants...
+
+Harmonic force constants for atom 0: N1, N2 = 1, 78
+Harmonic force constants for atom 1: N1, N2 = 1, 78
+Harmonic force constants for atom 2: N1, N2 = 1, 78
+Harmonic force constants for atom 3: N1, N2 = 1, 78
+
+
+Begining Dispersion Relation Calculation.
+
+Dispersion is 2% complete. k* = < 0.02 0 0 >, |k*| = 0.02
+Dispersion is 4% complete. k* = < 0.0419999 0 0 >, |k*| = 0.0419999
+Dispersion is 6% complete. k* = < 0.0639999 0 0 >, |k*| = 0.0639999
+Dispersion is 8% complete. k* = < 0.0859999 0 0 >, |k*| = 0.0859999
+Dispersion is 10% complete. k* = < 0.108 0 0 >, |k*| = 0.108
+Dispersion is 13% complete. k* = < 0.13 0 0 >, |k*| = 0.13
+Dispersion is 15% complete. k* = < 0.152 0 0 >, |k*| = 0.152
+Dispersion is 17% complete. k* = < 0.174 0 0 >, |k*| = 0.174
+Dispersion is 19% complete. k* = < 0.196 0 0 >, |k*| = 0.196
+Dispersion is 21% complete. k* = < 0.218 0 0 >, |k*| = 0.218
+Dispersion is 24% complete. k* = < 0.24 0 0 >, |k*| = 0.24
+Dispersion is 26% complete. k* = < 0.262 0 0 >, |k*| = 0.262
+Dispersion is 28% complete. k* = < 0.284 0 0 >, |k*| = 0.284
+Dispersion is 30% complete. k* = < 0.306 0 0 >, |k*| = 0.306
+Dispersion is 32% complete. k* = < 0.328 0 0 >, |k*| = 0.328
+Dispersion is 35% complete. k* = < 0.35 0 0 >, |k*| = 0.35
+Dispersion is 37% complete. k* = < 0.372 0 0 >, |k*| = 0.372
+Dispersion is 39% complete. k* = < 0.393999 0 0 >, |k*| = 0.393999
+Dispersion is 41% complete. k* = < 0.415999 0 0 >, |k*| = 0.415999
+Dispersion is 43% complete. k* = < 0.437999 0 0 >, |k*| = 0.437999
+Dispersion is 46% complete. k* = < 0.459999 0 0 >, |k*| = 0.459999
+Dispersion is 48% complete. k* = < 0.481999 0 0 >, |k*| = 0.481999
+Dispersion is 50% complete. k* = < 0.503999 0 0 >, |k*| = 0.503999
+Dispersion is 52% complete. k* = < 0.525999 0 0 >, |k*| = 0.525999
+Dispersion is 54% complete. k* = < 0.547999 0 0 >, |k*| = 0.547999
+Dispersion is 56% complete. k* = < 0.569999 0 0 >, |k*| = 0.569999
+Dispersion is 59% complete. k* = < 0.591999 0 0 >, |k*| = 0.591999
+Dispersion is 61% complete. k* = < 0.613999 0 0 >, |k*| = 0.613999
+Dispersion is 63% complete. k* = < 0.635999 0 0 >, |k*| = 0.635999
+Dispersion is 65% complete. k* = < 0.657999 0 0 >, |k*| = 0.657999
+Dispersion is 68% complete. k* = < 0.679999 0 0 >, |k*| = 0.679999
+Dispersion is 70% complete. k* = < 0.701999 0 0 >, |k*| = 0.701999
+Dispersion is 72% complete. k* = < 0.723999 0 0 >, |k*| = 0.723999
+Dispersion is 74% complete. k* = < 0.745999 0 0 >, |k*| = 0.745999
+Dispersion is 76% complete. k* = < 0.767999 0 0 >, |k*| = 0.767999
+Dispersion is 79% complete. k* = < 0.789999 0 0 >, |k*| = 0.789999
+Dispersion is 81% complete. k* = < 0.811999 0 0 >, |k*| = 0.811999
+Dispersion is 83% complete. k* = < 0.833999 0 0 >, |k*| = 0.833999
+Dispersion is 85% complete. k* = < 0.855999 0 0 >, |k*| = 0.855999
+Dispersion is 87% complete. k* = < 0.877999 0 0 >, |k*| = 0.877999
+Dispersion is 90% complete. k* = < 0.899999 0 0 >, |k*| = 0.899999
+Dispersion is 92% complete. k* = < 0.921999 0 0 >, |k*| = 0.921999
+Dispersion is 94% complete. k* = < 0.943999 0 0 >, |k*| = 0.943999
+Dispersion is 96% complete. k* = < 0.965999 0 0 >, |k*| = 0.965999
+Dispersion is 98% complete. k* = < 0.987999 0 0 >, |k*| = 0.987999
+Dispersion is 100% complete. k* = < 0.999999 0 0 >, |k*| = 0.999999
+
+
+Beginning Density of States and Velocity Calculation. (Using 50 bins)
+
+DOS Calculation is 1 % Complete.  552 of 54852 waves calculated.
+DOS Calculation is 2 % Complete.  1104 of 54852 waves calculated.
+DOS Calculation is 3 % Complete.  1656 of 54852 waves calculated.
+DOS Calculation is 4 % Complete.  2196 of 54852 waves calculated.
+DOS Calculation is 5 % Complete.  2748 of 54852 waves calculated.
+DOS Calculation is 6 % Complete.  3300 of 54852 waves calculated.
+DOS Calculation is 7 % Complete.  3840 of 54852 waves calculated.
+DOS Calculation is 8 % Complete.  4392 of 54852 waves calculated.
+DOS Calculation is 9 % Complete.  4944 of 54852 waves calculated.
+DOS Calculation is 10 % Complete.  5496 of 54852 waves calculated.
+DOS Calculation is 11 % Complete.  6036 of 54852 waves calculated.
+DOS Calculation is 12 % Complete.  6588 of 54852 waves calculated.
+DOS Calculation is 13 % Complete.  7140 of 54852 waves calculated.
+DOS Calculation is 14 % Complete.  7680 of 54852 waves calculated.
+DOS Calculation is 15 % Complete.  8232 of 54852 waves calculated.
+DOS Calculation is 16 % Complete.  8784 of 54852 waves calculated.
+DOS Calculation is 17 % Complete.  9336 of 54852 waves calculated.
+DOS Calculation is 18 % Complete.  9876 of 54852 waves calculated.
+DOS Calculation is 19 % Complete.  10428 of 54852 waves calculated.
+DOS Calculation is 20 % Complete.  10980 of 54852 waves calculated.
+DOS Calculation is 21 % Complete.  11520 of 54852 waves calculated.
+DOS Calculation is 22 % Complete.  12072 of 54852 waves calculated.
+DOS Calculation is 23 % Complete.  12624 of 54852 waves calculated.
+DOS Calculation is 24 % Complete.  13176 of 54852 waves calculated.
+DOS Calculation is 25 % Complete.  13716 of 54852 waves calculated.
+DOS Calculation is 26 % Complete.  14268 of 54852 waves calculated.
+DOS Calculation is 27 % Complete.  14820 of 54852 waves calculated.
+DOS Calculation is 28 % Complete.  15360 of 54852 waves calculated.
+DOS Calculation is 29 % Complete.  15912 of 54852 waves calculated.
+DOS Calculation is 30 % Complete.  16464 of 54852 waves calculated.
+DOS Calculation is 31 % Complete.  17016 of 54852 waves calculated.
+DOS Calculation is 32 % Complete.  17556 of 54852 waves calculated.
+DOS Calculation is 33 % Complete.  18108 of 54852 waves calculated.
+DOS Calculation is 34 % Complete.  18660 of 54852 waves calculated.
+DOS Calculation is 35 % Complete.  19200 of 54852 waves calculated.
+DOS Calculation is 36 % Complete.  19752 of 54852 waves calculated.
+DOS Calculation is 37 % Complete.  20304 of 54852 waves calculated.
+DOS Calculation is 38 % Complete.  20844 of 54852 waves calculated.
+DOS Calculation is 39 % Complete.  21396 of 54852 waves calculated.
+DOS Calculation is 40 % Complete.  21948 of 54852 waves calculated.
+DOS Calculation is 41 % Complete.  22500 of 54852 waves calculated.
+DOS Calculation is 42 % Complete.  23040 of 54852 waves calculated.
+DOS Calculation is 43 % Complete.  23592 of 54852 waves calculated.
+DOS Calculation is 44 % Complete.  24144 of 54852 waves calculated.
+DOS Calculation is 45 % Complete.  24684 of 54852 waves calculated.
+DOS Calculation is 46 % Complete.  25236 of 54852 waves calculated.
+DOS Calculation is 47 % Complete.  25788 of 54852 waves calculated.
+DOS Calculation is 48 % Complete.  26340 of 54852 waves calculated.
+DOS Calculation is 49 % Complete.  26880 of 54852 waves calculated.
+DOS Calculation is 50 % Complete.  27432 of 54852 waves calculated.
+DOS Calculation is 51 % Complete.  27984 of 54852 waves calculated.
+DOS Calculation is 52 % Complete.  28524 of 54852 waves calculated.
+DOS Calculation is 53 % Complete.  29076 of 54852 waves calculated.
+DOS Calculation is 54 % Complete.  29628 of 54852 waves calculated.
+DOS Calculation is 55 % Complete.  30180 of 54852 waves calculated.
+DOS Calculation is 56 % Complete.  30720 of 54852 waves calculated.
+DOS Calculation is 57 % Complete.  31272 of 54852 waves calculated.
+DOS Calculation is 58 % Complete.  31824 of 54852 waves calculated.
+DOS Calculation is 59 % Complete.  32364 of 54852 waves calculated.
+DOS Calculation is 60 % Complete.  32916 of 54852 waves calculated.
+DOS Calculation is 61 % Complete.  33468 of 54852 waves calculated.
+DOS Calculation is 62 % Complete.  34020 of 54852 waves calculated.
+DOS Calculation is 63 % Complete.  34560 of 54852 waves calculated.
+DOS Calculation is 64 % Complete.  35112 of 54852 waves calculated.
+DOS Calculation is 65 % Complete.  35664 of 54852 waves calculated.
+DOS Calculation is 66 % Complete.  36204 of 54852 waves calculated.
+DOS Calculation is 67 % Complete.  36756 of 54852 waves calculated.
+DOS Calculation is 68 % Complete.  37308 of 54852 waves calculated.
+DOS Calculation is 69 % Complete.  37848 of 54852 waves calculated.
+DOS Calculation is 70 % Complete.  38400 of 54852 waves calculated.
+DOS Calculation is 71 % Complete.  38952 of 54852 waves calculated.
+DOS Calculation is 72 % Complete.  39504 of 54852 waves calculated.
+DOS Calculation is 73 % Complete.  40044 of 54852 waves calculated.
+DOS Calculation is 74 % Complete.  40596 of 54852 waves calculated.
+DOS Calculation is 75 % Complete.  41148 of 54852 waves calculated.
+DOS Calculation is 76 % Complete.  41688 of 54852 waves calculated.
+DOS Calculation is 77 % Complete.  42240 of 54852 waves calculated.
+DOS Calculation is 78 % Complete.  42792 of 54852 waves calculated.
+DOS Calculation is 79 % Complete.  43344 of 54852 waves calculated.
+DOS Calculation is 80 % Complete.  43884 of 54852 waves calculated.
+DOS Calculation is 81 % Complete.  44436 of 54852 waves calculated.
+DOS Calculation is 82 % Complete.  44988 of 54852 waves calculated.
+DOS Calculation is 83 % Complete.  45528 of 54852 waves calculated.
+DOS Calculation is 84 % Complete.  46080 of 54852 waves calculated.
+DOS Calculation is 85 % Complete.  46632 of 54852 waves calculated.
+DOS Calculation is 86 % Complete.  47184 of 54852 waves calculated.
+DOS Calculation is 87 % Complete.  47724 of 54852 waves calculated.
+DOS Calculation is 88 % Complete.  48276 of 54852 waves calculated.
+DOS Calculation is 89 % Complete.  48828 of 54852 waves calculated.
+DOS Calculation is 90 % Complete.  49368 of 54852 waves calculated.
+DOS Calculation is 91 % Complete.  49920 of 54852 waves calculated.
+DOS Calculation is 92 % Complete.  50472 of 54852 waves calculated.
+DOS Calculation is 93 % Complete.  51024 of 54852 waves calculated.
+DOS Calculation is 94 % Complete.  51564 of 54852 waves calculated.
+DOS Calculation is 95 % Complete.  52116 of 54852 waves calculated.
+DOS Calculation is 96 % Complete.  52668 of 54852 waves calculated.
+DOS Calculation is 97 % Complete.  53208 of 54852 waves calculated.
+DOS Calculation is 98 % Complete.  53760 of 54852 waves calculated.
+DOS Calculation is 99 % Complete.  54312 of 54852 waves calculated.
+DOS Calculation is 100 % Complete.  54852 of 54852 waves calculated.
+
+
+Computing Anharmonic Force Constants...
+
+Anharmonic force constants for atom 0: N1, N2, N3, N4 = 1, 78, 0, 0
+Anharmonic force constants for atom 1: N1, N2, N3, N4 = 1, 78, 0, 0
+Anharmonic force constants for atom 2: N1, N2, N3, N4 = 1, 78, 0, 0
+Anharmonic force constants for atom 3: N1, N2, N3, N4 = 1, 78, 0, 0
+
+Building Files of Initial Guesses...
+  For quantum system from harmonic frequencies.
+  For classical system from harmonic frequencies.
+
+
+Computing frequency shift and linewidth (iter 1)...
+
+Anharmonic calculation is 1% complete after 4.8 minutes.  550 of 54852 waves calculated.

@@ -1,0 +1,24 @@
+#!/bin/sh
+#PBS -l nodes=1:ppn=4:node
+### Merge stderr with stdout
+#PBS -j oe
+### Queue name
+#PBS -q default
+###Job name
+#PBS -N ald_parallel
+### Declare job-non-rerunable
+#PBS -r n
+#PBS -V
+# This job's working directory
+echo Job ID: $PBS_JOBID
+echo Working directory is $PBS_O_WORKDIR cd $PBS_O_WORKDIR echo Running on host `hostname` echo Time is `date` echo Directory is `pwd` echo This job runs on the following processors:
+echo `cat $PBS_NODEFILE`
+
+
+
+RUNPATH=/home/jason/disorder/lj/ald/m1/parallel
+EXEPATH=/home/jason/LD/LD_300
+
+cd $RUNPATH
+
+/opt/open-mpi/tcp-gnu41/bin/mpirun -np 4 $EXEPATH/joe_mpic++ ald.in
