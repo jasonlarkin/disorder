@@ -138,6 +138,20 @@
   \bibinfo{pages}{235202} (\bibinfo{year}{2005}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.71.235202}.
 
+\bibitem[{\citenamefont{Cahill and Watanabe}(2004)}]{cahill_thermal_2004}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Watanabe}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{235322} (\bibinfo{year}{2004}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.235322}.
+
+\bibitem[{\citenamefont{Skye and Schelling}(2008)}]{skye_thermal_2008}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Skye}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~K.} \bibnamefont{Schelling}},
+  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{103}},
+  \bibinfo{pages}{113524} (\bibinfo{year}{2008}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/103/113524/1}.
+
 \bibitem[{\citenamefont{Bouchard et~al.}(1988)\citenamefont{Bouchard, Biswas,
   Kamitakahara, Grest, and Soukoulis}}]{bouchard_vibrational_1988}
 \bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
@@ -148,6 +162,18 @@
   \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{38}},
   \bibinfo{pages}{10499–10506} (\bibinfo{year}{1988}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.38.10499}.
+
+\bibitem[{\citenamefont{Duda et~al.}(2011)\citenamefont{Duda, English, Jordan,
+  Norris, and Soffa}}]{duda_reducing_2011}
+\bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Duda}},
+  \bibinfo{author}{\bibfnamefont{T.~S.} \bibnamefont{English}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Jordan}},
+  \bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{Norris}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Soffa}},
+  \bibinfo{journal}{Journal of Physics: Condensed Matter}
+  \textbf{\bibinfo{volume}{23}}, \bibinfo{pages}{205401}
+  (\bibinfo{year}{2011}),
+  \urlprefix\url{http://stacks.iop.org/0953-8984/23/i=20/a=205401}.
 
 \bibitem[{\citenamefont{Freeman and Anderson}(1986)}]{freeman_thermal_1986}
 \bibinfo{author}{\bibfnamefont{J.~J.} \bibnamefont{Freeman}} \bibnamefont{and}
@@ -165,32 +191,6 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Soffa}},
   \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{134}},
   \bibinfo{pages}{014501} (\bibinfo{year}{2012}).
-
-\bibitem[{\citenamefont{Cahill and Watanabe}(2004)}]{cahill_thermal_2004}
-\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Watanabe}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{70}},
-  \bibinfo{pages}{235322} (\bibinfo{year}{2004}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.235322}.
-
-\bibitem[{\citenamefont{Skye and Schelling}(2008)}]{skye_thermal_2008}
-\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Skye}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{P.~K.} \bibnamefont{Schelling}},
-  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{103}},
-  \bibinfo{pages}{113524} (\bibinfo{year}{2008}),
-  \urlprefix\url{http://link.aip.org/link/?JAP/103/113524/1}.
-
-\bibitem[{\citenamefont{Duda et~al.}(2011)\citenamefont{Duda, English, Jordan,
-  Norris, and Soffa}}]{duda_reducing_2011}
-\bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Duda}},
-  \bibinfo{author}{\bibfnamefont{T.~S.} \bibnamefont{English}},
-  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Jordan}},
-  \bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{Norris}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Soffa}},
-  \bibinfo{journal}{Journal of Physics: Condensed Matter}
-  \textbf{\bibinfo{volume}{23}}, \bibinfo{pages}{205401}
-  (\bibinfo{year}{2011}),
-  \urlprefix\url{http://stacks.iop.org/0953-8984/23/i=20/a=205401}.
 
 \bibitem[{\citenamefont{{McGaughey} and
   Jain}(2012)}]{mcgaughey_nanostructure_2012}

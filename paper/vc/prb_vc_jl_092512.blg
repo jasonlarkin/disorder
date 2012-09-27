@@ -2,6 +2,10 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_vc_jl_092512.aux
 The style file: apsrev.bst
 Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-092012.bib
+Warning--I didn't find a database entry for "mcquarrie2000"
+Warning--I didn't find a database entry for "mcgaughey2004c"
+Warning--I didn't find a database entry for "goicochea2010"
+Warning--I didn't find a database entry for "mcgaughey2006b"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "garg_phonon_2012"
 Warning--I didn't find a database entry for "dove1993"
@@ -9,18 +13,13 @@ Warning--I didn't find a database entry for "wallace1972"
 Warning--I didn't find a database entry for "ashcroft1976"
 Warning--I didn't find a database entry for "turney2009a"
 Warning--I didn't find a database entry for "mcgaughey2004a"
-Warning--I didn't find a database entry for "ziman2001"
-Warning--I didn't find a database entry for "mcquarrie2000"
-Warning--I didn't find a database entry for "mcgaughey2004c"
-Warning--I didn't find a database entry for "goicochea2010"
-Warning--I didn't find a database entry for "mcgaughey2006b"
 Warning--I didn't find a database entry for "He2011a"
 Warning--I didn't find a database entry for "sellan2010b"
 Warning--I didn't find a database entry for "Larkin2012"
-Reallocated wiz_functions (elt_size=4) to 6000 items from 140668768881592.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140522739993528.
 You've used 22 entries,
             3411 wiz_defined-function locations,
-            1330 strings with 15330 characters,
+            1329 strings with 15321 characters,
 and the built_in function-call counts, 17366 in all, are:
 = -- 1005
 > -- 596
@@ -59,4 +58,4 @@ warning$ -- 0
 while$ -- 64
 width$ -- 0
 write$ -- 253
-(There were 15 warnings)
+(There were 14 warnings)
