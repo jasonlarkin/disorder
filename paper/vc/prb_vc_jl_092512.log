@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  27 SEP 2012 13:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  28 SEP 2012 13:50
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_092512.tex
@@ -347,7 +347,7 @@ line 299.
 
 [2] [3]
 ! Extra }, or forgotten $.
-l.362 ...(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}
+l.363 ...(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}
                                                   ]^2$
 ? 
 Missing character: There is no ‚ in font cmr12!
@@ -355,7 +355,7 @@ Missing character: There is no Å in font cmr12!
 Missing character: There is no Ñ in font cmr12!
 
 Package natbib Warning: Citation `garg_phonon_2012' on page 4 undefined on inpu
-t line 412.
+t line 413.
 
 [4]
 File: /home/jason/disorder/lj/alloy/xcorr_alloy_vc_life.eps Graphic file (type 
@@ -371,111 +371,111 @@ File: /home/jason/thesis/proposal/paper/LJ_alloy_GK.eps Graphic file (type eps)
 </home/jason/thesis/proposal/paper/LJ_alloy_GK.eps> [7] [8]
 
 Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 5
-77.
+78.
 
 
 Package natbib Warning: Citation `wallace1972' on page 9 undefined on input lin
-e 577.
+e 578.
 
 
 Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 5
-80.
-
-
-Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 5
-90.
-
-
-LaTeX Warning: Reference `A-Phonon-Life-SED' on page 9 undefined on input line 
-597.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 9 undefined on input li
-ne 613.
+81.
 
 [9]
 
+Package natbib Warning: Citation `dove1993' on page 10 undefined on input line 
+591.
+
+
+LaTeX Warning: Reference `A-Phonon-Life-SED' on page 10 undefined on input line
+ 598.
+
+
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 627.
+ine 614.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
+ine 628.
 
 
 Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 629.
+ne 630.
 
 
 Package natbib Warning: Citation `mcgaughey2004a' on page 10 undefined on input
- line 629.
+ line 630.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 638.
+ine 639.
 
 
 Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 640.
+ne 641.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 641.
+ine 642.
+
+[10]
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 11 undefined on in
+put line 662.
 
 
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 10 undefined on in
-put line 661.
+Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
+ne 663.
 
 
-Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 662.
+Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 6
+63.
 
 
-Package natbib Warning: Citation `He2011a' on page 10 undefined on input line 6
-62.
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 661--668
+Underfull \hbox (badness 1072) in paragraph at lines 662--669
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
-[10]
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 678.
+ne 679.
 
 
 Package natbib Warning: Citation `sellan2010b' on page 11 undefined on input li
-ne 678.
+ne 679.
 
 
 Package natbib Warning: Citation `Larkin2012' on page 11 undefined on input lin
-e 684.
+e 685.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 684.
+ne 685.
 
 
 Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 6
-84.
+85.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 684.
+ne 685.
 
 
 Package natbib Warning: Citation `Larkin2012' on page 11 undefined on input lin
-e 684.
+e 685.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 684.
+ne 685.
 
 
 Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 6
-84.
+85.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 684.
+ne 685.
 
 (./prb_vc_jl_092512.bbl [11]
 Missing character: There is no ‚ in font cmr10!
@@ -522,11 +522,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  3581 strings out of 493849
- 44241 string characters out of 1152846
- 119608 words of memory out of 3000000
+ 44243 string characters out of 1152846
+ 126605 words of memory out of 3000000
  6809 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  33i,25n,30p,632b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_092512.dvi (13 pages, 28980 bytes).
+Output written on prb_vc_jl_092512.dvi (13 pages, 29088 bytes).

@@ -342,17 +342,18 @@ given by
 ( \sum_i c_i(1-m_i/\bar m)^2 + \sum_i c_i(1-r_i/\bar r)^2 ),
 \end{equation}
 
-where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius of 
-species i and $\bar r$ is the average atomic radius.
+where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius 
+(scattering cross-section) 
+of species i and $\bar r$ is the average atomic radius.
 \cite{klemens_scattering_1955,klemens_thermal_1957} 
 The frequency dependence is the same as 
 Rayleigh scattering, which is valid at low frequency in the Debye limit.
 
-Tamura gives a general expression for point defect scattering 
-which is harmonic \cite{tamura_isotope_1983}
+For all frequencies, Tamura gives a general expression for 
+point defect scattering which is harmonic \cite{tamura_isotope_1983}
 
 \begin{equation}\label{EQ:M:tau_d}
-\frac{1}{\tau_{\mathbf{q}s}^m} = \frac{\pi}{2N}\omega_{\mathbf{q}s}^2 
+\frac{1}{\tau_{d}\kv} = \frac{\pi}{2N}\omega_{\mathbf{q}s}^2 
 \sum_{\mathbf{q'}s'} \delta( \omega_{\mathbf{q}s} - 
 \omega_{\mathbf{q'}s'} ) \sum_{\sigma} g_{2}(\sigma) 
 |e_{\mathbf{q'}s'}^*(\sigma) \cdot e_{\mathbf{q}s}(\sigma) |^2 ,
@@ -361,6 +362,7 @@ which is harmonic \cite{tamura_isotope_1983}
 where 
 $g_2(\sigma) = \sum_i f_i(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}]^2$
 $g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+N is the number of unit cells.
 
 Though the
 expression for harmonic scattering [Eq. (2)] is valid for

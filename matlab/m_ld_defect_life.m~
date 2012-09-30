@@ -1,4 +1,4 @@
-function ALLOY = m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm,DW_SCALE)
+function ALLOY = m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm)
 %ALLOY = m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm)
 %--------------------------------------------------------------------------
 
@@ -18,14 +18,15 @@ for ikpt = 1:NMD.NUM_KPTS
             (ikpt-1)*NMD.NUM_MODES+1:(ikpt)*NMD.NUM_MODES,1)...
             =...
             NMD.freq(ikpt,:)';
-        
+
             
 %         NMD.eigvec( (NMD.NUM_ATOMS_UCELL*3)*(ikpt-1)+1 ...
 %             :...
 %             ((NMD.NUM_ATOMS_UCELL*3)*ikpt),   1:NMD.NUM_MODES      )'
 end
 
-ALLOY.life_pp = SED.life;
+%DOS 
+%[y x ]=hist(freq,17); loglog(x,y,'.',x,5*(x.^2))
 
 %--------------------------------------------------------------------------
 %pause
@@ -60,19 +61,14 @@ imode;
     SUMb(imode) = 0;
 %calculate average level spacing
 freq_sorted = sort(ALLOY.freq);
-ALLOY.dw_avg(imode) =...
+ALLOY.dw_avg =...
     real(...
     mean(...
-    freq_sorted(2:length(freq_sorted))...
+    freq_sorted(2:NMD.NUM_MODES)...
     -...
-    freq_sorted(1:length(freq_sorted)-1)));
+    freq_sorted(1:NMD.NUM_MODES-1)));
 
-ALLOY.dw_avg(imode) = ALLOY.dw_avg(imode)*DW_SCALE; 
-
-% ALLOY.dw_avg(imode) = 1/(2*ALLOY.life_pp(imode));
-% 
-% ALLOY.dw_avg(imode) = 
-
+ALLOY.dw_avg 
 % 
 % size(freq_sorted)
 % length(freq_sorted)
@@ -83,8 +79,7 @@ ALLOY.dw_avg(imode) = ALLOY.dw_avg(imode)*DW_SCALE;
 %find lorentzian broadenings
 delwij = ...
     ALLOY.freq - ALLOY.freq(imode);
-lor =...
-    (1.0/pi)*(ALLOY.dw_avg(imode)./( delwij.^2 + ALLOY.dw_avg(imode)^2 ) );
+lor = (1.0/pi)*(ALLOY.dw_avg./( delwij.^2 + ALLOY.dw_avg^2 ) );
 %evaluated Eq. ()
     ALLOY.life(imode) =...
         ( pi*(ALLOY.freq(imode)^2) ) / ( 2*NMD.Nx*NMD.Ny*NMD.Nz )*...

@@ -22,15 +22,11 @@ sed_vc = nmd_convert_data(nmd_vc,sed_vc);
 
 sed_per.ald = m_joe_ald2nmd( nmd_per , sed_per , ald );
 
-alloy = load(strcat(str_alloy,'ALLOY.mat'))
-alloy.life_d = alloy.life_d/nmd_per.LJ.tau;
-alloy.life_pp = alloy.life_pp/nmd_per.LJ.tau;
+alloy = load(strcat(str_alloy,'ALLOY.mat'));
 
 
 loglog(...
-    alloy.freq,alloy.life,'.',...
-    alloy.freq,alloy.life_pp,'.',...
-    alloy.freq,alloy.life_d,'.'...
+    alloy.freq,alloy.life,'.'...
     )
 
 %--------------------------------------------------------------------------
