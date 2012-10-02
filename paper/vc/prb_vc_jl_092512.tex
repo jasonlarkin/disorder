@@ -170,6 +170,10 @@
 \begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
 \mspace{-3.0mu}\right)}
 
+\newcommand{\kw}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} \\&\omega\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
 \newcommand{\kpvp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
 \begin{smallmatrix}&\pmb{\kappa'} \\&\nu'\end{smallmatrix}
 \mspace{-3.0mu}\right)}
@@ -422,6 +426,23 @@ Bouchard show that alloy DOS varies smoothly with concentration.
 %--------------------------------------------------------------------------
 Demonstrates the importance of dispersion, even along different lattice 
 directions ([100 vs [111]).
+
+\begin{equation}\label{EQ:M:EL}
+E^L\kv = 
+\left|
+\sum_{l,b} 
+\hat{\mathbf{\kappa}} \cdot e\kvba 
+\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{b}} 
+\right|^2
+\end{equation}
+
+\begin{equation}\label{EQ:M:SL}
+S^{L}\kw = 
+\frac{k_bT\kappa^2}{m\omega^2}
+\sum_{\nu} E^L\kv
+\Theta\left( 0.1 - \left| \frac{\omega-\omega\kv}{\omega} \right| \right) 
+\end{equation}
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:}Group Velocity}
 %--------------------------------------------------------------------------

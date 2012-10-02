@@ -5,13 +5,13 @@ NMD=load(strcat(str.NMD,'NMDdata.mat'));
 
 SED = nmd_convert_data(NMD,SED);
 
-ALLOY = m_ld_defect_life(NMD,SED, 0.05 , 1 , 3 , 1.1 , 200.0);
+ALLOY = m_ld_defect_life(NMD,SED, 0.05 , 1 , 3 , 1.1 , 100.0, 4);
 
 %--------------------------------------------------------------------------
-
+figure
 loglog(...
     SED.freq,SED.life,'.',...
-    ALLOY.freq, ALLOY.life,'.',...
+    ALLOY.freq, ALLOY.life(:,1),'.',...
     ALLOY.freq, 1E4*ALLOY.freq.^(-4)...
     )
 

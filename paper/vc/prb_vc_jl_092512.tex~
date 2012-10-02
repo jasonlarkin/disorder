@@ -170,6 +170,10 @@
 \begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
 \mspace{-3.0mu}\right)}
 
+\newcommand{\kw}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} \\&\omega\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
 \newcommand{\kpvp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
 \begin{smallmatrix}&\pmb{\kappa'} \\&\nu'\end{smallmatrix}
 \mspace{-3.0mu}\right)}
@@ -362,6 +366,7 @@ point defect scattering which is harmonic \cite{tamura_isotope_1983}
 where 
 $g_2(\sigma) = \sum_i f_i(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}]^2$
 $g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+N is the number of unit cells.
 
 Though the
 expression for harmonic scattering [Eq. (2)] is valid for
@@ -421,6 +426,23 @@ Bouchard show that alloy DOS varies smoothly with concentration.
 %--------------------------------------------------------------------------
 Demonstrates the importance of dispersion, even along different lattice 
 directions ([100 vs [111]).
+
+\begin{equation}\label{EQ:M:EL}
+E^L\kv = 
+\left|
+\sum_{l,b} 
+\hat{\mathbf{\kappa}} \cdot e\kvba 
+\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{b}} 
+\right|^2
+\end{equation}
+
+\begin{equation}\label{EQ:M:SL}
+S^{L}(\mathbf{\kappa},\omega) = 
+\frac{k_bT\kappa^2}{m\omega^2}
+\sum_{\nu} E^L\kv
+\Theta\left( 0.1 - \left| \frac{\omega-\omega\kv}{\omega} \right| \right) 
+\end{equation}
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:}Group Velocity}
 %--------------------------------------------------------------------------

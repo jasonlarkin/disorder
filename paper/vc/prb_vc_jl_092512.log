@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  28 SEP 2012 13:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  1 OCT 2012 20:26
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_092512.tex
@@ -255,6 +255,9 @@ LaTeX Warning: Label `S:' multiply defined.
 LaTeX Warning: Label `S:' multiply defined.
 
 
+LaTeX Warning: Label `EQ:M:DSF' multiply defined.
+
+
 LaTeX Warning: Label `S:' multiply defined.
 
 
@@ -305,49 +308,49 @@ LaTeX Warning: Label `E:udot_HLD' multiply defined.
 )
 \openout1 = `prb_vc_jl_092512.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-Class revtex4 Info: Patching array package. on input line 199.
-Class revtex4 Info: cite was not loaded (OK!) on input line 199.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 199.
-LaTeX Font Info:    Try loading font information for U+msa on input line 229.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+Class revtex4 Info: Patching array package. on input line 203.
+Class revtex4 Info: cite was not loaded (OK!) on input line 203.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 203.
+LaTeX Font Info:    Try loading font information for U+msa on input line 233.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 229.
+LaTeX Font Info:    Try loading font information for U+msb on input line 233.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1]
 
 Package natbib Warning: Citation `mcquarrie2000' on page 2 undefined on input l
-ine 275.
-
-
-Package natbib Warning: Citation `mcgaughey2004c' on page 2 undefined on input 
-line 278.
-
-
-Package natbib Warning: Citation `goicochea2010' on page 2 undefined on input l
 ine 279.
 
 
+Package natbib Warning: Citation `mcgaughey2004c' on page 2 undefined on input 
+line 282.
+
+
+Package natbib Warning: Citation `goicochea2010' on page 2 undefined on input l
+ine 283.
+
+
 Package natbib Warning: Citation `mcgaughey2006b' on page 2 undefined on input 
-line 299.
+line 303.
 
 [2] [3]
 ! Extra }, or forgotten $.
-l.363 ...(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}
+l.367 ...(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}
                                                   ]^2$
 ? 
 Missing character: There is no ‚ in font cmr12!
@@ -355,7 +358,7 @@ Missing character: There is no Å in font cmr12!
 Missing character: There is no Ñ in font cmr12!
 
 Package natbib Warning: Citation `garg_phonon_2012' on page 4 undefined on inpu
-t line 413.
+t line 418.
 
 [4]
 File: /home/jason/disorder/lj/alloy/xcorr_alloy_vc_life.eps Graphic file (type 
@@ -370,112 +373,112 @@ File: /home/jason/thesis/proposal/paper/LJ_alloy_GK.eps Graphic file (type eps)
 
 </home/jason/thesis/proposal/paper/LJ_alloy_GK.eps> [7] [8]
 
-Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 5
-78.
+Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 6
+00.
 
 
 Package natbib Warning: Citation `wallace1972' on page 9 undefined on input lin
-e 578.
+e 600.
 
 
-Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 5
-81.
+Package natbib Warning: Citation `dove1993' on page 9 undefined on input line 6
+03.
 
 [9]
 
 Package natbib Warning: Citation `dove1993' on page 10 undefined on input line 
-591.
+613.
 
 
 LaTeX Warning: Reference `A-Phonon-Life-SED' on page 10 undefined on input line
- 598.
+ 620.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 614.
+ine 636.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 628.
+ine 650.
 
 
 Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 630.
+ne 652.
 
 
 Package natbib Warning: Citation `mcgaughey2004a' on page 10 undefined on input
- line 630.
+ line 652.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 639.
+ine 661.
 
 
 Package natbib Warning: Citation `turney2009a' on page 10 undefined on input li
-ne 641.
+ne 663.
 
 
 Package natbib Warning: Citation `ashcroft1976' on page 10 undefined on input l
-ine 642.
+ine 664.
 
 [10]
 
 LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 11 undefined on in
-put line 662.
+put line 684.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 663.
+ne 685.
 
 
 Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 6
-63.
+85.
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 662--669
+Underfull \hbox (badness 1072) in paragraph at lines 684--691
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 679.
+ne 701.
 
 
 Package natbib Warning: Citation `sellan2010b' on page 11 undefined on input li
-ne 679.
+ne 701.
 
 
 Package natbib Warning: Citation `Larkin2012' on page 11 undefined on input lin
-e 685.
+e 707.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 685.
+ne 707.
 
 
-Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 6
-85.
+Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 7
+07.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 685.
+ne 707.
 
 
 Package natbib Warning: Citation `Larkin2012' on page 11 undefined on input lin
-e 685.
+e 707.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 685.
+ne 707.
 
 
-Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 6
-85.
+Package natbib Warning: Citation `He2011a' on page 11 undefined on input line 7
+07.
 
 
 Package natbib Warning: Citation `turney2009a' on page 11 undefined on input li
-ne 685.
+ne 707.
 
 (./prb_vc_jl_092512.bbl [11]
 Missing character: There is no ‚ in font cmr10!
@@ -521,12 +524,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3581 strings out of 493849
- 44243 string characters out of 1152846
- 126605 words of memory out of 3000000
- 6809 multiletter control sequences out of 15000+50000
+ 3585 strings out of 493849
+ 44273 string characters out of 1152846
+ 126694 words of memory out of 3000000
+ 6813 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  33i,25n,30p,632b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_092512.dvi (13 pages, 29088 bytes).
+Output written on prb_vc_jl_092512.dvi (13 pages, 30180 bytes).

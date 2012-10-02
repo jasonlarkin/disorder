@@ -1,8 +1,10 @@
-function ALLOY = m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm,DW_SCALE)
-%ALLOY = m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm)
+function ALLOY =...
+    m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm,DW_SCALE,NUM_ITERATIONS)
+%ALLOY =...
+%    m_ld_defect_life(NMD,SED,alloy_conc,m1,m2,vm,DW_SCALE,NUM_ITERATIONS)
 %--------------------------------------------------------------------------
 
-%ALLOY.sedfreq=1;
+ALLOY.life(1:NMD.NUM_MODES,1:NUM_ITERATIONS) = 0.0;
 
 %re-sort eigvec and transpose freq
 for ikpt = 1:NMD.NUM_KPTS
@@ -19,25 +21,29 @@ for ikpt = 1:NMD.NUM_KPTS
             =...
             NMD.freq(ikpt,:)';
         
-            
-%         NMD.eigvec( (NMD.NUM_ATOMS_UCELL*3)*(ikpt-1)+1 ...
-%             :...
-%             ((NMD.NUM_ATOMS_UCELL*3)*ikpt),   1:NMD.NUM_MODES      )'
 end
-
 ALLOY.life_pp = SED.life;
+
+%calculate coupling strength
+g(1) =...
+        (1-alloy_conc)* ((1 - (m1/vm) )^2) ... 
+        +...
+        (alloy_conc)* ((1 - (m2/vm) )^2);
+%calculate average level spacing
+freq_sorted = sort(ALLOY.freq);
+ALLOY.dw_avg =...
+    real(...
+    mean(...
+    freq_sorted(2:length(freq_sorted))...
+    -...
+    freq_sorted(1:length(freq_sorted)-1)));
+ALLOY.dw_avg = ALLOY.dw_avg*DW_SCALE; 
 
 %--------------------------------------------------------------------------
 %pause
 %--------------------------------------------------------------------------
 
-
 for imode = 1:size(eig,1)
-imode;
-    g(1) =...
-        (1-alloy_conc)* ((1 - (m1/vm) )^2) ... 
-        +...
-        (alloy_conc)* ((1 - (m2/vm) )^2);
 %find all e*(k',v') dot e(k,v), sum over b
     SUMb =...
         g(1)*...
@@ -46,52 +52,72 @@ imode;
         bsxfun(...
         @times, eig(:,:)  ,  conj(eig(imode,:)) ),2) ...
         ).^2 ;
-% %is (NUM_MODES,3*NUM_ATOMS_UCELL)
-%     size(bsxfun(@times, eig(:,:)  ,  conj(eig(imode,:)) ));
-% %is (NUM_MODES,1)
-%     size(sum(...
-%         bsxfun(...
-%         @times, eig(:,:)  ,  conj(eig(imode,:)) ),2));
-%--------------------------------------------------------------------------
-%pause
-%--------------------------------------------------------------------------  
-    
 %set self-term 0
     SUMb(imode) = 0;
-%calculate average level spacing
-freq_sorted = sort(ALLOY.freq);
-ALLOY.dw_avg(imode) =...
-    real(...
-    mean(...
-    freq_sorted(2:length(freq_sorted))...
-    -...
-    freq_sorted(1:length(freq_sorted)-1)));
 
-ALLOY.dw_avg(imode) = ALLOY.dw_avg(imode)*DW_SCALE; 
-
-% ALLOY.dw_avg(imode) = 1/(2*ALLOY.life_pp(imode));
-% 
-% ALLOY.dw_avg(imode) = 
-
-% 
-% size(freq_sorted)
-% length(freq_sorted)
-% freq_sorted(1:10)
-% 
-% pause
+%scale the mean level spacing
 
 %find lorentzian broadenings
 delwij = ...
     ALLOY.freq - ALLOY.freq(imode);
 lor =...
-    (1.0/pi)*(ALLOY.dw_avg(imode)./( delwij.^2 + ALLOY.dw_avg(imode)^2 ) );
-%evaluated Eq. ()
-    ALLOY.life(imode) =...
+    (1.0/pi)*(ALLOY.dw_avg./( delwij.^2 + ALLOY.dw_avg^2 ) );
+%evaluate Eq. ()
+    ALLOY.life(imode,1) =...
         ( pi*(ALLOY.freq(imode)^2) ) / ( 2*NMD.Nx*NMD.Ny*NMD.Nz )*...
         sum(lor.*SUMb,1);
 %convert linewidth to lifetime
-ALLOY.life(imode) = 1/ALLOY.life(imode);
-        
+ALLOY.life(imode,1) = 1/ALLOY.life(imode,1);
+end
+loglog(ALLOY.freq,ALLOY.life(:,1),'.')
+ALLOY.dw_avg
+hold on
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+
+%re-iterate using calculated lifetimes above
+for iiter = 2:NUM_ITERATIONS
+    iiter
+for imode = 1:size(eig,1)
+%find all e*(k',v') dot e(k,v), sum over b
+    SUMb =...
+        g(1)*...
+        abs(...
+        sum(...
+        bsxfun(...
+        @times, eig(:,:)  ,  conj(eig(imode,:)) ),2) ...
+        ).^2 ;
+%set self-term 0
+    SUMb(imode) = 0;
+%find lorentzian broadenings
+delwij = ...
+    ALLOY.freq - ALLOY.freq(imode);
+ALLOY.dw =...
+    1./(2*ALLOY.life(:,iiter-1)) + 1./(2*ALLOY.life(imode,iiter-1));
+
+lor =...
+    (1.0/pi)*(ALLOY.dw./( delwij.^2 + ALLOY.dw.^2 ) );
+% max(lor)
+% plot(ALLOY.freq,ALLOY.dw,'.',ALLOY.freq,ALLOY.dw_avg)
+%--------------------------------------------------------------------------
+%pause
+%--------------------------------------------------------------------------
+%evaluate Eq. ()
+    ALLOY.life(imode,iiter) =...
+        ( pi*(ALLOY.freq(imode)^2) ) / ( 2*NMD.Nx*NMD.Ny*NMD.Nz )*...
+        sum(lor.*SUMb,1);
+%convert linewidth to lifetime
+ALLOY.life(imode,iiter) = 1/ALLOY.life(imode,iiter);
+end
+loglog(ALLOY.freq,ALLOY.life(:,iiter),'.')
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+% loglog(ALLOY.freq,ALLOY.dw_avg,'.')
+% %--------------------------------------------------------------------------
+% pause
+% %--------------------------------------------------------------------------
 end
 
 end

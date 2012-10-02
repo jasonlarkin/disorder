@@ -337,23 +337,23 @@ order n-phonon process can become important at higher temperatures.
 
 At low frequencies, the phonon scattering due to point-defects is 
 given by
-
 \begin{equation}\label{EQ:M:tau_d_D}
 \frac{1}{\tau_{d}} = \frac{V \omega^4}{4 \pi v_p^2 v_g} 
 ( \sum_i c_i(1-m_i/\bar m)^2 + \sum_i c_i(1-r_i/\bar r)^2 ),
 \end{equation}
 
-where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius of 
-species i and $\bar r$ is the average atomic radius.
+where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius 
+(scattering cross-section) 
+of species i and $\bar r$ is the average atomic radius.
 \cite{klemens_scattering_1955,klemens_thermal_1957} 
 The frequency dependence is the same as 
 Rayleigh scattering, which is valid at low frequency in the Debye limit.
 
-Tamura gives a general expression for point defect scattering 
-which is harmonic \cite{tamura_isotope_1983}
+For all frequencies, Tamura gives a general expression for 
+point defect scattering which is harmonic \cite{tamura_isotope_1983}
 
 \begin{equation}\label{EQ:M:tau_d}
-\frac{1}{\tau_{\mathbf{q}s}^m} = \frac{\pi}{2N}\omega_{\mathbf{q}s}^2 
+\frac{1}{\tau_{d}\kv} = \frac{\pi}{2N}\omega_{\mathbf{q}s}^2 
 \sum_{\mathbf{q'}s'} \delta( \omega_{\mathbf{q}s} - 
 \omega_{\mathbf{q'}s'} ) \sum_{\sigma} g_{2}(\sigma) 
 |e_{\mathbf{q'}s'}^*(\sigma) \cdot e_{\mathbf{q}s}(\sigma) |^2 ,
@@ -361,8 +361,8 @@ which is harmonic \cite{tamura_isotope_1983}
 
 where 
 $g_2(\sigma) = \sum_i f_i(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}]^2$
-
 $g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+N is the number of unit cells.
 
 Though the
 expression for harmonic scattering [Eq. (2)] is valid for
@@ -376,7 +376,6 @@ Cahill shows that even though the mass difference between Si and Ge is
 larger than the mass of Si, the defect scaling agrees with experimental 
 measurements of thermal conductivity in dilute SiGe epitaxial layers.
 \cite{cahill_thermal_2005}
-
 %--------------------------------------------------------------------------
 \section{\label{S:}Virtual Crystal Approximation}
 %--------------------------------------------------------------------------
@@ -423,6 +422,31 @@ Bouchard show that alloy DOS varies smoothly with concentration.
 %--------------------------------------------------------------------------
 Demonstrates the importance of dispersion, even along different lattice 
 directions ([100 vs [111]).
+
+\begin{equation}\label{EQ:M:DSF}
+E_{\nu}^L(\mathbf{\kappa}) = 
+\left|
+\sum_{l,b} 
+\hat{\mathbf{\kappa}} \cdot e\kvba 
+\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{b}} 
+\right|^2
+\end{equation}
+
+\begin{equation}\label{EQ:M:DSF}
+S_{L}(\mathbf{\kappa},\omega) = 
+\frac{k_bT\kappa^2}{m\omega^2}
+\sum_{\nu} E_{\nu}^L(\mathbf{\kappa})
+\mathcal{H}( 
+
+
+\sum_{\nu} E_{\nu}^L(\mathbf{\kappa}) = 
+\left|
+\sum_{l,b} 
+\hat{\mathbf{\kappa}} \cdot e\kvba 
+\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{b}} 
+\right|^2
+\end{equation}
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:}Group Velocity}
 %--------------------------------------------------------------------------
@@ -433,11 +457,9 @@ be (partially) explained in both in terms of the $\bar m$
 (germanium has a larger density $\rho$ than silicon) 
 and the group velocity (germanium has a smaller bulk modulus $B$, 
 and $v_g \propto \sqrt{B/\rho}$.
-
 Thus, for alloys, there should also be a corrsponding scaling 
 of the group velocity with the alloy's concentration (mass
 density).
-
 Duda shows the reduction in group velocity of disordered systems.
 \cite{duda_reducing_2011}
 %--------------------------------------------------------------------------
@@ -463,6 +485,7 @@ Duda shows the reduction in group velocity of disordered systems.
 \caption{\label{FIG:phonon_diff} gamma point results}
 \end{figure}
 %--------------------------------------------------------------------------
+\vspace{60mm}
 %--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Thermal Conductivity Predictions}
 %--------------------------------------------------------------------------
@@ -510,10 +533,8 @@ approaches that of an amorphous system.}
 %--------------------------------------------------------------------------
 \subsection{\label{S:}NMD and ALD Lifetime Comparison}
 %--------------------------------------------------------------------------
-
 Essentially, the normal mode mappings are performed using eigenvectors 
 which are plane waves.\cite{}
-
 %--------------------------------------------------------------------------
 \section{\label{S:}Discussion}
 %--------------------------------------------------------------------------
@@ -545,31 +566,31 @@ of lead chalcogenides are important for better material design.
 %--------------------------------------------------------------------------
 \appendix
 %--------------------------------------------------------------------------
-\section{\label{A:Predicted Phonon Properties: NMD vs ALD}}
+\section{\label{A:}Predicted Phonon Properties: NMD vs ALD}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\subsection{\label{A:Ioffe-Regel Limit on Phonon Lifetimes}}
+\subsection{\label{A:}Ioffe-Regel Limit on Phonon Lifetimes}
 %--------------------------------------------------------------------------
-
+For defects, the lifetimes can be reduced down to the Ioffe-Regel limit. 
+Compare $D = v_s^2 1/\omega$ with  $D = v_s a $
 %--------------------------------------------------------------------------
-\section{\label{A:Allen-Feldman Diffuson Theory}}
+\section{\label{A:}Allen-Feldman Diffuson Theory}
 %--------------------------------------------------------------------------
-
+$k_{AF} = \sum_{modes} c(\omega)D_{AF}(\omega)$ 
 %--------------------------------------------------------------------------
-\subsection{\label{A:AF Mode Diffusivity}}
+\subsection{\label{A:}AF Mode Diffusivity}
 %--------------------------------------------------------------------------
 Shows that for c=0.5 the AF mode diffusivities agree with VC phonon mode 
 diffusivities.
 %--------------------------------------------------------------------------
-\subsection{\label{A:AF Mode Velocity}}
+\subsection{\label{A:}AF Mode Velocity}
 %--------------------------------------------------------------------------
 Demonstrates the importance of a mode-dependent group velocity instead of 
 using $v_s$ for all modes.
 %--------------------------------------------------------------------------
-\subsection{\label{A:AF Thermal Conductivity Predictions}}
+\subsection{\label{A:}AF Thermal Conductivity Predictions}
 %--------------------------------------------------------------------------
-
 Results depend on broadening factor, except for heavily disordered systems 
 (c=0.5 and amorphous).
 
