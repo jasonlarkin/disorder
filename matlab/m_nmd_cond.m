@@ -2,14 +2,19 @@ function m_nmd_cond(str,name_nmd,name_sed)
 %--------------------------------------------------------------------------
 %m_nmd_cond(str,name_nmd,name_sed)
 %assumes quantities in mks units, not lj
-%str.NMD = '/home/jason/lammps/LJ/alloy/10K/0.05/10x/NMD/1';
+%m_nmd_cond(...
+% '/home/jason/disorder2/lj/alloy/10K/0.5/10x/nmd_vc/work/1/',...
+% 'NMDfit.mat',...
+% 'SEDfit.mat')
 %--------------------------------------------------------------------------
 
 str.NMD = str;
 
-NMD=load(strcat(str.NMD,name_nmd))
+NMD=load(strcat(str.NMD,name_nmd));
 
-SED=load(strcat(str.NMD,name_sed))
+SED=load(strcat(str.NMD,name_sed));
+
+SED.redkpt
 
 %CONVERT TO W/m-K
 
@@ -64,10 +69,14 @@ SED.conductivityx = sum( SED.redkpt.condx ); SED.conductivityx
 SED.conductivityy = sum( SED.redkpt.condy ); SED.conductivityy
 SED.conductivityz = sum( SED.redkpt.condz ); SED.conductivityz
 
-loglog( SED.irrkpt.sedfreq,SED.irrkpt.life/NMD.LJ.tau,'.' )
+NMD.VOLUME
 
-% save(strcat(str.NMD,'NMDdata.mat'), '-struct', 'NMD');
-% save(strcat(str.NMD,'SEDdata.mat'), '-struct', 'SED');
+loglog( SED.irrkpt.sedfreq,SED.irrkpt.life,'.' )
+
+SED = nmd_convert_data(NMD,SED);
+
+save(strcat(str.NMD,'NMDdata.mat'), '-struct', 'NMD');
+save(strcat(str.NMD,'SEDdata.mat'), '-struct', 'SED');
 
 end
 

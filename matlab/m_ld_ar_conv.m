@@ -367,6 +367,8 @@ function [freq,eigVsorted,D] = dynam_matrix(a2,x,x_ucell,m,kappa)
               eigVsorted(1:3*N,1:3*N) = eigV(:,I);  
               %freq = w;
               %eigVsorted = eigV;
+
+D
     
 end
    

@@ -173,7 +173,16 @@ I = find(SED.irrkpt.R2<0.8);
 
 plot(SED.irrkpt.sedfreq,SED.irrkpt.life,'.')
 
-SED = nmd_convert_data(NMD,SED);
+% SED = nmd_convert_data(NMD,SED);
+
+%convert to mks
+SED.irrkpt.sedfreq = SED.irrkpt.sedfreq/NMD.LJ.tau;
+SED.irrkpt.HLDfreq = SED.irrkpt.HLDfreq/NMD.LJ.tau;
+SED.irrkpt.HLDvel = SED.irrkpt.HLDvel*(NMD.LJ.sigma/NMD.LJ.tau);
+SED.irrkpt.life = SED.irrkpt.life*NMD.LJ.tau;
+
+SED.redkpt.freq = SED.redkpt.freq/NMD.LJ.tau;
+SED.redkpt.groupvel = SED.redkpt.groupvel*(NMD.LJ.sigma/NMD.LJ.tau);
 
 save(strcat(str.NMD,'NMDfit.mat'), '-struct', 'NMD');
 save(strcat(str.NMD,'SEDfit.mat'), '-struct', 'SED');
