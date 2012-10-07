@@ -1,10 +1,8 @@
 function ALLOY =...
-    m_ld_defect_life(NMD,alloy_conc,m1,m2,vm,DW_SCALE,NUM_ITERATIONS)
+    m_ld_defect_life(NMD,alloy_conc,m1,m2,vm,DW_SCALE,PEAK_HEIGHT,NUM_ITERATIONS)
 %ALLOY =...
 %    m_ld_defect_life(NMD,alloy_conc,m1,m2,vm,DW_SCALE,NUM_ITERATIONS)
 %--------------------------------------------------------------------------
-
-ALLOY.life(1:NMD.NUM_MODES,1:NUM_ITERATIONS) = 0.0;
 
 %re-sort eigvec and transpose freq
 for ikpt = 1:NMD.NUM_KPTS
@@ -19,15 +17,13 @@ for ikpt = 1:NMD.NUM_KPTS
         ALLOY.freq(...
             (ikpt-1)*NMD.NUM_MODES+1:(ikpt)*NMD.NUM_MODES,1)...
             =...
-            NMD.freq(ikpt,:)';
-        
+            NMD.freq(ikpt,:)';  
 end
 
+ALLOY.life(1:NMD.NUM_MODES,1:NUM_ITERATIONS) = 0.0;
 %calculate coupling strength
 g(1) =...
-        (1-alloy_conc)* ((1 - (m1/vm) )^2) ... 
-        +...
-        (alloy_conc)* ((1 - (m2/vm) )^2);
+    (1-alloy_conc)* ((1 - (m1/vm) )^2) + (alloy_conc)* ((1 - (m2/vm) )^2);
 %calculate average level spacing
 freq_sorted = sort(ALLOY.freq);
 ALLOY.dw_avg =...
@@ -36,57 +32,62 @@ ALLOY.dw_avg =...
     freq_sorted(2:length(freq_sorted))...
     -...
     freq_sorted(1:length(freq_sorted)-1)));
-
 %--------------------------------------------------------------------------
 %pause
 %--------------------------------------------------------------------------
-
 for imode = 1:size(eig,1)
-%find all e*(k',v') dot e(k,v), sum over b
+%find all e*(k'v',b) dot e(kv,b), sum over b
     SUMb =...
         g(1)*...
-        sum(...
-            abs(...
+        abs(...
+            sum(...
                 bsxfun(...
-                @times, eig(:,:)  ,  conj(eig(imode,:))...
+                @times, conj(eig(:,:))  ,  eig(imode,:)...
                 )...
-            ).^2 ,...
-        2) ;
+            ,2)...
+        ).^2;
 %set self-term 0
     SUMb(imode) = 0;
-    
-%     size(eig)
-%     size(conj(eig(imode,:)))
-%     size(bsxfun(...
-%         @times, eig(:,:)  ,  conj(eig(imode,:)) ))
-%     conj(eig(imode,:))
-%     eig(1:4,1:12)
-%     
-%     A = bsxfun(...
-%         @times, eig(:,:)  ,  conj(eig(imode,:)) );
-%     
-%     A(1:4,1:12)
-%     
-%     pause
-
-%scale the mean level spacing
-
 %find lorentzian broadenings
 delwij = ...
     ALLOY.freq - ALLOY.freq(imode);
+%scale the mean level spacing DW_SCALE
 lor =...
-    (1.0/pi)*(ALLOY.dw_avg*DW_SCALE./( delwij.^2 + (ALLOY.dw_avg*DW_SCALE)^2 ) );
+    (PEAK_HEIGHT/pi)*(ALLOY.dw_avg*DW_SCALE./...
+    ( delwij.^2 + (ALLOY.dw_avg*DW_SCALE)^2 ) );
 %evaluate Eq. ()
     ALLOY.life(imode,1) =...
         ( pi*(ALLOY.freq(imode)^2) ) / ( 2*NMD.Nx*NMD.Ny*NMD.Nz )*...
         sum(lor.*SUMb,1);
-%convert linewidth to lifetime
+%convert 1/life to life
 ALLOY.life(imode,1) = 1/ALLOY.life(imode,1);
 end
-loglog(ALLOY.freq,ALLOY.life(:,1),'.')
-ALLOY.dw_avg
 %--------------------------------------------------------------------------
 %pause
+%--------------------------------------------------------------------------
+end
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------
+%debug tools
+%--------------------------------------------------------------------------
+
+%     if ALLOY.freq(imode)<20
+%     plot(ALLOY.freq,lor.*SUMb,'.')
+% %--------------------------------------------------------------------------
+% pause
+% %--------------------------------------------------------------------------
+%     end
+
+
+%--------------------------------------------------------------------------
+%iteration
 %--------------------------------------------------------------------------
 
 % %re-iterate using calculated lifetimes above
@@ -132,5 +133,3 @@ ALLOY.dw_avg
 % % pause
 % % %--------------------------------------------------------------------------
 % end
-
-end
