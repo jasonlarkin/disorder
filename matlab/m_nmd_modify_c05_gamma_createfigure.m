@@ -1,4 +1,4 @@
-function m_nmd_modify_c05_gamma_createfigure(X1, Y1, X2, Y2, X3, Y3, X4, Y4)
+function m_nmd_modify_c05_gamma_createfigure(X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5, X6, Y6)
 %CREATEFIGURE(X1,Y1,X2,Y2,X3,Y3,X4,Y4)
 %  X1:  vector of x data
 %  Y1:  vector of y data
@@ -42,6 +42,12 @@ loglog(X3,Y3,'Parent',axes1,'Marker','.','LineStyle','none',...
 
 % Create loglog
 loglog(X4,Y4,'Parent',axes1,'DisplayName','$2\pi/\omega$');
+
+% Create loglog
+loglog(X5,Y5,'Parent',axes1,'DisplayName','$1 / \omega^4$');
+
+% Create loglog
+loglog(X6,Y6,'Parent',axes1,'DisplayName','$1 / \omega^2$');
 
 % Create xlabel
 xlabel({'$\omega$ (LJ units)'},'Interpreter','latex','FontSize',15);
