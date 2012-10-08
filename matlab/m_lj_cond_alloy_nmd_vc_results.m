@@ -1,4 +1,4 @@
-function VC = m_lj_alloy_nmd_vc_results
+function VC = m_lj_cond_alloy_nmd_vc_results
 %VC = m_lj_alloy_nmd_vc_results
 %returns the vc thermal conductivity results @ 10K for 4-12x systems
 %--------------------------------------------------------------------------

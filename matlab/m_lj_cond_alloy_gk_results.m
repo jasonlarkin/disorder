@@ -1,4 +1,4 @@
-function gk = m_lj_gk_alloy_results
+function GK = m_lj_cond_alloy_gk_results
 %gk = m_lj_gk_alloy_results
 %returns the gk thermal conductivity results @ 10K for 4-12x systems
 %--------------------------------------------------------------------------
