@@ -437,10 +437,10 @@ E^L\kv =
 \end{equation}
 
 \begin{equation}\label{EQ:M:SL}
-S^{L}(\mathbf{\kappa},\omega) = 
+S^{L}\kw = 
 \frac{k_bT\kappa^2}{m\omega^2}
 \sum_{\nu} E^L\kv
-\Theta\left( 0.1 - \left| \frac{\omega-\omega\kv}{\omega} \right| \right) 
+\delta (\omega-\omega\kv}{\omega)  
 \end{equation}
 
 %--------------------------------------------------------------------------

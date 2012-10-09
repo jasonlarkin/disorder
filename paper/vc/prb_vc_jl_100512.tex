@@ -346,6 +346,11 @@ given by
 ( \sum_i c_i(1-m_i/\bar m)^2 + \sum_i c_i(1-r_i/\bar r)^2 ),
 \end{equation}
 
+\begin{equation}\label{EQ:M:tau_d_D}
+\frac{1}{\tau_{d}} = \frac{V \omega^4}{4 \pi v_p^2 v_g} 
+\sum_i c_i(1-m_i/\bar m)^2 ,
+\end{equation}
+
 where $c_i$ is the fraction, $m_i$ is the mass, and $r_i$ is the radius 
 (scattering cross-section) 
 of species i and $\bar r$ is the average atomic radius.
@@ -359,13 +364,13 @@ point defect scattering which is harmonic \cite{tamura_isotope_1983}
 \begin{equation}\label{EQ:M:tau_d}
 \frac{1}{\tau_{d}\kv} = \frac{\pi}{2N}\omega_{\mathbf{q}s}^2 
 \sum_{\mathbf{q'}s'} \delta( \omega_{\mathbf{q}s} - 
-\omega_{\mathbf{q'}s'} ) \sum_{\sigma} g_{2}(\sigma) 
-|e_{\mathbf{q'}s'}^*(\sigma) \cdot e_{\mathbf{q}s}(\sigma) |^2 ,
+\omega_{\mathbf{q'}s'} ) \sum_{b} g(b) 
+|e_{\mathbf{q'}s'}^*(b) \cdot e_{\mathbf{q}s}(b) |^2 ,
 \end{equation}
 
 where 
-$g_2(\sigma) = \sum_i f_i(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}]^2$
-$g(b) = \sum_{i} f_i(b)[1-m_i(b)/m_{avg}(b)]^2$
+$g(b) = \sum_i c_i(b)(1-m_i(b)/\bar m(b))^2$
+
 N is the number of unit cells.
 
 Though the
@@ -436,11 +441,19 @@ E^L\kv =
 \right|^2
 \end{equation}
 
+\begin{equation}\label{EQ:M:EL}
+E^T\kv = 
+\left|
+\sum_{l,b} 
+\hat{\mathbf{\kappa}} \times e\kvba 
+\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{b}} 
+\right|^2
+\end{equation}
+
 \begin{equation}\label{EQ:M:SL}
-S^{L}\kw = 
-\frac{k_bT\kappa^2}{m\omega^2}
-\sum_{\nu} E^L\kv
-\Theta\left( 0.1 - \left| \frac{\omega-\omega\kv}{\omega} \right| \right) 
+S^{L,T}\kw = 
+\sum_{\nu} E^{L,T}\kv
+\delta (\omega-\omega\kv)
 \end{equation}
 
 %--------------------------------------------------------------------------
