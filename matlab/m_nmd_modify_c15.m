@@ -8,7 +8,7 @@
 % '/home/jason/disorder2/lj/alloy/10K/0.05/10x/nmd_vc/work/1/')
 %--------------------------------------------------------------------------
 
-str_ald = '/home/jason/disorder/lj/ald/m1.3/10x/Data_fullBZ.xls';
+str_ald = '/home/jason/disorder2/lj/ald/m1.3/10x/Data_fullBZ.xls';
 str_nmd_per = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/nmd_vc/work/1/';
 str_nmd_vc = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/NMD/1/work/';
 str_nmd_af = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/NMD_AF/1/work/';
@@ -26,7 +26,7 @@ nmd_vc=load(strcat(str_nmd_vc,'NMDdata_orig.mat'));
 sed_vc=load(strcat(str_nmd_vc,'SEDdata_orig.mat'));
 sed_vc = nmd_convert_data(nmd_vc,sed_vc)
 
-sed_per.ald = m_joe_ald2nmd( nmd_per , sed_per , ald );
+sed_per.ald = m_joe_ald2nmd( nmd_per , ald );
 
 alloy = load(strcat(str_alloy,'ALLOY.mat'));
 

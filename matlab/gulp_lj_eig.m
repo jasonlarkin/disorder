@@ -1,4 +1,4 @@
-function eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL)
+function eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
 %--------------------------------------------------------------------------
 %eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL)
 %--------------------------------------------------------------------------
@@ -8,37 +8,45 @@ function eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL)
     format long
 %--------------------------------------------------------------------------
 
-str_orig = '0.0 0.0 0.0';
-str_change =...
-strcat( num2str(kpt(1)),'\t',num2str(kpt(2)),'\t',num2str(kpt(3)) );
-str_cmd = strcat('sed ''s/',str_orig,'/',str_change,'/g'' BZ.gin > disp.gin');
-system(str_cmd);
+orig(1).str = 'KPT';
+change(1).str =...
+    strcat( num2str(kpt(1)),'\t',num2str(kpt(2)),'\t',num2str(kpt(3)) );
+orig(2).str = 'MASS';
+change(2).str = num2str(MASS);
 
+m_change_file_strings(...
+    [str_matlab name],...
+    orig,...
+    [str_main 'disp.gin'],...
+    change);
 
-
-str.cmd = ['gulp disp disp']; system(str.cmd);
+str.cmd = ['gulp ' str_main 'disp ' str_main 'disp']; system(str.cmd);
 
 %grep out eigenvectors
     eigvec = zeros(3*NUM_ATOMS_UCELL,3*NUM_ATOMS_UCELL);
     str1 = 'grep -A ';
-    str2 = strcat(int2str(3*NUM_ATOMS_UCELL),...
-        ' " 1 x" disp.gout > eigvec_grep.dat');
+    str2 = [int2str(3*NUM_ATOMS_UCELL),...
+        ' " 1 x" ' str_main 'disp.gout > ' str_main 'eigvec_grep.dat'];
     str.cmd = [str1,str2]; system(str.cmd);
-    str.cmd = ('sed ''s/x//g'' eigvec_grep.dat > eigvec2.dat');
+    str.cmd =...
+        ['sed ''s/x//g'' ' str_main 'eigvec_grep.dat > '...
+        str_main 'eigvec2.dat'];
     system(str.cmd);
-    system('rm eigvec_grep.dat');
-    str.cmd = ('sed ''s/y//g'' eigvec2.dat > eigvec3.dat'); 
-    system(str.cmd); system('rm eigvec2.dat');  
-    str.cmd = ('sed ''s/z//g'' eigvec3.dat > eigvec4.dat'); 
-    system(str.cmd); system('rm eigvec3.dat');
+    system(['rm ' str_main 'eigvec_grep.dat']);
+    str.cmd = ['sed ''s/y//g'' ' str_main 'eigvec2.dat > '...
+        str_main 'eigvec3.dat']; 
+    system(str.cmd); system(['rm ' str_main 'eigvec2.dat']);  
+    str.cmd = ['sed ''s/z//g'' ' str_main 'eigvec3.dat > '...
+        str_main 'eigvec4.dat']; 
+    system(str.cmd); system(['rm ' str_main 'eigvec3.dat']);
 
 %read in eigvec to sort properly		
-    str.read=strcat('eigvec4.dat');
+    str.read= [str_main 'eigvec4.dat'];
     fid=fopen(str.read);
     dummy = textscan(fid,'%f%f%f%f%f%f%f','Delimiter','\t',...
         'commentStyle', '--'); 
     fclose(fid);
-    system('rm eigvec4.dat'); 
+    system(['rm ' str_main 'eigvec4.dat']); 
     
 if kpt(1) == 0 & kpt(2) == 0 & kpt(3) == 0 
 %Gamma has only real components	

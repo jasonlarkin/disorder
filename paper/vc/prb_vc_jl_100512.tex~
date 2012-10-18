@@ -369,7 +369,6 @@ point defect scattering which is harmonic \cite{tamura_isotope_1983}
 \end{equation}
 
 where 
-$g_2(\sigma) = \sum_i f_i(\sigma)[1-m_i(\sigma)/\bar{m_i}(\sigma)}]^2$
 $g(b) = \sum_i c_i(b)(1-m_i(b)/\bar m(b))^2$
 
 N is the number of unit cells.
@@ -760,6 +759,9 @@ simulation size, with no contribution from the volume at its center. To
 predict a bulk thermal conductivity, it is important to sample points near 
 the Brillouin zone center, where the modes can have large lifetimes and 
 group velocities.\cite{turney2009a,sellan2010b} 
+
+
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}

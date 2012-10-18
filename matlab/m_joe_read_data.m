@@ -7,6 +7,8 @@ function data = m_joe_read_data(str)
 %data.freq_shift4(1:NUM_MODES)
 %data.life(1:NUM_MODES)
 
+str
+
 fid = fopen(str,'rt'); 
 dummy = textscan(fid, '%f%f%f%f%f%f%f%f%f%f%f', 'HeaderLines',1); 
 fclose(fid); 

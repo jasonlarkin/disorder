@@ -1,8 +1,3 @@
-
-
-
-
-
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
@@ -10,101 +5,69 @@
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
-NMD.LJ.eps = 1.67E-21;              %aJ (1.67E-21 Joules) aJ=1E-18 J
-NMD.LJ.sigma = 3.4E-10;                 %Angstroms 3.4E-10 meters
-NMD.LJ.mass = 6.6326E-26;               %1E-28 kg (6.6326E-26 kg)
-NMD.LJ.tau = sqrt((NMD.LJ.mass*(NMD.LJ.sigma^2))/NMD.LJ.eps);
-NMD.constant.kb = 1.3806E-23;                    %aJ/k (1.3806E-23 J/K)
-NMD.constant.hbar = 1.054E-34;                %J/s
-NMD.constant.i = sqrt(-1);
-NMD.constant.c = 29979245800.00019;      %cm/s
-NMD.constant.s2ps = 1E-12;
-NMD.constant.ang2m = 1E-10;
-NMD.constant.eV2J = 1.60217646E-19;
+
+    
 
 %--------------------------------------------------------------------------
-    [tmp,NMD.str.main]=system('pwd');
+    [tmp,nmd.str.main]=system('pwd');
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-    NMD.alloy_conc = 0.5;
+    nmd.alloy_conc = 0.0;
 %--------------------------------------------------------------------------
-    NMD.m(1) = 1.0; NMD.m(2) = 3.0; NMD.NUM_ATOMS_TYPE = 2;
-    NMD.vm =...
-        ( (1-NMD.alloy_conc)*NMD.m(1) + NMD.alloy_conc*NMD.m(2) );
+    nmd.m(1) = 1.1; nmd.m(2) = 3.0; nmd.NUM_ATOMS_TYPE = 1;
+    nmd.vm =...
+        ( (1-nmd.alloy_conc)*nmd.m(1) + nmd.alloy_conc*nmd.m(2) );
+%--------------------------------------------------------------------------
+    nmd.walltime.lammps = 24; 
+    nmd.cpu.lammps = 10; 
+    nmd.walltime.matlab = 24; 
+    nmd.cpu.matlab = 1; 
+    nmd.mem.matlab = 4;
+%--------------------------------------------------------------------------
+    nmd.Nx = 10; nmd.Ny = 10; nmd.Nz = 10;
+%--------------------------------------------------------------------------
+    nmd.seed.alloy = 1;
+    nmd.seed.initial = 1:10;
 %--------------------------------------------------------------------------
 
-NMD.walltime.lammps = 24; NMD.cpu.lammps = 1; 
-NMD.walltime.matlab = 24; NMD.cpu.matlab = 1; NMD.mem.matlab = 2;
+%-------------------------------------------------------------------------- 
+%SED PARAMETERS   
+%-------------------------------------------------------------------------- 
 
-%--------------------------------------------------------------------------
-    NMD.Nx = 4; NMD.Ny = 4; NMD.Nz = 4;
-%--------------------------------------------------------------------------
-    NMD.seed.alloy = 1;
-    NMD.seed.initial = 1:10;
-%--------------------------------------------------------------------------
-
-%SED PARAMETERS------------------------------------------------------------    
-
-%ISEED---------------------------------------------------------------------
-    NMD.NUM_SEEDS = size(NMD.seed.initial,2);
+%-------------------------------------------------------------------------- 
+%ISEED
+%-------------------------------------------------------------------------- 
+    nmd.NUM_SEEDS = size(nmd.seed.initial,2);
 %--------------------------------------------------------------------------   
-
-%---IKSLICE----------------------------------------------------------------
-    NMD.NUM_KSLICES = 8;
+%IKSLICE
+%-------------------------------------------------------------------------- 
+    nmd.NUM_KSLICES = 8;
 %--------------------------------------------------------------------------   
-
-%TIMES---------------------------------------------------------------------
-    NMD.t_total = 2^19; NMD.t_fft = 2^19; NMD.t_step = 2^5; NMD.dt = 0.002;
-    NMD.NUM_TSTEPS = NMD.t_fft/NMD.t_step; 
+%TIMES
 %-------------------------------------------------------------------------- 
-
-%IFFT----------------------------------------------------------------------
-    NMD.NUM_FFTS = NMD.t_total/NMD.t_fft;
+    nmd.t_total = 2^19; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.002;
+    nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
-
-%FREQS---------------------------------------------------------------------
-    NMD.w_step = 2*pi/(NMD.t_fft*NMD.dt); 
-    NMD.w_max = 2*pi/(NMD.t_step*NMD.dt*2);
-    NMD.NUM_OMEGAS = NMD.t_fft/(2*NMD.t_step); 
+%IFFT
 %-------------------------------------------------------------------------- 
-
-%c=0.0
-% alat = 5.269/3.4        %0K 
-%NMD.alat = 5.290/3.4;       %10K
-% alat = 5.315/3.4;       %20K
-% alat = 5.341/3.4;       %30K
-% alat = 5.370/3.4;       %40K
-% alat = 5.401/3.4;       %50K
-% alat = 5.436/3.4;       %60K
-% alat = 5.476/3.4;       %70K
-% alat = 5.527/3.4;       %80K
-
-%c=0.05
-% alat = 5.269/3.4        %0K 
-%NMD.alat = 6.22415/4;       %10K
-% alat = 5.315/3.4;       %20K
-% alat = 5.341/3.4;       %30K
-% alat = 5.370/3.4;       %40K
-% alat = 5.401/3.4;       %50K
-% alat = 5.436/3.4;       %60K
-% alat = 5.476/3.4;       %70K
-% alat = 5.527/3.4;       %80K
-
-%c=0.5
-% alat = 5.269/3.4        %0K 
-NMD.alat = 6.22599/4;       %10K
-% alat = 5.315/3.4;       %20K
-% alat = 5.341/3.4;       %30K
-% alat = 5.370/3.4;       %40K
-% alat = 5.401/3.4;       %50K
-% alat = 5.436/3.4;       %60K
-% alat = 5.476/3.4;       %70K
-% alat = 5.527/3.4;       %80K
-
-
+    nmd.NUM_FFTS = nmd.t_total/nmd.t_fft;
+%-------------------------------------------------------------------------- 
+%FREQS
+%-------------------------------------------------------------------------- 
+    nmd.w_step = 2*pi/(nmd.t_fft*nmd.dt); 
+    nmd.w_max = 2*pi/(nmd.t_step*nmd.dt*2);
+    nmd.NUM_OMEGAS = nmd.t_fft/(2*nmd.t_step); 
+%-------------------------------------------------------------------------- 
+    nmd.constant = m_constant;
+%-------------------------------------------------------------------------- 
+   
+alat = m_lj_alat;
+nmd.alat = alat(1,2);
 
 %--------------------------------------------------------------------------
+
+
 
 %Unit cell and lattice vectors
 dummy = [   1.0 0.0  0.0 
@@ -116,66 +79,66 @@ dummy = [   1.0 0.0  0.0
             0.0  0.5  0.5];
     
 %Define box size and conventional cell lattice parameters
-    NMD.latvec(1,1) = dummy(1,1); NMD.latvec(1,2) = dummy(1,2); 
-    NMD.latvec(1,3) = dummy(1,3);
-    NMD.latvec(2,1) = dummy(2,1); NMD.latvec(2,2) = dummy(2,2); 
-    NMD.latvec(2,3) = dummy(2,3);    
-    NMD.latvec(3,1) = dummy(3,1); NMD.latvec(3,2) = dummy(3,2); 
-    NMD.latvec(3,3) = dummy(3,3);
+    nmd.latvec(1,1) = dummy(1,1); nmd.latvec(1,2) = dummy(1,2); 
+    nmd.latvec(1,3) = dummy(1,3);
+    nmd.latvec(2,1) = dummy(2,1); nmd.latvec(2,2) = dummy(2,2); 
+    nmd.latvec(2,3) = dummy(2,3);    
+    nmd.latvec(3,1) = dummy(3,1); nmd.latvec(3,2) = dummy(3,2); 
+    nmd.latvec(3,3) = dummy(3,3);
     
-    NMD.latvec = NMD.alat*NMD.latvec;
+    nmd.latvec = nmd.alat*nmd.latvec;
     
-NMD.latvec_rec = [   1.0 0.0  0.0 
+nmd.latvec_rec = [   1.0 0.0  0.0 
                     0.0  1.0 0.0 
                     0.0  0.0  1.0];
     
 %first 3 rows are the lattice vectors
-    NMD.x.direct = dummy(4:length(dummy),:);
+    nmd.x.direct = dummy(4:length(dummy),:);
     
-    NMD.x.cart(:,1) = NMD.x.direct(:,1)*NMD.latvec(1,1) +...
-        NMD.x.direct(:,2)*NMD.latvec(2,1) +...
-        NMD.x.direct(:,3)*NMD.latvec(3,1) ;
-	NMD.x.cart(:,2) = NMD.x.direct(:,1)*NMD.latvec(1,2) +...
-        NMD.x.direct(:,2)*NMD.latvec(2,2) +...
-        NMD.x.direct(:,3)*NMD.latvec(3,2) ;
-	NMD.x.cart(:,3) = NMD.x.direct(:,1)*NMD.latvec(1,3) +...
-        NMD.x.direct(:,2)*NMD.latvec(2,3) +...
-        NMD.x.direct(:,3)*NMD.latvec(3,3) ;
+    nmd.x.cart(:,1) = nmd.x.direct(:,1)*nmd.latvec(1,1) +...
+        nmd.x.direct(:,2)*nmd.latvec(2,1) +...
+        nmd.x.direct(:,3)*nmd.latvec(3,1) ;
+	nmd.x.cart(:,2) = nmd.x.direct(:,1)*nmd.latvec(1,2) +...
+        nmd.x.direct(:,2)*nmd.latvec(2,2) +...
+        nmd.x.direct(:,3)*nmd.latvec(3,2) ;
+	nmd.x.cart(:,3) = nmd.x.direct(:,1)*nmd.latvec(1,3) +...
+        nmd.x.direct(:,2)*nmd.latvec(2,3) +...
+        nmd.x.direct(:,3)*nmd.latvec(3,3) ;
 
 %--------------------------------------------------------------------------
 
 %build supercell
 N_cnt = 1;
-for iNx = 0:NMD.Nx-1
-    for iNy = 0:NMD.Ny-1
-        for iNz = 0:NMD.Nz-1
-NMD.x0( (N_cnt-1)*size(NMD.x.direct,1)+1:(N_cnt)*size(NMD.x.direct,1) ,3) =...
-        NMD.x.cart(:,1) + iNx * NMD.latvec(1,1) +...
-            iNy*NMD.latvec(2,1) + iNz*NMD.latvec(3,1); 
-NMD.x0( (N_cnt-1)*size(NMD.x.direct,1)+1:(N_cnt)*size(NMD.x.direct,1) ,4) =...
-        NMD.x.cart(:,2) + iNx * NMD.latvec(1,2) +...
-            iNy*NMD.latvec(2,2) + iNz*NMD.latvec(3,2);
-NMD.x0( (N_cnt-1)*size(NMD.x.direct,1)+1:(N_cnt)*size(NMD.x.direct,1) ,5) =...
-        NMD.x.cart(:,3) + iNx * NMD.latvec(1,3) +...
-            iNy*NMD.latvec(2,3) + iNz*NMD.latvec(3,3);
+for iNx = 0:nmd.Nx-1
+    for iNy = 0:nmd.Ny-1
+        for iNz = 0:nmd.Nz-1
+nmd.x0( (N_cnt-1)*size(nmd.x.direct,1)+1:(N_cnt)*size(nmd.x.direct,1) ,3) =...
+        nmd.x.cart(:,1) + iNx * nmd.latvec(1,1) +...
+            iNy*nmd.latvec(2,1) + iNz*nmd.latvec(3,1); 
+nmd.x0( (N_cnt-1)*size(nmd.x.direct,1)+1:(N_cnt)*size(nmd.x.direct,1) ,4) =...
+        nmd.x.cart(:,2) + iNx * nmd.latvec(1,2) +...
+            iNy*nmd.latvec(2,2) + iNz*nmd.latvec(3,2);
+nmd.x0( (N_cnt-1)*size(nmd.x.direct,1)+1:(N_cnt)*size(nmd.x.direct,1) ,5) =...
+        nmd.x.cart(:,3) + iNx * nmd.latvec(1,3) +...
+            iNy*nmd.latvec(2,3) + iNz*nmd.latvec(3,3);
         N_cnt =N_cnt+1;
         end
     end
 end
 
-NMD.NUM_ATOMS = size(NMD.x0,1);
+nmd.NUM_ATOMS = size(nmd.x0,1);
 
 
 %create kptlist in integers
 cnt=1;
-for ix=(-(NMD.Nx/2)+1):1:(NMD.Nx/2)
-    for iy=(-(NMD.Ny/2)+1):1:(NMD.Ny/2)
-        for iz=(-(NMD.Nz/2)+1):1:(NMD.Nz/2)            
-        NMD.kpt.integer(cnt,:) = [ix iy iz];
-        NMD.kpt.cart(cnt,1:3) = ix/NMD.Nx*NMD.latvec_rec(1,:) +...
-            iy/NMD.Ny*NMD.latvec_rec(2,:) +...
-            iz/NMD.Nz*NMD.latvec_rec(3,:) ;
-        NMD.kpt.NUM_KPTS = cnt;
+for ix=(-(nmd.Nx/2)+1):1:(nmd.Nx/2)
+    for iy=(-(nmd.Ny/2)+1):1:(nmd.Ny/2)
+        for iz=(-(nmd.Nz/2)+1):1:(nmd.Nz/2)            
+        nmd.kpt.integer(cnt,:) = [ix iy iz];
+        nmd.kpt.cart(cnt,1:3) = ix/nmd.Nx*nmd.latvec_rec(1,:) +...
+            iy/nmd.Ny*nmd.latvec_rec(2,:) +...
+            iz/nmd.Nz*nmd.latvec_rec(3,:) ;
+        nmd.kpt.NUM_KPTS = cnt;
         cnt=cnt+1;
         end
     end
@@ -188,7 +151,182 @@ end
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%LAMMPS
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
+%for nmd.seed.alloy=1:size(nmd.seed.alloy,2)
+
+    str.cmd = ['mkdir -p ./' int2str(nmd.seed.alloy) '/nmd'];
+    system(str.cmd);
+
+    str.cmd = ['mkdir -p ./' int2str(nmd.seed.alloy)];
+    system(str.cmd);
+    
+    str.cmd = ['cp ./lmp_submit.sh.temp ./' int2str(nmd.seed.alloy) '/lmp_submit.sh'];
+    system(str.cmd);    
+%randomize masses: only set up to do 2 species
+    nmd.x0(:,1) = 1:size(nmd.x0,1);
+    nmd.x0(:,2) = 1;
+%rng(nmd.seed.alloy(nmd.seed.alloy));
+    rng( nmd.seed.alloy );
+    [I,J] =...
+        find(...
+        randperm(size(nmd.x0(:,1),1))'<ceil(nmd.alloy_conc*size(nmd.x0,1)));
+    nmd.x0(I,2) = 2;
+    
+%set mass vector
+
+nmd.mass(1:size(nmd.x0,1),1) = 0;
+for imass = 1:size(nmd.m,2)
+Imass = find(nmd.x0(:,2)==imass); nmd.mass(Imass) = nmd.m(imass);
+end
+    
+%output universal
+
+if exist(...
+strcat(nmd.str.main,'/x0_',num2str(nmd.alloy_conc),'_',int2str(nmd.seed.alloy),'.data'), 'file')~=0
+system(['rm -f ./x0_' num2str(nmd.alloy_conc) '_' int2str(nmd.seed.alloy) '.data']);
+end  
+
+    str.write=strcat(...
+        nmd.str.main,'/x0_',num2str(nmd.alloy_conc),'_',int2str(nmd.seed.alloy),'.data');
+    output = [size(nmd.x0,1) size(nmd.x.cart,1) nmd.latvec(1,1)*(nmd.Nx)...
+        nmd.latvec(2,2)*(nmd.Ny) nmd.latvec(3,3)*(nmd.Nz) ];
+    dlmwrite(str.write,output,'-append','delimiter',' ');
+    dlmwrite(str.write,nmd.x0,'-append','delimiter',' ');
+%output lammps    
+        str.orig = 'NUM_ATOMS';
+        str.change = [int2str(nmd.NUM_ATOMS)];
+        str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        
+        if nmd.alloy_conc == 0.0
+        str.orig = 'NUM_ATOMS_TYPE';
+        str.change = [int2str(nmd.NUM_ATOMS_TYPE-1)];
+        str.cmd2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        else
+        str.orig = 'NUM_ATOMS_TYPE';
+        str.change = [int2str(nmd.NUM_ATOMS_TYPE)];
+        str.cmd2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        end
+        
+        str.orig = 'LX';
+        str.change = [num2str((nmd.Nx)*nmd.latvec(1,1))];
+        str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'LY';
+        str.change = [num2str((nmd.Ny)*nmd.latvec(2,2))];
+        str.cmd4 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'LZ';
+        str.change = [num2str((nmd.Nz)*nmd.latvec(3,3))];
+        str.cmd5 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'ATOM_MASS_1';
+        str.change = ['1 ' num2str(nmd.m(1))];
+        str.cmd6 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        
+    if nmd.alloy_conc == 0.0
+        str.mass2 ='';
+    else
+    str.orig = 'ATOM_MASS_2';
+    str.change = ['2 ' num2str(nmd.m(2))];
+    str.mass2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+    end
+        
+    str.cmd8 =...
+        ['lmp.in.x0.temp > ./' int2str(nmd.seed.alloy) '/lmp.in.x0.' int2str(nmd.seed.alloy)];
+        
+        str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4 str.cmd5...
+            str.cmd6 str.mass2 str.cmd8];
+        
+        system(str.cmd);
+        
+        output = [nmd.x0(:,1:5)];
+    str.write=strcat(nmd.str.main,['/' int2str(nmd.seed.alloy) '/lmp.in.x0.' int2str(nmd.seed.alloy)]);
+        dlmwrite(str.write,output,'-append','delimiter','\t');
+
+%loops over initial seeds
+    for iseed=1:size(nmd.seed.initial,2)
+        
+%lmp_ISEED.sh------------------------------------------------------        
+        str.orig = 'lmp.sh.temp';
+        str.change = ['lmp' int2str(iseed) '.sh'];
+        str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'runpath';
+        str.change = strcat(nmd.str.main,'/',int2str(nmd.seed.alloy));
+        str.temp = strcat('-e ''s|',str.orig,'|',str.change);
+        str.cmd2 = [str.temp '|g'' '];
+        str.orig = 'LMP.TEMP';
+        str.change = ['lmp.in.sed.' int2str(iseed)];
+        str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'lmp_temp';
+        str.change = ['lmp' int2str(iseed)];
+        str.cmd4 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+    
+    str.cmd5 = ['lmp.sh.temp > ./' int2str(nmd.seed.alloy) '/lmp' int2str(iseed) '.sh'];
+    
+    str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4 str.cmd5];
+    
+        system(str.cmd);
+               
+%lmp.in.sed.iseed
+        str.orig = 'IN.X0';
+        str.change = ['lmp.in.x0.' int2str(nmd.seed.alloy)];
+        str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'LMP_TEMP';
+        str.change = ['lmp.in.sed.' int2str(iseed)];
+        str.cmd2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'IX0';
+        str.change = [int2str(nmd.seed.alloy)];
+        str.cmd3 = ['-e ''s/\' str.orig '>/' str.change '/g'' '];
+        str.orig = 'ISEED_TMP';
+        str.change = [int2str(iseed)];
+        str.cmd4 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'SEED_TMP';
+        str.change = [int2str(iseed) int2str(iseed) int2str(iseed)...
+            int2str(iseed) int2str(iseed)];
+        str.cmd5 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'T_STEP';
+        str.change = [num2str(nmd.t_step)];
+        str.cmd6 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'T_FFT';
+        str.change = [num2str(nmd.t_fft)];
+        str.cmd7 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        str.orig = 'T_TOTAL';
+        str.change = [num2str(nmd.t_total)];
+        str.cmd8 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+        
+        str.cmd9 =...
+            ['lmp.in.sed.temp > ./' int2str(nmd.seed.alloy) '/lmp.in.sed.' int2str(iseed)];
+        
+        str.cmd =...
+            ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4 str.cmd5...
+            str.cmd6 str.cmd7 str.cmd8 str.cmd9 ];       
+        system(str.cmd);
+        
+ 	%lmp_submit.sh------------------------------------------------------------- 
+    output =...
+        ['qsub -l walltime=' int2str(nmd.walltime.lammps)...
+        ':00:00 -l nodes=1:ppn=' int2str(nmd.cpu.lammps)...
+        ' lmp' int2str(iseed) '.sh'];
+    
+        
+    
+    str.write = strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/lmp_submit.sh');
+    dlmwrite(str.write,output,'-append','delimiter','');
+
+    end 
+%end
+
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%LAMMPS
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
 
 %--------------------------------------------------------------------------
@@ -199,9 +337,9 @@ end
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 
-NMD.kptmaster = bsxfun(@times,NMD.kpt.cart,[NMD.Nx NMD.Ny NMD.Nz]);
-NMD.NUM_KPTS = size(NMD.kptmaster(:,1:3),1);
-NMD.kptmaster_index = 1:NMD.NUM_KPTS;
+nmd.kptmaster = bsxfun(@times,nmd.kpt.cart,[nmd.Nx nmd.Ny nmd.Nz]);
+nmd.NUM_KPTS = size(nmd.kptmaster(:,1:3),1);
+nmd.kptmaster_index = 1:nmd.NUM_KPTS;
 
 %--------------------------------------------------------------------------
 %This is required to get the kpt + dk to properly input to GULP
@@ -209,57 +347,48 @@ NMD.kptmaster_index = 1:NMD.NUM_KPTS;
 %--------------------------------------------------------------------------
 
 %Define number of atoms
-NMD.NUM_ATOMS =size( NMD.x0,1); NMD.NUM_ATOMS_UCELL = size(NMD.x.cart,1); 
-NMD.NUM_UCELL_COPIES=NMD.NUM_ATOMS/NMD.NUM_ATOMS_UCELL; 
-NMD.NUM_MODES = 3*NMD.NUM_ATOMS_UCELL;
+nmd.NUM_ATOMS =size( nmd.x0,1); nmd.NUM_ATOMS_UCELL = size(nmd.x.cart,1); 
+nmd.NUM_UCELL_COPIES=nmd.NUM_ATOMS/nmd.NUM_ATOMS_UCELL; 
+nmd.NUM_MODES = 3*nmd.NUM_ATOMS_UCELL;
 %Define finite difference increment
 		dk = 10E-5;
 %--------------------------------------------------------------------------
 %-------------------------KPTS---------------------------------------------
 %--------------------------------------------------------------------------
 
-if exist(['./' int2str(NMD.seed.alloy) '/eigvec.dat'], 'file')~=0
-    system(['rm -f ./' int2str(NMD.seed.alloy) '/eigvec.dat']);
-    system(['rm -f ./' int2str(NMD.seed.alloy) '/freq.dat']);
-    system(['rm -f ./' int2str(NMD.seed.alloy) '/vel.dat']);
+if exist(['./' int2str(nmd.seed.alloy) '/eigvec.dat'], 'file')~=0
+    system(['rm -f ./' int2str(nmd.seed.alloy) '/eigvec.dat']);
+    system(['rm -f ./' int2str(nmd.seed.alloy) '/freq.dat']);
+    system(['rm -f ./' int2str(nmd.seed.alloy) '/vel.dat']);
 end    
 
-for ikpt=1:size(NMD.kptmaster,1)
-    NMD.kptmaster(ikpt,:)           
+for ikpt=1:size(nmd.kptmaster,1)
+    nmd.kptmaster(ikpt,:)           
 
-    kpt = NMD.kptmaster(ikpt,:)./[NMD.Nx NMD.Ny NMD.Nz];
+    kpt = nmd.kptmaster(ikpt,:)./[nmd.Nx nmd.Ny nmd.Nz];
 
-    eigvec =...
-        gulp_lj_eig(kpt,...
-        NMD.NUM_MODES,NMD.NUM_ATOMS_UCELL,...
-        NMD.alat*NMD.LJ.sigma/NMD.constant.ang2m,NMD.vm,NMD.str.main);
-    freq =...
-        gulp_lj_freq(kpt,...
-        NMD.NUM_MODES,NMD.NUM_ATOMS_UCELL,...
-        NMD.alat*NMD.LJ.sigma/NMD.constant.ang2m,NMD.vm,NMD.str.main);
-    vel =...
-        gulp_lj_vel(kpt,...
-        NMD.NUM_MODES,NMD.NUM_ATOMS_UCELL,...
-        NMD.alat*NMD.LJ.sigma/NMD.constant.ang2m,NMD.vm,NMD.str.main);
+    eigvec = gulp_lj_eig(kpt,nmd.NUM_ATOMS_UCELL);
+    freq = gulp_lj_freq(kpt,nmd.NUM_ATOMS_UCELL);
+    vel = gulp_lj_vel(kpt,nmd.NUM_ATOMS_UCELL);
 
 %Output formatted eigvec		
-    str.write=strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/eigvec.dat');
+    str.write=strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/eigvec.dat');
     dlmwrite(str.write,eigvec,'-append','delimiter',' ');
 %Output formatted freqs
-    str.write=strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/freq.dat');
+    str.write=strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/freq.dat');
     dlmwrite(str.write,freq,'-append','delimiter',' ');
 %Output velocities
-    str.write=strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/vel.dat');
+    str.write=strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/vel.dat');
     dlmwrite(str.write,vel,'-append','delimiter',' ');
     
 end
 
-NMD.eigvec =...
-    dlmread(strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/eigvec.dat'));
-NMD.freq =...
-    dlmread(strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/freq.dat'));
-NMD.vel =...
-    dlmread(strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/vel.dat'));
+nmd.eigvec =...
+    dlmread(strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/eigvec.dat'));
+nmd.freq =...
+    dlmread(strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/freq.dat'));
+nmd.vel =...
+    dlmread(strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/vel.dat'));
 
 %--------------------------------------------------------------------------
 %pause
@@ -288,77 +417,77 @@ NMD.vel =...
 
 %KPT LISTS-----------------------------------------------------------------
 
-slice_length = size(NMD.kptmaster,1)/NMD.NUM_KSLICES;
-% remainder_length = size(NMD.kptlist,1) - slice_length*(NMD.NUM_KSLICE-1);
-for ikslice = 1:NMD.NUM_KSLICES
-    NMD.kptlist(:,1:3,ikslice) =...
-        NMD.kptmaster( (ikslice-1)*slice_length+1:(ikslice)*slice_length,1:3);
-    NMD.kpt_index(:,ikslice) =...
-        NMD.kptmaster_index( (ikslice-1)*slice_length+1:(ikslice)*slice_length);
+slice_length = size(nmd.kptmaster,1)/nmd.NUM_KSLICES;
+% remainder_length = size(nmd.kptlist,1) - slice_length*(nmd.NUM_KSLICE-1);
+for ikslice = 1:nmd.NUM_KSLICES
+    nmd.kptlist(:,1:3,ikslice) =...
+        nmd.kptmaster( (ikslice-1)*slice_length+1:(ikslice)*slice_length,1:3);
+    nmd.kpt_index(:,ikslice) =...
+        nmd.kptmaster_index( (ikslice-1)*slice_length+1:(ikslice)*slice_length);
 end
 
 %MAKES JOB FILES-----------------------------------------------------------
 
 system(...
-    strcat('cp ./NMD_submit.sh.temp ./',int2str(NMD.seed.alloy),'/NMD_submit.sh'));
+    strcat('cp ./nmd_submit.sh.temp ./',int2str(nmd.seed.alloy),'/nmd_submit.sh'));
 
-for iseed=1:size(NMD.seed.initial,2)
+for iseed=1:size(nmd.seed.initial,2)
 
-    for ikslice = 1:NMD.NUM_KSLICES
-%NMD_ISEED_IKSLICE.sh------------------------------------------------------        
-        str.orig = 'NMD_temp';
-        str.change = ['NMD_' int2str(iseed) '_' int2str(ikslice)];
+    for ikslice = 1:nmd.NUM_KSLICES
+%nmd_ISEED_IKSLICE.sh------------------------------------------------------        
+        str.orig = 'nmd_temp';
+        str.change = ['nmd_' int2str(iseed) '_' int2str(ikslice)];
         str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
         str.orig = 'runpath';
-        str.change = strcat(NMD.str.main,'/',int2str(NMD.seed.alloy) );
+        str.change = strcat(nmd.str.main,'/',int2str(nmd.seed.alloy) );
         str.temp = strcat('-e ''s|',str.orig,'|',str.change);
         str.cmd2 = [str.temp '|g'' '];
-        str.orig = 'NMD_TEMP.m';
-        str.change = ['NMD_' int2str(iseed) '_' int2str(ikslice) '.m'];
+        str.orig = 'nmd_TEMP.m';
+        str.change = ['nmd_' int2str(iseed) '_' int2str(ikslice) '.m'];
         str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
     str.cmd4 =...
-        ['NMD.sh.temp > ./' int2str(NMD.seed.alloy) '/NMD_' int2str(iseed) '_' int2str(ikslice) '.sh'];
+        ['nmd.sh.temp > ./' int2str(nmd.seed.alloy) '/nmd_' int2str(iseed) '_' int2str(ikslice) '.sh'];
     
     
     str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4];
         system(str.cmd);
-%NMD_ISEED_IKSLICE.m-------------------------------------------------------        
+%nmd_ISEED_IKSLICE.m-------------------------------------------------------        
         str.orig = 'ISEED';
         str.change = [int2str(iseed)];
         str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
         str.orig = 'IKSLICE';
         str.change = [int2str(ikslice)];
         str.cmd2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
-        str.cmd3 = ['NMD.m.temp > ./' int2str(NMD.seed.alloy) '/NMD_' int2str(iseed) '_' int2str(ikslice) '.m'];
+        str.cmd3 = ['nmd.m.temp > ./' int2str(nmd.seed.alloy) '/nmd_' int2str(iseed) '_' int2str(ikslice) '.m'];
         str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3];
         system(str.cmd);
-%NMD_submit.sh------------------------------------------------------------- 
+%nmd_submit.sh------------------------------------------------------------- 
     output =...
-        ['qsub -l walltime=' int2str(NMD.walltime.matlab)...
-        ':00:00,nodes=' int2str(NMD.cpu.matlab)...
-        ',mem=' int2str(NMD.mem.matlab)...
-        'gb NMD_' int2str(iseed) '_' int2str(ikslice) '.sh'];
+        ['qsub -l walltime=' int2str(nmd.walltime.matlab)...
+        ':00:00,nodes=' int2str(nmd.cpu.matlab)...
+        ',mem=' int2str(nmd.mem.matlab)...
+        'gb nmd_' int2str(iseed) '_' int2str(ikslice) '.sh'];
     
-    str.write = strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/NMD_submit.sh');
+    str.write = strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/nmd_submit.sh');
     dlmwrite(str.write,output,'-append','delimiter','');
 
     end
 end
 
 
-%NMD_grep.m-------------------------------------------------------        
-    str.cmd3 = ['NMD.m.temp > ./' int2str(NMD.seed.alloy) '/NMD_' int2str(iseed) '_' int2str(ikslice) '.m'];
+%nmd_grep.m-------------------------------------------------------        
+    str.cmd3 = ['nmd.m.temp > ./' int2str(nmd.seed.alloy) '/nmd_' int2str(iseed) '_' int2str(ikslice) '.m'];
     str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3];
     system(str.cmd);
 
 
-system(strcat('cp ./NMD_grep.m.temp ./',int2str(NMD.seed.alloy),'/NMD_grep.m'));
+system(strcat('cp ./nmd_grep.m.temp ./',int2str(nmd.seed.alloy),'/nmd_grep.m'));
 
-%SAVE NMD structure--------------------------------------------------------  
+%SAVE nmd structure--------------------------------------------------------  
 
-save(strcat(NMD.str.main,'/',int2str(NMD.seed.alloy),'/NMD.mat'), '-struct', 'NMD');
+save(strcat(nmd.str.main,'/',int2str(nmd.seed.alloy),'/nmd.mat'), '-struct', 'nmd');
 
-size(NMD.freq)
+size(nmd.freq)
 
 
 % str(1,:) = 'qdel 515042'; cnt=2;
