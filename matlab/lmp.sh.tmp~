@@ -5,5 +5,5 @@ module load openmpi-psm-gcc
 RUNPATH=runpath
 EXEPATH=/home/jason/lammps/lammps-2Nov10/src
 
-mpirun -np `cat $PBS_NODEFILE | wc -l` $EXEPATH/lmp_generic < $RUNPATH/LMP_TEMP 
+mpirun -np `cat $PBS_NODEFILE | wc -l` $EXEPATH/lmp_generic < $RUNPATH/LMP_TMP 
 

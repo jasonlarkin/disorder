@@ -1,20 +1,21 @@
 clear
-
 %--------------------------------------------------------------------------
-    [tmp,str.main]=system('pwd');
-%str.main='/home/jason/lammps/LJ/amorphous/12x/prepare/';
+%     [tmp,str.main]=system('pwd');
+str.main='/home/jason/disorder2/si/alloy/0.5/6x/gk/';
 %--------------------------------------------------------------------------
-GK.Lx = 21.72; GK.Ly = 21.72; GK.Lz = 21.72; GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
+GK.Nx = 6;
+GK.Lx = GK.Nx*5.43; GK.Ly = GK.Nx*5.43; GK.Lz = GK.Nx*5.43;
+GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------
-GK.SEEDS=[1,4,5];
+GK.SEEDS=1:5;
 %--------------------------------------------------------------------------
 GK.NUM_SEEDS=size(GK.SEEDS,2);
 %--------------------------------------------------------------------------
 GK.Tset = [300];
 GK.NUM_TEMPS=size(GK.Tset,2);
 
-GK.p = 10; GK.s = 50000; GK.d = GK.p*GK.s;
-GK.total_steps = 5000000;
+GK.p = 10; GK.s = 250000; GK.d = GK.p*GK.s;
+GK.total_steps = 2500000;
 GK.dt = 0.0005; 
 %--------------------------------------------------------------------------
 
@@ -34,14 +35,15 @@ GK.JJ(:,1) = (0:(size(GK.JJ,1)-1)')*GK.dt*GK.p;
 
 for iseed = 1:GK.NUM_SEEDS
 %grep the JJ dump
-    str.cmd = ['grep -A ' int2str(GK.s) ' "'...
+    str.cmd =...
+        ['grep -A ' int2str(GK.s) ' "'...
         int2str(GK.total_steps) ' '...
-        int2str(GK.s) '" J0Jt_' int2str(GK.SEEDS(iseed)) ...
-        '.dat > J0Jt_'  int2str(GK.SEEDS(iseed)) ...
-        'grep.dat'];
+        int2str(GK.s) '" ' ...
+        str.main 'J0Jt_' int2str(GK.SEEDS(iseed)) '.dat > ' ...
+        str.main 'J0Jt_'  int2str(GK.SEEDS(iseed)) 'grep.dat'];
     system(str.cmd);
 %average the grep JJ                 
-    str.read = ['J0Jt_' int2str(GK.SEEDS(iseed)) ...
+    str.read = [str.main 'J0Jt_' int2str(GK.SEEDS(iseed)) ...
         'grep.dat'];
     dummy=dlmread(str.read);
 
@@ -92,7 +94,7 @@ GK.kappa(1) = mean(GK.intJJ(left:right));
 GK.kappa(2) = std(GK.intJJ(left:right));
 
 %output JJavg
-str.write = strcat(str.main,'/JJavg.dat');
+str.write = strcat(str.main,'JJavg.dat');
 output = [GK.JJ(:,1) GK.JJ(:,2)];
 dlmwrite(str.write,output,'delimiter',' ');
 
@@ -100,7 +102,7 @@ end
 
 %output kappa
 
-str.write = strcat(str.main,'/kappa(T).dat');
+str.write = strcat(str.main,'kappa(T).dat');
 output = [GK.kappa];
 dlmwrite(str.write,output,'delimiter',' ');
 
