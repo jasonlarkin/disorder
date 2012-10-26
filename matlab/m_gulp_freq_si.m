@@ -10,7 +10,7 @@ function freq =...
 %--------------------------------------------------------------------------
 
 constant = m_constant;
-lj = m_lj;
+si = m_si;
 
 orig(1).str = 'KPT';
 change(1).str =...

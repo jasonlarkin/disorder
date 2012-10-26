@@ -28,6 +28,7 @@ str_nmd_per = ['/home/jason/disorder2/si/alloy/0.001/' sys_size '/'];
 ald = m_joe_read_data_si(str_ald);
 nmd_per(ipt)=load(strcat(str_nmd_per,'nmd.mat'));
 sedald(ipt) = m_joe_ald2nmd_si( nmd_per(ipt) , ald );
+sedald = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald )
 alloy(ipt) = load(strcat(str_alloy,'ALLOY.mat'));
 
 cond(ipt).nmd_per =...

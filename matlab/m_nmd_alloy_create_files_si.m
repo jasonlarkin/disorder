@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/alloy/0.0/2x/' ;
+    nmd.str.main = '/home/jason/disorder2/si/alloy/0.0/8x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -11,6 +11,8 @@ clear
     nmd.str.m_sed = 'm_nmd_sed_si.m.tmp';
 %--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
+    nmd.x0.Nx = 8; nmd.x0.Ny = 8; nmd.x0.Nz = 8;
 %--------------------------------------------------------------------------
     nmd.x0.alloy_conc = 0.0;
 %--------------------------------------------------------------------------
@@ -25,8 +27,7 @@ clear
     nmd.walltime.matlab = 2; 
     nmd.cpu.matlab = 1; 
     nmd.mem.matlab = 2;
-%--------------------------------------------------------------------------
-    nmd.x0.Nx = 2; nmd.x0.Ny = 2; nmd.x0.Nz = 2;
+
 %--------------------------------------------------------------------------
     nmd.x0.alloy_seed = 1;
     nmd.seed.initial = 1:10;
@@ -158,7 +159,7 @@ kpt = nmd.kptmaster(ikpt,:)./[nmd.x0.Nx nmd.x0.Ny nmd.x0.Nz];
 %Output formatted freqs
     str.write=...
         [nmd.str.main 'freq.dat'];
-    dlmwrite(str.write,freq,'-append','delimiter',' ');
+    dlmwrite(str.write,freq','-append','delimiter',' ');
 %Output velocities
     str.write=...
         [nmd.str.main 'vel.dat'];

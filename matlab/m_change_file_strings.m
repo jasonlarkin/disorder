@@ -18,10 +18,6 @@ while ischar(tline)
     
 fprintf(fidout,[str(cnt).newline]);
 
-str(cnt).newline
-
-pause
-
 tline = fgets(fidin);
 cnt = cnt+1;
 
