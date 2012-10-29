@@ -426,6 +426,28 @@ of bond environment for alloys.\cite{garg_phonon_2012}
 %--------------------------------------------------------------------------
 Bouchard show that alloy DOS varies smoothly with concentration.
 \cite{bouchard_vibrational_1988}
+
+\begin{figure}
+\begin{center}
+\subfigure{
+\includegraphics[angle=0,width=80.0mm]
+{/home/jason/disorder/lj/alloy/lj_alloy_dos_c05.eps}
+}
+\subfigure{
+\includegraphics[angle=0,width=80.0mm]
+{/home/jason/disorder/lj/alloy/lj_alloy_dos_c15.eps}
+}
+\subfigure{
+\includegraphics[angle=0,width=80.0mm]
+{/home/jason/disorder/lj/alloy/lj_alloy_dos_c5.eps}
+}
+\end{center}
+\caption{\label{F:FREQ_LIFE_LJ} Comparison of the phonon frequencies and lifetimes predicted using 
+$\Phi$ ($\omega$ and $\tau$) and $\Phi'$ ($\omega^{'}$ and $\tau^{'}$) for LJ argon at temperatures 
+of (a) 5 K, (b) 20 K, and (c) 40 K. The phonon frequencies agree well at all three temperatures, 
+while the phonon lifetimes show large scatter.}
+\end{figure}
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:}Structure Factor of Gamma Point Modes}
 %--------------------------------------------------------------------------
@@ -759,8 +781,6 @@ simulation size, with no contribution from the volume at its center. To
 predict a bulk thermal conductivity, it is important to sample points near 
 the Brillouin zone center, where the modes can have large lifetimes and 
 group velocities.\cite{turney2009a,sellan2010b} 
-
-
 
 %--------------------------------------------------------------------------
 \begin{figure}

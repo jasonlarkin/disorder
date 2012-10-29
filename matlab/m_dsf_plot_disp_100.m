@@ -1,9 +1,9 @@
 clear
-str.nmd = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/nmd_vc/work/1/';
+str.nmd = '/home/jason/disorder2/lj/alloy/10K/0.05/10x/nmd_vc/work/1/';
 sed = load(strcat(str.nmd,'SEDdata.mat'));
 nmd = load(strcat(str.nmd,'NMDdata.mat'));
 sed = nmd_convert_data(nmd,sed);
-str.dsf = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/work/';
+str.dsf = '/home/jason/disorder2/lj/alloy/10K/0.05/10x/work/';
 dsf.long = load(strcat(str.dsf,'DSF_long_100.mat'));
 dsf.tran = load(strcat(str.dsf,'DSF_tran_100.mat'));
 
