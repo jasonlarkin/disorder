@@ -9,7 +9,7 @@ str_main = '/home/jason/disorder/kevin/';
 str_matlab = '/home/jason/disorder/matlab/';
 name = 'gulp_disp_lj_conv.tmp';
 NUM_ATOMS_UCELL = 4;
-MASS = lj.mass*1.0 *constant.avog*constant.g2kg;
+MASS = lj.mass*1.0 *constant.avog;
 
 
 for ikpt = 1:size(kpt,1)

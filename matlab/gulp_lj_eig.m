@@ -66,6 +66,8 @@ if kpt(1) == 0 & kpt(2) == 0 & kpt(3) == 0
         dummy{7}((imode-1)*3*NUM_ATOMS_UCELL+1:(imode)*3*NUM_ATOMS_UCELL);
     end
 else
+    
+    
 %Put Real and Imag in right place		
 eigvec = zeros(3*NUM_ATOMS_UCELL,3*NUM_ATOMS_UCELL); 
     for imode = 1:(3*NUM_ATOMS_UCELL/3)

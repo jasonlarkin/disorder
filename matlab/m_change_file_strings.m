@@ -2,6 +2,8 @@ function m_change_file_strings( oldfilename, orig, newfilename, change)
 
 fidin = fopen(oldfilename);
 fidout = fopen(newfilename, 'w');
+oldfilename
+newfilename
 
 tline = fgets(fidin);
 cnt=1;
