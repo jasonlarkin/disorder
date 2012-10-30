@@ -13,6 +13,11 @@ MASS = lj.mass*1.0 *constant.avog*constant.g2kg;
 
 
 for ikpt = 1:size(kpt,1)
-gulp_lj_eig(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+kpt(ikpt,:)
+freq = gulp_lj_freq(kpt(ikpt,:),NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+
+eig = gulp_lj_eig(kpt(ikpt,:),NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+
+vel = gulp_lj_vel(kpt(ikpt,:),NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
 pause
 end

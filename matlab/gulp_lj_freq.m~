@@ -44,6 +44,8 @@ str.cmd = ['gulp ' str_main 'disp ' str_main 'disp']; system(str.cmd);
 freq(1:3*NUM_ATOMS_UCELL) =...
     dummy{1}(:)*constant.c*2*pi*lj.tau;
 
+pause
+
 system(['rm ' str_main 'freq.gout']); 
 
 end

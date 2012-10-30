@@ -11,7 +11,7 @@ function vel = gulp_lj_vel(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
 constant = m_constant;
 lj = m_lj;
 
-gulp.dk = 5E-4;
+gulp.dk = 1E-4;
 
 %2) Input dk kpts to measure group velocities
 	vel = zeros(3*NUM_ATOMS_UCELL,3);		
@@ -23,7 +23,7 @@ for idim = 1:3
         kpt(idim) = kpt(idim) - gulp.dk;
         freq_mdk = gulp_lj_freq(kpt,NUM_ATOMS_UCELL,MASS,...
             str_main,str_matlab,name);
-        vel(:,idim) = (( freq - freq_mdk )/ gulp.dk / 1 )*constant.ang2m;
+        vel(:,idim) = (( freq - freq_mdk )/ gulp.dk / 4 );
     %Put kpt back to orig
         kpt(idim) = kpt(idim) + gulp.dk;
 
@@ -33,7 +33,7 @@ for idim = 1:3
         kpt(idim) = kpt(idim) + gulp.dk;
         freq_pdk = gulp_lj_freq(kpt,NUM_ATOMS_UCELL,MASS,...
             str_main,str_matlab,name);
-        vel(:,idim) = (( freq_pdk - freq )/ gulp.dk / 1 )*constant.ang2m;
+        vel(:,idim) = (( freq_pdk - freq )/ gulp.dk / 4 );
     %Put kpt back to orig
         kpt(idim) = kpt(idim) - gulp.dk;
 
@@ -43,7 +43,7 @@ for idim = 1:3
         kpt(idim) = kpt(idim) + gulp.dk;
         freq_pdk = gulp_lj_freq(kpt,NUM_ATOMS_UCELL,MASS,...
             str_main,str_matlab,name);
-        vel(:,idim) = (( freq_pdk - freq )/ gulp.dk / 1 )*constant.ang2m;
+        vel(:,idim) = (( freq_pdk - freq )/ gulp.dk / 4 );
     %Put kpt back to orig
         kpt(idim) = kpt(idim) - gulp.dk;
 
@@ -56,7 +56,7 @@ for idim = 1:3
         kpt(idim) = kpt(idim) - 2*gulp.dk;
         freq_mdk = gulp_lj_freq(kpt,NUM_ATOMS_UCELL,MASS,...
             str_main,str_matlab,name);
-        vel(:,idim) = (( freq_pdk - freq_mdk )/ gulp.dk / 2 )*constant.ang2m;
+        vel(:,idim) = (( freq_pdk - freq_mdk )/ gulp.dk / 8 );
     %Put kpt back to orig
         kpt(idim) = kpt(idim) + gulp.dk;
     end

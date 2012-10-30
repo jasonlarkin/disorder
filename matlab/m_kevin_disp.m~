@@ -9,10 +9,15 @@ str_main = '/home/jason/disorder/kevin/';
 str_matlab = '/home/jason/disorder/matlab/';
 name = 'gulp_disp_lj_conv.tmp';
 NUM_ATOMS_UCELL = 4;
-MASS = lj.mass*1.0 *constant.avog;
+MASS = lj.mass*1.0 *constant.avog*constant.g2kg;
 
 
 for ikpt = 1:size(kpt,1)
-gulp_lj_eig(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+kpt(ikpt,:)
+freq = gulp_lj_freq(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+
+eig = gulp_lj_eig(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+
+vel = gulp_lj_vel(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
 pause
 end
