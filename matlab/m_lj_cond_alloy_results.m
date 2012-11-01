@@ -1,0 +1,9 @@
+ald = m_lj_cond_alloy_ald_results;
+gk = m_lj_cond_alloy_gk_results;
+vc = m_lj_cond_alloy_nmd_vc_results;
+
+
+m_lj_cond_alloy_results_createfigure(...
+gk.conc,...
+[gk.extrap ald.extrap(:,1) vc.extrap(:,1) ald.perfect]...
+)

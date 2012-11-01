@@ -26,6 +26,6 @@ Ar1 core  0.5  0.0  0.5   0 1 1 1
 Ar1 core  0.0  0.5  0.5   0 1 1 1
 
 kpoint
-0	0	0.0001
+0.025253	0	1e-06
 output freq text /home/jason/disorder/kevin/freq.gout
 

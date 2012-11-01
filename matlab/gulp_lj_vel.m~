@@ -11,7 +11,7 @@ function vel = gulp_lj_vel(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
 constant = m_constant;
 lj = m_lj;
 
-gulp.dk = 1E-3;
+gulp.dk = 1E-6;
 
 %2) Input dk kpts to measure group velocities
 	vel = zeros(3*NUM_ATOMS_UCELL,3);		
