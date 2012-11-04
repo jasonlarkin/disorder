@@ -1,0 +1,601 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  1 NOV 2012 22:45
+entering extended mode
+ %&-line parsing enabled.
+**prb_vc_jl_103112.tex
+(./prb_vc_jl_103112.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count90
+\c@table=\count91
+
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count92
+)
+\widetext@top=\box32
+\widetext@bot=\box33
+
+(/usr/share/texmf-texlive/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Info: Redefining \frak on input line 99.
+LaTeX Info: Redefining \Bbb on input line 101.
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen102
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen103
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip11
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks18
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks19
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks20
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/usr/share/texmf-texlive/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen113
+\extrarowheight=\dimen114
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+))
+(/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen115
+)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count105
+\@cmidlb=\count106
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count107
+\@lastruleclass=\count108
+\@thisrulewidth=\dimen128
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen129
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen130
+\subfiglabelskip=\skip53
+\c@subfigure=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@lotdepth=\count112
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(./prb_vc_jl_103112.aux
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `EQ:M:EL' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `EQ:M:tau_d' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `FIG:gk_alloy' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+)
+\openout1 = `prb_vc_jl_103112.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+Class revtex4 Info: Patching array package. on input line 211.
+Class revtex4 Info: cite was not loaded (OK!) on input line 211.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 211.
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+LaTeX Font Info:    Try loading font information for U+msa on input line 265.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 265.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5.eps Graphic file (type e
+ps)
+
+</home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5.eps> [1]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 364.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 364.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps Graphic file (type
+ eps)
+</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps>
+Underfull \hbox (badness 1755) in paragraph at lines 403--404
+[]\OT1/cmr/m/n/10 For a per-fect sys-tem, all vi-bra-tional modes are
+ []
+
+
+Package natbib Warning: Citation `ziman_electrons_2001' on page 2 undefined on 
+input line 406.
+
+
+Package natbib Warning: Citation `peierls_quantum_2001' on page 2 undefined on 
+input line 407.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--408
+[]\OT1/cmr/m/n/10 Using the single-mode re-lax-ation time
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 405--408
+\OT1/cmr/m/n/10 approximation$[]$ as an ap-prox-i-mate so-lu-tion of the
+ []
+
+
+Package natbib Warning: Citation `mcgaughey2006b' on page 2 undefined on input 
+line 434.
+
+[2]
+
+Package natbib Warning: Citation `ecsedy_thermal_1977' on page 3 undefined on i
+nput line 474.
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 470--480
+[]\OT1/cmr/m/n/10 Phonon-phonon scat-ter-ing ($\OML/cmm/m/it/10 ^^\[]  []$\OT1/
+cmr/m/n/10 ) is typ-i-cally
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+
+Underfull \hbox (badness 1642) in paragraph at lines 545--546
+[]\OT1/cmr/m/n/10 We use the nor-mal mode de-com-po-si-tion (NMD)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--560
+[]\OT1/cmr/m/n/10 The phonon nor-mal mode co-or-di-nates,
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 553--560
+\OML/cmm/m/it/10 q  [] andqdot  []$\OT1/cmr/m/n/10 , are re-quired to cal-cu-la
+te the
+ []
+
+File: /home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_gamma_life.eps Graphic 
+file (type eps)
+</home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_gamma_life.eps>
+File: /home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_life.eps Graphic file (
+type eps)
+
+</home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_life.eps> [3]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 594.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 594.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 614--617
+[]\OT1/cmr/m/n/10 The ther-mal con-duc-tiv-ity of amor-phous solids at
+ []
+
+File: /home/jason/disorder/lj/alloy/lj_alloy_cond_gk_vc_ald_compare.eps Graphic
+ file (type eps)
+</home/jason/disorder/lj/alloy/lj_alloy_cond_gk_vc_ald_compare.eps>
+File: /home/jason/disorder/si/alloy/si_alloy_cond_gk_vc_ald_compare.eps Graphic
+ file (type eps)
+
+</home/jason/disorder/si/alloy/si_alloy_cond_gk_vc_ald_compare.eps>
+File: /home/jason/disorder/lj/alloy/alloy_lj_si_life_kw.eps Graphic file (type 
+eps)
+
+</home/jason/disorder/lj/alloy/alloy_lj_si_life_kw.eps>
+File: /home/jason/disorder/lj/alloy/alloy_lj_life_kw.eps Graphic file (type eps
+)
+
+</home/jason/disorder/lj/alloy/alloy_lj_life_kw.eps> [4]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 691.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 691.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 5 undefined on input li
+ne 724.
+
+[5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 728.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 728.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
+ne 738.
+
+
+Package natbib Warning: Citation `turney2009a' on page 6 undefined on input lin
+e 740.
+
+
+Package natbib Warning: Citation `mcgaughey2004a' on page 6 undefined on input 
+line 740.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
+ne 749.
+
+
+Package natbib Warning: Citation `turney2009a' on page 6 undefined on input lin
+e 751.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
+ne 752.
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 747--753
+\OT1/cmr/m/n/10 where $\OT1/cmr/bx/n/10 b[]$ \OT1/cmr/m/n/10 are the re-cip-ro-
+cal lat-tice vectors$[]$ and
+ []
+
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 6 undefined on inp
+ut line 767.
+
+
+Package natbib Warning: Citation `turney2009a' on page 6 undefined on input lin
+e 768.
+
+
+Package natbib Warning: Citation `He2011a' on page 6 undefined on input line 76
+8.
+
+
+LaTeX Warning: Reference `FIG:LJ_COND' on page 6 undefined on input line 771.
+
+
+Package natbib Warning: Citation `turney2009a' on page 6 undefined on input lin
+e 784.
+
+
+Package natbib Warning: Citation `sellan2010b' on page 6 undefined on input lin
+e 784.
+
+(./prb_vc_jl_103112.bbl [6]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
+ []\OT1/cmr/m/n/9 B. Huang and M. Ka-viany, Acta Ma-te-ri-alia
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 54--61
+ \OT1/cmr/bx/n/9 58\OT1/cmr/m/n/9 , 4516  4526 (2010), ISSN 1359-6454, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article /
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 64--70
+ \OT1/cmr/m/n/9 Chem. \OT1/cmr/bx/n/9 21 \OT1/cmr/m/n/9 (2011), URL $\OT1/cmtt/
+m/n/9 http : / / dx . doi . org / 10 . 1039 /
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1533) in paragraph at lines 162--167
+ []\OT1/cmr/m/n/9 D. G. Cahill and F. Watan-abe, Phys. Rev. B \OT1/cmr/bx/n/9 7
+0\OT1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1721) in paragraph at lines 177--185
+ []\OT1/cmr/m/n/9 A. M. Bouchard, R. Biswas, W. A. Kami-taka-hara,
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 202.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+)
+
+Package natbib Warning: There were undefined citations.
+
+[7] (./prb_vc_jl_103112.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3592 strings out of 493849
+ 44782 string characters out of 1152846
+ 138835 words of memory out of 3000000
+ 6814 multiletter control sequences out of 15000+50000
+ 14510 words of font info for 54 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 32i,25n,27p,632b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on prb_vc_jl_103112.dvi (7 pages, 35780 bytes).

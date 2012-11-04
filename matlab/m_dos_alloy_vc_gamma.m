@@ -48,7 +48,7 @@ NMD(3).NMD=load(strcat(str.NMD,'NMDdata.mat'));
 SED(3).SED=load(strcat(str.NMD,'SEDdata.mat'));
 %convert freq to cols
 SED(3).SED = nmd_convert_data(NMD(3).NMD,SED(3).SED);
-NUM_BIN = 14;
+NUM_BIN = 16;
 [af(3).af.DOSX af(3).af.DOSY] =...
     m_dos( af(3).af.freq, NUM_BIN , 100 );
 NUM_BIN = 14;

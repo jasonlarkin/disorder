@@ -1,13 +1,17 @@
 clear
-%str.NMD ='/home/jason/disorder2/lj/alloy/10K/0.5/10x/nmd_vc/work/1/';
-%str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.05/10x/NMD/1/work/';
 
-str.nmd = '/home/jason/disorder2/si/alloy/0.0/8x/';
+% str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.01/10x/NMD/1/work/';
+% NMD=load(strcat(str.nmd,'nmd.mat'));
 
-NMD=load(strcat(str.nmd,'nmd.mat'));
+str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.01/10x/NMD/1/work/';
+NMD=load(strcat(str.NMD,'NMDdata.mat'));
+str.save = '/home/jason/disorder2/lj/alloy/10K/diff_mass/m1_m1.1_c5/';
 
+m1 = 1; m2 = 1.1; c = 0.5; vm = (1-c)*m1 + c*m2
 
-ALLOY = m_ld_defect_life(NMD, 0.05 , 1 , 3 , 1.3 , 100 , 0.45 , 1);
+pause
+
+ALLOY = m_ld_defect_life(NMD, c , m1 , m2 , vm , 100 , 0.45 , 1);
 
 %--------------------------------------------------------------------------
 %figure
@@ -22,7 +26,7 @@ loglog(...
     ALLOY.freq, 1E4*ALLOY.freq.^(-4)...
     )
 
-save(strcat(str.NMD,'ALLOY.mat'), '-struct', 'ALLOY');
+save(strcat(str.save,'ALLOY.mat'), '-struct', 'ALLOY');
 
 
 
