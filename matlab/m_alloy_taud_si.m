@@ -5,9 +5,9 @@ clear
 str.nmd = '/home/jason/disorder2/si/alloy/0.05/8x/';
 NMD=load(strcat(str.nmd,'nmd.mat'));
 
+m1 = 1; m2 = 2.6; c = 0.05; vm = (1-c)*m1 + c*m2
 
-
-ALLOY = m_ld_defect_life_si(NMD, 0.05 , 1 , 2.6 , 1.08 , 100 , 1.0 , 1);
+ALLOY = m_ld_defect_life_si(NMD, c , m1 , m2 , vm , 100 , 0.45 , 1);
 
 %--------------------------------------------------------------------------
 %figure

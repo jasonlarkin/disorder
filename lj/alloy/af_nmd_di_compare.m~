@@ -36,6 +36,14 @@ str.nmd = '/home/jason/disorder/lj/alloy/10K/0.05/10x/NMD/1/work';
 nmd(2).sed=load(strcat(str.nmd,'/SEDdata.mat'));
 nmd(2).nmd=load(strcat(str.nmd,'/NMDdata.mat'));
 nmd(2).sed = nmd_convert_data(nmd(2).nmd,nmd(2).sed);
+str.nmd = '/home/jason/disorder/lj/alloy/10K/0.15/10x/NMD/1/work';
+nmd(3).sed=load(strcat(str.nmd,'/SEDdata.mat'));
+nmd(3).nmd=load(strcat(str.nmd,'/NMDdata.mat'));
+nmd(3).sed = nmd_convert_data(nmd(3).nmd,nmd(3).sed);
+str.nmd = '/home/jason/disorder/lj/alloy/10K/0.5/10x/NMD/1/work';
+nmd(4).sed=load(strcat(str.nmd,'/SEDdata.mat'));
+nmd(4).nmd=load(strcat(str.nmd,'/NMDdata.mat'));
+nmd(4).sed = nmd_convert_data(nmd(4).nmd,nmd(4).sed);
 
 %0.0
 loglog(...
@@ -47,9 +55,27 @@ pause
 
 %0.05
 loglog(...
-    nmd(1).sed.freq,nmd(1).sed.diff(:,1),'.',...
-    af(1).di(:,1),af(1).di(:,2),'.'...
+    nmd(2).sed.freq,nmd(2).sed.diff(:,1),'.',...
+    af(2).di(:,1),af(2).di(:,2),'.'...
     )
+
+pause
+
+%0.15
+loglog(...
+    nmd(3).sed.freq,nmd(3).sed.diff(:,1),'.',...
+    af(3).di(:,1),af(3).di(:,2),'.'...
+    )
+
+pause
+
+%0.5
+loglog(...
+    nmd(4).sed.freq,nmd(4).sed.diff(:,1),'.',...
+    af(4).di(:,1),af(4).di(:,2),'.'...
+    )
+
+pause
 
 
 

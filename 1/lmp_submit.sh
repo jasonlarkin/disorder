@@ -1,0 +1,10 @@
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp1.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp2.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp3.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp4.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp5.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp6.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp7.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp8.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp9.sh
+qsub -l walltime=24:00:00 -l nodes=1:ppn=10 lmp10.sh
