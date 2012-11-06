@@ -555,7 +555,8 @@ to calculate the phonon normal mode energy $E\kv(t)$. The phonon mode
 eigenvectors, $e\kvba$, are required to map the atomic coordinates onto 
 the phonon normal modes. Under the VC approximation, the phonon eigenvectors 
 are those of pure plane-waves. In a disordered supercell, the vibrational 
-modes are not purely plane-wave (phonon) (see Section). 
+modes are not purely plane-wave (phonon) (see Section) and exist at the 
+Gamma point ([000]). Both cases 
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:Lifetimes}NMD-VC and Gamma Point Phonon Lifetimes}
@@ -650,6 +651,9 @@ approaches that of an amorphous system.}
 \end{figure}
 %--------------------------------------------------------------------------
 
+VC-NMD and ALD-taud underpredict vs GK by about 20-30, 
+while for LJ the underprediction is 2-300
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -676,9 +680,24 @@ approaches that of an amorphous system.}
 %--------------------------------------------------------------------------
 \section{\label{S:}Discussion}
 %--------------------------------------------------------------------------
-- compare lifetimes from 2 atom alloy, 4 atom alloy.  Is the reduction in 
-thermal conductivity mostly due to the reduction in group 
-velocities/introduction of optical modes?
+
+the problem is with taud.  VC-NMD agrees well with GK for both LJ and SW, 
+while ALD-taud underpredcits for LJ.  VC-NMD and ALD-taud use the same 
+group velocity and classical specific heat.
+
+For diffusons, one can still assign a mfp by the following:
+
+$D_AF$ = computed by AF theory
+
+$sqrt( D_AF / \tau_{NMD/ALD} ) = \Lamda_{AF}$
+
+typical calculations demonstrate that the lower limit to $D_AF$ should be:
+
+$D_AF = 1/3 v_s a$
+
+where $v_s$ = sound speed and a = interatomic spacings. So, 
+$\Lambda_{AF}$ >= a, or something like that.
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:}Boundary Scattering}
 %--------------------------------------------------------------------------

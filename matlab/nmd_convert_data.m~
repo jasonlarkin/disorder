@@ -1,3 +1,4 @@
+
 function SED = nmd_convert_data(NMD,SED)
 %SED = nmd_convert_data(NMD,SED)
 %re-sort eigvec and transpose freq, also convert back to LJ units
