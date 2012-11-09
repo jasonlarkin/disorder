@@ -2,7 +2,7 @@ clear
 %str.NMD ='/home/jason/disorder2/lj/alloy/10K/0.5/10x/nmd_vc/work/1/';
 %str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.05/10x/NMD/1/work/';
 
-str.nmd = '/home/jason/disorder2/si/alloy/0.05/8x/';
+str.nmd = '/home/jason/disorder2/si/alloy/0.05/20x/';
 NMD=load(strcat(str.nmd,'nmd.mat'));
 
 m1 = 1; m2 = 2.6; c = 0.05; vm = (1-c)*m1 + c*m2

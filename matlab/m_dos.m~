@@ -21,7 +21,7 @@ constant = m_constant; lj = m_lj;
 % dosy(ibin) = sum(lor.*freq_sorted);
 % dosx(ibin) = freq_bins(ibin);
 % end
-dosy = dosy/sum(dosy);
+% dosy = dosy/sum(dosy);
 
 % %remove 0-freq
 % I = find( freq~=0);

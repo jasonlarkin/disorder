@@ -53,6 +53,7 @@ if kpt(1) == 0 & kpt(2) == 0 & kpt(3) == 0
 %Gamma has only real components	
     eigvec = zeros(3*NUM_ATOMS_UCELL,3*NUM_ATOMS_UCELL); 
     for imode = 1:(3*NUM_ATOMS_UCELL/3/2)
+        imode
     eigvec(:,(imode-1)*6+1) =...
         dummy{2}((imode-1)*3*NUM_ATOMS_UCELL+1:(imode)*3*NUM_ATOMS_UCELL);
     eigvec(:,(imode-1)*6+2) =...

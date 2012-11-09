@@ -4,6 +4,15 @@ function ALLOY =...
 %    m_ld_defect_life(NMD,alloy_conc,m1,m2,vm,DW_SCALE,NUM_ITERATIONS)
 %--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
+tic
+%--------------------------------------------------------------------------
+
+[I,J] =sort(NMD.freq);
+NMD.freq(J(1:3))
+NMD.freq(J(1:3)) = 0.0;
+NMD.freq(J(1:3))
+
 %re-sort eigvec and transpose freq
 for ikpt = 1:NMD.NUM_KPTS
         eig(...
@@ -13,18 +22,25 @@ for ikpt = 1:NMD.NUM_KPTS
         NMD.eigvec( (NMD.x0.NUM_ATOMS_UCELL*3)*(ikpt-1)+1 ...
             :...
             ((NMD.x0.NUM_ATOMS_UCELL*3)*ikpt),   1:NMD.x0.NUM_MODES      )';  
-        
+%with kpt indexing
+%         ALLOY.freq(...
+%             (ikpt-1)*NMD.x0.NUM_MODES+1:(ikpt)*NMD.x0.NUM_MODES,1)...
+%             =...
+%             NMD.freq(ikpt,:)';  
+%wihtout kpt indexing
         ALLOY.freq(...
             (ikpt-1)*NMD.x0.NUM_MODES+1:(ikpt)*NMD.x0.NUM_MODES,1)...
             =...
-            NMD.freq(ikpt,:)';  
+        NMD.freq(...
+            (ikpt-1)*NMD.x0.NUM_MODES+1:(ikpt)*NMD.x0.NUM_MODES,1);  
+        
+        
 end
-[I,J] =sort(ALLOY.freq);
-ALLOY.freq(J(1:3))
-[I,J] =sort(ALLOY.freq);
-ALLOY.freq(J(1:3)) = 0.0;
-ALLOY.freq(J(1:3))
 
+[I,J] =sort(ALLOY.freq);
+ALLOY.freq(J(1:3))
+min(ALLOY.freq)
+hist(ALLOY.freq)
 
 ALLOY.life(1:NMD.x0.NUM_MODES,1:NUM_ITERATIONS) = 0.0;
 %calculate coupling strength
@@ -71,6 +87,11 @@ end
 %--------------------------------------------------------------------------
 %pause
 %--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+toc
+%--------------------------------------------------------------------------
+
 end
 
 

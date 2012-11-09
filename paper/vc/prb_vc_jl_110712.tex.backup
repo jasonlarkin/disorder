@@ -573,7 +573,18 @@ Gamma point ([000]). Both cases
 \end{figure}
 %--------------------------------------------------------------------------
 
-eigenvector mappings 
+eigenvector mappings \cite{koker_thermal_2009}
+\cite{qiu_molecular_2011} use NMD to predict the phonon properties of 
+PbTe using a classical model.
+\cite{shiomi_thermal_2011} half-huesler usese $\Phi'$ and ALD, find good 
+agreement. \cite{thomas_predicting_2010} finds increased scattering in 
+water-filled CNTs. \cite{ong_reduction_2011} finds increased scattering 
+of phonons in CNTs on a substrate. 
+
+In these studies, the atomic coordinates are being mapped onto modes which 
+are not eigenmodes of the system's Hamiltonian. Still, the spectral widths 
+(inverse lifetimes) of these mappings contain information about the 
+scattering time scales associated with these modes.   
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:}NMD and ALD Lifetime Comparison}
