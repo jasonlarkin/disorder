@@ -1,0 +1,13 @@
+clear
+
+si = m_si; constant = m_constant;
+    
+
+ald = m_si_cond_alloy_ald_results
+gk = m_si_cond_alloy_gk_results
+
+semilogy(...
+ald.conc,ald.extrap,'.',...
+gk.conc,gk.extrap,'.',...
+ald.conc,ald.high_scatter,'.'...
+)
