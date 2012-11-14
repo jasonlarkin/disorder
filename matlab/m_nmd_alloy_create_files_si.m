@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/alloy/0.05/20x/' ;
+    nmd.str.main = '/home/jason/disorder2/si/alloy/0.5/20x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -14,7 +14,7 @@ clear
 %--------------------------------------------------------------------------
     nmd.x0.Nx = 20; nmd.x0.Ny = 20; nmd.x0.Nz = 20;
 %--------------------------------------------------------------------------
-    nmd.x0.alloy_conc = 0.05;
+    nmd.x0.alloy_conc = 0.5;
 %--------------------------------------------------------------------------
     nmd.x0.mass(1) = 1.0; nmd.x0.mass(2) = 2.6; 
     nmd.x0.NUM_ATOMS_TYPE = 1;

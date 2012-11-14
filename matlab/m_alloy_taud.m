@@ -3,11 +3,11 @@ clear
 % str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.01/10x/NMD/1/work/';
 % NMD=load(strcat(str.nmd,'nmd.mat'));
 
-str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.01/10x/NMD/1/work/';
+str.NMD = '/home/jason/disorder2/lj/alloy/10K/0.5/10x/NMD/1/work/';
 NMD=load(strcat(str.NMD,'NMDdata.mat'));
-str.save = '/home/jason/disorder2/lj/alloy/10K/diff_mass/m1_m1.1_c5/';
+str.save = '/home/jason/disorder2/lj/alloy/10K/0.5/10x/NMD/1/work/';
 
-m1 = 1; m2 = 1.1; c = 0.5; vm = (1-c)*m1 + c*m2
+m1 = 1; m2 = 3; c = 0.05; vm = (1-c)*m1 + c*m2
 
 pause
 
