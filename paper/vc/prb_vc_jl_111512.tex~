@@ -661,7 +661,7 @@ which are plane waves.\cite{}
 The high scatter limit is given as:
 
 \begin{equation}\label{EQ:M:k_HS}
-k_{CP,HS} = (\frac{pi}{6})^(1/3) (\frac{3}{2}) \frac{k_{B}}{V_b}b v_s a
+k_{CP,HS} = (\frac{\pi}{6})^{1/3} (\frac{3}{2}) \frac{k_{B}}{V_b}b v_s a
 \end{equation}
 
 where $V_b$ is the volume of the unit cell, $v_s$ is the 
@@ -680,7 +680,7 @@ the thermal conductivity in the high-scatter limit can be written as
 %k_{AF,limit} = sum_i^{modes}  (kb/V) \frac{1}{3} v_s a  =  k_{B} n_v v_s a
 %\end{equation}
 \begin{equation}\label{EQ:M:k_HS}
-k_{AF,HS} = sum_i^{modes}  (kb/V) D_{AF,HS}
+k_{AF,HS} = \sum_i^{modes}  \frac{k_{B}}{V} D_{AF,HS}
 \end{equation}
 
 where the characteristic diffusivity of each mode in the 

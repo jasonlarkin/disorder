@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{33}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -103,17 +103,6 @@
   \bibinfo{pages}{235322} (\bibinfo{year}{2004}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.235322}.
 
-\bibitem[{\citenamefont{Bouchard et~al.}(1988)\citenamefont{Bouchard, Biswas,
-  Kamitakahara, Grest, and Soukoulis}}]{bouchard_vibrational_1988}
-\bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Biswas}},
-  \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}},
-  \bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Grest}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Soukoulis}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{38}},
-  \bibinfo{pages}{10499–10506} (\bibinfo{year}{1988}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.38.10499}.
-
 \bibitem[{\citenamefont{Ziman}(2001)}]{ziman_electrons_2001}
 \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Ziman}},
   \emph{\bibinfo{title}{Electrons and Phonons}} (\bibinfo{publisher}{Oxford,
@@ -143,6 +132,17 @@
   \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
   \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{132}},
   \bibinfo{pages}{012401} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Bouchard et~al.}(1988)\citenamefont{Bouchard, Biswas,
+  Kamitakahara, Grest, and Soukoulis}}]{bouchard_vibrational_1988}
+\bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Biswas}},
+  \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}},
+  \bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Grest}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Soukoulis}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{38}},
+  \bibinfo{pages}{10499–10506} (\bibinfo{year}{1988}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.38.10499}.
 
 \bibitem[{\citenamefont{Duda et~al.}(2011)\citenamefont{Duda, English, Jordan,
   Norris, and Soffa}}]{duda_reducing_2011}
@@ -202,6 +202,15 @@
   \bibinfo{pages}{235202} (\bibinfo{year}{2005}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.71.235202}.
 
+\bibitem[{\citenamefont{Kamitakahara and
+  Brockhouse}(1974)}]{kamitakahara_vibrations_1974}
+\bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.~N.}
+  \bibnamefont{Brockhouse}}, \bibinfo{journal}{Phys. Rev. B}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{1200–1212}
+  (\bibinfo{year}{1974}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.10.1200}.
+
 \bibitem[{\citenamefont{Koker}(2009)}]{koker_thermal_2009}
 \bibinfo{author}{\bibfnamefont{N.~d.} \bibnamefont{Koker}},
   \bibinfo{journal}{Physical Review Letters} \textbf{\bibinfo{volume}{103}},
@@ -245,6 +254,13 @@
   \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Shiomi}},
   \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{84}},
   \bibinfo{pages}{165418} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Cahill and Pohl}(1988)}]{cahill_lattice_1988}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Cahill}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Pohl}},
+  \bibinfo{journal}{Annual Review of Physical Chemistry}
+  \textbf{\bibinfo{volume}{39}}, \bibinfo{pages}{93–121}
+  (\bibinfo{year}{1988}).
 
 \bibitem[{\citenamefont{Duda et~al.}(2012)\citenamefont{Duda, English, Jordan,
   Norris, and Soffa}}]{duda_controlling_2012}
