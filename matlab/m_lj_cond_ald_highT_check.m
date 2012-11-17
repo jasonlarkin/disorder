@@ -1,0 +1,39 @@
+clear
+
+ipt=1
+VIRTUAL_MASS = 1.1;
+freq_cutoff = 0;
+dph_scaling = 0.5;
+vg_scaling = 0.75;
+constant = m_constant; lj = m_lj;
+%vcnmd
+str.nmd = '/home/jason/disorder2/lj/alloy/10K/0.05/12x/nmd_vc/work/1/';
+vcnmd(ipt).nmd = load([str.nmd 'NMDdata.mat']);
+%vcald
+str.alloy = '/home/jason/disorder2/lj/alloy/10K/0.05/12x/nmd_vc/work/1/';
+alloy(ipt).alloy = load([str.alloy 'ALLOY.mat']);
+str.ald = '/home/jason/disorder2/lj/ald/m1.1/12x/Data_fullBZ.xls';
+vcald(ipt).ald = m_joe_read_data([str.ald]);
+vcald(ipt).sedald = m_joe_ald2nmd( vcnmd(ipt).nmd , vcald(ipt).ald );
+
+ald(ipt).cond =...
+    m_ald_cond(...
+    1./(1./vcald(ipt).sedald.life)*lj.tau,...
+    vcald(ipt).sedald.vel(:,1)*lj.sigma/lj.tau,...
+    vcnmd(ipt).nmd.VOLUME);
+
+vcald(ipt).cond =...
+    m_ald_cond(...
+    1./(1./alloy(ipt).alloy.life +...
+    1./vcald(ipt).sedald.life)*lj.tau,...
+    vcald(ipt).sedald.vel(:,1)*lj.sigma/lj.tau,...
+    vcnmd(ipt).nmd.VOLUME);
+
+ald(ipt).cond
+
+vcald(ipt).cond
+
+loglog(...
+    vcald(ipt).sedald.freq,...
+    1./(1./alloy(ipt).alloy.life + 1./vcald(ipt).sedald.life),'.'...
+    )

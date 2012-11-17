@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_111512.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-103112.bib
+Warning--I didn't find a database entry for "mcgaughey2006b"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "ashcroft1976"
+Warning--I didn't find a database entry for "turney2009a"
+Warning--I didn't find a database entry for "mcgaughey2004a"
+Warning--I didn't find a database entry for "He2011a"
+Warning--I didn't find a database entry for "sellan2010b"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 140441135614904.
+You've used 31 entries,
+            3411 wiz_defined-function locations,
+            1365 strings with 16704 characters,
+and the built_in function-call counts, 23449 in all, are:
+= -- 1375
+> -- 749
+< -- 108
++ -- 614
+- -- 184
+* -- 3152
+:= -- 2511
+add.period$ -- 31
+call.type$ -- 31
+change.case$ -- 125
+chr.to.int$ -- 31
+cite$ -- 31
+duplicate$ -- 1957
+empty$ -- 1982
+format.name$ -- 457
+if$ -- 4561
+int.to.chr$ -- 1
+int.to.str$ -- 32
+missing$ -- 305
+newline$ -- 108
+num.names$ -- 93
+pop$ -- 498
+preamble$ -- 1
+purify$ -- 124
+quote$ -- 0
+skip$ -- 973
+stack$ -- 0
+substring$ -- 1157
+swap$ -- 1559
+text.length$ -- 92
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 180
+warning$ -- 0
+while$ -- 87
+width$ -- 0
+write$ -- 340
+(There were 7 warnings)

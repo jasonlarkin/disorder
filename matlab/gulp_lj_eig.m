@@ -1,7 +1,10 @@
-function eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL,MASS,str_main,str_matlab,name)
+function eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL,MASS,ALAT,str_main)
 %--------------------------------------------------------------------------
 %eigvec = gulp_lj_eig(kpt,NUM_ATOMS_UCELL)
 %--------------------------------------------------------------------------
+
+str_matlab = '/home/jason/disorder/matlab/';
+name = 'gulp_disp_lj_conv.tmp';
 
 %--------------------------------------------------------------------------
 %This is required to get the kpt + dk to properly input to GULP
@@ -13,6 +16,8 @@ change(1).str =...
     strcat( num2str(kpt(1)),'\t',num2str(kpt(2)),'\t',num2str(kpt(3)) );
 orig(2).str = 'MASS';
 change(2).str = num2str(MASS);
+orig(2).str = 'ALAT';
+change(2).str = num2str(ALAT);
 
 m_change_file_strings(...
     [str_matlab name],...

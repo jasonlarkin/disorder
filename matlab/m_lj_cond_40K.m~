@@ -1,0 +1,14 @@
+clear
+constant = m_constant;
+size_big = 100000;
+
+ald = m_lj_cond_alloy_ald_results_40K
+
+gk = m_lj_cond_alloy_gk_results_40K
+
+plot(...
+    ald.conc, ald.cond(:,2) , '.',...
+    1./[ald.size;size_big] , 1./[ald.cond(:,4);3.4] , '.'...
+    )
+
+

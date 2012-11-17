@@ -16,6 +16,22 @@ si.alat = 5.43E-10;
 si.num_atom_ucell=8;
 si.num_density = (si.num_atom_ucell / (si.alat^3));
 
+m1 = 1; m2 = 2.6; 
+si.cahill_conc =...
+    (6.2E19)/(si.num_density/(100^3));
+vm = (1-si.cahill_conc)*m1 + si.cahill_conc*m2;
+si.cahill_g =...
+    (1-si.cahill_conc)* ((1 - (m1/vm) )^2) +...
+    (si.cahill_conc)* ((1 - (m2/vm) )^2);
+
+m1 = 58.6934; m2 = 106.42; 
+si.cahill_conc_nipd =...
+    0.55;
+vm = (1-si.cahill_conc_nipd)*m1 + si.cahill_conc_nipd*m2;
+si.cahill_g_nipd =...
+    (1-si.cahill_conc_nipd)* ((1 - (m1/vm) )^2) +...
+    (si.cahill_conc_nipd)* ((1 - (m2/vm) )^2);
+
 end
 %--------------------------------------------------------------------------	
 
