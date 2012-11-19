@@ -372,7 +372,7 @@ by $\hbar\omega\kv$. In a perfect system, the allowed energies
 $D\kv$, which relates the mode eigenvector ($e\kvba$) 
 and eigenvalue by
 \begin{equation}\label{EQ:M:k_mode}
-$D\kv e\kvba = \omega\kv^2e\kvba.
+D\kv e\kvba = \omega\kv^2e\kvba.
 \end{equation}
 
 In a crystal all vibrational modes are plane-waves and as such 
@@ -692,6 +692,17 @@ D_{AF,HS} = \frac{1}{3} v_s a.
 
 Comparing with Eq., the AF HS limit predicts a mode diffusivity and 
 thermal conductivity which is $\%20$ smaller.\cite{cahill_lattice_1988} 
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.7]
+{/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} gamma point results}
+\end{figure}
+%--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Thermal Conductivity Predictions}

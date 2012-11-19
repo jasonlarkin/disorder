@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  17 NOV 2012 00:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.6.11)  18 NOV 2012 01:23
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_111512.tex
@@ -252,13 +252,13 @@ LaTeX Warning: Label `S:' multiply defined.
 LaTeX Warning: Label `S:' multiply defined.
 
 
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
-
-
 LaTeX Warning: Label `EQ:M:EL' multiply defined.
 
 
 LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
 LaTeX Warning: Label `S:' multiply defined.
@@ -276,13 +276,13 @@ LaTeX Warning: Label `S:Lifetimes' multiply defined.
 LaTeX Warning: Label `S:' multiply defined.
 
 
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
 LaTeX Warning: Label `S:' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
 LaTeX Warning: Label `EQ:M:k_HS' multiply defined.
@@ -297,7 +297,7 @@ LaTeX Warning: Label `EQ:M:k_HS' multiply defined.
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
-LaTeX Warning: Label `S:' multiply defined.
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
 LaTeX Warning: Label `FIG:gk_alloy' multiply defined.
@@ -306,13 +306,16 @@ LaTeX Warning: Label `FIG:gk_alloy' multiply defined.
 LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
-LaTeX Warning: Label `S:' multiply defined.
-
-
-LaTeX Warning: Label `S:' multiply defined.
-
-
 LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
+
+
+LaTeX Warning: Label `S:' multiply defined.
 
 )
 \openout1 = `prb_vc_jl_111512.aux'.
@@ -365,9 +368,9 @@ Underfull \hbox (badness 1337) in paragraph at lines 347--350
 Package natbib Warning: Citation `mcgaughey2006b' on page 2 undefined on input 
 line 399.
 
-File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_2.eps Graphic file (type
+File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_3.eps Graphic file (type
  eps)
-</home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_2.eps> [2]
+</home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_3.eps> [2]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps Graphic file (type
  eps)
 
@@ -376,10 +379,6 @@ Underfull \hbox (badness 7012) in paragraph at lines 514--524
 []\OT1/cmr/m/n/10 Phonon-phonon scat-ter-ing ($\OML/cmm/m/it/10 ^^\[]  []$\OT1/
 cmr/m/n/10 ) is typ-i-cally
  []
-
-
-Package natbib Warning: Citation `kamitakahara_vibrations_1974' on page 3 undef
-ined on input line 579.
 
 [3]
 Underfull \hbox (badness 1642) in paragraph at lines 593--594
@@ -403,18 +402,12 @@ file (type eps)
 File: /home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_life.eps Graphic file (
 type eps)
 
-</home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_life.eps>
+</home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_life.eps> [4]
+File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw.eps Graphic file (type ep
+s)
 
-Package natbib Warning: Citation `cahill_lattice_1988' on page 4 undefined on i
-nput line 669.
-
-[4]
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 5 undefined on i
-nput line 694.
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 714--717
+</home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw.eps>
+Underfull \hbox (badness 1048) in paragraph at lines 725--728
 []\OT1/cmr/m/n/10 The ther-mal con-duc-tiv-ity of amor-phous solids at
  []
 
@@ -434,71 +427,71 @@ File: /home/jason/disorder/lj/alloy/alloy_lj_life_kw.eps Graphic file (type eps
 
 </home/jason/disorder/lj/alloy/alloy_lj_life_kw.eps> [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 802.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 803.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 802.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 803.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
+[6]
 
-Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
-ne 835.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
-ne 849.
+Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
+ne 846.
 
 
-Package natbib Warning: Citation `turney2009a' on page 6 undefined on input lin
-e 851.
-
-
-Package natbib Warning: Citation `mcgaughey2004a' on page 6 undefined on input 
-line 851.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
+Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
 ne 860.
 
 
-Package natbib Warning: Citation `turney2009a' on page 6 undefined on input lin
+Package natbib Warning: Citation `turney2009a' on page 7 undefined on input lin
 e 862.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 6 undefined on input li
-ne 863.
+Package natbib Warning: Citation `mcgaughey2004a' on page 7 undefined on input 
+line 862.
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 858--864
+Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
+ne 871.
+
+
+Package natbib Warning: Citation `turney2009a' on page 7 undefined on input lin
+e 873.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 7 undefined on input li
+ne 874.
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 869--875
 \OT1/cmr/m/n/10 where $\OT1/cmr/bx/n/10 b[]$ \OT1/cmr/m/n/10 are the re-cip-ro-
 cal lat-tice vectors$[]$ and
  []
 
-[6]
 
 LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 7 undefined on inp
-ut line 878.
+ut line 889.
 
 
 Package natbib Warning: Citation `turney2009a' on page 7 undefined on input lin
-e 879.
+e 890.
 
 
-Package natbib Warning: Citation `He2011a' on page 7 undefined on input line 87
-9.
+Package natbib Warning: Citation `He2011a' on page 7 undefined on input line 89
+0.
 
 
-LaTeX Warning: Reference `FIG:LJ_COND' on page 7 undefined on input line 882.
+LaTeX Warning: Reference `FIG:LJ_COND' on page 7 undefined on input line 893.
 
 
 Package natbib Warning: Citation `turney2009a' on page 7 undefined on input lin
-e 895.
+e 906.
 
 
 Package natbib Warning: Citation `sellan2010b' on page 7 undefined on input lin
-e 895.
+e 906.
 
 (./prb_vc_jl_111512.bbl [7]
 Missing character: There is no â in font cmr9!
@@ -595,17 +588,9 @@ Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
 )
 
-Class revtex4 Warning: Endnote numbers changed: rerun LaTeX.
-
-
 Package natbib Warning: There were undefined citations.
 
-[8] (./prb_vc_jl_111512.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[8] (./prb_vc_jl_111512.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -614,12 +599,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3614 strings out of 493849
- 45392 string characters out of 1152846
- 147797 words of memory out of 3000000
- 6836 multiletter control sequences out of 15000+50000
+ 3617 strings out of 493849
+ 45474 string characters out of 1152846
+ 147881 words of memory out of 3000000
+ 6838 multiletter control sequences out of 15000+50000
  14510 words of font info for 54 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,25n,27p,632b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,25n,27p,632b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_111512.dvi (8 pages, 44104 bytes).
+Output written on prb_vc_jl_111512.dvi (8 pages, 44304 bytes).
