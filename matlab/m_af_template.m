@@ -2,8 +2,8 @@
 %x0
 %--------------------------------------------------------------------------
 addpath('/home/jason/disorder/matlab/')
-str.main = '/home/jason/disorder/lj/amor/8x/XCORR_AF/220/2/time/';
-name = 'x0_time_relax.data';
+str.main = '/home/jason/disorder2/lj/amor/4x/prepare/tmp/';
+name = 'x0K_1.data';
 x0 = m_x0_read( str.main , name );
 %--------------------------------------------------------------------------
 %lj

@@ -1,4 +1,4 @@
-function af = m_af_cond_results
+function af = m_lj_cond_af_results
 
 %af(1).extrap = [
 

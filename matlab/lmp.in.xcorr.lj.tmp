@@ -1,0 +1,98 @@
+#--------------------------------------------------------------------------
+#input structure
+#--------------------------------------------------------------------------
+units			lj
+atom_style		atomic
+read_data		IN.X0
+#------------Initialize Structure-----------------------------------------------------------
+#mass           	1  1.0
+#group         		Ar type = 1
+#------------LJ Potentials------------------------------------------------------------------
+pair_style		lj/cut 2.5
+pair_coeff		* * 1.0 1.0
+pair_modify          	shift yes
+#pair_modify   	tail no
+
+#------------Variables----------------------------------------------------------------------
+#LJ Parameters
+variable    	kB 		equal 1.3806504e-23 	# [J/K] Boltzmann
+variable	sigma_Ar 	equal 3.4e-10 		# m
+variable	eps_Ar		equal 1.67e-21		# J
+variable	mass_Ar		equal 6.63e-26		# kg
+variable	tau_Ar		equal 2.1423e-12	# s
+#thermo Parameters
+variable    	T_melt 		equal 300*(${kB}/${eps_Ar})
+variable	T_0K		equal 0.00001
+variable	T_2_5K		equal 2.5*(${kB}/${eps_Ar})
+variable	T_5K		equal 5*(${kB}/${eps_Ar})
+variable	T_10K		equal 10*(${kB}/${eps_Ar})
+variable	T_15K		equal 15*(${kB}/${eps_Ar})
+
+variable   	dt 		equal 0.002
+variable	quench_rate	equal 1.0
+variable	quench_length 	equal 10000
+#kappa parameters
+variable    	p 		equal 1000 		# correlation length
+variable    	s 		equal 5  		# sample interval
+variable    	d 		equal $p*$s 		# dump interval 
+
+#SED parameters
+variable	w_step		equal T_STEP		
+variable	w_total		equal T_FFT
+variable	t_total		equal T_TOTAL
+variable	num_ffts	equal ${t_total}/${w_total}
+
+#label loop2
+#variable b loop 3
+#variable T_run index ${T_1} ${T_2} ${T_3}
+
+##########SEED##########################################################
+variable iseed equal ISEED_TMP
+variable seed equal SEED_TMP
+
+#------------ RUN TEMP ---------------------------------------------------------------------	
+variable 	T_run 		equal ${T_10K}
+#------------ RUN TEMP ---------------------------------------------------------------------	
+
+log 	log_heat_${iseed}.lammps
+
+#------------ NVE rescale ---------------------------------------------------------------------	
+	velocity 		all create ${T_run} ${seed} rot yes dist gaussian
+	fix 			1 all nve
+	fix 			2 all temp/rescale 1 ${T_run} ${T_run} 0.01 1.0
+	timestep		${dt}
+	thermo_style  	custom step temp press etotal vol
+	thermo			1000
+	run             	100000	
+#	run             	1000
+	unfix 			1
+	unfix 			2
+#------------ NVE -----------------------------------------------------------------------------	
+	fix 			1 all nve
+	timestep		${dt}
+	thermo_style  	custom step temp press etotal vol
+	thermo			1000
+	run             	250000	
+#	run             	10000
+	unfix 			1
+#------SED-------------------------------------------------------------------------
+label loop_fft
+variable ifft loop ${num_ffts}
+
+log 	log_SED_${iseed}_${ifft}.lammps
+	reset_timestep  	0
+	fix 			1 all nve
+	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
+	dump_modify 		vel sort id
+	dump 			pos all custom ${w_step} dump_${iseed}_${ifft}.pos xu yu zu
+	dump_modify 		pos sort id
+	thermo_style 		custom step temp press vol
+	thermo			5000
+	timestep		${dt}
+	run			${w_total}
+	unfix			1
+	undump			vel
+	undump			pos
+
+next ifft
+jump LMP_TMP loop_fft
