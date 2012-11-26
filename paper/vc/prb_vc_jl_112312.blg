@@ -8,43 +8,41 @@ Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "ashcroft1976"
 Warning--I didn't find a database entry for "turney2009a"
 Warning--I didn't find a database entry for "mcgaughey2004a"
-Warning--I didn't find a database entry for "He2011a"
-Warning--I didn't find a database entry for "sellan2010b"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
 You've used 32 entries,
             3411 wiz_defined-function locations,
-            1374 strings with 16936 characters,
-and the built_in function-call counts, 24197 in all, are:
-= -- 1426
-> -- 766
+            1369 strings with 16901 characters,
+and the built_in function-call counts, 23916 in all, are:
+= -- 1394
+> -- 774
 < -- 111
-+ -- 626
-- -- 188
-* -- 3251
-:= -- 2592
++ -- 634
+- -- 190
+* -- 3234
+:= -- 2566
 add.period$ -- 32
 call.type$ -- 32
 change.case$ -- 129
 chr.to.int$ -- 32
 cite$ -- 32
-duplicate$ -- 2015
-empty$ -- 2046
-format.name$ -- 470
-if$ -- 4713
+duplicate$ -- 2022
+empty$ -- 2018
+format.name$ -- 472
+if$ -- 4627
 int.to.chr$ -- 1
 int.to.str$ -- 33
-missing$ -- 314
+missing$ -- 315
 newline$ -- 111
 num.names$ -- 96
-pop$ -- 511
+pop$ -- 513
 preamble$ -- 1
 purify$ -- 128
 quote$ -- 0
-skip$ -- 1007
+skip$ -- 976
 stack$ -- 0
-substring$ -- 1208
-swap$ -- 1604
-text.length$ -- 94
+substring$ -- 1109
+swap$ -- 1611
+text.length$ -- 95
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 186
@@ -52,4 +50,4 @@ warning$ -- 0
 while$ -- 90
 width$ -- 0
 write$ -- 352
-(There were 8 warnings)
+(There were 6 warnings)

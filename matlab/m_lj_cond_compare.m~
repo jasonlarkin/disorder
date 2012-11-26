@@ -1,0 +1,16 @@
+clear
+constant = m_constant;
+size_big = 100000;
+
+ald40 = m_lj_cond_alloy_ald_results_40K
+
+gk40 = m_lj_cond_alloy_gk_results_40K
+subplot(2,
+plot(...
+    gk40.conc, gk40.extrap , '.',...
+    ald40.conc, ald40.extrap , '.',...
+    ald40.conc, ald40.extrap_diff , '.',...
+    ald40.conc, ald40.high_scatter , '.'...
+    )
+
+

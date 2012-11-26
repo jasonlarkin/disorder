@@ -267,13 +267,6 @@
   \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{134}},
   \bibinfo{pages}{014501} (\bibinfo{year}{2012}).
 
-\bibitem[{\citenamefont{Freeman and Anderson}(1986)}]{freeman_thermal_1986}
-\bibinfo{author}{\bibfnamefont{J.~J.} \bibnamefont{Freeman}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{A.~C.} \bibnamefont{Anderson}},
-  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{34}},
-  \bibinfo{pages}{5684{\textbackslash}textbackslash965690}
-  (\bibinfo{year}{1986}).
-
 \bibitem[{\citenamefont{{McGaughey} and
   Jain}(2012)}]{mcgaughey_nanostructure_2012}
 \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
@@ -281,5 +274,13 @@
   \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{100}},
   \bibinfo{pages}{061911} (\bibinfo{year}{2012}),
   \urlprefix\url{http://link.aip.org/link/?APL/100/061911/1}.
+
+\bibitem[{\citenamefont{Esfarjani et~al.}(2011)\citenamefont{Esfarjani, Chen,
+  and Stokes}}]{esfarjani_heat_2011}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.~T.} \bibnamefont{Stokes}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{84}},
+  \bibinfo{pages}{085204} (\bibinfo{year}{2011}).
 
 \end{thebibliography}

@@ -546,11 +546,6 @@ Fig. , the reduction due to zone folding
 seems to underpredict the group velocity of 
 moderate to high frequency modes.
 
-
-
-
-
-
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -696,7 +691,7 @@ and referred
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.7]
-{/home/jason/disorder/lj/alloy/lj_alloy_ald_nmd_vc_gamma_life.eps}
+{/home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:phonon_diff} virtual crystal results}
@@ -813,7 +808,7 @@ the following section. In fact, thes
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.7]
-{/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw.eps}
+{/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:phonon_diff} gamma point results}
@@ -848,7 +843,7 @@ of the vibrational oscillation (Ioffe-Regel limit)(cite),
 and actually increase with increasing 
 frequency for small intervals (Fig. ). 
 VC-NMD predicts larger phonon lifetimes at high 
-frequency compared to VC_ALD (Fig. ) which predicts 
+frequency compared to VC-ALD (Fig. ) which predicts 
 essentially monotonically 
 decreasing lifetimes with increasing frequency. Because VC-NMD and VC-ALD 
 use the same values for $c_{ph}\kv$ and $v_g\kv$, the phonon mode 
@@ -906,8 +901,8 @@ parameter allows control of thermal conductivity.
 
 In fact, the beginning breakdown of the intrinsic scattering model 
 ($\tau_{p-p}\kw$) can be observed for the perfect ($c=0.0$) crystal at 
-$T=40$K (see Fig. ), where ALD begins to overpredict compared to GK.  This 
-can be explained by the emerging importance of higher order (n$\gt 3$) 
+$T=40$ K (see Fig. ), where ALD begins to overpredict compared to GK.  This 
+can be explained by the emerging importance of higher order (n$> 3$) 
 n-phonon process at high temperatures.\cite{turney_predicting_2009}
 
 For LJ argon, bulk thermal conductivity predictions are made for 
@@ -922,7 +917,7 @@ conductivity compared to GK. By adjusting
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.7]
-{/home/jason/disorder/lj/alloy/lj_cond_alloy_diff_adjust.eps}
+{/home/jason/disorder/lj/alloy/lj_cond_compare.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:gk_alloy} The vibrational conductivity of LJ alloys 
@@ -940,25 +935,7 @@ approaches that of an amorphous system.}
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.7]
-{/home/jason/disorder/lj/alloy/lj_cond_alloy_diff_adjust_40K.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{FIG:gk_alloy} The vibrational conductivity of LJ alloys 
-predicted using MD simulations and the Green-Kubo method. The predicted 
-thermal conductivities are for a LJ alloy of the form $m^a_{1-c}m^b_{c}$, 
-where $m^a =$ 1, $m^b=$ 3, and $m_r = m^a/m^b=$ 3 (in LJ units). As the 
-alloy concentration is increased perturbatively, the vibrational 
-conductivity drops quickly and saturates to a minimum at $c=0.5$. For 
-$c=0.5$ the system is heavily disordered and the vibrational conductivity 
-approaches that of an amorphous system.}
-\end{figure}
-%--------------------------------------------------------------------------
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.7]
-{/home/jason/disorder/si/alloy/si_alloy_cond_gk_vc_ald_compare.eps}
+{/home/jason/disorder/si/alloy/si_cond_compare.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:gk_alloy} The vibrational conductivity of LJ alloys 
@@ -978,7 +955,7 @@ thermal conductivity in dilute alloys. Abeles also found good agreement
 with dilute predictions for both experimental measurements of both 
 Si-Ge alloys and also (Ga,In)As alloys.\cite{abeles_lattice_1963} However, 
 both of these alloy systems have a relatively high thermal conductivities 
-(on the order of 1-10 $W\m-K$ at 300 K). However, in the heavily disordered 
+(on the order of 1-10 W/m-K at 300 K). However, in the heavily disordered 
 system In(As,P) (mass ratio of 3.7) worse agreement with the Abeles theory 
 is observed. 
 
@@ -1043,7 +1020,7 @@ frequencies, lifetimes, and group velocities compared to
 is considered a ``soft'' system. The predictions using 
 VC-NMD, VC-ALD demonstrate the importance of explicit disorder 
 modeling in ``soft'' systems and possible underprediction 
-of the thermal properties.\cite[tian_phonon_2012}
+of the thermal properties.\cite{tian_phonon_2012}
 
 For SW silicon, the low frequency modes dominate thermal transport 
 even in the heavily disordered alloy. 
@@ -1056,9 +1033,9 @@ VC-ALD and ab initio calculations compared to experiment for
 In SW silicon even the amorphous phase has significant contributions 
 from propagating modes which can be considered to be phonons. This is 
 can seen by comparing the thermal conductivity predicted for the 
-SW silicon amorphous phase ($k_{GK} = 2 W/m-K$) compared to 
-$k_{CP,HS} = 0.5 W/m-K$.  For LJ argon in the amorphous phase, 
-$k_{GK} = 0.121 W/m-K$ and $k_{CP,HS} = 0.12 W/m-K$, indicating that 
+SW silicon amorphous phase ($k_{GK} =$ 2 W/m-K) compared to 
+$k_{CP,HS} = $0.5 W/m-K.  For LJ argon in the amorphous phase, 
+$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K, indicating that 
 all important modes to thermal transport are non-propagating.
 
 %--------------------------------------------------------------------------
@@ -1066,7 +1043,7 @@ all important modes to thermal transport are non-propagating.
 %--------------------------------------------------------------------------
 Boundary scattering is responsible for decreasing the long lifetimes 
 (mean free paths) of low frequency phonons which carry a significant 
-amount of heat, making it particularly effective at decreasing the 
+amount of heat, making it particularly e`ffective at decreasing the 
 thermal conductivity of systems with length scale of 100s of nm and 
 less.\cite{mcgaughey_nanostructure_2012}
 
