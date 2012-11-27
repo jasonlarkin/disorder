@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  25 NOV 2012 22:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  26 NOV 2012 13:39
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_112312.tex
@@ -431,18 +431,18 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 827.
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
-File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_2.eps Graphic fi
+File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3.eps Graphic fi
 le (type eps)
-</home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_2.eps>
+</home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3.eps>
 File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05.eps Graphic file
  (type eps)
 
 </home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05.eps> [6]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 913.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 908.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 913.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 908.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -455,10 +455,10 @@ File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
 
 </home/jason/disorder/si/alloy/si_cond_compare.eps> [7]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 993.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 991.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 993.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 991.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -614,4 +614,4 @@ Here is how much of TeX's memory you used:
  714 hyphenation exceptions out of 8191
  32i,25n,27p,632b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_112312.dvi (10 pages, 64164 bytes).
+Output written on prb_vc_jl_112312.dvi (10 pages, 64160 bytes).
