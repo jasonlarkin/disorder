@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  26 NOV 2012 23:00
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  27 NOV 2012 16:56
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_112612.tex
@@ -285,6 +285,9 @@ LaTeX Warning: Label `S:' multiply defined.
 LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
+LaTeX Warning: Label `S:' multiply defined.
+
+
 LaTeX Warning: Label `EQ:M:k_HS' multiply defined.
 
 
@@ -354,72 +357,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 266.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 
-Package natbib Warning: Citation `chen_recent_2003' on page 1 undefined on inpu
-t line 276.
-
-
-Package natbib Warning: Citation `dresselhaus_new_2007' on page 1 undefined on 
-input line 276.
-
-
-Package natbib Warning: Citation `he_thermoelectric_2006' on page 1 undefined o
-n input line 280.
-
-
-Package natbib Warning: Citation `huang_filler-reduced_2010' on page 1 undefine
-d on input line 280.
-
-
-Package natbib Warning: Citation `toberer_phonon_2011' on page 1 undefined on i
-nput line 280.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 1 undefined on input 
-line 289.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 1 undefined on 
-input line 289.
-
-
 Package natbib Warning: Citation `thermal_shiomi_2011' on page 1 undefined on i
 nput line 290.
 
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 1 undefined on inpu
-t line 291.
-
-
-Package natbib Warning: Citation `abeles_lattice_1963' on page 1 undefined on i
-nput line 328.
-
-
-Package natbib Warning: Citation `cahill_thermal_2004' on page 1 undefined on i
-nput line 334.
-
 [1]
-
-Package natbib Warning: Citation `garg_role_2011' on page 2 undefined on input 
-line 350.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 353.
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 347--360
-\OT1/cmr/m/n/10 all con-cen-tra-tions, ob-tain-ing good agree-ment with
- []
-
-
-Package natbib Warning: Citation `ziman_electrons_2001' on page 2 undefined on 
-input line 379.
-
-
-Package natbib Warning: Citation `peierls_quantum_2001' on page 2 undefined on 
-input line 380.
-
-
 Underfull \hbox (badness 1755) in paragraph at lines 377--382
 []\OT1/cmr/m/n/10 For a per-fect sys-tem, all vi-bra-tional modes are
  []
@@ -428,22 +369,6 @@ Underfull \hbox (badness 1755) in paragraph at lines 377--382
 Underfull \hbox (badness 2951) in paragraph at lines 377--382
 \OT1/cmr/m/n/10 phonons. Us-ing the single-mode re-lax-ation time
  []
-
-
-Package natbib Warning: Citation `mcquarrie_statistical_2000' on page 2 undefin
-ed on input line 394.
-
-
-Package natbib Warning: Citation `gale_general_2003' on page 2 undefined on inp
-ut line 447.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 2 undefined on input 
-line 471.
-
-
-Package natbib Warning: Citation `bouchard_vibrational_1988' on page 2 undefine
-d on input line 474.
 
 [2]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_3.eps Graphic file (type
@@ -458,36 +383,12 @@ Package natbib Warning: Citation `mcgaughey2006b' on page 3 undefined on input
 line 505.
 
 [3]
-
-Package natbib Warning: Citation `duda_reducing_2011' on page 4 undefined on in
-put line 597.
-
 File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps Graphic file (type
  eps)
-</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps>
+ </home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps>
 Overfull \hbox (3.73395pt too wide) in paragraph at lines 609--611
  [] 
  []
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 4 undefined o
-n input line 633.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 4 undefined on input 
-line 633.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 4 undefined on inpu
-t line 633.
-
-
-Package natbib Warning: Citation `ecsedy_thermal_1977' on page 4 undefined on i
-nput line 635.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 4 undefined o
-n input line 636.
 
 
 Underfull \hbox (badness 7012) in paragraph at lines 631--641
@@ -495,74 +396,10 @@ Underfull \hbox (badness 7012) in paragraph at lines 631--641
 cmr/m/n/10 ) is typ-i-cally
  []
 
-
-Package natbib Warning: Citation `tamura_isotope_1983' on page 4 undefined on i
-nput line 643.
-
-
-Package natbib Warning: Citation `klemens_scattering_1955' on page 4 undefined 
-on input line 671.
-
-
-Package natbib Warning: Citation `klemens_thermal_1957' on page 4 undefined on 
-input line 671.
-
-
-Package natbib Warning: Citation `skye_thermal_2008' on page 4 undefined on inp
-ut line 674.
-
 [4]
-
-Package natbib Warning: Citation `cahill_thermal_2005' on page 5 undefined on i
-nput line 685.
-
-
-Package natbib Warning: Citation `cahill_thermal_2004' on page 5 undefined on i
-nput line 690.
-
-
-Package natbib Warning: Citation `kamitakahara_vibrations_1974' on page 5 undef
-ined on input line 696.
-
 
 Package natbib Warning: Citation `thermal_shiomi_2011' on page 5 undefined on i
 nput line 700.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 5 undefined on input 
-line 700.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 5 undefined on 
-input line 700.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 5 undefined on inpu
-t line 703.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 5 undefined o
-n input line 716.
-
-
-Package natbib Warning: Citation `koker_thermal_2009' on page 5 undefined on in
-put line 773.
-
-
-Package natbib Warning: Citation `qiu_molecular_2011' on page 5 undefined on in
-put line 774.
-
-
-Package natbib Warning: Citation `shiomi_thermal_2011' on page 5 undefined on i
-nput line 776.
-
-
-Package natbib Warning: Citation `thomas_predicting_2010' on page 5 undefined o
-n input line 777.
-
-
-Package natbib Warning: Citation `ong_reduction_2011' on page 5 undefined on in
-put line 778.
 
 File: /home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life.eps Graphic file
  (type eps)
@@ -580,14 +417,6 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 827.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 6 undefined on i
-nput line 859.
-
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 6 undefined on i
-nput line 862.
 
 File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps Graphic file (type 
 eps)
@@ -618,26 +447,14 @@ File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2.eps Graphic fi
 le (type eps)
 
 </home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2.eps>
-
-Package natbib Warning: Citation `duda_controlling_2012' on page 7 undefined on
- input line 973.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 7 undefined o
-n input line 979.
-
 File: /home/jason/disorder/lj/alloy/lj_cond_compare.eps Graphic file (type eps)
+
 
 </home/jason/disorder/lj/alloy/lj_cond_compare.eps>
 File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
 
 
-</home/jason/disorder/si/alloy/si_cond_compare.eps>
-
-Package natbib Warning: Citation `abeles_lattice_1963' on page 7 undefined on i
-nput line 1029.
-
-[7]
+</home/jason/disorder/si/alloy/si_cond_compare.eps> [7]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 1035.
 
@@ -646,10 +463,6 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 1035.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 8 undefined on inpu
-t line 1090.
 
 
 Underfull \hbox (badness 1629) in paragraph at lines 1075--1091
@@ -666,12 +479,100 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 1091.
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
+(./prb_vc_jl_112612.bbl [9]
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
 
-Package natbib Warning: Citation `esfarjani_heat_2011' on page 9 undefined on i
-nput line 1141.
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
+ []\OT1/cmr/m/n/9 B. Huang and M. Ka-viany, Acta Ma-te-ri-alia
+ []
 
-No file prb_vc_jl_112612.bbl.
-[9]
+
+Underfull \hbox (badness 7944) in paragraph at lines 54--61
+ \OT1/cmr/bx/n/9 58\OT1/cmr/m/n/9 , 4516  4526 (2010), ISSN 1359-6454, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article /
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 64--70
+ \OT1/cmr/m/n/9 Chem. \OT1/cmr/bx/n/9 21 \OT1/cmr/m/n/9 (2011), URL $\OT1/cmtt/
+m/n/9 http : / / dx . doi . org / 10 . 1039 /
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1533) in paragraph at lines 110--115
+ []\OT1/cmr/m/n/9 D. G. Cahill and F. Watan-abe, Phys. Rev. B \OT1/cmr/bx/n/9 7
+0\OT1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1721) in paragraph at lines 139--147
+ []\OT1/cmr/m/n/9 A. M. Bouchard, R. Biswas, W. A. Kami-taka-hara,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1571) in paragraph at lines 166--171
+ \OT1/cmr/m/n/9 59575962 (1977), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
+rg / doi / 10 .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1946) in paragraph at lines 216--220
+ []\OT1/cmr/m/n/9 N. d. Koker, Phys-i-cal Re-view Let-ters \OT1/cmr/bx/n/9 103\
+OT1/cmr/m/n/9 , 125902
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
+ []\OT1/cmr/m/n/9 B. Qiu, H. Bao, G. Zhang, Y. Wub, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
+ \OT1/cmr/m/n/9 X. Ruan, Com-pu-ta-tional Ma-te-ri-als Sci-ence \OT1/cmr/bx/n/9
+ 53\OT1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+)
 
 Package natbib Warning: There were undefined citations.
 
@@ -681,12 +582,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3504 strings out of 493849
- 42577 string characters out of 1152845
- 128520 words of memory out of 3000000
- 6731 multiletter control sequences out of 15000+50000
+ 3603 strings out of 493849
+ 45103 string characters out of 1152845
+ 146464 words of memory out of 3000000
+ 6825 multiletter control sequences out of 15000+50000
  14510 words of font info for 54 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,25n,26p,632b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,25n,27p,632b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_112612.dvi (10 pages, 59512 bytes).
+Output written on prb_vc_jl_112612.dvi (10 pages, 65624 bytes).
