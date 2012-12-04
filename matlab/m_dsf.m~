@@ -1,43 +1,53 @@
+clear
+lj = m_lj; constant = m_constant;
+str_af = '/home/jason/disorder2/lj/alloy/10K/0.05/4x/work/';
 
-lj = m_lj; constant = m_
+AF.eigvec = load(strcat(str_af,'AF_eigvec_1.dat'));
+AF.freq = load(strcat(str_af,'AF_freq_1.dat'));
+AF.x0 = m_x0_read(str_af,'x0.data');
 
-%alloy
-%AF.str = '/home/jason/disorder/lj/amor/4x/work/10K/';
-AF.str = '/home/jason/disorder/lj/amor/8x/work/';
-%AF.str = '/home/jason/disorder/lj/amor/10x/work/';
-%AF.str = '/home/jason/disorder/lj/amor/12x/work/';
+str_nmd = '/home/jason/disorder2/lj/alloy/10K/0.05/4x/NMD/1/work/';
+nmd = load([str_nmd 'NMDdata.mat']);
+sed = load([str_nmd 'SEDdata.mat']);
 
-NMD.Nx = 10; NMD.Ny = 10; NMD.Nz = 10; 
-NMD.alat = 1.5636;
+%100
+% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
+% AF.kpt(:,2) = 0;
+% AF.kpt(:,3) = 0;
+%110
+% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
+% AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
+% AF.kpt(:,3) = 0;
+%111
+% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
+% AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
+% AF.kpt(:,3) = [0.1 0.2 0.3 0.4 0.5]';
 
-AF.eigvec = load(strcat(AF.str,'AF_eigvec_1.dat'));
-AF.freq = load(strcat(AF.str,'AF_freq_1.dat'));
-AF.x0 = m_x0_read(AF.str,'x0.data');
 
-
-AF.kpt(:,1) = (0:0.1:1/2)'; 
-AF.kpt(:,2) = 0;AF.kpt(:,3) = 0;
-%convert to expected form
-AF.kpt(:,1) = AF.kpt(:,1) ;
-AF.kpt(:,2) = AF.kpt(:,2) ;
-AF.kpt(:,3) = AF.kpt(:,3) ;
-
+tic
 DSF =...
     m_dsf_long(...
-    AF.str , AF.kpt , AF.x0 , AF.freq, AF.eigvec, NMD.alat , 0.1 );
+    AF.str , AF.kpt , AF.x0 , AF.freq, AF.eigvec, NMD.alat , 1.0 , 1.1 );
 
 DSF =...
-   m_dsf_long( str , kpt , x0 , freqp, eigvec, alat , heav_fac, T, mass )
+    m_dsf_tran(...
+    AF.str , AF.kpt , AF.x0 , AF.freq, AF.eigvec, NMD.alat , 1.0 , 1.1 );
+
+% semilogx(...
+%     DSF.freq_range , DSF.EpL(:,1)/max(DSF.EpL(:,1)),...
+%     DSF.freq_range , DSF.EpL(:,3)/max(DSF.EpL(:,3)),...
+%     DSF.freq_range , DSF.EpL(:,5)/max(DSF.EpL(:,5))...
+%     )
+% %--------------------------------------------------------------------------
+% %pause
+% %--------------------------------------------------------------------------
+% semilogy(...
+%     DSF.freq_range,DSF.SL(:,1),...
+%     DSF.freq_range,DSF.SL(:,3),...
+%     DSF.freq_range,DSF.SL(:,5)...
+%     )
 
 
-% plot( DSF.kpt(:,1),DSF.dsf(1,:),'.' )
-% 
-% plot(...
-% DSF.freq,DSF.dsf(:,5)/max(DSF.dsf(:,5)),'.',...
-% DSF.freq,DSF.dsf(:,11)/max(DSF.dsf(:,11)),'.',...
-% DSF.freq,DSF.dsf(:,31)/max(DSF.dsf(:,31)),'.',...
-% DSF.freq,DSF.dsf(:,41)/max(DSF.dsf(:,41)),'.',...
-% DSF.freq,DSF.dsf(:,41)/max(DSF.dsf(:,41)),'.')
 
 
 

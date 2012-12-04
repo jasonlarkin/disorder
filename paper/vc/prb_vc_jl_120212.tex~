@@ -232,25 +232,16 @@ Carnegie Mellon University\\Pittsburgh, PA 15213}
 %--------------------------------------------------------------------------
 \begin{abstract}
 %--------------------------------------------------------------------------
-Accurately predicting the thermal conductivity of a dielectric or 
-semiconducting material requires the properties of phonons from the entire 
-Brillouin zone. Accurate predictions of phonon properties for bulk systems 
-can be made with anharmonic lattice dynamics theory using ab initio 
-calculations. However, computational costs limit the size of unit cells 
-in ab initio calculations to be less than 100 atoms, making it difficult 
-to directly incorporate the effects of disorder. Alternatively, theory 
-that treats disorder as a harmonic perturbation can be used to estimate 
-the reduction in phonon lifetimes due to disorder scattering without 
-the use of a large unit cell. Under this approximation, the disordered 
-crystal is replaced with a perfect “virtual crystal” with properties 
-equivalent to an averaging over the disorder (e.g.  mass or bond 
-strength). 
 In this work, the virtual crystal approximation for mass disorder is 
 evaluated by examining two model alloy systems: Lennard-Jones argon 
 and Stillinger-Weber silicon. In both cases the perfect crystal is 
-alloyed with a heavier mass species up to equal concentration . These 
+alloyed with a heavier mass species up to equal concentration. 
+ Phonon properties and thermal conductivity 
+are precited
+These 
 two alloyed systems have different ranges of phonon frequencies, 
-lifetimes, and mean free paths. For Stillinger-Weber silicon, the 
+lifetimes, and mean free paths.
+ For Stillinger-Weber silicon, the 
 virtual crystal approximation predicts phonon properties and thermal 
 conductivity in good agreement with molecular dynamics-based methods. 
 For Lennard-Jones argon, the virtual crystal approximation underpredicts 
@@ -269,6 +260,20 @@ by consindering methods which treat the disorder explicitly.
 %--------------------------------------------------------------------------
 \section{\label{S:Intro}Introduction}
 %--------------------------------------------------------------------------
+
+Accurately predicting the thermal conductivity of a dielectric or 
+semiconducting material requires the properties of phonons from the entire 
+Brillouin zone. Accurate predictions of phonon properties for bulk systems 
+can be made with anharmonic lattice dynamics theory using ab initio 
+calculations. However, computational costs limit the size of unit cells 
+in ab initio calculations to be less than 100 atoms, making it difficult 
+to directly incorporate the effects of disorder. Alternatively, theory 
+that treats disorder as a harmonic perturbation can be used to estimate 
+the reduction in phonon lifetimes due to disorder scattering without 
+the use of a large unit cell. Under this approximation, the disordered 
+crystal is replaced with a perfect “virtual crystal” with properties 
+equivalent to an averaging over the disorder (e.g.  mass or bond 
+strength). 
 
 For thermolectric device applications, minimizing a thermoelectric 
 material's thermal 
@@ -1072,14 +1077,6 @@ lifetimes follow closely the scalings with frequency which can be
 predicted by treating intrinsic and disorder scattering as 
 perturbations (Eq. ).
 
-For SW silicon, the low frequency modes dominate thermal transport 
-even in the heavily disordered alloy.(cite new Hopkins) 
-It is thus unsurprising that predictions for 
-SW silicon using VC-ALD agree well with VC-NMD and GK. This is also a 
-plausible explanation for the success of predictions using 
-VC-ALD and ab initio calculations compared to experiment for 
-``stiff'' systems (i.e. Si-Ge, GaN, and Diamond).(cite)
-
 In contrast, 
 in LJ argon the high frequency phonon mode properties are critical 
 to the thermal transport.(cite)  
@@ -1097,34 +1094,21 @@ VC-NMD, VC-ALD demonstrate the importance of explicit disorder
 modeling in ``soft'' systems and possible underprediction 
 of the thermal properties.\cite{tian_phonon_2012}
 
-
+For SW silicon, the low frequency modes dominate thermal transport 
+even in the heavily disordered alloy.(cite new Hopkins) 
+It is thus unsurprising that predictions for 
+SW silicon using VC-ALD agree well with VC-NMD and GK. This is also a 
+plausible explanation for the success of predictions using 
+VC-ALD and ab initio calculations compared to experiment for 
+``stiff'' systems (i.e. Si-Ge, GaN, and Diamond).(cite)
 
 In SW silicon even the amorphous phase has significant contributions 
 from propagating modes which can be considered to be phonons. This is 
 can seen by comparing the thermal conductivity predicted for the 
 SW silicon amorphous phase ($k_{GK} =$ 3 W/m-K (cite)) compared to 
 $k_{CP,HS} = $0.5 W/m-K.  For LJ argon in the amorphous phase, 
-$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K. Thus, a 
-good model for amorphous LJ argon has every vibrational mode's 
-thermal diffusivity $(1/3)v_sa$, the high-scatter limit.
-
-Considering the effects of explicit disorder involves finding the 
-eigenvalues of a system which is large enough to properly represent 
-the disorder. 
-
-VC-ALD is computationally cheap enough to allow predictions to be made 
-for a wide-range of materials with varying thermal conductivity.  While 
-
-In fact, by considering a simple lower limit for the thermal diffusitivty 
-of vibrational modes in disordered systems, corrections can be made to 
-VC-ALD (VC-ALD*).  
-
-For LJ, the agrement betwen VC-ALD* and other methods 
-which account for the disorder explicitly (VC-NMD, GK, direct-method) are 
-modest. 
-the relatively low computational cost makes it the only practical method 
-for use with ab initio calculations.(cite) 
-
+$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K, indicating that 
+all important modes to thermal transport are non-propagating.
 
 %--------------------------------------------------------------------------
 \section{\label{S:}Summary}

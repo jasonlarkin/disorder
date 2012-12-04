@@ -809,7 +809,7 @@ which posses no such ambiguity (such as VC-ALD and GK, see Section ).
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\subsection{\label{S:}Phonon Mode Diffusivity}
+\section{\label{S:}Phonon Mode Diffusivity}
 %--------------------------------------------------------------------------
 
 In the classical limit, where the specific heat $c_p\kv = k_{B}$, 
@@ -1072,6 +1072,14 @@ lifetimes follow closely the scalings with frequency which can be
 predicted by treating intrinsic and disorder scattering as 
 perturbations (Eq. ).
 
+For SW silicon, the low frequency modes dominate thermal transport 
+even in the heavily disordered alloy.(cite new Hopkins) 
+It is thus unsurprising that predictions for 
+SW silicon using VC-ALD agree well with VC-NMD and GK. This is also a 
+plausible explanation for the success of predictions using 
+VC-ALD and ab initio calculations compared to experiment for 
+``stiff'' systems (i.e. Si-Ge, GaN, and Diamond).(cite)
+
 In contrast, 
 in LJ argon the high frequency phonon mode properties are critical 
 to the thermal transport.(cite)  
@@ -1089,21 +1097,30 @@ VC-NMD, VC-ALD demonstrate the importance of explicit disorder
 modeling in ``soft'' systems and possible underprediction 
 of the thermal properties.\cite{tian_phonon_2012}
 
-For SW silicon, the low frequency modes dominate thermal transport 
-even in the heavily disordered alloy.(cite new Hopkins) 
-It is thus unsurprising that predictions for 
-SW silicon using VC-ALD agree well with VC-NMD and GK. This is also a 
-plausible explanation for the success of predictions using 
-VC-ALD and ab initio calculations compared to experiment for 
-``stiff'' systems (i.e. Si-Ge, GaN, and Diamond).(cite)
+
 
 In SW silicon even the amorphous phase has significant contributions 
 from propagating modes which can be considered to be phonons. This is 
 can seen by comparing the thermal conductivity predicted for the 
 SW silicon amorphous phase ($k_{GK} =$ 3 W/m-K (cite)) compared to 
 $k_{CP,HS} = $0.5 W/m-K.  For LJ argon in the amorphous phase, 
-$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K, indicating that 
-all important modes to thermal transport are non-propagating.
+$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K. Thus, a 
+good model for amorphous LJ argon has every vibrational mode's 
+thermal diffusivity $(1/3)v_sa$, the high-scatter limit.
+
+VC-ALD is computationally cheap enough to allow predictions to be made 
+for a wide-range of materials with varying thermal conductivity.  While 
+
+In fact, by considering a simple lower limit for the thermal diffusitivty 
+of vibrational modes in disordered systems, corrections can be made to 
+VC-ALD (VC-ALD*).  
+
+For LJ, the agrement betwen VC-ALD* and other methods 
+which account for the disorder explicitly (VC-NMD, GK, direct-method) are 
+modest. 
+the relatively low computational cost makes it the only practical method 
+for use with ab initio calculations.(cite) 
+
 
 %--------------------------------------------------------------------------
 \section{\label{S:}Summary}
