@@ -385,8 +385,6 @@ of VC-ALD because of the computational cost of ab initio calcualtions.
 Using empirical potentials, we study the effects of explicit 
 disorder (see Section ).
 
-
-
 For a perfect system, all vibrational modes are phonons. 
 Using the single-mode relaxation
 time approximation \cite{ziman_electrons_2001} as an approximate solution of
