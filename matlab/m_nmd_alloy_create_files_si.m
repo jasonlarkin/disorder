@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/alloy/0.05/22x/' ;
+    nmd.str.main = '/home/jason/disorder2/si/alloy/0.5/24x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -12,7 +12,7 @@ clear
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-    nmd.x0.Nx = 22; nmd.x0.Ny = 22; nmd.x0.Nz = 22;
+    nmd.x0.Nx = 24; nmd.x0.Ny = 24; nmd.x0.Nz = 24;
 %--------------------------------------------------------------------------
     nmd.x0.alloy_conc = 0.5;
 %--------------------------------------------------------------------------
@@ -213,139 +213,139 @@ str.write=...
 dlmwrite(str.write,output,'-append','delimiter','\t');
 
 
-for iseed=1:size(nmd.seed.initial,2)
-%lmp_ISEED.sh------------------------------------------------------  
-    orig(1).str = 'lmp.sh.tmp';
-    change(1).str = ['lmp' int2str(iseed) '.sh'];
-    orig(2).str = 'runpath';
-    change(2).str = nmd.str.main(1:end-1);
-    orig(3).str = 'LMP_TMP';
-    change(3).str = ['lmp.in.sed.' int2str(iseed)];
-    orig(4).str = 'lmp_tmp';
-    change(4).str = ['lmp' int2str(iseed) '.sh'];
-    
-    m_change_file_strings(...
-    [nmd.str.matlab 'lmp.sh.tmp'],...
-    orig,...
-    [nmd.str.main 'lmp' int2str(iseed) '.sh'],...
-    change);
-clear orig change
-%lmp.in.sed.iseed
-    orig(1).str = 'IN.X0';
-    change(1).str = ['lmp.in.x0'];
-    orig(2).str = 'LMP_TMP';
-    change(2).str = ['lmp.in.sed.' int2str(iseed)];
-    orig(3).str = 'IX0';
-    change(3).str = [int2str(nmd.x0.alloy_seed)];
-    orig(4).str = 'ISEED_TMP';
-    change(4).str = [int2str(iseed)];
-    orig(5).str = 'ISEED_TMP';
-    change(5).str = [int2str(iseed)];
-    orig(6).str = 'SEED_TMP';
-    change(6).str = [int2str(iseed) int2str(iseed) int2str(iseed)...
-        int2str(iseed) int2str(iseed)];
-    orig(7).str = 'T_STEP';
-    change(7).str = [num2str(nmd.t_step)];
-    orig(8).str = 'T_FFT';
-    change(8).str = [num2str(nmd.t_fft)];
-    orig(9).str = 'T_TOTAL';
-    change(9).str = [num2str(nmd.t_total)];
-    
-    
-    
-    m_change_file_strings(...
-    [nmd.str.matlab nmd.str.lmp_sed],...
-    orig,...
-    [nmd.str.main 'lmp.in.sed.' int2str(iseed)],...
-    change);
-clear orig change
-%lmp_submit.sh------------------------------------------------------------- 
-output =...
-    ['qsub -l walltime=' int2str(nmd.walltime.lammps)...
-    ':00:00 -l nodes=1:ppn=' int2str(nmd.cpu.lammps)...
-    ' lmp' int2str(iseed) '.sh'];
-    
-str.write = [nmd.str.main 'lmp_submit.sh'];
-dlmwrite(str.write,output,'-append','delimiter','');
-        
-end
-%--------------------------------------------------------------------------
-
-system(['cp ' nmd.str.matlab 'Si.sw ' nmd.str.main 'Si.sw']);
-
-%--------------------------------------------------------------------------
-%pause
-%--------------------------------------------------------------------------
-
-
-%--------------------------------------------------------------------------
-%MATLAB
-%-------------------------------------------------------------------------- 
-
-system(...
-    ['cp ' nmd.str.matlab 'nmd.submit.sh.tmp '...
-    nmd.str.main 'nmd_submit.sh']);
-
-for iseed=1:size(nmd.seed.initial,2)
-    for ikslice = 1:nmd.NUM_KSLICES
-%nmd_ISEED_IKSLICE.sh------------------------------------------------------        
-    orig(1).str = 'runpath';
-    change(1).str = strcat(nmd.str.main(1:end-1));
-    orig(2).str = 'nmd_TMP.m';
-    change(2).str = ['nmd_' int2str(iseed) '_' int2str(ikslice) '.m'];
-    
-    m_change_file_strings(...
-    [nmd.str.matlab 'nmd.sh.tmp'],...
-    orig,...
-    [nmd.str.main 'nmd_' int2str(iseed) '_' int2str(ikslice) '.sh'],...
-    change);
-        
-%nmd_ISEED_IKSLICE.m------------------------------------------------------- 
-    orig(1).str = 'AAAAA';
-    change(1).str = [int2str(iseed)];
-    orig(2).str = 'IKSLICE';
-    change(2).str = [int2str(ikslice)];
-    
-    m_change_file_strings(...
-    [nmd.str.matlab nmd.str.m_sed],...
-    orig,...
-    [nmd.str.main 'nmd_' int2str(iseed) '_' int2str(ikslice) '.m'],...
-    change);
-
-%nmd_submit.sh------------------------------------------------------------- 
-    output =...
-        ['qsub -l walltime=' int2str(nmd.walltime.matlab)...
-        ':00:00,nodes=' int2str(nmd.cpu.matlab)...
-        ',mem=' int2str(nmd.mem.matlab)...
-        'gb nmd_' int2str(iseed) '_' int2str(ikslice) '.sh'];
-    
-    str.write = strcat(nmd.str.main,'nmd_submit.sh');
-    dlmwrite(str.write,output,'-append','delimiter','');
-
-    end
-end
-%--------------------------------------------------------------------------
-%nmd_grep.m-------------------------------------------------------        
-system(...
-    ['cp ' nmd.str.matlab 'm_nmd_grep_vel.m.tmp '...
-    nmd.str.main 'nmd_grep.m']);
-orig(1).str = 'runpath';
-    change(1).str = strcat(nmd.str.main(1:end-1));
-    orig(2).str = 'nmd_TMP.m';
-    change(2).str = ['nmd_grep.m'];
-    m_change_file_strings(...
-    [nmd.str.matlab 'nmd.sh.tmp'],...
-    orig,...
-    [nmd.str.main 'nmd_grep.sh'],...
-    change);
-system(...
-    ['cp ' nmd.str.matlab 'nmd.submit.sh.tmp '...
-    nmd.str.main 'nmd_grep_submit.sh']);
-output =...
-        ['qsub -l walltime=1:00:00,nodes=' int2str(nmd.cpu.matlab)...
-        ',mem=2gb nmd_grep.sh'];
-str.write = strcat(nmd.str.main,'nmd_grep_submit.sh');
-dlmwrite(str.write,output,'-append','delimiter','');
+% for iseed=1:size(nmd.seed.initial,2)
+% %lmp_ISEED.sh------------------------------------------------------  
+%     orig(1).str = 'lmp.sh.tmp';
+%     change(1).str = ['lmp' int2str(iseed) '.sh'];
+%     orig(2).str = 'runpath';
+%     change(2).str = nmd.str.main(1:end-1);
+%     orig(3).str = 'LMP_TMP';
+%     change(3).str = ['lmp.in.sed.' int2str(iseed)];
+%     orig(4).str = 'lmp_tmp';
+%     change(4).str = ['lmp' int2str(iseed) '.sh'];
+%     
+%     m_change_file_strings(...
+%     [nmd.str.matlab 'lmp.sh.tmp'],...
+%     orig,...
+%     [nmd.str.main 'lmp' int2str(iseed) '.sh'],...
+%     change);
+% clear orig change
+% %lmp.in.sed.iseed
+%     orig(1).str = 'IN.X0';
+%     change(1).str = ['lmp.in.x0'];
+%     orig(2).str = 'LMP_TMP';
+%     change(2).str = ['lmp.in.sed.' int2str(iseed)];
+%     orig(3).str = 'IX0';
+%     change(3).str = [int2str(nmd.x0.alloy_seed)];
+%     orig(4).str = 'ISEED_TMP';
+%     change(4).str = [int2str(iseed)];
+%     orig(5).str = 'ISEED_TMP';
+%     change(5).str = [int2str(iseed)];
+%     orig(6).str = 'SEED_TMP';
+%     change(6).str = [int2str(iseed) int2str(iseed) int2str(iseed)...
+%         int2str(iseed) int2str(iseed)];
+%     orig(7).str = 'T_STEP';
+%     change(7).str = [num2str(nmd.t_step)];
+%     orig(8).str = 'T_FFT';
+%     change(8).str = [num2str(nmd.t_fft)];
+%     orig(9).str = 'T_TOTAL';
+%     change(9).str = [num2str(nmd.t_total)];
+%     
+%     
+%     
+%     m_change_file_strings(...
+%     [nmd.str.matlab nmd.str.lmp_sed],...
+%     orig,...
+%     [nmd.str.main 'lmp.in.sed.' int2str(iseed)],...
+%     change);
+% clear orig change
+% %lmp_submit.sh------------------------------------------------------------- 
+% output =...
+%     ['qsub -l walltime=' int2str(nmd.walltime.lammps)...
+%     ':00:00 -l nodes=1:ppn=' int2str(nmd.cpu.lammps)...
+%     ' lmp' int2str(iseed) '.sh'];
+%     
+% str.write = [nmd.str.main 'lmp_submit.sh'];
+% dlmwrite(str.write,output,'-append','delimiter','');
+%         
+% end
+% %--------------------------------------------------------------------------
+% 
+% system(['cp ' nmd.str.matlab 'Si.sw ' nmd.str.main 'Si.sw']);
+% 
+% %--------------------------------------------------------------------------
+% %pause
+% %--------------------------------------------------------------------------
+% 
+% 
+% %--------------------------------------------------------------------------
+% %MATLAB
+% %-------------------------------------------------------------------------- 
+% 
+% system(...
+%     ['cp ' nmd.str.matlab 'nmd.submit.sh.tmp '...
+%     nmd.str.main 'nmd_submit.sh']);
+% 
+% for iseed=1:size(nmd.seed.initial,2)
+%     for ikslice = 1:nmd.NUM_KSLICES
+% %nmd_ISEED_IKSLICE.sh------------------------------------------------------        
+%     orig(1).str = 'runpath';
+%     change(1).str = strcat(nmd.str.main(1:end-1));
+%     orig(2).str = 'nmd_TMP.m';
+%     change(2).str = ['nmd_' int2str(iseed) '_' int2str(ikslice) '.m'];
+%     
+%     m_change_file_strings(...
+%     [nmd.str.matlab 'nmd.sh.tmp'],...
+%     orig,...
+%     [nmd.str.main 'nmd_' int2str(iseed) '_' int2str(ikslice) '.sh'],...
+%     change);
+%         
+% %nmd_ISEED_IKSLICE.m------------------------------------------------------- 
+%     orig(1).str = 'AAAAA';
+%     change(1).str = [int2str(iseed)];
+%     orig(2).str = 'IKSLICE';
+%     change(2).str = [int2str(ikslice)];
+%     
+%     m_change_file_strings(...
+%     [nmd.str.matlab nmd.str.m_sed],...
+%     orig,...
+%     [nmd.str.main 'nmd_' int2str(iseed) '_' int2str(ikslice) '.m'],...
+%     change);
+% 
+% %nmd_submit.sh------------------------------------------------------------- 
+%     output =...
+%         ['qsub -l walltime=' int2str(nmd.walltime.matlab)...
+%         ':00:00,nodes=' int2str(nmd.cpu.matlab)...
+%         ',mem=' int2str(nmd.mem.matlab)...
+%         'gb nmd_' int2str(iseed) '_' int2str(ikslice) '.sh'];
+%     
+%     str.write = strcat(nmd.str.main,'nmd_submit.sh');
+%     dlmwrite(str.write,output,'-append','delimiter','');
+% 
+%     end
+% end
+% %--------------------------------------------------------------------------
+% %nmd_grep.m-------------------------------------------------------        
+% system(...
+%     ['cp ' nmd.str.matlab 'm_nmd_grep_vel.m.tmp '...
+%     nmd.str.main 'nmd_grep.m']);
+% orig(1).str = 'runpath';
+%     change(1).str = strcat(nmd.str.main(1:end-1));
+%     orig(2).str = 'nmd_TMP.m';
+%     change(2).str = ['nmd_grep.m'];
+%     m_change_file_strings(...
+%     [nmd.str.matlab 'nmd.sh.tmp'],...
+%     orig,...
+%     [nmd.str.main 'nmd_grep.sh'],...
+%     change);
+% system(...
+%     ['cp ' nmd.str.matlab 'nmd.submit.sh.tmp '...
+%     nmd.str.main 'nmd_grep_submit.sh']);
+% output =...
+%         ['qsub -l walltime=1:00:00,nodes=' int2str(nmd.cpu.matlab)...
+%         ',mem=2gb nmd_grep.sh'];
+% str.write = strcat(nmd.str.main,'nmd_grep_submit.sh');
+% dlmwrite(str.write,output,'-append','delimiter','');
 
 %--------------------------------------------------------------------------
 %SAVE nmd structure--------------------------------------------------------  
