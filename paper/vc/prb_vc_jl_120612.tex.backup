@@ -1472,7 +1472,8 @@ simulation and large-matrix eigenvalue solution present real challenges
 when used with ab initio calculations.(cite)
 
 Consider the following computational times for the methods used in 
-this work for LJ argon and $N_0 = 12$:
+this work for LJ argon and $N_0 = 12$. Results include the effect of using 
+multiple processors, for example the VC-ALD calculations were 
 
 LJ ALD time = 49.2 hours?
 
@@ -1480,10 +1481,9 @@ LJ VC-NMD time =
 
 (24 (MD) + <1 (HLD)) hours * 100 cpu = 2400 cpu hour ?
 
-LJ VC-Gamma = MD simulation + eigenvalue solution
+LJ VC-Gamma = MD simulation + eigenvalue solution =  + 3.8 hours
 
-AF = 
-
+AF = eigenvalue solution + thermal diffusivity calculation = 4.2 hours
 
 
 

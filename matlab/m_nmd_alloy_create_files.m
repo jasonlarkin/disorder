@@ -8,7 +8,7 @@ clear
     nmd.str.gulp = 'gulp_disp_lj_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
     nmd.str.lmp_sed = 'lmp.in.sed.lj.tmp';
-    nmd.str.m_sed = 'm_nmd_sed_si.m.tmp';
+    nmd.str.m_sed = 'm_nmd_sed_lj.m.tmp';
 %--------------------------------------------------------------------------
 
 %alat=1.58
@@ -215,7 +215,9 @@ m_change_file_strings(...
     [nmd.str.main 'lmp.in.x0'],...
     change)
 clear orig change
-          
+%output a simple text file with atomic coords:
+% atom_id mass x y z
+%see the following example: ~/disorder/lj/alloy/10K/0.5/4x/x0.data
 output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
 str.write=...
     [nmd.str.main 'lmp.in.x0'];

@@ -1461,7 +1461,9 @@ VC-NMD and VC-ALD require the eigenvalue solution of a Dynamical matrix
 of size $(3n,3n)$ for each irreducible wavevector of the system size 
 considered (Section ).(cite) For VC-ALD, the calculation of the phonon 
 lifetimes scales as $n^4$,\cite{turney_predicting_2009}  
-making calcualtions for large unit cells challenging.(cite) 
+making calcualtions for large unit cells challenging.(cite) Compared to 
+the calculation of 
+
 The Gamma-NMD (Section ) and AF theory (Section ) 
 require the eigenvalue solution of a large Dynamical matrix $(3N_a,3N_a)$, 
 the solution of which scales as $(3N_a)^3$ (Section ). 
@@ -1472,8 +1474,10 @@ simulation and large-matrix eigenvalue solution present real challenges
 when used with ab initio calculations.(cite)
 
 Consider the following computational times for the methods used in 
-this work for LJ argon and $N_0 = 12$. Results include the effect of using 
-multiple processors, for example the VC-ALD calculations were 
+this work for LJ argon and $N_0 = 12$. All calculations were performed 
+on the same computing cluster and include the effect of using 
+multiple processors (for example the VC-ALD calculations were run using 
+12 cpu for 4.1 hours):
 
 LJ ALD time = 49.2 hours?
 

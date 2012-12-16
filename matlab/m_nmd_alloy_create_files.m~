@@ -3,29 +3,25 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/lj/alloy/40K/0.0/4x/NMD/' ;
+    nmd.str.main = '/home/jason/disorder2/lj/alloy/40K/0.5/14x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_lj_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
     nmd.str.lmp_sed = 'lmp.in.sed.lj.tmp';
-    nmd.str.m_sed = 'm_nmd_sed_si.m.tmp';
+    nmd.str.m_sed = 'm_nmd_sed_lj.m.tmp';
 %--------------------------------------------------------------------------
 
-
-
-
-
-    alat = 1.58;
+%alat=1.58
+%alat = 1.556;
+    
+    alat=1.58;
     nmd.x0.alat = alat(1,1);
 
 
-
-
-
 %--------------------------------------------------------------------------
-    nmd.x0.Nx = 4; nmd.x0.Ny = 4; nmd.x0.Nz = 4;
+    nmd.x0.Nx = 14; nmd.x0.Ny = 14; nmd.x0.Nz = 14;
 %--------------------------------------------------------------------------
-    nmd.x0.alloy_conc = 0.0;
+    nmd.x0.alloy_conc = 0.5;
 %--------------------------------------------------------------------------
     nmd.x0.mass(1) = 1.0; nmd.x0.mass(2) = 3.0; 
     nmd.x0.NUM_ATOMS_TYPE = 1;
@@ -43,7 +39,7 @@ clear
     nmd.x0.alloy_seed = 1;
     nmd.seed.initial = 1:10;
 %--------------------------------------------------------------------------
-    nmd.si = m_si;
+    nmd.lj = m_lj;
 %-------------------------------------------------------------------------- 
 %sed parameters   
 %-------------------------------------------------------------------------- 
@@ -152,18 +148,18 @@ kpt = nmd.kptmaster(ikpt,:)./[nmd.x0.Nx nmd.x0.Ny nmd.x0.Nz];
 
     eigvec =...
         m_gulp_eig_lj(...
-        kpt,nmd.x0.NUM_ATOMS_UCELL,nmd.lj.mass*nmd.x0.vm,...
-	nmd.x0.alat*nmd.lj.sigma,...
+        kpt,nmd.x0.NUM_ATOMS_UCELL,nmd.lj.mass_au*nmd.x0.vm,...
+	nmd.x0.alat*nmd.lj.sigma/nmd.constant.ang2m,...
         nmd.str.main,nmd.str.matlab,nmd.str.gulp);
     freq =...
         m_gulp_freq_lj(...
-        kpt,nmd.x0.NUM_ATOMS_UCELL,nmd.lj.mass*nmd.x0.vm,...
-	nmd.x0.alat*nmd.lj.sigma,...
+        kpt,nmd.x0.NUM_ATOMS_UCELL,nmd.lj.mass_au*nmd.x0.vm,...
+	nmd.x0.alat*nmd.lj.sigma/nmd.constant.ang2m,...
         nmd.str.main,nmd.str.matlab,nmd.str.gulp);
     vel =...
         m_gulp_vel_lj(...
-        kpt,nmd.x0.NUM_ATOMS_UCELL,nmd.lj.mass*nmd.x0.vm,...
-	nmd.x0.alat*nmd.lj.sigma,...
+        kpt,nmd.x0.NUM_ATOMS_UCELL,nmd.lj.mass_au*nmd.x0.vm,...
+	nmd.x0.alat*nmd.lj.sigma/nmd.constant.ang2m,...
         nmd.str.main,nmd.str.matlab,nmd.str.gulp);
 %Output formatted eigvec		
     str.write=...
@@ -211,7 +207,7 @@ change(4).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
 orig(5).str = 'LZ';
 change(5).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
 orig(6).str = 'ATOM_MASS_1';
-change(6).str = num2str(nmd.x0.mass(1)*nmd.si.mass);
+change(6).str = num2str(nmd.x0.mass(1)*nmd.lj.mass);
 
 m_change_file_strings(...
     [nmd.str.matlab nmd.str.lmp_in],...
@@ -219,7 +215,9 @@ m_change_file_strings(...
     [nmd.str.main 'lmp.in.x0'],...
     change)
 clear orig change
-          
+%output a simple text file with atomic coords:
+% atom_id mass x y z
+%see the following example: 
 output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
 str.write=...
     [nmd.str.main 'lmp.in.x0'];
