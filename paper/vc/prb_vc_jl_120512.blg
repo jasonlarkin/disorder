@@ -3,49 +3,50 @@ The top-level auxiliary file: prb_vc_jl_120512.aux
 The style file: apsrev.bst
 Database file #1: /home/jason/Dropbox/book/ntpl-120512.bib
 Warning--I didn't find a database entry for "thermal_shiomi_2011"
+Warning--I didn't find a database entry for "cahill_thermal_2004cahill_thermal_2005"
+Warning--I didn't find a database entry for "mcgaughey"
 Warning--I didn't find a database entry for "mcgaughey2006b"
 Warning--I didn't find a database entry for "chen_molecular-dynamics_2000"
-Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
-You've used 33 entries,
+You've used 44 entries,
             3411 wiz_defined-function locations,
-            1364 strings with 16902 characters,
-and the built_in function-call counts, 24222 in all, are:
-= -- 1402
-> -- 781
-< -- 113
-+ -- 644
-- -- 192
-* -- 3268
-:= -- 2606
-add.period$ -- 33
-call.type$ -- 33
-change.case$ -- 133
-chr.to.int$ -- 33
-cite$ -- 33
-duplicate$ -- 2068
-empty$ -- 2054
-format.name$ -- 477
-if$ -- 4672
-int.to.chr$ -- 1
-int.to.str$ -- 34
-missing$ -- 324
-newline$ -- 114
-num.names$ -- 99
-pop$ -- 532
+            1430 strings with 19118 characters,
+and the built_in function-call counts, 32566 in all, are:
+= -- 1884
+> -- 1072
+< -- 152
++ -- 879
+- -- 262
+* -- 4434
+:= -- 3484
+add.period$ -- 44
+call.type$ -- 44
+change.case$ -- 177
+chr.to.int$ -- 43
+cite$ -- 44
+duplicate$ -- 2798
+empty$ -- 2743
+format.name$ -- 658
+if$ -- 6266
+int.to.chr$ -- 2
+int.to.str$ -- 45
+missing$ -- 436
+newline$ -- 147
+num.names$ -- 132
+pop$ -- 718
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 176
 quote$ -- 0
-skip$ -- 980
+skip$ -- 1299
 stack$ -- 0
-substring$ -- 1085
-swap$ -- 1640
-text.length$ -- 96
+substring$ -- 1401
+swap$ -- 2238
+text.length$ -- 131
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 190
+type$ -- 256
 warning$ -- 0
-while$ -- 93
+while$ -- 126
 width$ -- 0
-write$ -- 359
-(There were 4 warnings)
+write$ -- 474
+(There were 5 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{44}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -124,6 +124,23 @@
   \bibinfo{pages}{235322} (\bibinfo{year}{2004}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.235322}.
 
+\bibitem[{\citenamefont{Kamitakahara and
+  Brockhouse}(1974)}]{kamitakahara_vibrations_1974}
+\bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.~N.}
+  \bibnamefont{Brockhouse}}, \bibinfo{journal}{Phys. Rev. B}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{1200–1212}
+  (\bibinfo{year}{1974}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.10.1200}.
+
+\bibitem[{\citenamefont{Momma and Izumi}(2008)}]{momma_vesta:_2008}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Momma}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Izumi}},
+  \bibinfo{journal}{Journal of Applied Crystallography}
+  \textbf{\bibinfo{volume}{41}}, \bibinfo{pages}{653–658}
+  (\bibinfo{year}{2008}),
+  \urlprefix\url{http://dx.doi.org/10.1107/S0021889808012016}.
+
 \bibitem[{\citenamefont{Ziman}(2001)}]{ziman_electrons_2001}
 \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Ziman}},
   \emph{\bibinfo{title}{Electrons and Phonons}} (\bibinfo{publisher}{Oxford,
@@ -138,6 +155,28 @@
 \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{{McQuarrie}}},
   \emph{\bibinfo{title}{Statistical Mechanics}} (\bibinfo{publisher}{University
   Science Books, Sausalito}, \bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Dove}(1993)}]{dove_introduction_1993}
+\bibinfo{author}{\bibfnamefont{M.~T.} \bibnamefont{Dove}},
+  \emph{\bibinfo{title}{Introduction to Lattice Dynamics}}
+  (\bibinfo{publisher}{Cambridge, Cambridge}, \bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Goicochea et~al.}(2010)\citenamefont{Goicochea, Madrid,
+  and Amon}}]{goicochea_thermal_2010}
+\bibinfo{author}{\bibfnamefont{J.~V.} \bibnamefont{Goicochea}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Madrid}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{132}},
+  \bibinfo{pages}{012401} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Sellan et~al.}(2010)\citenamefont{Sellan, Turney,
+  {McGaughey}, and Amon}}]{sellan_cross-plane_2010}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Sellan}},
+  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{108}},
+  \bibinfo{pages}{113524} (\bibinfo{year}{2010}).
 
 \bibitem[{\citenamefont{Gale and Rohl}(2003)}]{gale_general_2003}
 \bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{Gale}} \bibnamefont{and}
@@ -168,17 +207,48 @@
   (\bibinfo{year}{2011}),
   \urlprefix\url{http://stacks.iop.org/0953-8984/23/i=20/a=205401}.
 
-\bibitem[{\citenamefont{Qiu et~al.}(2011)\citenamefont{Qiu, Bao, Zhang, Wub,
-  and Ruan}}]{qiu_molecular_2011}
-\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Qiu}},
-  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Bao}},
-  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Zhang}},
-  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Wub}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Ruan}},
-  \bibinfo{journal}{Computational Materials Science}
-  \textbf{\bibinfo{volume}{53}},
-  \bibinfo{pages}{278{\textbackslash}textbackslashtextbackslash96285}
-  (\bibinfo{year}{2011}).
+\bibitem[{\citenamefont{Donadio and Galli}(2009)}]{donadio_atomistic_2009}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{102}},
+  \bibinfo{pages}{195901} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{He et~al.}(2011{\natexlab{a}})\citenamefont{He,
+  Donadio, and Galli}}]{he_heat_2011}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{98}},
+  \bibinfo{pages}{144101} (\bibinfo{year}{2011}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{He et~al.}(2011{\natexlab{b}})\citenamefont{He,
+  Donadio, Lee, Grossman, and Galli}}]{he_thermal_2011}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}},
+  \bibinfo{author}{\bibfnamefont{J.-H.} \bibnamefont{Lee}},
+  \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Grossman}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{{ACS} Nano} \textbf{\bibinfo{volume}{5}},
+  \bibinfo{pages}{1839\{\textbackslash\}961844}
+  (\bibinfo{year}{2011}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Allen et~al.}(1999)\citenamefont{Allen, Feldman,
+  Fabian, and Wooten}}]{allen_diffusons_1999}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Fabian}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wooten}},
+  \bibinfo{journal}{Philosophical Magazine B} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{1715} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Taraskin and
+  Elliott}(1999)}]{taraskin_determination_1999}
+\bibinfo{author}{\bibfnamefont{S.~N.} \bibnamefont{Taraskin}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Elliott}},
+  \bibinfo{journal}{Philosophical Magazine Part B}
+  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{1747–1754}
+  (\bibinfo{year}{1999}),
+  \urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/13642819908223057}.
 
 \bibitem[{\citenamefont{Thomas et~al.}(2010)\citenamefont{Thomas, Turney,
   Iutzi, Amon, and {McGaughey}}}]{thomas_predicting_2010}
@@ -198,10 +268,18 @@
   \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{84}},
   \bibinfo{pages}{165418} (\bibinfo{year}{2011}).
 
-\bibitem[{\citenamefont{Srivastava}(1990)}]{srivastava_physics_1990}
-\bibinfo{author}{\bibfnamefont{G.~P.} \bibnamefont{Srivastava}},
-  \emph{\bibinfo{title}{The Physics of Phonons}} (\bibinfo{publisher}{Adam
-  Hilger, Bristol}, \bibinfo{year}{1990}).
+\bibitem[{\citenamefont{Qiu et~al.}(2012)\citenamefont{Qiu, Bao, Zhang, Wu, and
+  Ruan}}]{qiu_molecular_2012}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Qiu}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Bao}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Zhang}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Wu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Ruan}},
+  \bibinfo{journal}{Computational Materials Science}
+  \textbf{\bibinfo{volume}{53}}, \bibinfo{pages}{278 } (\bibinfo{year}{2012}),
+  ISSN \bibinfo{issn}{0927-0256},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S09270256110%
+04770}.
 
 \bibitem[{\citenamefont{Turney}(2009)}]{turney_predicting_2009}
 \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
@@ -239,24 +317,11 @@
   \bibinfo{pages}{113524} (\bibinfo{year}{2008}),
   \urlprefix\url{http://link.aip.org/link/?JAP/103/113524/1}.
 
-\bibitem[{\citenamefont{Cahill et~al.}(2005)\citenamefont{Cahill, Watanabe,
-  Rockett, and Vining}}]{cahill_thermal_2005}
-\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
-  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Watanabe}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rockett}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{C.~B.} \bibnamefont{Vining}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{71}},
-  \bibinfo{pages}{235202} (\bibinfo{year}{2005}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.71.235202}.
-
-\bibitem[{\citenamefont{Kamitakahara and
-  Brockhouse}(1974)}]{kamitakahara_vibrations_1974}
-\bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}}
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.~N.}
-  \bibnamefont{Brockhouse}}, \bibinfo{journal}{Phys. Rev. B}
-  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{1200–1212}
-  (\bibinfo{year}{1974}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.10.1200}.
+\bibitem[{\citenamefont{Allen and Feldman}(1993)}]{allen_thermal_1993}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{12581–12588} (\bibinfo{year}{1993}).
 
 \bibitem[{\citenamefont{Cahill and Pohl}(1988)}]{cahill_lattice_1988}
 \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Cahill}} \bibnamefont{and}
@@ -264,6 +329,26 @@
   \bibinfo{journal}{Annual Review of Physical Chemistry}
   \textbf{\bibinfo{volume}{39}}, \bibinfo{pages}{93–121}
   (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{Feldman et~al.}(1993)\citenamefont{Feldman, Kluge,
+  Allen, and Wooten}}]{feldman_thermal_1993}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{M.~D.} \bibnamefont{Kluge}},
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wooten}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{12589–12602} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Shenogin et~al.}(2009)\citenamefont{Shenogin, Bodapati,
+  Keblinski, and {McGaughey}}}]{shenogin_predicting_2009}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shenogin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodapati}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Keblinski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
+  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Journal of Applied Physics}
+  \textbf{\bibinfo{volume}{105}}, \bibinfo{pages}{034906}
+  (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/105/034906/1}.
 
 \bibitem[{\citenamefont{Duda et~al.}(2012)\citenamefont{Duda, English, Jordan,
   Norris, and Soffa}}]{duda_controlling_2012}
@@ -274,6 +359,16 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Soffa}},
   \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{134}},
   \bibinfo{pages}{014501} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Cahill et~al.}(2005)\citenamefont{Cahill, Watanabe,
+  Rockett, and Vining}}]{cahill_thermal_2005}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Watanabe}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rockett}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~B.} \bibnamefont{Vining}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{71}},
+  \bibinfo{pages}{235202} (\bibinfo{year}{2005}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.71.235202}.
 
 \bibitem[{\citenamefont{Esfarjani et~al.}(2011)\citenamefont{Esfarjani, Chen,
   and Stokes}}]{esfarjani_heat_2011}
