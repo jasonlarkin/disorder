@@ -217,7 +217,7 @@ m_change_file_strings(...
 clear orig change
 %output a simple text file with atomic coords:
 % atom_id mass x y z
-%see the following example: 
+%see the following example: ~/disorder/lj/alloy/10K/0.5/4x/x0.data
 output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
 str.write=...
     [nmd.str.main 'lmp.in.x0'];
