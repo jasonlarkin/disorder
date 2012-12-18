@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  18 DEC 2012 14:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  18 DEC 2012 15:49
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_120612.tex
@@ -145,8 +145,8 @@ LaTeX Info: Redefining \] on input line 2667.
 File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
 n)
 )
-(/usr/share/texmf-texlive/tex/latex/revtex4/10pt.rtx
-File: 10pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+(/usr/share/texmf-texlive/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
 on)
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
@@ -274,18 +274,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 255.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
+) [1]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
 
 
-LaTeX Warning: Reference `' on page 1 undefined on input line 304.
+LaTeX Warning: Reference `' on page 2 undefined on input line 304.
 
-[1]
+[2] [3]
 File: /home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps Graphic file (type e
 ps)
  </home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps>
@@ -294,86 +294,34 @@ s)
 
 </home/jason/disorder/si/si_conv_2x2x2_perfect-2.eps>
 
-LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 2 undefined on i
+LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 4 undefined on i
 nput line 455.
 
 
-LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 2 undefined on i
+LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 4 undefined on i
 nput line 455.
 
-
-Underfull \hbox (badness 2229) in paragraph at lines 466--472
-[]\OT1/cmr/m/n/10 For a per-fect lat-tice, all vi-bra-tional modes are
- []
-
-
-Underfull \hbox (badness 1960) in paragraph at lines 496--513
-[]\OT1/cmr/m/n/10 For dis-or-dered sys-tems, the Allen-Feldman (AF)
- []
-
-[2]
+[4] [5]
 
 LaTeX Warning: Command \r invalid in math mode on input line 552.
 
 
-LaTeX Warning: Reference `S:vc_gamma_dos' on page 3 undefined on input line 585
+LaTeX Warning: Reference `S:vc_gamma_dos' on page 6 undefined on input line 585
 .
 
+[6]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps Graphic file (type
  eps)
-</home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps>
-Overfull \hbox (4.53694pt too wide) in paragraph at lines 622--624
- [] 
- []
-
-[3]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 672.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 672.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 744--774
-[]\OT1/cmr/m/n/10 Physically, $\OML/cmm/m/it/10 S[]  []$ \OT1/cmr/m/n/10 cal-cu
--lates the fre-quency spec-
- []
-
+ </home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps> [7] [8] [9]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps Graphic file (type
  eps)
-</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps>
-Overfull \hbox (3.73395pt too wide) in paragraph at lines 779--781
- [] 
- []
 
-[4]
+</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps> [10] [11]
 File: /home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps Graphic fi
 le (type eps)
- </home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps>
-Overfull \hbox (0.92249pt too wide) in paragraph at lines 870--872
- [] 
- []
 
-[5]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 902.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 902.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 7012) in paragraph at lines 902--915
-[]\OT1/cmr/m/n/10 Phonon-phonon scat-ter-ing ($\OML/cmm/m/it/10 ^^\[]  []$\OT1/
-cmr/m/n/10 ) is typ-i-cally
- []
-
-[6]
+</home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps> [12] [13]
+[14]
 File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps Graphic 
 file (type eps)
  </home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps>
@@ -381,279 +329,143 @@ File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps Graphic
 file (type eps)
 
 </home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps>
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ∂ in font cmr10!
- [7]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1122.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1122.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-
-Underfull \hbox (badness 1019) in paragraph at lines 1189--1217
-\OT1/cmr/m/n/10 is ca-pa-ble of ac-cu-rately pre-dict-ing a fi-nite ther-mal
- []
-
-
-Underfull \hbox (badness 1728) in paragraph at lines 1220--1227
-[]\OT1/cmr/m/n/10 We now com-pare the phonon mode dif-fusitivies,
- []
-
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+ [15]
+[16]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no ë in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no ë in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no ë in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no ë in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no í in font cmr12!
+ [17] [18]
 File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps Graphic file (type 
 eps)
-</home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps>
-Overfull \hbox (40.06874pt too wide) in paragraph at lines 1232--1234
- [] 
- []
-
-[8]
+ </home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps> [19]
 File: /home/jason/disorder/lj/alloy/lj_cond_compare.eps Graphic file (type eps)
 
- </home/jason/disorder/lj/alloy/lj_cond_compare.eps>
+
+</home/jason/disorder/lj/alloy/lj_cond_compare.eps>
 File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
 
 
-</home/jason/disorder/si/alloy/si_cond_compare.eps> [9]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1329.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1329.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-
-Package natbib Warning: Citation `henry_ehrenreich_thermal_1979' on page 10 und
-efined on input line 1376.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no î in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-
-Underfull \hbox (badness 1490) in paragraph at lines 1426--1428
-[]\OT1/cmr/m/n/10 While , the ef-fect of ex-plicit dis-or-der has been
- []
-
-[10]
-Underfull \hbox (badness 1629) in paragraph at lines 1472--1488
-\OT1/cmr/m/n/10 mode prop-er-ties are crit-i-cal to the ther-mal trans-
- []
-
-[11]
+</home/jason/disorder/si/alloy/si_cond_compare.eps>
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+ [20] [21]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no î in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no ë in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no Õ in font cmr12!
+Missing character: There is no í in font cmr12!
+ [22] [23]
+[24] [25] [26]
 File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps Graphic file (ty
 pe eps)
  </home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps>
 
-LaTeX Warning: Reference `EQ:M:SLT' on page 12 undefined on input line 1728.
+LaTeX Warning: Reference `EQ:M:SLT' on page 27 undefined on input line 1728.
 
-[12]
-Underfull \hbox (badness 3354) in paragraph at lines 1744--1757
-[]\OT1/cmr/m/n/10 For the range of broad-en-ing fac-tors con-sid-ered
- []
-
-(./prb_vc_jl_120612.bbl [13]
-Underfull \hbox (badness 4467) in paragraph at lines 16--21
- []\OT1/cmr/m/n/9 A. Ward and D. A. Broido, Phys. Rev. B \OT1/cmr/bx/n/9 81\OT1
-/cmr/m/n/9 ,
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 86--90
- []\OT1/cmr/m/n/9 N. d. Koker, Phys-i-cal Re-view Let-ters \OT1/cmr/bx/n/9 103\
-OT1/cmr/m/n/9 , 125902
- []
-
-
-Underfull \hbox (badness 2443) in paragraph at lines 93--102
- []\OT1/cmr/m/n/9 H. Bao, B. Qiu, Y. Zhang, and X. Ruan, Jour-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--102
- \OT1/cmr/m/n/9 nal of Quan-ti-ta-tive Spec-troscopy and Ra-dia-tive
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 93--102
- \OT1/cmr/m/n/9 Trans-fer \OT1/cmr/bx/n/9 113\OT1/cmr/m/n/9 , 1683  (2012), ISS
-N 0022-4073, URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--102
- \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article / pii
- /
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1533) in paragraph at lines 116--121
- []\OT1/cmr/m/n/9 D. G. Cahill and F. Watan-abe, Phys. Rev. B \OT1/cmr/bx/n/9 7
-0\OT1/cmr/m/n/9 ,
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1721) in paragraph at lines 219--227
- []\OT1/cmr/m/n/9 A. M. Bouchard, R. Biswas, W. A. Kami-taka-hara,
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
+[27] [28] (./prb_vc_jl_120612.bbl [29]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [30]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 272.
+
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 272.
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1571) in paragraph at lines 331--336
- \OT1/cmr/m/n/9 59575962 (1977), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
-rg / doi / 10 .
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--372
- \OT1/cmtt/m/n/9 http : / / www . sciencemag . org / content / 253 / 5019 / 539
- .
- []
-
-[14]
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--440
- []\OT1/cmr/m/n/9 S. Plimp-ton, Jour-nal of Com-pu-ta-tional Physics
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--440
- \OT1/cmr/bx/n/9 117\OT1/cmr/m/n/9 , 1  (1995), ISSN 0021-9991, URL $\OT1/cmtt/
-m/n/9 http :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--440
- \OT1/cmtt/m/n/9 / / www . sciencedirect . com / science / article / pii /
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 499--509
- []\OT1/cmr/m/n/9 B. Qiu, H. Bao, G. Zhang, Y. Wu, and X. Ruan,
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 499--509
- \OT1/cmr/m/n/9 Com-pu-ta-tional Ma-te-ri-als Sci-ence \OT1/cmr/bx/n/9 53\OT1/c
-mr/m/n/9 , 278  (2012),
- []
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-[15] (./prb_vc_jl_120612.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [31]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [32]) [33]
+(./prb_vc_jl_120612.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -662,12 +474,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3733 strings out of 493849
- 48478 string characters out of 1152845
- 137285 words of memory out of 3000000
- 6951 multiletter control sequences out of 15000+50000
- 14510 words of font info for 54 fonts, out of 3000000 for 9000
+ 3736 strings out of 493849
+ 48585 string characters out of 1152845
+ 128010 words of memory out of 3000000
+ 6955 multiletter control sequences out of 15000+50000
+ 16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,25n,32p,1485b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,25n,32p,1485b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_120612.dvi (15 pages, 106912 bytes).
+Output written on prb_vc_jl_120612.dvi (33 pages, 99776 bytes).

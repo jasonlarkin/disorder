@@ -561,7 +561,7 @@ are the sqaure root of the
 eigenvalues of the system's Dynamical matrix,
 $D(\mathbf{\kappa})$,\cite{dove_introduction_1993}  
 which relates the normal mode eigenvector ($e\kvba$) 
-and eigenvalue by
+and eigenvalue by (get rid of ba alpha in eigenvextor)
 \begin{equation}\label{EQ:Dynamical}
 D(\mathbf{\kappa}) e\kvba = \omega^2\kv e\kvba.
 \end{equation}
@@ -658,7 +658,7 @@ nano and micro-nanostructuring effects.(cite) Predicting
 group velocities in disordered systems is just as crucial as 
 predicting mode lifetimes.
 
-Sound speeds of alloys: can't find any good references.
+Sound speeds of alloys: can't find any good references. (Cahill-Pohl).
 
 In general, real systems have dispersion such that 
 $v_g\kv(\omega\kv)$.  For simple systems, such as LJ argon, the 
@@ -1027,7 +1027,7 @@ conductivity is written as
 \begin{equation}\label{EQ:M:k_HS}
 k_{AF} = \sum_\omega  \frac{k_{B}}{V} D_{AF}(\omega\kv),
 \end{equation}
-where $V$ is the system volume and $D_{AF}($\omega\kv$)$ is the thermal 
+where $V$ is the system volume and $D_{AF}(\omega\kv)$ is the thermal 
 diffusivity of the mode labeled by frequency 
 $\omega\kv$ with 
 $\nu$ ranging over all 
