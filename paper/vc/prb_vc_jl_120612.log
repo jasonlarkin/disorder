@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  18 DEC 2012 01:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  18 DEC 2012 14:25
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_120612.tex
@@ -359,84 +359,40 @@ Overfull \hbox (0.92249pt too wide) in paragraph at lines 870--872
 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 903.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 902.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 903.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 902.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 903--916
+Underfull \hbox (badness 7012) in paragraph at lines 902--915
 []\OT1/cmr/m/n/10 Phonon-phonon scat-ter-ing ($\OML/cmm/m/it/10 ^^\[]  []$\OT1/
 cmr/m/n/10 ) is typ-i-cally
  []
 
 [6]
-Underfull \hbox (badness 1728) in paragraph at lines 1006--1013
-[]\OT1/cmr/m/n/10 We now com-pare the phonon mode dif-fusitivies,
- []
-
 File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps Graphic 
 file (type eps)
-</home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps>
+ </home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps>
 File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps Graphic 
 file (type eps)
 
 </home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps>
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-
-Underfull \hbox (badness 2856) in paragraph at lines 1060--1063
-[]\OT1/cmr/m/n/10 The en-ergy dif-fu-siv-ity, d, quan-ti-fies how far a
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 1060--1063
-\OT1/cmr/m/n/10 wave packet nar-rowly peaked at a fre-quency  can
- []
-
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ¨ in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no ∂ in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no ∂ in font cmr10!
-[7]
+ [7]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1111.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1122.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1111.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1122.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -470,30 +426,35 @@ Missing character: There is no ª in font cmr10!
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no í in font cmr10!
 
-Underfull \hbox (badness 1019) in paragraph at lines 1199--1227
+Underfull \hbox (badness 1019) in paragraph at lines 1189--1217
 \OT1/cmr/m/n/10 is ca-pa-ble of ac-cu-rately pre-dict-ing a fi-nite ther-mal
  []
 
-[8]
+
+Underfull \hbox (badness 1728) in paragraph at lines 1220--1227
+[]\OT1/cmr/m/n/10 We now com-pare the phonon mode dif-fusitivies,
+ []
+
 File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps Graphic file (type 
 eps)
- </home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps>
+</home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps>
 Overfull \hbox (40.06874pt too wide) in paragraph at lines 1232--1234
  [] 
  []
 
+[8]
 File: /home/jason/disorder/lj/alloy/lj_cond_compare.eps Graphic file (type eps)
 
-</home/jason/disorder/lj/alloy/lj_cond_compare.eps>
+ </home/jason/disorder/lj/alloy/lj_cond_compare.eps>
 File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
 
 
 </home/jason/disorder/si/alloy/si_cond_compare.eps> [9]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1322.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1329.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1322.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1329.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -518,12 +479,12 @@ Missing character: There is no ê in font cmr10!
 Missing character: There is no ª in font cmr10!
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no í in font cmr10!
-[10]
+
 Underfull \hbox (badness 1490) in paragraph at lines 1426--1428
 []\OT1/cmr/m/n/10 While , the ef-fect of ex-plicit dis-or-der has been
  []
 
-
+[10]
 Underfull \hbox (badness 1629) in paragraph at lines 1472--1488
 \OT1/cmr/m/n/10 mode prop-er-ties are crit-i-cal to the ther-mal trans-
  []
@@ -535,20 +496,10 @@ pe eps)
 
 LaTeX Warning: Reference `EQ:M:SLT' on page 12 undefined on input line 1728.
 
-
+[12]
 Underfull \hbox (badness 3354) in paragraph at lines 1744--1757
 []\OT1/cmr/m/n/10 For the range of broad-en-ing fac-tors con-sid-ered
  []
-
-[12]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1757.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1757.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 (./prb_vc_jl_120612.bbl [13]
 Underfull \hbox (badness 4467) in paragraph at lines 16--21
@@ -653,42 +604,42 @@ Underfull \hbox (badness 1571) in paragraph at lines 331--336
 rg / doi / 10 .
  []
 
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+ \OT1/cmtt/m/n/9 http : / / www . sciencemag . org / content / 253 / 5019 / 539
+ .
+ []
+
 [14]
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--401
- \OT1/cmtt/m/n/9 http : / / www . sciencemag . org / content / 253 / 5019 / 539
- .
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 10000) in paragraph at lines 433--439
+Underfull \hbox (badness 10000) in paragraph at lines 434--440
  []\OT1/cmr/m/n/9 S. Plimp-ton, Jour-nal of Com-pu-ta-tional Physics
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--439
+Underfull \hbox (badness 10000) in paragraph at lines 434--440
  \OT1/cmr/bx/n/9 117\OT1/cmr/m/n/9 , 1  (1995), ISSN 0021-9991, URL $\OT1/cmtt/
 m/n/9 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--439
+Underfull \hbox (badness 10000) in paragraph at lines 434--440
  \OT1/cmtt/m/n/9 / / www . sciencedirect . com / science / article / pii /
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 498--508
+Underfull \hbox (badness 1005) in paragraph at lines 499--509
  []\OT1/cmr/m/n/9 B. Qiu, H. Bao, G. Zhang, Y. Wu, and X. Ruan,
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 498--508
+Underfull \hbox (badness 3838) in paragraph at lines 499--509
  \OT1/cmr/m/n/9 Com-pu-ta-tional Ma-te-ri-als Sci-ence \OT1/cmr/bx/n/9 53\OT1/c
 mr/m/n/9 , 278  (2012),
  []
@@ -697,7 +648,12 @@ mr/m/n/9 , 278  (2012),
 
 Package natbib Warning: There were undefined citations.
 
-[15] (./prb_vc_jl_120612.aux)
+[15] (./prb_vc_jl_120612.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 
 LaTeX Warning: There were undefined references.
 
@@ -706,12 +662,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3732 strings out of 493849
- 48444 string characters out of 1152845
- 136300 words of memory out of 3000000
- 6950 multiletter control sequences out of 15000+50000
+ 3733 strings out of 493849
+ 48478 string characters out of 1152845
+ 137285 words of memory out of 3000000
+ 6951 multiletter control sequences out of 15000+50000
  14510 words of font info for 54 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,25n,32p,1485b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,25n,32p,1485b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_120612.dvi (15 pages, 107488 bytes).
+Output written on prb_vc_jl_120612.dvi (15 pages, 106912 bytes).

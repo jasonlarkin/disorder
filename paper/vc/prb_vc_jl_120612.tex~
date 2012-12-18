@@ -1027,7 +1027,7 @@ conductivity is written as
 \begin{equation}\label{EQ:M:k_HS}
 k_{AF} = \sum_\omega  \frac{k_{B}}{V} D_{AF}(\omega\kv),
 \end{equation}
-where $V$ is the system volume and $D_{AF}(\omega_{AF})$ is the thermal 
+where $V$ is the system volume and $D_{AF}($\omega\kv$)$ is the thermal 
 diffusivity of the mode labeled by frequency 
 $\omega\kv$ with 
 $\nu$ ranging over all 

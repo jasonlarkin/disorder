@@ -2,50 +2,48 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_vc_jl_120612.aux
 The style file: apsrev.bst
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-121612.bib
-Warning--I didn't find a database entry for "slack_thermal_1979"
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "turney2009a"
-Warning--I didn't find a database entry for "He2011a"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+Warning--empty booktitle in henry_ehrenreich_thermal_1979
 You've used 61 entries,
             3411 wiz_defined-function locations,
-            1531 strings with 21993 characters,
-and the built_in function-call counts, 43891 in all, are:
-= -- 2569
+            1530 strings with 22029 characters,
+and the built_in function-call counts, 44106 in all, are:
+= -- 2589
 > -- 1373
-< -- 204
-+ -- 1106
+< -- 206
++ -- 1108
 - -- 336
-* -- 5942
-:= -- 4723
+* -- 5962
+:= -- 4736
 add.period$ -- 61
 call.type$ -- 61
 change.case$ -- 246
 chr.to.int$ -- 60
-cite$ -- 61
-duplicate$ -- 3807
-empty$ -- 3744
+cite$ -- 62
+duplicate$ -- 3825
+empty$ -- 3761
 format.name$ -- 862
-if$ -- 8471
+if$ -- 8519
 int.to.chr$ -- 2
 int.to.str$ -- 62
-missing$ -- 592
+missing$ -- 594
 newline$ -- 198
 num.names$ -- 184
-pop$ -- 961
+pop$ -- 969
 preamble$ -- 1
 purify$ -- 244
 quote$ -- 0
-skip$ -- 1763
+skip$ -- 1774
 stack$ -- 0
-substring$ -- 1880
-swap$ -- 3027
-text.length$ -- 171
+substring$ -- 1909
+swap$ -- 3044
+text.length$ -- 173
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 350
-warning$ -- 0
-while$ -- 173
+type$ -- 352
+warning$ -- 1
+while$ -- 176
 width$ -- 0
-write$ -- 657
-(There were 4 warnings)
+write$ -- 656
+(There were 2 warnings)

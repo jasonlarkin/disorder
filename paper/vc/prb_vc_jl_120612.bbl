@@ -352,35 +352,6 @@
   \bibinfo{pages}{113524} (\bibinfo{year}{2008}),
   \urlprefix\url{http://link.aip.org/link/?JAP/103/113524/1}.
 
-\bibitem[{\citenamefont{Xu et~al.}(2009)\citenamefont{Xu, Vitelli, Wyart, Liu,
-  and Nagel}}]{xu_energy_2009}
-\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
-  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
-  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
-  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{102}},
-  \bibinfo{pages}{038001} (\bibinfo{year}{2009}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.102.038001}.
-
-\bibitem[{\citenamefont{Vitelli et~al.}(2010)\citenamefont{Vitelli, Xu, Wyart,
-  Liu, and Nagel}}]{vitelli_heat_2010}
-\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
-  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
-  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
-  \bibinfo{journal}{Phys. Rev. E} \textbf{\bibinfo{volume}{81}},
-  \bibinfo{pages}{021301} (\bibinfo{year}{2010}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.81.021301}.
-
-\bibitem[{\citenamefont{Tritt}(2005)}]{tritt_thermal_2005}
-\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Tritt}},
-  \emph{\bibinfo{title}{Thermal Conductivity: Theory, Properties, and
-  Applications}}, Physics of Solids and Liquids (\bibinfo{publisher}{Springer},
-  \bibinfo{year}{2005}), ISBN \bibinfo{isbn}{9780306483271},
-  \urlprefix\url{http://books.google.ch/books?id=I9XRU9mtBeoC}.
-
 \bibitem[{\citenamefont{Sheng}(2006)}]{sheng_introduction_2006}
 \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sheng}},
   \emph{\bibinfo{title}{Introduction to Wave Scattering: Localization and
@@ -398,6 +369,28 @@
   \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{253}},
   \bibinfo{pages}{539–542} (\bibinfo{year}{1991}),
   \urlprefix\url{http://www.sciencemag.org/content/253/5019/539.abstract}.
+
+\bibitem[{\citenamefont{Vitelli et~al.}(2010)\citenamefont{Vitelli, Xu, Wyart,
+  Liu, and Nagel}}]{vitelli_heat_2010}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
+  \bibinfo{journal}{Phys. Rev. E} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{021301} (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.81.021301}.
+
+\bibitem[{\citenamefont{Xu et~al.}(2009)\citenamefont{Xu, Vitelli, Wyart, Liu,
+  and Nagel}}]{xu_energy_2009}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{102}},
+  \bibinfo{pages}{038001} (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.102.038001}.
 
 \bibitem[{\citenamefont{Feldman et~al.}(1993)\citenamefont{Feldman, Kluge,
   Allen, and Wooten}}]{feldman_thermal_1993}
@@ -428,6 +421,14 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Soffa}},
   \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{134}},
   \bibinfo{pages}{014501} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Slack}(1979)}]{henry_ehrenreich_thermal_1979}
+\bibinfo{author}{\bibfnamefont{G.~A.} \bibnamefont{Slack}}
+  (\bibinfo{publisher}{Academic Press}, \bibinfo{year}{1979}),
+  vol.~\bibinfo{volume}{34} of \emph{\bibinfo{series}{Solid State Physics}},
+  pp. \bibinfo{pages}{1 -- 71},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S00811947086%
+03598}.
 
 \bibitem[{\citenamefont{Plimpton}(1995)}]{plimpton_fast_1995}
 \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Plimpton}},
