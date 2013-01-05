@@ -21,7 +21,7 @@ for ifft = 1:NMD.NUM_FFTS
 %POSITIONS
     str_read=...
         strcat(...
-        str.main ,'dump_',int2str(iseed),'_',int2str(ifft),'.pos');
+        NMD.str.main ,'dump_',int2str(iseed),'_',int2str(ifft),'.pos');
     fid=fopen(str_read);
     dummy2 = textscan(fid,'%f%f%f','Delimiter',' ','commentStyle', '--'); 
     fclose(fid);
@@ -143,7 +143,7 @@ tic
             ETOT =...
 		(NMD.freq(modeindex,kindex)^2)*conj(Q).*Q + conj(QDOT).*QDOT;
 
-            EXCORR = xcorr(ETOT,'coeff');
+            EXCORR = xcorr(ETOT-mean(ETOT),'coeff');
             
         SED.SED(ikpt,:,imode) =...
             SED.SED(ikpt,:,imode) + EXCORR(NMD.NUM_TSTEPS:NMD.NUM_TSTEPS*2-1) ;

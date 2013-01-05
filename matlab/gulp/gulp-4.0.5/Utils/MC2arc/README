@@ -1,0 +1,16 @@
+mc2arc    
+
+A simple program to extract the coordinates
+from an GULP .gmc file and convert them into an
+arc file Movie for Cerius2/InsightII.
+
+written by Julian Gale, Imperial College, July 2001
+---------------------------------------------------------
+
+To generate an executable :
+
+make
+
+To run :
+
+mc2arc 

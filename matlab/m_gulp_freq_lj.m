@@ -31,6 +31,8 @@ m_change_file_strings(...
 
 str.cmd = ['gulp ' str_main 'disp ' str_main 'disp']; system(str.cmd);
 
+%str_main
+
 % %grep out frequencies
 %      str.cmd = ['grep "Frequency  " ' str_main 'disp.gout > '...
 %          str_main 'freq_grep.dat'];            
@@ -40,6 +42,10 @@ str.cmd = ['gulp ' str_main 'disp ' str_main 'disp']; system(str.cmd);
 %      system(str.cmd);
 %read in freq to sort properly		
     str.read= [str_main 'freq.gout'];
+    %str.read
+    
+    %pause
+    
     fid=fopen(str.read);
     dummy = textscan(fid,'%f','Delimiter','\t','commentStyle', '--'); 
     fclose(fid);

@@ -1,0 +1,195 @@
+G95 module created on Sat Oct 13 11:36:53 2012 from ../modules.f90
+If you edit this, you'll get what you deserve.
+module-version 9
+(() () () () () () () () () () () () () () () () () () () () ())
+
+()
+
+()
+
+()
+
+()
+
+(14 'atmass' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+15 'atmassin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+16 'atsym' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (CHARACTER 1 ((CONSTANT (INTEGER 4) 0 '2'))) 0 0 () (1
+EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (INTEGER 4) 0 '107')) ()
+'' () ())
+17 'atsymin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (CHARACTER 1 ((CONSTANT (INTEGER 4) 0 '2'))) 0 0 () (1
+EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (INTEGER 4) 0 '107')) ()
+'' () ())
+18 'bbar' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+19 'bbarin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+20 'cc' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+21 'chi' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+22 'chiold' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '18')) () '' () ())
+23 'datatypes' 'datatypes' 1 ((MODULE UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(UNKNOWN) 0 0 () () () '' () ())
+24 'dp' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '8') () () '' () ())
+25 'dpc' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '8') () () '' () ())
+26 'element' 'element' 1 ((MODULE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+UNKNOWN) 0 0 () () () '' () ())
+27 'gasteigera' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+28 'gasteigerb' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+29 'gasteigerc' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+30 'gasttol' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+REAL 8) 0 0 () () () '' () ())
+31 'i2' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '2') () () '' () ())
+32 'i2_limit' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE
+NONE) (INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '181') () () '' () ())
+33 'i4' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '4') () () '' () ())
+34 'i4_limit' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE
+NONE) (INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '46300') () () '' () ())
+35 'kind' '(intrinsic)' 1 ((PROCEDURE UNKNOWN INTRINSIC UNKNOWN NONE
+NONE FUNCTION) (INTEGER 4) 0 0 () () () '' () ())
+36 'leemparaltered' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE DIMENSION) (LOGICAL 4) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+37 'lelementok' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (LOGICAL 4) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+38 'lgasteiger' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(LOGICAL 4) 0 0 () () () '' () ())
+39 'lqeq' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+LOGICAL 4) 0 0 () () () '' () ())
+40 'lreaxffqfix' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE DIMENSION) (LOGICAL 4) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+41 'lreaxffunder' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE DIMENSION) (LOGICAL 4) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+42 'lsandm' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+LOGICAL 4) 0 0 () () () '' () ())
+43 'lsandmnozz' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(LOGICAL 4) 0 0 () () () '' () ())
+44 'maxele' 'element' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '107') () () '' () ())
+45 'ngastitermax' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE) (INTEGER 4) 0 0 () () () '' () ())
+46 'nqeqitermax' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE) (INTEGER 4) 0 0 () () () '' () ())
+47 'qeqchi' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+48 'qeqlambda' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(REAL 8) 0 0 () () () '' () ())
+49 'qeqmu' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+50 'qeqrad' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+51 'qeqscfcrit' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(REAL 8) 0 0 () () () '' () ())
+52 'rcov' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+53 'rcovin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+54 'reaxffchi' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+55 'reaxffgamma' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+56 'reaxffmu' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+57 'reaxffqfix' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+58 'reaxffshell' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE DIMENSION) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '3') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '107')) () '' () ())
+59 'rion' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+60 'rionin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+61 'rmu' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+62 'rmuold' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '18')) () '' () ())
+63 'rqeq' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+REAL 8) 0 0 () () () '' () ())
+64 'rr' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+65 'rvdw' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+66 'rvdwin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+67 'selected_int_kind' '(intrinsic)' 1 ((PROCEDURE UNKNOWN INTRINSIC
+UNKNOWN NONE NONE FUNCTION) (REAL 4) 0 0 () () () '' () ())
+68 'siginc' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION DATA) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+69 'sigincin' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+70 'smchi' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+71 'smmu' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+72 'smzeta' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+73 'smznuc' 'element' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '107')) () '' () ())
+74 'sp' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '4') () () '' () ())
+75 'spc' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '4') () () '' () ())
+)
+
+('atmass' 0 14 'atmassin' 0 15 'atsym' 0 16 'atsymin' 0 17 'bbar' 0 18
+'bbarin' 0 19 'cc' 0 20 'chi' 0 21 'chiold' 0 22 'datatypes' 0 23 'dp' 0
+24 'dpc' 0 25 'element' 0 26 'gasteigera' 0 27 'gasteigerb' 0 28
+'gasteigerc' 0 29 'gasttol' 0 30 'i2' 0 31 'i2_limit' 0 32 'i4' 0 33
+'i4_limit' 0 34 'kind' 0 35 'leemparaltered' 0 36 'lelementok' 0 37
+'lgasteiger' 0 38 'lqeq' 0 39 'lreaxffqfix' 0 40 'lreaxffunder' 0 41
+'lsandm' 0 42 'lsandmnozz' 0 43 'maxele' 0 44 'ngastitermax' 0 45
+'nqeqitermax' 0 46 'qeqchi' 0 47 'qeqlambda' 0 48 'qeqmu' 0 49 'qeqrad'
+0 50 'qeqscfcrit' 0 51 'rcov' 0 52 'rcovin' 0 53 'reaxffchi' 0 54
+'reaxffgamma' 0 55 'reaxffmu' 0 56 'reaxffqfix' 0 57 'reaxffshell' 0 58
+'rion' 0 59 'rionin' 0 60 'rmu' 0 61 'rmuold' 0 62 'rqeq' 0 63 'rr' 0 64
+'rvdw' 0 65 'rvdwin' 0 66 'selected_int_kind' 0 67 'siginc' 0 68
+'sigincin' 0 69 'smchi' 0 70 'smmu' 0 71 'smzeta' 0 72 'smznuc' 0 73 'sp'
+0 74 'spc' 0 75)

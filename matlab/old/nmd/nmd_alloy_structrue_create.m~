@@ -1,0 +1,38 @@
+
+function NMD = nmd_alloy_structure_create( NMD );
+
+%--------------------------------------------------------------------------
+
+%Unit cell and lattice vectors
+NMD.latvec = 	[1.0 0.0  0.0 
+            	0.0  1.0 0.0 
+            	0.0  0.0  1.0 ];
+NMD.x.direct = 	[0.0  0.0  0.0
+            	0.5  0.5  0.0
+            	0.5  0.0  0.5
+            	0.0  0.5  0.5];
+    
+NMD.latvec = NMD.alat*NMD.latvec;
+NMD.latvec_rec = [   1.0 0.0  0.0 
+                    0.0  1.0 0.0 
+                    0.0  0.0  1.0];
+
+%convert ucell coords to cartesian
+
+NMD.x.cart = direct2cart( NMD.x.direct , NMD.latvec )
+
+ 
+%--------------------------------------------------------------------------
+
+NMD.x0(:,3:5) = build_supercell( x_ucell, latvec, Nx, Ny, Nz );
+
+[NMD.x0,NMD.m] =...
+ create_binaryalloy( NMD.mass, NMD.x0, NMD.seed.alloy, NMD.alloy_conc );
+
+NMD.kptlist = create_kptlist( NMD.latvec, NMD.Nx, NMD.Ny, NMD.Nz );
+
+output_universal( NMD );
+
+end
+
+

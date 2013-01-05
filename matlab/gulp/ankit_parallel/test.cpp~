@@ -1,0 +1,26 @@
+//compile: g++ test.cpp -fopenmp
+//compile: g++ -fopenmp ./test.cpp
+[20:06:47] ankit jain: run: ./a.out
+
+
+#include <iostream>
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int main(){
+   double tt[500];
+   int i;
+
+   #pragma omp parallel for private(i) num_threads(4)
+   for(i=0;i<500;i++){
+      tt[i] = i*i;
+   }
+
+
+}

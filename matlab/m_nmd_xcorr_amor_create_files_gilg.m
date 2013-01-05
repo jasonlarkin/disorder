@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/tmp/' ;
+    nmd.str.main = '/home/jason/disorder2/lj/amor/8x/XCORR_AF/2^19_2^16/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_lj_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -11,7 +11,7 @@ clear
     nmd.str.m_nmd = 'm_nmd_xcorr_lj.m.tmp';
     nmd.str.m_grep = 'm_nmd_grep_vel_pos.m.tmp';
     nmd.str.m_seed = 'm_nmd_seed_xcorr_avg.m.tmp';
-    nmd.str.env = 'bw02' %'gilgamesh'
+    nmd.str.env = 'gilg'
 %--------------------------------------------------------------------------
 
 nmd.LJ.eps = m_lj;
@@ -23,11 +23,11 @@ nmd.constant = m_constant;
     nmd.m(1) = 1.0; nmd.m(2) = 3.0; nmd.NUM_ATOMS_TYPE = 1;
 %--------------------------------------------------------------------------
 
-nmd.walltime.lammps = 12; nmd.cpu.lammps = 2; 
-nmd.walltime.matlab = 1; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
+nmd.walltime.lammps = 12; nmd.cpu.lammps = 4; 
+nmd.walltime.matlab = 24; nmd.cpu.matlab = 2; nmd.mem.matlab = 2;
 
 %--------------------------------------------------------------------------
-    nmd.Nx = 4; nmd.Ny = 4; nmd.Nz = 4;
+    nmd.Nx = 8; nmd.Ny = 8; nmd.Nz = 8;
 %--------------------------------------------------------------------------
     nmd.seed.alloy = 1;
     nmd.seed.initial = 1:10;
@@ -40,11 +40,11 @@ nmd.walltime.matlab = 1; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 %--------------------------------------------------------------------------   
 
 %---IKSLICE----------------------------------------------------------------
-    nmd.NUM_MODESLICES = 64;
+    nmd.NUM_MODESLICES = 256;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
-    nmd.t_total = 2^19; nmd.t_fft = 2^17; nmd.t_step = 2^5; nmd.dt = 0.002;
+    nmd.t_total = 2^21; nmd.t_fft = 2^16; nmd.t_step = 2^5; nmd.dt = 0.002;
     nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
 
@@ -125,7 +125,7 @@ nmd.kptmaster_index = 1:nmd.NUM_KPTS;
     system(str.cmd);
     
     str.cmd =...
-        ['cp ' nmd.str.matlab 'lmp_submit.sh.tmp ' ...
+        ['cp ' nmd.str.matlab 'lmp_submit.sh.tmp.' nmd.str.env ' ' ...
         nmd.str.main 'lmp_submit.sh'];
     system(str.cmd);    
 %output lammps    
@@ -201,7 +201,7 @@ pause
         str.cmd4 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
     
     str.cmd5 =...
-        [nmd.str.matlab 'lmp.sh.tmp > ' ...
+        [nmd.str.matlab 'lmp.sh.tmp.' nmd.str.env ' > ' ...
         nmd.str.main 'lmp' int2str(iseed) '.sh'];
     
     str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4 str.cmd5];
@@ -292,7 +292,7 @@ end
 %MAKES JOB FILES-----------------------------------------------------------
 
 system(...
-    ['cp ' nmd.str.matlab 'nmd.submit.sh.tmp ' ...
+    ['cp ' nmd.str.matlab 'nmd.submit.sh.tmp.' nmd.str.env ' ' ...
     nmd.str.main 'nmd_submit.sh']);
 
     for imode = 1:nmd.NUM_MODESLICES
@@ -308,7 +308,8 @@ system(...
         str.change = ['nmd_' int2str(imode) '.m'];
         str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
     str.cmd4 =...
-        [nmd.str.matlab 'nmd.sh.tmp > ' nmd.str.main 'nmd_' int2str(imode) '.sh'];
+        [nmd.str.matlab 'nmd.sh.tmp.' nmd.str.env ...
+        ' > ' nmd.str.main 'nmd_' int2str(imode) '.sh'];
     
     str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4];
         system(str.cmd);
@@ -352,7 +353,7 @@ system(...
     str.temp = strcat('-e ''s|',str.orig,'|',str.change);
     str.cmd2 = [str.temp '|g'' '];
     str.cmd3 =...
-        [nmd.str.matlab 'nmd_grep.sh.tmp > ' ...
+        [nmd.str.matlab 'nmd_grep.sh.tmp.' nmd.str.env ' > ' ...
         nmd.str.main 'nmd_grep.sh'];
     str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3];
     system(str.cmd);
@@ -360,7 +361,7 @@ system(...
 %nmd_grep_submit.sh
 %--------------------------------------------------------------------------
 system(...
-    ['cp ' nmd.str.matlab 'nmd_grep_submit.sh.tmp ' ...
+    ['cp ' nmd.str.matlab 'nmd_grep_submit.sh.tmp.' nmd.str.env ' ' ...
     nmd.str.main 'nmd_grep_submit.sh']);
 output =...
         ['qsub -l walltime=' int2str(4)...
@@ -374,7 +375,8 @@ output =...
 %nmd_seed.m   
 %--------------------------------------------------------------------------
 system(...
-    ['cp ' nmd.str.matlab nmd.str.m_seed ' ' nmd.str.main 'nmd_seed.m']);
+    ['cp ' nmd.str.matlab nmd.str.m_seed ...
+    ' ' nmd.str.main 'nmd_seed.m']);
 %--------------------------------------------------------------------------
 %nmd_seed.sh
 %--------------------------------------------------------------------------
@@ -386,7 +388,7 @@ system(...
     str.temp = strcat('-e ''s|',str.orig,'|',str.change);
     str.cmd2 = [str.temp '|g'' '];
     str.cmd3 =...
-        [nmd.str.matlab 'nmd_seed.sh.tmp > ' ...
+        [nmd.str.matlab 'nmd_seed.sh.tmp.' nmd.str.env ' > ' ...
         nmd.str.main 'nmd_seed.sh'];
     str.cmd = ['sed ' str.cmd1 str.cmd2 str.cmd3];
     system(str.cmd);
@@ -394,7 +396,7 @@ system(...
 %nmd_seed_submit.sh
 %--------------------------------------------------------------------------
 system(...
-    ['cp ' nmd.str.matlab 'nmd_seed_submit.sh.tmp ' ...
+    ['cp ' nmd.str.matlab 'nmd_seed_submit.sh.tmp.' nmd.str.env ' ' ...
     nmd.str.main 'nmd_seed_submit.sh']);
 output =...
         ['qsub -l walltime=' int2str(4)...

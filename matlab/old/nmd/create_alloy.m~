@@ -1,0 +1,22 @@
+function x0 = create_alloy( x0, seed.alloy, alloy_conc )
+
+
+%randomize masses: only set up to do 2 species
+    x0(:,1) = 1:size(x0,1);
+    x0(:,2) = 1;
+%rng(NMD.seed.alloy(NMD.seed.alloy));
+    rng( seed.alloy );
+    [I,J] =...
+        find(...
+        randperm(size(x0(:,1),1))'<ceil(alloy_conc*size(x0,1)));
+    x0(I,2) = 2;
+    
+%set mass vector
+
+NMD.mass(1:size(x0,1),1) = 0;
+for imass = 1:size(NMD.m,2)
+imass
+Imass = find(NMD.x0(:,2)==imass); NMD.mass(Imass) = NMD.m(imass);
+end
+
+end

@@ -4,16 +4,15 @@ freq_cutoff = 0;
 dph_scaling = 0.5;
 constant = m_constant; si = m_si;
 vcnmd(ipt).nmd.alat = 5.43E-10;
-vcnmd(ipt).nmd.Nx = 20;
 
-sys_size = '22x';
+sys_size = '12x';
 %--------------------------------------------------------------------------
 %load
 %-------------------------------------------------------------------------- 
 ipt = 1;
 str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
-str_alloy = ['/home/jason/disorder2/si/alloy/0.5/' sys_size '/'];
-str_nmd = ['/home/jason/disorder2/si/alloy/0.5/' sys_size '/'];
+str_alloy = ['/home/jason/disorder2/si/alloy/0.05/' sys_size '/'];
+str_nmd = ['/home/jason/disorder2/si/alloy/0.05/' sys_size '/'];
 nmd=load(strcat(str_nmd,'nmd.mat'));
 ald = m_joe_read_data_si(str_ald);
 alloy(ipt).alloy = load(strcat(str_alloy,'ALLOY.mat'));

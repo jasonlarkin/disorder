@@ -1,0 +1,338 @@
+
+               GULP : General Utility Lattice Program 4.0
+
+                           Julian Gale
+
+                  Nanochemistry Research Institute,
+                  Department of Chemistry,
+                  Curtin University,
+                  PO Box U1987,
+                  Perth 6845,
+                  Western Australia
+
+                  Email: j.gale@curtin.edu.au
+
+(1) Introduction
+
+GULP is a program designed for performing lattice dynamical calculations on
+solids, defects, surfaces, interfaces, polymers and molecules. For 3D solids
+calculations can use symmetry to generate structures and to save CPU time
+where this is useful. The emphasis on the program is on analytical solutions
+rather than on molecular dynamics.
+
+The theory behind the program is documented in the manual and in the following
+papers which serve as references for the program:
+
+I)   J.D. Gale, Philosophical Magazine B, 73, 3-19 (1996)
+II)  J.D. Gale, JCS Faraday Transactions, 93, 629-637 (1997)
+III) J.D. Gale, Journal of Physical Chemistry B, 102, 5423-5431 (1998)
+IV)  J.D. Gale and A.L. Rohl, Molecular Simulations, 29, 291-341 (2003)
+V)   J.D. Gale, Z. Krist, 220, 552-554 (2005)
+
+Further information is provided at the GULP web site:
+
+http://www.ivec.org/GULP/
+
+
+(2) Overview of capabilities
+
+      GULP can perform the following type of calculation:
+
+      - System types        - bulk materials (3-D)
+                            - clusters (0-D)
+                            - defects (0-D embedded in 3-D)
+                            - polymers & line defects (1-D)
+                            - surfaces (2-D)
+                            - interfaces and grain boundaries (2-D)
+
+      -	Energy minimisation - constant pressure / volume
+                            - shell only relaxations (optical)
+                            - breathing only relaxations
+                            - symmetry adapted relaxation
+                            - unrestrained relaxation
+                            - constraining of internal and cell coordinates
+                            - Newton/Raphson or Rational Function Optimisers
+                            - DFP or BFGS updating for the hessian or its inverse
+                            - limited memory BFGS
+
+      - Free energy minimisation - analytical derivatives for the following potentials
+                            - two-body
+                            - three-body
+                            - four-body
+
+      - Transition states   - location of n th order stationary points
+                            - mode following
+
+      - Crystal properties  - elastic constants
+      			    - bulk modulus
+      			    - Youngs modulus
+      			    - shear modulus
+      			    - static dielectric constants
+                            - high frequency dielectric constants
+                            - frequency-dependent dielectric properties
+                            - piezoelectric constants
+                            - refractive indices
+			    - phonon frequencies
+                            - phonon densities of states
+                            - projected phonon densities of states
+                            - phonon dispersion curves
+                            - Patterson symmetry used in k space
+                            - zero point vibrational energies
+                            - entropy (constant volume)
+                            - heat capacity (constant volume)
+                            - Helmholtz free energy
+                            - Born effective charges
+                            - bulk and shear moduli
+                            - Young's moduli
+                            - Poissons ratios
+                            - s and p wave velocities
+                            - mean kinetic energy of phonons
+
+      - Defect properties   - defect energies
+                            - transition states for defect migration
+                            - defect frequencies
+
+      - Clusters            - GULP can also perform all runtypes on isolated
+                              clusters, where meaningful.
+
+      - Molecular dynamics  - shell model MD with finite mass or adiabatic method
+                            - NVE, NVT and NPT ensembles
+
+      - Monte Carlo         - either fixed N or Grand Canonical 
+                            - option of rigid molecules
+
+      - Fitting of potentials - empirical fitting to all properties calculated
+                              - simultaneous relaxation of shell positions and
+                                radii during fitting
+                              - relax fitting - fit to displacements rather
+                                than to gradients. This also means that the
+                                properties of the relax structures are fitted.
+                              - fit to multiple structures simultaneously
+                              - vary core/shell charge split
+                              - vary all charges
+
+      - Libraries of potentials - option available to have libraries of
+                                  standard potentials
+
+      - Shell models        - dipolar and spherical breathing shell available
+
+      - Embedded atom method for metals available including alloy scaling
+
+      -	Fitting to energy hypersurfaces - fit QM derived energy surfaces
+                              to obtain interatomic potentials (see Gale,
+                              Catlow and Mackrodt in Modelling and Simulation
+                              in Materials Science and Engineering, Vol 1
+                              1992)
+
+      - Electronegativity equilisation method - use Mortiers method to 
+                                determine charge distributions for silicates
+                                and organic systems.
+                           - use QEq scheme of Rappe and Goddard III
+                           - use Streitz-Mintmire scheme
+
+      - Structure analysis - calculate bond lengths
+                           - calculate distances
+                           - calculate angles
+                           - calculate torsion angles
+                           - calculate density and cell volume
+
+      - Structure manipulation - creation of supercells
+
+      - Electrostatic site potentials
+
+      - Electric field gradients and asymmetry parameter
+
+      - Generate input files for other programs - THBREL/THBPHON
+                                                - GDIS 
+                                                - marvin
+                                                - Cerius2
+                                                - Insight (.xtl and .arc files)
+                                                - Materials Studio
+
+
+(3) Running GULP
+
+  (a) Under Unix/Linux/Mac OS X :
+
+      Type : <directory>gulp < inputfile > outputfile
+
+  (b) General info
+
+      input is on fortran channel 5
+      output is on fortran channel 6
+
+      GULP can generate a number of other output files:
+
+      - dumpfile, for restarting jobs, on channel 12 by default, though a
+        different filename and channel can be user specified
+      - marvin file, on fortran channel 13 or user specified file
+      - thbrel file, on fortran channel 14 or user specified file
+      - xtl file,    on fortran channel 15 or user specified file 
+                     (for input into BIOSYM products)
+      - arc file,    for display of solids/clusters/defects in InsightII
+      - xr  file,    for display of solids in G-Vis
+      - cssr file,   for visualisation
+      - xyz file,    for viewing in XMol
+      - fdf file,    for creating inputs for SIESTA
+      - frc file,    for interfacing to QMPOT for QM/MM calculations
+      - phonon files, .disp and .dens which contain phonon dispersion and
+                      phonon density of states information for input into
+                      graphics programs.
+                      .dens uses fortran channel 7
+                      .disp uses fortran channel 8
+      - scratch files - for certain run types it is necessary to create
+                        temporary files to minimise the memory needed.
+                        All scratch files are deleted again provide a
+                        job is not interrupted during execution.
+
+(4) Online help
+
+      Type : <directory>gulp <CR>
+      then type "help"
+
+      A list of topics can then be obtained by typing "topics"
+
+      Note: it is only necessary to type the first four letters of any GULP
+      command, with the exception of some debugging keywords that most users
+      will not need to use!
+
+
+(5) Format of input files
+
+      - First line is always a keyword line that controls the type of run to
+        be performed. The main keywords are opti, fit, grad, prop, conp,
+        conv, simul, single(default), noenergy, bond, dist, angle, molecule,
+        comp, shell, cell, relax, trans, rfo and phon.
+
+      - Subsequent lines contain an option word, followed by any necessary
+        parameters generally on the following line though many can be given
+        on the same line as well.
+
+      - A line of input can be spread over multiple lines of input by
+        using the continuation character "&" on a line.
+
+      - While not always necessary it is generally good practice to follow
+        the following order for input:
+
+          keywords
+          unit cell for structure 1 (cell or vectors)
+          internal coordinates for structure 1 (frac or cart)
+          space group for structure 1 (space)
+          <observables for structure 1> for fitting (obse to end)
+          <non-potential variables for structure 1> for fitting (vari to end)
+
+          ...repeat for all structures...
+
+          interatomic potentials
+          species and element information
+          any other parameters
+
+      - Elements should be refered to by their atomic symbol, optionally
+        followed by a type number, e.g. H, H1, H12 e.t.c.. Type numbers
+        up to 999 are currently valid. The element symbol is used to 
+        obtain parameters such as the mass and various radii.
+======> IMPORTANT: When specifying elements in potentials and other
+        parameters note that there is the convention that an element
+        symbol with no type number applies to all occurances of that
+        element, whereas an element symbol followed by a type number
+        refers specifically to that type only. This means that all
+        occurances of an element in a structure could be given a
+        unique number for identification, but the potentials need
+        only be given once by using the generic atomic symbol.
+
+(6) Symmetry
+
+      - It is best to input structures using "cell" and "frac" giving only
+        the asymmetric unit for 3-D systems.
+      - The space group can be input by number or symbol, though beware that
+        the symbol corresponds to the correct version of international tables!
+      - Different origin settings may be specified.
+      - For users of CRYSTAL the symmetry input can be input in the same
+        format as for the afore-mentioned program.
+      - GULP will transform the input unit cell to the primitive form to save
+        cpu time, but will output the structure back in the full cell.
+      - When performing optimisations only coordinates that allow an atom to
+        remain on a special position are varied, otherwise the number of 
+      	species will suddenly increase!
+      - The user can specify individual coordinates and cell strains for
+        optimisations by means of a series of flags (0/1) (see help text).If
+        conp or conv are not specified and the runtype requires derivatives
+        then these flags will be expected in the input. Note that if there
+        if no symmetry in a given crystal direction at least one coordinate
+        must be held fixed in that direction otherwise a singularity will
+        occur. When conp or conv are specified this is automatically taken
+        into account.
+      - When calculating phonon properties the Patterson symmetry is used
+        to reduce the number of k points to a minimum.
+      - For defect calculations point group symmetry is used where possible
+        to reduce the size of region 1 and if possible also reduces region
+        2a to its asymmetric unit. Symmetrisation of both the first and
+        second derivatives is available for defects. The program automatically
+        locates symmetry elements for defects and so no specification of
+        the point group is required.
+
+
+(7) Interatomic potentials
+
+      The following potentials are currently available:
+
+      (a) Twobody:
+
+      	- Buckingham
+	- Buckingham four range
+      	- Lennard-Jones (either in A and B or epsilon and sigma form)
+      	- Morse (with and without coulomb offset)
+      	- Harmonic (with and without coulomb offset)
+        - Spring (for core-shell interactions)
+        - Coulomb (pure coulomb offset)
+      	- General (Aexp(-r/rho)/r**m -C/r**n) - this can be energy and
+      	  gradient shifted to give a smooth transition at the cutoff
+          distance.
+        - Splined potentials (rational function or cubic)
+        - Stillinger-Weber two-body
+        - Inverse Gaussian
+        - Q taper (short-range Coulomb taper)
+        - Polynomial
+        - Couloumb with erfc
+        - Covalent exponential form
+        - Fermi-Dirac 
+        - Lennard-Jones with shift
+        - Squared harmonic
+        - Tsuneyuki
+        - Spring with cosh functional form
+
+      (b) Threebody:
+
+        - Three-body harmonic (with or without exponential decay)
+        - Axilrod-Teller three-body potential
+        - Exponentially decaying three-body term
+        - Stillinger-Weber three-body 
+        - Bond-bond cross term three-body potential
+        - Urey-Bradley three-body potential
+        - Cosine harmonic
+        - Murrell-Mottram potential
+        - Bond-angle cross
+        - Linear-three
+        - Bond cosine cross
+
+      (c) Fourbody:
+
+        - Four-body torsional (standard and Ryckaert-Bellemans)
+        - Four-body out of plane potential
+        - ESFF torsional term
+        - Option for tapering of potentials
+
+      (d) Manybody:
+
+        - Many-body potentials using Embedded-Atom-Method (e.g. Sutton-Chen)
+        - REBO bond order potential (C, H & O containing systems only)
+        - Tersoff potentials
+        - Stillinger-Weber with charge softening 
+        - EDIP model
+        - ReaxFF
+
+      Note that multiple potentials are allowed to act over the same range.
+ 
+      For buckingham, lennard-jones(in A/B form) and general potentials the
+      1/r**6 technique can be handled by an Ewald style summation.
+

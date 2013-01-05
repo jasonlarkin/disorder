@@ -1,0 +1,60 @@
+Introduction :
+--------------
+
+This directory contains several files that explore some of the functionality of GULP
+and serve as examples of typical input files.
+
+NB: Except where library files are used, the user should not take the potential models
+in the example files to be of publication quality. They are just examples of how the
+code will run and may not be proper potentials for the system in question!
+
+Guide to examples :
+-------------------
+
+example1	Shell model optimisation and property calculation for alumina
+example2	Simultaneous fit to the quartz structure with a shell model 
+example3	Calculation of the charges and electrostatic site potentials for quartz
+example4	Simultaneous fit to La2O3 using the C6 Ewald sum to converge the VDW terms
+example5	Calculation of a phonon dispersion curve and density of states for MgO
+example6	Defect calculation with Li substituting for Mg in MgO
+example7a	Location of the transition state for Mg to migrate to a Mg vacancy in MgO using transition state search
+example7a	Location of the transition state for Mg to migrate to a Mg vacancy in MgO using symmetry constraint
+example8	Optimisation of a molecular anion containing solid and molecular vacancy defect
+example9	Breathing shell fit to MgO followed by optimisation in the same run
+example10	Optimisation of a molecular crystalline material - urea
+example11	Use of the translate option to scan a potential energy surface
+example12	Optimisation of 2 structures for silica in the same input file
+example13	Use a library file to supply the potentials for an optimisation run
+example14	Example of a relaxed fit to the quartz structure and properties
+example15	Rigid ion molecular dynamics on a supercell of MgO in the NVE ensemble
+example16	Shell model molecular dynamics for quartz in the NPT ensemble
+example17	Embedded atom method optimisation and phonon calculation for FCC Nickel
+example18	NVT molecular dynamics for shell model MgO
+example19	Shell model molecular dynamics with finite mass for SiO2 in NPT ensemble
+example20	Shell model molecular dynamics with the adiabatic approach for SiO2
+example21	Charged defect in a periodic cell with a neutralising background
+example22	Fitting of a potential energy surface for urea
+example23	Calculation of the cost function used in genetic algorithms for a structure
+example24       Search for a structure using genetic algorithms and the cost function - note unsuccessful at the moment!!!
+example25	Free energy minimisation of quartz at 300 K in the ZSISA approximation
+example26	Using the "ditto" option to run the same structure at 3 pressures in the same file
+example27	Interface calculation in which a rigid block of MgO is optimised over the 001 surface of MgO
+example28	Tersoff model calculation on bulk silicon followed by a vacancy defect calculation
+example29	Streitz-Mintmire model calculation on bulk alumina
+example30	REBO model calculation for a diamond surface
+example31	Constant pressure optimisation of a corundum slab with a 2-D phonon calculation
+example32	1-D calculation on MgO using manual specification of flags and the switch minimiser option
+example33	Grand Canonical Monte Carlo for a single species being introducted into a box
+example34	Grand Canonical Monte Carlo for a rigid molecule being introducted into a box
+example35	Voter-Chen EAM for Ag
+example36       Frequency dependent property calculation for quartz
+example37       SiH4 molecule using the Smith and Dyson REBO 1 model
+example38       Electric field applied to a slab from example31
+example39	Glue potential for Au with print out of EAM atomic densities and energy contributions
+example40       Simple example of 3coulomb potential for a water molecule for validation 
+example41       Force calculation for a urea molecule in the presence of a continuum solvent model with qsas keyword
+example42       Optimisation of the (001) surface of urea in the presence of a continuum solvent model
+example43       Example of PDF calculation for MgO - phonons < wmax
+example44       Example of PDF calculation for MgO - full phonon range
+example45       Example of PDF calculation for MgO - phonons > wmin only
+example46       Example of PDF calculation for (Ca,Sr)TiO3

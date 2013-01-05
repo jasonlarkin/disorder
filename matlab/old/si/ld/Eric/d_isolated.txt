@@ -1,0 +1,6 @@
+0.	Ge conc. in left lead (0 or 1 only)
+1.	Ge conc. in right lead
+6	lead layers on each side of the lead
+3	number of variable layer separations (should be odd)
+1	index used to replicate supercell (be careful) 
+1	Real Ge? (1: yes, 0: no)

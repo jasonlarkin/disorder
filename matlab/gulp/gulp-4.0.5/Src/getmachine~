@@ -1,0 +1,417 @@
+#! /bin/sh
+#
+# This shell script adapts the Makefile in dependence
+# of the machine and the operating system you use.
+# It is called from 'make' before the compiler
+# is invoked.
+#
+#  7/97 IRIX64 directory name modified to handle IRIX7
+#  2/99 Cray options added (IW)
+#
+#  DEFS:
+#
+#  -DMPI    => triggers MPI compilation
+#  -DNOFOX  => do not compile FoX related subroutines
+#  -DPLUMED => compile with calls to PLUMED added
+#
+#  Initially written by J-R. Hill, modified by JDG
+#
+
+makedir()
+{
+  if [ ! -d "$dir" ]
+  then
+    mkdir "$dir"
+  fi
+  cd $dir
+}
+
+debug=
+if [ "$1" = "-debug" ]
+then
+  debug="_DEBUG"
+  shift
+fi
+os=`uname -s`
+case $os in
+#
+# Mac OS-X using Absoft compiler
+#
+  Darwin)  dir="${os}${debug}"
+	   makedir
+	   if [ "$debug" = "" ]
+	   then
+#  IBM
+#	       echo 'OPT=-O2 -qstrict' > makefile
+#	       echo 'OPT1=-O1' >> makefile
+#  Absoft
+#	       echo 'OPT=-O ' > makefile
+#	       echo 'OPT1=' >> makefile
+#  gfortran
+#	       echo 'OPT=-O1 ' > makefile
+#	       #echo 'OPT=-O2 ' > makefile
+#	       echo 'OPT1=-O1' >> makefile
+#  g95
+	       echo 'OPT=-O ' > makefile
+	       echo 'OPT1=' >> makefile
+	       echo 'OPT2=-ffloat-store' >> makefile
+#	       echo 'BAGGER=' >> makefile
+	   else	
+	       echo 'OPT=' > makefile
+	       echo 'OPT2=-ffloat-store' >> makefile
+#  g95
+               echo 'BAGGER=-g -Wall -Wuninitialized -fbounds-check -ftrace=full' >> makefile
+#  gfortran
+#               echo 'BAGGER=-g -Wall -Wunused-parameter -fbounds-check ' >> makefile
+	   fi
+           target=${1}_
+#  IBM
+#           echo 'RUNF90=xlf90 -C' >> makefile
+#           echo 'FFLAGS=-I.. ' >> makefile
+#  Absoft
+#           echo 'RUNF90=f90 ' >> makefile
+#           echo 'FFLAGS=-I.. -B18 ' >> makefile
+#  g95
+#           echo 'RUNF90=mpif90 ' >> makefile
+           echo 'RUNF90=g95 ' >> makefile
+#  gfortran
+#           echo 'RUNF90=gfortran ' >> makefile
+#           echo 'FFLAGS=-I.. ' >> makefile
+#  C compiler
+#           echo 'RUNCC=gcc ' >> makefile
+#           echo 'CFLAGS=-funroll-all-loops -ffast-math -O3' >> makefile
+#  IBM
+#           echo 'LIBS=' >> makefile
+#  Absoft
+#           echo 'LIBS=-lU77' >> makefile
+#  g95
+           echo 'LIBS=' >> makefile
+#           echo 'LIBS=-lmpi' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'GULPENV=' >> makefile
+	   echo 'CDABS=cdabs.o' >> makefile
+# If PLUMED is needed then set -DPLUMED
+#           echo 'DEFS=-DFLUSH -DPLUMED' >> makefile
+           echo 'DEFS=-DFLUSH ' >> makefile
+           echo 'PLUMEDDEFS=-DDL_POLY' >> makefile
+#           echo 'DEFS=-DFLUSH -DMPI' >> makefile
+           echo 'ARCHIVE = ar rcv' >> makefile
+           echo 'RANLIB = ar ts' >> makefile
+           ;;
+#
+# This is an IBM RS/6000.
+#
+  AIX)     if [ `uname -m | cut -c9-10` = "70" ]
+	     then
+		 dir="${os}_POWER2${debug}"
+           else
+		 dir="${os}_POWER${debug}"
+           fi
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+	       echo 'OPT=-O5 -qstrict' > makefile
+		 echo 'OPT1=-O2' >> makefile
+	         echo 'OPT2=-O5' >> makefile
+		 echo 'BAGGER=' >> makefile
+           else
+		 echo 'OPT=' > makefile
+		 echo 'BAGGER=-g' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=xlf90' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'FFLAGS=-qmaxmem=-1' >> makefile
+	   echo 'CFLAGS=' >> makefile
+           echo 'LIBS=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'GULPENV=gulp_env.o' >> makefile
+           echo 'CDABS=' >> makefile
+           echo 'DEFS=-DFLUSH' >> makefile
+           ;;
+#
+# This is a Silicon Graphics (R4000/R4400).
+#
+  IRIX)    dir="${os}_`hinv | awk '/CPU:/ {print $3}' | cut -d/ -f2`${debug}"
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+		 echo 'OPT=-O2 -mips2 -Olimit 3282' > makefile
+		 echo 'OPT1=-O1 -mips2' >> makefile
+		 echo 'OPT2=-O2 -mips2 -Olimit 3282' > makefile
+		 echo 'BAGGER=-mips2' >> makefile
+           else
+	       echo 'OPT=' > makefile
+		 echo 'BAGGER=-g -O0 -check_bounds' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'FFLAGS=' >> makefile
+           echo 'CFLAGS=' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'LIBS=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'GULPENV=gulp_env.o' >> makefile
+	   echo 'CDABS=cdabs.o' >> makefile
+           echo 'DEFS=-DFLUSHWITHERRORFLAG' >> makefile
+           ;;
+#
+# This is a Silicon Graphics (R8000/R10000). The compiler will screw up in the
+# function potcut.f if full optimization is used.
+#
+  IRIX64)  dir="${os}_`uname -a | awk '/IRIX/ {print $5}' | cut -d/ -f2`${debug}"
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+		 echo 'OPT1=-O1 -mips4' >> makefile
+	         echo 'OPT=-O2 -mips4 -OPT:const_copy_limit=19188 ' > makefile
+		 echo 'OPT2=-O1 -mips4' >> makefile
+		 echo 'BAGGER=-64' >> makefile
+           else
+	         echo 'OPT=' > makefile
+		 echo 'BAGGER=-g -64' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+	   echo 'LIBS=' >> makefile
+#	   echo 'LIBS=-lmpi' >> makefile
+           echo 'CFLAGS=-ansi ' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'GULPENV=gulp_env.o' >> makefile
+	   echo 'CDABS=cdabs.o' >> makefile
+           echo 'DEFS=' >> makefile
+#          echo 'DEFS=-DMPI' >> makefile
+           ;;
+#
+# This is Linux with f90. cdabs.f contains the cdabs function
+# which is missing in the f2c library
+#
+  Linux)   dir="${os}${debug}"
+	   makedir
+	   if [ "$debug" = "" ]
+	   then
+# PG compiler
+#	       echo 'OPT=-fast' > makefile
+#	       echo 'OPT1=-O1' >> makefile
+# Intel compiler
+#	       echo 'OPT=-O3 -mp1 ' > makefile
+#	       echo 'OPT1=-O1' >> makefile
+#	       echo 'OPT2=-O3 -mp1 ' >> makefile
+# Absoft compiler
+#	       echo 'OPT=-O' > makefile
+#	       echo 'OPT1=-O' >> makefile
+#  g95
+	       echo 'OPT=-O ' > makefile
+	       echo 'OPT1=' >> makefile
+	       echo 'OPT2=-ffloat-store' >> makefile
+	       echo 'BAGGER=' >> makefile
+	   else	
+	       echo 'OPT=' > makefile
+#  g95
+	       echo 'OPT2=-ffloat-store' >> makefile
+               echo 'BAGGER=-g -Wall' >> makefile
+#               echo 'BAGGER=-g ' >> makefile
+	   fi
+           target=${1}_
+# PG compiler
+#  	   echo 'RUNF90=pgf90 -Bstatic' >> makefile
+# Intel compiler
+#  	   echo 'RUNF90=ifort ' >> makefile
+#           echo 'RUNCC=icc ' >> makefile
+# Absoft compiler
+#           echo 'RUNF90=f90' >> makefile
+# g95
+           echo 'RUNF90=g95 ' >> makefile
+           echo 'RUNCC=gcc ' >> makefile
+# PG compiler
+#	   echo 'FFLAGS=-I.. ' >> makefile
+#	   echo 'LIBS=' >> makefile
+# Intel compiler
+	   echo 'FFLAGS=-I.. ' >> makefile
+	   echo 'LIBS=' >> makefile
+	   echo 'CFLAGS=-I.. ' >> makefile
+# Absoft compiler
+#           echo 'FFLAGS=-I.. -B18 ' >> makefile
+#           echo 'LIBS=-lblas -lU77' >> makefile
+#  g95
+           echo 'FFLAGS=-I.. ' >> makefile
+#
+           echo 'CFLAGS=-ansi ' >> makefile
+# PG compiler
+#	   echo 'LDFLAGS=-Bstatic' >> makefile
+# Intel compiler
+#	   echo 'LDFLAGS=-static' >> makefile
+# g95
+	   echo 'LDFLAGS=' >> makefile
+#
+# General options
+#
+           echo 'ETIME=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+# for chemshell use, we should have lapack so comment the following line out
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'GULPENV=' >> makefile
+	   echo 'CDABS=cdabs.o' >> makefile
+# If PLUMED is needed then set -DPLUMED
+#           echo 'DEFS=-DFLUSH -DPLUMED' >> makefile
+           echo 'DEFS=-DFLUSH ' >> makefile
+           echo 'PLUMEDDEFS=-DDL_POLY' >> makefile
+           echo 'ARCHIVE = ar rcv' >> makefile
+           echo 'RANLIB = ar ts' >> makefile
+           ;;
+#
+# This is OSF1
+#
+  OSF1)    dir="${os}${debug}"
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+	       echo 'OPT=-O4 -fast' > makefile
+	       echo 'OPT1=-O1 ' >> makefile
+	       echo 'OPT2=-O4 -fast' >> makefile
+		 echo 'BAGGER=' >> makefile
+           else
+	       echo 'OPT=' > makefile
+		 echo 'BAGGER=-g -C' >> makefile
+	   fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'FFLAGS=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'ETIME=' >> makefile
+	   echo 'CDABS=' >> makefile
+           echo 'DEFS=' >> makefile
+           ;;
+#
+#  SunOS
+#
+  SunOS)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-fast -O5' > makefile
+               echo 'OPT1=-O' >> makefile
+               echo 'OPT2=-fast -O5' > makefile
+                 echo 'BAGGER=' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'FFLAGS=' >> makefile
+           echo 'CFLAGS=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'CDABS=' >> makefile
+           echo 'DEFS=' >> makefile
+           ;;
+#
+# This is HP-UX
+# There seems to be a hiccup with setting target on HP
+# so it's currently set statically
+#
+  HP-UX)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-O +Onolimit' > makefile
+               echo 'OPT1=-O' >> makefile
+               echo 'OPT2=-O +Onolimit' > makefile
+                 echo 'BAGGER=+U77' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g +U77' >> makefile
+           fi
+           target="gulp_"
+           echo 'RUNF90=f90' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'FFLAGS=' >> makefile
+           echo 'CFLAGS=-Aa' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'CDABS=' >> makefile
+           echo 'DEFS=-DFLUSH' >> makefile
+           ;;
+#
+# This is Cygwin under WinXP using the g95 compiler
+#
+  CYGWIN_NT-5.1) dir="{os}${debug}"
+                        makedir
+                        if [ "$debug" = "" ]
+           then
+               echo 'OPT=-O' > makefile
+               echo 'OPT1=-O' >> makefile
+               echo 'OPT2=-O' > makefile
+                 echo 'BAGGER=' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=g95' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+           echo 'FFLAGS=-I.. ' >> makefile
+           echo 'CFLAGS=-ansi ' >> makefile
+           echo 'LIBS=' >> makefile
+           echo 'ETIME=' >> makefile
+           echo 'FLUSH=' >> makefile
+           echo 'BLAS=blas.o' >> makefile
+           echo 'LAPACK=lapack.o' >> makefile
+           echo 'CDABS=cdabs.o' >> makefile
+           echo 'GULPENV=' >> makefile
+           echo 'DEFS=' >> makefile
+           echo 'CPP=/lib/cpp -traditional ' >> makefile
+           ;;
+#
+# Add new OS hereafter
+#
+#  <output of uname -s>) dir="{os}${debug}"
+#                        makedir
+#                        <options>
+#                        ...
+#
+# This is an unknown operating system.
+#
+  *)       echo "Sorry, I don't know the operating system '$os'."
+           echo "Edit 'getmachine' to include the required options."
+           exit 1
+           ;;
+esac
+cat ../Makefile >> makefile
+make $target
+rm -f makefile
+#if [ "$debug" = "" ]
+#then
+#  strip gulp
+#fi
+
+if [ "$target" = "lib_" ]
+then
+#
+# Move library to top of GULP tree
+#
+mv libgulp.a ../../libgulp.a
+elif [ "$target" = "gulp_" ]
+then
+#
+# Move executable back to level at which make command was issued
+#
+mv gulp ../gulp
+fi

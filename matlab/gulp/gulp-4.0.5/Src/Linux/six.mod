@@ -1,0 +1,129 @@
+G95 module created on Sat Oct 13 11:36:54 2012 from ../modules.f90
+If you edit this, you'll get what you deserve.
+module-version 9
+(() () () () () () () () () () () () () () () () () () () () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'datatypes' 'datatypes' 1 ((MODULE UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(UNKNOWN) 0 0 () () () '' () ())
+3 'dp' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '8') () () '' () ())
+4 'dpc' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '8') () () '' () ())
+5 'i2' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '2') () () '' () ())
+6 'i2_limit' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '181') () () '' () ())
+7 'i4' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '4') () () '' () ())
+8 'i4_limit' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE)
+(INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '46300') () () '' () ())
+9 'icell61' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+10 'icell62' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+11 'icell63' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+12 'icell64' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+13 'icell65' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+14 'ijind' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+15 'kind' '(intrinsic)' 1 ((PROCEDURE UNKNOWN INTRINSIC UNKNOWN NONE
+NONE FUNCTION) (INTEGER 4) 0 0 () () () '' () ())
+16 'klind' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+17 'lsinter' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (LOGICAL 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+18 'lsintra' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (LOGICAL 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+19 'maxlist6' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () () () '' () ())
+20 'maxsix' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () () () '' () ())
+21 'mmsexc' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+22 'mnind' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+23 'n6botype' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (2 DEFERRED () () () ()) () '' ()
+())
+24 'nlist6md' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () () () '' () ())
+25 'npsix' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+26 'nsix' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () () () '' () ())
+27 'nsixptr' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+28 'nsixty' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+29 'nsptyp1' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+30 'nsptyp2' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+31 'nsptyp3' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+32 'nsptyp4' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+33 'nsptyp5' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+34 'nsptyp6' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+35 'nsspec1' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+36 'nsspec2' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+37 'nsspec3' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+38 'nsspec4' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+39 'nsspec5' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+40 'nsspec6' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (INTEGER 4) 0 0 () (1 DEFERRED () ()) () '' () ())
+41 'null' '(intrinsic)' 1 ((PROCEDURE UNKNOWN INTRINSIC UNKNOWN NONE
+NONE FUNCTION) (INTEGER 4) 0 0 () () () '' () ())
+42 'selected_int_kind' '(intrinsic)' 1 ((PROCEDURE UNKNOWN INTRINSIC
+UNKNOWN NONE NONE FUNCTION) (REAL 4) 0 0 () () () '' () ())
+43 'six' 'six' 1 ((MODULE UNKNOWN UNKNOWN UNKNOWN NONE NONE) (UNKNOWN) 0
+0 () () () '' () ())
+44 'six1' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE DIMENSION
+POINTER) (REAL 8) 0 0 () (1 DEFERRED () ()) () '' () ())
+45 'six2' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE DIMENSION
+POINTER) (REAL 8) 0 0 () (1 DEFERRED () ()) () '' () ())
+46 'six3' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE DIMENSION
+POINTER) (REAL 8) 0 0 () (1 DEFERRED () ()) () '' () ())
+47 'six4' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE DIMENSION
+POINTER) (REAL 8) 0 0 () (1 DEFERRED () ()) () '' () ())
+48 'six5' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE DIMENSION
+POINTER) (REAL 8) 0 0 () (1 DEFERRED () ()) () '' () ())
+49 'sixk' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE DIMENSION
+POINTER) (REAL 8) 0 0 () (1 DEFERRED () ()) () '' () ())
+50 'sp' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '4') () () '' () ())
+51 'spc' 'datatypes' 1 ((PARAMETER UNKNOWN UNKNOWN UNKNOWN NONE NONE) (
+INTEGER 4) 0 0 () (CONSTANT (INTEGER 4) 0 '4') () () '' () ())
+52 'symbol6' 'six' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE NONE
+DIMENSION POINTER) (CHARACTER 1 ((CONSTANT (INTEGER 4) 0 '5'))) 0 0 () (
+2 DEFERRED () () () ()) () '' () ())
+)
+
+('datatypes' 0 2 'dp' 0 3 'dpc' 0 4 'i2' 0 5 'i2_limit' 0 6 'i4' 0 7
+'i4_limit' 0 8 'icell61' 0 9 'icell62' 0 10 'icell63' 0 11 'icell64' 0
+12 'icell65' 0 13 'ijind' 0 14 'kind' 0 15 'klind' 0 16 'lsinter' 0 17
+'lsintra' 0 18 'maxlist6' 0 19 'maxsix' 0 20 'mmsexc' 0 21 'mnind' 0 22
+'n6botype' 0 23 'nlist6md' 0 24 'npsix' 0 25 'nsix' 0 26 'nsixptr' 0 27
+'nsixty' 0 28 'nsptyp1' 0 29 'nsptyp2' 0 30 'nsptyp3' 0 31 'nsptyp4' 0
+32 'nsptyp5' 0 33 'nsptyp6' 0 34 'nsspec1' 0 35 'nsspec2' 0 36 'nsspec3'
+0 37 'nsspec4' 0 38 'nsspec5' 0 39 'nsspec6' 0 40 'null' 0 41
+'selected_int_kind' 0 42 'six' 0 43 'six1' 0 44 'six2' 0 45 'six3' 0 46
+'six4' 0 47 'six5' 0 48 'sixk' 0 49 'sp' 0 50 'spc' 0 51 'symbol6' 0 52)

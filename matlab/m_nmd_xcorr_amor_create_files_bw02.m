@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/tmp/' ;
+    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/5K/2^19_2^17/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_lj_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -23,8 +23,8 @@ nmd.constant = m_constant;
     nmd.m(1) = 1.0; nmd.m(2) = 3.0; nmd.NUM_ATOMS_TYPE = 1;
 %--------------------------------------------------------------------------
 
-nmd.walltime.lammps = 12; nmd.cpu.lammps = 2; 
-nmd.walltime.matlab = 1; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
+nmd.walltime.lammps = 12; nmd.cpu.lammps = 1; 
+nmd.walltime.matlab = 8; nmd.cpu.matlab = 2; nmd.mem.matlab = 2;
 
 %--------------------------------------------------------------------------
     nmd.Nx = 4; nmd.Ny = 4; nmd.Nz = 4;

@@ -1,0 +1,9 @@
+opti conp sm prop phon noden
+cell
+4.7602   4.7602  12.9933  90.000000  90.000000 120.0
+frac
+Al core 0.000000   0.000000   0.352160 
+O  core 0.306240   0.000000   0.250000 
+space
+167
+library streitzmintmire

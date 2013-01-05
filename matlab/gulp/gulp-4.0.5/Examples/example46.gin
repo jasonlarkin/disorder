@@ -1,0 +1,130 @@
+opti conv c6 PDF nokpoints coreinfo nofreq nowidth nopartial
+title
+MT Dove fitted potentials for Ca/Sr titanates used for multiple configurations
+Both partial and width output is suppressed. 
+This is a test file, so small shrink factors have been used. 
+Convergence of phonon properties with k points has NOT been achieved
+end
+
+name
+ Ca0.25Sr0.75TiO3 in Q. Hui ordered structure of CaSr(TiO3)2
+cell
+  5.47   5.47   7.73   90.0   90.0   90.0
+fractional
+Ca  core     -0.05    0.263   0.25 2.0 0.25
+Sr  core     -0.05    0.263   0.25 2.0 0.75
+Ca  core      0.446   0.76    0.25 2.0 0.25
+Sr  core      0.446   0.76    0.25 2.0 0.75
+Ti  core     -0.035   0.749  -0.001 4.0
+O1  core     -0.09    0.746   0.25  0.84819
+O2  core      0.172   0.031   0.027  0.84819
+O3  core      0.006   0.757   0.75 0.84819
+O4  core      0.719   0.485  -0.024 0.84819
+O1  shel     -0.09    0.746   0.25  -2.84819
+O2  shel      0.172   0.031   0.027  -2.84819
+O3  shel      0.006   0.757   0.75  -2.84819
+O4  shel      0.719   0.485  -0.024   -2.84819
+space
+P 21 N M
+origin
+0.0 0.0 0.25
+shrink 2
+output pdf example46_Cap25Srp75TiO3
+
+name
+CaSr(TiO3)2 in Q. Hui ordered structure
+cell
+  5.47   5.47   7.73   90.0   90.0   90.0
+fractional
+Ca  core     -0.05    0.263   0.25 
+Sr  core      0.446   0.76    0.25 
+Ti  core     -0.035   0.749  -0.001
+O1  core     -0.09    0.746   0.25 
+O2  core      0.172   0.031   0.027
+O3  core      0.006   0.757   0.75 
+O4  core      0.719   0.485  -0.024
+O1  shel     -0.09    0.746   0.25 
+O2  shel      0.172   0.031   0.027
+O3  shel      0.006   0.757   0.75 
+O4  shel      0.719   0.485  -0.024
+space
+P 21 N M
+origin
+0.0 0.0 0.25
+shrink 2
+output pdf example46_Cap5Srp5TiO3
+
+name
+Ca0.75Sr0.25TiO3 in Q. Hui ordered structure of CaSr(TiO3)2 
+cell
+  5.47   5.47   7.73   90.0   90.0   90.0
+fractional
+Ca  core     -0.05    0.263   0.25 2.0 0.75
+Sr  core     -0.05    0.263   0.25 2.0 0.25
+Ca  core      0.446   0.76    0.25 2.0 0.75
+Sr  core      0.446   0.76    0.25 2.0 0.25
+Ti  core     -0.035   0.749  -0.001 4.0
+O1  core     -0.09    0.746   0.25  0.84819
+O2  core      0.172   0.031   0.027  0.84819
+O3  core      0.006   0.757   0.75 0.84819
+O4  core      0.719   0.485  -0.024 0.84819
+O1  shel     -0.09    0.746   0.25  -2.84819
+O2  shel      0.172   0.031   0.027  -2.84819
+O3  shel      0.006   0.757   0.75  -2.84819
+O4  shel      0.719   0.485  -0.024   -2.84819
+space
+P 21 N M
+origin
+0.0 0.0 0.25
+shrink 2
+output pdf example46_Cap75Srp25TiO3
+
+name
+CaTiO3 mineral perovskite
+cell
+5.3785  5.4419  7.64  90.0  90.0  90.0
+fractional
+Ca core    0.993   0.033   0.25
+Ti core    0.0     0.5     0.0 
+O1 core    0.072   0.489   0.25
+O2 core    0.717   0.284   0.035
+O1 shel    0.072   0.489   0.25
+O2 shel    0.717   0.284   0.035
+space
+P B N M
+observables
+bulk
+171.0 GPa
+end
+shrink 2
+output pdf example46_CaTio3
+
+species
+Sr core   2.0
+Ca core   2.0
+Ti core   4.0
+O  core   0.84819
+O  shel  -2.84819
+end
+
+buck     
+Sr    core O     shel  13329.779067 .240000  .00000E+00   .000 10.000 1 0 0
+buck     
+Ti    core O     shel  2526.267389  .288800  .00000E+00   .000 10.000 1 0 0
+buck     
+O     shel O     shel  481913.541649 .149000 27.880E+00    .000 10.000 1 0 0
+buck     
+Ca    core O     shel  2273.882694   .298600 .00000E+00   .000 10.000 1 0 0
+spring
+O      58.204115     1
+
+
+pdf all
+rbins 300
+rmax 6
+end
+
+# 
+#  The following is commented because of a problem with the FoX library under the Intel compiler
+#
+#output vcml example46_all
