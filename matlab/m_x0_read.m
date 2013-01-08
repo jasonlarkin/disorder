@@ -1,8 +1,8 @@
-function x0 = m_x0_read(str,name)
+function x0 = m_x0_read(str)
 % x0 = m_x0_read(str,name) reads a structure file x0
 %--------------------------------------------------------------------------
 
-dummy = load(strcat(str,name));
+dummy = load(strcat(str));
 
     x0.param = dummy(1,:);
     x0.id = dummy(2:size(dummy,1),1);

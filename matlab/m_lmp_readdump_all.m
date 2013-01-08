@@ -1,4 +1,4 @@
-function [varargout] = readdump_all(varargin)
+function [varargout] = m_lmp_readdump_all(varargin)
 % Reads all timesteps from a LAMMPS dump file. 
 % Input is dump file name with path
 % Output is in the form of a structure with following variables

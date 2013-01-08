@@ -215,7 +215,7 @@ LD.RIJX(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijx;
 %--------------------------------------------------------------------------
 LD.vij_x =...
-    ((1i/2)./sqrt(LD.freq*LD.freq')).*...
+    ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJX)*LD.eigvec);
 Inan = isnan(LD.vij_x); I = Inan==1; LD.vij_x(I) = 0.0;
 Iinf = isinf(LD.vij_x); I = Iinf==1; LD.vij_x(I) = 0.0;
@@ -254,7 +254,7 @@ LD.RIJY(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijy;
 LD.RIJY(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijy;
 
 LD.vij_y =...
-    ((1i/2)./sqrt(LD.freq*LD.freq')).*...
+    ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJY)*LD.eigvec);
 Inan = isnan(LD.vij_y); I = Inan==1; LD.vij_y(I) = 0.0;
 Iinf = isinf(LD.vij_y); I = Iinf==1; LD.vij_y(I) = 0.0;
@@ -355,6 +355,7 @@ dlmwrite(str.write,LD.eigvec,'delimiter',' ');
 end
 %--------------------------------------------------------------------------
 AF.timing.af.telapsed = toc(AF.timing.af.tstart);
+AF.timing.af.telapsed
 %--------------------------------------------------------------------------
 
 end

@@ -4,6 +4,7 @@
 !  according to the method of Allen and Feldman, PRB, 48, 12581 (1993)
 !
 !   6/12 Created 
+!   1/13 JL modified
 !
 !  Conditions of use:
 !
@@ -69,6 +70,7 @@
   real(dp)                                     :: xd
   real(dp)                                     :: yd
   real(dp)                                     :: zd
+  real(dp)                                     :: freqsqrt
 !
 !  Allocate local array ldone to avoid duplicate multiplies in case of partial occupancy
 !
@@ -144,6 +146,10 @@
   call dgemm('N','N',mcv,mcv,mcv,1.0_dp,derv2,maxd2,eigr,maxd2,0.0_dp,Sij,mcv)
   call dgemm('N','N',mcv,mcv,mcv,1.0_dp,eigr,maxd2,Sij,mcv,0.0_dp,derv2,maxd2)
 !
+!  Copy results back to Sij
+!
+  Sij(1:mcv,1:mcv) = derv2(1:mcv,1:mcv)
+!
 !  Create inverse frequency factors while trapping translations and imaginary modes
 !
   allocate(freqinv(mcv),stat=status)
@@ -158,15 +164,12 @@
     endif
   enddo
 !
-!  Copy results back to Sij
-!
-  Sij(1:mcv,1:mcv) = derv2(1:mcv,1:mcv)
-!
 !  Scale by constants and frequency factors to get to Sij
 !
   do i = 1,mcv
     do j = 1,mcv
-      Sij(j,i) = Sij(j,i)*freqinv(i)*freqinv(j)*(freq(i) + freq(j))
+	freqsqrt = sqrt(freqinv(i)*freqinv(j))
+      Sij(j,i) = Sij(j,i)*freqsqrt*(freq(i) + freq(j))
     enddo
   enddo
 !
@@ -199,7 +202,7 @@
 !
 !  Scale by constants and inverse frequency squared
 !
-    Di = Di*constant/freq(i)**2
+    Di = Di*constant/freq(i)**2     
     if (ioproc) then
       write(ioout,'(i6,2x,f12.4,10x,f18.8)') i,freq(i),Di
     endif
