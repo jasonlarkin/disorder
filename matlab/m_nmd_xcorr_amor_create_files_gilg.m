@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/5K/timeavg/x0Keigvec/' ;
+    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/prepare/tmp_highTmelt/XCORR_AF/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_lj_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';

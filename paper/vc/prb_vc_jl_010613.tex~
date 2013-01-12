@@ -1097,6 +1097,22 @@ i
 defined.\cite{feldman_numerical_1999}
 
 
+the only known limitation of the Boltzmann ap-
+proach is either (a) that each phonon i should have a
+sufficiently long mean free path l,. = ~v; ~; that its wave
+vector Q can be defined, i.e. , l; »A, , =2m. /~Q~, or alter-
+nately (b) if the wave vector Q is impressed externally,
+then the resulting oscillation should have a long enough
+lifetime (or dephasing time) ~; that its frequency co; is
+well defined, i.e., ~;))r;=2m. / ,a.iFor acoustic modes
+the two criteria are the same, but for the optic branches
+(where group velocity U; is often much smaller than phase
+velocity co;/~Q~) the second criterion is less restrictive.
+Probably the less restrictive criterion is sufficient; optic
+phonons, when they satisfy (b) but not (a), are not con-
+tributing much to ~ anyway.
+\cite{allen_thermal_1993}
+
 
 \cite{graebner_phonon_1986}
 

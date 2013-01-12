@@ -1,0 +1,17 @@
+clear
+
+str.NMD = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/10K/2^19_2^16/';
+
+NMD=load(strcat(str.NMD,'NMDavg.mat'));
+
+SED=load(strcat(str.NMD,'SEDavg.mat'));
+
+NMD = load(str.NMD,'NMDfit.mat'), '-struct', 'NMD');
+save(strcat(str.NMD,'SEDfit.mat'), '-struct', 'SEDfit');
+
+loglog(...
+    SED.HLDfreq(:),SED.life(:),'.',...
+    SED.HLDfreq(:),(2*pi)./SED.HLDfreq(:)...
+    )
+
+

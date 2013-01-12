@@ -23,6 +23,8 @@ variable	tau_Ar		equal 2.1423e-12	# s
 #thermo Parameters
 variable    	T_melt 		equal 300*(${kB}/${eps_Ar})
 variable	T_0K		equal 0.00001
+variable	T_0_1K		equal 0.1*(${kB}/${eps_Ar})
+variable	T_1K		equal 1*(${kB}/${eps_Ar})
 variable	T_2_5K		equal 2.5*(${kB}/${eps_Ar})
 variable	T_5K		equal 5*(${kB}/${eps_Ar})
 variable	T_10K		equal 10*(${kB}/${eps_Ar})
@@ -51,7 +53,7 @@ variable iseed equal ISEED_TMP
 variable seed equal SEED_TMP
 
 #------------ RUN TEMP ---------------------------------------------------------------------	
-variable 	T_run 		equal ${T_10K}
+variable 	T_run 		equal ${T_5K}
 #------------ RUN TEMP ---------------------------------------------------------------------	
 
 log 	log_heat_${iseed}.lammps
@@ -98,6 +100,7 @@ log 	log_SED_${iseed}_${ifft}.lammps
 	unfix			1
 	undump			vel
 	undump			pos
+	uncompute		myDis
 
 next ifft
 jump LMP_TMP loop_fft

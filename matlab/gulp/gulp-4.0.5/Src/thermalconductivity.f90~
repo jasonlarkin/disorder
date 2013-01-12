@@ -168,7 +168,7 @@
 !
   do i = 1,mcv
     do j = 1,mcv
-	freqsqrt = sqrt(freqinv(i))*freqinv(j))
+	freqsqrt = sqrt(freqinv(i)*freqinv(j))
       Sij(j,i) = Sij(j,i)*freqsqrt*(freq(i) + freq(j))
     enddo
   enddo

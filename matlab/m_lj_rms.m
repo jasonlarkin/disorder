@@ -1,0 +1,33 @@
+function urms = m_lj_rms( T , m , freq , eigvec , n , N )  
+
+lj = m_lj; constant = m_constant;
+
+m = m*lj.mass;
+
+freq = freq/lj.tau;
+%remove 0-freq
+I = find(freq > 0.0001); I1 = find(freq < 0.0001);
+
+f = 1./((constant.hbar*freq(I))/(constant.kb*T));
+
+MASS = ones(3*length(m),1); 
+
+MASS(1:3:length(MASS)) = MASS(1:3:length(MASS)).*m;
+MASS(2:3:length(MASS)) = MASS(2:3:length(MASS)).*m;
+MASS(3:3:length(MASS)) = MASS(3:3:length(MASS)).*m;          
+
+urms =...
+    (constant.hbar/(n*N))*...
+    sum(...
+    bsxfun(...
+    @times,1./MASS,...
+    sum(...
+    bsxfun(@times,...
+    eigvec(:,I).*conj(eigvec(:,I)),...
+    f'./(freq(I)')...
+    ),2)...
+    ),1);
+
+urms = sqrt(urms);
+    
+end

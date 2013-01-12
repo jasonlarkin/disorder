@@ -13,7 +13,7 @@ NMD.freq(J(1:3))
 NMD.freq(J(1:3)) = 0.0;
 NMD.freq(J(1:3))
 
-%transpose eigvec(imode,:) and freq(imode,1)
+%transpose eigvec and freq
 for ikpt = 1:NMD.NUM_KPTS
         eig(...
             (ikpt-1)*NMD.x0.NUM_MODES+1:(ikpt)*NMD.x0.NUM_MODES,...

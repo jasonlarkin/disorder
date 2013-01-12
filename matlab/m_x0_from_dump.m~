@@ -4,7 +4,7 @@ function x0 = m_x0_from_dump( str_main , str_name , str_name_out )
 %--------------------------------------------------------------------------
 
 if exist( strcat(str_main,str_name_out) , 'file' )
-	str_cmd = ['rm ' str_main str_name_out ]
+	str_cmd = ['rm ' str_main ' ' str_name_out ]
 	system( str_cmd );
 end
 
