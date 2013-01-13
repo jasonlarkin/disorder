@@ -1,6 +1,6 @@
 clear
 
-str.NMD = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/1K/2^20_2^19/';
+str.NMD = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/10K/2^19_2^16/';
 
 
 NMD=load(strcat(str.NMD,'NMDavg.mat'));

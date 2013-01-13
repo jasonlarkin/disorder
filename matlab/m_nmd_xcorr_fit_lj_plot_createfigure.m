@@ -17,7 +17,7 @@ figure1 = figure;
 axes1 = axes('Parent',figure1,'YScale','log','YMinorTick','on',...
     'Units','inches',...
     'TickLength',[0.025 0.025],...
-    'Position',[0.6 0.6 3 2.5]);
+    'Position',[0.6 0.6 2.75 2.25]);
 % Uncomment the following line to preserve the Y-limits of the axes
 % ylim(axes1,[4 4000]);
 box(axes1,'on');
@@ -37,7 +37,7 @@ ylabel({'SED (LJ units)'},'Interpreter','latex','FontSize',12);
 
 % Create axes
 axes2 = axes('Parent',figure1,'Units','inches','TickLength',[0.025 0.025],...
-    'Position',[4.25555555555556 0.6 3 2.5]);
+    'Position',[4.0 0.6 2.75 2.25]);
 % Uncomment the following line to preserve the X-limits of the axes
 % xlim(axes2,[0 15]);
 % Uncomment the following line to preserve the Y-limits of the axes
@@ -58,7 +58,7 @@ ylabel({'$<E(t)E(0)>/<E(0)E(0)>$'},'Interpreter','latex','FontSize',12);
 
 % Create axes
 axes3 = axes('Parent',figure1,'Units','inches','TickLength',[0.025 0.025],...
-    'Position',[5.35555555555556 1.82411420708634 1.73382352941176 1.09625100332532]);
+    'Position',[5.10 1.82411420708634 1.73382352941176 1.09625100332532]);
 % Uncomment the following line to preserve the X-limits of the axes
 % xlim(axes3,[0 15]);
 box(axes3,'on');
