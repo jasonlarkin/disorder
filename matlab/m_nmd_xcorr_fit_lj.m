@@ -1,6 +1,6 @@
 clear
 
-str.NMD = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/10K/2^19_2^16/';
+str.NMD = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/1K/2^20_2^19/';
 
 
 NMD=load(strcat(str.NMD,'NMDavg.mat'));
@@ -9,7 +9,7 @@ SED=load(strcat(str.NMD,'SEDavg.mat'));
 
 [tmp,str.main]=system('pwd');
 
-XCORR_RANGE = 1000; XCORR_RANGE_1 = 1; XCORR_RANGE_2 = 1000;
+XCORR_RANGE = 4000; XCORR_RANGE_1 = 1; XCORR_RANGE_2 = 1000;
 
 for imode=1:1:size(SED.modemaster,2)      
 

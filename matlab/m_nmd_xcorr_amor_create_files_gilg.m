@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/prepare/tmp_highTmelt/XCORR_AF/' ;
+    nmd.str.main = '/home/jason/disorder2/lj/amor/4x/XCORR_AF/1K/2^20_2^19/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_lj_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -44,7 +44,7 @@ nmd.walltime.matlab = 24; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
-    nmd.t_total = 2^19; nmd.t_fft = 2^16; nmd.t_step = 2^5; nmd.dt = 0.002;
+    nmd.t_total = 2^20; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.002;
     nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
 
