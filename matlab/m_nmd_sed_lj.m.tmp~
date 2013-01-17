@@ -54,10 +54,6 @@ toc
 %Zero main SED FP: this gets averaged as you loop over the NUM_FFTS      
     Q = zeros(1,nmd.NUM_TSTEPS);
     QDOT = zeros(1,nmd.NUM_TSTEPS);
-    
-SED.SED(...
-    size(nmd.kptlist(:,1:3,ikslice),1),...
-    1:(nmd.NUM_TSTEPS/2),1:nmd.NUM_MODES) = 0.0;
 
 %--------------------------------------------------------------------------
 tic  

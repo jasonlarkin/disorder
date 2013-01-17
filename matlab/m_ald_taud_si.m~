@@ -12,15 +12,36 @@ constant = m_constant;
 
 bin_size = 35;
 
-% loglog(...
-%     alloy.freq,alloy.life,'.'...
-%     )
+%--------------------------------------------------------------------------
+%0.0
+%-------------------------------------------------------------------------- 
 
-sys_size = '10x';
+%38x
+sys_size = '38x';
+ipt = 1;
+str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
+ald = m_joe_read_data_si(str_ald);
+nmd_per(ipt)=load(strcat(str_nmd_per,'nmd.mat'));
+sedald(ipt) = m_joe_ald2nmd_si( nmd_per(ipt) , ald );
+sedald = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald )
+alloy(ipt) = load(strcat(str_alloy,'ALLOY.mat'));
+
+
+
+
+
+str_alloy = ['/home/jason/disorder2/si/alloy/0.001/' sys_size '/'];
+str_nmd_per = ['/home/jason/disorder2/si/alloy/0.001/' sys_size '/'];
+
+
+
+
+
 
 %--------------------------------------------------------------------------
-%0.001
+%0.05
 %-------------------------------------------------------------------------- 
+sys_size = '22x';
 ipt = 1;
 str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
 str_alloy = ['/home/jason/disorder2/si/alloy/0.001/' sys_size '/'];
