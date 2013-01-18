@@ -1,4 +1,4 @@
-T%function m_ald_taud_si(str_ald,str_nmd_per,str_nmd_vc,str_alloy)
+%function m_ald_taud_si(str_ald,str_nmd_per,str_nmd_vc,str_alloy)
 %--------------------------------------------------------------------------
 %m_ald_taud(str_ald,str_nmd_perfect,str_nmd_vc,str_alloy)
 % m_ald_taud(...
@@ -13,19 +13,79 @@ constant = m_constant;
 bin_size = 35;
 
 %--------------------------------------------------------------------------
-%0.0
+%ALLOY.mat
+%-------------------------------------------------------------------------- 
+ipt = 1;
+str_nmd_per = '/home/jason/disorder2/si/alloy/0.05/24x/';
+alloy_05(ipt) = load([str_nmd_per 'ALLOY.mat']);
+
+ipt = 1;
+str_nmd_per = '/home/jason/disorder2/si/alloy/0.5/24x/';
+alloy_5(ipt) = load([str_nmd_per 'ALLOY.mat']);
+
+loglog(...
+    alloy_05.freq,alloy_05.life,'.',...
+    alloy_5.freq,alloy_5.life,'.'...
+    )
+
+%--------------------------------------------------------------------------
+pause
 %-------------------------------------------------------------------------- 
 
-%38x
-sys_size = '38x';
+%--------------------------------------------------------------------------
+%ALD
+%-------------------------------------------------------------------------- 
+
+%12x
+sys_size = '12x';
 ipt = 1;
 str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
 ald(ipt) = m_joe_read_data_si(str_ald);
-nmd_per(ipt)=load(strcat(str_nmd_per,'nmd.mat'));
-%sedald(ipt) = m_joe_ald2nmd_si( nmd_per(ipt) , ald(ipt) );
-%sedald(ipt) = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald )
-%alloy(ipt) = load(strcat(str_alloy,'ALLOY.mat'));
+%sedald(ipt) = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald );
 
+%20x
+sys_size = '20x';
+ipt = 2;
+str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
+ald(ipt) = m_joe_read_data_si(str_ald);
+%sedald(ipt) = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald );
+
+%24x
+sys_size = '24x';
+ipt = 3;
+str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
+ald(ipt) = m_joe_read_data_si(str_ald);
+%sedald(ipt) = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald );
+
+%36x
+sys_size = '36x';
+ipt = 4;
+str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
+ald(ipt) = m_joe_read_data_si(str_ald);
+%sedald(ipt) = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald );
+
+%38x
+sys_size = '38x';
+ipt = 5;
+str_ald = ['/home/jason/disorder2/si/ald/conv/' sys_size '/Data_fullBZ.xls'];
+ald(ipt) = m_joe_read_data_si(str_ald);
+%sedald(ipt) = m_joe_ald2nmd_si( NUM_KPTS, kptmodelist , NUM_MODES , ald );
+
+loglog(...
+    alloy_05.freq,alloy_05.life,'.',...
+    alloy_5.freq,alloy_5.life,'.',...
+    ald(1).freq,ald(1).life,'.',...
+    ald(2).freq,ald(2).life,'.',...
+    ald(3).freq,ald(3).life,'.',...
+    ald(5).freq,ald(5).life,'.',...
+    linspace(min(ald(1).freq),max(ald(1).freq)),...
+    1E17*linspace(min(ald(1).freq),max(ald(1).freq)).^(-2),...
+    linspace(min(ald(1).freq),max(ald(1).freq)),...
+    1E41*linspace(min(ald(1).freq),max(ald(1).freq)).^(-4),...
+    linspace(min(ald(1).freq),max(ald(1).freq)),...
+    (2*pi)./linspace(min(ald(1).freq),max(ald(1).freq))...
+    )
+    
 
 %--------------------------------------------------------------------------
 pause
