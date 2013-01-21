@@ -3,7 +3,7 @@ clear
 str_alloy = '/home/jason/disorder2/si/alloy/0.05/12x/';
 
 alloy(1) = load([str_alloy 'ALLOY.mat']);
-alloy(2) = load([str_alloy 'ALLOY_orig_pkheight_0.45.mat']);
+alloy(2) = load([str_alloy 'ALLOY_0.45.mat']);
 
 
 loglog(...

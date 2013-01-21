@@ -1,5 +1,5 @@
-%\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
-\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+%\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
 %\documentclass[aps,prl,onecolumn,groupedaddress,amsmath,amssymb,12pt]{revtex4}
 \usepackage{graphicx}
 \usepackage{ifthen}
@@ -1498,10 +1498,6 @@ for the large (LJ argon Fig. ) and small (SW silicon Fig. )
 descrepcny between the thermal conductivity prdictions of VC-ALD and 
 VC-NMD versus 
 
-the problem is with taud.  VC-NMD agrees well with GK for both LJ and SW, 
-while ALD-taud underpredcits for LJ.  VC-NMD and ALD-taud use the same 
-group velocity and classical specific heat.
-
 
 
 High thermal conductivity materials tend to have a conductivity spectrum 
@@ -1534,22 +1530,32 @@ It is thus unsurprising that predictions for
 SW silicon using VC-ALD agree well with VC-NMD and GK. This is also a 
 plausible explanation for the success of predictions using 
 VC-ALD and ab initio calculations compared to experiment for 
-``stiff'' systems (i.e. Si-Ge, GaN, and Diamond).(cite)
+``stiff'' systems (i.e. Si-Ge).(cite)
 
 In SW silicon even the amorphous phase has significant contributions 
-from propagating modes which can be considered to be phonons. This is 
-can seen by comparing the thermal conductivity predicted for the 
+from propagating modes which are considered to be phonons. Without 
+any detailed mode-by-mode analysi, comparing the thermal 
+conductivity predicted for the 
 SW silicon amorphous phase ($k_{GK} =$ 3 W/m-K (cite)) compared to 
 $k_{CP,HS} = $0.5 W/m-K.  For LJ argon in the amorphous phase, 
 $k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K, indicating that 
-all important modes to thermal transport are non-propagating.
+nearly all important modes to thermal transport are non-propagating.
 
 %--------------------------------------------------------------------------
 \section{\label{S:}Summary}
 %--------------------------------------------------------------------------
 
+Results in this work suggest that the lower limit for the mode diffusivity 
+should be considered when using the VC approximation, particularly for 
+materials with thermal conductivities which are close to the 
+high-scatter limit.
 
-
+\begin{acknowledgements}
+This work was supported in part by a grant of computer time from the DOD 
+High Performance Computing Modernization Program at the US Army Engineer 
+Research and Development Center. We thank Jivtesh Garg, Tian, Sergei 
+Shenogin, 
+\end{acknowledgements}
 
 %--------------------------------------------------------------------------
 \appendix
@@ -1829,19 +1835,29 @@ argon, this requirement is satisfied for modest system sizes
 can be extrapolated to a bulk value. 
 For SW silicon, the thermal conductivity is dominated by low-frequency 
 modes (Fig. ). Becasue of this, large system sizes 
-(up to $N_0 = 24$) are needed to satsify the 
+(up to $N_0 = 40$) are needed to satsify the 
 extrpaolation requirements and only VC-ALD can be used.(cite) This 
-underlines the computational efficieny of the VC-ALD method which is 
+demonstrates the computational efficieny of the VC-ALD method which is 
 necessary when computationally expensive 
 ab initio methods are used (Section ).
 \cite{garg_role_2011,tian_phonon_2012,
-lindsay_thermal_2012,esfarjani_heat_2011} 
+lindsay_thermal_2012,esfarjani_heat_2011}
+
+Reciprocal space grids of up to  are required to predict converged 
+thermal conductivity of Si.\cite{esfarjani_heat_2011} 
+
 For the GK method, the finite size extrapolation is used for 
 both LJ argon and SW silicon for smaller system sizes $N_0 \le 12$. 
 The validity of this result can be explained in terms of a 
 combination of effects which are specific to the MD simulations.
-\cite{esfarjani_heat_2011} In fact, for $c=0$ the GK results are independent 
-of system size for $N_0 = 4$ to $N_0 = 12$ for both LJ argon and SW silicon.
+\cite{esfarjani_heat_2011} In fact, for $c=0$ the GK results are 
+independent of system size for $N_0 = 4$ to $N_0 = 12$ for LJ argon.
+
+For Si modeled using the Tersoff potential, 
+system sizes of up to 64000 atoms are required to observe 
+converged values of thermal conductivity.\cite{he_lattice_2012} 
+We find that similar system sizes are 
+also required for 
 
 \clearpage
 \bibliographystyle{apsrev}

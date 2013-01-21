@@ -1,5 +1,5 @@
-%\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
-\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+%\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
 %\documentclass[aps,prl,onecolumn,groupedaddress,amsmath,amssymb,12pt]{revtex4}
 \usepackage{graphicx}
 \usepackage{ifthen}
@@ -666,15 +666,19 @@ and quasi-harmonic lattice dynamics.\cite{mcgaughey_phonon_2006}
 While the group 
 velocities are necessary to predict the thermal conductivity, 
 of particular interest is the phonon mean free path (MFP), 
-$\Lambda\kv = |\pmb{v}_{g}| \tau\kv$, which is crucial for understanding 
-nano and micro-nanostructuring effects.(cite) Predicting 
-group velocities in disordered systems is just as crucial as 
+\begin{equation}\label{EQ:MFP}
+$\Lambda\kv = |\pmb{v}_{g}| \tau\kv$, 
+\end{equation}
+which is crucial for understanding 
+nano and micro-nanostructuring effects.(cite) Thus, predicting 
+group velocities in disordered systems is just as important as 
 predicting mode lifetimes.
 
 Sound speeds of alloys: can't find any good references. (Cahill-Pohl).
 
-In general, real systems have dispersion such that 
-$v_g\kv(\omega\kv)$.  For simple systems, such as LJ argon, the 
+In general, real systems have dispersion which depends on the wavevector 
+and polarization, such that $v_g\kv$.  
+For simple systems, such as LJ argon, the 
 dispersion has only 3 polarizations $\nu$, 
 1 longitudinal and 2 transverse acoustic branches.
 \cite{dove_introduction_1993} For SW silicon, the 2-atom basis creates 
@@ -700,10 +704,11 @@ vibational modes was estimated using an interpolation scheme for
 small but finite wavevectors 
 near [000]. 
 \cite{donadio_atomistic_2009,he_heat_2011,he_thermal_2011} 
-footnot
+footnote
 (We do not, in general, observe the required dispersion 
-beavhior to perform this interpolation for the LJ and SW systems 
-studied in this work.)
+beavhior near the Gamma point to perform the interpolation 
+for the LJ and SW systems studied in this work.
+\cite{donadio_atomistic_2009,he_heat_2011,he_thermal_2011})
 
 Feldman et al used the structure factor to predict an effective dispersion 
 for a model of a-Si, but did not predict group velocities.
@@ -861,9 +866,11 @@ predicted lifetimes for Gamma-NMD. This is because there is no symmetry
 averaging of the mode properties, which is performed for the modes 
 of VC-NMD given that a VC is assumed.(cite)
 
-Overall, the lifetimes predicted by both VC-NMD and Gamma-NMD are larger 
-than the Ioffe-Regel limit ($\tau = 2\pi/\omega$, Fig. ).
-\cite{taraskin_determination_1999} 
+Overall, the lifetimes predicted by both VC-NMD and Gamma-NMD (Fig. ) 
+are larger than the Ioffe-Regel limit,\cite{taraskin_determination_1999} 
+\begin{equation}\label{EQ:IR}
+\tau = 2\pi/\omega.
+\end{equation}
 Lifetimes predicted by both VC-NMD and Gamma-NMD show scalings with 
 frequency which are predicted by the perturbative methods 
 of VC-ALD (Section ), in 
@@ -938,7 +945,11 @@ for mass point defect scattering\cite{tamura_isotope_1983}
 \end{split}
 \end{equation}
 where 
+\begin{equation}\label{EQ:g(b)}
+\begin{split}
 $g(b) = \sum_\mu c^{\mu}(b)(1-m^{\mu}(b)/\bar{m}(b))^2$, 
+\end{split}
+\end{equation}
 N is the number of unit cells, and $c^\mu$ is the concentration, 
 $m^\mu(b)$ is the mass of the $\mu$-th species 
 and $\bar{m}^{\mu}$ is the average mass. 
@@ -1547,9 +1558,16 @@ nearly all important modes to thermal transport are non-propagating.
 
 Results in this work suggest that the lower limit for the mode diffusivity 
 should be considered when using the VC approximation, particularly for 
-materials with thermal conductivities which are close to the 
+materials with thermal conductivities which are near the 
 high-scatter limit.
 
+\begin{acknowledgements}
+This work was supported in part by a grant of computer time from the DOD 
+High Performance Computing Modernization Program at the US Army Engineer 
+Research and Development Center. 
+We thank Jivtesh Garg, Zhiting Tian, Davide Donadio, 
+Asad Hasan and Craig Maloney for helpful discussions.
+\end{acknowledgements}
 
 %--------------------------------------------------------------------------
 \appendix
@@ -1844,8 +1862,8 @@ For the GK method, the finite size extrapolation is used for
 both LJ argon and SW silicon for smaller system sizes $N_0 \le 12$. 
 The validity of this result can be explained in terms of a 
 combination of effects which are specific to the MD simulations.
-\cite{esfarjani_heat_2011} In fact, for $c=0$ the GK results are independent 
-of system size for $N_0 = 4$ to $N_0 = 12$ for LJ argon.
+\cite{esfarjani_heat_2011} In fact, for $c=0$ the GK results are 
+independent of system size for $N_0 = 4$ to $N_0 = 12$ for LJ argon.
 
 For Si modeled using the Tersoff potential, 
 system sizes of up to 64000 atoms are required to observe 

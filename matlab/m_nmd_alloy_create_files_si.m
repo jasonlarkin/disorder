@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/alloy/0.5/2x/' ;
+    nmd.str.main = '/home/jason/disorder2/si/alloy/0.05/66x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -12,9 +12,9 @@ clear
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-    nmd.x0.Nx = 2; nmd.x0.Ny = 2; nmd.x0.Nz = 2;
+    nmd.x0.Nx = 66; nmd.x0.Ny = 66; nmd.x0.Nz = 66;
 %--------------------------------------------------------------------------
-    nmd.x0.alloy_conc = 0.5;
+    nmd.x0.alloy_conc = 0.05;
 %--------------------------------------------------------------------------
     nmd.x0.mass(1) = 1.0; nmd.x0.mass(2) = 2.6; 
     nmd.x0.NUM_ATOMS_TYPE = 1;
@@ -96,6 +96,46 @@ m_x0_write(nmd.x0, nmd.str.main , 'x0.data');
  
 
 %--------------------------------------------------------------------------
+%LAMMPS
+%--------------------------------------------------------------------------
+str.cmd = ['mkdir -p ' nmd.str.main 'nmd'];
+system(str.cmd);
+
+str.cmd =...
+    ['cp ' nmd.str.matlab 'lmp_submit.sh.tmp '...
+    nmd.str.main 'lmp_submit.sh'];
+system(str.cmd);    
+
+orig(1).str = 'NUM_ATOMS';
+change(1).str = int2str(nmd.x0.NUM_ATOMS);
+orig(2).str = 'NUM_ATOM_TYPE';
+change(2).str = int2str(nmd.x0.NUM_ATOMS_TYPE);
+orig(3).str = 'LX';
+change(3).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
+orig(4).str = 'LY';
+change(4).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
+orig(5).str = 'LZ';
+change(5).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
+orig(6).str = 'ATOM_MASS_1';
+change(6).str = num2str(nmd.x0.mass(1)*nmd.si.mass);
+
+m_change_file_strings(...
+    [nmd.str.matlab nmd.str.lmp_in],...
+    orig,...
+    [nmd.str.main 'lmp.in.x0'],...
+    change)
+clear orig change
+          
+output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
+str.write=...
+    [nmd.str.main 'lmp.in.x0'];
+dlmwrite(str.write,output,'-append','delimiter','\t');
+
+%--------------------------------------------------------------------------
+%pause
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
 %GULP
 %--------------------------------------------------------------------------
 
@@ -124,6 +164,26 @@ for ikslice = 1:nmd.NUM_KSLICES
         (ikslice-1)*slice_length+1:(ikslice)*slice_length);
 end
 
+for ikpt=1:size(nmd.kptmaster,1)
+nmd.kptmodelist( (ikpt-1)*nmd.NUM_MODES+1:(ikpt)*nmd.NUM_MODES,1:3) = ...
+        repmat(nmd.kptmaster(ikpt,:),nmd.NUM_MODES,1);
+end
+
+%--------------------------------------------------------------------------
+%SAVE nmd structure--------------------------------------------------------  
+save([nmd.str.main,'nmd.mat'], '-struct', 'nmd');
+
+
+
+
+
+pause
+pause
+pause
+pause
+pause
+
+
 
 if exist(...
         [nmd.str.main 'eigvec.dat'], 'file')~=0
@@ -131,7 +191,9 @@ if exist(...
     system(['rm -f ' nmd.str.main 'freq.dat']);
     system(['rm -f ' nmd.str.main 'vel.dat']);
 end    
-
+%--------------------------------------------------------------------------
+tic
+%--------------------------------------------------------------------------
 for ikpt=1:size(nmd.kptmaster,1)
 nmd.kptmaster(ikpt,:)       
 
@@ -175,42 +237,9 @@ nmd.vel =...
     dlmread([nmd.str.main 'vel.dat']);
 %--------------------------------------------------------------------------
 
-
 %--------------------------------------------------------------------------
-%LAMMPS
+toc
 %--------------------------------------------------------------------------
-str.cmd = ['mkdir -p ' nmd.str.main 'nmd'];
-system(str.cmd);
-
-str.cmd =...
-    ['cp ' nmd.str.matlab 'lmp_submit.sh.tmp '...
-    nmd.str.main 'lmp_submit.sh'];
-system(str.cmd);    
-
-orig(1).str = 'NUM_ATOMS';
-change(1).str = int2str(nmd.x0.NUM_ATOMS);
-orig(2).str = 'NUM_ATOM_TYPE';
-change(2).str = int2str(nmd.x0.NUM_ATOMS_TYPE);
-orig(3).str = 'LX';
-change(3).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
-orig(4).str = 'LY';
-change(4).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
-orig(5).str = 'LZ';
-change(5).str = num2str((nmd.x0.Nx)*nmd.x0.latvec(1,1)*nmd.x0.alat);
-orig(6).str = 'ATOM_MASS_1';
-change(6).str = num2str(nmd.x0.mass(1)*nmd.si.mass);
-
-m_change_file_strings(...
-    [nmd.str.matlab nmd.str.lmp_in],...
-    orig,...
-    [nmd.str.main 'lmp.in.x0'],...
-    change)
-clear orig change
-          
-output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
-str.write=...
-    [nmd.str.main 'lmp.in.x0'];
-dlmwrite(str.write,output,'-append','delimiter','\t');
 
 
 % for iseed=1:size(nmd.seed.initial,2)
