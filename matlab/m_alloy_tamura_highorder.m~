@@ -1,0 +1,24 @@
+clear
+
+%lj
+nmd =...
+    load(['/home/jason/disorder2/lj/alloy/10K/0.05/10x/NMD/1/work/' 'NMDdata.mat']);
+sed =...
+    load(['/home/jason/disorder2/lj/alloy/10K/0.05/10x/NMD/1/work/' 'SEDdata.mat']);
+
+m1 = 1; m2=3; c = 0.05; vm = (1-c)*m1 + c*m2;
+
+pause
+
+g(1) =...
+    (1-c)* ((1 - (m1/vm) )^1) + c* ((1 - (m2/vm) )^1);
+g(2) =...
+    (1-c)* ((1 - (m1/vm) )^2) + c* ((1 - (m2/vm) )^2);
+g(3) =...
+    (1-c)* ((1 - (m1/vm) )^3) + c* ((1 - (m2/vm) )^3);
+g(4) =...
+    (1-c)* ((1 - (m1/vm) )^4) + c* ((1 - (m2/vm) )^4);
+
+tamura(1).tamura = m_alloy_tamura_highorder_Iw(g,sed.freq,nmd.NUM_UCELL_COPIES,1000,1*0.);
+    
+plot(tamura(1).tamura.freq_range,tamura(1).tamura.dw,'.')

@@ -1,0 +1,38 @@
+function tamura = m_alloy_tamura_highorder_Iw(g,freq,NUM_UCELLS,NUM_BIN,BROADEN)
+
+tamura.g = g;
+%sort
+% [Ino0,Jno0] = find(freq > 0.001); 
+[Ifreq,Jfreq] = sort(freq);
+freq_sort = freq(Jfreq);
+freq_sort(1:10)
+tamura.dw_avg =...
+    mean(...
+    freq_sort( 5:length(freq_sort)-1 ) - ...
+    freq_sort( 1:length(freq_sort) - 1)...
+    );
+
+min(freq_sort)
+max(freq_sort)
+
+tamura.freq_range = linspace(min(freq_sort),max(freq_sort),NUM_BIN);
+i = sqrt(-1);
+
+for ifreq = 1:length(tamura.freq_range)
+   tamura.Iw(ifreq) =...
+       (1/(6*NUM_UCELLS))*...
+       sum(...
+       (freq_sort.^2)./...
+       (tamura.freq_range(ifreq)^2 - freq_sort.^2 -i*tamura.dw_avg*BROADEN)...
+       );
+end
+
+size(freq)
+size(tamura.Iw)
+
+tamura.life = 1./( tamura.g(2)*tamura.freq_range.*imag(tamura.Iw) ) ; 
+tamura.dw = tamura.g(2)*real(tamura.Iw)/2; 
+tamura.g3Iwg2 = g(3)*abs(tamura.Iw)/g(2);
+tamura.g3Iwg2 = g(4)*(abs(tamura.Iw).^2)/g(2);
+    
+end
