@@ -3,6 +3,19 @@ function ald = m_lj_cond_alloy_ald_results
 %returns the vc thermal conductivity results @ 10K for 4-12x systems
 %--------------------------------------------------------------------------
 
+lj = m_lj; constant = m_constant;
+
+ald.m = [1;1.1;1.3;2]; 
+ald.prefactor =...
+    (3/2)*( (pi/6)^(1/3))*constant.kb*...
+    lj.num_density^(2/3);
+ald.high_scatter = [...
+    ald.prefactor*lj.sound*(lj.sigma/lj.tau)/sqrt(ald.m(1))
+    ald.prefactor*lj.sound*(lj.sigma/lj.tau)/sqrt(ald.m(2))
+    ald.prefactor*lj.sound*(lj.sigma/lj.tau)/sqrt(ald.m(3))
+    ald.prefactor*lj.sound*(lj.sigma/lj.tau)/sqrt(ald.m(4))
+    ];
+
 ald.conc =[...
     0
     0.05
@@ -24,7 +37,7 @@ ald.extrap =[...
     0.2297 
     ];
 ald.extrap_diff =[...
-    3.2804  
+    0.0 
     0.5179 
     0.3335
     0.3078

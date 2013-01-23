@@ -1,0 +1,139 @@
+
+
+Jason,
+
+Here are my comments on the first 14 or so pages of the VC manuscript. After
+that, as you had said, it gets a bit jumbled.
+
+%--------------------------------------------------------------------------
+1. Be careful not to get ahead of yourself, the manuscript should read as a
+linear narrative. For example, in Section IIE1, you talk a lot about section
+IIE2. I suggest either flipping the two sections, or just providing the
+comparisons when you get to IIE2.
+
+%--------------------------------------------------------------------------
+2. PRB doesn't have a page restriction, so there is no need to put equations
+in line with the text. Give every equations its own number.
+
+done?
+
+%--------------------------------------------------------------------------
+3. I think that some minor reorganization/renaming of section will help.
+Here is my suggestion, with more comments below:
+
+I Introduction
+Combine existing introduction with parts of IIA, which is essentially your
+literature review.
+
+IIA Thermal Conductivity Models
+
+IIB Simulation Details (what is now in IIC)
+
+IIC Density of States
+
+IID Dispersion (you call it group velocity, but it is really a discussion of
+how to get the dispersion curves, which are required to get the group
+velocities)
+
+IIE Lifetimes
+
+IIF Diffusivities
+
+done
+
+%--------------------------------------------------------------------------
+4. Be sure to refer to the appendices in the main text.
+
+%--------------------------------------------------------------------------
+5. For the introduction: explain why alloys are important technologically,
+role of thermal transport. You want to investigate what happens to the
+fundamental mechanisms of thermal transport in alloys when you change the
+composition.
+
+%--------------------------------------------------------------------------
+6. For the introduction: provide a concise, general definition (if possible)
+of the virtual crystal approximation. You may need to acknowledge that there
+are different flavors. Is there a version virtual crystal for amorphous
+materials?
+
+%--------------------------------------------------------------------------
+7. For the introduction: one of your objectives is to test the limits of the
+virtual crystal approximation.
+
+%--------------------------------------------------------------------------
+8. In Thermal Conductivity Models section, motivate what it is we want to do
+(predict phonon properties and thermal conductivity), how we will do it
+(BTE), what input is required. As of now, you just jump into it. One
+important question is what conditions are necessary for us to use Eq. (1) to
+model alloys.
+
+%--------------------------------------------------------------------------
+9. Too much detail in Fig. 1 caption. Just make your point! Refer to this
+figure somewhere in the text.
+
+%--------------------------------------------------------------------------
+10. Can you confirm that your alloy thermal conductivities are isotropic?
+
+they are within the errors introduced by the finite system.
+
+%--------------------------------------------------------------------------
+11. Transition on p5 from crystal to AF is weak. Maybe provide the kAF
+equation here? Comment that AF was developed for amorphous. Has anyone else
+tried to apply it to alloys before?
+
+%--------------------------------------------------------------------------
+12. The point of the calculations of DOS, dispersion, and lifetimes is to
+check all these quantities before predicting thermal conductivity. I think
+that you should be able to more clearly lay out the plan for Section II at
+the start, making it clear for the reader. You do this on p4, but I think
+that it could be clearer.
+
+%--------------------------------------------------------------------------
+13. Section IID1 contains details about the motivation and the calculation.
+I would move the motivation (e.g., role/importance/challenges of MFP) into
+the new section IIA.
+
+needs work
+
+%--------------------------------------------------------------------------
+14. For alloys sound speeds, have you checked the CRC handbook, or some
+other large reference book?
+
+needs work
+
+%--------------------------------------------------------------------------
+15. Provide enough equations so that the reader knows how E in Eq. (6) is
+calculated.
+
+needs work
+
+%--------------------------------------------------------------------------
+16. p12: more discussion of concentration trend, comparison between VC and
+Gamma. Discuss physical origin of Ioffe-Regel. Is there a physical origin of
+the minimum lifetime? Can it be predicted?>
+
+needs work
+
+%--------------------------------------------------------------------------
+17. Discussion of g(b) equation is not clear.
+
+needs work
+
+%--------------------------------------------------------------------------
+18. Better motivate why you also look at SW starting with the lifetimes.
+Explain what is plotted in Figs. 5 and 6.
+
+Alan
+
+
+
+
+
+
+
+
+
+
+
+
+
