@@ -411,7 +411,10 @@ alloys show good to excellent agreement with experimental results
 Garg used ab initio calculations with VC-ALD   
 to predict the thermal conductivity of Si/Ge alloys 
 for all concentrations, obtaining excellent agreement with experiment.
-\cite{garg_role_2011}  Lindsay and Broido 
+\cite{garg_role_2011}  
+Does Garg find factor of 2 change for intrinsic lifetimes, or the 
+combination of intrinsic and defect with Matthiesen rule?
+Lindsay and Broido 
 found good agreement with VC-ALD and experiment for 
 isotopically defected GaN.\cite{lindsay_thermal_2012}  
 Isotopically defected GaN and Si/Ge alloys (even for large 
@@ -1422,7 +1425,7 @@ almost all important modes to thermal transport are high-scattering. The GK
 predicted thermal conductivity predictions for the disordered lattices 
 demonstrate that there are 
 important contributions from propagating modes, even at higher temperatures 
-where $k_{GK} \gt k_{AF,HS}$. 
+where $k_{GK} > k_{AF,HS}$. 
 
 For SW silicon, the thermal conductivities prediction by VC-ALD and GK 
 are in good agreement, even without the adjustment VC-ALD$^*$, which only 
@@ -1440,7 +1443,6 @@ of frequency,
 \cite{feldman_thermal_1993,feldman_numerical_1999,allen_diffusons_1999} 
 which has been used to explain the propagating 
 mode effects seen in a-Si thin films.\cite{he_heat_2011}
-
 
 
 %--------------------------------------------------------------------------
