@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/alloy/0.05/66x/' ;
+    nmd.str.main = '/home/jason/disorder2/si/alloy/0.05/26x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -12,7 +12,7 @@ clear
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-    nmd.x0.Nx = 66; nmd.x0.Ny = 66; nmd.x0.Nz = 66;
+    nmd.x0.Nx = 26; nmd.x0.Ny = 26; nmd.x0.Nz = 26;
 %--------------------------------------------------------------------------
     nmd.x0.alloy_conc = 0.05;
 %--------------------------------------------------------------------------
@@ -126,10 +126,11 @@ m_change_file_strings(...
     change)
 clear orig change
           
+format short
 output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
 str.write=...
     [nmd.str.main 'lmp.in.x0'];
-dlmwrite(str.write,output,'-append','delimiter','\t');
+dlmwrite(str.write,output,'-append','precision','%d','%d','%.7F%' , '%.7f%' , '%.7f%' , 'delimiter','\t');
 
 %--------------------------------------------------------------------------
 %pause

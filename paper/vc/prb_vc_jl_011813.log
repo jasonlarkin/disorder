@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  23 JAN 2013 12:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  24 JAN 2013 12:13
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_011813.tex
@@ -284,70 +284,6 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 255.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1]
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 276.
-
-
-Package natbib Warning: Citation `ward_intrinsic_2010' on page 2 undefined on i
-nput line 286.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 2 undefined on 
-input line 286.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 2 undefined on input 
-line 286.
-
-
-Package natbib Warning: Citation `shiga_microscopic_2012' on page 2 undefined o
-n input line 286.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 286.
-
-
-Package natbib Warning: Citation `shiomi_thermal_2011' on page 2 undefined on i
-nput line 286.
-
-
-Package natbib Warning: Citation `esfarjani_heat_2011' on page 2 undefined on i
-nput line 286.
-
-
-Package natbib Warning: Citation `koker_thermal_2009' on page 2 undefined on in
-put line 291.
-
-
-Package natbib Warning: Citation `bao_first-principles_2012' on page 2 undefine
-d on input line 291.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 2 undefined on 
-input line 291.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 291.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 2 undefined on input 
-line 291.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 2 undefined on input 
-line 297.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 2 undefined on 
-input line 297.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 299.
-
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -355,87 +291,10 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
-Package natbib Warning: Citation `abeles_lattice_1963' on page 2 undefined on i
-nput line 304.
-
-
-Package natbib Warning: Citation `abeles_lattice_1963' on page 2 undefined on i
-nput line 310.
-
-
-Package natbib Warning: Citation `tamura_isotope_1983' on page 2 undefined on i
-nput line 310.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 2 undefined on inpu
-t line 310.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 2 undefined on 
-input line 310.
-
 
 LaTeX Warning: Reference `' on page 2 undefined on input line 319.
 
-[2]
-
-Package natbib Warning: Citation `abeles_lattice_1963' on page 3 undefined on i
-nput line 356.
-
-
-Package natbib Warning: Citation `abeles_lattice_1963' on page 3 undefined on i
-nput line 369.
-
-[3]
-
-Package natbib Warning: Citation `cahill_thermal_2004' on page 4 undefined on i
-nput line 393.
-
-
-Package natbib Warning: Citation `cahill_thermal_2005' on page 4 undefined on i
-nput line 393.
-
-
-Package natbib Warning: Citation `cahill_thermal_2004' on page 4 undefined on i
-nput line 399.
-
-
-Package natbib Warning: Citation `kamitakahara_vibrations_1974' on page 4 undef
-ined on input line 404.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 4 undefined on input 
-line 410.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 4 undefined on 
-input line 410.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 4 undefined on input 
-line 414.
-
-
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 4 undefined on 
-input line 419.
-
-
-Package natbib Warning: Citation `shiga_microscopic_2012' on page 4 undefined o
-n input line 426.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 4 undefined on inpu
-t line 426.
-
-
-Package natbib Warning: Citation `stillinger_computer_1985' on page 4 undefined
- on input line 438.
-
-
-Package natbib Warning: Citation `allen_thermal_1993' on page 4 undefined on in
-put line 450.
-
-[4]
+[2] [3] [4]
 File: /home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps Graphic file (type e
 ps)
  </home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps>
@@ -444,8 +303,12 @@ s)
 
 </home/jason/disorder/si/si_conv_2x2x2_perfect-2.eps>
 
-Package natbib Warning: Citation `momma_vesta:_2008' on page 5 undefined on inp
-ut line 501.
+LaTeX Warning: Reference `S:From VC Dispersion' on page 5 undefined on input li
+ne 501.
+
+
+LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 5 undefined on i
+nput line 501.
 
 
 LaTeX Warning: Reference `S:From VC Dispersion' on page 5 undefined on input li
@@ -455,341 +318,40 @@ ne 501.
 LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 5 undefined on i
 nput line 501.
 
-
-Package natbib Warning: Citation `momma_vesta:_2008' on page 5 undefined on inp
-ut line 501.
-
-
-LaTeX Warning: Reference `S:From VC Dispersion' on page 5 undefined on input li
-ne 501.
-
-
-LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 5 undefined on i
-nput line 501.
-
-
-Package natbib Warning: Citation `ziman_electrons_2001' on page 5 undefined on 
-input line 516.
-
-
-Package natbib Warning: Citation `peierls_quantum_2001' on page 5 undefined on 
-input line 517.
-
-
-Package natbib Warning: Citation `ward_intrinsic_2010' on page 5 undefined on i
-nput line 535.
-
-[5]
-
-Package natbib Warning: Citation `mcquarrie_statistical_2000' on page 6 undefin
-ed on input line 544.
-
-
-Package natbib Warning: Citation `allen_thermal_1993' on page 6 undefined on in
-put line 563.
-
-[6]
-
-Package natbib Warning: Citation `he_heat_2011' on page 7 undefined on input li
-ne 574.
-
-
-Package natbib Warning: Citation `feldman_thermal_1993' on page 7 undefined on 
-input line 577.
-
-
-Package natbib Warning: Citation `mcgaughey_phonon_2004' on page 7 undefined on
- input line 612.
-
-
-Package natbib Warning: Citation `mcgaughey_phonon_2004' on page 7 undefined on
- input line 617.
-
+[5] [6]
 
 LaTeX Warning: Command \r invalid in math mode on input line 619.
 
-
-Package natbib Warning: Citation `goicochea_thermal_2010' on page 7 undefined o
-n input line 621.
-
-
-Package natbib Warning: Citation `sellan_cross-plane_2010' on page 7 undefined 
-on input line 623.
-
 [7]
-
-Package natbib Warning: Citation `dove_introduction_1993' on page 8 undefined o
-n input line 637.
-
-
-Package natbib Warning: Citation `dove_introduction_1993' on page 8 undefined o
-n input line 644.
-
 
 LaTeX Warning: Reference `S:vc_gamma_dos' on page 8 undefined on input line 661
 .
 
-
-Package natbib Warning: Citation `gale_general_2003' on page 8 undefined on inp
-ut line 667.
-
 [8]
-
-Package natbib Warning: Citation `duda_reducing_2011' on page 9 undefined on in
-put line 689.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 9 undefined on input 
-line 691.
-
-
-Package natbib Warning: Citation `bouchard_vibrational_1988' on page 9 undefine
-d on input line 693.
-
 File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps Graphic file (type
  eps)
-</home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps>
-
-Package natbib Warning: Citation `mcgaughey_phonon_2006' on page 9 undefined on
- input line 731.
-
-
-Package natbib Warning: Citation `dove_introduction_1993' on page 9 undefined o
-n input line 738.
-
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 9 undefined on i
-nput line 749.
-
-
-Package natbib Warning: Citation `duda_reducing_2011' on page 9 undefined on in
-put line 749.
-
-
-Package natbib Warning: Citation `donadio_atomistic_2009' on page 9 undefined o
-n input line 749.
-
-
-Package natbib Warning: Citation `he_heat_2011' on page 9 undefined on input li
-ne 749.
-
-
-Package natbib Warning: Citation `he_thermal_2011' on page 9 undefined on input
- line 749.
-
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 9 undefined on i
-nput line 751.
-
-
-Package natbib Warning: Citation `duda_reducing_2011' on page 9 undefined on in
-put line 754.
-
-
-Package natbib Warning: Citation `donadio_atomistic_2009' on page 9 undefined o
-n input line 759.
-
-
-Package natbib Warning: Citation `he_heat_2011' on page 9 undefined on input li
-ne 759.
-
-
-Package natbib Warning: Citation `he_thermal_2011' on page 9 undefined on input
- line 759.
-
-
-Package natbib Warning: Citation `donadio_atomistic_2009' on page 9 undefined o
-n input line 764.
-
-
-Package natbib Warning: Citation `he_heat_2011' on page 9 undefined on input li
-ne 764.
-
-
-Package natbib Warning: Citation `he_thermal_2011' on page 9 undefined on input
- line 764.
-
-[9]
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 10 undefined 
-on input line 768.
-
-
-Package natbib Warning: Citation `volz_molecular-dynamics_2000' on page 10 unde
-fined on input line 771.
-
-
-Package natbib Warning: Citation `allen_diffusons_1999' on page 10 undefined on
- input line 784.
-
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 10 undefined 
-on input line 784.
-
-
-Package natbib Warning: Citation `allen_diffusons_1999' on page 10 undefined on
- input line 785.
-
-[10]
-
-Package natbib Warning: Citation `allen_diffusons_1999' on page 11 undefined on
- input line 818.
-
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 11 undefined 
-on input line 818.
-
-
-Package natbib Warning: Citation `allen_diffusons_1999' on page 11 undefined on
- input line 850.
-
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 11 undefined 
-on input line 850.
-
-[11]
+ </home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps> [9] [10] [11]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps Graphic file (type
  eps)
- </home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps>
 
-Package natbib Warning: Citation `ladd_lattice_1986' on page 12 undefined on in
-put line 888.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 12 undefined 
-on input line 888.
-
-[12] [13]
-
-Package natbib Warning: Citation `taraskin_determination_1999' on page 14 undef
-ined on input line 960.
-
-
-Package natbib Warning: Citation `graebner_phonon_1986' on page 14 undefined on
- input line 969.
-
+</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps> [12] [13]
 File: /home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps Graphic fi
 le (type eps)
-</home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps>
 
-Package natbib Warning: Citation `taraskin_determination_1999' on page 14 undef
-ined on input line 1002.
-
-
-Package natbib Warning: Citation `taraskin_determination_1999' on page 14 undef
-ined on input line 1002.
-
-[14] [15]
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 16 undefined 
-on input line 1022.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 16 undefined on input
- line 1022.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 16 undefined on inp
-ut line 1022.
-
-
-Package natbib Warning: Citation `ecsedy_thermal_1977' on page 16 undefined on 
-input line 1025.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 16 undefined 
-on input line 1025.
-
-
-Package natbib Warning: Citation `tamura_isotope_1983' on page 16 undefined on 
-input line 1035.
-
-
-Package natbib Warning: Citation `tamura_isotope_1983' on page 16 undefined on 
-input line 1060.
-
-
-Package natbib Warning: Citation `klemens_scattering_1955' on page 16 undefined
- on input line 1074.
-
-
-Package natbib Warning: Citation `klemens_thermal_1957' on page 16 undefined on
- input line 1074.
-
-
-Package natbib Warning: Citation `skye_thermal_2008' on page 16 undefined on in
-put line 1077.
-
-[16]
-
-Package natbib Warning: Citation `tamura_isotope_1983' on page 17 undefined on 
-input line 1091.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 17 undefined 
-on input line 1111.
-
-
-Package natbib Warning: Citation `tamura_isotope_1983' on page 17 undefined on 
-input line 1143.
-
-[17]
+</home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps> [14] [15]
+[16] [17]
 File: /home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_lj.eps Gra
 phic file (type eps)
- </home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_lj.eps>
+
+</home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_lj.eps>
 File: /home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_si.eps Gra
 phic file (type eps)
 
 </home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_si.eps>
-[18]
-
-Package natbib Warning: Citation `allen_thermal_1993' on page 19 undefined on i
-nput line 1193.
-
-
-Package natbib Warning: Citation `sheng_introduction_2006' on page 19 undefined
- on input line 1199.
-
-
-Package natbib Warning: Citation `vitelli_heat_2010' on page 19 undefined on in
-put line 1199.
-
-[19]
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 20 undefined on 
-input line 1219.
-
-
-Package natbib Warning: Citation `cahill_lattice_1988' on page 20 undefined on 
-input line 1222.
-
-
-Package natbib Warning: Citation `feldman_thermal_1993' on page 20 undefined on
- input line 1236.
-
-
-Package natbib Warning: Citation `shenogin_predicting_2009' on page 20 undefine
-d on input line 1236.
-
-
-Package natbib Warning: Citation `kittel_interpretation_1949' on page 20 undefi
-ned on input line 1266.
-
-
-Package natbib Warning: Citation `sheng_heat_1991' on page 20 undefined on inpu
-t line 1266.
-
-[20]
-
-Package natbib Warning: Citation `xu_energy_2009' on page 21 undefined on input
- line 1310.
-
-
-Package natbib Warning: Citation `vitelli_heat_2010' on page 21 undefined on in
-put line 1311.
-
+[18] [19] [20]
 File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps Graphic 
 file (type eps)
+
 </home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps>
 File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps Graphic 
 file (type eps)
@@ -798,60 +360,15 @@ file (type eps)
 File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps Graphic file (type 
 eps)
 
-</home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps> [21] [22] [23]
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 24 undefined 
-on input line 1408.
-
-[24]
-
-Package natbib Warning: Citation `feldman_thermal_1993' on page 25 undefined on
- input line 1443.
-
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 25 undefined 
-on input line 1443.
-
-
-Package natbib Warning: Citation `allen_diffusons_1999' on page 25 undefined on
- input line 1443.
-
-
-Package natbib Warning: Citation `he_heat_2011' on page 25 undefined on input l
-ine 1445.
-
+</home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps> [21] [22] [23] [24]
 File: /home/jason/disorder/lj/alloy/lj_cond_compare.eps Graphic file (type eps)
+
 
 </home/jason/disorder/lj/alloy/lj_cond_compare.eps>
 File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
 
 
-</home/jason/disorder/si/alloy/si_cond_compare.eps>
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 25 undefined 
-on input line 1483.
-
-
-Package natbib Warning: Citation `xu_energy_2009' on page 25 undefined on input
- line 1483.
-
-
-Package natbib Warning: Citation `duda_reducing_2011' on page 25 undefined on i
-nput line 1491.
-
-[25] [26]
-
-Package natbib Warning: Citation `graebner_phonon_1986' on page 27 undefined on
- input line 1508.
-
-
-Package natbib Warning: Citation `henry_ehrenreich_thermal_1979' on page 27 und
-efined on input line 1535.
-
-
-Package natbib Warning: Citation `graebner_phonon_1986' on page 27 undefined on
- input line 1538.
-
+</home/jason/disorder/si/alloy/si_cond_compare.eps> [25] [26]
 Missing character: There is no Õ in font cmr12!
 Missing character: There is no ë in font cmr12!
 Missing character: There is no ‚ in font cmr12!
@@ -859,155 +376,82 @@ Missing character: There is no ê in font cmr12!
 Missing character: There is no ª in font cmr12!
 Missing character: There is no Õ in font cmr12!
 Missing character: There is no í in font cmr12!
-[27] [28]
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 29 undefined on inp
-ut line 1613.
-
-
-Package natbib Warning: Citation `plimpton_fast_1995' on page 29 undefined on i
-nput line 1653.
-
-
-Package natbib Warning: Citation `gale_general_2003' on page 29 undefined on in
-put line 1654.
-
-[29]
-
-Package natbib Warning: Citation `esfarjani_method_2008' on page 30 undefined o
-n input line 1679.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 30 undefined 
-on input line 1679.
-
-
-Package natbib Warning: Citation `esfarjani_heat_2011' on page 30 undefined on 
-input line 1679.
-
-
-Package natbib Warning: Citation `chaput_phonon-phonon_2011' on page 30 undefin
-ed on input line 1679.
-
-
-Package natbib Warning: Citation `turney_predicting_2009' on page 30 undefined 
-on input line 1681.
-
-
-Package natbib Warning: Citation `plimpton_fast_1995' on page 30 undefined on i
-nput line 1751.
-
-
-Package natbib Warning: Citation `srivastava_physics_1990' on page 30 undefined
- on input line 1787.
-
-
-Package natbib Warning: Citation `landau_statistical_1980' on page 30 undefined
- on input line 1787.
-
-
-Package natbib Warning: Citation `rajabpour_thermal_2010' on page 30 undefined 
-on input line 1787.
-
-[30]
-
-Package natbib Warning: Citation `koker_thermal_2009' on page 31 undefined on i
-nput line 1801.
-
-
-Package natbib Warning: Citation `thomas_predicting_2010' on page 31 undefined 
-on input line 1801.
-
-
-Package natbib Warning: Citation `koker_thermal_2009' on page 31 undefined on i
-nput line 1806.
-
-
-Package natbib Warning: Citation `thomas_predicting_2010' on page 31 undefined 
-on input line 1806.
-
-
-Package natbib Warning: Citation `shiomi_thermal_2011' on page 31 undefined on 
-input line 1806.
-
-
-Package natbib Warning: Citation `ong_reduction_2011' on page 31 undefined on i
-nput line 1806.
-
-
-Package natbib Warning: Citation `qiu_molecular_2012' on page 31 undefined on i
-nput line 1806.
-
+ [27] [28]
+[29] [30]
 File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps Graphic file (ty
 pe eps)
-</home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps>
+ </home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps>
 
 LaTeX Warning: Reference `EQ:M:SLT' on page 31 undefined on input line 1849.
 
-
-Package natbib Warning: Citation `allen_diffusons_1999' on page 31 undefined on
- input line 1854.
-
-
-Package natbib Warning: Citation `taraskin_determination_1999' on page 31 undef
-ined on input line 1859.
-
-[31]
-
-Package natbib Warning: Citation `taraskin_determination_1999' on page 32 undef
-ined on input line 1875.
-
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 32 undefined 
-on input line 1890.
-
-
-Package natbib Warning: Citation `thomas_predicting_2010' on page 32 undefined 
-on input line 1890.
-
-[32]
-
-Package natbib Warning: Citation `shiomi_thermal_2011' on page 33 undefined on 
-input line 1904.
-
-
-Package natbib Warning: Citation `esfarjani_heat_2011' on page 33 undefined on 
-input line 1904.
-
-
-Package natbib Warning: Citation `garg_role_2011' on page 33 undefined on input
- line 1916.
-
-
-Package natbib Warning: Citation `tian_phonon_2012' on page 33 undefined on inp
-ut line 1916.
+[31] [32] (./prb_vc_jl_011813.bbl [33]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [34]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 281.
 
 
-Package natbib Warning: Citation `lindsay_thermal_2012' on page 33 undefined on
- input line 1916.
-
-
-Package natbib Warning: Citation `esfarjani_heat_2011' on page 33 undefined on 
-input line 1916.
-
-
-Package natbib Warning: Citation `he_lattice_2012' on page 33 undefined on inpu
-t line 1923.
-
-
-Package natbib Warning: Citation `esfarjani_heat_2011' on page 33 undefined on 
-input line 1930.
-
-No file prb_vc_jl_011813.bbl.
-[33]
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 281.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [35]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [36])
 
 Class revtex4 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-
-Package natbib Warning: There were undefined citations.
-
-[34] (./prb_vc_jl_011813.aux)
+[37] (./prb_vc_jl_011813.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1016,12 +460,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3586 strings out of 493849
- 44368 string characters out of 1152845
- 132379 words of memory out of 3000000
- 6808 multiletter control sequences out of 15000+50000
+ 3750 strings out of 493849
+ 48864 string characters out of 1152845
+ 135526 words of memory out of 3000000
+ 6967 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,26n,30p,1420b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,26n,32p,1420b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_011813.dvi (34 pages, 99188 bytes).
+Output written on prb_vc_jl_011813.dvi (37 pages, 110124 bytes).
