@@ -1,4 +1,4 @@
-phon dispersion eigenvector optimize thermalconductivity
+phon dispersion eigenvector thermalconductivity
 
 output freq text RUNPATHfreq.gout
 output xyz
@@ -19,5 +19,5 @@ end
 #--------------------------------------------------------------------------
 #x0
 #--------------------------------------------------------------------------
-cell ALAT ALAT ALAT 90.0 90.0 90.0 0 0 0 0 0 0
+cell LX LY LZ 90.0 90.0 90.0 0 0 0 0 0 0
 cart

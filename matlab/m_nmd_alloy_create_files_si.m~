@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/alloy/0.05/26x/' ;
+    nmd.str.main = '/home/jason/disorder2/si/alloy/0.5/26x/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.tmp';
@@ -12,9 +12,9 @@ clear
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-    nmd.x0.Nx = 26; nmd.x0.Ny = 26; nmd.x0.Nz = 26;
+    nmd.x0.Nx = 26; nmd.x0.Ny = 34; nmd.x0.Nz = 34;
 %--------------------------------------------------------------------------
-    nmd.x0.alloy_conc = 0.05;
+    nmd.x0.alloy_conc = 0.5;
 %--------------------------------------------------------------------------
     nmd.x0.mass(1) = 1.0; nmd.x0.mass(2) = 2.6; 
     nmd.x0.NUM_ATOMS_TYPE = 1;
@@ -126,11 +126,29 @@ m_change_file_strings(...
     change)
 clear orig change
           
-format short
+formats = '%2.6f';
+
 output = [nmd.x0.id nmd.x0.m nmd.x0.x nmd.x0.y nmd.x0.z];
 str.write=...
     [nmd.str.main 'lmp.in.x0'];
-dlmwrite(str.write,output,'-append','precision','%d','%d','%.7F%' , '%f.7%' , '%f.7%' , 'delimiter','\t');
+
+% for l=1:1:length(x0.id(:,1))
+%     coords1{l}=...
+%         [x0.atype(x0.m(l)).str '   core ' ...
+%         num2str((lj.sigma/constant.ang2m)*x0.x(l),formats) ' ' ...
+%         num2str((lj.sigma/constant.ang2m)*x0.y(l),formats) ' ' ...
+%         num2str((lj.sigma/constant.ang2m)*x0.z(l),formats) ' ' ...
+%         '0 1 1 1'];
+% end
+%     coords = sprintf('%s \n',coords1{:})
+fileID = fopen(str.write,'a');
+for iout = 1:length(output)
+fprintf(fileID,'%5d \t %5d \t %7.7f \t %7.7f \t %7.7f\n',output(iout,:));
+end
+
+% formats ='%2.6f';
+% 
+
 
 %--------------------------------------------------------------------------
 %pause
