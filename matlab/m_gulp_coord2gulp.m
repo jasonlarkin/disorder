@@ -1,4 +1,4 @@
-function coords = m_gulp_coord2gulp( str_x0 , str_gin )
+function coords = m_gulp_coord2gulp( x0 , str_gin )
 %-------------------------------------------------------------------------- 
 
 lj = m_lj; constant = m_constant;

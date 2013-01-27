@@ -1,0 +1,9 @@
+function Di = m_gulp_af_lj_readDi(path,name)
+Di = load([path name]);
+plot(Di(:,2),D(:,3),'.')
+end
+
+
+
+
+

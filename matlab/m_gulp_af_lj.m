@@ -1,9 +1,9 @@
 clear
 
-str.main = '/home/jason/disorder2/lj/amor/4x/prepare/tmp/';
+str.main = '/home/jason/disorder2/lj/amor/4x/AF/gulp/conv/';
 str.matlab = '/home/jason/disorder/matlab/';
 str.gulp = '/home/jason/disorder/matlab/gulp/gulp-4.0.5/Src/';
-str.x0 = '/home/jason/disorder2/lj/amor/4x/prepare/tmp/x0K_1.data';
+str.x0 = '/home/jason/disorder2/lj/amor/4x/AF/gulp/conv/x0K_1.data';
 
 str.gin = 'gulp_af_lj.tmp';
 str.gulp.sh = 'gulp.sh.tmp.gilg'; 
@@ -25,23 +25,28 @@ x0 = m_x0_read(str.x0); x0.atype(1).str = 'Ar1';
     str.orig = 'MASS';
     str.change = [num2str(lj.mass_au)];
     str.cmd1 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
-    str.orig = 'ALAT';
+    str.orig = 'LX';
     str.change = [num2str(x0.Lx*lj.sigma/constant.ang2m)];
     str.cmd2 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+    str.orig = 'LY';
+    str.change = [num2str(x0.Ly*lj.sigma/constant.ang2m)];
+    str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
+    str.orig = 'LZ';
+    str.change = [num2str(x0.Lz*lj.sigma/constant.ang2m)];
+    str.cmd4 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
 	str.orig = 'KPT';
     str.change = ['0.0 0.0 0.0'];
-    str.cmd3 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
-
+    str.cmd5 = ['-e ''s/\<' str.orig '\>/' str.change '/g'' '];
 	str.orig = 'RUNPATH';
     str.change = strcat(str.main);
     str.temp = strcat('-e ''s|',str.orig,'|',str.change);
-    str.cmd4 = [str.temp '|g'' '];        
+    str.cmd6 = [str.temp '|g'' '];        
 
-    str.cmd5 =...
+    str.cmd7 =...
     [str.matlab str.gin ' > ' str.main 'gulp.gin'];
         
     str.cmd =...
-        ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4 str.cmd5 ];       
+        ['sed ' str.cmd1 str.cmd2 str.cmd3 str.cmd4 str.cmd5 str.cmd6 str.cmd7 ];       
     system(str.cmd);
 
 gulp.coords = m_gulp_coord2gulp(x0);

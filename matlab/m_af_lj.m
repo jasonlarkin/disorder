@@ -170,7 +170,7 @@ LD.freq = sqrt(diag(LD.eigval));
 %IMPORTANT
 %--------------------------------------------------------------------------
 %get rid of small imag for first 3 acoustic modes
-LD.freq(1:3) = 0;
+%LD.freq(1:3) = 0;
 
 LD=rmfield(LD,'eigval');
 
@@ -213,6 +213,7 @@ LD.RIJX(2:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijx;
+
 %--------------------------------------------------------------------------
 LD.vij_x =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...

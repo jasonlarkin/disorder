@@ -64,6 +64,7 @@
   logical,        allocatable,            save :: ldone(:)
   real(dp)                                     :: constant
   real(dp)                                     :: Di
+  real(dp)                                     :: dwavg
   real(dp)                                     :: dwij
   real(dp),       allocatable,            save :: freqinv(:)
   real(dp)                                     :: rij
@@ -78,9 +79,24 @@
   allocate(ldone(ncfoc2),stat=status)
   if (status/=0) call outofmemory('thermalconductivity','ldone')
   ldone(1:ncfoc2) = .false.
+! DEBUG
+!
+!  Write out a file with the eigenvectors
+!
+  open(91,file='eigvec.gout',status='unknown',form='formatted')
+  do i = 1,mcv
+    write(91,'(6f12.6)') (eigr(j,i),j=1,mcv)
+  enddo
+  close(91)
+! DEBUG
 !
 !  Scale dynamical matrix elements by minimum image nearest distance between sites
 !
+! DEBUG
+!
+!  Write out a file with rij
+!
+ open(91,file='rij.gout',status='unknown',form='formatted')
   do i = 1,nphonatc
     ii = nphonatptr(i)
     ix = 3*ii - 2
@@ -124,6 +140,9 @@
         derv2(iy,jz) = derv2(iy,jz)*rij
         derv2(iz,jz) = derv2(iz,jz)*rij
 !
+    write(91,'(i6,2x,i6,2x,f12.4)') &
+&i,j,rij
+! DEBUG
         ldone(ind) = .true.
       endif
     enddo
@@ -163,6 +182,16 @@
       freqinv(i) = 1.0_dp
     endif
   enddo
+! DEBUG
+!
+!  Find mean level spacing
+!
+dwavg = 0.0_dp;
+do i = nfreqmin,mcv-1
+  dwavg = freq(i+1) - freq(i) + dwavg
+enddo
+  dwavg = dwavg/(mcv-1 - nfreqmin)
+! DEBUG
 !
 !  Scale by constants and frequency factors to get to Sij
 !
@@ -172,12 +201,23 @@
       Sij(j,i) = Sij(j,i)*freqsqrt*(freq(i) + freq(j))
     enddo
   enddo
+! DEBUG
+!
+!  Write out a file with Sij
+!
+  open(91,file='Sij.gout',status='unknown',form='formatted')
+  do i = 1,mcv
+    write(91,'('' Mode = '',i6)') i
+    write(91,'(6f12.6)') (Sij(j,i),j=1,mcv)
+  enddo
+  close(91)
+! DEBUG
 !
 !  Output banner for thermal conductivity
 !
   if (ioproc) then
     write(ioout,'(/,''  Thermal conductivity: '',/)')
-    write(ioout,'(''  Lorentzian broadening factor = '',f10.4,/)') bfactor
+    write(ioout,'(''  Lorentzian broadening factor = '',f10.4,/)') bfactor*dwavg
     write(ioout,'(''--------------------------------------------------------------------------------'')')
     write(ioout,'('' Mode    : Frequency (cm-1)         Thermal conductivity                        '')')
     write(ioout,'(''--------------------------------------------------------------------------------'')')
@@ -185,6 +225,7 @@
 !
 !  Compute Di values (factors of pi have been cancelled)
 !
+open(91,file='Dij.gout',status='unknown',form='formatted')
   constant = 1.0_dp/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
   do i = nfreqmin,mcv
     Di = 0.0_dp
@@ -192,11 +233,11 @@
 !  Sum over coupling with mode j weighted by Lorentzian factor
 !
     do j = nfreqmin,i-1
-      dwij = bfactor/(1 + (bfactor*(freq(j) - freq(i)))**2)
+      dwij = (bfactor*dwavg)/(1 + ((bfactor*dwavg)*(freq(j) - freq(i)))**2)
       Di = Di + dwij*Sij(j,i)**2
     enddo
     do j = i+1,mcv
-      dwij = bfactor/(1 + (bfactor*(freq(j) - freq(i)))**2)
+      dwij = (bfactor*dwavg)/(1 + ((bfactor*dwavg)*(freq(j) - freq(i)))**2)
       Di = Di + dwij*Sij(j,i)**2
     enddo
 !
@@ -206,6 +247,10 @@
     if (ioproc) then
       write(ioout,'(i6,2x,f12.4,10x,f18.8)') i,freq(i),Di
     endif
+!
+!  Write out Di to separate file
+!
+   write(91,'(i6,2x,f12.4,10x,f18.8)') i,freq(i),Di
   enddo
 !
 !  Close output
