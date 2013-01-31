@@ -1,22 +1,32 @@
 clear
 %--------------------------------------------------------------------------
-%     [tmp,str.main]=system('pwd');
-str.main='/home/jason/disorder2/si/alloy/0.5/10x/gk/';
+str.main='/home/jason/disorder2/si/alloy/0.05/34x/gk/';
+%str.main='/home/jason/disorder2/si/amor/prepare/8x/gk/';
 %--------------------------------------------------------------------------
-GK.Nx = 10;
+GK.Nx = 34;
 GK.Lx = GK.Nx*5.43; GK.Ly = GK.Nx*5.43; GK.Lz = GK.Nx*5.43;
+% GK.Nx = 2.0;
+% GK.Lx = GK.Nx*21.2; GK.Ly = GK.Nx*21.2; GK.Lz = GK.Nx*21.2;
+
 GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------
 GK.SEEDS=[1:5];
+%42x
+%GK.SEEDS=[1 2 3:8];
 %--------------------------------------------------------------------------
 GK.NUM_SEEDS=size(GK.SEEDS,2);
 %--------------------------------------------------------------------------
 GK.Tset = [300];
 GK.NUM_TEMPS=size(GK.Tset,2);
 
-GK.p = 10; GK.s = 250000; GK.d = GK.p*GK.s;
+GK.p = 250000; GK.s = 10; GK.d = GK.p*GK.s;
 GK.total_steps = 2500000;
 GK.dt = 0.0005; 
+
+% GK.p = 250000; GK.s = 10; GK.d = GK.p*GK.s;
+% GK.total_steps = 2500000;
+% GK.dt = 0.0005; 
+
 %--------------------------------------------------------------------------
 
 %--------------constants---------------------------------------------------
@@ -30,15 +40,15 @@ con.eV2J = 1.60217646E-19;
 
 %--------------GK----------------------------------------------------------
 %Average over seeds
-GK.JJ(1:GK.s,1:2)=0;
-GK.JJ(:,1) = (0:(size(GK.JJ,1)-1)')*GK.dt*GK.p;
+GK.JJ(1:GK.p,1:2)=0;
+GK.JJ(:,1) = (0:(size(GK.JJ,1)-1)')*GK.dt*GK.s;
 
 for iseed = 1:GK.NUM_SEEDS
 %grep the JJ dump
     str.cmd =...
-        ['grep -A ' int2str(GK.s) ' "'...
+        ['grep -A ' int2str(GK.p) ' "'...
         int2str(GK.total_steps) ' '...
-        int2str(GK.s) '" ' ...
+        int2str(GK.p) '" ' ...
         str.main 'J0Jt_' int2str(GK.SEEDS(iseed)) '.dat > ' ...
         str.main 'J0Jt_'  int2str(GK.SEEDS(iseed)) 'grep.dat'];
     system(str.cmd);

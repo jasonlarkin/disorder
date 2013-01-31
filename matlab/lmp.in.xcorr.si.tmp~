@@ -1,0 +1,81 @@
+#--------------------------------------------------------------------------
+#input structure
+#--------------------------------------------------------------------------
+units		metal
+atom_style	atomic
+read_data	IN.X0
+#--------------------------------------------------------------------------
+#si potentials
+#--------------------------------------------------------------------------
+pair_style      sw
+pair_coeff      * * Si.sw Si
+#--------------------------------------------------------------------------
+#variables
+#--------------------------------------------------------------------------
+variable   	dt 		equal 0.0005
+#--------------------------------------------------------------------------
+
+#--------------------------------------------------------------------------
+#SED parameters
+#--------------------------------------------------------------------------
+variable	w_step		equal T_STEP		
+variable	w_total		equal T_FFT
+variable	t_total		equal T_TOTAL
+variable	num_ffts	equal ${t_total}/${w_total}
+
+##########SEED##########################################################
+variable iseed equal ISEED_TMP
+variable seed equal SEED_TMP
+
+#------------ RUN TEMP ---------------------------------------------------------------------	
+variable 	T_run 		equal ${T_10K}
+#------------ RUN TEMP ---------------------------------------------------------------------	
+
+log 	log_heat_${iseed}.lammps
+
+#------------ NVE rescale ---------------------------------------------------------------------	
+	velocity 		all create ${T_run} ${seed} rot yes dist gaussian
+	fix 			1 all nve
+	fix 			2 all temp/rescale 1 ${T_run} ${T_run} 0.01 1.0
+	timestep		${dt}
+	compute 		myDis all msd 
+	thermo_style  		custom step temp press etotal vol c_myDis[4]
+	thermo			1000
+	run             	100000	
+#	run             	1000
+	unfix 			1
+	unfix 			2
+	uncompute		myDis
+#------------ NVE -----------------------------------------------------------------------------	
+	fix 			1 all nve
+	timestep		${dt}
+	compute 		myDis all msd
+	thermo_style  		custom step temp press etotal vol c_myDis[4]
+	thermo			1000
+	run             	250000	
+#	run             	10000
+	unfix 			1
+	uncompute		myDis
+#------SED-------------------------------------------------------------------------
+label loop_fft
+variable ifft loop ${num_ffts}
+
+log 	log_SED_${iseed}_${ifft}.lammps
+	reset_timestep  	0
+	fix 			1 all nve
+	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
+	dump_modify 		vel sort id
+	dump 			pos all custom ${w_step} dump_${iseed}_${ifft}.pos xu yu zu
+	dump_modify 		pos sort id
+	compute 		myDis all msd
+	thermo_style 		custom step temp press etotal vol c_myDis[4]
+	thermo			5000
+	timestep		${dt}
+	run			${w_total}
+	unfix			1
+	undump			vel
+	undump			pos
+	uncompute		myDis
+
+next ifft
+jump LMP_TMP loop_fft

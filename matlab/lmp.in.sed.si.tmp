@@ -23,7 +23,6 @@ variable	w_total		equal T_FFT
 variable	t_total		equal T_TOTAL
 variable	num_ffts	equal ${t_total}/${w_total}
 
-
 ##########SEED##########################################################
 variable iseed equal ISEED_TMP
 variable seed equal SEED_TMP

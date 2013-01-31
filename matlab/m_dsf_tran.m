@@ -102,7 +102,7 @@ DSF.kpt = kpt;
 DSF.SL = SL;
 DSF.freqp = freqp;
 
-save(strcat(str,'DSF_tran.mat'), '-struct', 'DSF');
+%save(strcat(str,'DSF_tran.mat'), '-struct', 'DSF');
 %--------------------------------------------------------------------------
 toc
 %--------------------------------------------------------------------------

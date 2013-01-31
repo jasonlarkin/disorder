@@ -163,6 +163,7 @@ LD=rmfield(LD,'Phisum');
 %--------------------------------------------------------------------------
 %find eigenvalues and eigenvectors
 %--------------------------------------------------------------------------
+LD.Dynam
 LD.Dynam = (1/2)*(LD.Dynam' + LD.Dynam);
 LD.Dynam
 pause
@@ -216,6 +217,8 @@ LD.RIJX(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijx;
 
+LD.RIJX(:,:)
+
 LD.rijx(:,:)
 
 pause
@@ -224,6 +227,11 @@ pause
 LD.vij_x =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJX)*LD.eigvec);
+
+(LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJX)*LD.eigvec)
+
+pause
+
 Inan = isnan(LD.vij_x); I = Inan==1; LD.vij_x(I) = 0.0;
 Iinf = isinf(LD.vij_x); I = Iinf==1; LD.vij_x(I) = 0.0;
 %--------------------------------------------------------------------------
@@ -262,6 +270,8 @@ LD.RIJY(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijy;
 LD.RIJY(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijy;
 LD.RIJY(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijy;
 
+LD.RIJY(:,:)
+
 LD.rijy(:,:)
 
 pause
@@ -270,6 +280,11 @@ pause
 LD.vij_y =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJY)*LD.eigvec);
+
+(LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJY)*LD.eigvec)
+
+pause
+
 Inan = isnan(LD.vij_y); I = Inan==1; LD.vij_y(I) = 0.0;
 Iinf = isinf(LD.vij_y); I = Iinf==1; LD.vij_y(I) = 0.0;
 %--------------------------------------------------------------------------
@@ -308,6 +323,8 @@ LD.RIJZ(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijz;
 LD.RIJZ(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijz;
 LD.RIJZ(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijz;
 
+LD.RIJZ(:,:)
+
 LD.rijz(:,:)
 
 pause
@@ -316,6 +333,11 @@ pause
 LD.vij_z =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJZ)*LD.eigvec);
+
+(LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJZ)*LD.eigvec)
+
+pause
+
 Inan = isnan(LD.vij_z); I = Inan==1; LD.vij_z(I) = 0.0;
 Iinf = isinf(LD.vij_z); I = Iinf==1; LD.vij_z(I) = 0.0;
 %--------------------------------------------------------------------------

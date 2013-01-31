@@ -8,6 +8,8 @@ constant = m_constant; lj = m_lj;
 
 freq_bins = linspace( 0 , max(freq) , NUM_BINS); 
 
+max(freq)
+
 %freq_bins
 
 for ibin = 1:length(freq_bins)

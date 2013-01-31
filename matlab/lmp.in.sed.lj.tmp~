@@ -1,6 +1,6 @@
-
-# Lennard-Jones
-#------------Prepare Geometry---------------------------------------------------------------
+#--------------------------------------------------------------------------
+#input structure
+#--------------------------------------------------------------------------
 units			lj
 atom_style		atomic
 read_data		IN.X0
@@ -37,10 +37,10 @@ variable    	s 		equal 5  		# sample interval
 variable    	d 		equal $p*$s 		# dump interval 
 
 #SED parameters
-variable	w_step		equal T_STEP		
-variable	w_total		equal T_FFT
+variable	t_step		equal T_STEP		
+variable	t_fft		equal T_FFT
 variable	t_total		equal T_TOTAL
-variable	num_ffts	equal ${t_total}/${w_total}
+variable	num_ffts	equal ${t_total}/${t_total}
 
 #label loop2
 #variable b loop 3
@@ -82,7 +82,7 @@ variable ifft loop ${num_ffts}
 log 	log_SED_${iseed}_${ifft}.lammps
 	reset_timestep  	0
 	fix 			1 all nve
-	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
+	dump 			vel all custom ${t_step} dump_${iseed}_${ifft}.vel vx vy vz
 	dump_modify 		vel sort id
 	thermo_style 		custom step temp press vol
 	thermo			5000
