@@ -1,0 +1,25 @@
+opti defect regi conp 
+title
+Example of defect impurity calc : Li substituted into MgO
+end
+cell
+4.212 4.212 4.212 90 90 90 
+frac
+O  core 0.5 0.5 0.5  0.86902 
+Mg core 0.0 0.0 0.0  2.00000
+O  shel 0.5 0.5 0.5 -2.86902 
+space
+225
+species
+Li 1.0
+centre Mg
+impurity Li Mg
+size 4.0 10.0
+buck
+Mg core O shel 1280.0 0.3 0.0 0.0 8.0
+buck
+Li core O shel 816.3 0.26086 0.0 0.0 8.0
+buck
+O shel O shel 1280.0 0.3 27.88 0.0 10.0
+spri
+O 74.92

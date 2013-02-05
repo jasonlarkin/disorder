@@ -106,6 +106,13 @@
 !   6/12 Allocation of eigr modified for case when lapack eigensolver is being used
 !   6/12 Thermal conductivity calculation added
 !   6/12 Calls to phoncopy routines changed to add extra argument
+!   7/12 fobsmodeover added to store overlap information
+!   7/12 Oscillator strengths passed to peigeng for IR intensity calculation
+!   8/12 Call to oscillator strength added for non-gamma routine
+!   8/12 Call to peigen modified
+!  10/12 Variable number of decimal places added for frequency file
+!        output
+!   1/13 Non-analytic correction turned off for thermal conductivity as this overwrites derv2.
 !
 !  Conditions of use:
 !
@@ -123,9 +130,9 @@
 !  may result. The user is responsible for checking the validity
 !  of their results.
 !
-!  Copyright Curtin University 2012
+!  Copyright Curtin University 2013
 !
-!  Julian Gale, NRI, Curtin University, June 2012
+!  Julian Gale, NRI, Curtin University, January 2013
 !
   use configurations
   use constants
@@ -145,7 +152,7 @@
   use m_pdf,           only : closepdfphonon, pdfsetup
   use m_pdfneutron
   use maths,           only : leispack_eigensolve
-  use observables,     only : fobsmodefreq
+  use observables,     only : fobsmodefreq, fobsmodeover
   use parallel
   use partial
   use projectdos
@@ -165,6 +172,9 @@
 !  Local variables
 !
   character(len=5)                                  :: lab1
+  character(len=2)                                  :: fstring1
+  character(len=2)                                  :: fstring2
+  character(len=12)                                 :: fstring
   complex(dpc), dimension(:),     allocatable       :: ctmp
   integer(i4)                                       :: i
   integer(i4)                                       :: ifail
@@ -249,6 +259,7 @@
   real(dp)                                          :: kinenergy
   real(dp),     dimension(:),     allocatable       :: meanKEperatom
   real(dp),     dimension(:,:,:), allocatable       :: oscstrength
+  real(dp)                                          :: overlap
   real(dp)                                          :: phi
   real(dp)                                          :: phistep
   real(dp)                                          :: projectionfactor
@@ -309,6 +320,11 @@
   ltemprop = (temperature.gt.1.0d-6.or.ntemperaturestep.gt.0)
   lnonanal = (index(keyword,'nono').eq.0.and.ndim.eq.3.and..not.leem.and..not.lnoanald2)
   lnoanald2loc = (lnoanald2)
+!
+!  For a thermal conductivity calculation we need to turn off the non-analytic correction
+!  to avoid the force constant matrix being overwritten.
+!
+  if (lthermal) lnonanal = .false.
 !
 !  CML phonon output
 !
@@ -565,12 +581,26 @@
         open(51,file=freqfile,form='unformatted',status='unknown')
       else
         open(52,file=freqfile,status='unknown')
+!
+!  Set format statement
+!
+        fstring = ' '
+        call itow(fstring1,nfreqdecimals+5_i4,2_i4)
+        call itow(fstring2,nfreqdecimals,2_i4)
+        fstring = adjustl(fstring1)//"."//adjustl(fstring2)
       endif
     else
       if (lfrqbin) then
         open(51,form='unformatted',status='unknown')
       else
         open(52,status='unknown')
+!
+!  Set format statement
+!
+        fstring = ' '
+        call itow(fstring1,nfreqdecimals+5_i4,2_i4)
+        call itow(fstring2,nfreqdecimals,2_i4)
+        fstring = adjustl(fstring1)//"."//adjustl(fstring2)
       endif
     endif
   endif
@@ -1282,7 +1312,7 @@
 !
 !  Calculate the oscillator strengths
 !
-        call oscillatorstrength(mcv,nphonatc,nphonatptr,ncfoc,iocptr,eigr,maxd2,oscstrength)
+        call oscillatorstrengthg(mcv,nphonatc,nphonatptr,ncfoc,iocptr,eigr,maxd2,oscstrength)
 !
 !  Store uncorrected frequencies
 !
@@ -1403,14 +1433,15 @@
 !
 !  Output frequencies / DOS / intensities
 !
-        call peigeng(mcv,freq(1,k-nlkpt+1),ncore,nphonatc,ncfoc,iocptr,maxd2,eigr,leig)
+        call peigeng(mcv,freq(1,k-nlkpt+1),ncore,nphonatc,ncfoc,iocptr,maxd2,eigr,leig,oscstrength)
         if (nobsmode.gt.0) then
 !
 !  Look for vibrational mode frequencies projected on to eigenvectors
 !
           do nobm = 1,nobsmode
-            call getvibmode(nobsmodeptr0+nobm,maxd2,eigr,nfitmode)
+            call getvibmode(nobsmodeptr0+nobm,maxd2,eigr,nfitmode,overlap)
             fobsmodefreq(nobsmodeptr0+nobm) = freq(nfitmode,k-nlkpt+1)
+            fobsmodeover(nobsmodeptr0+nobm) = overlap
           enddo
         endif
 !
@@ -1433,9 +1464,13 @@
           call pdiagl(mcv,maxd2,derv2,dervi,eigr(1),eigr(maxd2*maxd2+1),freq(1,k-nlkpt+1),fscale,.true.,lprint,ifail)
         endif
 !
+!  Calculate the oscillator strengths
+!
+        call oscillatorstrength(mcv,nphonatc,nphonatptr,ncfoc,iocptr,eigr(1),eigr(maxd2*maxd2+1),maxd2,oscstrength)
+!
 !  Output frequencies / DOS / intensities
 !
-        call peigen(mcv,freq(1,k-nlkpt+1),ncore,nphonatc,ncfoc,nsfoc,iocptr,maxd2,eigr(1),eigr(maxd2*maxd2+1),leig) 
+        call peigen(mcv,freq(1,k-nlkpt+1),ncore,nphonatc,ncfoc,nsfoc,iocptr,maxd2,eigr(1),eigr(maxd2*maxd2+1),leig,oscstrength) 
 !
 !  Lower symmetry to remove imaginary modes if selected
 !
@@ -1510,7 +1545,7 @@
           enddo
         else
           do i = 1,mcv
-            write(52,'(f17.12)') freq(i,k-nlkpt+1)
+            write(52,"(f" // adjustl(fstring) // ")") freq(i,k-nllkpt+1)
           enddo
         endif
       endif
@@ -1519,7 +1554,7 @@
     elseif (lfrq.and.ioproc) then
       t1 = cputime()
       do i = 1,mcv
-        write(52,'(f17.12)') freq(i,k-nlkpt+1)
+        write(52,'(f12.6)') freq(i,k-nlkpt+1)
       enddo
       t2 = cputime()
       tdisk = tdisk + t2 - t1

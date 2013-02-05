@@ -1,0 +1,119 @@
+fit molecule c6 noflag
+title
+example of a molecular crystal - urea
+energy surface fit, rather than empirical structure fit
+fit bonded potentials to C to surface from distorting
+C along z axis - energies are not real ones!
+end
+# First structure
+cell
+5.565   5.565   4.684  90.0  90.0  90.0 
+fractional   16
+C    core  0.0000   0.5000   0.3260    0.380000 
+O    core  0.0000   0.5000   0.5853   -0.380000 
+N    core  0.1459   0.6459   0.1766   -0.830000 
+H    core  0.2575   0.7575   0.2827    0.415000 
+H    core  0.1441   0.6441   0.9620    0.415000 
+space
+P -4 21 M
+# Below is energy for first structure
+# It's best to get rid of the large core
+# contribution by removing the number in front
+# the decimal place from CRYSTAL energy by
+# making a uniform shift - this improves the
+# numerical aspects
+# After energy is a weighting factor
+observable
+energy au
+-0.1234 100.0
+end
+# The following command makes a uniform shift
+# to the energies of all structures to remove
+# the constant offset => we are only fitting
+# the local curvature. Not needed if binding
+# energy is input and potentials are constructed
+# to remove intramolecular contributions.
+shift 
+1.0
+# Second structure
+cell
+5.565   5.565   4.684  90.0  90.0  90.0 
+fractional   16
+C    core  0.0000   0.5000   0.3270    0.380000 
+O    core  0.0000   0.5000   0.5853   -0.380000 
+N    core  0.1459   0.6459   0.1766   -0.830000 
+H    core  0.2575   0.7575   0.2827    0.415000 
+H    core  0.1441   0.6441   0.9620    0.415000 
+space
+P -4 21 M
+observable
+energy au
+-0.1134 100.0
+end
+# Third structure
+cell
+5.565   5.565   4.684  90.0  90.0  90.0 
+fractional   16
+C    core  0.0000   0.5000   0.3250    0.380000 
+O    core  0.0000   0.5000   0.5853   -0.380000 
+N    core  0.1459   0.6459   0.1766   -0.830000 
+H    core  0.2575   0.7575   0.2827    0.415000 
+H    core  0.1441   0.6441   0.9620    0.415000 
+space
+P -4 21 M
+observable
+energy au
+-0.1144 100.0
+end
+# Fourth structure
+cell
+5.565   5.565   4.684  90.0  90.0  90.0 
+fractional   16
+C    core  0.0000   0.5000   0.3280    0.380000 
+O    core  0.0000   0.5000   0.5853   -0.380000 
+N    core  0.1459   0.6459   0.1766   -0.830000 
+H    core  0.2575   0.7575   0.2827    0.415000 
+H    core  0.1441   0.6441   0.9620    0.415000 
+space
+P -4 21 M
+observable
+energy au
+-0.0934 100.0
+end
+# Tell the program to fit the overall shift
+vary
+shift
+end
+morse intra
+C    core O    core  6.288000   2.060000  1.23000  0.0000  1.600 0 0 1
+morse intra
+C    core N    core  4.206000   2.000000  1.32000  0.0000  1.600 0 0 0
+morse intra
+H    core N    core  3.816000   2.280000  1.02600  0.0000  1.600 0 0 0
+lennard 12  6 inter
+C    core O    core   39031.570000      35.266000  0.000 40.000 0 0
+lennard 12  6 inter
+C    core N    core  112494.667000      55.387000  0.000 40.000 0 0
+lennard 12  6 inter
+O    core O    core   11833.864000      21.633000  0.000 40.000 0 0
+lennard 12  6 inter
+N    core O    core   34106.919000      33.977000  0.000 40.000 0 0
+lennard 12  6 inter
+N    core N    core   98301.108000      53.362000  0.000 40.000 0 0
+lennard 12  6 inter
+C    core C    core  128737.614000      57.488000  0.000 40.000 0 0
+three
+C    core N    core O    core   5.897000 121.000000  1.600  1.600  3.000 0 0
+three
+N    core H    core C    core   3.252000 120.000000  1.400  1.600  2.600 0 0
+three
+N    core H    core H    core   2.862000 120.000000  1.400  1.400  2.300 0 0
+three
+C    core N    core N    core   8.846000 118.000000  1.600  1.600  2.800 0 0
+torsion
+O    cor C    cor N    cor H    cor   0.260200  -2  1.40  1.40  1.30  0.00 0
+torsion
+N    cor C    cor N    cor H    cor   0.002170  -2  1.60  1.60  1.30  0.00 0
+torsion
+O    cor C    cor N    cor N    cor   0.434000  -2  1.60  1.60  3.00  0.00 0
+dump every example22.grs

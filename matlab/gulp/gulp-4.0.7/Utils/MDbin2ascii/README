@@ -1,0 +1,19 @@
+This directory contains a simple bit of code to convert binary to ASCII format. 
+It's simple because it doesn't contain error checking to make sure the user is
+supplying sane input data, so beware! The input to the program should be a file
+containing:
+
+Line 1: Binary trajctory file name
+Line 2: ASCII trajctory file name
+Line 3: true or false according to whether calculation is constant pressure or not
+
+To compile the code do something like:
+
+gfortran -o mdb2a mdbin2ascii.f90
+
+To run, assuming that you have put the 3 lines above into a file called "convert":
+
+mdb2a < convert
+
+NB: The current version includes the reading/writing of site energies which was 
+added in version 4 of GULP.

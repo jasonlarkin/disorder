@@ -1,15 +1,11 @@
- 
-NMD=load('./nmd.mat');
+ NMD=load('./nmd.mat');
 %---IKSLICE----------------------------------------------------------------
     imslice = IMSLICE;
 %-------------------------------------------------------------------------- 
-
 SED.SED(...
     size(NMD.kptmaster(:,1:3),1),...
     1:(NMD.NUM_TSTEPS),1:size(NMD.modelist(:,imslice),1)) = 0.0;
-
 for iseed = 1:NMD.NUM_SEEDS
-    
 for ifft = 1:NMD.NUM_FFTS  
 %VElOCITIES
     str_read=...
@@ -33,7 +29,6 @@ for ifft = 1:NMD.NUM_FFTS
     posx = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
     posy = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
     posz = zeros(NMD.NUM_ATOMS,NMD.NUM_TSTEPS);
-
 %--------------------------------------------------------------------------
 tic  
 %--------------------------------------------------------------------------
@@ -50,7 +45,6 @@ tic
             dummy{3}...
             (iatom:NMD.NUM_ATOMS:(length(dummy{1}(:))-NMD.NUM_ATOMS))*...
 		NMD.constant.ang2m/NMD.constant.s2ps;;
-
     	posx(iatom,1:NMD.NUM_TSTEPS) =...
 	    (dummy2{1}(iatom:NMD.NUM_ATOMS:(length(dummy2{1}(:))-NMD.NUM_ATOMS))- ...
 		NMD.x0(iatom,3))*NMD.constant.ang2m;
@@ -73,14 +67,11 @@ toc
     eigenvec =...
         dlmread(...
         strcat(...
-        NMD.str.main,'AF_eigvec.dat') );
-           
+        NMD.str.main,'AF_eigvec.dat') );   
 %Zero main SED FP: this gets averaged as you loop over the NUM_FFTS      
     Q = zeros(1,NMD.NUM_TSTEPS);
     QDOT = zeros(1,NMD.NUM_TSTEPS);
     ETOT = zeros(1,NMD.NUM_TSTEPS);
-
-
 %--------------------------------------------------------------------------
 tic  
 %--------------------------------------------------------------------------

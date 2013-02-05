@@ -1,0 +1,26 @@
+opti conv qok 
+title
+Example of defect impurity calc : Li substituted into MgO
+Neutralising charge background
+end
+cell
+4.212 4.212 4.212 90 90 90 
+frac
+Li core 0.0 0.0 0.0  1.00000
+Mg core 0.0 0.5 0.5  2.00000
+Mg core 0.5 0.0 0.5  2.00000
+Mg core 0.5 0.5 0.0  2.00000
+O  core 0.5 0.5 0.5  0.86902 
+O  core 0.5 0.0 0.0  0.86902 
+O  core 0.0 0.5 0.0  0.86902 
+O  core 0.0 0.0 0.5  0.86902 
+O  shel 0.5 0.5 0.5 -2.86902 
+O  shel 0.5 0.0 0.0 -2.86902 
+O  shel 0.0 0.5 0.0 -2.86902 
+O  shel 0.0 0.0 0.5 -2.86902 
+buck
+Mg core O shel 1280.0 0.30000  0.00 0.0  8.0
+Li core O shel  816.3 0.26086  0.00 0.0  8.0
+O  shel O shel 1280.0 0.30000 27.88 0.0 10.0
+spring
+O 74.92

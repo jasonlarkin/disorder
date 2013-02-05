@@ -1,0 +1,289 @@
+#! /bin/sh
+#
+# This shell script adapts the Makefile in dependence
+# of the machine and the operating system you use.
+# It is called from 'make' before the compiler
+# is invoked.
+#
+#  7/97 IRIX64 directory name modified to handle IRIX7
+#  2/99 Cray options added (IW)
+#
+#  Written by J-R. Hill, modified by JDG
+#
+
+makedir()
+{
+  if [ ! -d "$dir" ]
+  then
+    mkdir "$dir"
+  fi
+  cd $dir
+}
+
+debug=
+if [ "$1" = "-debug" ]
+then
+  debug="_DEBUG"
+  shift
+fi
+os=`uname -s`
+case $os in
+#
+# Mac OS-X using Absoft compiler
+#
+  Darwin)  dir="${os}${debug}"
+	   makedir
+	   if [ "$debug" = "" ]
+	   then
+	       echo 'OPT=-O' > makefile
+	       echo 'OPT1=-O' >> makefile
+	       echo 'BAGGER=' >> makefile
+	   else	
+	       echo 'OPT=' > makefile
+               echo 'BAGGER=-g ' >> makefile
+	   fi
+           target=${1}_
+           echo 'RUNF90=g95' >> makefile
+           echo 'FFLAGS=-I.. -DLINUX ' >> makefile
+           echo 'LIBS=' >> makefile
+           echo 'GULPENV=' >> makefile
+           echo 'DEFS=-DLINUX' >> makefile
+           ;;
+#
+# This is an IBM RS/6000.
+#
+  AIX)     if [ `uname -m | cut -c9-10` = "70" ]
+	     then
+		 dir="${os}_POWER2${debug}"
+           else
+		 dir="${os}_POWER${debug}"
+           fi
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+	       echo 'OPT=-O2' > makefile
+		 echo 'OPT1=-O2' >> makefile
+		 echo 'BAGGER=' >> makefile
+           else
+		 echo 'OPT=' > makefile
+		 echo 'BAGGER=-g' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=xlf' >> makefile
+           echo 'FFLAGS=-qextname -qmaxmem=-1' >> makefile
+           echo 'DEFS=-DAIX' >> makefile
+           ;;
+#
+# This is a Silicon Graphics (R4000/R4400).
+#
+  IRIX)    dir="${os}_`hinv | awk '/CPU:/ {print $3}' | cut -d/ -f2`${debug}"
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+		 echo 'OPT=-O2 -mips2 -Olimit 3282' > makefile
+		 echo 'OPT1=-O1 -mips2' >> makefile
+		 echo 'BAGGER=-mips2' >> makefile
+           else
+	       echo 'OPT=' > makefile
+		 echo 'BAGGER=-g -O0 -check_bounds' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=-DIRIX' >> makefile
+           echo 'DEFS=-DIRIX' >> makefile
+           ;;
+#
+# This is a Silicon Graphics (R8000/R10000). The compiler will screw up in the
+# function potcut.f if full optimization is used.
+#
+  IRIX64)  dir="${os}_`uname -a | awk '/IRIX/ {print $5}' | cut -d/ -f2`${debug}"
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+		 echo 'OPT1=-O1 -mips4' >> makefile
+	         echo 'OPT=-O2 -mips4 -OPT:const_copy_limit=19188 ' > makefile
+		 echo 'BAGGER=-64' >> makefile
+           else
+	         echo 'OPT=' > makefile
+		 echo 'BAGGER=-g -64' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=-DIRIX' >> makefile
+	   echo 'LDFLAGS=' >> makefile
+	   echo 'LIBS=' >> makefile
+           echo 'DEFS=-DIRIX' >> makefile
+           ;;
+#
+# This is Linux with f90. cdabs.f contains the cdabs function
+# which is missing in the f2c library
+#
+  Linux)   dir="${os}${debug}"
+	   makedir
+	   if [ "$debug" = "" ]
+	   then
+	       echo 'OPT=-O' > makefile
+	       echo 'OPT1=-O' >> makefile
+	       echo 'BAGGER=' >> makefile
+	   else	
+	       echo 'OPT=' > makefile
+               echo 'BAGGER=-g ' >> makefile
+	   fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+#           echo 'FFLAGS=-I.. -DLINUX ' >> makefile
+           echo 'FFLAGS=-I.. -DLINUX -YEXT_NAMES=LCS -YEXT_SFX=_' >> makefile
+           echo 'LIBS=-lU77' >> makefile
+           echo 'GULPENV=' >> makefile
+           echo 'DEFS=-DLINUX' >> makefile
+           ;;
+#
+# This is OSF1
+#
+  OSF1)    dir="${os}${debug}"
+	     makedir
+	     if [ "$debug" = "" ]
+	     then
+	       echo 'OPT=-O4 -fast' > makefile
+	       echo 'OPT1=-O4 -fast' >> makefile
+		 echo 'BAGGER=' >> makefile
+           else
+	       echo 'OPT=' > makefile
+		 echo 'BAGGER=-g -C' >> makefile
+	   fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=-DOSF1' >> makefile
+           echo 'DEFS=-DOSF1' >> makefile
+           ;;
+#
+#  SunOS
+#
+  SunOS)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-fast -O5' > makefile
+               echo 'OPT1=-O' >> makefile
+                 echo 'BAGGER=' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g' >> makefile
+           fi
+           target=${1}_
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=-DSUN' >> makefile
+           echo 'DEFS=-DSUN' >> makefile
+           ;;
+#
+# This is HP-UX
+# There seems to be a hiccup with setting target on HP
+# so it's currently set statically
+#
+  HP-UX)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-O +Onolimit' > makefile
+               echo 'OPT1=-O' >> makefile
+                 echo 'BAGGER=+U77' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g +U77' >> makefile
+           fi
+           target="mc2arc_"
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=-DHPUX' >> makefile
+           echo 'DEFS=-DHPUX' >> makefile
+           ;;
+#
+# This is Kelvin - the Edinburgh J90, attatched to the T3D
+#
+  kelvin)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-O1' > makefile
+               echo 'OPT1=-O1' >> makefile
+                 echo 'BAGGER=' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g' >> makefile
+           fi
+           target="mc2arc_"
+           echo 'TARGET=cray-t3d' >> makefile
+           echo 'RUNF90=env TARGET=cray-t3d f90' >> makefile
+           echo 'FFLAGS=-dp -DCRAY' >> makefile
+           echo 'LIBS=-lmpi' >> makefile
+           echo 'LDFLAGS= -X2' >> makefile
+           echo 'DEFS=-DCRAY ' >> makefile
+           ;;
+#
+# This is sn6710,  the Edinburgh T3E
+#
+  sn6710)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-O1' > makefile
+               echo 'OPT1=-O1' >> makefile
+                 echo 'BAGGER=' >> makefile
+           else
+               echo 'OPT=' > makefile
+                 echo 'BAGGER=-g' >> makefile
+           fi
+           target="mc2arc_"
+           echo 'RUNF90= f90' >> makefile
+           echo 'FFLAGS=-dp -DCRAY' >> makefile
+           echo 'LDFLAGS=' >> makefile
+           echo 'LIBS=-lmpi' >> makefile
+           echo 'DEFS=-DCRAY ' >> makefile
+           ;;
+#
+# This is sn6906,  the Manchester T3E
+#
+  sn6906)   dir="${os}${debug}"
+           makedir
+           if [ "$debug" = "" ]
+           then
+               echo 'OPT=-O scalar2,pipeline2,aggress' > makefile
+               echo 'OPT1=-O scalar2,pipeline2,aggress' >> makefile
+               echo 'BAGGER=' >> makefile
+               echo 'LIBS=-lmpi' >> makefile
+           else
+               echo 'OPT=-Rabc -ei' > makefile
+               echo 'BAGGER=-g' >> makefile
+               echo 'LIBS=-lmpi -lapp' >> makefile
+           fi
+           target="mc2arc_"
+           echo 'RUNF90=f90' >> makefile
+           echo 'FFLAGS=-dp -DCRAY' >> makefile
+           echo 'LDFLAGS=' >> makefile
+           echo 'DEFS=-DCRAY' >> makefile
+           ;;
+#
+# Add new OS hereafter
+#
+#  <output of uname -s>) dir="{os}${debug}"
+#                        makedir
+#                        <options>
+#                        ...
+#
+# This is an unknown operating system.
+#
+  *)       echo "Sorry, I don't know the operating system '$os'."
+           echo "Edit 'getmachine' to include the required options."
+           exit 1
+           ;;
+esac
+cat ../Makefile >> makefile
+make $target
+rm -f makefile
+#if [ "$debug" = "" ]
+#then
+#  strip mc2arc
+#fi
+#
+# Move executable back to level at which make command was issued
+#
+mv mc2arc ../mc2arc

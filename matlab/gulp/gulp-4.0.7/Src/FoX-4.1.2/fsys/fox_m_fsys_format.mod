@@ -1,0 +1,325 @@
+G95 module created on Fri Feb  1 21:14:39 2013 from fox_m_fsys_format.F90
+If you edit this, you'll get what you deserve.
+module-version 9
+(() () () () () () () (2 3 4 5 6 7 8 9 10 11 12 13) () () () () () ()
+() () () () () () ())
+
+()
+
+(('str' 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+35 36 37 38 39 40 41 42 43 44 45 46 47 48 49))
+
+()
+
+()
+
+(50 'str_to_int_10' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (INTEGER 4) 0 0 (51
+NONE) () () '' () ())
+52 'str_to_int_16' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN MODULE-PROC
+DECL NONE NONE FUNCTION PURE) (INTEGER 4) 0 0 (53 NONE) () () '' () ())
+53 'str' '' 54 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+51 'str' '' 55 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+49 'str_string' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN MODULE-PROC
+DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK')) 0 0 (56 NONE)
+() () '' () ())
+56 'st' '' 57 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (CHARACTER
+1 (())) 0 0 () () () '' () ())
+48 'str_string_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (58 NONE 59 NONE) () () '' () ())
+59 'delimiter' '' 60 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (CHARACTER 1 ((CONSTANT (INTEGER 4) 0 '1'))) 0 0 () () () '' () ())
+58 'st' '' 60 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+CHARACTER 1 (())) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+47 'str_string_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (61 NONE 62 NONE) () () '' () ())
+62 'delimiter' '' 63 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (CHARACTER 1 ((CONSTANT (INTEGER 4) 0 '1'))) 0 0 () () () '' () ())
+61 'st' '' 63 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+CHARACTER 1 (())) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+46 'str_integer' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN MODULE-PROC
+DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK')) 0 0 (64 NONE)
+() () '' () ())
+64 'i' '' 65 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (INTEGER 4)
+0 0 () () () '' () ())
+45 'str_integer_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (66 NONE) () () '' () ())
+66 'ia' '' 67 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+INTEGER 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+44 'str_integer_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (68 NONE) () () '' () ())
+68 'ia' '' 69 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+INTEGER 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+43 'str_integer_fmt' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (70 NONE 71 NONE) () () '' () ())
+71 'fmt' '' 72 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+70 'i' '' 72 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (INTEGER 4)
+0 0 () () () '' () ())
+42 'str_integer_array_fmt' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+73 NONE 74 NONE) () () '' () ())
+74 'fmt' '' 75 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+73 'ia' '' 75 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+INTEGER 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+41 'str_integer_matrix_fmt' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (76 NONE 77 NONE) () () '' () ())
+77 'fmt' '' 78 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+76 'ia' '' 78 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+INTEGER 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+40 'str_logical' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN MODULE-PROC
+DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK')) 0 0 (79 NONE)
+() () '' () ())
+79 'l' '' 80 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (LOGICAL 4)
+0 0 () () () '' () ())
+39 'str_logical_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (81 NONE) () () '' () ())
+81 'la' '' 82 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+LOGICAL 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+38 'str_logical_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (83 NONE) () () '' () ())
+83 'la' '' 84 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+LOGICAL 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+37 'str_real_sp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN MODULE-PROC
+DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK')) 0 0 (85 NONE)
+() () '' () ())
+85 'x' '' 86 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 4) 0 0
+() () () '' () ())
+36 'str_real_sp_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+87 NONE 88 NONE) () () '' () ())
+88 'fmt' '' 89 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+87 'x' '' 89 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 4) 0 0
+() () () '' () ())
+35 'str_real_sp_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (90 NONE) () () '' () ())
+90 'xa' '' 91 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+REAL 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+34 'str_real_sp_array_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+92 NONE 93 NONE) () () '' () ())
+93 'fmt' '' 94 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+92 'xa' '' 94 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+REAL 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+33 'str_real_sp_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (95 NONE) () () '' () ())
+95 'xa' '' 96 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+REAL 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+32 'str_real_sp_matrix_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE
+UNKNOWN MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (97 NONE 98 NONE) () () '' () ())
+98 'fmt' '' 99 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+97 'xa' '' 99 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+REAL 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+31 'str_real_dp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN MODULE-PROC
+DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK')) 0 0 (100
+NONE) () () '' () ())
+100 'x' '' 101 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 8) 0
+0 () () () '' () ())
+30 'str_real_dp_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+102 NONE 103 NONE) () () '' () ())
+103 'fmt' '' 104 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+102 'x' '' 104 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 8) 0
+0 () () () '' () ())
+29 'str_real_dp_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (105 NONE) () () '' () ())
+105 'xa' '' 106 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(REAL 8) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+28 'str_real_dp_array_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+107 NONE 108 NONE) () () '' () ())
+108 'fmt' '' 109 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+107 'xa' '' 109 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(REAL 8) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+27 'str_real_dp_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+110 NONE) () () '' () ())
+110 'xa' '' 111 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(REAL 8) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+26 'str_real_dp_matrix_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE
+UNKNOWN MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (112 NONE 113 NONE) () () '' () ())
+113 'fmt' '' 114 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+112 'xa' '' 114 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(REAL 8) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+25 'str_complex_sp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (115 NONE) () () '' () ())
+115 'c' '' 116 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX 4)
+0 0 () () () '' () ())
+24 'str_complex_sp_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+117 NONE 118 NONE) () () '' () ())
+118 'fmt' '' 119 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+117 'c' '' 119 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX 4)
+0 0 () () () '' () ())
+23 'str_complex_sp_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (120 NONE) () () '' () ())
+120 'ca' '' 121 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+22 'str_complex_sp_array_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE
+UNKNOWN MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (122 NONE 123 NONE) () () '' () ())
+123 'fmt' '' 124 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+122 'ca' '' 124 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 4) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+21 'str_complex_sp_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (125 NONE) () () '' () ())
+125 'ca' '' 126 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+20 'str_complex_sp_matrix_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE
+UNKNOWN MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (127 NONE 128 NONE) () () '' () ())
+128 'fmt' '' 129 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+127 'ca' '' 129 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 4) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+19 'str_complex_dp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (130 NONE) () () '' () ())
+130 'c' '' 131 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX 8)
+0 0 () () () '' () ())
+18 'str_complex_dp_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK')) 0 0 (
+132 NONE 133 NONE) () () '' () ())
+133 'fmt' '' 134 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+132 'c' '' 134 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX 8)
+0 0 () () () '' () ())
+17 'str_complex_dp_array' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (135 NONE) () () '' () ())
+135 'ca' '' 136 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 8) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+16 'str_complex_dp_array_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE
+UNKNOWN MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (137 NONE 138 NONE) () () '' () ())
+138 'fmt' '' 139 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+137 'ca' '' 139 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 8) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+15 'str_complex_dp_matrix' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (140 NONE) () () '' () ())
+140 'ca' '' 141 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 8) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+14 'str_complex_dp_matrix_fmt_chk' 'fox_m_fsys_format' 1 ((PROCEDURE
+UNKNOWN MODULE-PROC DECL NONE NONE FUNCTION INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (142 NONE 143 NONE) () () '' () ())
+143 'fmt' '' 144 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+142 'ca' '' 144 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY)
+(COMPLEX 8) 0 0 () (2 ASSUMED_SHAPE () () () ()) () '' () ())
+13 'concat_str_int' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (145 NONE 146 NONE) () () '' () ())
+146 's2' '' 147 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (INTEGER
+4) 0 0 () () () '' () ())
+145 's1' '' 147 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+12 'concat_int_str' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (148 NONE 149 NONE) () () '' () ())
+149 's2' '' 150 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+148 's1' '' 150 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (INTEGER
+4) 0 0 () () () '' () ())
+11 'concat_str_logical' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (151 NONE 152 NONE) () () '' () ())
+152 's2' '' 153 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (LOGICAL
+4) 0 0 () () () '' () ())
+151 's1' '' 153 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+10 'concat_logical_str' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (154 NONE 155 NONE) () () '' () ())
+155 's2' '' 156 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+154 's1' '' 156 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (LOGICAL
+4) 0 0 () () () '' () ())
+9 'concat_real_sp_str' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (157 NONE 158 NONE) () () '' () ())
+158 's2' '' 159 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+157 's1' '' 159 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 4)
+0 0 () () () '' () ())
+8 'concat_str_real_sp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (160 NONE 161 NONE) () () '' () ())
+161 's2' '' 162 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 4)
+0 0 () () () '' () ())
+160 's1' '' 162 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+7 'concat_real_dp_str' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (163 NONE 164 NONE) () () '' () ())
+164 's2' '' 165 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+163 's1' '' 165 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 8)
+0 0 () () () '' () ())
+6 'concat_str_real_dp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (166 NONE 167 NONE) () () '' () ())
+167 's2' '' 168 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (REAL 8)
+0 0 () () () '' () ())
+166 's1' '' 168 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+5 'concat_complex_sp_str' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (169 NONE 170 NONE) () () '' () ())
+170 's2' '' 171 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+169 's1' '' 171 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX
+4) 0 0 () () () '' () ())
+4 'concat_str_complex_sp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (172 NONE 173 NONE) () () '' () ())
+173 's2' '' 174 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX
+4) 0 0 () () () '' () ())
+172 's1' '' 174 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+3 'concat_complex_dp_str' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (175 NONE 176 NONE) () () '' () ())
+176 's2' '' 177 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+175 's1' '' 177 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX
+8) 0 0 () () () '' () ())
+2 'concat_str_complex_dp' 'fox_m_fsys_format' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE FUNCTION PURE INVOKED) (CHARACTER 1 ('UNK'))
+0 0 (178 NONE 179 NONE) () () '' () ())
+179 's2' '' 180 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (COMPLEX
+8) 0 0 () () () '' () ())
+178 's1' '' 180 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DUMMY) (
+CHARACTER 1 (())) 0 0 () () () '' () ())
+)
+
+('str_to_int_10' 0 50 'str_to_int_16' 0 52)

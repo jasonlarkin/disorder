@@ -1,0 +1,30 @@
+defect regi bulk opti
+title
+Example of defect transition state calc : Magnesium vacancy migration 
+end
+cell
+4.212 4.212 4.212 90 90 90 
+frac
+O  core 0.5 0.5 0.5  0.86902 
+O  core 0.5 0.0 0.0  0.86902 
+O  core 0.0 0.5 0.0  0.86902
+O  core 0.0 0.0 0.5  0.86902
+Mg core 0.0 0.0 0.0  2.00000
+Mg core 0.0 0.5 0.5  2.00000
+Mg core 0.5 0.0 0.5  2.00000
+Mg core 0.5 0.5 0.0  2.00000
+O  shel 0.5 0.5 0.5 -2.86902 
+O  shel 0.5 0.0 0.0 -2.86902
+O  shel 0.0 0.5 0.0 -2.86902
+O  shel 0.0 0.0 0.5 -2.86902
+vaca 0.0 0.0 0.0
+vaca 0.5 0.5 0.0
+centre 0.25 0.25 0.0
+interstital Mg 0.2 0.3 0.0
+size 4.0 10.0
+buck
+Mg core O shel 1280.0 0.3 0.0 0.0 5.0
+buck
+O shel O shel 1280.0 0.3 27.88 0.0 5.0
+spri
+O 74.92

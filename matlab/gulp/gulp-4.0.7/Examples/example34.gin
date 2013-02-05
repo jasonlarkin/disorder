@@ -1,0 +1,33 @@
+mole montecarlo conv
+name hydrogen
+cell
+30.0 30.0 30.0 90.0 90.0 90.0
+cartesian
+#
+temperature 100 K
+mcchemicalpotential -0.042
+mcmaxdisplacement 0.5
+mcvolume 27000.00
+mccreate 0.333333
+mcdestroy 0.333333
+mcmove 0.333333
+#
+mctrial 1000
+#
+element
+cova He 0.1
+mass H 1.008
+mass He 0
+end
+#
+species 
+H core 0.42
+He core -0.84
+#
+gcmcmolecule 3
+H core  0 0 -0.383
+He core 0 0 0
+H core  0 0 0.383
+#
+lennard inter epsilon
+He He 0.0028686 2.970 0.0 15.0

@@ -1,0 +1,33 @@
+opti c6 conp PDFcut nofreq
+
+title
+MgO potentials from P.S.Baram and S.C.Parker Phil Mag B 73 1 49 (1996) 
+Generate PDFs for MgO using only phonons contributions > wmin
+PDF code written by Elizabeth Cope (beth.cope@cantab.net)
+
+[Phonon information suppressed 
+(remove nofreq to output standard information, add arrayfreq to output from stored arrays)]
+end
+cell
+4.2 4.2 4.2 90.0 90.0 90.0
+frac
+Mg core  0.0    0.0   0.0   2.0
+O  core  0.5    0.0   0.0   0.84819
+O  shell 0.5    0.0   0.0  -2.84819
+space
+F M 3 M
+buck
+O shell O shell 22764.0 0.149  27.88 0.0000 8.0000 0 0 0
+buck
+Mg core O shell  1428.5 0.2945  0.0  0.0000 8.0000 0 0 0
+spring
+O 74.92 0
+shrink 10
+temperature 290
+pdf
+ rmax 5
+ rbins 500
+ unit freq thz
+ wmin  5
+end
+output pdf example45

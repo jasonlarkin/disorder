@@ -3,23 +3,22 @@ clear
 lj = m_lj; constant = m_constant;
 
 str.main =...
-    '/home/jason/disorder2/si/amor/prepare/4x/';
+    '/home/jason/disorder2/si/amor/prepare/4x/annealHe/';
 
 x0(1).x0 =...
     m_x0_read([str.main 'x0.data']);
-x0(1).freq =...
-    load([str.main 'AF_freq.dat']);
-x0(1).eigvec =...
-    load([str.main 'AF_eigvec.dat']);
+% x0(1).freq =...
+%     load([str.main 'AF_freq.dat']);
+% x0(1).eigvec =...
+%     load([str.main 'AF_eigvec.dat']);
 
 icnt = 1;
 data(icnt).data =...
-    m_lmp_readdump_all([str.main 'lmp.x.nve.dump.2']);
-log(icnt).log =...
-    m_lmp_readlog([str.main 'lmp.log.time.2']);
-array(icnt).array = str2num(log(icnt).log.data{2});
+    m_lmp_readdump_all([str.main 'lmp.x.nve.dump.1']);
 
-
+% log(icnt).log =...
+%     m_lmp_readlog([str.main 'lmp.log.time.1']);
+% array(icnt).array = str2num(log(icnt).log.data{2});
 
 for idump = 2:size(data(1).data.atom_data,3)
     idump
@@ -32,7 +31,7 @@ plot(...
     data(1).data.atom_data(:,1,idump),...
     data(1).data.atom_data(:,3,idump),'.'...
     )
-axis([0 22.0 0 22.0])
+axis([0 x0(1).x0.Lx 0 x0(1).x0.Lx])
 %--------------------------------------------------------------------------
 pause
 %--------------------------------------------------------------------------

@@ -1,0 +1,98 @@
+G95 module created on Fri Feb  1 21:14:52 2013 from ../gulpcml_props.F90
+If you edit this, you'll get what you deserve.
+module-version 9
+(() () () () () () () () () () () () () () () () () () () () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'gulp_cml_output_derivs' 'gulp_cml_props' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE SUBROUTINE) (PROCEDURE 0) 0 0 (3 NONE 4 NONE
+5 NONE 6 NONE 7 NONE 8 NONE 9 NONE 10 NONE 11 NONE 12 NONE 13 NONE 14
+NONE 15 NONE 16 NONE) () () '' () ())
+17 'gulp_cml_output_dielectric' 'gulp_cml_props' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE SUBROUTINE) (PROCEDURE 0) 0 0 (18 NONE 19
+NONE 20 NONE 21 NONE 22 NONE 23 NONE) () () '' () ())
+24 'gulp_cml_output_inertia' 'gulp_cml_props' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE SUBROUTINE) (PROCEDURE 0) 0 0 (25 NONE) () ()
+'' () ())
+26 'gulp_cml_print_born_charges' 'gulp_cml_props' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE SUBROUTINE) (PROCEDURE 0) 0 0 (27 NONE) () ()
+'' () ())
+28 'gulp_cml_print_epot_lattice' 'gulp_cml_props' 1 ((PROCEDURE UNKNOWN
+MODULE-PROC DECL NONE NONE SUBROUTINE) (PROCEDURE 0) 0 0 (29 NONE) () ()
+'' () ())
+30 'lcml' 'gulp_cml_props' 1 ((VARIABLE UNKNOWN UNKNOWN UNKNOWN NONE
+NONE) (INTEGER 4) 0 0 () () () '' () ())
+29 'v' '' 31 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION DUMMY) (
+REAL 8) 0 0 () (1 ASSUMED_SHAPE () ()) () '' () ())
+27 'born_charge' '' 32 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+DUMMY) (REAL 8) 0 0 () (3 ASSUMED_SHAPE () () () () () ()) () '' () ())
+25 'inertia' '' 33 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1') (
+CONSTANT (INTEGER 4) 0 '3') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '3')) () '' () ())
+23 'piezs' '' 34 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '6') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '3')) () '' () ())
+22 'piezo' '' 34 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '6') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '3')) () '' () ())
+21 'hrind' '' 34 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '3')) () '' () ())
+20 'hfct' '' 34 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '3') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '3')) () '' () ())
+19 'srind' '' 34 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '3')) () '' () ())
+18 'sdct' '' 34 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '3') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '3')) () '' () ())
+16 'vp_hill' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+15 'vp_voigt' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+14 'vp_reuss' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+13 'vs_hill' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+12 'vs_voigt' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+11 'vs_reuss' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+10 'shearmod_hill' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE
+OPTIONAL DUMMY) (REAL 8) 0 0 () () () '' () ())
+9 'shearmod_voigt' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE
+OPTIONAL DUMMY) (REAL 8) 0 0 () () () '' () ())
+8 'shearmod_reuss' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE
+OPTIONAL DUMMY) (REAL 8) 0 0 () () () '' () ())
+7 'bulkmod_hill' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+6 'bulkmod_voigt' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+5 'bulkmod_reuss' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE OPTIONAL
+DUMMY) (REAL 8) 0 0 () () () '' () ())
+4 'compliances' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '6') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '6')) () '' () ())
+3 'elcon' '' 35 ((VARIABLE IN UNKNOWN UNKNOWN NONE NONE DIMENSION
+OPTIONAL DUMMY) (REAL 8) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4) 0 '1')
+(CONSTANT (INTEGER 4) 0 '6') (CONSTANT (INTEGER 4) 0 '1') (CONSTANT (
+INTEGER 4) 0 '6')) () '' () ())
+)
+
+('gulp_cml_output_derivs' 0 2 'gulp_cml_output_dielectric' 0 17
+'gulp_cml_output_inertia' 0 24 'gulp_cml_print_born_charges' 0 26
+'gulp_cml_print_epot_lattice' 0 28 'lcml' 0 30)

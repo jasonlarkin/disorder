@@ -1,0 +1,39 @@
+md conp
+cell
+9.20379    9.20379    9.20379   94.73768   94.73768   94.73768
+fractional            9
+Si  core    0.1063320    0.3333970    0.8783750
+O   core    0.2592375    0.7407625    0.0000000
+O   core    0.1500650    0.8499350    0.5000000
+O   core    0.2537785    0.2537785    0.8970940
+O   core    0.0265190    0.0265190    0.3234650
+O   shel    0.2592375    0.7407625    0.0000000
+O   shel    0.1500650    0.8499350    0.5000000
+O   shel    0.2537785    0.2537785    0.8970940
+O   shel    0.0265190    0.0265190    0.3234650
+space
+R -3 m  
+origin 2
+species   3
+Si     core    4.000000            
+O      core    0.869020            
+O      shel   -2.869020            
+buck     
+Si    core O     shel    1283.907000 0.320520   10.66158  0.000 12.000
+buck     
+O     shel O     shel   22764.000000 0.149000   27.87900  0.000 12.000
+spring
+O        74.920000
+three      
+Si    core O     shel O     shel   2.097240 109.470000  1.900  1.900  3.600
+cutp 12.0 1.0
+integrator leapfrog verlet
+ensemble npt 0.005 0.005
+temperature 300
+equil 1.00 ps
+produ 1.00 ps
+timestep 0.0001 ps
+sample 0.005 ps
+shellmass 
+O 0.1
+dump every example19.grs

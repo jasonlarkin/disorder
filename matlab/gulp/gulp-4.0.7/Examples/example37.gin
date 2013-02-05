@@ -1,0 +1,8 @@
+opti conp phon noden dist
+cart
+Si core  0.00  0.00  0.00
+H  core  1.00  1.00  1.00
+H  core -1.00 -1.00  1.00
+H  core  1.00 -1.00 -1.00
+H  core -1.00  1.00 -1.00
+brenner 1

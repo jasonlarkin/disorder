@@ -1,0 +1,16 @@
+opti prop conp 
+title
+alumina  - example of how to use a library to assign
+the potentials
+end
+cell
+4.7602   4.7602  12.9933  90.000000  90.000000 120.0
+frac
+Al core 0.000000   0.000000   0.352160  
+O  core 0.306240   0.000000   0.250000  
+Al shel 0.000000   0.000000   0.352160  
+O  shel 0.306240   0.000000   0.250000  
+space
+167
+library bush.lib
+dump example13.grs

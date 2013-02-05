@@ -1,6 +1,6 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/si/amor/prepare/6x/nmd/';
+str_af = '/home/jason/disorder2/si/amor/prepare/8x/dynam/';
 
 AF.eigvec = load(strcat(str_af,'AF_eigvec.dat'));
 AF.freq = load(strcat(str_af,'AF_freq.dat'))';
@@ -20,7 +20,7 @@ nmd.alat = 5.43;
 % AF.kpt(:,3) = nmd.kptmaster(:,3);
 %AK.kpt = [AF.kpt(:,1)/nmd.Nx AF.kpt(:,2)/nmd.Ny AF.kpt(:,3)/nmd.Nz]
 %100
-AF.kpt(:,1) = [0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
+AF.kpt(:,1) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
 AF.kpt(:,2) = 0;
 AF.kpt(:,3) = 0;
 % %010
@@ -41,10 +41,8 @@ AF.kpt(:,3) = 0;
 % AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
 % AF.kpt(:,3) = [0.1 0.2 0.3 0.4 0.5]';
 
-BROADEN = 10;
-
-NUM_RAND = 10;
-
+BROADEN = 40;
+NUM_RAND = 20;
 rng(11111);
 
 DSF_long_avg.SL = zeros(length(AF.freq), size(AF.kpt,1));
@@ -73,21 +71,23 @@ for ikpt = 1:size(AF.kpt,1)
 
     DSF_long_avg.freq_range = DSF_long_rand.freq_range;
     DSF_tran_avg.freq_range = DSF_tran_rand.freq_range;
+    DSF_long_avg.kpt = AF.kpt;
+    DSF_tran_avg.kpt = AF.kpt;
     
 AF.kpt(ikpt,:)
         
     semilogy(...
         DSF_tran_avg.freq_range,DSF_tran_avg.SL(:,ikpt),'.',...
-        DSF_long_avg.freq_range,DSF_long_avg.SL(:,ikpt),'.'...
+        DSF_long_avg.freq_range,4*DSF_long_avg.SL(:,ikpt),'.'...
         )
 %--------------------------------------------------------------------------
-pause
+%pause
 %--------------------------------------------------------------------------
 end
         
         
-save(strcat(str,'DSF_tran.mat'), '-struct', 'DSF');
-
+save(strcat(str_af,'DSF_long_avg.mat'), '-struct', 'DSF_long_avg');
+save(strcat(str_af,'DSF_tran_avg.mat'), '-struct', 'DSF_tran_avg');
 
 
 
