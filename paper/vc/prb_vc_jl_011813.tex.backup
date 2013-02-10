@@ -1,5 +1,5 @@
-\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
-%\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+%\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
 %\documentclass[aps,prl,onecolumn,groupedaddress,amsmath,amssymb,12pt]{revtex4}
 \usepackage{graphicx}
 \usepackage{ifthen}
@@ -348,6 +348,17 @@ disorder on the thermal transport of vibrational modes (Section ). Based
 on the effects of explicit disorder, a simple guideline is suggested 
 for use with the VC approximation.
 
+not used yet...
+Experimental measurements of isotopically pure and Ge-doped 
+Si epitaxial layers demonstrate the original theory by Abeles can predict 
+thermal conductivity in dilute alloys. Abeles also found good agreement 
+with dilute predictions for both experimental measurements of both 
+Si-Ge alloys and also (Ga,In)As alloys.\cite{abeles_lattice_1963} However, 
+both of these alloy systems have a relatively high thermal conductivities 
+(on the order of 1-10 W/m-K at 300 K). However, in the heavily disordered 
+system In(As,P) (mass ratio of 3.7) worse agreement with the Abeles theory 
+is observed. 
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:Virtual Crystal}Virtual Crystal (VC) Approximation}
 %--------------------------------------------------------------------------
@@ -400,7 +411,10 @@ alloys show good to excellent agreement with experimental results
 Garg used ab initio calculations with VC-ALD   
 to predict the thermal conductivity of Si/Ge alloys 
 for all concentrations, obtaining excellent agreement with experiment.
-\cite{garg_role_2011}  Lindsay and Broido 
+\cite{garg_role_2011}  
+Does Garg find factor of 2 change for intrinsic lifetimes, or the 
+combination of intrinsic and defect with Matthiesen rule?
+Lindsay and Broido 
 found good agreement with VC-ALD and experiment for 
 isotopically defected GaN.\cite{lindsay_thermal_2012}  
 Isotopically defected GaN and Si/Ge alloys (even for large 
@@ -1396,32 +1410,39 @@ While the VC-ALD method begins to overpredict at this elevated temperature,
 it continues to underpredict for the alloys $c \ge 0.05$.  In fact, the 
 thermal conductivity predicted by VC-ALD is right at (and slightly below) 
 the HS limit. This demonstrates that the VC-ALD method is failing to 
-accurately predict the high frequency mode lifetimes
+accurately predict the high frequency mode lifetimes similar 
+to $T=10$ K. The thermal diffusivity adjusted VC-ALD$^*$, again, is 
+only marginally improved. 
 
-As noted in Section , for LJ argon in the amorphous phase, 
-$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K, indicating that 
-almost all important modes to thermal transport are high-scattering. 
-
-The mode lifetimes are underpredicted at high frequencies for VC-ALD 
-compared to VC-NMD, which leads to an underprediction for VC-ALD 
+Because the mode lifetimes are underpredicted at high frequencies for 
+VC-ALD compared to VC-NMD, this leads to an underprediction for VC-ALD 
 of both the thermal conductivity spectrum (Fig. ) at high 
 frequency and the total thermal conductivity (Fig. ) 
 compared to VC-NMD and GK (Section ). 
-In SW silicon even the amorphous phase has significant contributions 
-from propagating modes which are considered to be phonons. Without 
+As noted in Section , for LJ argon in the amorphous phase, 
+$k_{GK} = $0.121 W/m-K and $k_{CP,HS} =$ 0.12 W/m-K, indicating that 
+almost all important modes to thermal transport are high-scattering. The GK 
+predicted thermal conductivity predictions for the disordered lattices 
+demonstrate that there are 
+important contributions from propagating modes, even at higher temperatures 
+where $k_{GK} > k_{AF,HS}$. 
+
+For SW silicon, the thermal conductivities prediction by VC-ALD and GK 
+are in good agreement, even without the adjustment VC-ALD$^*$, which only 
+increases the result from VC-ALD by about 1$\%$. 
+In SW silicon, even the amorphous phase has significant contributions 
+from propagating modes which are considered to be phonons.(cite) Without 
 any detailed mode-by-mode analysis, comparing the thermal 
 conductivity predicted for the 
-SW silicon amorphous phase ($k_{GK} =$ 3 W/m-K (cite)) compared to 
+SW silicon amorphous phase ($k_{GK} \approx$ 3 W/m-K (cite)) compared to 
 the HS limit, 
 $k_{AF,HS} = $0.5 W/m-K, demonstrates that there is significant 
-contribution from what can be considered propagating mode. 
+contribution from what can be considered propagating modes.(cite)  
 In fact, for a-Si, the mode diffusivities vary as a function 
 of frequency,
 \cite{feldman_thermal_1993,feldman_numerical_1999,allen_diffusons_1999} 
 which has been used to explain the propagating 
-mode effects seen in a-Si thin films. (D = vs tau)
-\cite{he_heat_2011}
-
+mode effects seen in a-Si thin films.\cite{he_heat_2011}
 
 
 %--------------------------------------------------------------------------
@@ -1451,44 +1472,88 @@ mode effects seen in a-Si thin films. (D = vs tau)
 \section{\label{S:Discussion}Discussion}
 %--------------------------------------------------------------------------
 
+The pertubrative models used for VC-ALD are able to make accurate 
+predictions for SW si, which is a material whose thermal conductivity is 
+dominated by low-frequency mode properties (Section Fig. ). 
 
-Based on the results locating the peaks in the structure factors 
-(Fig. ), the reduction due to zone folding 
-would seem to underpredict the group velocity of 
-moderate to high frequency modes.\cite{duda_reducing_2011} Instead, 
-the VC predicted group velocities, when coupled with the VC-NMD predicted 
-mode lifetimes, predict thermal conducitivities in good agreement with 
-the MD-based GK method.  
+LJ Argon is a material where high-frequency mode properties are as 
+important as low-frequency (Section Fig. ). 
 
-While the AF theory is divergent for lattices in the infinite-size limit, 
-the theory provides a plausible lower-limit for a vibrational mode's 
-thermal diffusivity, particularly at high frequencies 
-where the mode lifetime and group velocity (or MFP) cannot be independently 
-defined.\cite{feldman_numerical_1999,xu_energy_2009} 
+The perturbative models used for VC-ALD with LJ Ar do not make accurate 
+predictions 
+of the phonon properties at high-frequency (Section, and also fail at 
+high-temperature (Section , Fig. and Section, Fig. ). 
 
-An addition of as little as $10\%$ Ge is sufficient to reduce the thermal 
-conductivity to the minimum value achievable through alloying. 
-Theoretically, mass disorder is found to increase the 
-anharmonic scattering of phonons 
-through a modification of their vibration eigenmodes. 
-Notably, the thermal conductivity is found
-to drop sharply after only a small amount of alloying. This
-is due to the strong harmonic scattering of phonons even
-in the dilute alloy limit.
+The higher-order terms in the Tamura theory are predicted to be 
+non-negligible for LJ Argon() in the high-frequency spectrum (Section ), 
+which is where VC-ALD underpredicts the thermal 
+conductivity ( Section, Fig). 
 
+The VC approximation can also underpredict the inherent mode thermal 
+diffusivity due to disorder (Section Fig). 
+
+A simple correction to the VC approximation can be made by considering 
+a lower-limit for the mode specific thermal diffusivity (Section, Fig. ). 
+
+This lower-limit is physically equivalent to assuming all modes 
+propagate at the sound speed a distance of the lattice constant 
+(Section Fig. ).
+
+This is a common assumption when modeling amorphous materials, which 
+represent a lower-limit for typical materials.(cite)
+
+While this is a good model for a-Ar (Section Fig.), measurements and 
+predictions for c-Si, Si/Ge alloys 
+and a-Si demonstrate that low-frequency 
+modes contribute significantly to thermal transport. 
+
+These 
+low-frequency modes are predicted to have progagation length scales 
+of 100s of nm. 
+
+The low-frequency modes can be modeled well using simple scaling 
+expressions (Section Fig), which cost significantly less 
+comutational time than mode-specific calcualtions (Section ).(cite) 
+
+It is interesting 
+
+For Ultra-low thermal conduticity materials, such as WeS^2 and PCBM, 
+take advantage of more complex structural designs which 
+
+what is AF,HS for PbTe??????
+
+what is AF,HS for WeS^2 and PCBM??????
+
+
+
+
+
+or high-temperature
 
 
 By enforcing the lower-limit of 
 thermal diffusivity, the thermal conducitvity of  . The importance of this 
 result 
 
-
-
+While the AF theory is divergent for lattices in the infinite-size limit, 
+the theory provides a plausible lower-limit for a vibrational mode's 
+thermal diffusivity, particularly at high frequencies 
+where the mode lifetime and group velocity (or MFP) cannot be independently 
+defined.\cite{feldman_numerical_1999,xu_energy_2009} 
 This ambiguity can be resolved by 
 considering the thermal diffusivity of a given mode, which incorporates 
 the variation of both group velocity and lifetime (see Section ).
 
-While there is a clear breakdown of the perturbative models used in  
+Based on the results locating the peaks in the structure factors 
+(Fig. ), the reduction due to zone folding 
+would seem to underpredict the group velocity of 
+moderate to high frequency modes.\cite{duda_reducing_2011} Instead, 
+the VC predicted group velocities, when coupled with the VC-NMD predicted 
+mode lifetimes and thermal diffusivity adjusted VC-NMD$^*$, 
+predict thermal conducitivities in good agreement with 
+the MD-based GK method. 
+
+There is a clear breakdown of the perturbative models used in  
 VC-ALD (Fig. LJ-Diff and Fig. LJ thermal cond 40K), 
 Because of its computational efficiency (Appendix ) a simple correction 
 VC-ALD* is useful. This correction brings the predictions for LJ argon 
@@ -1496,40 +1561,25 @@ into better (though not great) agreement with the MD-based methods, and
 does not affect the good agreement seen in SW silicon (Fig. ). 
 
 The existence of a minimum or characteristic mode lifetime for 
-LJ argon (Fig. ) can be . Such a minimum, defined in terms of the mode 
+LJ argon (Fig. ) is suggested heuristically based on similar limits 
+for electron transport.(cite) Such a minimum, defined in terms of the mode 
 mean free path was, was proposed to explain the plateau 
 temperature dependance of glasses.\cite{graebner_phonon_1986} 
 There is difficulty in converting 
 between lifetime and mean free path because of the inability to 
 define an effective group velocity for all but the low frequency modes. 
-This can be 
-The additional disor-
-der increases the fraction of localized states, but delocalized states 
-still dominate. However, the
-diffusivity of the delocalized states is diminished, 
-weakening our faith in any literal interpretation of the
-minimum conductivity idea.
-'' \cite{feldman_thermal_1993}
+In this work, the Ioffe-Regel limit ($\tau = 2\pi/\omega $) seems to be 
+a lower limit for the mode lifetimes except for those predicted 
+using VC-ALD (Fig. LJ-Gamma, LJ-Diff and SW-Diff ). 
 
-Using the AF theory, 
-In fact, for diffusons the diffusivity cannot be meaningfully represented 
-as v 2 ␶ i /3 since v i and ␶ i cannot be independently
-defined.\cite{feldman_numerical_1999}
-
-It is possible that the VC group velocities are an over-prediction 
+For LJ argon, it is possible that the VC group velocities are an over-prediction 
 for modes in a given interval of frequency, 
 but is compensated for 
 by an under-prediction of the lifetimes in the same interval of 
 frequency when compared to the Gamma modes (Fig. ). The only constraint 
 we have to compare against is the total vibrational conductivity, which 
-shows good agreement when using the set of group velocities (Section )
-and lifetimes (Section ) using VC-NMD. 
-In this work, the Ioffe-Regel limit ($\tau = 2\pi/\omega $) seems to be 
-a lower limit for the mode lifetimes except for those predicted 
-using VC-ALD (Fig. LJ-Gamma, LJ-Diff and SW-Diff ).  
+shows good agreement for VC-NMD compared to GK. 
 
-Particularly challenging is predicting a representative group velocity 
-for modes in a disordered systems. 
 Use of the VC approximation is a theoretically and 
 computationally simple way to predict a representative group velocity.
 
@@ -1543,16 +1593,7 @@ In fact, Slack showed that the same model
 is useful for crystalline insulators with strong scattering.(waiting for 
 ILL).\cite{henry_ehrenreich_thermal_1979}
 
-Apparent-
-ly, naturally disordered systems like glasses tend to occur
-'va. We see no reason why this should occur,
-with D = —,
-except for observing that the crossover between propaga-
-ting and localized states tends to be broad and gradual
-
-
-
-While the models presented in, there is no theoretical justification for 
+While there is no theoretical justification for 
 the lower limit to the the mode mean-free path.\cite{graebner_phonon_1986} 
 For the lattices studied in this work, the more appropriate quantity to 
 consider is the mode diffusivity since both the 
@@ -1564,45 +1605,10 @@ to be valid even in the high-frequency regime, where the
 diffusivity cannot be factorized into a product of $l(\omega)$ times
 a frequency-independent speed of sound.
 
-
-For $c=0$ the group velocities are given from the dispersion (Section ). 
-
 In these ordered and disordered lattices, it is difficult to separate 
 the contributions to the total vibrational 
 conductivity from $D_{ph}\kv$ and $D_{AF}$ unless the lower limit 
 $D_{CP,HS}$ or $D_{AF,HS}$ are used.  
-
-While the
-expression for harmonic defect scattering (Eq.) is valid for
-perturbative disorder, its use leads to good agreement with
-several experimental and computational results with large disorder.  
-Cahill shows that conductivty reduction in dilute 
-Ge-doped Si epitaxial layers 
-is captured by mass perturbative disorder.\cite{cahill_thermal_2005} 
-In this case, the mass disorder is large ($m_{Ge}/m_{Si} = 2.6$) 
-but the overall disorder strength is dictated by the concentration. 
-For example, as little as $6.2\times10^{19} cm^{-3}$ Ge
-($g = 3.1\times10^{-3}$) is enough to reduce the thermal conductivity of 
-Si by almost a factor of 2.\cite{cahill_thermal_2004}
-In the
-case of the $Ni_{0.55}Pd_{0.45}$ alloy, the atomic species
-are chemically similar but both the mass disorder 
-($m_{Pd}/m_{Ni} \approx 2$) and concentration are large ($g=0.078$) 
-and good agreement is seen with the Eq. .
-\cite{kamitakahara_vibrations_1974}
-
-While , the effect of explicit disorder has been demonstrated in the 
-calculation of the intrinsic phonon lifetimes.\cite{garg_role_2011}
-
-Experimental measurements of isotopically pure and Ge-doped 
-Si epitaxial layers demonstrate the original theory by Abeles can predict 
-thermal conductivity in dilute alloys. Abeles also found good agreement 
-with dilute predictions for both experimental measurements of both 
-Si-Ge alloys and also (Ga,In)As alloys.\cite{abeles_lattice_1963} However, 
-both of these alloy systems have a relatively high thermal conductivities 
-(on the order of 1-10 W/m-K at 300 K). However, in the heavily disordered 
-system In(As,P) (mass ratio of 3.7) worse agreement with the Abeles theory 
-is observed. 
 
 The theory by Tamura is able to treat disorder scattering in an arbitrary 
 crystal with dispersion. The theory, however, fails to predict the 
@@ -1610,41 +1616,43 @@ lifetimes of high-frequency modes, which are critical to the total
 thermal conductivity in LJ argon (see Fig. and ). To match the predicted 
 phonon lifetime at high fequency for $c=0.05$ 
 ($\tau\kv \propto const.$, Fig. ), 
-the Tamura theory requires a DOS which scales as 
+the Tamura theory (to order 2, $g_2(b)$) requires a DOS which scales as 
 $D(\omega\kv) \propto const.$. Clearly from Fig. , this is not the case 
 with either the VC or Gamma modes. To match the predicted 
 phonon lifetime at high fequency for $c=0.5$ 
 ($\tau\kv \propto 1/\omega\kv$, Fig. , also true for all $c$ in SW silicon), 
+The higher-order terms in the Tamura theory are demonstrated to be large 
+in Fig., but it is unclear if and how they are responsible for the 
+underpredictions of the VC-ALD method for LJ argon. 
 
 While Broido found that omission of optical scattering overpredicts 
 the thermal 
 conductivity of bulk Si by a factor of 2-3, 
 optical modes contribute less than $5\%$ 
 to thermal conductivity itself. Similarly, the diffusivity adjusted thermal 
-cobductivities of SW Si are increased by less then $5\%$, demonstrating the 
-unimportance of the high frequency ``optical'' modes in SW Si alloys.
+cobductivities of SW Si are increased by less then about $1\%$, demonstrating the 
+the high frequency and optical modes are also unimportant to thermal transport 
+in Si alloys. 
 
 For the perfect system, phonon modes with nearly zero group velocity 
 (optical modes and acoustic modes at the BZ boundaries) have essentially 
 zero thermal diffusivity and contribute nearly 
 nothing to the thermal transport, while the modes themselves 
 are important to the 
-scattering of other phonons.  In the disordered lattices under the 
-AF theory, all modes have a finite thermal diffusivity, which is typically  
-much larger than the minimum for phonons in a perfect lattice 
-($D_{th} \approx 0 $). This finite thermal diffusivity limit is the cause 
+scattering of other phonons.(cite) In the disordered lattices under the 
+AF theory, modes important to thermal transport have a finite thermal 
+diffusivity, as opposed to  the minimum $D_{th} \approx 0 $ for phonons 
+in a perfect lattice. This finite thermal diffusivity limit is the cause 
 for the large (LJ argon Fig. ) and small (SW silicon Fig. ) 
 descrepcny between the thermal conductivity prdictions of VC-ALD and 
 VC-NMD versus 
-
-
 
 High thermal conductivity materials tend to have a conductivity spectrum 
 which is peaked in the low frequency range.(cite) 
 It is in this range where the mode 
 lifetimes follow closely the scalings with frequency which can be 
-predicted by treating intrinsic and disorder scattering as 
-perturbations (Eq. ).
+predicted by the perturbative models for intrinsic and disorder scattering as 
+(Section Eq. ).
 
 In contrast, 
 in LJ argon the high frequency phonon mode properties are critical 
@@ -1670,8 +1678,6 @@ SW silicon using VC-ALD agree well with VC-NMD and GK. This is also a
 plausible explanation for the success of predictions using 
 VC-ALD and ab initio calculations compared to experiment for 
 ``stiff'' systems (i.e. Si-Ge).(cite)
-
-
 
 %--------------------------------------------------------------------------
 \section{\label{S:}Summary}
@@ -1968,21 +1974,20 @@ ab initio methods are used (Section ).
 \cite{garg_role_2011,tian_phonon_2012,
 lindsay_thermal_2012,esfarjani_heat_2011}
 
-Reciprocal space grids of up to  are required to predict converged 
-thermal conductivity of Si.\cite{esfarjani_heat_2011} 
+System sizes of up to $N_0=38$ are required to predict converged 
+thermal conductivity of SW silicon alloys. 
+For Si modeled using the Tersoff potential, 
+system sizes of up to 64000 atoms are required to observe 
+converged values of thermal conductivity using the GK method.
+\cite{he_lattice_2012} We find that similar system sizes are 
+also required for 
 
-For the GK method, the finite size extrapolation is used for 
-both LJ argon and SW silicon for smaller system sizes $N_0 \le 12$. 
+For the GK method, smaller system sizes $N_0 \le 12$ are used for the 
+finite size extrapolation for LJ argon and SW silicon . 
 The validity of this result can be explained in terms of a 
 combination of effects which are specific to the MD simulations.
 \cite{esfarjani_heat_2011} In fact, for $c=0$ the GK results are 
 independent of system size for $N_0 = 4$ to $N_0 = 12$ for LJ argon.
-
-For Si modeled using the Tersoff potential, 
-system sizes of up to 64000 atoms are required to observe 
-converged values of thermal conductivity.\cite{he_lattice_2012} 
-We find that similar system sizes are 
-also required for 
 
 \clearpage
 \bibliographystyle{apsrev}

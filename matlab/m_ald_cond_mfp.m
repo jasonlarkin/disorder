@@ -1,29 +1,24 @@
-function [freq_bins cond_freq] = m_ald_cond_freq(freq,life,groupvel,VOLUME,NUM_BINS)
+function [mfp_bins cond_mfp] = m_ald_cond_mfp(freq,life,groupvel,VOLUME,NUM_BINS)
 %--------------------------------------------------------------------------
-%cond = m_ald_cond_freq(freq,life,groupvel,VOLUME)
+%cond = m_ald_cond_mfp(freq,life,groupvel,VOLUME)
 %assumes quantities in mks units, not lj
 %--------------------------------------------------------------------------
 
-constant = m_constant; lj = m_lj;
+min_mfp = 1E-9;
 
-freq_bins = linspace( 0 , max(freq) , NUM_BINS); 
+mfp = life.*sqrt(groupvel(:,1).^2 + groupvel(:,2).^2 + groupvel(:,3).^2 );
+constant = m_constant; lj = m_lj;
+mfp_bins = linspace( min_mfp , 1.1*max(mfp) , NUM_BINS); 
+
+min(mfp)
+max(mfp)
 
 %freq_bins
-
-for ibin = 1:length(freq_bins)
-    
-    I = find( freq > freq_bins(ibin) & freq < freq_bins(ibin)+freq_bins(2) );
-    
-%     life(I)
-%     groupvel(I)
-    
-    cond_freq(ibin) =... 
-        sum((constant.kb/VOLUME)*sum( life(I).*(groupvel(I).^2) ) );
-    
-%     pause
-    
+for ibin = 2:length(mfp_bins)
+    I = find( mfp > mfp_bins(ibin-1) & mfp < mfp_bins(ibin) );
+    cond_mfp(ibin) =... 
+        sum((constant.kb/VOLUME)*sum( life(I).*(groupvel(I,1).^2) ) );
 end
-
 
 end
 

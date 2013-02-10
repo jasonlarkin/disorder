@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3941,        131]
+NotebookOptionsPosition[      3418,        108]
+NotebookOutlinePosition[      3754,        123]
+CellTagsIndexPosition[      3711,        120]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"x", "^", "3"}], ")"}], "*", 
+     RowBox[{"Exp", "[", "x", "]"}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Exp", "[", "x", "]"}], "-", "1"}], ")"}], "^", "2"}], 
+    ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.569115054164114*^9, 3.569115054595586*^9}, {
+  3.5691151946379757`*^9, 3.569115303828473*^9}, {3.569115406069302*^9, 
+  3.5691154226653337`*^9}, {3.569115628203471*^9, 3.569115756125061*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.5691148364951572`*^9, 3.569114852721027*^9}, {
+  3.569114886730587*^9, 3.569114886979272*^9}, {3.569115413572145*^9, 
+  3.5691154138024397`*^9}, {3.569115667876522*^9, 3.569115685905406*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["x", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", "x"], " ", "x"}], 
+      RowBox[{"1", "-", 
+       SuperscriptBox["\[ExponentialE]", "x"]}]], "+", 
+     RowBox[{"3", " ", 
+      RowBox[{"Log", "[", 
+       RowBox[{"1", "-", 
+        SuperscriptBox["\[ExponentialE]", "x"]}], "]"}]}]}], ")"}]}], "+", 
+  RowBox[{"6", " ", "x", " ", 
+   RowBox[{"PolyLog", "[", 
+    RowBox[{"2", ",", 
+     SuperscriptBox["\[ExponentialE]", "x"]}], "]"}]}], "-", 
+  RowBox[{"6", " ", 
+   RowBox[{"PolyLog", "[", 
+    RowBox[{"3", ",", 
+     SuperscriptBox["\[ExponentialE]", "x"]}], "]"}]}]}]], "Output",
+ CellChangeTimes->{{3.5691148605447197`*^9, 3.5691148879914703`*^9}, {
+   3.5691154145111313`*^9, 3.56911542537486*^9}, {3.569115649229178*^9, 
+   3.569115705144415*^9}, 3.5691157601709423`*^9, 3.569115835461071*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{"f", "[", "x", "]"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", " ", "0", ",", " ", "0.001"}], "}"}]}], "]"}], "]"}],
+    ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.569115838574614*^9, 3.569115918574218*^9}, {
+  3.569116032195228*^9, 3.569116055259961*^9}, {3.5691161245569973`*^9, 
+  3.569116170877347*^9}}],
+
+Cell[BoxData[
+ RowBox[{"4.999999783095177`*^-7", "+", 
+  RowBox[{"0.`", " ", "\[ImaginaryI]"}]}]], "Output",
+ CellChangeTimes->{{3.569115896171535*^9, 3.5691159192338552`*^9}, {
+   3.569116037309578*^9, 3.569116058377441*^9}, {3.5691161286875*^9, 
+   3.5691161401060343`*^9}, 3.569116173222451*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.569114882091453*^9, 3.5691148900605383`*^9}}]
+},
+WindowSize->{740, 731},
+WindowMargins->{{Automatic, 49}, {Automatic, 6}},
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 26, 0, 30, "Input"],
+Cell[586, 22, 592, 17, 30, "Input"],
+Cell[CellGroupData[{
+Cell[1203, 43, 369, 8, 50, "Input"],
+Cell[1575, 53, 928, 25, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2540, 83, 464, 12, 30, "Input"],
+Cell[3007, 97, 298, 5, 30, "Output"]
+}, Open  ]],
+Cell[3320, 105, 94, 1, 30, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

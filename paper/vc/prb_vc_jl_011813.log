@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  24 JAN 2013 12:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  7 FEB 2013 12:42
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_011813.tex
@@ -240,6 +240,9 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 (./prb_vc_jl_011813.aux
 
+LaTeX Warning: Label `EQ:k_vib' multiply defined.
+
+
 LaTeX Warning: Label `S:VC Gamma DOS' multiply defined.
 
 
@@ -260,26 +263,26 @@ LaTeX Warning: Label `EQ:M:k_HS' multiply defined.
 )
 \openout1 = `prb_vc_jl_011813.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-Class revtex4 Info: Patching array package. on input line 210.
-Class revtex4 Info: cite was not loaded (OK!) on input line 210.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 210.
-LaTeX Font Info:    Try loading font information for U+msa on input line 255.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+Class revtex4 Info: Patching array package. on input line 214.
+Class revtex4 Info: cite was not loaded (OK!) on input line 214.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 214.
+LaTeX Font Info:    Try loading font information for U+msa on input line 259.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 255.
+LaTeX Font Info:    Try loading font information for U+msb on input line 259.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -292,7 +295,7 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
 
-LaTeX Warning: Reference `' on page 2 undefined on input line 319.
+LaTeX Warning: Reference `' on page 2 undefined on input line 328.
 
 [2] [3] [4]
 File: /home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps Graphic file (type e
@@ -304,27 +307,27 @@ s)
 </home/jason/disorder/si/si_conv_2x2x2_perfect-2.eps>
 
 LaTeX Warning: Reference `S:From VC Dispersion' on page 5 undefined on input li
-ne 501.
+ne 510.
 
 
 LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 5 undefined on i
-nput line 501.
+nput line 510.
 
 
 LaTeX Warning: Reference `S:From VC Dispersion' on page 5 undefined on input li
-ne 501.
+ne 510.
 
 
 LaTeX Warning: Reference `S:Diffuson Mode Diffusivity' on page 5 undefined on i
-nput line 501.
+nput line 510.
 
 [5] [6]
 
-LaTeX Warning: Command \r invalid in math mode on input line 619.
+LaTeX Warning: Command \r invalid in math mode on input line 635.
 
 [7]
 
-LaTeX Warning: Reference `S:vc_gamma_dos' on page 8 undefined on input line 661
+LaTeX Warning: Reference `S:vc_gamma_dos' on page 8 undefined on input line 677
 .
 
 [8]
@@ -369,6 +372,30 @@ File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
 
 
 </home/jason/disorder/si/alloy/si_cond_compare.eps> [25] [26]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1541 ... conduticity materials, such as the WeS^
+                                                  2 lattice
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1545 
+       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1545
+[]\OT1/cmr/m/n/12 Ultra-low ther-mal con-du-tic-ity ma-te-ri-als, such as the
+ []
+
+
+Overfull \hbox (28.49103pt too wide) in paragraph at lines 1541--1545
+\OT1/cmr/m/n/12 WeS$[]\OML/cmm/m/it/12 latticeandPCBM; takeadvantageofmorecompl
+exstructuraldesignswhichcanbeatthehigh \OMS/cmsy/m/n/12 ^^@
+ []
+
+[27]
 Missing character: There is no Õ in font cmr12!
 Missing character: There is no ë in font cmr12!
 Missing character: There is no ‚ in font cmr12!
@@ -376,15 +403,15 @@ Missing character: There is no ê in font cmr12!
 Missing character: There is no ª in font cmr12!
 Missing character: There is no Õ in font cmr12!
 Missing character: There is no í in font cmr12!
- [27] [28]
-[29] [30]
+ [28] [29] [30] [31]
 File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps Graphic file (ty
 pe eps)
- </home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps>
 
-LaTeX Warning: Reference `EQ:M:SLT' on page 31 undefined on input line 1849.
+</home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps>
 
-[31] [32] (./prb_vc_jl_011813.bbl [33]
+LaTeX Warning: Reference `EQ:M:SLT' on page 32 undefined on input line 1923.
+
+[32] [33] (./prb_vc_jl_011813.bbl [34]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -397,7 +424,7 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [34]
+ [35]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -430,7 +457,7 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [35]
+ [36]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -446,12 +473,12 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [36])
+ [37])
 
 Class revtex4 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[37] (./prb_vc_jl_011813.aux)
+[38] (./prb_vc_jl_011813.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -460,12 +487,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3750 strings out of 493849
- 48864 string characters out of 1152845
- 135526 words of memory out of 3000000
- 6967 multiletter control sequences out of 15000+50000
+ 3749 strings out of 493849
+ 48847 string characters out of 1152845
+ 134784 words of memory out of 3000000
+ 6966 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,26n,32p,1420b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,26n,32p,1485b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_011813.dvi (37 pages, 110124 bytes).
+Output written on prb_vc_jl_011813.dvi (38 pages, 113952 bytes).

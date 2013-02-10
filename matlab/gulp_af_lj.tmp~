@@ -1,4 +1,4 @@
-phon dispersion eigenvector optimize thermalconductivity
+phon dispersion eigenvector thermalconductivity
 
 output freq text RUNPATHfreq.gout
 output xyz
@@ -15,6 +15,9 @@ Ar1 core Ar1 core 99497.66760 64.40793836 0.0 8.5
 element 
 mass Ar1 MASS
 end
+
+kpoint 1
+KPT
 
 #--------------------------------------------------------------------------
 #x0

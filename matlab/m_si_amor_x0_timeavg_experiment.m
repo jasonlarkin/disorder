@@ -16,9 +16,9 @@ icnt = 1;
 data(icnt).data =...
     m_lmp_readdump_all([str.main 'lmp.x.nve.dump.1']);
 
-% log(icnt).log =...
-%     m_lmp_readlog([str.main 'lmp.log.time.1']);
-% array(icnt).array = str2num(log(icnt).log.data{2});
+log(icnt).log =...
+    m_lmp_readlog([str.main 'log_main_1.lammps']);
+array(icnt).array = str2num(log(icnt).log.data{2});
 
 for idump = 2:size(data(1).data.atom_data,3)
     idump

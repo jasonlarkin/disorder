@@ -173,6 +173,10 @@
 \begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
 \mspace{-3.0mu}\right)}
 
+\newcommand{\kvg}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} = \pmb{0} \\&\nu\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
 \newcommand{\kvp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
 \begin{smallmatrix}&\pmb{\kappa'} \\&\nu'\end{smallmatrix}
 \mspace{-3.0mu}\right)}
@@ -259,11 +263,16 @@ by consindering methods which treat the disorder explicitly.
 \section{\label{S:Introduction}Introduction}
 %--------------------------------------------------------------------------
 
+
+
 Predicting the thermal conductivity of disordered lattices dates back to...
 In the case of semiconductors, almost all of the heat is conducted by
 the vibrational modes of the system. Understanding the mechanisms that lead 
 to the scattering of these vibrations is crucial for predicting the 
-thermal conductivity of disordered lattices.
+thermal conductivity of ordered and disordered lattices. 
+
+There is a need to model the thermal conductivity of disordered lattices 
+of instrincically high and low thermal condutivity. 
 
 To improve the efficiency of thermoelectric devices, 
 efforts to reduce thermal conductivity using several techniques, 
@@ -534,6 +543,13 @@ materials such as GaN and Diamond require a full
 iterative solution to the BTE for more accureate results.
 \cite{ward_intrinsic_2010} 
 
+\begin{equation}\label{EQ:k_vib}
+\begin{split}
+k_{ph,\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu \frac{k_{B}}{V} 
+\pmb{v}^{2}_{g,\mathbf{n}}\kv \tau\kv.
+\end{split}
+\end{equation}
+
 For the perfect cubic lattices considered in this 
 work (see Section ), the lattices and the components of their 
 thermal conductivity are cubically symmetric, so that we refer to 
@@ -541,7 +557,7 @@ $k_{ph}$ only. This is also true for the disordered lattices
 in the long wavelength limit. 
 Since the MD simiulations we perform (Section ) are classical 
 and obey Maxwell-Boltzmann 
-statistics,\cite{mcquarrie_statistical_2000} the
+statistics,\cite{mcquarrie_statistical_2000} the volumetric 
 specific heat is $k_{B}/V$ per mode in the harmonic limit, where $V$ 
 is the system volume. This approximation has been shown to be valid 
 for LJ Ar(cite SED or ASME?) and SW Si(cite SED or ASME?) 
@@ -563,7 +579,7 @@ conductivity (Section ) and was developed to predict
 the thermal conductivity of a-Si.\cite{allen_thermal_1993} 
 In the AF theory, the thermal conductivity is written as
 \begin{equation}\label{EQ:M:k_AF}
-k_{AF} = \sum_\omega  \frac{k_{B}}{V} D_{AF}(\omega\kv),
+k_{AF} = \sum_{modes} \frac{k_{B}}{V} D_{AF}(\omega\kvg),
 \end{equation}
 where $D_{AF}$ is the mode-specific thermal diffusivity of  
 disordered vibrational modes defined at the wavevector [000] 
@@ -1472,9 +1488,67 @@ mode effects seen in a-Si thin films.\cite{he_heat_2011}
 \section{\label{S:Discussion}Discussion}
 %--------------------------------------------------------------------------
 
-By enforcing the lower-limit of 
-thermal diffusivity, the thermal conducitvity of  . The importance of this 
-result 
+The pertubrative models used for VC-ALD are able to make accurate 
+predictions for SW si, which is a material whose thermal conductivity is 
+dominated by low-frequency mode properties (Section Fig. ). 
+
+LJ Argon is a material where high-frequency mode properties are as 
+important as low-frequency (Section Fig. ). 
+
+The perturbative models used for VC-ALD with LJ Ar do not make accurate 
+predictions 
+of the phonon properties at high-frequency (Section, and also fail at 
+high-temperature (Section , Fig. and Section, Fig. ). 
+
+The higher-order terms in the Tamura theory are predicted to be 
+non-negligible for LJ Argon() in the high-frequency spectrum (Section ), 
+which is where VC-ALD underpredicts the thermal 
+conductivity ( Section, Fig). 
+
+The VC approximation can also underpredict the inherent mode thermal 
+diffusivity due to disorder (Section Fig). 
+
+A simple correction to the VC approximation can be made by considering 
+a lower-limit for the mode specific thermal diffusivity (Section, Fig. ). 
+
+This lower-limit is physically equivalent to assuming all modes 
+propagate at the sound speed a distance of the lattice constant 
+(Section Fig. ).
+
+This is a common assumption when modeling amorphous materials, which 
+represent a lower-limit for typical materials.(cite)
+
+While this is a good model for a-Ar (Section Fig.), measurements and 
+predictions for c-Si, Si/Ge alloys 
+and a-Si demonstrate that low-frequency 
+modes contribute significantly to thermal transport. 
+
+These 
+low-frequency modes are predicted to have progagation length scales 
+of 100s of nm. 
+
+The low-frequency modes can be modeled well using simple scaling 
+expressions (Section Fig), which cost significantly less 
+comutational time than mode-specific calcualtions (Section ).(cite) 
+
+The results demonstrate that the thermal modeling of ordered and 
+disordered lattices can be separated into 2 groups: high-thermal 
+conductivity lattices which are described well by scaling models(cite tamura) 
+or requrie an iterative solution to the BTE, and low-thermal 
+lattices which have an intrinsic high-scatter limit. 
+what is AF,HS for PbTe??????
+
+Ultra-low thermal conduticity materials, such as the WeS^2 lattice 
+and PCBM, take advantage of more complex structural designs which can 
+beat the high-scatter limit 
+what is AF,HS for WeS^2 and PCBM??????
+
+Still, the concept of simple alloying is at the forefront of the effort 
+to control or minimize the thermal conductivity of semiconducting and 
+thermoeletric materials (cite SiGe nanoporous, PbTe)
+what is AF,HS for PbTe??????
+
+
 
 While the AF theory is divergent for lattices in the infinite-size limit, 
 the theory provides a plausible lower-limit for a vibrational mode's 

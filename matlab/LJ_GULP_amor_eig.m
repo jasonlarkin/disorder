@@ -18,7 +18,7 @@ constant.ang2m = 1E-10;
 
 %load the positions
 iseed = 1;
-x = dlmread(strcat(str.main,'/LJ_amor_1.pos'));
+x = dlmread(strcat(str.main,'/x0_nve.data'));
 
 %GULP format
 
@@ -73,9 +73,6 @@ dlmwrite(strcat(str.main,'/amor_eig.gin'),output,'-append',...
 output = strcat(GULP.str.end);
 dlmwrite(strcat(str.main,'/amor_eig.gin'),output,'-append',...
     'delimiter','','precision',8);    
-    
-str_cmd = 'gulp amor_eig amor_eig';
-system(str_cmd);
 
 %--------------------------------------------------------------------------
 pause

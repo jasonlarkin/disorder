@@ -1,0 +1,1 @@
+function m_x0_2gulp(str_x0,str_x0_name,str_gulp,str_gulp_name)

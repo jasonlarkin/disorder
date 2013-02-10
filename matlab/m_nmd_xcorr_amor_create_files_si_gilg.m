@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/nmd_2^21/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/xcorr/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
@@ -24,7 +24,7 @@ nmd.constant = m_constant;
 %--------------------------------------------------------------------------
 
 nmd.walltime.lammps = 12; nmd.cpu.lammps = 4; 
-nmd.walltime.matlab = 12; nmd.cpu.matlab = 2; nmd.mem.matlab = 2;
+nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 
 %--------------------------------------------------------------------------
     nmd.Nx = 4; nmd.Ny = 4; nmd.Nz = 4;
@@ -40,11 +40,11 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 2; nmd.mem.matlab = 2;
 %--------------------------------------------------------------------------   
 
 %---IKSLICE----------------------------------------------------------------
-    nmd.NUM_MODESLICES = 64;
+    nmd.NUM_MODESLICES = 32;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
-    nmd.t_total = 2^21; nmd.t_fft = 2^21; nmd.t_step = 2^5; nmd.dt = 0.002;
+    nmd.t_total = 2^21; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.002;
     nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
 

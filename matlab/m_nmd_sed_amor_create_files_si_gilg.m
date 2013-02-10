@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/nmd/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/sed/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
@@ -24,7 +24,7 @@ nmd.constant = m_constant;
 %--------------------------------------------------------------------------
 
 nmd.walltime.lammps = 12; nmd.cpu.lammps = 4; 
-nmd.walltime.matlab = 12; nmd.cpu.matlab = 2; nmd.mem.matlab = 2;
+nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 
 %--------------------------------------------------------------------------
     nmd.Nx = 4; nmd.Ny = 4; nmd.Nz = 4;
@@ -40,7 +40,7 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 2; nmd.mem.matlab = 2;
 %--------------------------------------------------------------------------   
 
 %---IKSLICE----------------------------------------------------------------
-    nmd.NUM_MODESLICES = 64;
+    nmd.NUM_MODESLICES = 32;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
@@ -78,9 +78,11 @@ dummy =...
     I = find(nmd.mass(:,1) ==1); nmd.mass(I) = nmd.mass(1);
     I = find(nmd.mass(:,1) ==2); nmd.mass(I) = nmd.mass(2);
     
+    
     nmd.NUM_ATOMS_UCELL = nmd.param(1);
     
     nmd.NUM_MODES = nmd.param(1)*3; nmd.NUM_ATOMS = size(nmd.x0,1);
+    nmd.NUM_ATOMS = nmd.x0.NUM_ATOMS;
     
     nmd.NUM_UCELL_COPIES=nmd.NUM_ATOMS/nmd.NUM_ATOMS_UCELL;
     

@@ -1,0 +1,54 @@
+clear
+path(path,'/home/jason/disorder/matlab/');
+lj = m_lj; constant = m_constant;
+str.main = '/home/jason/disorder2/si/amor/prepare/6x/annealHe/';
+str.matlab = '/home/jason/disorder/matlab/';
+str.gin = 'gulp_af_lj.tmp';
+%--------------------------------------------------------------------------
+%x0
+%--------------------------------------------------------------------------
+x0 = m_x0_read([str.main 'x0_nve.data']);
+%--------------------------------------------------------------------------
+%gulp
+%--------------------------------------------------------------------------
+orig(1).str = 'MASS';
+change(1).str = num2str(lj.mass_au);
+orig(2).str = 'LX';
+change(2).str = num2str(x0.Lx*lj.sigma/constant.ang2m);
+orig(3).str = 'LY';
+change(3).str = num2str(x0.Ly*lj.sigma/constant.ang2m);
+orig(4).str = 'LZ';
+change(4).str = num2str(x0.Lz*lj.sigma/constant.ang2m);
+orig(5).str = 'RUNPATH';
+change(5).str = str.main;
+orig(5).str = 'KPT';
+change(5).str = '0.0 0.0 0.0';
+
+m_change_file_strings(...
+    [str.matlab str.gin],...
+    orig,...
+    [str.main 'gulp.gin'],...
+    change)
+clear orig change
+          
+formats = '%2.6f';
+
+for itype = 1:length(x0.x)
+a_type(itype).str = 'Si';
+
+coords = m_gulp_coord2gulp( x0 , a_type )
+
+
+% output = [x0.id x0.m x0.x x0.y x0.z];
+% dlmwrite([str.main 'gulp.gin'],'.pos'),...
+%         output ,'-append','delimiter',' ');
+
+
+
+
+
+
+
+
+
+
