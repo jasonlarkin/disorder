@@ -1,0 +1,11 @@
+function m_xyz2lmp(element,str)
+varname = genvarname(element);
+varname = 1;
+
+a = load(str);
+
+x=(1:size(a,1),1) = 1:size(a,1);
+x(1:size(a,1),2)) = element;
+
+end
+

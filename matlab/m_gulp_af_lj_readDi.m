@@ -9,10 +9,8 @@ con.ang2m
 con.c
 %gets to lj units
 factor.lj = lj.tau/lj.sigma^2
-
 Di_convert(:,3) = Di(:,3)*factor.gulp*factor.lj;
-Di_convert(:,2) = Di(:,2)*con.c/lj.tau;
-
+Di_convert(:,2) = Di(:,2)*con.c*lj.tau;
 loglog(Di_convert(:,2),Di_convert(:,3),'.')
 end
 

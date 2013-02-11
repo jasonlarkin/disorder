@@ -174,7 +174,7 @@
 \mspace{-3.0mu}\right)}
 
 \newcommand{\kvg}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
-\begin{smallmatrix}&\pmb{\kappa} = [000] \\&\nu\end{smallmatrix}
+\begin{smallmatrix}&\pmb{\kappa} = \pmb{0} \\&\nu\end{smallmatrix}
 \mspace{-3.0mu}\right)}
 
 \newcommand{\kvp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}

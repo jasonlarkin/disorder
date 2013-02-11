@@ -3,13 +3,13 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/sed/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/sed_nve_relaxedx0/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
     nmd.str.lmp_sed = 'lmp.in.xcorr.si.tmp';
     nmd.str.m_nmd = 'm_nmd_sed_gamma_si.m.tmp';
-    nmd.str.m_grep = 'm_nmd_grep_vel.m.tmp';
+    nmd.str.m_grep = 'm_nmd_grep_vel_sed.m.tmp';
     nmd.str.m_seed = 'm_nmd_seed_xcorr_avg.m.tmp';
     nmd.str.env = 'gilg'
 %--------------------------------------------------------------------------
@@ -82,7 +82,6 @@ dummy =...
     nmd.NUM_ATOMS_UCELL = nmd.param(1);
     
     nmd.NUM_MODES = nmd.param(1)*3; nmd.NUM_ATOMS = size(nmd.x0,1);
-    nmd.NUM_ATOMS = nmd.x0.NUM_ATOMS;
     
     nmd.NUM_UCELL_COPIES=nmd.NUM_ATOMS/nmd.NUM_ATOMS_UCELL;
     
