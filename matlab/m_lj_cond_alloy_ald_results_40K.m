@@ -15,6 +15,16 @@ ald.high_scatter = [...
     ald.prefactor*lj.sound_40K*(lj.sigma/lj.tau)/sqrt(ald.m(4))
     ];
 
+ald.prefactor_70K =...
+    (3/2)*( (pi/6)^(1/3))*constant.kb*...
+    lj.num_density_70K^(2/3);
+ald.high_scatter_70K = [...
+    ald.prefactor_70K*lj.sound_70K*(lj.sigma/lj.tau)/sqrt(ald.m(1))
+    ald.prefactor_70K*lj.sound_70K*(lj.sigma/lj.tau)/sqrt(ald.m(2))
+    ald.prefactor_70K*lj.sound_70K*(lj.sigma/lj.tau)/sqrt(ald.m(3))
+    ald.prefactor_70K*lj.sound_70K*(lj.sigma/lj.tau)/sqrt(ald.m(4))
+    ];
+
 ald.conc =[...
     0
     0.05

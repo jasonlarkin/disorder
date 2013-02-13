@@ -1,6 +1,8 @@
 function si = m_si
 % lj = m_lj returns an si structrue with si parameters
 %--------------------------------------------------------------------------             
+con = m_constant;
+
 si.mass = 28.0855;  
 
 si.sound_expt =8433;
@@ -15,6 +17,8 @@ si.alat = 5.43E-10;
 
 si.num_atom_ucell=8;
 si.num_density = (si.num_atom_ucell / (si.alat^3));
+
+si.Tmelt.sw = (0.08)*(50/0.239*1000)/con.kb/con.avog;      %\cite{stillinger_computer_1985}
 
 m1 = 1; m2 = 2.6; 
 si.cahill_conc =...

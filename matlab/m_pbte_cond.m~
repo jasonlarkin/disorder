@@ -1,0 +1,16 @@
+function cond = m_pbte_cond
+
+%\cite{thermal_fedorov_1969}
+cond.qiu = load('/home/jason/disorder/pbte/m_pbte_cond_qiu_expt.txt');
+cond.qiu(:,1) = (cond.qiu(:,1) - 32)*(5/9) + 273 ; 
+
+cond.tian = load('/home/jason/disorder/pbte/m_pbte_cond_');
+
+cond.qiu
+
+cond.melt.pbte = 917+273;	%\cite{lead_dughaish_2002} K
+cond.melt.pbse = 1067+273;	%\cite{law_structural_2008} K
+
+cond.pbte.HS = 0.36;		%\cite{lattice_koh_2009} W/m-K
+
+end

@@ -1,13 +1,13 @@
 clear
 path(path,'/home/jason/disorder/matlab/');
 lj = m_lj; constant = m_constant;
-str.main = '/home/jason/disorder2/si/amor/prepare/4x/annealHe/nve/';
+str.main = '/home/jason/disorder2/si/amor/prepare/6x/annealHe/emin/';
 str.matlab = '/home/jason/disorder/matlab/';
 str.gin = 'gulp_af_si.tmp';
 %--------------------------------------------------------------------------
 %x0
 %--------------------------------------------------------------------------
-x0 = m_x0_read([str.main 'x0_nve.data']);
+x0 = m_x0_read([str.main 'x0_emin_3.data']);
 %--------------------------------------------------------------------------
 %gulp
 %--------------------------------------------------------------------------
