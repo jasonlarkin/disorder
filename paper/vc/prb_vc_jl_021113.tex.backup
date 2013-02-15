@@ -215,12 +215,10 @@
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\title{Evaluation of the Virtual Crystal Approximation for Predicting 
-Thermal Conductivity}
+\title{Evaluation of the Virtual Crystal Approximation for Predicting Alloy 
+Phonon Properties and Thermal Conductivity}
 %--------------------------------------------------------------------------
 \author{Jason M. Larkin}
-\affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
-University\\Pittsburgh, PA 15213}
 \author{A. J. H. McGaughey}
 \email{mcgaughey@cmu.edu}
 \affiliation{Department of Mechanical Engineering\\
@@ -235,21 +233,22 @@ Carnegie Mellon University\\Pittsburgh, PA 15213}
 %--------------------------------------------------------------------------
 \begin{abstract}
 %--------------------------------------------------------------------------
-In this work, the virtual crystal approximation for mass disorder is 
+The virtual crystal approximation for mass disorder is 
 evaluated by examining two model alloy systems: Lennard-Jones argon 
 and Stillinger-Weber silicon. In both cases the perfect crystal is 
 alloyed with a heavier mass species up to equal concentration and 
-phonon properties and thermal conductivity 
-are precited. These 
-two alloyed systems have different ranges of phonon frequencies, 
-lifetimes, and mean free paths.
+phonon frequencies, lifetimes and group velocities and thermal 
+conductivity are predicted. These 
+two alloy systems have different ranges of phonon frequencies, 
+lifetimes.
 For Stillinger-Weber silicon, the 
 virtual crystal approximation predicts phonon properties and thermal 
-conductivity in good agreement with molecular dynamics-based methods. 
-For Lennard-Jones argon, the virtual crystal approximation underpredicts 
-the high frequency phonon lifetimes, leading to an underpredicting of 
-its thermal conductivity. Resolution of these underpredictions is achieved 
-by consindering methods which treat the disorder explicitly. 
+conductivity in reasonably good agreement with molecular 
+dynamics-based methods. For Lennard-Jones argon, the virtual crystal 
+approximation underpredicts 
+the high-frequency phonon lifetimes, leading to an underpredicting of 
+its thermal conductivity. Resolution of this underprediction is achieved 
+by considering methods that treat the disorder explicitly. 
 %--------------------------------------------------------------------------
 \end{abstract}
 %--------------------------------------------------------------------------
@@ -263,8 +262,8 @@ by consindering methods which treat the disorder explicitly.
 \section{\label{S:Introduction}Introduction}
 %--------------------------------------------------------------------------
 
-
-
+Disordered materials (i.e., alloys and amorphous solids) are used in 
+applications ranging from semiconducting devices to insulative barriers. 
 Predicting the thermal conductivity of disordered lattices dates back to...
 In the case of semiconductors, almost all of the heat is conducted by
 the vibrational modes of the system. Understanding the mechanisms that lead 
@@ -479,36 +478,36 @@ The effect of disorder on mode group velocities is examined in (Section)
 and (Section). 
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\mbox{\subfigure{(a)\includegraphics[scale=0.2]
-{/home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps}
-\subfigure{(b)\includegraphics[scale=0.2]
-{/home/jason/disorder/si/si_conv_2x2x2_perfect-2.eps}}}}
-\vspace*{0mm}
-\end{center}
-\caption{\label{F:supercells} 
-(a) view of an explicitly disoredered supercell of 
-Si and ``heavy'' Si ([100] direction into the paper).
-\cite{momma_vesta:_2008} 
-(b) view of the equivalent VC supercell 
-with an average
-mass of the explicitly disordered Si and ``heavy'' Si supercell 
-(b). 
-Sphere size represents 
-increasing mass 
-only, no bond disorder is considered. 
-In this work, calculations for LJ Ar and SW Si which use the VC 
-approximation 
-are based off of the conventional cubic unit cells 
-(Section \ref{S:VC Gamma DOS}, \ref{S:From VC Dispersion}, 
-\ref{S:From VC Gamma} and \ref{S:From VC-ALD}).
-The explicitly disordered 
-supercells are used in Sections 
-\ref{S:VC Gamma DOS}, \ref{S:From Structure Factor},  
-\ref{S:From VC Gamma} and \ref{S:Diffuson Mode Diffusivity}. 
-}
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \mbox{\subfigure{(a)\includegraphics[scale=0.2]
+% {/home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps}
+% \subfigure{(b)\includegraphics[scale=0.2]
+% {/home/jason/disorder/si/si_conv_2x2x2_perfect-2.eps}}}}
+% \vspace*{0mm}
+% \end{center}
+% \caption{\label{F:supercells} 
+% (a) view of an explicitly disoredered supercell of 
+% Si and ``heavy'' Si ([100] direction into the paper).
+% \cite{momma_vesta:_2008} 
+% (b) view of the equivalent VC supercell 
+% with an average
+% mass of the explicitly disordered Si and ``heavy'' Si supercell 
+% (b). 
+% Sphere size represents 
+% increasing mass 
+% only, no bond disorder is considered. 
+% In this work, calculations for LJ Ar and SW Si which use the VC 
+% approximation 
+% are based off of the conventional cubic unit cells 
+% (Section \ref{S:VC Gamma DOS}, \ref{S:From VC Dispersion}, 
+% \ref{S:From VC Gamma} and \ref{S:From VC-ALD}).
+% The explicitly disordered 
+% supercells are used in Sections 
+% \ref{S:VC Gamma DOS}, \ref{S:From Structure Factor},  
+% \ref{S:From VC Gamma} and \ref{S:Diffuson Mode Diffusivity}. 
+% }
+% \end{figure}
 
 %--------------------------------------------------------------------------
 
@@ -709,23 +708,23 @@ continuous behavior at low frequency for
 for a-$Si_cGe_{1-c}$.\cite{bouchard_vibrational_1988} 
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.8]
-{/home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:DOS} Density of states (DOS) 
-for modes calculated using the LJ FCC  
-VC versus an explcitily mass disordered LJ FCC supercell 
-(labeled Gamma) with varying mass concentration $c$ (Section ). 
-VC and Gamma show similar low frequency behavior for all $c$. 
-For increasing $c$, the frequencies of both VC 
-and Gamma decrease, while the high frequency DOS for Gamma spreads and  
-reaches up to a higher maximum frequency because of the explict disorder. 
-The size of these supercells is $N_0 = 12$ (see Section ).
-}
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.8]
+% {/home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:DOS} Density of states (DOS) 
+% for modes calculated using the LJ FCC  
+% VC versus an explcitily mass disordered LJ FCC supercell 
+% (labeled Gamma) with varying mass concentration $c$ (Section ). 
+% VC and Gamma show similar low frequency behavior for all $c$. 
+% For increasing $c$, the frequencies of both VC 
+% and Gamma decrease, while the high frequency DOS for Gamma spreads and  
+% reaches up to a higher maximum frequency because of the explict disorder. 
+% The size of these supercells is $N_0 = 12$ (see Section ).
+% }
+% \end{figure}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
@@ -866,28 +865,28 @@ diffusivity of the disordered modes.
 \cite{allen_diffusons_1999,feldman_numerical_1999}   
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.8]
-{/home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:SF} 
-Left and Right Panels: 
-The structure factor for logitudinal ($S_L$) 
-and transverse ($S_T$) 
-polarizations along high symmetry directions ([100], [110] 
-where $\mathbf{\kappa}$ = $\pi/a[100]$ and $a$ is the 
-lattice constant ) 
-of the mass disordered LJ FCC supercells ($c=0.05,0.5$). 
-For increasing 
-mass disorder $c$, there is a decrease in the center of the peaks 
-and an increase in the peak linewdiths. 
-Center Panel:
-The VC predicted dispersion at the same wavectors used to calculate 
-$S_{L,T}$.
-}
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.8]
+% {/home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:SF} 
+% Left and Right Panels: 
+% The structure factor for logitudinal ($S_L$) 
+% and transverse ($S_T$) 
+% polarizations along high symmetry directions ([100], [110] 
+% where $\mathbf{\kappa}$ = $\pi/a[100]$ and $a$ is the 
+% lattice constant ) 
+% of the mass disordered LJ FCC supercells ($c=0.05,0.5$). 
+% For increasing 
+% mass disorder $c$, there is a decrease in the center of the peaks 
+% and an increase in the peak linewdiths. 
+% Center Panel:
+% The VC predicted dispersion at the same wavectors used to calculate 
+% $S_{L,T}$.
+% }
+% \end{figure}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
@@ -998,25 +997,25 @@ mode thermal diffusivities, which combine the mode lifetime
 and effective group velocity, or equivalenty, effective MFP (Section ).
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:VC Gamma life} Lifetimes predicted using VC-NMD 
-and Gamma NMD from MD simulations of mass disordered lattice supercells 
-(Section ). Both $\omega^{-2}$ and $\omega^{-4}$ scalings can be observed 
-at low frequencies, which are predicted by the peturbative models used 
-for VC-ALD (Section ). For both VC-NMD and Gamma NMD, most mode 
-lifetimes are greater than the Ioffe-Regel limit $\tau = 2\pi/\omega$. 
-\cite{taraskin_determination_1999}
-While there is more ``noise'' in the Gamma mode data (Section ), 
-the lifetime magnitudes and 
-trends agree well, an important consideration when comparing VC-NMD and 
-VC-ALD in Fig. .
-}
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.75]
+% {/home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:VC Gamma life} Lifetimes predicted using VC-NMD 
+% and Gamma NMD from MD simulations of mass disordered lattice supercells 
+% (Section ). Both $\omega^{-2}$ and $\omega^{-4}$ scalings can be observed 
+% at low frequencies, which are predicted by the peturbative models used 
+% for VC-ALD (Section ). For both VC-NMD and Gamma NMD, most mode 
+% lifetimes are greater than the Ioffe-Regel limit $\tau = 2\pi/\omega$. 
+% \cite{taraskin_determination_1999}
+% While there is more ``noise'' in the Gamma mode data (Section ), 
+% the lifetime magnitudes and 
+% trends agree well, an important consideration when comparing VC-NMD and 
+% VC-ALD in Fig. .
+% }
+% \end{figure}
 %--------------------------------------------------------------------------
 
 
@@ -1165,27 +1164,6 @@ frequency shifts and higher-order estimates are not small, especially
 at high frequency. The effect of these higher-order terms is important 
 to understanding the results predicted by VC-ALD in Section and Section .
 
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_lj.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:tamura_lj} lj tamura results}
-\end{figure}
-%--------------------------------------------------------------------------
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/m_alloy_tamura_highorder_compare_si.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:tamura_sw} sw tamura results}
-\end{figure}
-%--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:Diffusivities}
@@ -1327,48 +1305,48 @@ energy transport in jammed sphere packings\cite{xu_energy_2009}
 heat transport in model jammed solids\cite{vitelli_heat_2010}
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:Dph_lj} (a) predicted lifetimes for VC modes using 
-VC-NMD and VC-AlD for LJ argon. 
-(b) predicted VC mode thermal diffusivities, compared  
-to the AF,HS limit. (c) the thermal conducitivty frequency spectrum, 
-which is peaked at high frequency, in contrast to SW silicon (Fig).}
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.75]
+% {/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:Dph_lj} (a) predicted lifetimes for VC modes using 
+% VC-NMD and VC-AlD for LJ argon. 
+% (b) predicted VC mode thermal diffusivities, compared  
+% to the AF,HS limit. (c) the thermal conducitivty frequency spectrum, 
+% which is peaked at high frequency, in contrast to SW silicon (Fig).}
+% \end{figure}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:Dph_si} (a) predicted lifetimes for VC modes using 
-VC-NMD and VC-AlD for SW silicon. 
-(b) predicted VC mode thermal diffusivities, compared  
-to the AF,HS limit. (c) the thermal conducitivty frequency spectrum, 
-which is peaked at low frequency, in contrast to LJ argon (Fig). }
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.75]
+% {/home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:Dph_si} (a) predicted lifetimes for VC modes using 
+% VC-NMD and VC-AlD for SW silicon. 
+% (b) predicted VC mode thermal diffusivities, compared  
+% to the AF,HS limit. (c) the thermal conducitivty frequency spectrum, 
+% which is peaked at low frequency, in contrast to LJ argon (Fig). }
+% \end{figure}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:AF} AF theory predictions of disorded mode  
-thermal diffusivities for LJ argon disorded lattice supercell and 
-amorphous phase. The mode thermal diffusivities predicted for the 
-disorded lattice supercell are all finite, except at the highest 
-frequency where they tend to 0 as in the amorphous phase. }
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.75]
+% {/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:AF} AF theory predictions of disorded mode  
+% thermal diffusivities for LJ argon disorded lattice supercell and 
+% amorphous phase. The mode thermal diffusivities predicted for the 
+% disorded lattice supercell are all finite, except at the highest 
+% frequency where they tend to 0 as in the amorphous phase. }
+% \end{figure}
 %--------------------------------------------------------------------------
 
 
@@ -1462,27 +1440,37 @@ mode effects seen in a-Si thin films.\cite{he_heat_2011}
 
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/lj_cond_compare.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:conductivity_lj} }
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.75]
+% {/home/jason/disorder/lj/alloy/lj_cond_compare.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:conductivity_lj} }
+% \end{figure}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/si/alloy/si_cond_compare.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:conductivity_si} }
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=0.75]
+% {/home/jason/disorder/si/alloy/si_cond_compare.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:conductivity_si} }
+% \end{figure}
 %--------------------------------------------------------------------------
 
+%--------------------------------------------------------------------------
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=1.0]
+% {/home/jason/disorder/pbte/m_pbte_cond_compare.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{F:conductivity_lj} }
+% \end{figure}
+%--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
 \section{\label{S:Discussion}Discussion}
@@ -1565,7 +1553,7 @@ that PbTe is mostly used for medium temperature thermoelectrics,
 in order for PbTe based nanostructures to efficiently suppress lat-
 tice thermal conductivity by more than 50 %, nanostructures fea-
 turing molecular scales below 10 nm should be pursued
-\cite{}
+\cite{qiu_molecular_2012}
 
 
 
@@ -2027,5 +2015,5 @@ independent of system size for $N_0 = 4$ to $N_0 = 12$ for LJ argon.
 \clearpage
 \bibliographystyle{apsrev}
 %\bibliography{/home/jason/sed/jop/asme_prb_paper/prb/references}
-\bibliography{/home/jason/Dropbox/ntpl-paper/ntpl-121612}
+\bibliography{/home/jason/Dropbox/ntpl-paper/ntpl-021313}
 \end{document}

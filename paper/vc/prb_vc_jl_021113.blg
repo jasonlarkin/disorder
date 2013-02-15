@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_021113.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-021313.bib
+Warning--I didn't find a database entry for ""
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+Warning--empty booktitle in henry_ehrenreich_thermal_1979
+You've used 60 entries,
+            3411 wiz_defined-function locations,
+            1523 strings with 21805 characters,
+and the built_in function-call counts, 43279 in all, are:
+= -- 2541
+> -- 1348
+< -- 203
++ -- 1088
+- -- 330
+* -- 5846
+:= -- 4652
+add.period$ -- 60
+call.type$ -- 60
+change.case$ -- 242
+chr.to.int$ -- 59
+cite$ -- 61
+duplicate$ -- 3763
+empty$ -- 3691
+format.name$ -- 845
+if$ -- 8354
+int.to.chr$ -- 2
+int.to.str$ -- 61
+missing$ -- 583
+newline$ -- 195
+num.names$ -- 181
+pop$ -- 955
+preamble$ -- 1
+purify$ -- 240
+quote$ -- 0
+skip$ -- 1737
+stack$ -- 0
+substring$ -- 1853
+swap$ -- 2989
+text.length$ -- 171
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 346
+warning$ -- 1
+while$ -- 175
+width$ -- 0
+write$ -- 646
+(There were 2 warnings)
