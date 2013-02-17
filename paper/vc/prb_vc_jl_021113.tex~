@@ -332,7 +332,8 @@ treat the effects of intrinsic and disorder scattering as perturbations.
 tian_phonon_2012,lindsay_thermal_2012} 
 No comprehensive study has been performed 
 to assess the applicability of this perturbative approach for a range 
-of disorder (varying alloy concentrations, Section ) 
+of disorder (varying alloy concentrations, Section 
+\ref{S:Virtual Crystal}) 
 using multiple predictive methods and test systems.
 
 The goal of this work is to investigate the use of the VC 
@@ -340,16 +341,20 @@ approximation for predicting vibrational mode properties and
 thermal conductivity of alloys by a detailed comparison 
 of three predictive methods: (i) Molecular Dynamics (MD)-based 
 normal mode 
-decomposition (NMD, Section ) and green-kubo (GK, Section \ref{} ), 
+decomposition (NMD, Section \ref{S:From VC Gamma}) 
+and green-kubo (GK, Section \ref{S:Thermal Conductivity} ), 
 and VC-ALD (Section \ref{S:From VC-ALD}). 
 Using the VC approximation, 
 we perform calculations at different concentations ($c$) 
 of mass varying binary alloys of Lennard-Jones 
-argon and Stillinger-Weber silicon (Section ). We predict 
+argon and Stillinger-Weber silicon. We predict 
 the phonon mode properties of the VC:  
-frequencies (Section ), group velocities (Section ),  
-and lifetimes (Section ), and use them to predict thermal
-conductivity (Section ). In both cases, the perfect lattice is 
+frequencies (Section \ref{S:Vibrational}), 
+group velocities (Section \ref{S:Dispersion} ),  
+and lifetimes (Section \ref{S:Phonon Lifetimes}), 
+and use them to predict thermal
+conductivity (Section \ref{S:Thermal Conductivity}). 
+In both cases, the perfect lattice is 
 disordered with a heavier mass species up to equal 
 concentration ($c=0.5$), spanning 
 a range of perturbative to large disorder. By spanning this range, 
@@ -358,15 +363,18 @@ the limits of the perturbative models are examined.
 Using computationally-cheap empirical potentials for argon(cite)  
 and silicon\cite{stillinger_computer_1985},  
 we study the effects of disorder explicitly. 
-Methods referred to as VC-NMD (Section )
-and VC-ALD (Section ) use the VC approximation. Explicit disorder 
+Methods referred to as VC-NMD (Section \ref{S:VC Gamma life})
+and VC-ALD (Section \ref{S:From VC-ALD}) 
+use the VC approximation. Explicit disorder 
 is examined using lattice dynamics (LD) calculations 
-(Section and ), MD simulations 
-(Section ), and Allen-Feldman (AF) theory (Section ).
-\cite{allen_thermal_1993} 
+(Section \ref{S:VC Gamma DOS} and \ref{S:From VC}), MD simulations 
+(Section \ref{S:Thermal Conductivity}), 
+and Allen-Feldman (AF) theory calculations  
+(Section \ref{S:Diffusivities}).\cite{allen_thermal_1993} 
 The breakdown of the perturbative VC-ALD method is examined 
-(Section ), and a simple correction is suggested by predictions from 
-the AF theory (Section ).
+(Section \ref{S:From VC-ALD}), 
+and a simple correction is suggested by predictions from 
+the AF theory (Section \ref{S:Diffusivities}).
 
 % NOT USED:
 % There is a need to model the thermal conductivity of disordered lattices 
@@ -423,7 +431,7 @@ materials such as GaN and Diamond require a full
 iterative solution to the BTE for more accurate predictions.
 \cite{garg_role_2011,lindsay_thermal_2012,ward_intrinsic_2010} 
 For the perfect cubic lattices considered in this 
-work (see Section ), the lattices and the components of their 
+work, the lattices and the components of their 
 thermal conductivity are cubically symmetric, so that we refer to 
 $k_{ph}$ as a scalar thermal conductivity. 
 This is also true for the disordered lattices 
@@ -459,9 +467,9 @@ AF theory has not been applied to disordered lattices.
 \cite{feldman_thermal_1993} In the current study of disordered lattices, 
 the AF theory predictions provide a lower limit for the contribution 
 of a given vibrational mode within the computational 
-framework of the VC approximation (Section ). This is essential given 
-the computational cost of the AF theory (Appendix ), and is also 
-convienient given the simplicity of the VC computational framework. 
+framework of the VC approximation. This is essential given 
+the computational cost of the AF theory 
+(Appendix \ref{A:Computational Cost}). 
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:Virtual Crystal}Virtual Crystal Approximation}
@@ -488,7 +496,7 @@ can be explained by mass perturbative disorder.
 \cite{cahill_thermal_2004,cahill_thermal_2005} 
 While the mass ratio was large ($m_{Ge}/m_{Si} = 2.6$),  
 the overall disorder strength is determined by both the mass ratio and 
-the alloy concentration (Section ). 
+the alloy concentration (Section \ref{S:From VC-ALD}). 
 As little as $6.2\times10^{19} cm^{-3}$ Ge  
 is enough to reduce the thermal conductivity of 
 Si by almost a factor of 2.\cite{cahill_thermal_2004}
@@ -584,12 +592,7 @@ only, no bond disorder is considered.
 In this work, calculations for LJ Ar and SW Si which use the VC 
 approximation 
 are based off of the conventional cubic unit cells 
-(Section \ref{S:VC Gamma DOS}, \ref{S:From VC Dispersion}, 
-\ref{S:From VC Gamma} and \ref{S:From VC-ALD}).
-The explicitly disordered 
-supercells are used in Sections 
-\ref{S:VC Gamma DOS}, \ref{S:From Structure Factor},  
-\ref{S:From VC Gamma} and \ref{S:Diffuson Mode Diffusivity}. 
+(Section \ref{S:Calculation}) 
 }
 \end{figure}
 
@@ -648,10 +651,12 @@ Statistical averaging is accomplished
 using 10 simulations with different initial conditions. MD simulation 
 time steps of 
 4.285 and 0.5 fs were used for LJ argon and SW silicon. 
-For the NMD method (Section ), the atomic positions 
+For the NMD method (Section \ref{S:From VC Gamma}), 
+the atomic positions 
 and velocities were sampled at a rate dictated by the highest vibrational 
 frequencies in the system, which can be estimated from harmonic lattice 
-dynamics calcualtions (Section ). For the GK method, the heat current 
+dynamics calcualtions (Section \ref{S:VC Gamma DOS}). 
+For the GK method, the heat current 
 was computed every 10 time steps. It is important to note that the same 
 atomic trajectories are used for the NMD and GK methods. 
 
@@ -670,10 +675,12 @@ disordered lattice supercells and their
 equivalent VCs. The frequencies 
 are computed using harmonic lattice dynamics calculations with the package 
 GULP.\cite{gale_general_2003} For the 
-VC, the allowed wavevectors are set by $N_0$. For the disordered supercells,
+VC, the allowed wavevectors are set by $N_0$. For the disordered 
+supercells,
 the only allowed wavevector is the gamma-point (i.e., $\pmb{\kappa}=0$). 
 The DOS for the VC and the explicitly disordered supercells 
-(referred to herein as Gamma) are shown in Fig. . The VC and Gamma DOS 
+(referred to herein as Gamma) are shown in Fig. \ref{F:DOS}. 
+The VC and Gamma DOS 
 agree at low frequencies, where the Debye approximation predicts 
 $DOS \propto \omega^2$.(cite) The Debye approximation 
 underpredicts the the DOS at moderate frequency, which is due to the 
@@ -707,12 +714,13 @@ a-Si$_c$Ge$_{1-c}$.\cite{bouchard_vibrational_1988}
 \caption{\label{F:DOS} Density of states (DOS) 
 for modes calculated using the LJ FCC  
 VC versus an explcitily mass disordered LJ FCC supercell 
-(labeled Gamma) with varying mass concentration $c$ (Section ). 
+(labeled Gamma) with varying mass concentration $c$. 
 VC and Gamma show similar low frequency behavior for all $c$. 
 For increasing $c$, the frequencies of both VC 
 and Gamma decrease, while the high frequency DOS for Gamma spreads and  
 reaches up to a higher maximum frequency because of the explict disorder. 
-The size of these supercells is $N_0 = 12$ (see Section ).
+The size of these supercells is $N_0 = 12$ 
+(see Section \ref{S:Calculation}).
 }
 \end{figure}
 %--------------------------------------------------------------------------
@@ -795,7 +803,7 @@ mass disordered atoms in the supercells, which are still spaitally ordered.
 Explicit disorder is accounted for in the mode frequencies $\omega\kgv$ 
 and eigenvectors $e\kgvba$, which are calculated with 
 $\mathbf{\kappa} = \mathbf{0}$. The structure factors for LJ argon alloys 
-are plotted in Fig. for wavevectors allowed by the VC. 
+are plotted in Fig. \ref{F:SF} for wavevectors allowed by the VC. 
 
 Physically, $S^{L,T}\kw$ represents  
 the frequency spectrum required to create a wavepacket with a 
@@ -806,14 +814,15 @@ For a perfect lattice, the
 structrue factor peaks are delta functions centered at the phonon mode 
 frequencies, indicating they are pure plane-waves. 
 With increasing disorder, the structure factor spreads in width in 
-Fig. ,  
+Fig. \ref{F:SF},  
 particularly at high frequencies because the modes are no longer 
 pure plane-waves. The spectral mode factors $E^{L,T}\kgv$ represent the 
 plane-wave character of any given mode $\omega\kgv$. We find that 
 individual modes cannot be assigned a unique wavevector using 
 $E^{L,T}\kgv$, in agreement with similar results for a-Si.(cite) 
 
-From Fig. , an effective dispersion can be extracted by locating the peaks in the 
+From Fig. \ref{F:SF}, 
+an effective dispersion can be extracted by locating the peaks in the 
 structure factors at neighboring VC wavevectors, where the 
 effects of polarization, virtual mass, and 
 anisotropic dispersion can be observed. 
@@ -830,8 +839,9 @@ we use the group velocities predicted by the VC dispersion for both
 LJ argon and SW silicon 
 with the VC-NMD and VC-ALD calculations for 
 consistency and simplicity. We will examine 
-the validity of this choice of group velocity in Section . 
-Well-defined peaks (see Appendix ) 
+the validity of this choice of group velocity in 
+Section \ref{S:Diffusivities}. 
+Well-defined peaks (see Appendix \ref{A:SF}) 
 at all wavevectors are most likely due to the 
 lattice structure of the disordered systems studied in this 
 work. 
@@ -908,11 +918,12 @@ from both the VC ($\omega\kv$, $e\kvba$) and the Gamma supercell
 ($\omega\kgv$, $e\kgvba$). 
 The trajectories from 
 these MD simulations are also used in the GK method 
-(Section ).
+(Section \ref{S:Thermal Conductivity}).
 
 The normal vibrational mode lifetime is predicted using 
 \begin{equation}\label{EQ:tau_nmd}
-\tau\kv = \int_{0}^{\Tau} \frac{<E\kvt E\kvzero>}{ <E\kvzero E\kvzero> }dt,
+\tau\kv = \int_{0}^{\Tau}
+\frac{<E\kvt E\kvzero>}{ <E\kvzero E\kvzero> }dt,
 \end{equation}
 where the upper integration limit is set by  
 the specifications of the MD simulation.(cite) This method for predicting  
@@ -922,19 +933,19 @@ generally follow exponential decay
 (see Appendix \ref{A:NMD XCORR}). This choice is an approximation which  
 also makes it difficult to predict a phonon frequency, so we use the 
 VC predicted frequency for all VC-NMD predictions to compare with 
-VC-ALD (Section ).
+VC-ALD (Section \ref{S:Diffusivities}).
 
 The lifetimes predicted using VC-NMD and Gamma-NMD  
-are shown in Fig. for LJ argon alloys. 
+are shown in Fig. \ref{F:VC Gamma life} for LJ argon alloys. 
 The range of frequencies of the modes for 
 VC-NMD and Gamma-NMD differ slightly  
-which is due to differences in the DOS (Fig. ). 
+which is due to differences in the DOS (Fig. \ref{F:DOS}). 
 For small intervals of frequency, there are a wider range of 
 predicted lifetimes for Gamma-NMD. This is because there is no symmetry 
 averaging of the mode properties, which is possible for the VC.
 Lifetimes predicted by both VC-NMD and Gamma-NMD show scalings with 
 frequency of $\omega^{-2}$ at low frequency and $\omega^{-4}$ and 
-even faster for mid-range frequencies (Fig. ). 
+even faster for mid-range frequencies (Fig. \ref{F:DOS}). 
 In general, the lifetimes predicted by both VC-NMD and Gamma-NMD  
 are larger than the Ioffe-Regel (IR) limit,
 \cite{taraskin_determination_1999} 
@@ -944,7 +955,8 @@ are larger than the Ioffe-Regel (IR) limit,
 The physical interpretation of the IR limit is that of a mode which 
 scatters in a time equal to its oscillation period, which seems to 
 be a good lower-limit for the lifetimes predicted by VC-NMD and Gamma-NMD 
-for LJ argon (Fig. ) and VC-NMD for SW silicon (Fig. (a)). 
+for LJ argon (Fig. \ref{F:VC Gamma life}) 
+and VC-NMD for SW silicon (Fig. \ref{F:Dph_si}(a)). 
 
 The behavior at the highest frequencies, 
 where $\tau \propto constant$, is seen for both VC-NMD and Gamma-NMD, 
@@ -956,8 +968,8 @@ meaningful. There is, however, no theoretical
 prediction of this high-frequency behavior of the mode lifetime.
 \cite{kittel_interpretation_1949,cahill_lattice_1988,
 graebner_phonon_1986} This 
-plateau in lifetimes at high-frequency is not seen for VC-NMD and SW 
-silicon (Fig. ). 
+plateau of lifetimes at high-frequency is not seen for SW 
+silicon (Fig. \ref{F:Dph_si} a). 
 
 Overall, good agreement is seen in the predicted lifetimes from VC-NMD and 
 Gamma-NMD both in magnitude and trends. The use of the VC normal modes 
@@ -969,7 +981,7 @@ to map the atomic trajectories from the fully anharmonic MD simulations.
 Based on the good agreement with Gamma-NMD, the 
 lifetimes predicted by VC-NMD are used along with the VC predicted 
 group velocities to 
-predict thermal conductivity in Section . 
+predict thermal conductivity in Section \ref{S:Thermal Conductivity}. 
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -980,15 +992,17 @@ predict thermal conductivity in Section .
 \end{center}
 \caption{\label{F:VC Gamma life} Lifetimes predicted using VC-NMD 
 and Gamma NMD from MD simulations of mass disordered lattice supercells 
-(Section ). Both $\omega^{-2}$ and $\omega^{-4}$ scalings can be observed 
+(Section \ref{S:From VC Gamma}). 
+Both $\omega^{-2}$ and $\omega^{-4}$ scalings can be observed 
 at low frequencies, which are predicted by the peturbative models used 
-for VC-ALD (Section ). For both VC-NMD and Gamma NMD, most mode 
+for VC-ALD (Section \ref{S:From VC-ALD}). 
+For both VC-NMD and Gamma NMD, most mode 
 lifetimes are greater than the Ioffe-Regel limit $\tau = 2\pi/\omega$. 
 \cite{taraskin_determination_1999}
-While there is more ``noise'' in the Gamma mode data (Section ), 
-the lifetime magnitudes and 
+While there is more ``noise'' in the Gamma-NMD data 
+(Section \ref{S:From VC Gamma}), the lifetime magnitudes and 
 trends agree well, an important consideration when comparing VC-NMD and 
-VC-ALD in Fig. .
+VC-ALD in Fig. \ref{F:Dph_lj} .
 }
 \end{figure}
 %--------------------------------------------------------------------------
@@ -1011,7 +1025,7 @@ Phonon-phonon scattering ($\tau_{p-p}\kv$) is typically treated
 using anharmonic perturbation theory (ALD) including only three-phonon 
 processes.\cite{turney_predicting_2009,garg_role_2011,tian_phonon_2012} 
 It has been demonstrated that the effects of higher order phonon 
-processes become important at high temperatures (see Section ).
+processes become important at high temperatures.
 \cite{ecsedy_thermal_1977,turney_predicting_2009} 
 In this work, the intrinsic phonon lifetimes $\tau\kv_{p-p}$ 
 are predicted using the method described in
@@ -1021,7 +1035,7 @@ consistent with the classical MD-based methods NMD and GK.
 Using harmonic perturbation theory, Tamura derives a general expression 
 for mass point defect scattering.\cite{tamura_isotope_1983} 
 By considering the symmetry properties of the FCC lattices 
-considered in this work (Section ), 
+considered in this work (Section \ref{S:Calculations}), 
 it can be shown that\cite{tamura_isotope_1983}
 \begin{equation}\label{EQ:taud_dos}
 \begin{split}
@@ -1029,7 +1043,7 @@ it can be shown that\cite{tamura_isotope_1983}
 \end{split}
 \end{equation}
 where 
-$D(\omega)$ is the density of states (Section ) and 
+$D(\omega)$ is the density of states (Section \ref{S:VC Gamma DOS}) and 
 $g_n = \sum_\mu c^{\mu}(1-m^{\mu}/\bar{m}^{\mu})^n$.
 Here, $c^\mu$ is the concentration, 
 $m^\mu$ is the mass of the $\mu$-th species 
@@ -1049,18 +1063,21 @@ it is necessary to broaden
 the $\delta$ function using a Lorentzian function.[1] 
 footnote[1]
 For all calculations, the Lorentzian was broadened using a value of 
-$100\delta_{\omega,avg}$ (Section ). For the system sizes here, 
+$100\delta_{\omega,avg}$ (Section \ref{S:SF}). 
+For the system sizes here, 
 the results do not differ significantly 
 if this broadening value is varied manually or  
 by increasing system size ($N_0$).
 
 At low frequencies where the density of states is Debye-like 
-($D(\omega) \propto \omega^{2}$), Fig. ), 
+($D(\omega) \propto \omega^{2}$), Fig. \ref{F:DOS}), 
 $\tau_{p-p}\kv$ follows a scaling due to both normal ($B_1\omega^{-2}$) 
 and umklapp ($B_2\omega^{-2}$) 3-phonon scattering processes, where the 
 constants $B_1$ and $B_2$ are typically fit to experimental data.(cite) 
-From Fig.s and , the scaling $\tau \propto \omega^{-2}$ can be observed  
-in both the VC-NMD, Gamma-NMD and VC-ALD predicted results. 
+From Fig. \ref{F:VC Gamma life} and \ref{F:Dph_lj} a , 
+the scaling $\tau \propto \omega^{-2}$ can be 
+observed  
+in the VC-NMD, Gamma-NMD and VC-ALD predicted results. 
 Under the Debye-approximation , 
 the phonon scattering due to mass point-defects 
 is given by $A\omega^{-4}$, where $A$ is a constant related to the unit 
@@ -1068,14 +1085,15 @@ cell volume, branch-averaged group velocity, and disorder coupling strength
 ($g_2(b)$ in Eq. above). 
 The frequency dependence ($\omega^4$) is the same as 
 Rayleigh scattering, which is valid at low frequency and observed 
-in both the NMD (Fig. ) and ALD (Fig. ) predicted lifetimes. 
+in both the NMD (Fig. \ref{F:VC Gamma life}) and ALD 
+(Fig. \ref{F:Dph_lj}) predicted lifetimes. 
 VC-ALD does not predict the behavior of the lifetimes at high frequency 
-for LJ argon, $\tau \propto constant$ (Fig. ), 
-where VC-NMD and Gamma-NMD do (Fig. ). The thermal conductivity of 
-LJ argon alloys is dominated by high frequency modes (Fig. )(cite). 
+for LJ argon, $\tau \propto constant$. The thermal conductivity of 
+LJ argon alloys is dominated by high frequency modes 
+(Fig. \ref{F:Dph_lj} c).(cite)  
 For SW silicon alloys, the thermal conductivity is dominated by 
 low-frequency modes, while the high frequency discrepancy is 
-not observed using VC-NMD and VC-ALD (Fig. ). 
+not observed using VC-NMD and VC-ALD (Fig. \ref{F:Dph_si} c). 
 % The disorder 
 % scattering scaling is expected to fall off faster than $\omega^{-4}$ 
 % when $D(\omega)$ grows faster than the Debye scaling of 
@@ -1108,7 +1126,7 @@ discrepancy of the lifetimes predicted by VC-NMD and Gamma-NMD
 versus VC-ALD at high frequency.
 For SW silicon alloys the higher-order terms are also large, while 
 good agreement is observed at high frequencies for VC-NMD and VC-ALD 
-(Fig. ).
+(Fig. \ref{F:Dph_si}).
 
 % NOT USED:
 % $c=0.001$ $g_3 = -0.0079$, $g_4 = 0.0158$,
@@ -1131,7 +1149,7 @@ phonons, the thermal diffusivity is
 D_{ph,\mathbf{n}}\kv = \pmb{v}_{g,\mathbf{n}}\kv \tau\kv.
 \end{equation}
 For VC-NMD and VC-ALD, $\pmb{v}_{g,\mathbf{n}}\kv$ is calculated 
-from the VC dispersion (Section ) so any differences in 
+from the VC dispersion (Section \ref{S:From VC}) so any differences in 
 thermal diffusivity comes from the predicted lifetimes. The lower limit 
 for phonon thermal diffusivity is 
 $D_{ph,\mathbf{n}}\kv \approx 0$ since the 
@@ -1160,7 +1178,8 @@ The physical interpretation is all vibrational
 modes transport heat at the sound speed 
 and scatter with a mean free path of the lattice spacing. 
 
-As seen in Fig. and , VC-NMD and VC-ALD predict a significant 
+As seen in Fig. \ref{F:Dph_lj} and \ref{F:Dph_si}, 
+VC-NMD and VC-ALD predict a significant 
 number of modes with  
 $D_{ph}\kv < D_{AF,HS}$ for both LJ argon and SW silicon. 
 This can lead to an underprediction of the 
@@ -1168,7 +1187,8 @@ total thermal conducitvity. The diffusivity of these
 modes can be adjusted such that any mode with $D_{ph} < D_{AF,HS}$ is 
 given $D_{ph} = D_{AF,HS}$.  The result of this adjustment, 
 referred to as VC-NMD* and VC-ALD*, is examined 
-in the thermal conductivity predictions in Section.
+in the thermal conductivity predictions in Section 
+\ref{S:Thermal Conductivity}.
 
 While AF,HS model assumes a mode-independent thermal diffusivity, 
 the AF theory is capable of predicting the mode specific 
@@ -1178,7 +1198,8 @@ In the harmonic AF theory, mode diffusivities
 typically diverge as $\omega \rightarrow 0$ because
 the vibrational modes are long-wavelength plane waves  
 that weakly scattered by the disorder.
-\cite{sheng_introduction_2006,vitelli_heat_2010}\footnote[1]
+\cite{sheng_introduction_2006,vitelli_heat_2010}
+\footnote[1]
 {For the disordered lattices studied 
 in this work for $c\le0.15$, the predicted $k_{AF}$ is strongly 
 system size dependent, indicating this diverging behavior. 
@@ -1186,21 +1207,23 @@ For LJ argon alloys at $c=0.5$, the divergence with system size is
 small for the range of system size studied ($N_0=4$ to $N_0=12$), 
 where $k_{AF}/k_{GK} = 0.93$ for $N_0=12$.} 
 The mode-specific thermal diffusivities for the LJ argon amorphous phase 
-are shown in Fig. .\footnote[2]{For a finite system, the AF theory 
+are shown in Fig. \ref{F:AF}.
+\footnote[2]{For a finite system, the AF theory 
 requires a broadening in frequency to predict the mode-specific thermal 
 diffusivities.  We use a Lorentzian broadening with a width of 
-$\delta_{\omega,avg}$, see Section .} Modes with significant 
+$\delta_{\omega,avg}$, see Section \ref{S:SF}.} 
+Modes with significant 
 contribution to thermal transport can be modeled using a mode-independent 
 diffusivity of approximately $D_{AF,HS}$.  
 Also shown are the AF predicted thermal 
 diffusivities for the explicitly disordered superlattice and $c=0.5$. 
 While the AF theory is divergent in the low-frequency limit for lattices,  
 the finite system size limits the thermal diffusivities of the lowest 
-frequencies (Fig ). The thermal diffusivity of all 
+frequencies. The thermal diffusivity of all 
 modes in the explicitly disordered lattice supercell are 
 larger than $D_{AF,HS}$, except 
 at the highest frequencies where they tend to zero as in the amorphous 
-phase (Fig ).(cite)\footnote[3]{Analysis of these high-frequency 
+phase.(cite)\footnote[3]{Analysis of these high-frequency 
 modes shows that they are locons, 
 modes which are spatially localized in the Anderson sense. 
 Feldman et al showed that the thermal 
@@ -1239,10 +1262,11 @@ are generally larger than the IR limit (Eq. )
 for both LJ argon and SW silicon alloys.   
 VC-ALD predicts essentially monotonically 
 decreasing lifetimes with increasing frequency for both LJ argon and SW 
-silicon (Fig. ). Because VC-NMD and VC-ALD 
+silicon (Fig. \ref{F:Dph_lj} a and \ref{F:Dph_si} a). 
+Because VC-NMD and VC-ALD 
 use the same predictions for $v_g\kv$, the phonon mode 
 diffusivities $D_{ph}\kv$ are underpredicted for 
-VC-ALD compared to VC-NMD for LJ argon alloys (Fig ). 
+VC-ALD compared to VC-NMD for LJ argon alloys. 
 There are thus 2 underpredictions to consider 
 when predicting the thermal conductivities in predictions: 
 underprediction 
@@ -1281,7 +1305,8 @@ which is peaked at high frequency, in contrast to SW silicon (Fig).}
 VC-NMD and VC-AlD for SW silicon. 
 (b) predicted VC mode thermal diffusivities, compared  
 to the AF,HS limit. (c) the thermal conducitivty frequency spectrum, 
-which is peaked at low frequency, in contrast to LJ argon (Fig). }
+which is peaked at low frequency, in contrast to LJ argon 
+(Fig. \ref{F:Dph_lj}). }
 \end{figure}
 %--------------------------------------------------------------------------
 
@@ -1320,8 +1345,10 @@ present in the MD simulation without any assumptions (other than
 those that come with the classical nature of the MD siulation).(cite) 
 Details of the GK and MD simulations are given in Appendix . 
 For LJ argon, bulk thermal conductivity predictions are made for 
-VC-NMD, VC-ALD and GK (Fig. ). For SW silicon, bulk thermal conductivity 
-predictions can only be made for VC-ALD and GK because of the 
+VC-NMD, VC-ALD and GK (Fig. \ref{F:cond_lj}). 
+For SW silicon, bulk thermal conductivity 
+predictions can only be made for VC-ALD and GK (Fig. \ref{F:cond_si}) 
+because of the 
 limited system size used for VC-NMD (see Appendix ). 
 
 For LJ argon, VC-NMD and VC-ALD underpredict the thermal 
@@ -1329,7 +1356,8 @@ conductivity compared to GK.
 The underprediction is only modest for VC-NMD, on the order of 
 $20\%$ or less for all $c$. By adjusting the mode diffusivity as 
 suggested 
-in Section , the thermal conductivtiy predicted by VC-NMD$^*$ is 
+in Section \ref{S:Diffusivities}, 
+the thermal conductivtiy predicted by VC-NMD$^*$ is 
 brought 
 into agreement with GK by approximately $10\%$ or less for all $c$. 
 Combined with the high-scatter limit, the VC-NMD predicted thermal 
@@ -1341,17 +1369,19 @@ alloys,
 where 
 the underprediction is worst for $c=0.05$, $k_{VC-ALD} / k_{GK} = 0.56$ 
 (error bars are on the order 
-of the large symbol sizes in Fig. ). By applying the high-scatter limit 
+of the large symbol sizes in Fig. \ref{F:cond_lj}). 
+By applying the high-scatter limit 
 adjustment VC-ALD$^*$, the thermal conductivities are brought into 
 marginally 
 better agreement, worst for $c=0.05$, $k_{VC-ALD^*} / k_{GK} = 0.65$. 
 
 The failure of the VC-ALD method can be demonstrated further 
-by moving to higher temerpature $T=40$ K in Fig. .
+by moving to higher temerpature $T=40$ K in Fig. \ref{F:cond_lj} a.
 The beginning breakdown of the intrinsic phonon-phonon ($\tau_{p-p}\kw$) 
 scattering model 
 can be observed for $c=0.0$ at 
-$T=40$ K (Fig. ), where ALD begins to overpredict compared to GK. 
+$T=40$ K (Fig. \ref{F:cond_lj} b), 
+where ALD begins to overpredict compared to GK. 
 This 
 can be explained by the emerging importance of higher order (n$> 3$) 
 n-phonon process at high temperatures.\cite{turney_predicting_2009} 
@@ -1364,10 +1394,11 @@ high-scatter limit $k_{AF,HS}$.
 The VC-ALD method fails to 
 accurately predict the high-frequency mode thermal diffusivities for 
 LJ argon alloys, which can be seen in the thermal conductivity 
-spectrum Fig. .(cite) Since the group velocities for VC-NMD and VC-ALD, 
+spectrum Fig. \ref{F:Dph_lj} c.(cite) 
+Since the group velocities are the same for VC-NMD and VC-ALD, 
 this underprediction of the high-frequency thermal diffusivities is 
 due to the underpediction of the high-frequency 
-mode lifetimes (Fig. ). 
+mode lifetimes (Fig. \ref{F:Dph_lj} a). 
 At T=40 K, the thermal conductivity of the diffusivity adjusted 
 VC-ALD$^*$ is only marginally improved compared to GK. 
 
@@ -1375,7 +1406,7 @@ For SW silicon, the thermal conductivities predicted by VC-ALD and GK
 are in better agreement, even without the adjustment VC-ALD$^*$. VC-ALD 
 actually overpredicts by roughly $20\%$ for $c \ge 0.05$ compared to GK.
 \footnote[4]
-The overprediction of thermal conductivity by VC-ALD 
+{The overprediction of thermal conductivity by VC-ALD 
 may be related to the role of disorder in the ALD calculation.
 \cite{garg_role_2011,turney_predicting_2009} While Garg et al found 
 an overprediction of VC-ALD compared to experiment by a factor of two, 
@@ -1383,7 +1414,7 @@ the overprediction
 we observe in this work for SW silicon alloys is not as drastic.}   
 For SW silicon alloys, the VC-ALD$^*$ adjustment  
 increases the result from VC-ALD by about 1$\%$ because the contribution 
-from high-frequency modes is only a few percent (Fig. ). 
+from high-frequency modes is only a few percent (Fig. \ref{F:Dph_si} c). 
 
 % NOT USED:
 % In SW silicon, the amorphous phase has significant contributions 
@@ -1444,15 +1475,16 @@ have different ranges of phonon frequencies,
 lifetimes, group velocities and total thermal conductivity. 
 For bulk silicon(cite), the thermal conductivity 
 is dominated by low-frequency modes(cite), which is also true for 
-bulk and alloyed SW silicon (Fig. ).(cite) For SW silicon, 
+bulk and alloyed SW silicon (Fig. \ref{F:Dph_si}).(cite) For SW silicon, 
 VC-ALD predicts thermal conductivities in reasonably 
 good agreement with the 
-explicitly disordered GK method (Fig. ).  
+explicitly disordered GK method (Fig. \ref{F:cond_si}).  
 For LJ argon, VC-ALD underpredicts 
-the high-frequency phonon lifetimes (Fig. ), 
+the high-frequency phonon lifetimes and thermal diffusivities 
+(Fig. \ref{F:Dph_lj}), 
 leading to an underprediction of 
-thermal conductivity when compared to the explicitly disordered 
-methods VC-NMD and GK (Section ). 
+thermal conductivity when compared to VC-NMD and GK 
+(Section \ref{S:Thermal Conductivity}). 
 
 The results for SW silicon and LJ argon alloys suggest that 
 the thermal modeling of ordered and 
@@ -1465,16 +1497,18 @@ follow closely the scalings predicted by the perturbative VC-ALD
 models, which are valid at low-frequencies. 
 
 LJ argon is a material 
-which is dominated by high-frequency modes, even for the bulk (Fig. ). 
-This high-frequency range is where the perturbative VC-ALD models 
-underpredict the mode lifetimes (Fig. ), and also where the higher-order 
-terms in the Tamura theory are predicted to be non-negligible (Section ). 
+dominated by high-frequency modes, even for the bulk 
+(Fig. \ref{F:Dph_lj}). 
+This high-frequency range is where the perturbative VC-ALD models, 
+and also where the higher-order 
+terms in the Tamura theory are predicted to be non-negligible 
+(Section \ref{S:From VC-ALD}). 
 While the 
 high-order terms in the Tamura theory are also predicted to be 
 non-negligible for SW silicon, this does not affect the thermal 
 conductivty predictions signifcantly. Even if there was a discrepancy 
 at high-frequency these modes 
-are unimportant to thermal transport in SW silicon (Fig. ). This is also 
+are unimportant to thermal transport in SW silicon. This is also 
 true for the thermal conductivity spectrum of SiGe alloys 
 from first-princples predictions\cite{garg_role_2011} and experimental 
 measurements.\cite{abeles_thermal_1962,cahill_thermal_2004,
@@ -1493,10 +1527,10 @@ is achieved by considering the thermal diffusivity of vibrational
 modes in the AF theory. 
 A simple correction to the VC approximation can be made by considering 
 a high-scatter limit for the mode specific thermal 
-diffusivity (Section, Fig. ). 
+diffusivity (Section \ref{S:Diffusivities}). 
 This high-scatter limit is physically interpreted as vibrational modes 
-propagating at the sound speed a distance of the lattice constant 
-(Section Fig. ). However, the concept of a vibrational mean free path 
+propagating at the sound speed a distance of the lattice constant. 
+However, the concept of a vibrational mean free path 
 in a disordered system is only valid at low-frequencies.
 \cite{feldman_numerical_1999,xu_energy_2009} For 
 disordered vibrations, the lifetime and thermal diffusivity are the 
@@ -1510,22 +1544,17 @@ For LJ argon, it is possible that the VC group velocities are an
 over-prediction for modes in a given interval of frequency, 
 an effect which is compensated for 
 by a small under-prediction of the lifetimes in the same interval of 
-frequency when compared to Gamma-NMD (Fig. ). 
+frequency when compared to Gamma-NMD (Fig. \ref{F:VC Gamma life}). 
 The VC-NMD predicted 
 mode lifetimes and thermal diffusivity adjusted VC-NMD$^*$, 
 predict thermal conducitivities in good agreement with 
-the MD-based GK method (Fig. ). 
+the MD-based GK method. 
 Based on the thermal conductivity predictions for VC-NMD$^*$ and 
 the well-defined peaks in the structure factors 
-(Fig. ), the reduction of group velocities in disordered lattices 
-due to zone folding seems to underpredict the group velocity of 
-moderate to high frequency modes.\cite{duda_reducing_2011}  
-
-The predictions using 
-VC-NMD, VC-ALD demonstrate the importance of explicit disorder 
-modeling in ``soft'' systems and possible underprediction 
-of the thermal properties.\cite{tian_phonon_2012}
-
+(Fig. \ref{F:SF}), the reduction of group velocities in 
+disordered lattices 
+due to zone folding seems to be an underprediction of the group 
+velocity of moderate to high frequency modes.\cite{duda_reducing_2011}  
 
 % As observed by Kittel, if the sound
 % velocity is used instead of U; and the interatomic spacing
@@ -1663,12 +1692,13 @@ Computational Cost}
 %--------------------------------------------------------------------------
 
 The key to incorporating the effects of disorder explicitly are the use 
-of a large disordered supercells (Section ).  However, the methods used 
+of a large disordered supercells (Section \ref{S:Calculation}). 
+However, the methods used 
 in this work scale differently with the size of the supercell considered. 
 The calculations in this work are trivially parallelizable\cite{} 
 except the 
 MD simulations\cite{plimpton_fast_1995} and the eigenvalue solution of the 
-Dynamical matrix (Section ).\cite{gale_general_2003} Efficient MD 
+Dynamical matrix.\cite{gale_general_2003} Efficient MD 
 codes scale linearly with the number of atoms in the system $N_a$, making 
 the GK method an efficient method for predicting thermal conductivity. 
 However, the computational cost of using large supercells for MD simulation, 
@@ -1683,12 +1713,13 @@ of a Dynamical matrix of size $(3n,3n)$ for each irreducible wavevector
 of the system size considered, 
 which is negligible compared to the other 
 caculations required for both of these methods.(cite) 
-The Gamma-NMD (Section ) and AF theory (Section ) 
+The Gamma-NMD (Section \ref{S:VC Gamma life}) and 
+AF theory (Section \ref{S:Diffusivities}) 
 require the eigenvalue solution of a large Dynamical matrix $(3N_a,3N_a)$, 
-the solution of which scales as $(3N_a)^3$ (Section ). 
+the solution of which scales as $(3N_a)^3$. 
 The AF theory is limited 
 to small supercells using ab initio calculations, making it difficult 
-to asses finite-size effects (Section ).  
+to asses finite-size effects.(cite)  
 
 Using the VC-ALD method, the symmetries of the system can be 
 used to drastically reduce the required computations, permitting its 
@@ -1777,14 +1808,14 @@ Ensemble averaging was performed using 10 independent initial
 randomized velocity distributions. 
 
 For a normal mode of the lattice supercell 
-used for the MD simulations (Section ), 
+used for the MD simulations, 
 the autocorrelation of the total and kinetic     
 normal mode energy are damped exponentials 
 with a decay time $\tau\kv$, the kinetic energy autocorrelation with a 
 cosinusodial oscillation frequency 
 $2\omega\kv$.(cite joe) 
-When using the VC normal modes (Section ) to map the MD simulation 
-trajectories for the explicitly disordered lattice supercells (Section ), 
+When using the VC normal modes to map the MD simulation 
+trajectories for the explicitly disordered lattice supercells, 
 the mode total and kinetic energy autocorrelation fucntions 
 do not always follow simple functional forms. 
 This can be illustrated by using spectral-NMD 
@@ -1812,7 +1843,7 @@ explicitly disordered system.
 Descrepencies have been observed previously when the exact normal modes 
 of the system are not used.(cite SED) However, the lifetimes predicted 
 using VC-NMD are in fairly good agreement with those calculated using 
-Gamma-NMD (Fig. ). 
+Gamma-NMD (Fig. \ref{F:VC Gamma life}). 
 Several studies have found good agreement for 
 predictions of lifetimes and thermal conductivity 
 using non-exact eigenvector mappings
@@ -1825,13 +1856,16 @@ ong_reduction_2011,qiu_molecular_2012}
 However, it is crucial 
 that results using non-exact mappings are compared to as many 
 alternative methods as possible. In this work, VC-NMD is 
-compared to the other methods Gamma-NMD (Section ), 
-GK (Section ), and VC-ALD (Section ).
+compared to the other methods Gamma-NMD 
+(Section \ref{S:VC Gamma life}), 
+GK (Section \ref{S:Thermal Conductivty}), 
+and VC-ALD (Section \ref{S:Diffusivities}).
 It is important to remember that the VC normal modes 
 are exact in the limit $c->0$. 
 Use of the VC 
 modes at large $c$ pushes the limits of the approximation, but  
-is useful for predicting an effective group velocity (Section ).
+is useful for predicting an effective group velocity 
+(Section \ref{S:Dispersion}).
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -1843,7 +1877,7 @@ is useful for predicting an effective group velocity (Section ).
 \caption{\label{F:NMD XCORR} The spectral energy density $\Phi$ of 
 two modes (polarizations $\nu=3,4$ at wavector [0.2 0 0]) calculated 
 using VC-NMD for a mass disordered LJ FCC supercell 
-($N_0=8$ and $c=0.5$, Section ). 
+($N_0=8$ and $c=0.5$). 
 The VC dispersion-predicted peaks are labeled 
 by $\omega_0$. Inset: the same mode's energy 
 (kinetic (KE) and total (TE)) autocorrleation functions.  
@@ -1852,7 +1886,7 @@ harmonic effects in the KE and TE autoccorelation functions
 for $\nu=4$ which are due to the double peaks in $\Phi$. 
 A mode lifetime can 
 be extracted unambiguously using the integral of the TE autocorrelation 
-function (Section ).}
+function (Section \ref{S:VC Gamma life}).}
 \end{figure}
 %--------------------------------------------------------------------------
 
@@ -1888,7 +1922,8 @@ For all broadening factors, the linewidths
 at high frequency are in better 
 agreement with the lifetimes predicted 
 by VC-NMD rather than VC-ALD,
-where generally $\tau > 2\pi/\omega$ (IR limit, Fig. ).
+where generally $\tau > 2\pi/\omega$ 
+(IR limit, Fig. \ref{F:VC Gamma life}).
 \cite{taraskin_determination_1999} This gives more  
 justification for the use of the VC predicted group velcoities for 
 both VC-NMD and VC-ALD, even for large wavevector and $c$. 
@@ -1907,7 +1942,7 @@ well separated in frequency from any optical branches.
 \cite{feldman_numerical_1999,thomas_predicting_2010} 
 
 %--------------------------------------------------------------------------
-\section{\label{A:Finite Simulation-Size}
+\section{\label{A:Finite Simulation}
 Finite Simulation-Size Scaling for Thermal 
 Conductivity}
 %--------------------------------------------------------------------------
@@ -1915,16 +1950,16 @@ To predict a bulk thermal conductivity, extrapolation is used by the
 following finite size scaling $ 1 / k \propto 1/N_0$. For VC-NMD and 
 VC-ALD, the validity of the finite-size scaling 
 requires the low frequency modes in the finite system to be dominated by 
-intrinsic scattering ($\tau\kv \propto \omega\kv^{-2}$, Section ) and  
+intrinsic scattering ($\tau\kv \propto \omega\kv^{-2}$) and  
 follow the Debye approximation 
-with respect to $v_{g,\mathbf{n}}$ (Section ) and DOS $D(\omega\kv)$ 
-(Section ).\cite{shiomi_thermal_2011,esfarjani_heat_2011} For LJ 
+with respect to $v_{g,\mathbf{n}}$ and DOS $D(\omega\kv)$.
+\cite{shiomi_thermal_2011,esfarjani_heat_2011} For LJ 
 argon, this requirement is satisfied for modest system sizes 
 (for $N_0 = 6$ to $12$) so that both VC-NMD and VC-ALD predictions 
 can be extrapolated to a bulk value. 
 For SW silicon, the thermal conductivity is dominated by low-frequency 
-modes (Fig. ). Becasue of this, large system sizes 
-(up to $N_0 = 40$) are needed to satsify the 
+modes (Fig. \ref{F:Dph_si}). Becasue of this, large system sizes 
+(up to $N_0 = 42$) are needed to satsify the 
 extrpaolation requirements and only VC-ALD can be used.(cite) This 
 demonstrates the computational efficieny of the VC-ALD method which is 
 necessary when computationally expensive 
