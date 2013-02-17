@@ -2,7 +2,7 @@ clear
 constant = m_constant;
 str.main = '/home/jason/disorder2/si/alloy/0.05/24x/';
 NUM_BINS = 1000; BROADEN = 1000;
-m1 = 1; m2=2.6; c = 0.05; vm = (1-c)*m1 + c*m2;
+m1 = 1; m2=2.6; c = 0.5; vm = (1-c)*m1 + c*m2;
 %si
 nmd =...
     load([str.main 'nmd.mat']);
