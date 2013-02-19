@@ -76,6 +76,10 @@
   real(dp)                                     :: yd
   real(dp)                                     :: zd
   real(dp),       allocatable,            save :: Vij(:,:)
+  real(dp)				       :: pi
+
+pi = 3.14159265359
+
 !
 !  Allocate local array ldone to avoid duplicate multiplies in case of partial occupancy
 !
@@ -112,11 +116,11 @@
   enddo
   dwavg = dwavg/(mcv-1 - nfreqmin)
 !
-  constant = 1.0_dp/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
+  constant = pi/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
 !
 !  Multiply by large number in order to increase size of Di
 !
-  constant = 1.0d10/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
+!  constant = 1.0d10/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
 !
 !  Initialise thermal conductivities for each mode
 !
@@ -228,17 +232,17 @@
 !  Sum over coupling with mode j weighted by Lorentzian factor
 !
       do j = nfreqmin,i-1
-        dwij = (bfactor*dwavg)/(1 + ((bfactor*dwavg)*(freq(j) - freq(i)))**2)
+        dwij = (1.0/pi)*(bfactor*dwavg)/( (freq(j) - freq(i))**2 + (bfactor*dwavg)**2 )
         Di_loc = Di_loc + dwij*Sij(j,i)**2
       enddo
       do j = i+1,mcv
-        dwij = (bfactor*dwavg)/(1 + ((bfactor*dwavg)*(freq(j) - freq(i)))**2)
+        dwij = (1.0/pi)*(bfactor*dwavg)/( (freq(j) - freq(i))**2 + (bfactor*dwavg)**2 )
         Di_loc = Di_loc + dwij*Sij(j,i)**2
       enddo
 !
 !  Scale by constants and inverse frequency squared - factor of third is for averaging over directions
 !
-      Di(i) = Di(i) + Di_loc*constant/(3.0_dp*freq(i)**2)
+      Di(i) = Di(i) + Di_loc*constant/(freq(i)**2)
     enddo
 !
 !  End loop over Cartesian degrees of freedom

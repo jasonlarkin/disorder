@@ -228,11 +228,11 @@
 !  Sum over coupling with mode j weighted by Lorentzian factor
 !
       do j = nfreqmin,i-1
-        dwij = (bfactor*dwavg)/(1 + ((bfactor*dwavg)*(freq(j) - freq(i)))**2)
+        dwij = (1.0/pi)*(bfactor*dwavg)/( (freq(j) - freq(i))**2 + (bfactor*dwavg)**2 )
         Di_loc = Di_loc + dwij*Sij(j,i)**2
       enddo
       do j = i+1,mcv
-        dwij = (bfactor*dwavg)/(1 + ((bfactor*dwavg)*(freq(j) - freq(i)))**2)
+        dwij = (1.0/pi)*(bfactor*dwavg)/( (freq(j) - freq(i))**2 + (bfactor*dwavg)**2 )
         Di_loc = Di_loc + dwij*Sij(j,i)**2
       enddo
 !
