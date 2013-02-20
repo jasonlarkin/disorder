@@ -94,7 +94,7 @@ rescale=0;
           
           
    %CALCULATE VG numerically        
-dk = 10E-5;       
+dk = 10E-7;       
           
             for idim = 1:3
                 if kappa(idim)==0.5
@@ -353,7 +353,7 @@ function [freq,eigVsorted,D] = dynam_matrix(a2,x,x_ucell,m,kappa)
             D( 1+(i1-1)*3:3*i1, 1+(i2-1)*3:3*i2 ) = ( (1/sqrt((m(i1)*m(i2)))) )*D( 1+(i1-1)*3:3*i1, 1+(i2-1)*3:3*i2 );
         end
     end
-    
+    D = (1/2)*(ctranspose(D) + D);
     %5) Calculate freqs, eigV, and v_g
             [eigV,W2]=eig(D); W=sqrt(abs(W2));
 %CREATE FREQ VECTOR          
