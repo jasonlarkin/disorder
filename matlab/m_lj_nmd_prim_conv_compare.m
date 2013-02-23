@@ -105,7 +105,11 @@ loglog(...
     nmd.seddata.freq,(2*pi)./nmd.seddata.freq...
     )
 
+%save gamma
+save( strcat(str_nmd,'/SED_gamma.mat') , '-struct', 'gamma');
 
+%save prim
+save( strcat(str_nmd,'/SED_prim.mat') , '-struct', 'prim');
 
 
 

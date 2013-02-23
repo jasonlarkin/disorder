@@ -572,9 +572,9 @@ mass disorder.
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\mbox{\subfigure{(a)\includegraphics[scale=0.2]
+\mbox{\subfigure{(a)\includegraphics[scale=0.22]
 {/home/jason/disorder/si/si_conv_2x2x2_disorder-2.eps}
-\subfigure{(b)\includegraphics[scale=0.2]
+\subfigure{(b)\includegraphics[scale=0.22]
 {/home/jason/disorder/si/si_conv_2x2x2_perfect-2.eps}}}}
 \vspace*{0mm}
 \end{center}
@@ -707,8 +707,8 @@ a-Si$_c$Ge$_{1-c}$.\cite{bouchard_vibrational_1988}
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.8]
-{/home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_4.eps}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:DOS} Density of states (DOS) 
@@ -852,8 +852,8 @@ peaks only for small wavevector.
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.8]
-{/home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111.eps}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:SF} 
@@ -986,8 +986,8 @@ predict thermal conductivity in Section \ref{S:Thermal Conductivity}.
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-2.eps}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:VC Gamma life} Lifetimes predicted using VC-NMD 
@@ -1283,7 +1283,7 @@ the VC-ALD perturbative models.
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.75]
-{/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-2.eps}
+{/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:Dph_lj} (a) predicted lifetimes for VC modes using 
