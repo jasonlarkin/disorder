@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  21 FEB 2013 20:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  23 FEB 2013 20:26
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_021113.tex
@@ -994,18 +994,15 @@ n input line 1254.
 File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-3.eps Graphic 
 file (type eps)
 </home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-3.eps>
-Overfull \hbox (2.93001pt too wide) in paragraph at lines 1286--1288
- [] 
- []
+File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5.eps Graphic file 
+(type eps)
 
-File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps Graphic 
-file (type eps)
-</home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps>
+</home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5.eps>
 File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps Graphic file (type 
 eps)
 
 </home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps>
-Overfull \hbox (40.06874pt too wide) in paragraph at lines 1317--1319
+Overfull \hbox (14.97499pt too wide) in paragraph at lines 1317--1319
  [] 
  []
 
@@ -1161,10 +1158,17 @@ l.1408 \footnote[4]
 File: /home/jason/disorder/lj/alloy/lj_cond_compare.eps Graphic file (type eps)
 
 </home/jason/disorder/lj/alloy/lj_cond_compare.eps>
-File: /home/jason/disorder/si/alloy/si_cond_compare.eps Graphic file (type eps)
+Overfull \hbox (18.99pt too wide) in paragraph at lines 1438--1440
+ [] 
+ []
 
+File: /home/jason/disorder/si/alloy/m_si_cond_compare.eps Graphic file (type ep
+s)
+</home/jason/disorder/si/alloy/m_si_cond_compare.eps>
+Overfull \hbox (8.9525pt too wide) in paragraph at lines 1451--1453
+ [] 
+ []
 
-</home/jason/disorder/si/alloy/si_cond_compare.eps>
 
 Package natbib Warning: Citation `abeles_thermal_1962' on page 10 undefined on 
 input line 1515.
@@ -1180,6 +1184,15 @@ Underfull \hbox (badness 1533) in paragraph at lines 1499--1523
 
 [10]
 
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1523.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1523.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
 Package natbib Warning: Citation `feldman_numerical_1999' on page 11 undefined 
 on input line 1535.
 
@@ -1191,12 +1204,13 @@ ut line 1658.
 Package natbib Warning: Citation `plimpton_fast_1995' on page 11 undefined on i
 nput line 1700.
 
+[11]
 
-LaTeX Warning: Reference `S:VC Gamma life' on page 11 undefined on input line 1
+LaTeX Warning: Reference `S:VC Gamma life' on page 12 undefined on input line 1
 716.
 
 
-Package natbib Warning: Citation `chaput_phonon-phonon_2011' on page 11 undefin
+Package natbib Warning: Citation `chaput_phonon-phonon_2011' on page 12 undefin
 ed on input line 1728.
 
 
@@ -1204,7 +1218,6 @@ Underfull \hbox (badness 2050) in paragraph at lines 1724--1735
 \OT1/cmr/m/n/10 sys-tem can be used to dras-ti-cally re-duce the re-
  []
 
-[11]
 
 Package natbib Warning: Citation `plimpton_fast_1995' on page 12 undefined on i
 nput line 1800.
@@ -1239,8 +1252,9 @@ LaTeX Warning: Reference `EQ:M:SLT' on page 12 undefined on input line 1900.
 Package natbib Warning: Citation `taraskin_determination_1999' on page 12 undef
 ined on input line 1910.
 
+[12]
 
-Package natbib Warning: Citation `taraskin_determination_1999' on page 12 undef
+Package natbib Warning: Citation `taraskin_determination_1999' on page 13 undef
 ined on input line 1927.
 
 
@@ -1248,7 +1262,6 @@ Underfull \hbox (badness 3354) in paragraph at lines 1916--1930
 []\OT1/cmr/m/n/10 For the range of broad-en-ing fac-tors con-sid-ered
  []
 
-[12]
 
 Package natbib Warning: Citation `feldman_numerical_1999' on page 13 undefined 
 on input line 1942.
@@ -1666,12 +1679,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3720 strings out of 493849
- 47707 string characters out of 1152845
+ 3721 strings out of 493849
+ 47711 string characters out of 1152845
  133253 words of memory out of 3000000
- 6934 multiletter control sequences out of 15000+50000
+ 6935 multiletter control sequences out of 15000+50000
  14856 words of font info for 55 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  32i,26n,32p,996b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_021113.dvi (15 pages, 101172 bytes).
+Output written on prb_vc_jl_021113.dvi (15 pages, 101176 bytes).

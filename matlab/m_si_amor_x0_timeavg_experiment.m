@@ -3,7 +3,7 @@ clear
 lj = m_lj; constant = m_constant;
 
 str.main =...
-    '/home/jason/disorder2/si/amor/prepare/4x/annealHe/';
+    '/home/jason/disorder2/si/amor/prepare/6x/annealHe/';
 
 x0(1).x0 =...
     m_x0_read([str.main 'x0.data']);

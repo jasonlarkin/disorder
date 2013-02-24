@@ -1282,7 +1282,7 @@ the VC-ALD perturbative models.
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.75]
+\includegraphics[scale=1.0]
 {/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-3.eps}
 \vspace*{-5mm}
 \end{center}
@@ -1297,8 +1297,8 @@ which is peaked at high frequency, in contrast to SW silicon (Fig).}
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.75]
-{/home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c05_2-2.eps}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:Dph_si} (a) predicted lifetimes for VC modes using 
@@ -1313,7 +1313,7 @@ which is peaked at low frequency, in contrast to LJ argon
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.75]
+\includegraphics[scale=1.0]
 {/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps}
 \vspace*{-5mm}
 \end{center}
@@ -1434,7 +1434,7 @@ from high-frequency modes is only a few percent (Fig. \ref{F:Dph_si} c).
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.75]
+\includegraphics[scale=1.0]
 {/home/jason/disorder/lj/alloy/lj_cond_compare.eps}
 \vspace*{-5mm}
 \end{center}
@@ -1448,7 +1448,7 @@ thermal conductivity predictions at T=40K.}
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.75]
-{/home/jason/disorder/si/alloy/si_cond_compare.eps}
+{/home/jason/disorder/si/alloy/m_si_cond_compare.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:cond_si} }
