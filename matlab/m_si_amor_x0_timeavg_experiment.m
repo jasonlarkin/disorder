@@ -3,7 +3,7 @@ clear
 lj = m_lj; constant = m_constant;
 
 str.main =...
-    '/home/jason/disorder2/si/amor/prepare/6x/annealHe/';
+    '/home/jason/disorder2/si/amor/prepare/4x/annealHe_tersoff/';
 
 x0(1).x0 =...
     m_x0_read([str.main 'x0.data']);
@@ -18,7 +18,7 @@ data(icnt).data =...
 
 log(icnt).log =...
     m_lmp_readlog([str.main 'log_main_1.lammps']);
-array(icnt).array = str2num(log(icnt).log.data{2});
+array(icnt).array = str2num(log(icnt).log.data{5});
 
 for idump = 2:size(data(1).data.atom_data,3)
     idump

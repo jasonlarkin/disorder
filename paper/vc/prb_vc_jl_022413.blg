@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_022413.aux
+White space in argument---line 123 of file prb_vc_jl_022413.aux
+ : \citation{endnote\protect
+ :                           $\relax \dagger $}
+I'm skipping whatever remains of this command
+White space in argument---line 133 of file prb_vc_jl_022413.aux
+ : \citation{endnote\protect
+ :                           $\relax \ddagger $}
+I'm skipping whatever remains of this command
+White space in argument---line 136 of file prb_vc_jl_022413.aux
+ : \citation{endnote\protect
+ :                           $\relax \mathsection $}
+I'm skipping whatever remains of this command
+White space in argument---line 137 of file prb_vc_jl_022413.aux
+ : \citation{endnote\protect
+ :                           $\relax \mathparagraph $}
+I'm skipping whatever remains of this command
+White space in argument---line 160 of file prb_vc_jl_022413.aux
+ : \citation{endnote\protect
+ :                           $\relax **$}
+I'm skipping whatever remains of this command
+The style file: apsrev.bst
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-021313.bib
+Warning--I didn't find a database entry for "kudman_1972"
+Warning--I didn't find a database entry for ""
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+You've used 66 entries,
+            3411 wiz_defined-function locations,
+            1557 strings with 23182 characters,
+and the built_in function-call counts, 48643 in all, are:
+= -- 2817
+> -- 1596
+< -- 233
++ -- 1302
+- -- 390
+* -- 6639
+:= -- 5189
+add.period$ -- 66
+call.type$ -- 66
+change.case$ -- 266
+chr.to.int$ -- 65
+cite$ -- 66
+duplicate$ -- 4226
+empty$ -- 4102
+format.name$ -- 991
+if$ -- 9351
+int.to.chr$ -- 2
+int.to.str$ -- 67
+missing$ -- 653
+newline$ -- 213
+num.names$ -- 199
+pop$ -- 1070
+preamble$ -- 1
+purify$ -- 264
+quote$ -- 0
+skip$ -- 1935
+stack$ -- 0
+substring$ -- 1999
+swap$ -- 3392
+text.length$ -- 199
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 382
+warning$ -- 0
+while$ -- 191
+width$ -- 0
+write$ -- 711
+(There were 5 error messages)
