@@ -6,11 +6,22 @@ AF = m_af_load( '/home/jason/disorder2/lj/amor/4x/AF/tmp/' )
 Di = m_gulp_af_lj_readDi(...
     '/home/jason/disorder2/lj/amor/4x/AF/gulp/4.0.7/units/','Dij.gout');
 
+
+
+
+
+
+
+
+
 plot(AF.freq/max(AF.freq),AF.Di(:,2)/max(AF.Di(:,2)),'.')
 
 [AF.dosx AF.dosy] = m_dos(AF.freq(4:end)/max(AF.freq(4:end)),15,1);
 
 [dosx dosy] = m_dos(Di(:,2)/max(Di(:,2)),15,1);
+
+
+
 
 subplot(3,1,1),...
     plot(...
