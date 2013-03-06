@@ -15,6 +15,8 @@ si.sound_used =...
 
 si.alat = 5.43E-10;
 
+si.alat_amor = 5.43E-10*1.0438;
+
 si.num_atom_ucell=8;
 si.num_density = (si.num_atom_ucell / (si.alat^3));
 

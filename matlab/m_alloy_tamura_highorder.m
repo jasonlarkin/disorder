@@ -2,7 +2,7 @@ clear
 constant = m_constant; lj = m_lj;
 str.main = '/home/jason/disorder2/lj/alloy/10K/0.15/12x/NMD/1/work/';
 NUM_BINS = 1000; BROADEN = 1000;
-m1 = 1.0; m2 = 3.0; c = 0.0001; vm = (1-c)*m1 + c*m2;
+m1 = 1.0; m2 = 3.0; c = 0.25; vm = (1-c)*m1 + c*m2;
 %lj
 nmd =...
     load([str.main 'NMDdata.mat']);
