@@ -13,8 +13,3 @@ Di_convert(:,2) = Di(:,2)*con.c*lj.tau*2*pi;
 Di_convert(:,3) = Di(:,3)*factor.lj;%*factor.gulp;
 plot(Di_convert(:,2),Di_convert(:,3),'.')
 end
-
-
-
-
-
