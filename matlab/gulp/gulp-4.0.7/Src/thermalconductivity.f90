@@ -97,7 +97,7 @@
   do i = 1,mcv
     if (freq(i).gt.1.0_dp) then
       if (nfreqmin.eq.0) nfreqmin = i
-      freqinv(i) = 1.0_dp/sqrt(2.0_dp*freq(i))
+      freqinv(i) = 1.0_dp/sqrt(freq(i))
     else
 !
 !  If frequency is zero (acoustic mode) or imaginary then set this term to 0 to remove contributions
@@ -115,8 +115,9 @@
   dwavg = dwavg/(mcv-1 - nfreqmin)
 !
 !  Set constant that includes conversion factor
+!  Include factor of 1/c to convert units of broadening factor from cm to s
 !
-  constant = (1.0d13*evtoj*avogadro/speedl)**2
+  constant = ((1.0d13*evtoj*avogadro)**2)/(2.0_dp*pi*speedl)**3
 !
   constant = pi*constant/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
 !
@@ -251,9 +252,9 @@
 !
   if (ioproc) then
     write(ioout,'(/,''  Thermal conductivity: '',/)')
-    write(ioout,'(''  Lorentzian broadening factor = '',f10.4,/)') bfactor*dwavg
+    write(ioout,'(''  Lorentzian broadening factor = '',f10.4,'' cm-1'',/)') bfactor*dwavg
     write(ioout,'(''--------------------------------------------------------------------------------'')')
-    write(ioout,'('' Mode    : Frequency (cm-1)         Thermal conductivity                        '')')
+    write(ioout,'('' Mode    : Frequency (cm-1)         Thermal conductivity (cm**2/s)              '')')
     write(ioout,'(''--------------------------------------------------------------------------------'')')
   endif
 !
@@ -261,7 +262,7 @@
 !
   if (ioproc) then
     do i = nfreqmin,mcv
-      write(ioout,'(i6,2x,f12.4,10x,f18.8)') i,freq(i),Di(i)
+      write(ioout,'(i6,2x,f12.4,10x,f24.14)') i,freq(i),Di(i)*10.0d4
     enddo
   endif
 !

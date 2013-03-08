@@ -1,18 +1,18 @@
 clear
 ipt=1
-VIRTUAL_MASS = 1.1;
+VIRTUAL_MASS = 2.0;
 freq_cutoff = 0;
 dph_scaling = 0.5;
 vg_scaling = 0.75;
 constant = m_constant; lj = m_lj;
 %vcnmd
-str.nmd = '/home/jason/disorder2/lj/alloy/10K/0.05/10x/NMD/1/work/';
+str.nmd = '/home/jason/disorder2/lj/alloy/10K/0.5/10x/NMD/1/work/';
 vcnmd(ipt).nmd = load([str.nmd 'NMDdata.mat']);
 vcnmd(ipt).sed = load([str.nmd 'SEDdata.mat']);
 %vcald
-str.alloy = '/home/jason/disorder2/lj/alloy/10K/0.05/10x/NMD/1/work/';
+str.alloy = '/home/jason/disorder2/lj/alloy/10K/0.5/10x/NMD/1/work/';
 alloy(ipt).alloy = load([str.alloy 'ALLOY.mat']);
-str.ald = '/home/jason/disorder2/lj/ald/m1.1/10x/Data_fullBZ.xls';
+str.ald = '/home/jason/disorder2/lj/ald/m2/10x/Data_fullBZ.xls';
 vcald(ipt).ald = m_joe_read_data([str.ald]);
 vcald(ipt).sedald = m_joe_ald2nmd( vcnmd(ipt).nmd , vcald(ipt).ald );
 

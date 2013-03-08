@@ -77,9 +77,6 @@
   real(dp)                                     :: yd
   real(dp)                                     :: zd
   real(dp),       allocatable,            save :: Vij(:,:)
-  real(dp)				       :: pi
-
-pi = 3.14159265359
 
 !
 !  Allocate local array ldone to avoid duplicate multiplies in case of partial occupancy
