@@ -1,71 +1,48 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_vc_jl_030213.aux
-White space in argument---line 100 of file prb_vc_jl_030213.aux
- : \citation{endnote\protect
- :                           $\relax *$}
-I'm skipping whatever remains of this command
-White space in argument---line 135 of file prb_vc_jl_030213.aux
- : \citation{endnote\protect
- :                           $\relax \dagger $}
-I'm skipping whatever remains of this command
-White space in argument---line 151 of file prb_vc_jl_030213.aux
- : \citation{endnote\protect
- :                           $\relax \ddagger $}
-I'm skipping whatever remains of this command
-White space in argument---line 154 of file prb_vc_jl_030213.aux
- : \citation{endnote\protect
- :                           $\relax \mathparagraph $}
-I'm skipping whatever remains of this command
-White space in argument---line 155 of file prb_vc_jl_030213.aux
- : \citation{endnote\protect
- :                           $\relax \mathsection $}
-I'm skipping whatever remains of this command
-White space in argument---line 183 of file prb_vc_jl_030213.aux
- : \citation{endnote\protect
- :                           $\relax **$}
-I'm skipping whatever remains of this command
 The style file: apsrev.bst
-Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-021313.bib
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-031313.bib
+Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
-You've used 74 entries,
+You've used 81 entries,
             3411 wiz_defined-function locations,
-            1605 strings with 24499 characters,
-and the built_in function-call counts, 54419 in all, are:
-= -- 3149
-> -- 1782
-< -- 260
-+ -- 1454
-- -- 436
-* -- 7422
-:= -- 5813
-add.period$ -- 74
-call.type$ -- 74
-change.case$ -- 298
-chr.to.int$ -- 73
-cite$ -- 74
-duplicate$ -- 4727
-empty$ -- 4596
-format.name$ -- 1103
-if$ -- 10464
-int.to.chr$ -- 2
-int.to.str$ -- 75
-missing$ -- 732
-newline$ -- 237
-num.names$ -- 223
-pop$ -- 1196
+            1641 strings with 26020 characters,
+and the built_in function-call counts, 61150 in all, are:
+= -- 3491
+> -- 2094
+< -- 298
++ -- 1731
+- -- 512
+* -- 8402
+:= -- 6475
+add.period$ -- 81
+call.type$ -- 81
+change.case$ -- 325
+chr.to.int$ -- 79
+cite$ -- 81
+duplicate$ -- 5308
+empty$ -- 5119
+format.name$ -- 1280
+if$ -- 11724
+int.to.chr$ -- 3
+int.to.str$ -- 82
+missing$ -- 820
+newline$ -- 258
+num.names$ -- 244
+pop$ -- 1335
 preamble$ -- 1
-purify$ -- 296
+purify$ -- 324
 quote$ -- 0
-skip$ -- 2165
+skip$ -- 2435
 stack$ -- 0
-substring$ -- 2244
-swap$ -- 3790
-text.length$ -- 222
+substring$ -- 2448
+swap$ -- 4287
+text.length$ -- 260
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 428
+type$ -- 470
 warning$ -- 0
-while$ -- 214
+while$ -- 235
 width$ -- 0
-write$ -- 795
-(There were 6 error messages)
+write$ -- 867
+(There was 1 warning)

@@ -20,7 +20,17 @@ plot(...
 
 
 
-
+D = load('/home/jason/disorder2/si/amor/normand/perfect2/Di.gout');
+plot(D(:,2),D(:,3),'.')
+D = load('/home/jason/disorder2/si/amor/normand/perfect3/Di.gout');
+plot(D(:,2),D(:,3),'.')
+D = load('/home/jason/disorder2/si/amor/normand/init216/Di.gout');
+plot(D(:,2),D(:,3),'.')
+D = load('/home/jason/disorder2/si/amor/normand/initb216/Di.gout');
+plot(D(:,2),D(:,3),'.')
+D = load('/home/jason/disorder2/si/amor/normand/init216/Di.gout');
+plot(D(:,2),D(:,3),'.')
+D = load('/home/jason/disorder2/si/amor/normand/perfect2/Di.gout');
 
 
 
