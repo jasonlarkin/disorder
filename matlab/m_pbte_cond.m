@@ -17,6 +17,9 @@ cond.Tmelt.pbse = 1067+273;	%\cite{law_structural_2008} K
 
 cond.pbte.HS = 0.36;		%\cite{lattice_koh_2009} W/m-K
 
+cond.snyder_300K = load('/home/jason/disorder/pbte/m_pbte_cond_snyder_300K.txt');
+cond.snyder_500K = load('/home/jason/disorder/pbte/m_pbte_cond_snyder_500K.txt');
+
 plot(...
     cond.qiu(:,1)/cond.Tmelt.pbte,cond.qiu(:,2),'.',...
     cond.qiu_expt(:,1)/cond.Tmelt.pbte,cond.qiu_expt(:,2),'.'...
