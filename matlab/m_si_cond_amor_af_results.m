@@ -1,23 +1,32 @@
-function gk = m_si_cond_amor_gk_results
+function af = m_si_cond_amor_gk_results
 %VC = m_lj_alloy_nmd_vc_results
 %returns the vc thermal conductivity results @ 10K for 4-12x systems
 %--------------------------------------------------------------------------
 
-gk.size =[...
+gk.normand.size =[...
     2
     5
 %    8
     ];
-
-gk.num_atoms =[...
+gk.normand.num_atoms =[...
     216
     1000
     4096
     ];
-
-gk.cond =[...
+gk.normand.cond =[...
     1.1479
     1.2578
+    ];
+
+gk.donadio.size =[...
+    4
+%    8
+    ];
+gk.donadio.num_atoms =[...
+    512
+    ];
+gk.donadio.cond =[...
+    1.1479
     ];
 
 gk.extrap=[...
