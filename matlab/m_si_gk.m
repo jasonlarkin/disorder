@@ -1,16 +1,16 @@
 clear
 %--------------------------------------------------------------------------
-str.main='/home/jason/disorder2/si/amor/normand/best100k/gk/';
+str.main='/home/jason/disorder2/si/amor/normand/800k/';
 %str.main='/home/jason/disorder2/si/amor/prepare/8x/gk/';
 %--------------------------------------------------------------------------
-GK.Nx = 22.845;
+GK.Nx = 2*22.845;
 GK.Lx = GK.Nx*5.43; GK.Ly = GK.Nx*5.43; GK.Lz = GK.Nx*5.43;
 % GK.Nx = 2.0;
 % GK.Lx = GK.Nx*21.2; GK.Ly = GK.Nx*21.2; GK.Lz = GK.Nx*21.2;
 
 GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------
-GK.SEEDS=[1:10];
+GK.SEEDS=[1:2];
 %42x
 %GK.SEEDS=[1 2 3:8];
 %--------------------------------------------------------------------------
