@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_031813.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-031313.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+You've used 82 entries,
+            3411 wiz_defined-function locations,
+            1643 strings with 26309 characters,
+and the built_in function-call counts, 61412 in all, are:
+= -- 3512
+> -- 2094
+< -- 298
++ -- 1733
+- -- 512
+* -- 8420
+:= -- 6506
+add.period$ -- 82
+call.type$ -- 82
+change.case$ -- 330
+chr.to.int$ -- 80
+cite$ -- 84
+duplicate$ -- 5333
+empty$ -- 5147
+format.name$ -- 1280
+if$ -- 11776
+int.to.chr$ -- 3
+int.to.str$ -- 83
+missing$ -- 823
+newline$ -- 261
+num.names$ -- 244
+pop$ -- 1352
+preamble$ -- 1
+purify$ -- 328
+quote$ -- 0
+skip$ -- 2446
+stack$ -- 0
+substring$ -- 2463
+swap$ -- 4294
+text.length$ -- 260
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 476
+warning$ -- 0
+while$ -- 235
+width$ -- 0
+write$ -- 874

@@ -1,5 +1,14 @@
 function cond = m_pbte_cond
 
+cond.mass.pb = 207.2;
+cond.mass.se = 78.96;
+cond.mass.te = 127.6;
+
+cond.c = [0;0.05;0.15;0.5;0.85;0.95;1.0];
+cond.vm(1:7) =...
+    ( (cond.mass.pb + cond.mass.te)/2.*(1-cond.c(:)) +...
+    (cond.c(:))*cond.mass.se )';
+
 %\cite{thermal_fedorov_1969}
 cond.qiu_expt = load('/home/jason/disorder/pbte/m_pbte_cond_qiu_expt.txt');
 cond.qiu_expt(:,1) = (cond.qiu_expt(:,1) - 32)*(5/9) + 273 ; 
