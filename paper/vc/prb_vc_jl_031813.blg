@@ -1,46 +1,54 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_vc_jl_031813.aux
 The style file: apsrev.bst
-Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-031313.bib
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-032013.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
-You've used 82 entries,
+Warning--missing publisher in vc_fn1_2013
+Warning--missing publisher in vc_fn2_2013
+Warning--missing publisher in vc_fn3_2013
+Warning--missing publisher in vc_fn4_2013
+Warning--missing publisher in vc_fn5_2013
+Warning--missing publisher in vc_fn6_2013
+Warning--missing publisher in vc_fn7_2013
+You've used 92 entries,
             3411 wiz_defined-function locations,
-            1643 strings with 26309 characters,
-and the built_in function-call counts, 61412 in all, are:
-= -- 3512
-> -- 2094
-< -- 298
-+ -- 1733
-- -- 512
-* -- 8420
-:= -- 6506
-add.period$ -- 82
-call.type$ -- 82
-change.case$ -- 330
-chr.to.int$ -- 80
-cite$ -- 84
-duplicate$ -- 5333
-empty$ -- 5147
-format.name$ -- 1280
-if$ -- 11776
-int.to.chr$ -- 3
-int.to.str$ -- 83
-missing$ -- 823
-newline$ -- 261
-num.names$ -- 244
-pop$ -- 1352
+            1683 strings with 29335 characters,
+and the built_in function-call counts, 66877 in all, are:
+= -- 3834
+> -- 2209
+< -- 316
++ -- 1815
+- -- 542
+* -- 9124
+:= -- 7149
+add.period$ -- 92
+call.type$ -- 92
+change.case$ -- 377
+chr.to.int$ -- 82
+cite$ -- 99
+duplicate$ -- 5844
+empty$ -- 5658
+format.name$ -- 1361
+if$ -- 12817
+int.to.chr$ -- 11
+int.to.str$ -- 93
+missing$ -- 924
+newline$ -- 291
+num.names$ -- 277
+pop$ -- 1508
 preamble$ -- 1
-purify$ -- 328
+purify$ -- 368
 quote$ -- 0
-skip$ -- 2446
+skip$ -- 2642
 stack$ -- 0
-substring$ -- 2463
-swap$ -- 4294
-text.length$ -- 260
+substring$ -- 2655
+swap$ -- 4659
+text.length$ -- 268
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 476
-warning$ -- 0
-while$ -- 235
+type$ -- 522
+warning$ -- 7
+while$ -- 260
 width$ -- 0
-write$ -- 874
+write$ -- 980
+(There were 7 warnings)

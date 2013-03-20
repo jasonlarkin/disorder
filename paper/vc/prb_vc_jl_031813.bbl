@@ -1,4 +1,4 @@
-\begin{thebibliography}{82}
+\begin{thebibliography}{92}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -153,8 +153,8 @@
   \bibinfo{pages}{155203} (\bibinfo{year}{2012}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.85.155203}.
 
-\bibitem[{\citenamefont{Tian et~al.}(2012)\citenamefont{Tian, Garg, Esfarjani,
-  Shiga, Shiomi, and Chen}}]{tian_phonon_2012}
+\bibitem[{\citenamefont{Tian et~al.}(2012{\natexlab{a}})\citenamefont{Tian,
+  Garg, Esfarjani, Shiga, Shiomi, and Chen}}]{tian_phonon_2012}
 \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Tian}},
   \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Garg}},
   \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
@@ -162,7 +162,7 @@
   \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Shiomi}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
   \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{85}},
-  \bibinfo{pages}{184303} (\bibinfo{year}{2012}),
+  \bibinfo{pages}{184303} (\bibinfo{year}{2012}{\natexlab{a}}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.85.184303}.
 
 \bibitem[{\citenamefont{Shiomi et~al.}(2011)\citenamefont{Shiomi, Esfarjani,
@@ -360,6 +360,36 @@
   \bibinfo{pages}{113524} (\bibinfo{year}{2008}),
   \urlprefix\url{http://link.aip.org/link/?JAP/103/113524/1}.
 
+\bibitem[{\citenamefont{Landry et~al.}(2008)\citenamefont{Landry, Hussein, and
+  {McGaughey}}}]{landry_complex_2008}
+\bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
+  \bibinfo{author}{\bibfnamefont{M.~I.} \bibnamefont{Hussein}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
+  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Physical Review B}
+  \textbf{\bibinfo{volume}{77}}, \bibinfo{pages}{184302}
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Landry and
+  {McGaughey}}(2009{\natexlab{a}})}]{landry_thermal_2009}
+\bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{80}},
+  \bibinfo{pages}{165304} (\bibinfo{year}{2009}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Tian et~al.}(2012{\natexlab{b}})\citenamefont{Tian,
+  Esfarjani, and Chen}}]{tian_enhancing_2012}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Tian}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{235304} (\bibinfo{year}{2012}{\natexlab{b}}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.86.235304}.
+
+\bibitem[{\citenamefont{Turney}(2009)}]{turney_predicting_2009}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{type}{{PhD} thesis}, \bibinfo{school}{Carnegie Mellon University},
+  \bibinfo{address}{Pittsburgh, {PA}} (\bibinfo{year}{2009}).
+
 \bibitem[{\citenamefont{Kudman}(1972)}]{kudman_thermoelectric_1972}
 \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Kudman}},
   \bibinfo{journal}{Journal of Materials Science} \textbf{\bibinfo{volume}{7}},
@@ -465,6 +495,13 @@
   (\bibinfo{year}{2011}),
   \urlprefix\url{http://stacks.iop.org/0953-8984/23/i=20/a=205401}.
 
+\bibitem[{\citenamefont{Chu and Zhang}(1989)}]{chu_effect_1989}
+\bibinfo{author}{\bibfnamefont{Q.-J.} \bibnamefont{Chu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.-Q.} \bibnamefont{Zhang}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{39}},
+  \bibinfo{pages}{7120–7131} (\bibinfo{year}{1989}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.39.7120}.
+
 \bibitem[{\citenamefont{{McGaughey} and Kaviany}(2006)}]{mcgaughey_phonon_2006}
 \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kaviany}},
@@ -517,11 +554,13 @@
   \bibinfo{pages}{051404} (\bibinfo{year}{2011}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.83.051404}.
 
-\bibitem[{vc_()}]{vc_fn1}
-\bibinfo{note}{\footnotemark[1]{For a finite-size system, the delta function in
-  Eq. \eqref{EQ:SLT} is broadened using a Lorentzian function with a full-width
-  at half maximum set to 20$\delta_{\omega,avg}$, where $\delta_{\omega,avg}$
-  is the average frequency spacing.\cite{feldman_numerical_1999} }}.
+\bibitem[{\citenamefont{vc}(2013{\natexlab{a}})}]{vc_fn1_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn1}}
+  (\bibinfo{year}{2013}{\natexlab{a}}), \bibinfo{note}{for a finite-size
+  system, the delta function in Eq. {\textbackslash}{eqrefEQ:SLT} is broadened
+  using a Lorentzian function with a full-width at half maximum set to
+  20$_{\textrm{ømega,avg}}$, where $_{\textrm{ømega,avg}}$ is the average
+  frequency spacing.{\textbackslash}citefeldman\_thermal\_1993}.
 
 \bibitem[{\citenamefont{Ladd et~al.}(1986)\citenamefont{Ladd, Moran, and
   Hoover}}]{ladd_lattice_1986}
@@ -545,6 +584,19 @@
   \emph{\bibinfo{title}{Introduction to Lattice Dynamics}}
   (\bibinfo{publisher}{Cambridge, Cambridge}, \bibinfo{year}{1993}).
 
+\bibitem[{\citenamefont{Maradudin and Fein}(1962)}]{maradudin_scattering_1962}
+\bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{Maradudin}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~E.} \bibnamefont{Fein}},
+  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{128}},
+  \bibinfo{pages}{2589–2608} (\bibinfo{year}{1962}).
+
+\bibitem[{\citenamefont{Sheng and Zhou}(1991)}]{sheng_heat_1991}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sheng}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zhou}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{253}},
+  \bibinfo{pages}{539–542} (\bibinfo{year}{1991}),
+  \urlprefix\url{http://www.sciencemag.org/content/253/5019/539.abstract}.
+
 \bibitem[{\citenamefont{Taraskin and
   Elliott}(1999)}]{taraskin_determination_1999}
 \bibinfo{author}{\bibfnamefont{S.~N.} \bibnamefont{Taraskin}} \bibnamefont{and}
@@ -561,11 +613,23 @@
   \bibinfo{pages}{5957–5962} (\bibinfo{year}{1977}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.15.5957}.
 
-\bibitem[{\citenamefont{Maradudin and Fein}(1962)}]{maradudin_scattering_1962}
-\bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{Maradudin}}
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~E.} \bibnamefont{Fein}},
-  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{128}},
-  \bibinfo{pages}{2589–2608} (\bibinfo{year}{1962}).
+\bibitem[{\citenamefont{vc}(2013{\natexlab{b}})}]{vc_fn2_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn2}}
+  (\bibinfo{year}{2013}{\natexlab{b}}), \bibinfo{note}{to perform the
+  calculation of Eq. {\textbackslash}{eqrefEQ:taud\_dos}, it is necessary to
+  broaden the {DOS} using using a Lorentzian function.
+  {\textbackslash}citetamura\_isotope\_1983 For all calculations using Eq.
+  {\textbackslash}{eqrefEQ:taud\_dos}, the Lorentzian was broadened using a
+  value of $_{\textrm{ømega,avg}}$. The results do not differ significantly if
+  this broadening value is varied manually or by increasing the system size.}
+
+\bibitem[{\citenamefont{vc}(2013{\natexlab{c}})}]{vc_fn3_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn3}}
+  (\bibinfo{year}{2013}{\natexlab{c}}), \bibinfo{note}{the {CP} model and {HS}
+  limit thermal conductivity predictions differ by a constant factor of
+  approximately \$20\%\$ because the {CP} model assumes a mode-specific
+  lifetime \${\textbackslash}tau =
+  2{\textbackslash}pi/ømega\$.{\textbackslash}citecahill\_lattice\_1988}.
 
 \bibitem[{\citenamefont{Shenogin et~al.}(2009)\citenamefont{Shenogin, Bodapati,
   Keblinski, and {McGaughey}}}]{shenogin_predicting_2009}
@@ -595,6 +659,23 @@
   \bibinfo{pages}{021301} (\bibinfo{year}{2010}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.81.021301}.
 
+\bibitem[{\citenamefont{vc}(2013{\natexlab{d}})}]{vc_fn4_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn4}}
+  (\bibinfo{year}{2013}{\natexlab{d}}), \bibinfo{note}{for a finite system, the
+  {AF} theory requires a frequency broadening to predict the mode-specific
+  thermal diffusivities.{\textbackslash}citeallen\_thermal\_1993 We use a
+  Lorentzian broadening with a width of $_{\textrm{ømega,avg}}$.}
+
+\bibitem[{\citenamefont{vc}(2013{\natexlab{e}})}]{vc_fn5_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn5}}
+  (\bibinfo{year}{2013}{\natexlab{e}}), \bibinfo{note}{for the disordered
+  lattices studied in this work for \$c{\textbackslash}le0.15\$, the predicted
+  $_{\textrm{{AF}}$} is strongly system size dependent, indicating this
+  diverging behavior. For {LJ} argon alloys at \$c=0.5\$, the divergence with
+  system size is small for the range of system size studied ({\$N\_0=4\$} to
+  {\$N\_0=12\$)}, where {\$k\_AF/k\_GK} = 0.93\$ for {\$N\_0=12\$} because the
+  finite system size limits the diffusivities of the lowest frequencies.}
+
 \bibitem[{\citenamefont{Xu et~al.}(2009)\citenamefont{Xu, Vitelli, Wyart, Liu,
   and Nagel}}]{xu_energy_2009}
 \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
@@ -606,41 +687,21 @@
   \bibinfo{pages}{038001} (\bibinfo{year}{2009}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.102.038001}.
 
-\bibitem[{\citenamefont{Sheng and Zhou}(1991)}]{sheng_heat_1991}
-\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sheng}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zhou}},
-  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{253}},
-  \bibinfo{pages}{539–542} (\bibinfo{year}{1991}),
-  \urlprefix\url{http://www.sciencemag.org/content/253/5019/539.abstract}.
-
-\bibitem[{\citenamefont{Kittel}(1949)}]{kittel_interpretation_1949}
-\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kittel}},
-  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{75}},
-  \bibinfo{pages}{974} (\bibinfo{year}{1949}).
-
-\bibitem[{\citenamefont{Graebner et~al.}(1986)\citenamefont{Graebner, Golding,
-  and Allen}}]{graebner_phonon_1986}
-\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Graebner}},
-  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Golding}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{L.~C.} \bibnamefont{Allen}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{34}},
-  \bibinfo{pages}{5696–5701} (\bibinfo{year}{1986}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.34.5696}.
-
-\bibitem[{\citenamefont{Landry et~al.}(2008)\citenamefont{Landry, Hussein, and
-  {McGaughey}}}]{landry_complex_2008}
-\bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
-  \bibinfo{author}{\bibfnamefont{M.~I.} \bibnamefont{Hussein}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
-  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Physical Review B}
-  \textbf{\bibinfo{volume}{77}}, \bibinfo{pages}{184302}
-  (\bibinfo{year}{2008}).
-
-\bibitem[{\citenamefont{Landry and {McGaughey}}(2009)}]{landry_effect_2009}
+\bibitem[{\citenamefont{Landry and
+  {McGaughey}}(2009{\natexlab{b}})}]{landry_effect_2009}
 \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
   \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{79}},
-  \bibinfo{pages}{075316} (\bibinfo{year}{2009}).
+  \bibinfo{pages}{075316} (\bibinfo{year}{2009}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{vc}(2013{\natexlab{f}})}]{vc_fn6_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn6}}
+  (\bibinfo{year}{2013}{\natexlab{f}}), \bibinfo{note}{the {AF} theory
+  predicted thermal conductivity of the amorphous {LJ} argon phase is
+  {\$k\_AF=0.14\$} W/m-K using a broadening of $_{\textrm{ømega,avg}}$. The
+  thermal conductivity is proportional to the broadening used, but to remain
+  consistent we do not adjust to bring $_{\textrm{{AF}}$} into better agreement
+  with $_{\textrm{{GK}}$.}}
 
 \bibitem[{\citenamefont{Sellan et~al.}(2010{\natexlab{b}})\citenamefont{Sellan,
   Landry, Turney, {McGaughey}, and Amon}}]{sellan_size_2010}
@@ -669,6 +730,15 @@
   \bibinfo{pages}{094302} (\bibinfo{year}{2011}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.84.094302}.
 
+\bibitem[{\citenamefont{vc}(2013{\natexlab{g}})}]{vc_fn7_2013}
+\bibinfo{author}{\bibnamefont{vc}}, \emph{\bibinfo{title}{fn7}}
+  (\bibinfo{year}{2013}{\natexlab{g}}), \bibinfo{note}{the overprediction of
+  thermal conductivity by {VC-ALD} compared to {GK} may be related to the role
+  of disorder in the {ALD} calculation. {\textbackslash}citegarg\_role\_2011 By
+  including disorder in the {ALD} calculation explicitly, Garg et al found an
+  overprediction of {VC-ALD} compared to experiment by a factor of two. The
+  overprediction by {VC-ALD} that we observe is not as drastic.}
+
 \bibitem[{\citenamefont{Cheaito et~al.}(2012)\citenamefont{Cheaito, Duda,
   Beechem, Hattar, Ihlefeld, Medlin, Rodriguez, Campion, Piekos, and
   Hopkins}}]{cheaito_experimental_2012}
@@ -686,6 +756,20 @@
   \textbf{\bibinfo{volume}{109}}, \bibinfo{pages}{195901}
   (\bibinfo{year}{2012}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.109.195901}.
+
+\bibitem[{\citenamefont{Kittel}(1949)}]{kittel_interpretation_1949}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kittel}},
+  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{75}},
+  \bibinfo{pages}{974} (\bibinfo{year}{1949}).
+
+\bibitem[{\citenamefont{Graebner et~al.}(1986)\citenamefont{Graebner, Golding,
+  and Allen}}]{graebner_phonon_1986}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Graebner}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Golding}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~C.} \bibnamefont{Allen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{5696–5701} (\bibinfo{year}{1986}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.34.5696}.
 
 \bibitem[{\citenamefont{Srivastava}(1990)}]{srivastava_physics_1990}
 \bibinfo{author}{\bibfnamefont{G.~P.} \bibnamefont{Srivastava}},

@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_vc_jl_032013.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-032013.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+Warning--missing publisher in vc_fn1_2013
+Warning--missing publisher in vc_fn2_2013
+Warning--missing publisher in vc_fn3_2013
+Warning--missing publisher in vc_fn4_2013
+Warning--missing publisher in vc_fn5_2013
+Warning--missing publisher in vc_fn6_2013
+Warning--missing publisher in vc_fn7_2013
+You've used 91 entries,
+            3411 wiz_defined-function locations,
+            1677 strings with 29116 characters,
+and the built_in function-call counts, 66157 in all, are:
+= -- 3786
+> -- 2192
+< -- 313
++ -- 1803
+- -- 538
+* -- 9030
+:= -- 7071
+add.period$ -- 91
+call.type$ -- 91
+change.case$ -- 373
+chr.to.int$ -- 81
+cite$ -- 98
+duplicate$ -- 5786
+empty$ -- 5596
+format.name$ -- 1348
+if$ -- 12672
+int.to.chr$ -- 11
+int.to.str$ -- 92
+missing$ -- 915
+newline$ -- 288
+num.names$ -- 274
+pop$ -- 1494
+preamble$ -- 1
+purify$ -- 364
+quote$ -- 0
+skip$ -- 2610
+stack$ -- 0
+substring$ -- 2610
+swap$ -- 4614
+text.length$ -- 266
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 516
+warning$ -- 7
+while$ -- 257
+width$ -- 0
+write$ -- 969
+(There were 7 warnings)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  18 MAR 2013 18:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  20 MAR 2013 18:26
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_031813.tex
@@ -245,87 +245,87 @@ File: lipsum.dtx 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
 ) (./prb_vc_jl_031813.aux)
 \openout1 = `prb_vc_jl_031813.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 231.
-LaTeX Font Info:    ... okay on input line 231.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 231.
-LaTeX Font Info:    ... okay on input line 231.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 231.
-LaTeX Font Info:    ... okay on input line 231.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 231.
-LaTeX Font Info:    ... okay on input line 231.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 231.
-LaTeX Font Info:    ... okay on input line 231.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 231.
-LaTeX Font Info:    ... okay on input line 231.
-Class revtex4 Info: Patching array package. on input line 231.
-Class revtex4 Info: cite was not loaded (OK!) on input line 231.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 231.
-LaTeX Font Info:    Try loading font information for U+msa on input line 275.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+Class revtex4 Info: Patching array package. on input line 248.
+Class revtex4 Info: cite was not loaded (OK!) on input line 248.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 248.
+LaTeX Font Info:    Try loading font information for U+msa on input line 292.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 275.
+LaTeX Font Info:    Try loading font information for U+msb on input line 292.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1] [2] [3] [4] [5]
-File: /home/jason/disorder/si/si_conv_2x2x2_disorder-4.eps Graphic file (type e
-ps)
+File: /home/jason/disorder/paper/vc/m_supercell_gimp.eps Graphic file (type eps
+)
 
-</home/jason/disorder/si/si_conv_2x2x2_disorder-4.eps>
-File: /home/jason/disorder/si/si_conv_2x2x2_perfect-4.eps Graphic file (type ep
-s)
+</home/jason/disorder/paper/vc/m_supercell_gimp.eps> [6] [7]
 
-</home/jason/disorder/si/si_conv_2x2x2_perfect-4.eps> [6]
-
-LaTeX Warning: Command \r invalid in math mode on input line 681.
+LaTeX Warning: Command \r invalid in math mode on input line 719.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 691.
+LaTeX Warning: Command \r invalid in math mode on input line 734.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 692.
+LaTeX Warning: Command \r invalid in math mode on input line 735.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 704.
+LaTeX Warning: Command \r invalid in math mode on input line 747.
 
-[7] [8]
+[8] [9]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps Graphic file (type
  eps)
- </home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps> [9] [10]
+ </home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps> [10] [11]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-3.eps Graphic file (ty
 pe eps)
 
-</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-3.eps> [11] [12] [13]
-[14]
+</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-3.eps> [12] [13] [14]
+[15]
 File: /home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps Graphic fi
 le (type eps)
- </home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps> [15]
-[16] [17]
+ </home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps>
+
+LaTeX Warning: Float too large for page by 3.2028pt on input line 1146.
+
+[16] [17] [18]
 File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps Graphic 
 file (type eps)
- </home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps>
-[18] [19] [20]
-File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps Graphic file (type 
+
+</home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps> [19]
+[20] [21]
+File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_3.eps Graphic file (type 
 eps)
- </home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_2.eps> [21]
-[22] [23] [24]
+ </home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_3.eps> [22] [23]
+[24] [25]
 File: /home/jason/disorder/lj/alloy/lj_cond_compare_2.eps Graphic file (type ep
 s)
- </home/jason/disorder/lj/alloy/lj_cond_compare_2.eps> [25]
-[26] [27] [28]
+ </home/jason/disorder/lj/alloy/lj_cond_compare_2.eps> [26] [27]
+[28] [29]
 File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5-2.eps Graphic fil
 e (type eps)
  </home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5-2.eps>
 File: /home/jason/disorder/si/alloy/m_si_cond_compare.eps Graphic file (type ep
 s)
 
-</home/jason/disorder/si/alloy/m_si_cond_compare.eps> [29] [30] [31]
-File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps Graphic file (ty
-pe eps)
+</home/jason/disorder/si/alloy/m_si_cond_compare.eps> [30] [31] [32]
+File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps Graphic file (
+type eps)
 
-</home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare.eps>
-(./prb_vc_jl_031813.bbl [32] [33]
+</home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps>
+(./prb_vc_jl_031813.bbl [33] [34]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -335,16 +335,6 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
- [34]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -367,27 +357,7 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
  [36]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 487.
-
-
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 487.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -404,19 +374,132 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 524.
+
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 524.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [38]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.677 ...diffusivities of the lowest frequencies.}
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+<argument> ...$, the predicted $_{\textrm {{AF}}$}
+                                                   is strongly system size d...
+l.677 ...diffusivities of the lowest frequencies.}
+                                                  
+? 
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+! Missing } inserted.
+<inserted text> 
+                }
+l.704   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+! Extra }, or forgotten \endgroup.
+<argument> ... adjust to bring $_{\textrm {{AF}}$}
+                                                   into better agreement wit...
+l.704   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.704   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+! Extra }, or forgotten \endgroup.
+<argument> ... agreement with $_{\textrm {{GK}}$.}
+                                                  
+l.704   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+[39]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
 )
 
 Class revtex4 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[38] (./prb_vc_jl_031813.aux) ) 
+[40] (./prb_vc_jl_031813.aux) ) 
 Here is how much of TeX's memory you used:
- 3982 strings out of 493849
- 52246 string characters out of 1152845
- 228506 words of memory out of 3000000
- 7197 multiletter control sequences out of 15000+50000
+ 4011 strings out of 493849
+ 52865 string characters out of 1152845
+ 228244 words of memory out of 3000000
+ 7227 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,25n,32p,997b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,25n,32p,1010b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_031813.dvi (38 pages, 102456 bytes).
+Output written on prb_vc_jl_031813.dvi (40 pages, 106464 bytes).

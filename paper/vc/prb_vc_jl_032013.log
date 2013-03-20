@@ -1,0 +1,723 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  20 MAR 2013 14:40
+entering extended mode
+ %&-line parsing enabled.
+**prb_vc_jl_032013.tex
+(./prb_vc_jl_032013.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count90
+\c@table=\count91
+
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count92
+)
+\widetext@top=\box32
+\widetext@bot=\box33
+
+(/usr/share/texmf-texlive/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Info: Redefining \frak on input line 99.
+LaTeX Info: Redefining \Bbb on input line 101.
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen102
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen103
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip11
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks18
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks19
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks20
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/usr/share/texmf-texlive/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen113
+\extrarowheight=\dimen114
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+))
+(/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen115
+)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count105
+\@cmidlb=\count106
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count107
+\@lastruleclass=\count108
+\@thisrulewidth=\dimen128
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen129
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen130
+\subfiglabelskip=\skip53
+\c@subfigure=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@lotdepth=\count112
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(/usr/share/texmf-texlive/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
+File: lipsum.dtx 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count113
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2009/10/17 v2.4 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2009/10/17 v2.4 Base part for package epstopdf
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+
+Package epstopdf Warning: Other drivers than `pdftex.def' are not supported.
+
+)) (./prb_vc_jl_032013.aux)
+\openout1 = `prb_vc_jl_032013.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+Class revtex4 Info: Patching array package. on input line 248.
+Class revtex4 Info: cite was not loaded (OK!) on input line 248.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 248.
+LaTeX Font Info:    Try loading font information for U+msa on input line 292.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 292.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+
+! LaTeX Error: File `/home/jason/disorder/paper/vc/m_supercell_gimp.pdf' not fo
+und.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.676 ...n/disorder/paper/vc/m_supercell_gimp.eps}
+                                                  
+? 
+
+! LaTeX Error: Cannot determine size of graphic in /home/jason/disorder/paper/v
+c/m_supercell_gimp.pdf (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.676 ...n/disorder/paper/vc/m_supercell_gimp.eps}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: pdf.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.676 ...n/disorder/paper/vc/m_supercell_gimp.eps}
+                                                  
+? 
+[6] [7]
+
+LaTeX Warning: Command \r invalid in math mode on input line 721.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 736.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 737.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 749.
+
+[8] [9]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.821 ...sorder/lj/alloy/lj_alloy_dos_c05-5_5.eps}
+                                                  
+? 
+! Extra }, or forgotten $.
+\Gin@setfile ...se #1\fi \endcsname {\Gin@base #2}
+                                                  \else \Gin@nosize {#3}\fi ...
+l.821 ...sorder/lj/alloy/lj_alloy_dos_c05-5_5.eps}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.821 ...sorder/lj/alloy/lj_alloy_dos_c05-5_5.eps}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.821 ...sorder/lj/alloy/lj_alloy_dos_c05-5_5.eps}
+                                                  
+? 
+[10] [11]
+
+LaTeX Warning: Reference `F:SF' on page 12 undefined on input line 928.
+
+
+LaTeX Warning: Reference `F:SF' on page 12 undefined on input line 940.
+
+
+LaTeX Warning: Reference `F:SF' on page 12 undefined on input line 946.
+
+
+LaTeX Warning: Reference `F:SF' on page 12 undefined on input line 952.
+
+[12] [13]
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 14 undefined on input line 1
+062.
+
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 14 undefined on input line 1
+062.
+
+
+LaTeX Warning: Reference `F:Dph_lj' on page 14 undefined on input line 1079.
+
+
+LaTeX Warning: Reference `F:Diffusivities' on page 14 undefined on input line 1
+087.
+
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 14 undefined on input line 1
+101.
+
+
+LaTeX Warning: Reference `F:Dph_si' on page 14 undefined on input line 1102.
+
+[14] [15]
+
+LaTeX Warning: Reference `F:Dph_lj' on page 16 undefined on input line 1213.
+
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 16 undefined on input line 1
+215.
+
+[16] [17]
+
+LaTeX Warning: Reference `F:Dph_lj' on page 18 undefined on input line 1345.
+
+
+LaTeX Warning: Reference `F:AF' on page 18 undefined on input line 1366.
+
+[18]
+
+LaTeX Warning: Reference `F:AF' on page 19 undefined on input line 1378.
+
+[19]
+
+LaTeX Warning: Reference `F:AF' on page 20 undefined on input line 1431.
+
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 20 undefined on input line 1
+439.
+
+
+LaTeX Warning: Reference `F:Dph_lj' on page 20 undefined on input line 1446.
+
+[20]
+
+LaTeX Warning: Reference `F:cond_lj' on page 21 undefined on input line 1506.
+
+
+LaTeX Warning: Reference `F:cond_lj' on page 21 undefined on input line 1507.
+
+
+LaTeX Warning: Reference `F:Dph_lj' on page 21 undefined on input line 1525.
+
+
+LaTeX Warning: Reference `F:cond_lj' on page 21 undefined on input line 1531.
+
+
+LaTeX Warning: Reference `F:AF' on page 21 undefined on input line 1544.
+
+[21]
+
+LaTeX Warning: Reference `F:Dph_lj' on page 22 undefined on input line 1551.
+
+
+LaTeX Warning: Reference `F:Dph_lj' on page 22 undefined on input line 1564.
+
+[22] [23]
+
+LaTeX Warning: Reference `F:Dph_lj' on page 24 undefined on input line 1681.
+
+
+LaTeX Warning: Reference `F:Dph_lj' on page 24 undefined on input line 1681.
+
+
+LaTeX Warning: Reference `F:Dph_si' on page 24 undefined on input line 1687.
+
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 24 undefined on input line 1
+691.
+
+
+LaTeX Warning: Reference `F:VC Gamma life' on page 24 undefined on input line 1
+697.
+
+
+LaTeX Warning: Reference `F:Dph_lj' on page 24 undefined on input line 1698.
+
+
+LaTeX Warning: Reference `F:Dph_si' on page 24 undefined on input line 1699.
+
+
+LaTeX Warning: Reference `F:Dph_si' on page 24 undefined on input line 1705.
+
+
+LaTeX Warning: Reference `F:cond_si' on page 24 undefined on input line 1718.
+
+[24]
+
+LaTeX Warning: Reference `F:Dph_lj' on page 25 undefined on input line 1906.
+
+[25]
+
+LaTeX Warning: Reference `F:NMD XCORR' on page 26 undefined on input line 2084.
+
+
+
+LaTeX Warning: Reference `F:NMD XCORR' on page 26 undefined on input line 2084.
+
+
+
+LaTeX Warning: Reference `F:NMD XCORR' on page 26 undefined on input line 2088.
+
+
+[26] (./prb_vc_jl_032013.bbl [27]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [28]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [29]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [30]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 517.
+
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 517.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+ [31]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.670 ...diffusivities of the lowest frequencies.}
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+<argument> ...$, the predicted $_{\textrm {{AF}}$}
+                                                   is strongly system size d...
+l.670 ...diffusivities of the lowest frequencies.}
+                                                  
+? 
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¸ in font cmr10!
+Missing character: There is no Ã in font cmr8!
+Missing character: There is no ¸ in font cmr8!
+Missing character: There is no Ã in font cmr6!
+Missing character: There is no ¸ in font cmr6!
+! Missing } inserted.
+<inserted text> 
+                }
+l.697   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+! Extra }, or forgotten \endgroup.
+<argument> ... adjust to bring $_{\textrm {{AF}}$}
+                                                   into better agreement wit...
+l.697   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.697   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+! Extra }, or forgotten \endgroup.
+<argument> ... agreement with $_{\textrm {{GK}}$.}
+                                                  
+l.697   with $_{\textrm{{GK}}$.}}
+                                 
+? 
+[32]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+)
+
+Class revtex4 Warning: Environment acknowledgements is obsolete;
+Use acknowledgments instead.
+
+[33] (./prb_vc_jl_032013.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4256 strings out of 493849
+ 56805 string characters out of 1152845
+ 233241 words of memory out of 3000000
+ 7448 multiletter control sequences out of 15000+50000
+ 16902 words of font info for 62 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 41i,25n,32p,777b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+msy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmtt10.pfb>
+Output written on prb_vc_jl_032013.pdf (33 pages, 336406 bytes).
+PDF statistics:
+ 180 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
