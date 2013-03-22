@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 02:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 17:18
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_031813.tex
@@ -274,16 +274,16 @@ ps)
 
 </home/jason/disorder/paper/vc/m_supercell_gimp_2.eps> [6] [7]
 
-LaTeX Warning: Command \r invalid in math mode on input line 731.
+LaTeX Warning: Command \r invalid in math mode on input line 729.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 746.
+LaTeX Warning: Command \r invalid in math mode on input line 744.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 747.
+LaTeX Warning: Command \r invalid in math mode on input line 745.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 759.
+LaTeX Warning: Command \r invalid in math mode on input line 757.
 
 [8] [9]
 File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps Graphic file (type
@@ -316,12 +316,12 @@ e (type eps)
 File: /home/jason/disorder/si/alloy/m_si_cond_compare.eps Graphic file (type ep
 s)
 
-</home/jason/disorder/si/alloy/m_si_cond_compare.eps> [30] [31] [32]
+</home/jason/disorder/si/alloy/m_si_cond_compare.eps> [30] [31] [32] [33]
+[34]
 File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps Graphic file (
 type eps)
-
-</home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps>
-(./prb_vc_jl_031813.bbl [33] [34]
+ </home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps>
+(./prb_vc_jl_031813.bbl [35]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -346,26 +346,10 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
- [35]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
  [36]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -379,14 +363,6 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 549.
-
-
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 549.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -403,22 +379,46 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 528.
+
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 528.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [39])
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [39]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [40])
 
 Class revtex4 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[40] (./prb_vc_jl_031813.aux) ) 
+[41] (./prb_vc_jl_031813.aux) ) 
 Here is how much of TeX's memory you used:
- 4006 strings out of 493849
- 52785 string characters out of 1152845
- 227965 words of memory out of 3000000
- 7222 multiletter control sequences out of 15000+50000
+ 4003 strings out of 493849
+ 52729 string characters out of 1152845
+ 227552 words of memory out of 3000000
+ 7219 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,25n,32p,938b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,25n,32p,935b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_031813.dvi (40 pages, 106780 bytes).
+Output written on prb_vc_jl_031813.dvi (41 pages, 106528 bytes).

@@ -1,4 +1,4 @@
-\begin{thebibliography}{91}
+\begin{thebibliography}{90}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -28,15 +28,14 @@
   \textbf{\bibinfo{volume}{39}}, \bibinfo{pages}{93–121}
   (\bibinfo{year}{1988}).
 
-\bibitem[{\citenamefont{{LU} et~al.}(1992)\citenamefont{{LU},
-  {ARDUINI-SCHUSTER}, {KUHN}, {NILSSON}, {FRICKE}, and
-  {PEKALA}}}]{lu_thermal_1992}
-\bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{LU}}},
-  \bibinfo{author}{\bibfnamefont{M.~C.} \bibnamefont{{ARDUINI-SCHUSTER}}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{KUHN}}},
-  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{{NILSSON}}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{FRICKE}}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{R.~W.} \bibnamefont{{PEKALA}}},
+\bibitem[{\citenamefont{Lu et~al.}(1992)\citenamefont{Lu, Arduini-Schuster,
+  Kuhn, Nilsson, Fricke, and Pekala}}]{lu_thermal_1992}
+\bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Lu}},
+  \bibinfo{author}{\bibfnamefont{M.~C.} \bibnamefont{Arduini-Schuster}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Kuhn}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Nilsson}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Fricke}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~W.} \bibnamefont{Pekala}},
   \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{255}},
   \bibinfo{pages}{971} (\bibinfo{year}{1992}),
   \urlprefix\url{http://www.sciencemag.org/content/255/5047/971.abstract}.
@@ -162,6 +161,16 @@
   \bibinfo{journal}{Philosophical Magazine B} \textbf{\bibinfo{volume}{79}},
   \bibinfo{pages}{1715} (\bibinfo{year}{1999}).
 
+\bibitem[{\citenamefont{Broido et~al.}(2007)\citenamefont{Broido, Maloney,
+  Birner, Mingo, and Stewart}}]{broido_intrinsic_2007}
+\bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Maloney}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Birner}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Mingo}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Stewart}},
+  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{231922} (\bibinfo{year}{2007}).
+
 \bibitem[{\citenamefont{Ward and Broido}(2010)}]{ward_intrinsic_2010}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ward}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
@@ -250,6 +259,15 @@
   \bibinfo{pages}{936} (\bibinfo{year}{2012}),
   \urlprefix\url{http://www.sciencemag.org/content/338/6109/936.abstract}.
 
+\bibitem[{\citenamefont{Ward et~al.}(2009)\citenamefont{Ward, Broido, Stewart,
+  and Deinzer}}]{ward_ab_2009}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ward}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Stewart}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Deinzer}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{80}},
+  \bibinfo{pages}{125203} (\bibinfo{year}{2009}).
+
 \bibitem[{\citenamefont{Bao et~al.}(2012)\citenamefont{Bao, Qiu, Zhang, and
   Ruan}}]{bao_first-principles_2012}
 \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Bao}},
@@ -285,34 +303,17 @@
   \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{31}},
   \bibinfo{pages}{5262–5271} (\bibinfo{year}{1985}).
 
-\bibitem[{\citenamefont{Peierls}(2001)}]{peierls_quantum_2001}
-\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Peierls}},
-  \emph{\bibinfo{title}{Quantum Theory of Solids}} (\bibinfo{publisher}{Oxford
-  University Press}, \bibinfo{year}{2001}).
-
-\bibitem[{\citenamefont{Broido et~al.}(2007)\citenamefont{Broido, Maloney,
-  Birner, Mingo, and Stewart}}]{broido_intrinsic_2007}
-\bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Maloney}},
-  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Birner}},
-  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Mingo}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Stewart}},
-  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{91}},
-  \bibinfo{pages}{231922} (\bibinfo{year}{2007}).
-
-\bibitem[{\citenamefont{Ward et~al.}(2009)\citenamefont{Ward, Broido, Stewart,
-  and Deinzer}}]{ward_ab_2009}
-\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ward}},
-  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
-  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Stewart}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Deinzer}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{80}},
-  \bibinfo{pages}{125203} (\bibinfo{year}{2009}).
-
 \bibitem[{\citenamefont{{McQuarrie}}(2000)}]{mcquarrie_statistical_2000}
 \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{{McQuarrie}}},
   \emph{\bibinfo{title}{Statistical Mechanics}} (\bibinfo{publisher}{University
   Science Books, Sausalito}, \bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{{McGaughey} and
+  Kaviany}(2004)}]{mcgaughey_quantitative_2004}
+\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kaviany}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{094303} (\bibinfo{year}{2004}).
 
 \bibitem[{\citenamefont{Goicochea et~al.}(2010)\citenamefont{Goicochea, Madrid,
   and Amon}}]{goicochea_thermal_2010}
@@ -321,17 +322,6 @@
   \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
   \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{132}},
   \bibinfo{pages}{012401} (\bibinfo{year}{2010}).
-
-\bibitem[{\citenamefont{Larkin et~al.}(2012)\citenamefont{Larkin, Turney,
-  Massicotte, Amon, and {McGaughey}}}]{larkin_comparison_2012}
-\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Larkin}},
-  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
-  \bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{Massicotte}},
-  \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
-  \bibinfo{journal}{submitted to Journal of Computational and Theoretical
-  Nanoscience.} \textbf{\bibinfo{volume}{yes}}, \bibinfo{pages}{yes}
-  (\bibinfo{year}{2012}).
 
 \bibitem[{\citenamefont{Allen and Feldman}(1993)}]{allen_thermal_1993}
 \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}} \bibnamefont{and}
@@ -440,17 +430,6 @@
   \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{473}}, \bibinfo{pages}{66}
   (\bibinfo{year}{2011}), ISSN \bibinfo{issn}{0028-0836},
   \urlprefix\url{http://dx.doi.org/10.1038/nature09996}.
-
-\bibitem[{\citenamefont{Koh et~al.}(2009)\citenamefont{Koh, Vineis, Calawa,
-  Walsh, and Cahill}}]{koh_lattice_2009}
-\bibinfo{author}{\bibfnamefont{Y.~K.} \bibnamefont{Koh}},
-  \bibinfo{author}{\bibfnamefont{C.~J.} \bibnamefont{Vineis}},
-  \bibinfo{author}{\bibfnamefont{S.~D.} \bibnamefont{Calawa}},
-  \bibinfo{author}{\bibfnamefont{M.~P.} \bibnamefont{Walsh}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
-  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{94}},
-  \bibinfo{pages}{153101} (\bibinfo{year}{2009}),
-  \urlprefix\url{http://link.aip.org/link/?APL/94/153101/1}.
 
 \bibitem[{\citenamefont{Momma and Izumi}(2008)}]{momma_vesta:_2008}
 \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Momma}} \bibnamefont{and}
@@ -602,6 +581,16 @@
   \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{79}},
   \bibinfo{pages}{064301} (\bibinfo{year}{2009}).
 
+\bibitem[{\citenamefont{Larkin et~al.}(2012)\citenamefont{Larkin, Turney,
+  Massicotte, Amon, and {McGaughey}}}]{larkin_comparison_2012}
+\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Larkin}},
+  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{Massicotte}},
+  \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibinfo{journal}{to appear in Journal of Computational and Theoretical
+  Nanoscience}  (\bibinfo{year}{2012}).
+
 \bibitem[{\citenamefont{Dove}(1993)}]{dove_introduction_1993}
 \bibinfo{author}{\bibfnamefont{M.~T.} \bibnamefont{Dove}},
   \emph{\bibinfo{title}{Introduction to Lattice Dynamics}}
@@ -632,9 +621,7 @@
 \bibitem[{vc_({\natexlab{b}})}]{vc_fn2}
 \bibinfo{note}{To perform the calculation of Eq. \eqref{EQ:taud_dos}, it is
   necessary to broaden the DOS using using a Lorentzian function.
-  \cite{tamura_isotope_1983} For all calculations using Eq.
-  \eqref{EQ:taud_dos}, the Lorentzian was broadened using a value of
-  $100\delta_{\omega,avg}$.}
+  \cite{tamura_isotope_1983} We use a value of $100\delta_{\omega,avg}$.}
 
 \bibitem[{\citenamefont{Shenogin et~al.}(2009)\citenamefont{Shenogin, Bodapati,
   Keblinski, and {McGaughey}}}]{shenogin_predicting_2009}
@@ -671,12 +658,12 @@
   function with a width $\delta_{\omega,avg}$.}
 
 \bibitem[{vc_({\natexlab{d}})}]{vc_fn5}
-\bibinfo{note}{For the disordered lattices studied in this work with
-  $c\le0.15$, the predicted $k_{AF}$ is strongly system-size dependent,
-  indicating this diverging behavior. For LJ argon alloys at $c=0.5$, the
-  divergence with system size is small for the range of system size studied
-  ($N_0=4$ to $N_0=12$), where $k_{AF}/k_{GK} = 0.93$ for $N_0=12$ because the
-  finite system-size limits the diffusivities of the lowest frequencies.}
+\bibinfo{note}{For the LJ alloys with $c\le0.15$, the predicted $k_{AF}$ is
+  strongly system-size dependent, indicating this diverging behavior. For LJ
+  argon alloys at $c=0.5$, the divergence with system size is small for the
+  range of system size studied ($N_0=4$ to $N_0=12$). For $N_0=12$,
+  $k_{AF}/k_{GK} = 0.93$ because the finite system-size limits the
+  diffusivities of the lowest frequencies.}
 
 \bibitem[{\citenamefont{Xu et~al.}(2009)\citenamefont{Xu, Vitelli, Wyart, Liu,
   and Nagel}}]{xu_energy_2009}
@@ -704,13 +691,6 @@
   \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Physical Review B}
   \textbf{\bibinfo{volume}{77}}, \bibinfo{pages}{184302}
   (\bibinfo{year}{2008}).
-
-\bibitem[{\citenamefont{{McGaughey} and
-  Kaviany}(2004)}]{mcgaughey_quantitative_2004}
-\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kaviany}},
-  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{69}},
-  \bibinfo{pages}{094303} (\bibinfo{year}{2004}).
 
 \bibitem[{\citenamefont{Sellan et~al.}(2010{\natexlab{b}})\citenamefont{Sellan,
   Landry, Turney, {McGaughey}, and Amon}}]{sellan_size_2010}
@@ -761,6 +741,13 @@
 \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kittel}},
   \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{75}},
   \bibinfo{pages}{974} (\bibinfo{year}{1949}).
+
+\bibitem[{\citenamefont{{McGaughey} and
+  Larkin}(2013)}]{mcgaughey_predicting_2013}
+\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~M.}
+  \bibnamefont{Larkin}}, \bibinfo{journal}{to appear in Annual Review of Heat
+  Transfer} \textbf{\bibinfo{volume}{17}} (\bibinfo{year}{2013}).
 
 \bibitem[{\citenamefont{Landau et~al.}(1980)\citenamefont{Landau, Lifshitz, and
   Pitaevskii}}]{landau_statistical_1980}

@@ -3,44 +3,44 @@ The top-level auxiliary file: prb_vc_jl_031813.aux
 The style file: apsrev.bst
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-032013.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
-You've used 91 entries,
+You've used 90 entries,
             3411 wiz_defined-function locations,
-            1686 strings with 28566 characters,
-and the built_in function-call counts, 66864 in all, are:
-= -- 3839
-> -- 2268
-< -- 322
-+ -- 1887
-- -- 554
-* -- 9146
-:= -- 7082
-add.period$ -- 91
-call.type$ -- 91
-change.case$ -- 370
-chr.to.int$ -- 85
-cite$ -- 99
-duplicate$ -- 5812
-empty$ -- 5605
-format.name$ -- 1388
-if$ -- 12811
+            1680 strings with 28301 characters,
+and the built_in function-call counts, 65982 in all, are:
+= -- 3796
+> -- 2237
+< -- 318
++ -- 1859
+- -- 546
+* -- 9019
+:= -- 6994
+add.period$ -- 90
+call.type$ -- 90
+change.case$ -- 366
+chr.to.int$ -- 84
+cite$ -- 98
+duplicate$ -- 5739
+empty$ -- 5526
+format.name$ -- 1373
+if$ -- 12639
 int.to.chr$ -- 7
-int.to.str$ -- 92
-missing$ -- 893
-newline$ -- 288
-num.names$ -- 262
-pop$ -- 1505
+int.to.str$ -- 91
+missing$ -- 879
+newline$ -- 285
+num.names$ -- 259
+pop$ -- 1490
 preamble$ -- 1
-purify$ -- 364
+purify$ -- 360
 quote$ -- 0
-skip$ -- 2646
+skip$ -- 2610
 stack$ -- 0
-substring$ -- 2672
-swap$ -- 4661
-text.length$ -- 281
+substring$ -- 2632
+swap$ -- 4594
+text.length$ -- 277
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 530
+type$ -- 526
 warning$ -- 0
-while$ -- 252
+while$ -- 248
 width$ -- 0
-write$ -- 960
+write$ -- 949
