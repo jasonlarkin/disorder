@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  18 MAR 2013 12:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  21 MAR 2013 18:24
 entering extended mode
  %&-line parsing enabled.
-**prb_vc_031813.tex
+**prb_vc_jl_0318
 (/usr/share/texmf-texlive/tex/latex/tools/x.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -24,11 +24,11 @@ and deduce the truth by order and method.
  ) 
 Here is how much of TeX's memory you used:
  7 strings out of 493849
- 243 string characters out of 1152845
+ 244 string characters out of 1152845
  47808 words of memory out of 3000000
  3381 multiletter control sequences out of 15000+50000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 5i,0n,1p,97b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,1p,94b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 No pages of output.

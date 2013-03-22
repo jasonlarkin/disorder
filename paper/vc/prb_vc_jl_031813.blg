@@ -3,52 +3,44 @@ The top-level auxiliary file: prb_vc_jl_031813.aux
 The style file: apsrev.bst
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-032013.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
-Warning--missing publisher in vc_fn1_2013
-Warning--missing publisher in vc_fn2_2013
-Warning--missing publisher in vc_fn3_2013
-Warning--missing publisher in vc_fn4_2013
-Warning--missing publisher in vc_fn5_2013
-Warning--missing publisher in vc_fn6_2013
-Warning--missing publisher in vc_fn7_2013
-You've used 92 entries,
+You've used 91 entries,
             3411 wiz_defined-function locations,
-            1683 strings with 29335 characters,
-and the built_in function-call counts, 66877 in all, are:
-= -- 3834
-> -- 2209
-< -- 316
-+ -- 1815
-- -- 542
-* -- 9124
-:= -- 7149
-add.period$ -- 92
-call.type$ -- 92
-change.case$ -- 377
-chr.to.int$ -- 82
+            1686 strings with 28566 characters,
+and the built_in function-call counts, 66864 in all, are:
+= -- 3839
+> -- 2268
+< -- 322
++ -- 1887
+- -- 554
+* -- 9146
+:= -- 7082
+add.period$ -- 91
+call.type$ -- 91
+change.case$ -- 370
+chr.to.int$ -- 85
 cite$ -- 99
-duplicate$ -- 5844
-empty$ -- 5658
-format.name$ -- 1361
-if$ -- 12817
-int.to.chr$ -- 11
-int.to.str$ -- 93
-missing$ -- 924
-newline$ -- 291
-num.names$ -- 277
-pop$ -- 1508
+duplicate$ -- 5812
+empty$ -- 5605
+format.name$ -- 1388
+if$ -- 12811
+int.to.chr$ -- 7
+int.to.str$ -- 92
+missing$ -- 893
+newline$ -- 288
+num.names$ -- 262
+pop$ -- 1505
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 364
 quote$ -- 0
-skip$ -- 2642
+skip$ -- 2646
 stack$ -- 0
-substring$ -- 2655
-swap$ -- 4659
-text.length$ -- 268
+substring$ -- 2672
+swap$ -- 4661
+text.length$ -- 281
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 522
-warning$ -- 7
-while$ -- 260
+type$ -- 530
+warning$ -- 0
+while$ -- 252
 width$ -- 0
-write$ -- 980
-(There were 7 warnings)
+write$ -- 960
