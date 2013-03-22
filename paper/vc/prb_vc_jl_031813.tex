@@ -1043,6 +1043,8 @@ an ensemble average.\cite{larkin_comparison_2012}
 Equation \eqref{EQ:tau_nmd} 
 is derived by assuming that the energy autocorrelation follows an 
 exponential decay.\cite{ladd_lattice_1986,turney_predicting_2009-1} 
+The NMD calculations scale 
+as $(N_a)^2$.\cite{turney_predicting_2009}  
 
 We perform the MD simulations using the fully disordered supercells  
 and project onto the frequencies and eigenvectors 
@@ -1050,7 +1052,7 @@ from both the VC unit cell [$\omega\kv$, $e\kvba$] and the
 Gamma supercell [$\omega\kgv$, $e\kgvba$]. 
 The trajectories from 
 these MD simulations are also used in the GK method calculations
-(Section \ref{S:Thermal Conductivity}).  
+(Section \ref{S:Thermal Conductivity}). 
 The MD simulations were ten times longer than the 
 longest lifetime in the system, which was  
 estimated from the VC-ALD predicted lifetimes. For LJ 
@@ -1159,7 +1161,8 @@ VC-NMD and VC-ALD lifetimes in Fig. \ref{F:Dph_lj}(a).
 Under the VC approximation, the 
 ALD calculations\cite{turney_predicting_2009-1} are performed on the 
 conventional unit cells of LJ argon and SW silicon with a single  
-atomic mass based on the alloy concentration. Disorder is not included 
+atomic mass based on the alloy concentration. The ALD calculations scale 
+as $b^4$ and $(N_{0})^2$.\cite{turney_predicting_2009} Disorder is not included 
 explicitly but is treated using perturbation theory. 
 Assuming phonon scattering mechanisms 
 to operate independently, the 

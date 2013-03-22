@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 17:18
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 18:25
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_031813.tex
@@ -413,12 +413,12 @@ Use acknowledgments instead.
 
 [41] (./prb_vc_jl_031813.aux) ) 
 Here is how much of TeX's memory you used:
- 4003 strings out of 493849
- 52729 string characters out of 1152845
+ 4004 strings out of 493849
+ 52739 string characters out of 1152845
  227552 words of memory out of 3000000
- 7219 multiletter control sequences out of 15000+50000
+ 7220 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  33i,25n,32p,935b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_031813.dvi (41 pages, 106528 bytes).
+Output written on prb_vc_jl_031813.dvi (41 pages, 106708 bytes).
