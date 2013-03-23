@@ -1162,7 +1162,7 @@ Under the VC approximation, the
 ALD calculations\cite{turney_predicting_2009-1} are performed on the 
 conventional unit cells of LJ argon and SW silicon with a single  
 atomic mass based on the alloy concentration. The ALD calculations scale 
-as $b^4$ and $N_{0}^2$.\cite{turney_predicting_2009} Disorder is not included 
+as $b^4$ and $(N_{0})^2$.\cite{turney_predicting_2009} Disorder is not included 
 explicitly but is treated using perturbation theory. 
 Assuming phonon scattering mechanisms 
 to operate independently, the 
