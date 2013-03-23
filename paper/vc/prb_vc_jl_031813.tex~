@@ -827,7 +827,7 @@ This behavior is further investigated in the next three sections.
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps}
+{/home/jason/disorder/paper/vc/lj_alloy_dos_c05-5_5.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:DOS} Vibrational DOS for LJ alloys calculated using the 
@@ -969,7 +969,7 @@ group velocity choice will be discussed in Section \ref{S:Discussion}.
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-3.eps}
+{/home/jason/disorder/paper/vc/lj_alloy_dsf_100_111-3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:SF} 
@@ -1133,7 +1133,7 @@ using Eq. \eqref{EQ:k_vib}.
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps}
+{/home/jason/disorder/paper/vc/lj_alloy_nmd_vc_gamma_life-3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:VC Gamma life} Lifetimes predicted using VC-NMD 
@@ -1276,7 +1276,7 @@ turney_predicting_2009-1} and is beyond the scope of this work.
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps}
+{/home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c05_3-4.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:Dph_lj} (a) Predicted lifetimes using 
@@ -1405,7 +1405,7 @@ which is further explored in Sections \ref{S:Thermal Conductivity} and
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_3.eps}
+{/home/jason/disorder/paper/vc/af_c5_amor_DAF_kw_3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:AF} AF theory predictions of disordered mode  
@@ -1458,7 +1458,7 @@ VC-ALD predicts essentially monotonically
 decreasing lifetimes with increasing frequency for the LJ argon 
 alloys [Fig. \ref{F:Dph_lj}(a)] with many falling below the IR limit. 
 Because VC-NMD and VC-ALD use the same values for 
-$\pmb{\text{v}}_{g,\mathbf{n}}\kv$, the 
+$v_{g,\mathbf{n}}\kv$, the 
 mode diffusivities will therefore be underpredicted for 
 VC-ALD compared to VC-NMD for the LJ argon alloys because of the 
 lifetime underprediction. 
@@ -1626,7 +1626,7 @@ of the high-frequency lifetimes compared to VC-NMD and Gamma-NMD
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/lj_cond_compare_2.eps}
+{/home/jason/disorder/paper/vc/lj_cond_compare_2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:cond_lj} Thermal conductivity predictions for 
@@ -1762,7 +1762,7 @@ application of the Tamura theory is valid.\cite{tamura_isotope_1983}
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5-2.eps}
+{/home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c5-2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:Dph_si} (a) Predicted lifetimes using VC-NMD and VC-ALD 
@@ -1784,7 +1784,7 @@ which peaks at low frequency, in contrast to LJ argon
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/alloy/m_si_cond_compare.eps}
+{/home/jason/disorder/paper/vc/m_si_cond_compare.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:cond_si}Thermal conductivity predictions for 
@@ -2139,7 +2139,7 @@ rajabpour_thermal_2010}
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps}
+{/home/jason/disorder/paper/vc/m_lj_nmd_xcorr_compare_2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:NMD XCORR} The normal mode kinetic energy, $\Phi$,  

@@ -1043,6 +1043,8 @@ an ensemble average.\cite{larkin_comparison_2012}
 Equation \eqref{EQ:tau_nmd} 
 is derived by assuming that the energy autocorrelation follows an 
 exponential decay.\cite{ladd_lattice_1986,turney_predicting_2009-1} 
+The NMD calculations scale 
+as $(N_a)^2$.\cite{turney_predicting_2009}  
 
 We perform the MD simulations using the fully disordered supercells  
 and project onto the frequencies and eigenvectors 
@@ -1050,7 +1052,7 @@ from both the VC unit cell [$\omega\kv$, $e\kvba$] and the
 Gamma supercell [$\omega\kgv$, $e\kgvba$]. 
 The trajectories from 
 these MD simulations are also used in the GK method calculations
-(Section \ref{S:Thermal Conductivity}).  
+(Section \ref{S:Thermal Conductivity}). 
 The MD simulations were ten times longer than the 
 longest lifetime in the system, which was  
 estimated from the VC-ALD predicted lifetimes. For LJ 
@@ -1159,7 +1161,8 @@ VC-NMD and VC-ALD lifetimes in Fig. \ref{F:Dph_lj}(a).
 Under the VC approximation, the 
 ALD calculations\cite{turney_predicting_2009-1} are performed on the 
 conventional unit cells of LJ argon and SW silicon with a single  
-atomic mass based on the alloy concentration. Disorder is not included 
+atomic mass based on the alloy concentration. The ALD calculations scale 
+as $b^4$ and $(N_{0})^2$.\cite{turney_predicting_2009} Disorder is not included 
 explicitly but is treated using perturbation theory. 
 Assuming phonon scattering mechanisms 
 to operate independently, the 
@@ -1455,7 +1458,7 @@ VC-ALD predicts essentially monotonically
 decreasing lifetimes with increasing frequency for the LJ argon 
 alloys [Fig. \ref{F:Dph_lj}(a)] with many falling below the IR limit. 
 Because VC-NMD and VC-ALD use the same values for 
-$\pmb{\text{v}}_{g,\mathbf{n}}\kv$, the 
+$v_{g,\mathbf{n}}\kv$, the 
 mode diffusivities will therefore be underpredicted for 
 VC-ALD compared to VC-NMD for the LJ argon alloys because of the 
 lifetime underprediction. 
@@ -1763,34 +1766,19 @@ application of the Tamura theory is valid.\cite{tamura_isotope_1983}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{F:Dph_si} (a) Predicted lifetimes using VC-NMD and VC-ALD 
-for SW silicon ($T=300$ K, $N_0=8$ and an alloy of concentration 0.5. 
+for SW silicon ($T=300$ K, $N_0=8$ and $c=0.05$).  
 (b) Mode diffusivities compared  
-to the HS limit $D_{HS}$, and the IR limit, $D_{IR}$ [Eq. \eqref{EQ:M:D_IR}]. 
-VC-NMD and VC-ALD predict a large number of modes $D_{ph} < D_{HS}$.
-(c) the thermal conductivity frequency spectrum, 
-which is peaked at low frequency, in contrast to LJ argon 
-(Fig. \ref{F:Dph_lj}).
+to the HS limit, $D_{HS}$ [Eq. \eqref{EQ:M:D_HS}], 
+and the IR limit, $D_{IR}$ [Eq. \eqref{EQ:M:D_IR}]. 
+VC-NMD and VC-ALD predict a large number of high-frequency modes 
+with $D_{ph} < D_{HS}$, as 
+seen in the LJ argon alloys [Fig. \ref{F:Dph_lj}(b)]. 
+(c) Thermal conductivity frequency spectrum, 
+which peaks at low frequency, in contrast to LJ argon 
+[Fig. \ref{F:Dph_lj}(c)].
 }
 \end{figure}
 %--------------------------------------------------------------------------
-
-\begin{figure}
-\begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{F:Dph_lj} (a) Predicted lifetimes using 
-VC-NMD and VC-ALD for LJ argon ($T=10$ K, $N_0=10$, and $c=0.05$).  
-(b) Mode diffusivities compared  
-to the HS limit, $D_{HS}$ [Eq. \eqref{EQ:M:D_HS}], and IR limit, 
-$D_{IR}$ [Eq. \eqref{EQ:M:D_IR}]. 
-VC-NMD and VC-ALD predict 
-a large number of high-frequency modes with $D_{ph} < D_{HS}$. 
-(c) Thermal conductivity frequency spectrum, 
-which peaks at high frequency, in contrast to SW silicon 
-[(Fig. \ref{F:Dph_si}(c)].}
-\end{figure}
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -1960,7 +1948,7 @@ of the thermal conductivity of SiGe alloys, which exceed the HS limit
 by more than an order of magnitude at room temperature for all 
 compositions.
 \cite{cahill_lattice_1988,cahill_thermal_2004,
-cahill_thermal_2005,cheaito_experimental_2012} Experimentally accurate 
+cahill_thermal_2005,cheaito_experimental_2012} Experimentally-accurate 
 theoretical predictions\cite{garg_role_2011} 
 also demonstrate that high-frequency modes 
 are unimportant to thermal transport, 
@@ -2119,7 +2107,7 @@ used for the MD simulations (i.e., a Gamma mode),
 the total energy autocorrelation is an exponential function  
 with a decay time $\tau\kv$ and the kinetic energy autocorrelation is a 
 exponentially-damped sinusoidal oscillation with frequency 
-$2\omega\kv$.(cite AHRT)   
+$2\omega\kv$.\cite{mcgaughey_predicting_2013} 
 When projecting MD simulations  
 of the explicitly disordered lattice supercells 
 onto the VC normal modes, 
@@ -2162,7 +2150,7 @@ The VC dispersion-predicted peaks are labeled
 by $\omega_0$. The inset shows the same mode's energy 
 [kinetic ($KE$) and total ($TE$)] autocorrelation functions.  
 Note the additional oscillation effects in the KE and TE autocorrelation 
-functions for Mode B which are due to the double peaks in $\Phi$. 
+functions for Mode B which are due to the two peaks in $\Phi$. 
 A mode lifetime can 
 be extracted unambiguously using the integral of the TE autocorrelation 
 function [Eq. \eqref{EQ:tau_nmd} in Section \ref{S:From VC Gamma}].}

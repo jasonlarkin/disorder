@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 20:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 20:38
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_031813.tex
@@ -286,41 +286,41 @@ LaTeX Warning: Command \r invalid in math mode on input line 745.
 LaTeX Warning: Command \r invalid in math mode on input line 757.
 
 [8] [9]
-File: /home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps Graphic file (type
+File: /home/jason/disorder/paper/vc/lj_alloy_dos_c05-5_5.eps Graphic file (type
  eps)
- </home/jason/disorder/lj/alloy/lj_alloy_dos_c05-5_5.eps> [10] [11]
-File: /home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-3.eps Graphic file (ty
+ </home/jason/disorder/paper/vc/lj_alloy_dos_c05-5_5.eps> [10] [11]
+File: /home/jason/disorder/paper/vc/lj_alloy_dsf_100_111-3.eps Graphic file (ty
 pe eps)
 
-</home/jason/disorder/lj/alloy/lj_alloy_dsf_100_111-3.eps> [12] [13] [14]
+</home/jason/disorder/paper/vc/lj_alloy_dsf_100_111-3.eps> [12] [13] [14]
 [15]
-File: /home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps Graphic fi
+File: /home/jason/disorder/paper/vc/lj_alloy_nmd_vc_gamma_life-3.eps Graphic fi
 le (type eps)
- </home/jason/disorder/lj/alloy/lj_alloy_nmd_vc_gamma_life-3.eps> [16]
+ </home/jason/disorder/paper/vc/lj_alloy_nmd_vc_gamma_life-3.eps> [16]
 [17] [18]
-File: /home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps Graphic 
+File: /home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c05_3-4.eps Graphic 
 file (type eps)
- </home/jason/disorder/lj/alloy/af_nmd_ald_tau_diff_kw_c05_3-4.eps>
+ </home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c05_3-4.eps>
 [19] [20] [21]
-File: /home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_3.eps Graphic file (type 
+File: /home/jason/disorder/paper/vc/af_c5_amor_DAF_kw_3.eps Graphic file (type 
 eps)
- </home/jason/disorder/lj/alloy/af_c5_amor_DAF_kw_3.eps> [22]
+ </home/jason/disorder/paper/vc/af_c5_amor_DAF_kw_3.eps> [22]
 [23] [24] [25]
-File: /home/jason/disorder/lj/alloy/lj_cond_compare_2.eps Graphic file (type ep
+File: /home/jason/disorder/paper/vc/lj_cond_compare_2.eps Graphic file (type ep
 s)
- </home/jason/disorder/lj/alloy/lj_cond_compare_2.eps> [26]
+ </home/jason/disorder/paper/vc/lj_cond_compare_2.eps> [26]
 [27] [28] [29]
-File: /home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5-2.eps Graphic fil
+File: /home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c5-2.eps Graphic fil
 e (type eps)
- </home/jason/disorder/si/alloy/af_nmd_ald_tau_diff_kw_c5-2.eps>
-File: /home/jason/disorder/si/alloy/m_si_cond_compare.eps Graphic file (type ep
+ </home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c5-2.eps>
+File: /home/jason/disorder/paper/vc/m_si_cond_compare.eps Graphic file (type ep
 s)
 
-</home/jason/disorder/si/alloy/m_si_cond_compare.eps> [30] [31] [32] [33]
+</home/jason/disorder/paper/vc/m_si_cond_compare.eps> [30] [31] [32] [33]
 [34]
-File: /home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps Graphic file (
+File: /home/jason/disorder/paper/vc/m_lj_nmd_xcorr_compare_2.eps Graphic file (
 type eps)
- </home/jason/disorder/lj/alloy/m_lj_nmd_xcorr_compare_2.eps>
+ </home/jason/disorder/paper/vc/m_lj_nmd_xcorr_compare_2.eps>
 (./prb_vc_jl_031813.bbl [35]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -413,8 +413,8 @@ Use acknowledgments instead.
 
 [41] (./prb_vc_jl_031813.aux) ) 
 Here is how much of TeX's memory you used:
- 4004 strings out of 493849
- 52739 string characters out of 1152845
+ 4002 strings out of 493849
+ 52679 string characters out of 1152845
  227552 words of memory out of 3000000
  7220 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000

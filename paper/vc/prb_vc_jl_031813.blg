@@ -1,11 +1,11 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: prb_vc_jl_031813.aux
 The style file: apsrev.bst
-Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-032013.bib
+Database file #1: /home/jason/disorder/paper/vc/ntpl-032013.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
 You've used 90 entries,
             3411 wiz_defined-function locations,
-            1680 strings with 28301 characters,
+            1680 strings with 28300 characters,
 and the built_in function-call counts, 65982 in all, are:
 = -- 3796
 > -- 2237
