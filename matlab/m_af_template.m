@@ -2,8 +2,8 @@
 %x0
 %--------------------------------------------------------------------------
 addpath('/home/jason/disorder/matlab/')
-str.main = '/home/jason/disorder2/lj/amor/4x/AF/gulp/conv/matlab/';
-name = 'x0K_1.data';
+str.main = '/home/jason/sam/8020/';
+name = 'x0.data';
 x0 = m_x0_read( strcat(str.main , name) );
 %--------------------------------------------------------------------------
 %lj
@@ -23,7 +23,7 @@ mass(1) = 1.0; mass(2) = 3.0;
 %af
 %--------------------------------------------------------------------------
 [AF.freq AF.Di AF.kappa ] =...
-    m_af_lj_debug( x0 , 1.0 , str.main , 'true' );
+    m_af_lj( x0 , 1.0 , str.main , 'true' );
 
 
 

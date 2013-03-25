@@ -682,7 +682,7 @@ explicitly and as a perturbation and to compare the predictions.
 \begin{center}
 \centering
 \includegraphics[scale=0.2]
-{/home/jason/disorder/paper/vc/m_supercell_gimp_2.eps}
+{/home/jason/disorder/paper/vc/fig2.eps}
 \end{center}
 \caption{\label{F:supercells} 
 (a) Explicitly disordered alloy supercell of 
@@ -2252,5 +2252,5 @@ function [Eq. \eqref{EQ:tau_nmd} in Section \ref{S:From VC Gamma}].}
 \clearpage
 \bibliographystyle{apsrev}
 %\bibliography{/home/jason/sed/jop/asme_prb_paper/prb/references}
-\bibliography{/home/jason/Dropbox/ntpl-paper/ntpl-032013}
+\bibliography{/home/jason/disorder/paper/vc/ntpl-032013}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 MAR 2013 20:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  23 MAR 2013 09:56
 entering extended mode
  %&-line parsing enabled.
 **prb_vc_jl_031813.tex
@@ -269,10 +269,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 303.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1] [2] [3] [4] [5]
-File: /home/jason/disorder/paper/vc/m_supercell_gimp_2.eps Graphic file (type e
-ps)
+File: /home/jason/disorder/paper/vc/fig1.eps Graphic file (type eps)
 
-</home/jason/disorder/paper/vc/m_supercell_gimp_2.eps> [6] [7]
+</home/jason/disorder/paper/vc/fig1.eps> [6] [7]
 
 LaTeX Warning: Command \r invalid in math mode on input line 729.
 
@@ -286,42 +285,32 @@ LaTeX Warning: Command \r invalid in math mode on input line 745.
 LaTeX Warning: Command \r invalid in math mode on input line 757.
 
 [8] [9]
-File: /home/jason/disorder/paper/vc/lj_alloy_dos_c05-5_5.eps Graphic file (type
- eps)
- </home/jason/disorder/paper/vc/lj_alloy_dos_c05-5_5.eps> [10] [11]
-File: /home/jason/disorder/paper/vc/lj_alloy_dsf_100_111-3.eps Graphic file (ty
-pe eps)
+File: /home/jason/disorder/paper/vc/fig2.eps Graphic file (type eps)
+ </home/jason/disorder/paper/vc/fig2.eps> [10] [11]
+File: /home/jason/disorder/paper/vc/fig3.eps Graphic file (type eps)
 
-</home/jason/disorder/paper/vc/lj_alloy_dsf_100_111-3.eps> [12] [13] [14]
-[15]
-File: /home/jason/disorder/paper/vc/lj_alloy_nmd_vc_gamma_life-3.eps Graphic fi
-le (type eps)
- </home/jason/disorder/paper/vc/lj_alloy_nmd_vc_gamma_life-3.eps> [16]
-[17] [18]
-File: /home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c05_3-4.eps Graphic 
-file (type eps)
- </home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c05_3-4.eps>
-[19] [20] [21]
-File: /home/jason/disorder/paper/vc/af_c5_amor_DAF_kw_3.eps Graphic file (type 
-eps)
- </home/jason/disorder/paper/vc/af_c5_amor_DAF_kw_3.eps> [22]
-[23] [24] [25]
-File: /home/jason/disorder/paper/vc/lj_cond_compare_2.eps Graphic file (type ep
-s)
- </home/jason/disorder/paper/vc/lj_cond_compare_2.eps> [26]
-[27] [28] [29]
-File: /home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c5-2.eps Graphic fil
-e (type eps)
- </home/jason/disorder/paper/vc/af_nmd_ald_tau_diff_kw_c5-2.eps>
-File: /home/jason/disorder/paper/vc/m_si_cond_compare.eps Graphic file (type ep
-s)
+</home/jason/disorder/paper/vc/fig3.eps> [12] [13] [14] [15]
+File: /home/jason/disorder/paper/vc/fig4.eps Graphic file (type eps)
 
-</home/jason/disorder/paper/vc/m_si_cond_compare.eps> [30] [31] [32] [33]
-[34]
-File: /home/jason/disorder/paper/vc/m_lj_nmd_xcorr_compare_2.eps Graphic file (
-type eps)
- </home/jason/disorder/paper/vc/m_lj_nmd_xcorr_compare_2.eps>
-(./prb_vc_jl_031813.bbl [35]
+</home/jason/disorder/paper/vc/fig4.eps> [16] [17] [18]
+File: /home/jason/disorder/paper/vc/fig5.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig5.eps> [19] [20] [21]
+File: /home/jason/disorder/paper/vc/fig6.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig6.eps> [22] [23] [24] [25]
+File: /home/jason/disorder/paper/vc/fig7.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig7.eps> [26] [27] [28] [29]
+File: /home/jason/disorder/paper/vc/fig8.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig8.eps>
+File: /home/jason/disorder/paper/vc/fig9.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig9.eps> [30] [31] [32] [33] [34]
+File: /home/jason/disorder/paper/vc/fig10.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig10.eps> (./prb_vc_jl_031813.bbl [35]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -353,7 +342,8 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [37]
+
+[37]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -381,8 +371,7 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 528.
 
-
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
@@ -414,11 +403,11 @@ Use acknowledgments instead.
 [41] (./prb_vc_jl_031813.aux) ) 
 Here is how much of TeX's memory you used:
  4002 strings out of 493849
- 52679 string characters out of 1152845
+ 52317 string characters out of 1152845
  227552 words of memory out of 3000000
  7220 multiletter control sequences out of 15000+50000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  33i,25n,32p,935b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_vc_jl_031813.dvi (41 pages, 106668 bytes).
+Output written on prb_vc_jl_031813.dvi (41 pages, 106488 bytes).

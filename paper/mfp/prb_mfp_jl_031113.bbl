@@ -1,0 +1,264 @@
+\begin{thebibliography}{28}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Freeman and Anderson}(1986)}]{freeman_thermal_1986}
+\bibinfo{author}{\bibfnamefont{J.~J.} \bibnamefont{Freeman}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~C.} \bibnamefont{Anderson}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{5684{\textbackslash}textbackslash965690}
+  (\bibinfo{year}{1986}).
+
+\bibitem[{\citenamefont{Cahill et~al.}(1992)\citenamefont{Cahill, Watson, and
+  Pohl}}]{cahill_lower_1992}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{author}{\bibfnamefont{S.~K.} \bibnamefont{Watson}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~O.} \bibnamefont{Pohl}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{46}},
+  \bibinfo{pages}{6131–6140} (\bibinfo{year}{1992}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.46.6131}.
+
+\bibitem[{\citenamefont{Wada and Kamijoh}(1996)}]{wada_thermal_1996}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wada}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Kamijoh}},
+  \bibinfo{journal}{Japanese Journal of Applied Physics}
+  \textbf{\bibinfo{volume}{35}}, \bibinfo{pages}{L648} (\bibinfo{year}{1996}),
+  \urlprefix\url{http://jjap.jsap.jp/link?JJAP/35/L648/}.
+
+\bibitem[{\citenamefont{Zink et~al.}(2006)\citenamefont{Zink, Pietri, and
+  Hellman}}]{zink_thermal_2006}
+\bibinfo{author}{\bibfnamefont{B.~L.} \bibnamefont{Zink}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Pietri}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Hellman}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{96}},
+  \bibinfo{pages}{055902} (\bibinfo{year}{2006}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.96.055902}.
+
+\bibitem[{\citenamefont{Yang et~al.}(2010)\citenamefont{Yang, Cahill, Liu,
+  Feldman, Crandall, Sperling, and Abelson}}]{yang_anomalously_2010}
+\bibinfo{author}{\bibfnamefont{H.-S.} \bibnamefont{Yang}},
+  \bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Liu}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{R.~S.} \bibnamefont{Crandall}},
+  \bibinfo{author}{\bibfnamefont{B.~A.} \bibnamefont{Sperling}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~R.}
+  \bibnamefont{Abelson}}, \bibinfo{journal}{Phys. Rev. B}
+  \textbf{\bibinfo{volume}{81}}, \bibinfo{pages}{104203}
+  (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.81.104203}.
+
+\bibitem[{\citenamefont{Cahill et~al.}(1994)\citenamefont{Cahill, Katiyar, and
+  Abelson}}]{cahill_thermal_1994}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Katiyar}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~R.} \bibnamefont{Abelson}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{50}},
+  \bibinfo{pages}{6077} (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Kuo et~al.}(1992)\citenamefont{Kuo, Li, and
+  Schmid}}]{kuo_thermal_1992}
+\bibinfo{author}{\bibfnamefont{B.~S.~W.} \bibnamefont{Kuo}},
+  \bibinfo{author}{\bibfnamefont{J.~C.~M.} \bibnamefont{Li}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~W.} \bibnamefont{Schmid}},
+  \bibinfo{journal}{Applied Physics A: Materials Science \& Processing}
+  \textbf{\bibinfo{volume}{55}}, \bibinfo{pages}{289–296}
+  (\bibinfo{year}{1992}), ISSN \bibinfo{issn}{0947-8396},
+  \bibinfo{note}{{10.1007/BF00348399}},
+  \urlprefix\url{http://dx.doi.org/10.1007/BF00348399}.
+
+\bibitem[{\citenamefont{Moon}(2002)}]{moon_thermal_2002}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Moon}},
+  \bibinfo{journal}{International Journal of Heat and Mass Transfer}
+  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{2439–2447}
+  (\bibinfo{year}{2002}),
+  \urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0017931001003477%
+}.
+
+\bibitem[{\citenamefont{Liu et~al.}(2009)\citenamefont{Liu, Feldman, Cahill,
+  Crandall, Bernstein, Photiadis, Mehl, and
+  Papaconstantopoulos}}]{liu_high_2009}
+\bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Liu}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{author}{\bibfnamefont{R.~S.} \bibnamefont{Crandall}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bernstein}},
+  \bibinfo{author}{\bibfnamefont{D.~M.} \bibnamefont{Photiadis}},
+  \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Mehl}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Papaconstantopoulos}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{102}},
+  \bibinfo{pages}{035901} (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.102.035901}.
+
+\bibitem[{\citenamefont{Vitelli et~al.}(2010)\citenamefont{Vitelli, Xu, Wyart,
+  Liu, and Nagel}}]{vitelli_heat_2010}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
+  \bibinfo{journal}{Phys. Rev. E} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{021301} (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.81.021301}.
+
+\bibitem[{\citenamefont{Feldman et~al.}(1999)\citenamefont{Feldman, Allen, and
+  Bickham}}]{feldman_numerical_1999}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Bickham}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{59}},
+  \bibinfo{pages}{3551–3559} (\bibinfo{year}{1999}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.59.3551}.
+
+\bibitem[{\citenamefont{Allen et~al.}(1999)\citenamefont{Allen, Feldman,
+  Fabian, and Wooten}}]{allen_diffusons_1999}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Fabian}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wooten}},
+  \bibinfo{journal}{Philosophical Magazine B} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{1715} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Allen and Feldman}(1993)}]{allen_thermal_1993}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{12581–12588} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Feldman et~al.}(1993)\citenamefont{Feldman, Kluge,
+  Allen, and Wooten}}]{feldman_thermal_1993}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{M.~D.} \bibnamefont{Kluge}},
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wooten}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{12589–12602} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Kittel}(1949)}]{kittel_interpretation_1949}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kittel}},
+  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{75}},
+  \bibinfo{pages}{974} (\bibinfo{year}{1949}).
+
+\bibitem[{\citenamefont{Cahill and Pohl}(1987)}]{cahill_thermal_1987}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~O.} \bibnamefont{Pohl}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{35}},
+  \bibinfo{pages}{4067{\textbackslash}textbackslash964073}
+  (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Graebner et~al.}(1986)\citenamefont{Graebner, Golding,
+  and Allen}}]{graebner_phonon_1986}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Graebner}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Golding}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~C.} \bibnamefont{Allen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{5696–5701} (\bibinfo{year}{1986}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.34.5696}.
+
+\bibitem[{\citenamefont{Shenogin et~al.}(2009)\citenamefont{Shenogin, Bodapati,
+  Keblinski, and {McGaughey}}}]{shenogin_predicting_2009}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shenogin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodapati}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Keblinski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
+  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Journal of Applied Physics}
+  \textbf{\bibinfo{volume}{105}}, \bibinfo{pages}{034906}
+  (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/105/034906/1}.
+
+\bibitem[{\citenamefont{Bickham and Feldman}(1998)}]{bickham_calculation_1998}
+\bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Bickham}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{57}},
+  \bibinfo{pages}{12234–12238} (\bibinfo{year}{1998}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.57.12234}.
+
+\bibitem[{\citenamefont{Fabian and Allen}(1996)}]{fabian_anharmonic_1996}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Fabian}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{77}},
+  \bibinfo{pages}{3839–3842} (\bibinfo{year}{1996}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.77.3839}.
+
+\bibitem[{\citenamefont{Sheng and Zhou}(1991)}]{sheng_heat_1991}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sheng}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zhou}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{253}},
+  \bibinfo{pages}{539–542} (\bibinfo{year}{1991}),
+  \urlprefix\url{http://www.sciencemag.org/content/253/5019/539.abstract}.
+
+\bibitem[{\citenamefont{He et~al.}(2011)\citenamefont{He, Donadio, and
+  Galli}}]{he_heat_2011}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{98}},
+  \bibinfo{pages}{144101} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Taraskin and
+  Elliott}(1999)}]{taraskin_determination_1999}
+\bibinfo{author}{\bibfnamefont{S.~N.} \bibnamefont{Taraskin}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Elliott}},
+  \bibinfo{journal}{Philosophical Magazine Part B}
+  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{1747–1754}
+  (\bibinfo{year}{1999}),
+  \urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/13642819908223057}.
+
+\bibitem[{\citenamefont{Cahill and Pohl}(1989)}]{cahill_heat_1989}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~O.} \bibnamefont{Pohl}},
+  \bibinfo{journal}{Solid State Communications} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{927 – 930} (\bibinfo{year}{1989}), ISSN
+  \bibinfo{issn}{0038-1098},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/003810988990%
+6303}.
+
+\bibitem[{\citenamefont{Allen and Kelner}(1998)}]{allen_evolution_1998}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Kelner}},
+  \bibinfo{journal}{American Journal of Physics} \textbf{\bibinfo{volume}{66}},
+  \bibinfo{pages}{497} (\bibinfo{year}{1998}).
+
+\bibitem[{\citenamefont{Garber et~al.}(2001)\citenamefont{Garber, Tangerman,
+  Allen, and Feldman}}]{garber_numerical_2001}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Garber}},
+  \bibinfo{author}{\bibfnamefont{F.~M.} \bibnamefont{Tangerman}},
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{journal}{Philosophical Magazine Letters}
+  \textbf{\bibinfo{volume}{81}}, \bibinfo{pages}{433–439}
+  (\bibinfo{year}{2001}),
+  \urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/09500830110041666}.
+
+\bibitem[{\citenamefont{Biswas et~al.}(1988)\citenamefont{Biswas, Bouchard,
+  Kamitakahara, Grest, and Soukoulis}}]{biswas_vibrational_1988}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Biswas}},
+  \bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
+  \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}},
+  \bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Grest}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Soukoulis}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{60}},
+  \bibinfo{pages}{2280–2283} (\bibinfo{year}{1988}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.60.2280}.
+
+\bibitem[{\citenamefont{Turney et~al.}(2009)\citenamefont{Turney, Landry,
+  {McGaughey}, and Amon}}]{turney_predicting_2009-1}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{064301} (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.79.064301}.
+
+\end{thebibliography}

@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: prb_mfp_jl_031113.aux
+The style file: apsrev.bst
+Database file #1: /home/jason/ntpl-ref/ntpl-jason/ntpl-jason-091712.bib
+Warning--I didn't find a database entry for "einstein1911"
+Warning--I didn't find a database entry for "kittel1949"
+Warning--I didn't find a database entry for "cahill1992"
+Warning--I didn't find a database entry for "dove1993"
+Warning--I didn't find a database entry for "allen1993"
+Warning--I didn't find a database entry for "shenogin2009"
+Warning--I didn't find a database entry for "klemens1955"
+Warning--I didn't find a database entry for "klemens1957"
+Warning--I didn't find a database entry for "freeman1986"
+Warning--I didn't find a database entry for "mcgaughey2004a"
+Warning--I didn't find a database entry for "PhysRevB.46.6131"
+Warning--I didn't find a database entry for "He2011a"
+Warning--I didn't find a database entry for "wallace1972"
+Warning--I didn't find a database entry for "ashcroft1976"
+Warning--I didn't find a database entry for "turney2009a"
+Warning--I didn't find a database entry for "ziman2001"
+Warning--I didn't find a database entry for "mcquarrie2000"
+Warning--I didn't find a database entry for "mcgaughey2004c"
+Warning--I didn't find a database entry for "goicochea2010"
+Warning--I didn't find a database entry for "mcgaughey2006b"
+Warning--I didn't find a database entry for "sellan2010b"
+Warning--I didn't find a database entry for "Larkin2012"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+You've used 28 entries,
+            3411 wiz_defined-function locations,
+            1371 strings with 16197 characters,
+and the built_in function-call counts, 22667 in all, are:
+= -- 1361
+> -- 728
+< -- 100
++ -- 592
+- -- 176
+* -- 3085
+:= -- 2379
+add.period$ -- 28
+call.type$ -- 28
+change.case$ -- 112
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 1847
+empty$ -- 1882
+format.name$ -- 452
+if$ -- 4444
+int.to.chr$ -- 1
+int.to.str$ -- 29
+missing$ -- 285
+newline$ -- 99
+num.names$ -- 84
+pop$ -- 458
+preamble$ -- 1
+purify$ -- 112
+quote$ -- 0
+skip$ -- 954
+stack$ -- 0
+substring$ -- 1214
+swap$ -- 1504
+text.length$ -- 88
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 168
+warning$ -- 0
+while$ -- 84
+width$ -- 0
+write$ -- 316
+(There were 22 warnings)
