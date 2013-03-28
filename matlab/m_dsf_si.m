@@ -1,10 +1,10 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/si/amor/prepare/8x/dynam/';
+str_af = '/home/jason/disorder2/si/amor/normand/perfect3/anneal/';
 
-AF.eigvec = load(strcat(str_af,'AF_eigvec.dat'));
-AF.freq = load(strcat(str_af,'AF_freq.dat'))';
-AF.x0 = m_x0_read([str_af 'x0.data']);
+AF.eigvec = load(strcat(str_af,'eigvec.dat'));
+AF.freq = load(strcat(str_af,'freq.dat'))';
+AF.x0 = m_x0_read([str_af 'x0_nve.data']);
 
 nmd.alat = 5.43;
 
@@ -41,8 +41,8 @@ AF.kpt(:,3) = 0;
 % AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
 % AF.kpt(:,3) = [0.1 0.2 0.3 0.4 0.5]';
 
-BROADEN = 40;
-NUM_RAND = 20;
+BROADEN = 20;
+NUM_RAND = 5;
 rng(11111);
 
 DSF_long_avg.SL = zeros(length(AF.freq), size(AF.kpt,1));
@@ -84,7 +84,15 @@ AF.kpt(ikpt,:)
 %pause
 %--------------------------------------------------------------------------
 end
-        
+ 
+for ikpt=1:size(AF.kpt,1)
+    ikpt
+semilogy(...
+        DSF_tran_avg.freq_range,DSF_tran_avg.SL(:,ikpt),'.',...
+        DSF_long_avg.freq_range,4*DSF_long_avg.SL(:,ikpt),'.'...
+        )
+pause
+end
         
 save(strcat(str_af,'DSF_long_avg.mat'), '-struct', 'DSF_long_avg');
 save(strcat(str_af,'DSF_tran_avg.mat'), '-struct', 'DSF_tran_avg');

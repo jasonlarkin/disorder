@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/prepare/4x/sed_nve_relaxedx0/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/normand/init216/anneal/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
@@ -27,7 +27,7 @@ nmd.walltime.lammps = 12; nmd.cpu.lammps = 4;
 nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 
 %--------------------------------------------------------------------------
-    nmd.Nx = 4; nmd.Ny = 4; nmd.Nz = 4;
+    nmd.Nx = 3; nmd.Ny = 3; nmd.Nz = 3;
 %--------------------------------------------------------------------------
     nmd.seed.alloy = 1;
     nmd.seed.initial = 1:10;
@@ -44,7 +44,7 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
-    nmd.t_total = 2^21; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.0005;
+    nmd.t_total = 2^19; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.0005;
     nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
 

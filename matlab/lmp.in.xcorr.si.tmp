@@ -41,7 +41,7 @@ log 	log_heat_${iseed}.lammps
 	compute 		myDis all msd 
 	thermo_style  		custom step temp press etotal vol c_myDis[4]
 	thermo			1000
-	run             	100000	
+	run             	50000	
 #	run             	1000
 	unfix 			1
 	unfix 			2
@@ -52,7 +52,7 @@ log 	log_heat_${iseed}.lammps
 	compute 		myDis all msd
 	thermo_style  		custom step temp press etotal vol c_myDis[4]
 	thermo			1000
-	run             	250000	
+	run             	100000	
 #	run             	10000
 	unfix 			1
 	uncompute		myDis
