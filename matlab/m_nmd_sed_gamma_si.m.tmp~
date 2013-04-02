@@ -54,7 +54,7 @@ toc
 tic  
 %--------------------------------------------------------------------------
     for ikpt = 1:size(NMD.kptmaster(:,1:3),1)
-        for imode = 1:NMD.NUM_MODES
+        for imode = 1:size(NMD.modelist(:,imslice),1)
     
             spatial = 2*pi*1i*(...
     NMD.x0(:,3)*( (NMD.kptmaster(ikpt,1))/(NMD.alat*NMD.Nx) ) +...

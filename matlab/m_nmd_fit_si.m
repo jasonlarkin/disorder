@@ -1,4 +1,4 @@
-function m_nmd_fit_lj(str,gamma_guess,PT_PERC,INV_PERC,HLD_SCALING_PCT)
+function m_nmd_fit_si(str,gamma_guess,PT_PERC,INV_PERC,HLD_SCALING_PCT)
 %m_nmd_fit_lj(str,gamma_guess,PT_PERC,INV_PERC)
 
 str.NMD = str;

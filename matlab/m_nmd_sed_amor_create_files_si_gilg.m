@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/normand/init216/anneal/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/normand/perfect2/anneal/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
@@ -27,7 +27,7 @@ nmd.walltime.lammps = 12; nmd.cpu.lammps = 4;
 nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 
 %--------------------------------------------------------------------------
-    nmd.Nx = 3; nmd.Ny = 3; nmd.Nz = 3;
+    nmd.Nx = 5; nmd.Ny = 5; nmd.Nz = 5;
 %--------------------------------------------------------------------------
     nmd.seed.alloy = 1;
     nmd.seed.initial = 1:10;
