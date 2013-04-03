@@ -1,4 +1,4 @@
-function m_nmd_fit_si(str,gamma_guess,PT_PERC,INV_PERC,HLD_SCALING_PCT)
+function m_nmd_fit_si_gamma(str,gamma_guess,PT_PERC,INV_PERC,HLD_SCALING_PCT)
 %m_nmd_fit_lj(str,gamma_guess,PT_PERC,INV_PERC)
 
 str.NMD = str;
@@ -24,7 +24,7 @@ for imode=1:size(SED.modemaster,2)
 %              
 
 if imode<150
-    PT_PERC=0.01; INV_PERC = 0.25; gamma_guess = 10;
+    PT_PERC=0.07; INV_PERC = 0.25; gamma_guess = 10;
 else
     PT_PERC=0.01; INV_PERC = 0.25; gamma_guess = 4;
 end
@@ -156,7 +156,7 @@ SEDfit.height = SED.height;
 SEDfit.wleft = SED.wleft;
 SEDfit.wright = SED.wright;
 
-loglog(SEDfit.HLDfreq,SEDfit.life,'.')
+loglog(SEDfit.HLDfreq,SEDfit.life,'.',SEDfit.HLDfreq,2*pi./SEDfit.HLDfreq*1E12)
     
 save(strcat(str.NMD,'/NMDfit.mat'), '-struct', 'NMD');
 save(strcat(str.NMD,'/SEDfit.mat'), '-struct', 'SEDfit');
