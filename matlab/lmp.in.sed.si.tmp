@@ -33,32 +33,30 @@ variable 	T_run 		equal 300
 
 log 	log_heat_${iseed}.lammps
 
-#--------------------------------------------------------------------------
-#nve rescale
-#--------------------------------------------------------------------------
+#------------ NVE rescale ---------------------------------------------------------------------	
 	velocity 		all create ${T_run} ${seed} rot yes dist gaussian
 	fix 			1 all nve
 	fix 			2 all temp/rescale 1 ${T_run} ${T_run} 0.01 1.0
 	timestep		${dt}
-	thermo_style  	custom step temp press etotal vol
+	compute 		myDis all msd 
+	thermo_style  		custom step temp press etotal vol c_myDis[4]
 	thermo			1000
-	run             	100000	
+	run             	50000	
 #	run             	1000
 	unfix 			1
 	unfix 			2
-#--------------------------------------------------------------------------
-#nve
-#--------------------------------------------------------------------------
+	uncompute		myDis
+#------------ NVE -----------------------------------------------------------------------------	
 	fix 			1 all nve
 	timestep		${dt}
-	thermo_style  	custom step temp press etotal vol
+	compute 		myDis all msd
+	thermo_style  		custom step temp press etotal vol c_myDis[4]
 	thermo			1000
-	run             	200000	
+	run             	100000	
 #	run             	10000
 	unfix 			1
-#--------------------------------------------------------------------------
-#sed
-#--------------------------------------------------------------------------
+	uncompute		myDis
+#------SED-------------------------------------------------------------------------
 label loop_fft
 variable ifft loop ${num_ffts}
 
@@ -67,13 +65,14 @@ log 	log_SED_${iseed}_${ifft}.lammps
 	fix 			1 all nve
 	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
 	dump_modify 		vel sort id
-	thermo_style 		custom step temp press vol
+	compute 		myDis all msd
+	thermo_style 		custom step temp press etotal vol c_myDis[4]
 	thermo			5000
 	timestep		${dt}
 	run			${w_total}
 	unfix			1
 	undump			vel
+	uncompute		myDis
 
 next ifft
 jump LMP_TMP loop_fft
-

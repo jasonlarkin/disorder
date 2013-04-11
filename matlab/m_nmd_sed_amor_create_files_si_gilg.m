@@ -3,11 +3,11 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/normand/perfect2/anneal/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/normand/perfect3/anneal_900K/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
-    nmd.str.lmp_sed = 'lmp.in.xcorr.si.tmp';
+    nmd.str.lmp_sed = 'lmp.in.sed.si.tmp';
     nmd.str.m_nmd = 'm_nmd_sed_gamma_si.m.tmp';
     nmd.str.m_grep = 'm_nmd_grep_vel_sed.m.tmp';
     nmd.str.m_seed = 'm_nmd_seed_xcorr_avg.m.tmp';
@@ -44,7 +44,7 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
-    nmd.t_total = 2^21; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.0005;
+    nmd.t_total = 2^19; nmd.t_fft = 2^19; nmd.t_step = 2^5; nmd.dt = 0.0005;
     nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
 
@@ -63,7 +63,7 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 %read data
 dummy =...
     dlmread(...
-    strcat(nmd.str.main,'x0.data'));
+    strcat(nmd.str.main,'x0_nve.data'));
    
     nmd.param = dummy(1,:);
     nmd.x0(:,1) = dummy(2:size(dummy,1),1);

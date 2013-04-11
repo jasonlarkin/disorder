@@ -1,4 +1,3 @@
-
 function DSF =...
     m_dsf_long( str , kpt , x0 , freqp, eigvec, alat , DW_SCALE , MAX_FREQ_SCALE )
 %M_DSF_LONG

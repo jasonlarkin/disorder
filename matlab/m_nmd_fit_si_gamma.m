@@ -24,9 +24,9 @@ for imode=1:size(SED.modemaster,2)
 %              
 
 if imode<150
-    PT_PERC=0.07; INV_PERC = 0.25; gamma_guess = 10;
+    PT_PERC=0.001; INV_PERC = 0.25; gamma_guess = 10;
 else
-    PT_PERC=0.01; INV_PERC = 0.25; gamma_guess = 4;
+    PT_PERC=0.001; INV_PERC = 0.25; gamma_guess = 4;
 end
 
 SED.HLDfreq(imode)
@@ -79,10 +79,10 @@ else
 %
     weights = ones(length(w(wleft:wright)),1);
 %
-%     weights(1:NUM_WEIGHT) = INV_PERC/PT_PERC;
-%     weights(length(weights)-NUM_WEIGHT:length(weights)) =...
-%         INV_PERC/PT_PERC;
-%
+    weights(1) = INV_PERC/PT_PERC;
+    weights(length(weights)) =...
+        INV_PERC/PT_PERC;
+
     lor_func = @(c,w)weights.*(c(1))./(1 + ( (w - c(3))./ c(2) ).^2 );
 %
     options =...
@@ -102,6 +102,7 @@ else
         lor_func,c0,w(wleft:wright),...
         SED.sed(wleft:wright,imode).*weights,...
         lb,ub,options);
+    NMD.w_step
 %Store separate liftimes and frequencies for single and MULTIPLE FITS
     center=c_fit(3)*NMD.w_step; lifetime=1/(2*c_fit(2))/NMD.w_step;
 %Store 

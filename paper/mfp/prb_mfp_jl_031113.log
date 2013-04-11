@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.11.19)  23 MAR 2013 11:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  11 APR 2013 10:43
 entering extended mode
  %&-line parsing enabled.
 **prb_mfp_jl_031113.tex
@@ -257,7 +257,7 @@ Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
 
 (/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+Package ifpdf Info: pdfTeX in pdf mode not detected.
 )
 (/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
@@ -358,11 +358,18 @@ Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 \c@Item=\count118
 \c@Hfootnote=\count119
 )
-*hyperref using default driver hpdftex*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+*hyperref using default driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
+\pdf@docset=\toks26
+\pdf@box=\box37
+\pdf@toks=\toks27
+\pdf@defaulttoks=\toks28
 \Fld@listcount=\count120
-)
+))
 (./prb_mfp_jl_031113.aux
 
 LaTeX Warning: Label `EQ:k_sum' multiply defined.
@@ -371,15 +378,21 @@ LaTeX Warning: Label `EQ:k_sum' multiply defined.
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
+LaTeX Warning: Label `S:Simulation' multiply defined.
+
+
+LaTeX Warning: Label `S:Introduction' multiply defined.
+
+
+LaTeX Warning: Label `S:Introduction' multiply defined.
+
+
 LaTeX Warning: Label `S:Introduction' multiply defined.
 
 
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
-LaTeX Warning: Label `S:Lifetimes:' multiply defined.
-
-
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
@@ -395,22 +408,19 @@ LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
 
 
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes:' multiply defined.
+
+
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
 
 
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
 
 
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
-
-
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
 LaTeX Warning: Label `S-Motivation-Amorphous' multiply defined.
@@ -457,7 +467,7 @@ LaTeX Info: Redefining \pageref on input line 200.
 \@outlinefile=\write3
 \openout3 = `prb_mfp_jl_031113.out'.
 
-\AtBeginShipoutBox=\box37
+\AtBeginShipoutBox=\box38
 LaTeX Font Info:    Try loading font information for U+msa on input line 239.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
@@ -467,7 +477,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 239.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+) [1]
 
 Package natbib Warning: Citation `freeman_thermal_1986' on page 2 undefined on 
 input line 246.
@@ -571,44 +581,44 @@ e 362.
 
 
 Package natbib Warning: Citation `allen1993' on page 4 undefined on input line 
-368.
+370.
 
 
 Package natbib Warning: Citation `freeman1986' on page 4 undefined on input lin
-e 372.
+e 374.
 
 
 Package natbib Warning: Citation `cahill1992' on page 4 undefined on input line
- 372.
+ 374.
 
 
 LaTeX Warning: Reference `S-Prelim-Phonon-Scattering' on page 4 undefined on in
-put line 378.
+put line 381.
 
 
 Package natbib Warning: Citation `allen1993' on page 4 undefined on input line 
-387.
+394.
 
 
 LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 4 undefined on inp
-ut line 391.
+ut line 398.
 
 
 Package natbib Warning: Citation `allen_diffusons_1999' on page 4 undefined on 
-input line 393.
-
-
-Package natbib Warning: Citation `allen_thermal_1993' on page 4 undefined on in
-put line 398.
+input line 400.
 
 [4]
 
+Package natbib Warning: Citation `allen_thermal_1993' on page 5 undefined on in
+put line 405.
+
+
 Package natbib Warning: Citation `feldman_numerical_1999' on page 5 undefined o
-n input line 401.
+n input line 408.
 
 
 Package natbib Warning: Citation `feldman_thermal_1993' on page 5 undefined on 
-input line 404.
+input line 411.
 
 Missing character: There is no Œ in font cmr12!
 Missing character: There is no ∫ in font cmr12!
@@ -621,482 +631,277 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no ´ in font cmr12!
 [5]
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ª in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no å in font cmr12!
-Missing character: There is no ´ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ª in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no · in font cmr12!
-Missing character: There is no û in font cmr12!
-Missing character: There is no á in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no · in font cmr12!
-Missing character: There is no û in font cmr12!
-Missing character: There is no á in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no · in font cmr12!
-Missing character: There is no û in font cmr12!
-Missing character: There is no á in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no œ in font cmr12!
-Missing character: There is no ≠ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ª in font cmr12!
-Missing character: There is no œ in font cmr12!
-Missing character: There is no ≠ in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no å in font cmr12!
-Missing character: There is no ´ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no å in font cmr12!
-Missing character: There is no ´ in font cmr12!
-Missing character: There is no œ in font cmr12!
-Missing character: There is no ≠ in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no å in font cmr12!
-Missing character: There is no ´ in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no ∫ in font cmr12!
- [6]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ¨ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ∂ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ∂ in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no ê in font cmr12!
-Missing character: There is no ª in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no ë in font cmr12!
-Missing character: There is no Õ in font cmr12!
-Missing character: There is no í in font cmr12!
 
+Package natbib Warning: Citation `normand' on page 6 undefined on input line 44
+2.
 
-Package natbib Warning: Citation `feldman_thermal_1993' on page 7 undefined on 
-input line 530.
+File: /home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps Gra
+phic file (type eps)
+</home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps>
+File: /home/jason/disorder/si/amor/m_si_amor_life_plot_perfect2.eps Graphic fil
+e (type eps)
 
+</home/jason/disorder/si/amor/m_si_amor_life_plot_perfect2.eps>
+File: /home/jason/disorder/si/amor/m_af_si_normand_N0_compare.eps Graphic file 
+(type eps)
 
-Package natbib Warning: Citation `feldman_thermal_1993' on page 7 undefined on 
-input line 538.
+</home/jason/disorder/si/amor/m_af_si_normand_N0_compare.eps>
+File: /home/jason/disorder/matlab/galli_si_k_tf.eps Graphic file (type eps)
 
+</home/jason/disorder/matlab/galli_si_k_tf.eps>
 
-Package natbib Warning: Citation `feldman_thermal_1993' on page 7 undefined on 
-input line 546.
+Package natbib Warning: Citation `freeman_thermal_1986' on page 6 undefined on 
+input line 668.
 
-[7]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no î in font cmr12!
-
-
-Package natbib Warning: Citation `feldman_thermal_1993' on page 8 undefined on 
-input line 576.
-
-
-Package natbib Warning: Citation `freeman_thermal_1986' on page 8 undefined on 
-input line 584.
-
-File: LJ_amor_GK.eps Graphic file (type eps)
-<LJ_amor_GK.eps>
-
-Package natbib Warning: Citation `mcgaughey2004a' on page 8 undefined on input 
-line 599.
-
-
-LaTeX Warning: Reference `EQ:M:tau_p-p' on page 8 undefined on input line 599.
-
-
-Package natbib Warning: Citation `mcgaughey2004a' on page 8 undefined on input 
-line 599.
-
-
-LaTeX Warning: Reference `EQ:M:tau_p-p' on page 8 undefined on input line 599.
-
+[6] [7]
 
 Package natbib Warning: Citation `kittel_interpretation_1949' on page 8 undefin
-ed on input line 612.
+ed on input line 697.
 
 
 Package natbib Warning: Citation `cahill_lower_1992' on page 8 undefined on inp
-ut line 612.
+ut line 697.
 
 
 Package natbib Warning: Citation `cahill_lower_1992' on page 8 undefined on inp
-ut line 618.
+ut line 703.
+
+
+Package natbib Warning: Citation `PhysRevB.46.6131' on page 8 undefined on inpu
+t line 709.
+
+
+Package natbib Warning: Citation `cahill_lower_1992' on page 8 undefined on inp
+ut line 721.
+
+
+Package natbib Warning: Citation `cahill_thermal_1987' on page 8 undefined on i
+nput line 721.
+
+
+Package natbib Warning: Citation `allen_thermal_1993' on page 8 undefined on in
+put line 722.
+
+
+Package natbib Warning: Citation `graebner_phonon_1986' on page 8 undefined on 
+input line 723.
+
+
+Package natbib Warning: Citation `shenogin_predicting_2009' on page 8 undefined
+ on input line 724.
 
 [8]
 
-Package natbib Warning: Citation `PhysRevB.46.6131' on page 9 undefined on inpu
-t line 624.
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 9 undefined on inp
+ut line 743.
 
 
-Package natbib Warning: Citation `cahill_lower_1992' on page 9 undefined on inp
-ut line 636.
+Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 74
+9.
 
 
-Package natbib Warning: Citation `cahill_thermal_1987' on page 9 undefined on i
-nput line 636.
+Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 75
+1.
 
 
-Package natbib Warning: Citation `allen_thermal_1993' on page 9 undefined on in
-put line 637.
+Package natbib Warning: Citation `bickham_calculation_1998' on page 9 undefined
+ on input line 771.
 
 
-Package natbib Warning: Citation `graebner_phonon_1986' on page 9 undefined on 
-input line 638.
+Package natbib Warning: Citation `fabian_anharmonic_1996' on page 9 undefined o
+n input line 774.
 
 
-Package natbib Warning: Citation `shenogin_predicting_2009' on page 9 undefined
- on input line 639.
-
-[9
-Non-PDF special ignored!]
-
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 10 undefined on in
-put line 658.
+Package natbib Warning: Citation `sheng_heat_1991' on page 9 undefined on input
+ line 778.
 
 
-Package natbib Warning: Citation `He2011a' on page 10 undefined on input line 6
-64.
+Package natbib Warning: Citation `he_heat_2011' on page 9 undefined on input li
+ne 783.
 
 
-Package natbib Warning: Citation `He2011a' on page 10 undefined on input line 6
-66.
-
-File: /home/jason/disorder/matlab/galli_si_k_tf.eps Graphic file (type eps)
-</home/jason/disorder/matlab/galli_si_k_tf.eps>
-
-Package natbib Warning: Citation `bickham_calculation_1998' on page 10 undefine
-d on input line 684.
-
-
-Package natbib Warning: Citation `fabian_anharmonic_1996' on page 10 undefined 
-on input line 687.
-
-
-Package natbib Warning: Citation `sheng_heat_1991' on page 10 undefined on inpu
-t line 691.
-
-[10
-Non-PDF special ignored!]
-
-Package natbib Warning: Citation `he_heat_2011' on page 11 undefined on input l
-ine 696.
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 695--697
+Underfull \hbox (badness 1997) in paragraph at lines 782--784
 []\OT1/cmr/m/n/12 The life-times of vi-bra-tional modes in a-Si were pre-dicted
  us-ing nor-mal mode
  []
 
-File: /home/jason/disorder/lj/alloy/xcorr_alloy_cum_cond.eps Graphic file (type
- eps)
-</home/jason/disorder/lj/alloy/xcorr_alloy_cum_cond.eps>
-File: /home/jason/disorder/lj/alloy/LJ_alloy_life_period.eps Graphic file (type
- eps)
 
-</home/jason/disorder/lj/alloy/LJ_alloy_life_period.eps> [11
-Non-PDF special ignored!]
-File: /home/jason/disorder/lj/alloy/LJ_alloy_amorphous_life_period.eps Graphic 
-file (type eps)
-
-</home/jason/disorder/lj/alloy/LJ_alloy_amorphous_life_period.eps>
-
-Package natbib Warning: Citation `taraskin_determination_1999' on page 12 undef
-ined on input line 751.
+Package natbib Warning: Citation `taraskin_determination_1999' on page 9 undefi
+ned on input line 838.
 
 
-Package natbib Warning: Citation `feldman_numerical_1999' on page 12 undefined 
-on input line 754.
+Package natbib Warning: Citation `feldman_numerical_1999' on page 9 undefined o
+n input line 841.
 
-[12
-Non-PDF special ignored!] [13
-Non-PDF special ignored!] [14]
+[9] [10]
 
-Package natbib Warning: Citation `cahill_heat_1989' on page 15 undefined on inp
-ut line 758.
+Package natbib Warning: Citation `cahill_heat_1989' on page 11 undefined on inp
+ut line 845.
 
 
-Package natbib Warning: Citation `allen_evolution_1998' on page 15 undefined on
- input line 763.
+Package natbib Warning: Citation `allen_evolution_1998' on page 11 undefined on
+ input line 850.
 
 
-Package natbib Warning: Citation `garber_numerical_2001' on page 15 undefined o
-n input line 764.
-
-File: /home/jason/disorder/lj/alloy/LJ_alloy_vaf_2.eps Graphic file (type eps)
-</home/jason/disorder/lj/alloy/LJ_alloy_vaf_2.eps>
-File: /home/jason/disorder/lj/alloy/LJ_alloy_vaf.eps Graphic file (type eps)
-
-</home/jason/disorder/lj/alloy/LJ_alloy_vaf.eps> [15
-Non-PDF special ignored!]
-
-Package natbib Warning: Citation `feldman_thermal_1993' on page 16 undefined on
- input line 806.
+Package natbib Warning: Citation `garber_numerical_2001' on page 11 undefined o
+n input line 851.
 
 
-Package natbib Warning: Citation `feldman_numerical_1999' on page 16 undefined 
-on input line 809.
-
-[16
-Non-PDF special ignored!]
-
-Package natbib Warning: Citation `biswas_vibrational_1988' on page 17 undefined
- on input line 816.
-
-File: /home/jason/disorder/matlab/LJ_DSF.eps Graphic file (type eps)
-</home/jason/disorder/matlab/LJ_DSF.eps> [17
-Non-PDF special ignored!] [18]
-
-Package natbib Warning: Citation `dove1993' on page 19 undefined on input line 
-866.
+Package natbib Warning: Citation `feldman_thermal_1993' on page 11 undefined on
+ input line 893.
 
 
-Package natbib Warning: Citation `wallace1972' on page 19 undefined on input li
-ne 866.
+Package natbib Warning: Citation `feldman_numerical_1999' on page 11 undefined 
+on input line 896.
+
+[11]
+
+Package natbib Warning: Citation `biswas_vibrational_1988' on page 12 undefined
+ on input line 903.
+
+[12]
+
+Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
+953.
 
 
-Package natbib Warning: Citation `dove1993' on page 19 undefined on input line 
-869.
+Package natbib Warning: Citation `wallace1972' on page 13 undefined on input li
+ne 953.
 
 
-Package natbib Warning: Citation `dove1993' on page 19 undefined on input line 
-879.
+Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
+956.
 
 
-LaTeX Warning: Reference `A-Phonon-Life-SED' on page 19 undefined on input line
- 886.
-
-[19]
-
-Package natbib Warning: Citation `ashcroft1976' on page 20 undefined on input l
-ine 902.
+Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
+966.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 20 undefined on input l
-ine 916.
+LaTeX Warning: Reference `A-Phonon-Life-SED' on page 13 undefined on input line
+ 973.
+
+[13]
+
+Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
+ine 989.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 918.
+Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
+ine 1003.
 
 
-Package natbib Warning: Citation `mcgaughey2004a' on page 20 undefined on input
- line 918.
+Package natbib Warning: Citation `turney2009a' on page 14 undefined on input li
+ne 1005.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 20 undefined on input l
-ine 927.
+Package natbib Warning: Citation `mcgaughey2004a' on page 14 undefined on input
+ line 1005.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 929.
+Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
+ine 1014.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 20 undefined on input l
-ine 930.
+Package natbib Warning: Citation `turney2009a' on page 14 undefined on input li
+ne 1016.
 
 
-Package natbib Warning: Citation `turney_predicting_2009-1' on page 20 undefine
-d on input line 944.
+Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
+ine 1017.
 
 
-Package natbib Warning: Citation `ziman2001' on page 20 undefined on input line
- 956.
+Package natbib Warning: Citation `turney_predicting_2009-1' on page 14 undefine
+d on input line 1031.
 
 
-Overfull \hbox (2.61108pt too wide) detected at line 962
+Package natbib Warning: Citation `ziman2001' on page 14 undefined on input line
+ 1043.
+
+
+Overfull \hbox (2.61108pt too wide) detected at line 1049
 [] []
  []
 
-[20]
+[14]
 
-Package natbib Warning: Citation `mcquarrie2000' on page 21 undefined on input 
-line 967.
-
-
-Package natbib Warning: Citation `mcgaughey2004c' on page 21 undefined on input
- line 970.
+Package natbib Warning: Citation `mcquarrie2000' on page 15 undefined on input 
+line 1054.
 
 
-Package natbib Warning: Citation `goicochea2010' on page 21 undefined on input 
-line 971.
+Package natbib Warning: Citation `mcgaughey2004c' on page 15 undefined on input
+ line 1057.
 
 
-Package natbib Warning: Citation `mcgaughey2006b' on page 21 undefined on input
- line 977.
+Package natbib Warning: Citation `goicochea2010' on page 15 undefined on input 
+line 1058.
 
 
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 21 undefined on in
-put line 985.
+Package natbib Warning: Citation `mcgaughey2006b' on page 15 undefined on input
+ line 1064.
 
 
-Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
-ne 986.
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 15 undefined on in
+put line 1072.
 
 
-Package natbib Warning: Citation `He2011a' on page 21 undefined on input line 9
-86.
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 1073.
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 985--992
+Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 1
+073.
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 1072--1079
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
 
-Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
-ne 1002.
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 1089.
 
 
-Package natbib Warning: Citation `sellan2010b' on page 21 undefined on input li
-ne 1002.
+Package natbib Warning: Citation `sellan2010b' on page 15 undefined on input li
+ne 1089.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 21 undefined on input lin
-e 1008.
+Package natbib Warning: Citation `Larkin2012' on page 15 undefined on input lin
+e 1101.
 
 
-Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
-ne 1008.
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 1101.
 
 
-Package natbib Warning: Citation `He2011a' on page 21 undefined on input line 1
-008.
+Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 1
+101.
 
 
-Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
-ne 1008.
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 1101.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 21 undefined on input lin
-e 1008.
+Package natbib Warning: Citation `Larkin2012' on page 15 undefined on input lin
+e 1101.
 
 
-Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
-ne 1008.
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 1101.
 
 
-Package natbib Warning: Citation `He2011a' on page 21 undefined on input line 1
-008.
+Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 1
+101.
 
 
-Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
-ne 1008.
+Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
+ne 1101.
 
-(./prb_mfp_jl_031113.bbl [21] [22]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
-
-(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
- [23]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-)
-
-Class revtex4 Warning: Endnote numbers changed: rerun LaTeX.
-
+(./prb_mfp_jl_031113.bbl [15] [16])
 
 Package natbib Warning: There were undefined citations.
 
-[24] (./prb_mfp_jl_031113.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[17] (./prb_mfp_jl_031113.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1105,31 +910,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6945 strings out of 493848
- 95655 string characters out of 1152822
- 190601 words of memory out of 3000000
- 9984 multiletter control sequences out of 15000+50000
- 16902 words of font info for 62 fonts, out of 3000000 for 9000
+ 6804 strings out of 493849
+ 92702 string characters out of 1152845
+ 189302 words of memory out of 3000000
+ 9953 multiletter control sequences out of 15000+50000
+ 16734 words of font info for 61 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,25n,28p,707b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prb_mfp_jl_031113.pdf (24 pages, 295763 bytes).
-PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38i,25n,29p,607b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on prb_mfp_jl_031113.dvi (17 pages, 52656 bytes).
