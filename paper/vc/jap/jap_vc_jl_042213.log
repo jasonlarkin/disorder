@@ -1,0 +1,1731 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  22 APR 2013 14:53
+entering extended mode
+ %&-line parsing enabled.
+**jap_vc_jl_042213.tex
+(./jap_vc_jl_042213.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/iop/iopart.cls
+
+LaTeX Warning: You have requested document class `/usr/share/texmf-texlive/tex/
+latex/iop/iopart',
+               but the document class provides `iopart'.
+
+Document Class: iopart 1996/06/10 v0.0 IOP Journals LaTeX article class
+(/usr/share/texmf/tex/latex/iopart12.clo
+File: iopart12.clo 1997/01/15 v1.0 LaTeX2e file (size option)
+)
+\c@jnl=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\indentedwidth=\skip43
+\mathindent=\dimen102
+\c@eqnval=\count87
+)
+! Missing number, treated as zero.
+<to be read again> 
+                   u
+l.4 ...t}[/usr/share/texmf-texlive/tex/latex/iop/]
+                                                  
+? 
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks15
+\extratabsurround=\skip44
+\backup@length=\skip45
+
+
+LaTeX Warning: Command \@xhline  has changed.
+               Check if current package is valid.
+
+)) (/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen107
+)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen108
+\lightrulewidth=\dimen109
+\cmidrulewidth=\dimen110
+\belowrulesep=\dimen111
+\belowbottomsep=\dimen112
+\aboverulesep=\dimen113
+\abovetopsep=\dimen114
+\cmidrulesep=\dimen115
+\cmidrulekern=\dimen116
+\defaultaddspace=\dimen117
+\@cmidla=\count88
+\@cmidlb=\count89
+\@aboverulesep=\dimen118
+\@belowrulesep=\dimen119
+\@thisruleclass=\count90
+\@lastruleclass=\count91
+\@thisrulewidth=\dimen120
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen121
+)
+LaTeX Info: Redefining \boldsymbol on input line 54.
+\pmbraise@=\dimen122
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks17
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks18
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks19
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks20
+
+
+! LaTeX Error: Command \equation* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2665 }
+        
+? 
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip49
+\subfigcapskip=\skip50
+\subfigcaptopadj=\dimen130
+\subfigbottomskip=\skip51
+\subfigcapmargin=\dimen131
+\subfiglabelskip=\skip52
+\c@subfigure=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@lotdepth=\count107
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip53
+\subfig@bottom=\skip54
+)
+(/usr/share/texmf-texlive/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
+File: lipsum.dtx 2005/01/26 v1.0 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count108
+)
+
+LaTeX Warning: Unused global option(s):
+    [twocolumn,iop].
+
+(./jap_vc_jl_042213.aux)
+\openout1 = `jap_vc_jl_042213.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+
+! Undefined control sequence.
+l.258 \email
+            {mcgaughey@cmu.edu}
+? 
+! Undefined control sequence.
+l.259 \affiliation
+                  {Department of Mechanical Engineering\\
+? 
+[1
+
+]
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 2 undefined on input line
+ 319.
+
+
+LaTeX Warning: Citation `lu_thermal_1992' on page 2 undefined on input line 319
+.
+
+
+LaTeX Warning: Citation `chen_recent_2003' on page 2 undefined on input line 31
+9.
+
+
+LaTeX Warning: Citation `clarke_thermal_2005' on page 2 undefined on input line
+ 319.
+
+
+LaTeX Warning: Citation `snyder_complex_2008' on page 2 undefined on input line
+ 319.
+
+
+LaTeX Warning: Citation `minnich_bulk_2009' on page 2 undefined on input line 3
+19.
+
+
+LaTeX Warning: Citation `toberer_phonon_2011' on page 2 undefined on input line
+ 319.
+
+
+LaTeX Warning: Citation `zebarjadi_perspectives_2012' on page 2 undefined on in
+put line 319.
+
+
+LaTeX Warning: Citation `schiffres_gas_2012' on page 2 undefined on input line 
+319.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 2 undefined on input line
+ 324.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 2 undefined on input lin
+e 324.
+
+
+LaTeX Warning: Citation `abeles_thermal_1962' on page 2 undefined on input line
+ 326.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 2 undefined on input line
+ 326.
+
+
+LaTeX Warning: Citation `ziman_electrons_2001' on page 2 undefined on input lin
+e 332.
+
+
+LaTeX Warning: Citation `feldman_thermal_1993' on page 2 undefined on input lin
+e 332.
+
+
+LaTeX Warning: Citation `allen_diffusons_1999' on page 2 undefined on input lin
+e 332.
+
+
+LaTeX Warning: Citation `broido_intrinsic_2007' on page 2 undefined on input li
+ne 340.
+
+
+LaTeX Warning: Citation `ward_intrinsic_2010' on page 2 undefined on input line
+ 340.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 2 undefined on input lin
+e 340.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 2 undefined on input line 340.
+
+
+
+LaTeX Warning: Citation `shiga_microscopic_2012' on page 2 undefined on input l
+ine 340.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 2 undefined on input line 34
+0.
+
+
+LaTeX Warning: Citation `shiomi_thermal_2011' on page 2 undefined on input line
+ 340.
+
+
+LaTeX Warning: Citation `esfarjani_heat_2011' on page 2 undefined on input line
+ 340.
+
+
+LaTeX Warning: Citation `li_thermal_2012' on page 2 undefined on input line 340
+.
+
+
+LaTeX Warning: Citation `luckyanova_coherent_2012' on page 2 undefined on input
+ line 340.
+
+
+LaTeX Warning: Citation `ward_ab_2009' on page 2 undefined on input line 346.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 2 undefined on input line 346.
+
+
+
+LaTeX Warning: Citation `bao_first-principles_2012' on page 2 undefined on inpu
+t line 346.
+
+
+LaTeX Warning: Citation `sosso_thermal_2012' on page 2 undefined on input line 
+346.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 2 undefined on input lin
+e 346.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 2 undefined on input line 34
+6.
+
+
+LaTeX Warning: Citation `li_thermal_2012' on page 2 undefined on input line 346
+.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 2 undefined on input line
+ 352.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 2 undefined on input line
+ 359.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 2 undefined on input line
+ 359.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 2 undefined on input line 359.
+
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 2 undefined on input line 35
+9.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 2 undefined on input lin
+e 359.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 365.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 365.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+
+LaTeX Warning: Citation `garg_role_2011' on page 2 undefined on input line 366.
+
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 2 undefined on input lin
+e 366.
+
+
+LaTeX Warning: Citation `li_thermal_2012' on page 2 undefined on input line 366
+.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 2 undefined on input line 36
+7.
+
+
+LaTeX Warning: Citation `ashcroft_solid_1976' on page 2 undefined on input line
+ 379.
+
+
+LaTeX Warning: Citation `stillinger_computer_1985' on page 2 undefined on input
+ line 381.
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 2
+ []
+
+[2
+
+]
+
+LaTeX Warning: Citation `ziman_electrons_2001' on page 3 undefined on input lin
+e 446.
+
+
+LaTeX Warning: Citation `ziman_electrons_2001' on page 3 undefined on input lin
+e 447.
+
+
+LaTeX Warning: Citation `broido_intrinsic_2007' on page 3 undefined on input li
+ne 468.
+
+
+LaTeX Warning: Citation `ward_intrinsic_2010' on page 3 undefined on input line
+ 468.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 3 undefined on input line 468.
+
+
+
+LaTeX Warning: Citation `ward_ab_2009' on page 3 undefined on input line 472.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 3 undefined on input lin
+e 472.
+
+
+LaTeX Warning: Citation `mcquarrie_statistical_2000' on page 3 undefined on inp
+ut line 482.
+
+
+LaTeX Warning: Citation `mcgaughey_quantitative_2004' on page 3 undefined on in
+put line 486.
+
+
+LaTeX Warning: Citation `goicochea_thermal_2010' on page 3 undefined on input l
+ine 486.
+
+
+LaTeX Warning: Citation `allen_thermal_1993' on page 3 undefined on input line 
+495.
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 3
+ []
+
+[3]
+
+LaTeX Warning: Citation `allen_thermal_1993' on page 4 undefined on input line 
+502.
+
+
+LaTeX Warning: Citation `feldman_thermal_1993' on page 4 undefined on input lin
+e 502.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 4 undefined on input l
+ine 502.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 4 undefined on input line
+ 507.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 4 undefined on input line
+ 529.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 4 undefined on input line
+ 536.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 4 undefined on input line
+ 541.
+
+
+LaTeX Warning: Citation `klemens_scattering_1955' on page 4 undefined on input 
+line 541.
+
+
+LaTeX Warning: Citation `klemens_thermal_1957' on page 4 undefined on input lin
+e 541.
+
+
+LaTeX Warning: Citation `callaway_model_1959' on page 4 undefined on input line
+ 541.
+
+
+LaTeX Warning: Citation `mattis_phonon_1957' on page 4 undefined on input line 
+541.
+
+
+LaTeX Warning: Citation `kamitakahara_vibrations_1974' on page 4 undefined on i
+nput line 541.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 4 undefined on input line
+ 551.
+
+
+LaTeX Warning: Citation `cahill_thermal_2004' on page 4 undefined on input line
+ 559.
+
+
+LaTeX Warning: Citation `cahill_thermal_2004' on page 4 undefined on input line
+ 562.
+
+
+LaTeX Warning: Citation `cahill_thermal_2005' on page 4 undefined on input line
+ 562.
+
+
+LaTeX Warning: Citation `skye_thermal_2008' on page 4 undefined on input line 5
+66.
+
+
+LaTeX Warning: Citation `landry_thermal_2009' on page 4 undefined on input line
+ 569.
+
+
+LaTeX Warning: Citation `tian_enhancing_2012' on page 4 undefined on input line
+ 569.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 4 undefined on input line 576.
+
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 4 undefined on input line 57
+6.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 4 undefined on input lin
+e 576.
+
+
+LaTeX Warning: Citation `turney_predicting_2009' on page 4 undefined on input l
+ine 579.
+
+
+LaTeX Warning: Citation `esfarjani_heat_2011' on page 4 undefined on input line
+ 579.
+
+
+LaTeX Warning: Citation `klemens_scattering_1955' on page 4 undefined on input 
+line 583.
+
+
+LaTeX Warning: Citation `klemens_thermal_1957' on page 4 undefined on input lin
+e 583.
+
+
+LaTeX Warning: Citation `mattis_phonon_1957' on page 4 undefined on input line 
+583.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 4 undefined on input line
+ 583.
+
+
+LaTeX Warning: Citation `mattis_phonon_1957' on page 4 undefined on input line 
+590.
+
+
+LaTeX Warning: Citation `kamitakahara_vibrations_1974' on page 4 undefined on i
+nput line 590.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 4 undefined on input line
+ 590.
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 4
+ []
+
+[4]
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 5 undefined on input lin
+e 597.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 5 undefined on input line 601.
+
+
+
+LaTeX Warning: Citation `li_thermal_2012' on page 5 undefined on input line 610
+.
+
+
+LaTeX Warning: Citation `luckyanova_coherent_2012' on page 5 undefined on input
+ line 614.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 5 undefined on input line
+ 623.
+
+
+LaTeX Warning: Citation `kamitakahara_vibrations_1974' on page 5 undefined on i
+nput line 623.
+
+
+LaTeX Warning: Citation `cahill_thermal_2004' on page 5 undefined on input line
+ 623.
+
+
+LaTeX Warning: Citation `cahill_thermal_2005' on page 5 undefined on input line
+ 623.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 5 undefined on input line
+ 623.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 5 undefined on input line 623.
+
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 5 undefined on input lin
+e 623.
+
+
+LaTeX Warning: Citation `shiga_microscopic_2012' on page 5 undefined on input l
+ine 626.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 5 undefined on input line 63
+1.
+
+
+LaTeX Warning: Citation `kudman_thermoelectric_1972' on page 5 undefined on inp
+ut line 632.
+
+
+LaTeX Warning: Citation `pei_convergence_2011' on page 5 undefined on input lin
+e 632.
+
+File: /home/jason/disorder/paper/vc/fig1.eps Graphic file (type eps)
+</home/jason/disorder/paper/vc/fig1.eps>
+
+LaTeX Warning: Citation `momma_vesta:_2008' on page 5 undefined on input line 6
+96.
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 5
+ []
+
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 6
+ []
+
+[6]
+
+LaTeX Warning: Command \r invalid in math mode on input line 730.
+
+
+LaTeX Warning: Citation `mcgaughey_phonon_2004' on page 7 undefined on input li
+ne 730.
+
+
+LaTeX Warning: Citation `plimpton_fast_1995' on page 7 undefined on input line 
+731.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 745.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 746.
+
+
+LaTeX Warning: Citation `goicochea_thermal_2010' on page 7 undefined on input l
+ine 749.
+
+
+LaTeX Warning: Citation `he_lattice_2012' on page 7 undefined on input line 749
+.
+
+
+LaTeX Warning: Citation `sellan_cross-plane_2010' on page 7 undefined on input 
+line 750.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 758.
+
+
+LaTeX Warning: Citation `gale_general_2003' on page 7 undefined on input line 7
+77.
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 7
+ []
+
+[7
+
+]
+
+LaTeX Warning: Citation `ashcroft_solid_1976' on page 8 undefined on input line
+ 796.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 8 undefined on input line 799.
+
+
+
+LaTeX Warning: Citation `bouchard_vibrational_1988' on page 8 undefined on inpu
+t line 801.
+
+
+LaTeX Warning: Citation `ashcroft_solid_1976' on page 8 undefined on input line
+ 803.
+
+
+LaTeX Warning: Citation `duda_reducing_2011' on page 8 undefined on input line 
+818.
+
+
+LaTeX Warning: Citation `chu_effect_1989' on page 8 undefined on input line 820
+.
+
+File: /home/jason/disorder/paper/vc/fig2.eps Graphic file (type eps)
+</home/jason/disorder/paper/vc/fig2.eps>
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 8
+ []
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (186.02525pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 9
+ []
+
+[9]
+
+LaTeX Warning: Citation `mcgaughey_phonon_2006' on page 10 undefined on input l
+ine 859.
+
+
+LaTeX Warning: Citation `gale_general_2003' on page 10 undefined on input line 
+864.
+
+
+LaTeX Warning: Citation `he_thermal_2011' on page 10 undefined on input line 86
+7.
+
+
+LaTeX Warning: Citation `he_heat_2011' on page 10 undefined on input line 867.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 10 undefined on input lin
+e 873.
+
+
+LaTeX Warning: Citation `duda_reducing_2011' on page 10 undefined on input line
+ 873.
+
+
+LaTeX Warning: Citation `donadio_atomistic_2009' on page 10 undefined on input 
+line 873.
+
+
+LaTeX Warning: Citation `he_heat_2011' on page 10 undefined on input line 873.
+
+
+LaTeX Warning: Citation `he_thermal_2011' on page 10 undefined on input line 87
+3.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 10 undefined on input lin
+e 877.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 10 undefined on input 
+line 879.
+
+
+LaTeX Warning: Citation `duda_reducing_2011' on page 10 undefined on input line
+ 879.
+
+
+LaTeX Warning: Citation `donadio_atomistic_2009' on page 10 undefined on input 
+line 879.
+
+
+LaTeX Warning: Citation `he_heat_2011' on page 10 undefined on input line 879.
+
+
+LaTeX Warning: Citation `he_thermal_2011' on page 10 undefined on input line 87
+9.
+
+
+LaTeX Warning: Citation `allen_diffusons_1999' on page 10 undefined on input li
+ne 885.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 10 undefined on input 
+line 885.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 10 undefined on input 
+line 888.
+
+
+LaTeX Warning: Citation `volz_molecular-dynamics_2000' on page 10 undefined on 
+input line 891.
+
+
+LaTeX Warning: Citation `allen_diffusons_1999' on page 10 undefined on input li
+ne 894.
+
+
+LaTeX Warning: Citation `allen_diffusons_1999' on page 10 undefined on input li
+ne 932.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 10 undefined on input 
+line 932.
+
+
+LaTeX Warning: Citation `green_density_2011' on page 10 undefined on input line
+ 932.
+
+
+LaTeX Warning: Citation `vc_fn1' on page 10 undefined on input line 939.
+
+
+LaTeX Warning: Citation `allen_diffusons_1999' on page 10 undefined on input li
+ne 945.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 10 undefined on input 
+line 945.
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 929--949
+[]\OT1/cmr/m/n/12 Physically, $\OML/cmm/m/it/12 S[]  []$ \OT1/cmr/m/n/12 repres
+ents the frequency spectrum required to create a
+ []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 10
+ []
+
+[10
+
+]
+File: /home/jason/disorder/paper/vc/fig3.eps Graphic file (type eps)
+ </home/jason/disorder/paper/vc/fig3.eps>
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 11
+ []
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 12
+ []
+
+[12]
+
+LaTeX Warning: Citation `ladd_lattice_1986' on page 13 undefined on input line 
+1007.
+
+
+LaTeX Warning: Citation `mcgaughey_quantitative_2004' on page 13 undefined on i
+nput line 1007.
+
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 13 undefined on inpu
+t line 1007.
+
+
+LaTeX Warning: Citation `larkin_comparison_2012' on page 13 undefined on input 
+line 1007.
+
+
+LaTeX Warning: Citation `dove_introduction_1993' on page 13 undefined on input 
+line 1010.
+
+
+LaTeX Warning: Citation `larkin_comparison_2012' on page 13 undefined on input 
+line 1043.
+
+
+LaTeX Warning: Citation `ladd_lattice_1986' on page 13 undefined on input line 
+1046.
+
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 13 undefined on inpu
+t line 1046.
+
+
+LaTeX Warning: Citation `turney_predicting_2009' on page 13 undefined on input 
+line 1048.
+
+
+LaTeX Warning: Citation `ashcroft_solid_1976' on page 13 undefined on input lin
+e 1086.
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 13
+ []
+
+[13
+
+]
+
+LaTeX Warning: Citation `callaway_model_1959' on page 14 undefined on input lin
+e 1093.
+
+
+LaTeX Warning: Citation `maradudin_scattering_1962' on page 14 undefined on inp
+ut line 1093.
+
+
+LaTeX Warning: Citation `klemens_scattering_1955' on page 14 undefined on input
+ line 1096.
+
+
+LaTeX Warning: Citation `klemens_thermal_1957' on page 14 undefined on input li
+ne 1096.
+
+
+LaTeX Warning: Citation `mattis_phonon_1957' on page 14 undefined on input line
+ 1096.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 14 undefined on input lin
+e 1096.
+
+
+LaTeX Warning: Citation `taraskin_determination_1999' on page 14 undefined on i
+nput line 1103.
+
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 14 undefined on inpu
+t line 1125.
+
+File: /home/jason/disorder/paper/vc/fig4.eps Graphic file (type eps)
+</home/jason/disorder/paper/vc/fig4.eps>
+
+LaTeX Warning: Citation `taraskin_determination_1999' on page 14 undefined on i
+nput line 1152.
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 1152--1152
+[]\OT1/cmr/bx/n/10 Figure 4. []\OT1/cmr/m/n/10 Lifetimes predicted using VC-NMD
+ and Gamma-NMD from MD
+ []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 14
+ []
+
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 15
+ []
+
+[15]
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 16 undefined on inpu
+t line 1163.
+
+
+LaTeX Warning: Citation `turney_predicting_2009' on page 16 undefined on input 
+line 1166.
+
+
+LaTeX Warning: Citation `ziman_electrons_2001' on page 16 undefined on input li
+ne 1171.
+
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 16 undefined on inpu
+t line 1179.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 16 undefined on input line 117
+9.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 16 undefined on input line 1
+179.
+
+
+LaTeX Warning: Citation `mcgaughey_phonon_2004' on page 16 undefined on input l
+ine 1182.
+
+
+LaTeX Warning: Citation `stillinger_computer_1985' on page 16 undefined on inpu
+t line 1183.
+
+
+LaTeX Warning: Citation `ecsedy_thermal_1977' on page 16 undefined on input lin
+e 1185.
+
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 16 undefined on inpu
+t line 1185.
+
+! Undefined control sequence.
+l.1187 described in Ref. \citenum
+                                 {turney_predicting_2009-1},
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1187 described in Ref. \citenum{turney_
+                                         predicting_2009-1},
+? 
+! Extra }, or forgotten $.
+l.1187 ... Ref. \citenum{turney_predicting_2009-1}
+                                                  ,
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1191 
+       
+? 
+
+Underfull \hbox (badness 2744) in paragraph at lines 1178--1191
+[]\OT1/cmr/m/n/12 Phonon-phonon scat-ter-ing in ALD is mod-eled by in-clud-ing 
+three-phonon
+ []
+
+
+Overfull \hbox (24.34596pt too wide) in paragraph at lines 1178--1191
+\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; withallclassicalexpressionsforthepopulation
+storemainconsistentwiththeclassicalMD \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 16 undefined on input lin
+e 1194.
+
+
+LaTeX Warning: Citation `klemens_scattering_1955' on page 16 undefined on input
+ line 1213.
+
+
+LaTeX Warning: Citation `klemens_thermal_1957' on page 16 undefined on input li
+ne 1213.
+
+
+LaTeX Warning: Citation `vc_fn2' on page 16 undefined on input line 1221.
+
+
+LaTeX Warning: Citation `mattis_phonon_1957' on page 16 undefined on input line
+ 1231.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 16 undefined on input lin
+e 1231.
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 16
+ []
+
+[16
+
+]
+
+LaTeX Warning: Citation `garg_role_2011' on page 17 undefined on input line 125
+6.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 17 undefined on input line 1
+257.
+
+
+LaTeX Warning: Citation `li_thermal_2012' on page 17 undefined on input line 12
+58.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 17 undefined on input lin
+e 1261.
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 17 undefined on input lin
+e 1264.
+
+
+LaTeX Warning: Citation `maradudin_scattering_1962' on page 17 undefined on inp
+ut line 1274.
+
+
+LaTeX Warning: Citation `ecsedy_thermal_1977' on page 17 undefined on input lin
+e 1274.
+
+
+LaTeX Warning: Citation `turney_predicting_2009-1' on page 17 undefined on inpu
+t line 1274.
+
+File: /home/jason/disorder/paper/vc/fig5.eps Graphic file (type eps)
+</home/jason/disorder/paper/vc/fig5.eps>
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 17
+ []
+
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 18
+ []
+
+[18]
+
+LaTeX Warning: Citation `feldman_thermal_1993' on page 19 undefined on input li
+ne 1313.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 19 undefined on input lin
+e 1334.
+
+
+LaTeX Warning: Citation `gale_general_2003' on page 19 undefined on input line 
+1355.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 19 undefined on input lin
+e 1360.
+
+
+LaTeX Warning: Citation `allen_thermal_1993' on page 19 undefined on input line
+ 1373.
+
+
+LaTeX Warning: Citation `feldman_thermal_1993' on page 19 undefined on input li
+ne 1378.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 19 undefined on input 
+line 1378.
+
+
+LaTeX Warning: Citation `shenogin_predicting_2009' on page 19 undefined on inpu
+t line 1378.
+
+
+LaTeX Warning: Citation `sheng_introduction_2006' on page 19 undefined on input
+ line 1382.
+
+
+LaTeX Warning: Citation `vitelli_heat_2010' on page 19 undefined on input line 
+1382.
+
+
+LaTeX Warning: Citation `vc_fn4' on page 19 undefined on input line 1384.
+
+
+LaTeX Warning: Citation `vc_fn5' on page 19 undefined on input line 1393.
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 19
+ []
+
+[19
+
+]
+File: /home/jason/disorder/paper/vc/fig6.eps Graphic file (type eps)
+ </home/jason/disorder/paper/vc/fig6.eps>
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 20
+ []
+
+[20]
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 21 undefined on input 
+line 1435.
+
+
+LaTeX Warning: Citation `xu_energy_2009' on page 21 undefined on input line 143
+5.
+
+
+LaTeX Warning: Citation `allen_thermal_1993' on page 21 undefined on input line
+ 1437.
+
+
+LaTeX Warning: Citation `feldman_thermal_1993' on page 21 undefined on input li
+ne 1437.
+
+
+LaTeX Warning: Citation `feldman_numerical_1999' on page 21 undefined on input 
+line 1437.
+
+
+LaTeX Warning: Citation `sheng_heat_1991' on page 21 undefined on input line 14
+57.
+
+
+LaTeX Warning: Citation `landry_complex_2008' on page 21 undefined on input lin
+e 1492.
+
+
+LaTeX Warning: Citation `he_thermal_2011' on page 21 undefined on input line 14
+92.
+
+
+LaTeX Warning: Citation `he_lattice_2012' on page 21 undefined on input line 14
+92.
+
+
+LaTeX Warning: Citation `mcgaughey_quantitative_2004' on page 21 undefined on i
+nput line 1501.
+
+
+LaTeX Warning: Citation `turney_predicting_2009' on page 21 undefined on input 
+line 1509.
+
+
+LaTeX Warning: Citation `esfarjani_heat_2011' on page 21 undefined on input lin
+e 1509.
+
+
+LaTeX Warning: Citation `shiomi_thermal_2011' on page 21 undefined on input lin
+e 1509.
+
+
+LaTeX Warning: Citation `shiomi_thermal_2011' on page 21 undefined on input lin
+e 1517.
+
+
+LaTeX Warning: Citation `esfarjani_heat_2011' on page 21 undefined on input lin
+e 1517.
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 21
+ []
+
+[21
+
+]
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 22
+ []
+
+[22]
+File: /home/jason/disorder/paper/vc/fig7.eps Graphic file (type eps)
+ </home/jason/disorder/paper/vc/fig7.eps>
+
+! LaTeX Error: Environment ruledtabular undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1657 \begin{ruledtabular}
+                           
+? 
+
+! LaTeX Error: \begin{table} on input line 1646 ended by \end{ruledtabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1675 \end{ruledtabular}
+                         
+? 
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 23
+ []
+
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 24
+ []
+
+[24]
+
+LaTeX Warning: Citation `sellan_size_2010' on page 25 undefined on input line 1
+706.
+
+
+LaTeX Warning: Citation `sellan_cross-plane_2010' on page 25 undefined on input
+ line 1706.
+
+! Undefined control sequence.
+l.1731 ... converged system-sizes in Ref. \citenum
+                                                  {he_lattice_2012}).
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1731 ...verged system-sizes in Ref. \citenum{he_
+                                                  lattice_2012}).
+? 
+! Extra }, or forgotten $.
+l.1731 ...-sizes in Ref. \citenum{he_lattice_2012}
+                                                  ).
+? 
+
+LaTeX Warning: Citation `esfarjani_method_2008' on page 25 undefined on input l
+ine 1736.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 25 undefined on input line 173
+6.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 25 undefined on input line 1
+736.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 25 undefined on input li
+ne 1736.
+
+
+LaTeX Warning: Citation `esfarjani_heat_2011' on page 25 undefined on input lin
+e 1736.
+
+
+LaTeX Warning: Citation `chaput_phonon-phonon_2011' on page 25 undefined on inp
+ut line 1736.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 25 undefined on input line 174
+4.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1745 
+       
+? 
+
+Underfull \hbox (badness 2237) in paragraph at lines 1725--1745
+\OT1/cmr/m/n/12 a con-cen-tra-tion of 0.5 is plot-ted in Fig. 8[](c). For bulk 
+and the al-loy,
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 1725--1745
+\OT1/cmr/m/n/12 the ther-mal con-duc-tiv-ity is dom-i-nated by low-frequency mo
+des, so that large
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 1725--1745
+\OT1/cmr/m/n/12 and VC-ALD can be used to pre-dict a bulk value from Eq. [] ($\
+OML/cmm/m/it/12 N[] \OMS/cmsy/m/n/12 ^^T
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 1725--1745
+\OML/cmm/m/it/12 sizerequirementhighlightstheefficiencyoftheVC \OMS/cmsy/m/n/12
+ ^^@ \OML/cmm/m/it/12 ALDmethodcomparedtoVC \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (338.88338pt too wide) in paragraph at lines 1725--1745
+\OML/cmm/m/it/12 NMD; whichisnecessarywhencomputationally \OMS/cmsy/m/n/12 ^^@ 
+\OML/cmm/m/it/12 expensiveDFTcalculationsareused:\OT1/cmr/m/n/12 [[]]\OML/cmm/m
+/it/12 ThebulkthermalconductivitypredictionsforVC \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (62.80353pt too wide) in paragraph at lines 1725--1745
+\OML/cmm/m/it/12 ALDandGKareshowninTable\OT1/cmr/m/n/12 1[]\OML/cmm/m/it/12 and
+plottedinFig:\OT1/cmr/m/n/12 9[]\OML/cmm/m/it/12 :Thealloythermalconductivities
+predictedbyVC \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (199.51657pt too wide) in paragraph at lines 1725--1745
+\OML/cmm/m/it/12 ALDare$\OT1/cmr/m/n/12 20%$\OML/cmm/m/it/12 largerthanthosefro
+mGK; incontrasttoVC \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ALDunderpredictingfor
+LJargonalloys:ThisoverpredictionbyVC \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (406.44812pt too wide) in paragraph at lines 1725--1745
+\OML/cmm/m/it/12 ALDcomparedtoGKisclosetotheoverprediction\OT1/cmr/m/n/12 ($15%
+$)\OML/cmm/m/it/12 ofVC \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ALDusingDFTcalcul
+ationsofSiGealloyscomparedtoexperimentwithoutincludingdisorderexplicitly:\OT1/c
+mr/m/n/12 [[]]$ 
+ []
+
+
+LaTeX Warning: Citation `tamura_isotope_1983' on page 25 undefined on input lin
+e 1760.
+
+File: /home/jason/disorder/paper/vc/fig8.eps Graphic file (type eps)
+</home/jason/disorder/paper/vc/fig8.eps>
+File: /home/jason/disorder/paper/vc/fig9.eps Graphic file (type eps)
+
+</home/jason/disorder/paper/vc/fig9.eps>
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 25
+ []
+
+[25
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 26
+ []
+
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 27
+ []
+
+[27]
+
+LaTeX Warning: Citation `abeles_thermal_1962' on page 28 undefined on input lin
+e 1930.
+
+
+LaTeX Warning: Citation `abeles_lattice_1963' on page 28 undefined on input lin
+e 1930.
+
+
+LaTeX Warning: Citation `kamitakahara_vibrations_1974' on page 28 undefined on 
+input line 1930.
+
+
+LaTeX Warning: Citation `cahill_thermal_2004' on page 28 undefined on input lin
+e 1930.
+
+
+LaTeX Warning: Citation `cahill_thermal_2005' on page 28 undefined on input lin
+e 1930.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 28 undefined on input line 193
+0.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 28 undefined on input li
+ne 1930.
+
+
+LaTeX Warning: Citation `cheaito_experimental_2012' on page 28 undefined on inp
+ut line 1930.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 28 undefined on input lin
+e 1952.
+
+
+LaTeX Warning: Citation `cahill_thermal_2004' on page 28 undefined on input lin
+e 1952.
+
+
+LaTeX Warning: Citation `cahill_thermal_2005' on page 28 undefined on input lin
+e 1952.
+
+
+LaTeX Warning: Citation `cheaito_experimental_2012' on page 28 undefined on inp
+ut line 1952.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 28 undefined on input line 195
+3.
+
+
+LaTeX Warning: Citation `ward_intrinsic_2010' on page 28 undefined on input lin
+e 1957.
+
+
+LaTeX Warning: Citation `ward_intrinsic_2010' on page 28 undefined on input lin
+e 1967.
+
+
+LaTeX Warning: Citation `lindsay_thermal_2012' on page 28 undefined on input li
+ne 1967.
+
+
+LaTeX Warning: Citation `garg_role_2011' on page 28 undefined on input line 196
+7.
+
+
+LaTeX Warning: Citation `shiga_microscopic_2012' on page 28 undefined on input 
+line 1967.
+
+
+LaTeX Warning: Citation `tian_phonon_2012' on page 28 undefined on input line 1
+967.
+
+
+LaTeX Warning: Citation `shiomi_thermal_2011' on page 28 undefined on input lin
+e 1967.
+
+
+LaTeX Warning: Citation `esfarjani_heat_2011' on page 28 undefined on input lin
+e 1967.
+
+
+LaTeX Warning: Citation `li_thermal_2012' on page 28 undefined on input line 19
+67.
+
+
+LaTeX Warning: Citation `luckyanova_coherent_2012' on page 28 undefined on inpu
+t line 1967.
+
+
+LaTeX Warning: Citation `sheng_heat_1991' on page 28 undefined on input line 19
+72.
+
+
+LaTeX Warning: Citation `kittel_interpretation_1949' on page 28 undefined on in
+put line 1978.
+
+
+LaTeX Warning: Citation `cahill_lattice_1988' on page 28 undefined on input lin
+e 1978.
+
+
+LaTeX Warning: Citation `sheng_heat_1991' on page 28 undefined on input line 19
+78.
+
+
+LaTeX Warning: Citation `sheng_heat_1991' on page 28 undefined on input line 19
+82.
+
+
+LaTeX Warning: Citation `allen_thermal_1993' on page 28 undefined on input line
+ 1982.
+
+
+LaTeX Warning: Citation `allen_diffusons_1999' on page 28 undefined on input li
+ne 1982.
+
+
+LaTeX Warning: Citation `taraskin_determination_1999' on page 28 undefined on i
+nput line 1982.
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 28
+ []
+
+[28
+
+]
+
+! LaTeX Error: Environment acknowledgements undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1985 \begin{acknowledgements}
+                               
+? 
+
+! LaTeX Error: \begin{document} ended by \end{acknowledgements}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1992 \end{acknowledgements}
+                             
+? 
+
+LaTeX Warning: Citation `mcgaughey_predicting_2013' on page 29 undefined on inp
+ut line 2111.
+
+
+LaTeX Warning: Citation `larkin_comparison_2012' on page 29 undefined on input 
+line 2120.
+
+
+LaTeX Warning: Citation `landau_statistical_1980' on page 29 undefined on input
+ line 2137.
+
+
+LaTeX Warning: Citation `srivastava_physics_1990' on page 29 undefined on input
+ line 2137.
+
+
+LaTeX Warning: Citation `rajabpour_thermal_2010' on page 29 undefined on input 
+line 2137.
+
+File: /home/jason/disorder/paper/vc/fig10.eps Graphic file (type eps)
+</home/jason/disorder/paper/vc/fig10.eps>
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 29
+ []
+
+[29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 30
+ []
+
+[30]
+Overfull \hbox (191.90019pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/12 Evaluation of the Virtual Crystal Approximation for Predicting
+ Alloy Vibrational Mode Properties and Thermal Conductivity \OT1/cmr/m/n/12 31
+ []
+
+[31
+
+] (./jap_vc_jl_042213.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 1731 ({)
+### simple group (level 1) entered at line 1187 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 2470 strings out of 493849
+ 28337 string characters out of 1152845
+ 187836 words of memory out of 3000000
+ 5706 multiletter control sequences out of 15000+50000
+ 16463 words of font info for 61 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 25i,25n,24p,272b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on jap_vc_jl_042213.dvi (31 pages, 94156 bytes).

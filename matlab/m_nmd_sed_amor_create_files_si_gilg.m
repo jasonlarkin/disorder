@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/si/amor/normand/perfect3/anneal_900K/' ;
+    nmd.str.main = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
@@ -23,11 +23,11 @@ nmd.constant = m_constant;
     nmd.m(1) = 1.0; nmd.m(2) = 3.0; nmd.NUM_ATOMS_TYPE = 1;
 %--------------------------------------------------------------------------
 
-nmd.walltime.lammps = 12; nmd.cpu.lammps = 4; 
-nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
+nmd.walltime.lammps = 12; nmd.cpu.lammps = 8; 
+nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 6;
 
 %--------------------------------------------------------------------------
-    nmd.Nx = 5; nmd.Ny = 5; nmd.Nz = 5;
+    nmd.Nx = 8; nmd.Ny = 8; nmd.Nz = 8;
 %--------------------------------------------------------------------------
     nmd.seed.alloy = 1;
     nmd.seed.initial = 1:10;
@@ -63,7 +63,7 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 2;
 %read data
 dummy =...
     dlmread(...
-    strcat(nmd.str.main,'x0_nve.data'));
+    strcat(nmd.str.main,'x0.data'));
    
     nmd.param = dummy(1,:);
     nmd.x0(:,1) = dummy(2:size(dummy,1),1);

@@ -1,8 +1,10 @@
-function m_lmp_dump2x0(str_dump,str_dump_name,str_x0,str_x0_name)
+function m_lmp_dump2x0(str_dump,str_dump_name,str_x0_name)
 %m_lmp_dump2x0(str_dump,str_dump_name,str_x0,str_x0_name)
 %-------------------------------------------------------------------------- 
 
 format long
+
+str_x0 = str_dump;
 
 %str_main = '/home/jason/disorder/lj/amor/4x/XCORR_AF/220/2_10K_relax/time/';
 

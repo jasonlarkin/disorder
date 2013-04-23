@@ -1,10 +1,10 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/si/amor/normand/perfect2/anneal_900K/';
+str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
 
 AF.eigvec = load(strcat(str_af,'AF_eigvec.dat'));
 AF.freq = load(strcat(str_af,'AF_freq.dat'))';
-AF.x0 = m_x0_read([str_af 'x0_nve.data']);
+AF.x0 = m_x0_read([str_af 'x0.data']);
 
 nmd.alat = 5.43;
 
@@ -20,7 +20,7 @@ nmd.alat = 5.43;
 % AF.kpt(:,3) = nmd.kptmaster(:,3);
 %AK.kpt = [AF.kpt(:,1)/nmd.Nx AF.kpt(:,2)/nmd.Ny AF.kpt(:,3)/nmd.Nz]
 %100
-AF.kpt(:,1) = [0.2 0.4 0.6 0.8 1.0]'; 
+AF.kpt(:,1) = [0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0]'; 
 AF.kpt(:,2) = 0;
 AF.kpt(:,3) = 0;
 %111
@@ -51,7 +51,7 @@ AF.kpt(:,3) = 0;
 % AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
 % AF.kpt(:,3) = [0.1 0.2 0.3 0.4 0.5]';
 
-BROADEN = 20;
+BROADEN = 1.0;
 rng(11111);
 
 DSF_long_avg.SL = zeros(length(AF.freq), size(AF.kpt,1));

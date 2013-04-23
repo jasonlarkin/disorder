@@ -24,9 +24,9 @@ for imode=1:size(SED.modemaster,2)
 %              
 
 if imode<150
-    PT_PERC=0.001; INV_PERC = 0.25; gamma_guess = 10;
+    PT_PERC=0.01; INV_PERC = 0.4; gamma_guess = 10;
 else
-    PT_PERC=0.001; INV_PERC = 0.25; gamma_guess = 4;
+    PT_PERC=0.01; INV_PERC = 0.4; gamma_guess = 4;
 end
 
 SED.HLDfreq(imode)
@@ -46,7 +46,7 @@ w_guess =...
 %pause
 %--------------------------------------------------------------------------
 
-if imode<4
+if imode<5
     
 %Store 
     SED.sedfreq( imode ) = 0;

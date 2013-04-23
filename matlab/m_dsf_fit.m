@@ -4,7 +4,7 @@ str_af = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/work/';
 
 %.eigvec = load(strcat(str_af,'AF_eigvec_1.dat'));
 AF.freq = load(strcat(str_af,'AF_freq_1.dat'));
-AF.x0 = m_x0_read(str_af,'x0.data');
+AF.x0 = m_x0_read([str_af 'x0.data']);
 
 str_nmd = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/NMD/1/work/';
 nmd = load([str_nmd 'NMDdata.mat']);
