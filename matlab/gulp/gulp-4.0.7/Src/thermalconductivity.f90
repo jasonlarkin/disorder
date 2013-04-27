@@ -6,6 +6,7 @@
 !   6/12 Created 
 !   1/13 JL modified
 !   1/13 Loop over Cartesian degrees of freedom added
+!   3/13 Correction of constants made
 !
 !  Conditions of use:
 !
@@ -25,7 +26,7 @@
 !
 !  Copyright Curtin University 2013
 !
-!  Julian Gale, NRI, Curtin University, January 2013
+!  Julian Gale, NRI, Curtin University, March 2013
 !
   use constants,      only : pi, speedl, avogadro, evtoj
   use current
@@ -119,7 +120,7 @@
 !
   constant = ((1.0d13*evtoj*avogadro)**2)/(2.0_dp*pi*speedl)**3
 !
-  constant = pi*constant/12.0_dp    ! 1/3 convoluted with 1/2 squared from A7
+  constant = pi*constant/48.0_dp    ! 1/3 convoluted with 1/2 squared from A7 and 1/2 squared from A8
 !
 !  Initialise thermal conductivities for each mode
 !
@@ -239,9 +240,9 @@
         Di_loc = Di_loc + dwij*Sij(j,i)**2
       enddo
 !
-!  Scale by constants and inverse frequency squared - factor of third is for averaging over directions
+!  Scale by constants and inverse frequency squared
 !
-      Di(i) = Di(i) + Di_loc*constant/(3.0_dp*freq(i)**2)
+      Di(i) = Di(i) + Di_loc*constant/(freq(i)**2)
     enddo
 !
 !  End loop over Cartesian degrees of freedom
