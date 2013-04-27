@@ -49,10 +49,10 @@ case $os in
 	       echo 'OPT=-O ' > makefile
 	       echo 'OPT1=' >> makefile
 	       echo 'OPT2=-ffloat-store' >> makefile
-#	       echo 'BAGGER=' >> makefile
+	       echo 'BAGGER=' >> makefile
 	   else	
-	       echo 'OPT=' > makefile
-	       echo 'OPT2=-ffloat-store' >> makefile
+#	       echo 'OPT=' > makefile
+#	       echo 'OPT2=-ffloat-store' >> makefile
 #  g95
                echo 'BAGGER=-g -Wall -Wuninitialized -fbounds-check -ftrace=full' >> makefile
 #  gfortran
@@ -66,7 +66,7 @@ case $os in
 #           echo 'RUNF90=f90 ' >> makefile
 #           echo 'FFLAGS=-I.. -B18 ' >> makefile
 #  g95
-#           echo 'RUNF90=mpif90 ' >> makefile
+           echo 'RUNF90=mpif90 ' >> makefile
            echo 'RUNF90=g95 ' >> makefile
 #  gfortran
 #           echo 'RUNF90=gfortran ' >> makefile
@@ -80,7 +80,7 @@ case $os in
 #           echo 'LIBS=-lU77' >> makefile
 #  g95
            echo 'LIBS=' >> makefile
-#           echo 'LIBS=-lmpi' >> makefile
+           echo 'LIBS=-lmpi' >> makefile
 	   echo 'LDFLAGS=' >> makefile
            echo 'BLAS=blas.o' >> makefile
            echo 'LAPACK=lapack.o' >> makefile
@@ -215,7 +215,7 @@ case $os in
 #  g95
 	       echo 'OPT2=-ffloat-store' >> makefile
                echo 'BAGGER=-g -Wall' >> makefile
-#               echo 'BAGGER=-g ' >> makefile
+               echo 'BAGGER=-g ' >> makefile
 	   fi
            target=${1}_
 # PG compiler
@@ -232,15 +232,14 @@ case $os in
 #	   echo 'FFLAGS=-I.. ' >> makefile
 #	   echo 'LIBS=' >> makefile
 # Intel compiler
-	   echo 'FFLAGS=-I.. ' >> makefile
-	   echo 'LIBS=' >> makefile
-	   echo 'CFLAGS=-I.. ' >> makefile
+#	   echo 'FFLAGS=-I.. ' >> makefile
+#	   echo 'LIBS=' >> makefile
+#	   echo 'CFLAGS=-I.. ' >> makefile
 # Absoft compiler
 #           echo 'FFLAGS=-I.. -B18 ' >> makefile
 #           echo 'LIBS=-lblas -lU77' >> makefile
 #  g95
            echo 'FFLAGS=-I.. ' >> makefile
-#
            echo 'CFLAGS=-ansi ' >> makefile
 # PG compiler
 #	   echo 'LDFLAGS=-Bstatic' >> makefile
@@ -248,7 +247,7 @@ case $os in
 #	   echo 'LDFLAGS=-static' >> makefile
 # g95
 	   echo 'LDFLAGS=' >> makefile
-#
+
 # General options
 #
            echo 'ETIME=' >> makefile

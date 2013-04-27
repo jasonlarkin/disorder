@@ -1,7 +1,7 @@
 %\documentclass[aps,prb,twocolumn,footinbib,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
 %\documentclass[aip,onecolumn,preprint,footinbib,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
 %\documentclass[aps,prb,article,onecolumn,groupedaddress,amsmath,amssymb,12pt]{revtex4}
-\documentclass[12pt,twocolumn,iop]{/usr/share/texmf-texlive/tex/latex/iop/iopart}[/usr/share/texmf-texlive/tex/latex/iop/]
+\documentclass[12pt,twocolumn,iop]{/usr/share/texmf/tex/latex/iop/iopart}[/usr/share/texmf/tex/latex/iop/]
 \usepackage{graphicx}
 \usepackage{ifthen}
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -13,6 +13,9 @@
 \usepackage{amssymb}
 \usepackage{subfigure}
 \usepackage{lipsum}
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{citesort}
 % \usepackage{epstopdf}
 
 % \newif\ifpdf
@@ -250,14 +253,12 @@
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-\title{Evaluation of the Virtual Crystal Approximation for Predicting Alloy 
-Vibrational Mode Properties and Thermal Conductivity}
+\title{Predicting alloy vibrational mode properties using lattice
+dynamics calculations, molecular dynamics simulations, and the virtual
+crystal approximation}
 %--------------------------------------------------------------------------
-\author{Jason M. Larkin}
-\author{A. J. H. McGaughey}
-\email{mcgaughey@cmu.edu}
-\affiliation{Department of Mechanical Engineering\\
-Carnegie Mellon University\\Pittsburgh, PA 15213}
+\author{J M Larkin$^1$, A J H McGaughey$^1$ \ead{mcgaughey@cmu.edu}}
+\address{$^1$ Department of Mechanical Engineering\\Carnegie Mellon University\\Pittsburgh, PA 15213}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
@@ -313,10 +314,7 @@ disordered materials (e.g., alloys, amorphous solids, aerogels)
 are used in 
 applications ranging from thermoelectric energy conversion to 
 thermally insulating barriers.
-\cite{graebner_phonon_1986,cahill_lattice_1988,lu_thermal_1992,
-chen_recent_2003,clarke_thermal_2005,snyder_complex_2008,
-minnich_bulk_2009,toberer_phonon_2011,zebarjadi_perspectives_2012,
-schiffres_gas_2012} 
+\cite{graebner_phonon_1986,cahill_lattice_1988,lu_thermal_1992,chen_recent_2003,clarke_thermal_2005,snyder_complex_2008,minnich_bulk_2009,toberer_phonon_2011,zebarjadi_perspectives_2012,schiffres_gas_2012} 
 Disordered lattices are a subgroup of disordered materials where 
 the atomic positions follow a lattice structure but the 
 constituent species are spatially random. Examples include isotopic 
@@ -334,16 +332,11 @@ Accurate predictions of these properties for
 crystalline systems (i.e., perfect lattices)  
 can be made with anharmonic lattice dynamics (ALD) theory 
 using input from density functional theory (DFT)  
-calculations.\cite{broido_intrinsic_2007,ward_intrinsic_2010,
-lindsay_thermal_2012,garg_role_2011,shiga_microscopic_2012,
-tian_phonon_2012,shiomi_thermal_2011,esfarjani_heat_2011,
-li_thermal_2012,luckyanova_coherent_2012}
+calculations.\cite{broido_intrinsic_2007,ward_intrinsic_2010,lindsay_thermal_2012,garg_role_2011,shiga_microscopic_2012,tian_phonon_2012,shiomi_thermal_2011,esfarjani_heat_2011,li_thermal_2012,luckyanova_coherent_2012}
 Computational costs limit DFT calculations to less than 100 atoms, 
 however, making it challenging to explicitly incorporate the effects 
 of disorder.
-\cite{ward_ab_2009,garg_role_2011,bao_first-principles_2012,
-sosso_thermal_2012,lindsay_thermal_2012,tian_phonon_2012,
-li_thermal_2012}
+\cite{ward_ab_2009,garg_role_2011,bao_first-principles_2012,sosso_thermal_2012,lindsay_thermal_2012,tian_phonon_2012,li_thermal_2012}
 
 Disorder is typically included in the ALD framework using Abeles' 
 virtual crystal (VC) approximation, whereby the disordered  
@@ -355,8 +348,7 @@ unit cell with the averaged properties
 (i.e., all vibrational modes are phonons) and 
 phonon-phonon and phonon-disorder scattering 
 are included as perturbations.
-\cite{abeles_lattice_1963,tamura_isotope_1983,garg_role_2011,
-tian_phonon_2012,lindsay_thermal_2012} 
+\cite{abeles_lattice_1963,tamura_isotope_1983,garg_role_2011,tian_phonon_2012,lindsay_thermal_2012} 
 Except for low-frequency (long-wavelength) acoustic modes,
 the general validity of this assumption is unclear. 
 We will refer to this approach as VC-ALD. 
@@ -536,9 +528,7 @@ thermal conductivity of SiGe, GaAs/InAs, and InAs/InP alloys.
 \cite{abeles_lattice_1963} Klemens-Callaway theory was used to model 
 the phonon-phonon and phonon-defect scattering, 
 which is valid for low-frequency modes and small disorder.
-\cite{abeles_lattice_1963,klemens_scattering_1955,
-klemens_thermal_1957,callaway_model_1959,mattis_phonon_1957,
-kamitakahara_vibrations_1974} 
+\cite{abeles_lattice_1963,klemens_scattering_1955,klemens_thermal_1957,callaway_model_1959,mattis_phonon_1957,kamitakahara_vibrations_1974} 
 The Abeles theory is conceptually simple, treating both
 disorder and anharmonicity as perturbations, and leads to 
 a closed-form analytical function for the thermal conductivity.
@@ -575,19 +565,16 @@ with phonon-phonon and phonon-defect scattering treated as
 perturbations.
 \cite{garg_role_2011,tian_phonon_2012,lindsay_thermal_2012} 
 In the VC-ALD method, the phonon-phonon scattering is  
-predicted using ALD.\cite{turney_predicting_2009,
-esfarjani_heat_2011} 
+predicted using ALD.\cite{turney_predicting_2009,esfarjani_heat_2011} 
 The phonon-defect scattering is treated 
 using perturbative methods that can handle mass and/or bond disorder.
-\cite{klemens_scattering_1955,klemens_thermal_1957,
-mattis_phonon_1957,tamura_isotope_1983} 
+\cite{klemens_scattering_1955,klemens_thermal_1957,mattis_phonon_1957,tamura_isotope_1983} 
 In Ni$_{0.55}$Pd$_{0.45}$, 
 which has a large mass ratio (1.8) and concentration of each species, 
 experimental measurements of   
 vibrational frequencies and linewidths agree well with 
 predictions from the perturbative mass disorder theory.
-\cite{mattis_phonon_1957,kamitakahara_vibrations_1974,
-tamura_isotope_1983} 
+\cite{mattis_phonon_1957,kamitakahara_vibrations_1974,tamura_isotope_1983} 
 
 Using DFT methods to predict 
 the mode-specific phonon properties of the VC, Lindsay and Broido 
@@ -618,9 +605,7 @@ VC predictions tend to be accurate when the disordered lattice
 thermal conductivity 
 is significantly above the high-scatter limit [Eq. \eqref{EQ:M:k_AF,HS}],  
 which tends to be around 1 W/m-K.
-\cite{abeles_lattice_1963,kamitakahara_vibrations_1974,
-cahill_thermal_2004,cahill_thermal_2005,
-cahill_lattice_1988,garg_role_2011,lindsay_thermal_2012} 
+\cite{abeles_lattice_1963,kamitakahara_vibrations_1974,cahill_thermal_2004,cahill_thermal_2005,cahill_lattice_1988,garg_role_2011,lindsay_thermal_2012} 
 
 An ALD study using phonon properties from DFT calculations for 
 crystalline PbTe\cite{shiga_microscopic_2012} predicted 
@@ -697,7 +682,6 @@ in (b).
 \end{figure}
 %--------------------------------------------------------------------------
 
-\clearpage
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:Calculation}Calculation and Simulation Details}
@@ -869,14 +853,12 @@ Except for this low-frequency behavior, there is not an
 accepted method to predict the group velocity of a 
 vibrational mode in a disordered system, although there have been 
 attempts.
-\cite{cahill_lattice_1988,duda_reducing_2011,donadio_atomistic_2009,
-he_heat_2011,he_thermal_2011} 
+\cite{cahill_lattice_1988,duda_reducing_2011,donadio_atomistic_2009,he_heat_2011,he_thermal_2011} 
 In the Cahill-Pohl (CP) model, for example, the group velocity of 
 all disordered modes is the sound speed, $v_s$, which is also assumed  
 for the HS model, Eq. \eqref{EQ:M:k_AF,HS}.
 \cite{cahill_lattice_1988} This assumption is not generally valid  
-for any material.\cite{feldman_numerical_1999,duda_reducing_2011,
-donadio_atomistic_2009,he_heat_2011,he_thermal_2011}
+for any material.\cite{feldman_numerical_1999,duda_reducing_2011,donadio_atomistic_2009,he_heat_2011,he_thermal_2011}
 
 Calculating the structure factors of the supercell Gamma   
 modes is a method to test for their plane-wave 
@@ -888,7 +870,9 @@ dispersion for a model of amorphous silicon, but did not predict
 group velocities.\cite{feldman_numerical_1999} 
 Volz and Chen used the dynamic structure factor to predict the
 dispersion of crystalline SW silicon using MD simulation.
-\cite{volz_molecular-dynamics_2000}
+\cite{volz_molecular-dynamics_2000} Recently, the effective dispersion 
+of a model disordered lattice was predicted using the structure factor.
+\cite{beltukov_ioffe_2013}
 
 The structure factor at a VC wave vector 
 $\pmb{\kappa}_{VC}$ is defined as\cite{allen_diffusons_1999} 
@@ -1003,8 +987,7 @@ conductivity using Eq. \eqref{EQ:k_vib}.
 As an alternative to the VC-ALD approach for predicting lifetimes, 
 which is discussed in the next section,  
 we first use the MD simulation-based 
-NMD method.\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,
-turney_predicting_2009-1,larkin_comparison_2012} In NMD, the 
+NMD method.\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,turney_predicting_2009-1,larkin_comparison_2012} In NMD, the 
 atomic trajectories are first mapped onto the vibrational 
 mode coordinate $q\kvt$ and its time derivative $\dot{q}\kvt$ by
 \cite{dove_introduction_1993}
@@ -1092,8 +1075,7 @@ even faster for mid-range frequencies. The $\omega^{-2}$ scaling
 is due to three-phonon scattering processes
 \cite{callaway_model_1959,maradudin_scattering_1962}. The 
 $\omega^{-4}$ scaling is due to phonon-mass point defect 
-scattering.\cite{klemens_scattering_1955,klemens_thermal_1957,
-mattis_phonon_1957,tamura_isotope_1983} 
+scattering.\cite{klemens_scattering_1955,klemens_thermal_1957,mattis_phonon_1957,tamura_isotope_1983} 
 A constant lifetime is observed at the highest frequencies  
 for both VC-NMD and Gamma-NMD except at $c=0.5$ for VC-NMD. We are not 
 aware of any theoretical prediction of this high-frequency behavior.
@@ -1184,7 +1166,7 @@ SW silicon\cite{stillinger_computer_1985} so that we believe the effects
 of higher-order phonon processes are 
 negligible.\cite{ecsedy_thermal_1977,turney_predicting_2009-1} 
 We predict the phonon-phonon lifetimes using the method 
-described in Ref. \citenum{turney_predicting_2009-1}, 
+described in Ref. \cite{turney_predicting_2009-1}, 
 with all classical expressions for the populations to remain 
 consistent with the classical MD-based methods from 
 Section \ref{S:From VC Gamma}. 
@@ -1270,8 +1252,7 @@ discrepancy of the lifetimes predicted by VC-NMD and Gamma-NMD
 versus VC-ALD at high frequencies. Full evaluation of the 
 higher-order interactions in the Tamura theory is of similar 
 complexity to anharmonic phonon interaction,
-\cite{maradudin_scattering_1962,ecsedy_thermal_1977,
-turney_predicting_2009-1} and is beyond the scope of this work.
+\cite{maradudin_scattering_1962,ecsedy_thermal_1977,turney_predicting_2009-1} and is beyond the scope of this work.
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -1374,8 +1355,7 @@ diffusons.\cite{allen_thermal_1993}
 While the HS model assumes a mode-independent diffusivity, 
 the AF theory is capable of predicting mode-specific thermal 
 diffusivities $D_{AF}$.
-\cite{feldman_thermal_1993,feldman_numerical_1999,
-shenogin_predicting_2009} Since the AF theory is harmonic, the 
+\cite{feldman_thermal_1993,feldman_numerical_1999,shenogin_predicting_2009} Since the AF theory is harmonic, the 
 diffusivities typically diverge as the frequency approaches zero 
 because these vibrations are long-wavelength plane waves  
 that are weakly scattered by the disorder.
@@ -1454,7 +1434,11 @@ for both VC-NMD (except at $c=0.5$) and Gamma-NMD is
 consistent with the plateau of mode diffusivity at high 
 frequency predicted for a model disordered lattice, 
 which was explained by a plateau in the vibrational mode lifetimes.
-\cite{sheng_heat_1991} 
+\cite{sheng_heat_1991} Recently, a study of model disordered lattices 
+predicted the mid-frequency minimum and the high-frequency plateau  
+of the mode diffusivities.\cite{beltukov_ioffe_2013} Similar 
+behavior of the mode diffusivities has been observed in model 
+jammed systems.\cite{xu_energy_2009,vitelli_heat_2010} 
 VC-ALD predicts essentially monotonically 
 decreasing lifetimes with increasing frequency for the LJ argon 
 alloys [Fig. \ref{F:Dph_lj}(a)] with many falling below the IR limit. 
@@ -1505,8 +1489,7 @@ used, whereby
 \begin{equation}\label{EQ:k0}
 \frac{k(N_0)}{k_{bulk}} = 1 - \frac{c_0}{N_0},
 \end{equation}
-where $c_0$ is a constant.\cite{turney_predicting_2009,esfarjani_heat_2011,
-shiomi_thermal_2011} The thermal conductivity 
+where $c_0$ is a constant.\cite{turney_predicting_2009,esfarjani_heat_2011,shiomi_thermal_2011} The thermal conductivity 
 is predicted for varying system sizes and the bulk thermal conductivity is 
 obtained by fitting Eq. \eqref{EQ:k0} to the data. 
 For VC-NMD and VC-ALD, the validity of Eq. \eqref{EQ:k0}  
@@ -1728,12 +1711,11 @@ For bulk and the alloy, the thermal conductivity is dominated by
 low-frequency modes, so that large system-sizes are needed to satisfy 
 the extrapolation requirements and only GK and VC-ALD can be used to 
 predict a bulk value from Eq. \eqref{EQ:k0} ($N_0 \le 42$, similar 
-to the converged system-sizes in Ref. \citenum{he_lattice_2012}). 
+to the converged system-sizes in Ref. \cite{he_lattice_2012}). 
 This system-size requirement highlights the efficiency of the 
 VC-ALD method compared to VC-NMD, which is necessary when 
 computationally-expensive DFT calculations are used.
-\cite{esfarjani_method_2008,garg_role_2011,tian_phonon_2012,
-lindsay_thermal_2012,esfarjani_heat_2011,chaput_phonon-phonon_2011}
+\cite{esfarjani_method_2008,garg_role_2011,tian_phonon_2012,lindsay_thermal_2012,esfarjani_heat_2011,chaput_phonon-phonon_2011}
 The bulk thermal conductivity 
 predictions for VC-ALD and GK are shown in Table \ref{T:cond_table} and 
 plotted in Fig. \ref{F:cond_si}. The alloy thermal conductivities predicted 
@@ -1924,10 +1906,7 @@ Materials dominated by low-frequency modes tend to have high
 thermal conductivities that are significantly larger than the 
 HS limit [Eq. \eqref{EQ:M:k_AF,HS}], 
 which is due to the large group velocities and long lifetimes 
-of low-frequency modes.\cite{abeles_thermal_1962,
-abeles_lattice_1963,kamitakahara_vibrations_1974,
-cahill_thermal_2004,cahill_thermal_2005,garg_role_2011,
-lindsay_thermal_2012,cheaito_experimental_2012} 
+of low-frequency modes.\cite{abeles_thermal_1962,abeles_lattice_1963,kamitakahara_vibrations_1974,cahill_thermal_2004,cahill_thermal_2005,garg_role_2011,lindsay_thermal_2012,cheaito_experimental_2012} 
 These low-frequency modes  
 closely follow the scalings predicted by the perturbative VC-ALD 
 models, which are valid at low-frequencies. 
@@ -1948,8 +1927,7 @@ of high-frequency modes is demonstrated by experimental measurements
 of the thermal conductivity of SiGe alloys, which exceed the HS limit 
 by more than an order of magnitude at room temperature for all 
 compositions.
-\cite{cahill_lattice_1988,cahill_thermal_2004,
-cahill_thermal_2005,cheaito_experimental_2012} Experimentally-accurate 
+\cite{cahill_lattice_1988,cahill_thermal_2004,cahill_thermal_2005,cheaito_experimental_2012} Experimentally-accurate 
 theoretical predictions\cite{garg_role_2011} 
 also demonstrate that high-frequency modes 
 are unimportant to thermal transport, 
@@ -1960,11 +1938,7 @@ The VC-ALD method provides a computationally inexpensive framework,
 which is 
 essential when using \emph{ab initio} 
 methods for predicting thermal conductivity.
-\cite{ward_intrinsic_2010,lindsay_thermal_2012,
-garg_role_2011,
-shiga_microscopic_2012,tian_phonon_2012,
-shiomi_thermal_2011,esfarjani_heat_2011,
-li_thermal_2012,luckyanova_coherent_2012} Based on our results, 
+\cite{ward_intrinsic_2010,lindsay_thermal_2012,garg_role_2011,shiga_microscopic_2012,tian_phonon_2012,shiomi_thermal_2011,esfarjani_heat_2011,li_thermal_2012,luckyanova_coherent_2012} Based on our results, 
 we believe that the Tamura theory breaks down for mode  
 diffusivities predicted to be below the HS limit, $D_{HS}$ 
 [Eq. \eqref{EQ:M:D_HS}]. 
@@ -1974,22 +1948,19 @@ and the high-scatter limit $D_{HS}$ should be
 considered whenever the perturbative VC-ALD method is used.
 Although the HS limit of 
 diffusivity is usually interpreted as a minimum mean free path,
-\cite{kittel_interpretation_1949,graebner_phonon_1986,
-cahill_lattice_1988,sheng_heat_1991} 
+\cite{kittel_interpretation_1949,graebner_phonon_1986,cahill_lattice_1988,sheng_heat_1991} 
 we find that this concept is not necessary for interpreting the results 
 of this work. In a disordered lattice, the fundamental quantities are 
-the mode lifetime and diffusivity\cite{sheng_heat_1991,allen_thermal_1993,
-allen_diffusons_1999,taraskin_determination_1999} and the 
+the mode lifetime and diffusivity\cite{sheng_heat_1991,allen_thermal_1993,allen_diffusons_1999,taraskin_determination_1999,xu_energy_2009,vitelli_heat_2010,beltukov_ioffe_2013} and the 
 VC predicted group velocity is an approximation.
 
-\begin{acknowledgements}
+\ack
 This work was supported by AFOSR award FA95501010098 and by a grant 
 of computer time from the DOD 
 High Performance Computing Modernization Program at the US Army Engineer 
 Research and Development Center. 
 We thank Davide Donadio, Jivtesh Garg, Asad Hasan, Craig Maloney, 
 and Zhiting Tian for helpful discussions.
-\end{acknowledgements}
 
 %--------------------------------------------------------------------------
 \appendix
@@ -2133,8 +2104,7 @@ given that the atomic trajectories contain
 information about the lattice energy, which from general statistical 
 physics principles will have exponential relaxation behavior in an 
 equilibrium ensemble.
-\cite{landau_statistical_1980,srivastava_physics_1990,
-rajabpour_thermal_2010}
+\cite{landau_statistical_1980,srivastava_physics_1990,rajabpour_thermal_2010}
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -2253,123 +2223,737 @@ function [Eq. \eqref{EQ:tau_nmd} in Section \ref{S:From VC Gamma}].}
 \clearpage
 
 \bibliographystyle{unsrt}
-\begin{thebibliography}{1}
 
-\bibitem{graebner_phonon_1986} Graebner
+\begin{thebibliography}{90}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
 
-@article{cahill_lattice_1988,
-	title = {Lattice vibrations and heat transport in crystals and glasses},
-	volume = {39},
-	number = {1},
-	journal = {Annual Review of Physical Chemistry},
-	author = {Cahill, {D.G.} and Pohl, {RO}},
-	year = {1988},
-	pages = {93–121}
-},
+\bibitem{graebner_phonon_1986}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Graebner}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Golding}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~C.} \bibnamefont{Allen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{5696–5701} (\bibinfo{year}{1986}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.34.5696}.
 
-@article{lu_thermal_1992,
-	title = {Thermal Conductivity of Monolithic Organic Aerogels},
-	volume = {255},
-	url = {http://www.sciencemag.org/content/255/5047/971.abstract},
-	doi = {10.1126/science.255.5047.971},
-	abstract = {The total thermal conductivity λ of resorcinol-formaldehyde aerogel monoliths has been measured as a function of density ρ in the range from ρ = 80 to 300 kilograms per cubic meter. A record-low conductivity value in air at 300 K of λ ≈ 0.012 watt per meter per kelvin was found for ρ ≈ 157 kilograms per cubic meter. Caloric measurements under variation of gas pressure as well as spectral infrared transmission measurements allowed the determination of solid conductivity, gaseous conductivity, and radiative conductivity as a function of density. The development of such low conductivity materials is of great interest with respect to the substitution of environmentally harmful insulating foams made from chlorofluorocarbons.},
-	number = {5047},
-	journal = {Science},
-	author = {Lu, X. and Arduini-Schuster, M. C. and Kuhn, J. and Nilsson, O. and Fricke, J. and Pekala, R. W.},
-	year = {1992},
-	pages = {971--972}
-},
+\bibitem{cahill_lattice_1988}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Cahill}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Pohl}},
+  \bibinfo{journal}{Annual Review of Physical Chemistry}
+  \textbf{\bibinfo{volume}{39}}, \bibinfo{pages}{93–121}
+  (\bibinfo{year}{1988}).
 
-@article{chen_recent_2003,
-	title = {Recent Developments in Thermoelectric Materials},
-	volume = {48},
-	journal = {International Materials Reviews},
-	author = {Chen, G. and Dresselhaus, M. S. and Dresselhaus, G. and Fleurial, J.-P. and Caillat, T.},
-	year = {2003},
-	pages = {45–66}
-},
+\bibitem{lu_thermal_1992}
+\bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Lu}},
+  \bibinfo{author}{\bibfnamefont{M.~C.} \bibnamefont{Arduini-Schuster}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Kuhn}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Nilsson}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Fricke}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~W.} \bibnamefont{Pekala}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{255}},
+  \bibinfo{pages}{971} (\bibinfo{year}{1992}),
+  \urlprefix\url{http://www.sciencemag.org/content/255/5047/971.abstract}.
 
-@article{clarke_thermal_2005,
-	title = {Thermal barrier coating materials},
-	volume = {June},
-	journal = {Materials Today},
-	author = {Clarke, D. R. and Phillpot, S. R.},
-	year = {2005},
-	pages = {22–29}
-},
+\bibitem{chen_recent_2003}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Dresselhaus}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Dresselhaus}},
+  \bibinfo{author}{\bibfnamefont{J.-P.} \bibnamefont{Fleurial}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Caillat}},
+  \bibinfo{journal}{International Materials Reviews}
+  \textbf{\bibinfo{volume}{48}}, \bibinfo{pages}{45–66}
+  (\bibinfo{year}{2003}).
 
-@article{snyder_complex_2008,
-	title = {Complex thermoelectric materials},
-	volume = {7},
-	journal = {Nature Materials},
-	author = {Snyder, G. J. and Toberer, E. S.},
-	year = {2008},
-	pages = {105--114}
-},
+\bibitem{clarke_thermal_2005}
+\bibinfo{author}{\bibfnamefont{D.~R.} \bibnamefont{Clarke}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Phillpot}},
+  \bibinfo{journal}{Materials Today} \textbf{\bibinfo{volume}{June}},
+  \bibinfo{pages}{22–29} (\bibinfo{year}{2005}).
 
-@article{minnich_bulk_2009,
-	title = {Bulk nanostructured thermoelectric materials: current research and future prospects},
-	volume = {2},
-	journal = {Energy and Environmental Sciences},
-	author = {Minnich, A. J. and Dresselhaus, M. S. and Ren, F. and Chen, G.},
-	year = {2009},
-	pages = {466–479}
-},
+\bibitem{snyder_complex_2008}
+\bibinfo{author}{\bibfnamefont{G.~J.} \bibnamefont{Snyder}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Toberer}},
+  \bibinfo{journal}{Nature Materials} \textbf{\bibinfo{volume}{7}},
+  \bibinfo{pages}{105} (\bibinfo{year}{2008}).
 
-@article{toberer_phonon_2011,
-	title = {Phonon engineering through crystal chemistry},
-	volume = {21},
-	url = {http://dx.doi.org/10.1039/C1JM11754H},
-	doi = {10.1039/C1JM11754H},
-	abstract = {Mitigation of the global energy crisis requires tailoring the thermal conductivity of materials. Low thermal conductivity is critical in a broad range of energy conversion technologies, including thermoelectrics and thermal barrier coatings. Here, we review the chemical trends and explore the origins of low thermal conductivity in crystalline materials. A unifying feature in the latest materials is the incorporation of structural complexity to decrease the phonon velocity and increase scattering. With this understanding, strategies for combining these mechanisms can be formulated for designing new materials with exceptionally low thermal conductivity.},
-	number = {40},
-	journal = {J. Mater. Chem.},
-	author = {Toberer, Eric S. and Zevalkink, Alex and Snyder, G. Jeffrey},
-	year = {2011}
-},
+\bibitem{minnich_bulk_2009}
+\bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Minnich}},
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Dresselhaus}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Ren}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Energy and Environmental Sciences}
+  \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{466–479}
+  (\bibinfo{year}{2009}).
 
-@article{zebarjadi_perspectives_2012,
-	title = {Perspectives on thermoelectrics: from fundamentals to device applications},
-	volume = {5},
-	url = {http://dx.doi.org/10.1039/C1EE02497C},
-	doi = {10.1039/C1EE02497C},
-	number = {1},
-	journal = {Energy Environ. Sci.},
-	author = {Zebarjadi, M. and Esfarjani, K. and Dresselhaus, M. S. and Ren, Z. F. and Chen, G.},
-	year = {2012},
-	pages = {5147--5162}
-},
+\bibitem{toberer_phonon_2011}
+\bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Toberer}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Zevalkink}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.~J.}
+  \bibnamefont{Snyder}}, \bibinfo{journal}{J. Mater. Chem.}
+  \textbf{\bibinfo{volume}{21}} (\bibinfo{year}{2011}),
+  \urlprefix\url{http://dx.doi.org/10.1039/C1JM11754H}.
 
-@article{schiffres_gas_2012,
-	title = {Gas Diffusion, Energy Transport, and Thermal Accommodation in Single-Walled Carbon Nanotube Aerogels},
-	volume = {22},
-	issn = {1616-3028},
-	url = {http://dx.doi.org/10.1002/adfm.201201285},
-	doi = {10.1002/adfm.201201285},
-	number = {24},
-	journal = {Advanced Functional Materials},
-	author = {Schiffres, Scott N. and Kim, Kyu Hun and Hu, Lin and {McGaughey}, Alan J. H. and Islam, Mohammad F. and Malen, Jonathan A.},
-	month = dec,
-	year = {2012},
-	keywords = {accommodation coefficients, gas diffusion, porous media, single-walled carbon nanotubes, thermal transport},
-	pages = {5251--5258},
-	annote = {The following values have no corresponding Zotero field:
-{PB} - {WILEY-VCH} Verlag
-}
-},
+\bibitem{zebarjadi_perspectives_2012}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zebarjadi}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Dresselhaus}},
+  \bibinfo{author}{\bibfnamefont{Z.~F.} \bibnamefont{Ren}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Energy Environ. Sci.} \textbf{\bibinfo{volume}{5}},
+  \bibinfo{pages}{5147} (\bibinfo{year}{2012}),
+  \urlprefix\url{http://dx.doi.org/10.1039/C1EE02497C}.
 
+\bibitem{schiffres_gas_2012}
+\bibinfo{author}{\bibfnamefont{S.~N.} \bibnamefont{Schiffres}},
+  \bibinfo{author}{\bibfnamefont{K.~H.} \bibnamefont{Kim}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Hu}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibinfo{author}{\bibfnamefont{M.~F.} \bibnamefont{Islam}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{Malen}},
+  \bibinfo{journal}{Advanced Functional Materials}
+  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{5251} (\bibinfo{year}{2012}),
+  ISSN \bibinfo{issn}{1616-3028},
+  \urlprefix\url{http://dx.doi.org/10.1002/adfm.201201285}.
 
+\bibitem{tamura_isotope_1983}
+\bibinfo{author}{\bibfnamefont{S.-i.} \bibnamefont{Tamura}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{27}},
+  \bibinfo{pages}{858–866} (\bibinfo{year}{1983}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.27.858}.
 
+\bibitem{lindsay_thermal_2012}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Lindsay}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.~L.}
+  \bibnamefont{Reinecke}}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{109}}, \bibinfo{pages}{095901}
+  (\bibinfo{year}{2012}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.109.095901}.
 
+\bibitem{abeles_thermal_1962}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Abeles}},
+  \bibinfo{author}{\bibfnamefont{D.~S.} \bibnamefont{Beers}},
+  \bibinfo{author}{\bibfnamefont{G.~D.} \bibnamefont{Cody}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Dismukes}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{125}},
+  \bibinfo{pages}{44–46} (\bibinfo{year}{1962}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRev.125.44}.
 
+\bibitem{abeles_lattice_1963}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Abeles}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{131}},
+  \bibinfo{pages}{1906–1911} (\bibinfo{year}{1963}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRev.131.1906}.
 
+\bibitem{ziman_electrons_2001}
+\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Ziman}},
+  \emph{\bibinfo{title}{Electrons and Phonons}} (\bibinfo{publisher}{Oxford,
+  New York}, \bibinfo{year}{2001}).
 
+\bibitem{feldman_thermal_1993}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{M.~D.} \bibnamefont{Kluge}},
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wooten}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{12589–12602} (\bibinfo{year}{1993}).
 
+\bibitem{allen_diffusons_1999}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Fabian}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wooten}},
+  \bibinfo{journal}{Philosophical Magazine B} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{1715} (\bibinfo{year}{1999}).
 
+\bibitem{broido_intrinsic_2007}
+\bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Maloney}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Birner}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Mingo}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Stewart}},
+  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{231922} (\bibinfo{year}{2007}).
 
+\bibitem{ward_intrinsic_2010}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ward}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{085205} (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.81.085205}.
 
+\bibitem{garg_role_2011}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Garg}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bonini}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kozinsky}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Marzari}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{106}},
+  \bibinfo{pages}{045901} (\bibinfo{year}{2011}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.106.045901}.
 
+\bibitem{shiga_microscopic_2012}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Shiga}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Shiomi}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ma}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Delaire}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Radzynski}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lusakowski}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{85}},
+  \bibinfo{pages}{155203} (\bibinfo{year}{2012}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.85.155203}.
 
+\bibitem{tian_phonon_2012}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Tian}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Garg}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Shiga}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Shiomi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{85}},
+  \bibinfo{pages}{184303} (\bibinfo{year}{2012}{\natexlab{a}}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.85.184303}.
+
+\bibitem{shiomi_thermal_2011}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Shiomi}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{84}},
+  \bibinfo{pages}{104302} (\bibinfo{year}{2011}).
+
+\bibitem{esfarjani_heat_2011}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.~T.} \bibnamefont{Stokes}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{84}},
+  \bibinfo{pages}{085204} (\bibinfo{year}{2011}).
+
+\bibitem{li_thermal_2012}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Lindsay}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Stewart}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Mingo}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{174307} (\bibinfo{year}{2012}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.86.174307}.
+
+\bibitem{luckyanova_coherent_2012}
+\bibinfo{author}{\bibfnamefont{M.~N.} \bibnamefont{Luckyanova}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Garg}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Jandl}},
+  \bibinfo{author}{\bibfnamefont{M.~T.} \bibnamefont{Bulsara}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Schmidt}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Minnich}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Chen}},
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Dresselhaus}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ren}}, \bibnamefont{et~al.},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{338}},
+  \bibinfo{pages}{936} (\bibinfo{year}{2012}),
+  \urlprefix\url{http://www.sciencemag.org/content/338/6109/936.abstract}.
+
+\bibitem{ward_ab_2009}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ward}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Broido}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Stewart}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Deinzer}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{80}},
+  \bibinfo{pages}{125203} (\bibinfo{year}{2009}).
+
+\bibitem{bao_first-principles_2012}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Bao}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Qiu}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Zhang}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Ruan}},
+  \bibinfo{journal}{Journal of Quantitative Spectroscopy and Radiative
+  Transfer} \textbf{\bibinfo{volume}{113}}, \bibinfo{pages}{1683 }
+  (\bibinfo{year}{2012}), ISSN \bibinfo{issn}{0022-4073},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S00224073120%
+02336}.
+
+\bibitem{sosso_thermal_2012}
+\bibinfo{author}{\bibfnamefont{G.~C.} \bibnamefont{Sosso}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Caravati}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Behler}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bernasconi}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{104301} (\bibinfo{year}{2012}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.86.104301}.
+
+\bibitem{ashcroft_solid_1976}
+\bibinfo{author}{\bibfnamefont{N.~W.} \bibnamefont{Ashcroft}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.~D.} \bibnamefont{Mermin}},
+  \emph{\bibinfo{title}{Solid State Physics}} (\bibinfo{publisher}{Saunders,
+  Fort Worth}, \bibinfo{year}{1976}).
+
+\bibitem{stillinger_computer_1985}
+\bibinfo{author}{\bibfnamefont{F.~H.} \bibnamefont{Stillinger}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.~A.} \bibnamefont{Weber}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{31}},
+  \bibinfo{pages}{5262–5271} (\bibinfo{year}{1985}).
+
+\bibitem{mcquarrie_statistical_2000}
+\bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{{McQuarrie}}},
+  \emph{\bibinfo{title}{Statistical Mechanics}} (\bibinfo{publisher}{University
+  Science Books, Sausalito}, \bibinfo{year}{2000}).
+
+\bibitem{mcgaughey_quantitative_2004}
+\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kaviany}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{094303} (\bibinfo{year}{2004}).
+
+\bibitem{goicochea_thermal_2010}
+\bibinfo{author}{\bibfnamefont{J.~V.} \bibnamefont{Goicochea}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Madrid}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Journal of Heat Transfer} \textbf{\bibinfo{volume}{132}},
+  \bibinfo{pages}{012401} (\bibinfo{year}{2010}).
+
+\bibitem{allen_thermal_1993}
+\bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{12581–12588} (\bibinfo{year}{1993}).
+
+\bibitem{feldman_numerical_1999}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{P.~B.} \bibnamefont{Allen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Bickham}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{59}},
+  \bibinfo{pages}{3551–3559} (\bibinfo{year}{1999}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.59.3551}.
+
+\bibitem{klemens_scattering_1955}
+\bibinfo{author}{\bibfnamefont{P.~G.} \bibnamefont{Klemens}},
+  \bibinfo{journal}{Proceedings of the Physical Society. Section A}
+  \textbf{\bibinfo{volume}{68}} (\bibinfo{year}{1955}).
+
+\bibitem{klemens_thermal_1957}
+\bibinfo{author}{\bibfnamefont{P.~G.} \bibnamefont{Klemens}},
+  \bibinfo{journal}{Proceedings of the Physical Society. Section A}
+  \textbf{\bibinfo{volume}{70}}, \bibinfo{pages}{833} (\bibinfo{year}{1957}),
+  \urlprefix\url{http://stacks.iop.org/0370-1298/70/i=11/a=407}.
+
+\bibitem{callaway_model_1959}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Callaway}},
+  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{1046} (\bibinfo{year}{1959}).
+
+\bibitem{mattis_phonon_1957}
+\bibinfo{author}{\bibfnamefont{D.~C.} \bibnamefont{Mattis}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{107}},
+  \bibinfo{pages}{1736–1736} (\bibinfo{year}{1957}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRev.107.1736.3}.
+
+\bibitem{kamitakahara_vibrations_1974}
+\bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.~N.}
+  \bibnamefont{Brockhouse}}, \bibinfo{journal}{Phys. Rev. B}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{1200–1212}
+  (\bibinfo{year}{1974}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.10.1200}.
+
+\bibitem{cahill_thermal_2004}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Watanabe}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{235322} (\bibinfo{year}{2004}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.235322}.
+
+\bibitem{cahill_thermal_2005}
+\bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Watanabe}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rockett}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~B.} \bibnamefont{Vining}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{71}},
+  \bibinfo{pages}{235202} (\bibinfo{year}{2005}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.71.235202}.
+
+\bibitem{skye_thermal_2008}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Skye}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~K.} \bibnamefont{Schelling}},
+  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{103}},
+  \bibinfo{pages}{113524} (\bibinfo{year}{2008}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/103/113524/1}.
+
+\bibitem{landry_thermal_2009}
+\bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{80}},
+  \bibinfo{pages}{165304} (\bibinfo{year}{2009}).
+
+\bibitem{tian_enhancing_2012}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Tian}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{235304} (\bibinfo{year}{2012}{\natexlab{b}}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.86.235304}.
+
+\bibitem{turney_predicting_2009}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{type}{{PhD} thesis}, \bibinfo{school}{Carnegie Mellon University},
+  \bibinfo{address}{Pittsburgh, {PA}} (\bibinfo{year}{2009}).
+
+\bibitem{kudman_thermoelectric_1972}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Kudman}},
+  \bibinfo{journal}{Journal of Materials Science} \textbf{\bibinfo{volume}{7}},
+  \bibinfo{pages}{1027} (\bibinfo{year}{1972}), ISSN \bibinfo{issn}{0022-2461},
+  \urlprefix\url{http://dx.doi.org/10.1007/BF00550066}.
+
+\bibitem{pei_convergence_2011}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Pei}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Shi}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{LaLonde}}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Chen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.~J.} \bibnamefont{Snyder}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{473}}, \bibinfo{pages}{66}
+  (\bibinfo{year}{2011}), ISSN \bibinfo{issn}{0028-0836},
+  \urlprefix\url{http://dx.doi.org/10.1038/nature09996}.
+
+\bibitem{momma_vesta:_2008}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Momma}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Izumi}},
+  \bibinfo{journal}{Journal of Applied Crystallography}
+  \textbf{\bibinfo{volume}{41}}, \bibinfo{pages}{653–658}
+  (\bibinfo{year}{2008}),
+  \urlprefix\url{http://dx.doi.org/10.1107/S0021889808012016}.
+
+\bibitem{mcgaughey_phonon_2004}
+\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibinfo{type}{{PhD} thesis}, \bibinfo{school}{University of Michigan},
+  \bibinfo{address}{Ann Arbor, {MI}} (\bibinfo{year}{2004}).
+
+\bibitem{plimpton_fast_1995}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Plimpton}},
+  \bibinfo{journal}{Journal of Computational Physics}
+  \textbf{\bibinfo{volume}{117}}, \bibinfo{pages}{1 } (\bibinfo{year}{1995}),
+  ISSN \bibinfo{issn}{0021-9991},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S00219991857%
+1039X}.
+
+\bibitem{he_lattice_2012}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Savic}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{Phys. Chem. Chem. Phys.} pp.~\bibinfo{pages}{--}
+  (\bibinfo{year}{2012}), \urlprefix\url{http://dx.doi.org/10.1039/C2CP42394D}.
+
+\bibitem{sellan_cross-plane_2010}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Sellan}},
+  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{108}},
+  \bibinfo{pages}{113524} (\bibinfo{year}{2010}{\natexlab{a}}).
+
+\bibitem{gale_general_2003}
+\bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{Gale}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~L.} \bibnamefont{Rohl}},
+  \bibinfo{journal}{Molecular Simulation} \textbf{\bibinfo{volume}{29}},
+  \bibinfo{pages}{291} (\bibinfo{year}{2003}).
+
+\bibitem{bouchard_vibrational_1988}
+\bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Biswas}},
+  \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}},
+  \bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Grest}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Soukoulis}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{38}},
+  \bibinfo{pages}{10499–10506} (\bibinfo{year}{1988}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.38.10499}.
+
+\bibitem{duda_reducing_2011}
+\bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Duda}},
+  \bibinfo{author}{\bibfnamefont{T.~S.} \bibnamefont{English}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Jordan}},
+  \bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{Norris}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Soffa}},
+  \bibinfo{journal}{Journal of Physics: Condensed Matter}
+  \textbf{\bibinfo{volume}{23}}, \bibinfo{pages}{205401}
+  (\bibinfo{year}{2011}),
+  \urlprefix\url{http://stacks.iop.org/0953-8984/23/i=20/a=205401}.
+
+\bibitem{chu_effect_1989}
+\bibinfo{author}{\bibfnamefont{Q.-J.} \bibnamefont{Chu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.-Q.} \bibnamefont{Zhang}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{39}},
+  \bibinfo{pages}{7120–7131} (\bibinfo{year}{1989}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.39.7120}.
+
+\bibitem{mcgaughey_phonon_2006}
+\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kaviany}},
+  in \emph{\bibinfo{booktitle}{Advances in Heat Transfer, Volume 39}}, edited
+  by \bibinfo{editor}{\bibfnamefont{G.~A.} \bibnamefont{Greene}},
+  \bibinfo{editor}{\bibfnamefont{Y.~I.} \bibnamefont{Cho}},
+  \bibinfo{editor}{\bibfnamefont{J.~P.} \bibnamefont{Hartnett}},
+  \bibnamefont{and} \bibinfo{editor}{\bibfnamefont{A.}~\bibnamefont{Bar-Cohen}}
+  (\bibinfo{publisher}{Elsevier}, \bibinfo{year}{2006}), p.
+  \bibinfo{pages}{169–255}.
+
+\bibitem{he_thermal_2011}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}},
+  \bibinfo{author}{\bibfnamefont{J.-H.} \bibnamefont{Lee}},
+  \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Grossman}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{{ACS} Nano} \textbf{\bibinfo{volume}{5}},
+  \bibinfo{pages}{1839{\textbackslash}961844}
+  (\bibinfo{year}{2011}{\natexlab{a}}).
+
+\bibitem{he_heat_2011}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{98}},
+  \bibinfo{pages}{144101} (\bibinfo{year}{2011}{\natexlab{b}}).
+
+\bibitem{donadio_atomistic_2009}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Galli}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{102}},
+  \bibinfo{pages}{195901} (\bibinfo{year}{2009}).
+
+\bibitem{volz_molecular-dynamics_2000}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Volz}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{61}},
+  \bibinfo{pages}{2651–2656} (\bibinfo{year}{2000}).
+  
+\bibitem{beltukov_ioffe_2013}
+\bibinfo{author}{\bibfnamefont{Y. M.}~\bibnamefont{Beltukov}}, 
+  \bibinfo{author}{\bibfnamefont{V. I.}~\bibnamefont{Kozub}}, 
+  \bibnamefont{and} 
+  \bibinfo{author}{\bibfnamefont{D. A.}~\bibnamefont{Parshin}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{87}},
+  \bibinfo{pages}{134203} (\bibinfo{year}{2013}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.87.134203}.
+
+\bibitem{green_density_2011}
+\bibinfo{author}{\bibfnamefont{N.~L.} \bibnamefont{Green}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Kaya}},
+  \bibinfo{author}{\bibfnamefont{C.~E.} \bibnamefont{Maloney}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~F.} \bibnamefont{Islam}},
+  \bibinfo{journal}{Physical Review E} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{051404} (\bibinfo{year}{2011}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.83.051404}.
+
+\bibitem{vc_fn1}
+\bibinfo{note}{Due to the finite-size system, the delta function in Eq.
+  \eqref{EQ:SLT} is broadened using a Lorentzian function with a full-width at
+  half maximum set to 20$\delta_{\omega,avg}$, where $\delta_{\omega,avg}$ is
+  the average frequency spacing.\cite{feldman_thermal_1993}}.
+
+\bibitem{ladd_lattice_1986}
+\bibinfo{author}{\bibfnamefont{A.~J.~C.} \bibnamefont{Ladd}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Moran}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~G.} \bibnamefont{Hoover}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{5058–5064} (\bibinfo{year}{1986}).
+
+\bibitem{turney_predicting_2009-1}
+\bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{064301} (\bibinfo{year}{2009}).
+
+\bibitem{larkin_comparison_2012}
+\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Larkin}},
+  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{Massicotte}},
+  \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibinfo{journal}{to appear in Journal of Computational and Theoretical
+  Nanoscience}  (\bibinfo{year}{2012}).
+
+\bibitem{dove_introduction_1993}
+\bibinfo{author}{\bibfnamefont{M.~T.} \bibnamefont{Dove}},
+  \emph{\bibinfo{title}{Introduction to Lattice Dynamics}}
+  (\bibinfo{publisher}{Cambridge, Cambridge}, \bibinfo{year}{1993}).
+
+\bibitem{maradudin_scattering_1962}
+\bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{Maradudin}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~E.} \bibnamefont{Fein}},
+  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{128}},
+  \bibinfo{pages}{2589–2608} (\bibinfo{year}{1962}).
+
+\bibitem{taraskin_determination_1999}
+\bibinfo{author}{\bibfnamefont{S.~N.} \bibnamefont{Taraskin}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Elliott}},
+  \bibinfo{journal}{Philosophical Magazine Part B}
+  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{1747–1754}
+  (\bibinfo{year}{1999}),
+  \urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/13642819908223057}.
+
+\bibitem{ecsedy_thermal_1977}
+\bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Ecsedy}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~G.} \bibnamefont{Klemens}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{15}},
+  \bibinfo{pages}{5957–5962} (\bibinfo{year}{1977}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.15.5957}.
+
+\bibitem{vc_fn2}
+\bibinfo{note}{To perform the calculation of Eq. \eqref{EQ:taud_dos}, it is
+  necessary to broaden the DOS using using a Lorentzian function.
+  \cite{tamura_isotope_1983} We use a value of $100\delta_{\omega,avg}$.}
+
+\bibitem{shenogin_predicting_2009}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shenogin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodapati}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Keblinski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
+  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Journal of Applied Physics}
+  \textbf{\bibinfo{volume}{105}}, \bibinfo{pages}{034906}
+  (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/105/034906/1}.
+
+\bibitem{sheng_introduction_2006}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sheng}},
+  \emph{\bibinfo{title}{Introduction to Wave Scattering: Localization and
+  Mesoscopic Phenomena}} (\bibinfo{publisher}{Springer}, \bibinfo{year}{2006}),
+  ISBN \bibinfo{isbn}{9783540291565}.
+
+\bibitem{vitelli_heat_2010}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
+  \bibinfo{journal}{Phys. Rev. E} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{021301} (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.81.021301}.
+
+\bibitem{vc_fn4}
+\bibinfo{note}{For a finite system, the AF theory requires a frequency
+  broadening to predict the mode-specific thermal
+  diffusivities.\cite{allen_thermal_1993} We broaden using a Lorentzian
+  function with a width $\delta_{\omega,avg}$.}
+
+\bibitem{vc_fn5}
+\bibinfo{note}{For the LJ alloys with $c\le0.15$, the predicted $k_{AF}$ is
+  strongly system-size dependent, indicating this diverging behavior. For LJ
+  argon alloys at $c=0.5$, the divergence with system size is small for the
+  range of system size studied ($N_0=4$ to $N_0=12$). For $N_0=12$,
+  $k_{AF}/k_{GK} = 0.93$ because the finite system-size limits the
+  diffusivities of the lowest frequencies.}
+
+\bibitem{xu_energy_2009}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Xu}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wyart}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Nagel}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{102}},
+  \bibinfo{pages}{038001} (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.102.038001}.
+
+\bibitem{sheng_heat_1991}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sheng}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zhou}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{253}},
+  \bibinfo{pages}{539–542} (\bibinfo{year}{1991}),
+  \urlprefix\url{http://www.sciencemag.org/content/253/5019/539.abstract}.
+
+\bibitem{landry_complex_2008}
+\bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
+  \bibinfo{author}{\bibfnamefont{M.~I.} \bibnamefont{Hussein}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
+  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Physical Review B}
+  \textbf{\bibinfo{volume}{77}}, \bibinfo{pages}{184302}
+  (\bibinfo{year}{2008}).
+
+\bibitem{sellan_size_2010}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Sellan}},
+  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
+  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{214305} (\bibinfo{year}{2010}{\natexlab{b}}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.81.214305}.
+
+\bibitem{esfarjani_method_2008}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Esfarjani}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.~T.} \bibnamefont{Stokes}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{77}},
+  \bibinfo{pages}{144112} (\bibinfo{year}{2008}).
+
+\bibitem{chaput_phonon-phonon_2011}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Chaput}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Togo}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Tanaka}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Hug}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{84}},
+  \bibinfo{pages}{094302} (\bibinfo{year}{2011}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.84.094302}.
+
+\bibitem{cheaito_experimental_2012}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Cheaito}},
+  \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Duda}},
+  \bibinfo{author}{\bibfnamefont{T.~E.} \bibnamefont{Beechem}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hattar}},
+  \bibinfo{author}{\bibfnamefont{J.~F.} \bibnamefont{Ihlefeld}},
+  \bibinfo{author}{\bibfnamefont{D.~L.} \bibnamefont{Medlin}},
+  \bibinfo{author}{\bibfnamefont{M.~A.} \bibnamefont{Rodriguez}},
+  \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Campion}},
+  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Piekos}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~E.}
+  \bibnamefont{Hopkins}}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{109}}, \bibinfo{pages}{195901}
+  (\bibinfo{year}{2012}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.109.195901}.
+
+\bibitem{kittel_interpretation_1949}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kittel}},
+  \bibinfo{journal}{Physical Review} \textbf{\bibinfo{volume}{75}},
+  \bibinfo{pages}{974} (\bibinfo{year}{1949}).
+
+\bibitem{mcgaughey_predicting_2013}
+\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~M.}
+  \bibnamefont{Larkin}}, \bibinfo{journal}{to appear in Annual Review of Heat
+  Transfer} \textbf{\bibinfo{volume}{17}} (\bibinfo{year}{2013}).
+
+\bibitem{landau_statistical_1980}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Landau}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Lifshitz}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Pitaevskii}},
+  \emph{\bibinfo{title}{Statistical Physics, Part 2 : Volume 9}}, Pt 2
+  (\bibinfo{publisher}{Elsevier Science \& Technology Books},
+  \bibinfo{year}{1980}), ISBN \bibinfo{isbn}{9780750626361},
+  \urlprefix\url{http://books.google.com/books?id=NaB7oAkon9MC}.
+
+\bibitem{srivastava_physics_1990}
+\bibinfo{author}{\bibfnamefont{G.~P.} \bibnamefont{Srivastava}},
+  \emph{\bibinfo{title}{The Physics of Phonons}} (\bibinfo{publisher}{Adam
+  Hilger, Bristol}, \bibinfo{year}{1990}).
+
+\bibitem{rajabpour_thermal_2010}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Rajabpour}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Volz}},
+  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{108}},
+  \bibinfo{pages}{094324} (\bibinfo{year}{2010}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/108/094324/1}.
+  
 
 
 \end{thebibliography}

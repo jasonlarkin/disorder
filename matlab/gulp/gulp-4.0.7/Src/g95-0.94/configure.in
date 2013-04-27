@@ -1,0 +1,480 @@
+
+AC_INIT(g95.h)
+AM_INIT_AUTOMAKE(g95, 0.94)
+AM_CONFIG_HEADER(g95-config.h)
+
+#############################################################################
+AC_PROG_CC
+AC_PROG_CPP
+AC_CANONICAL_HOST
+AC_CHECK_HEADER(termios.h,
+    [AC_DEFINE(HAVE_TERMIOS_H, 1, [Define if termios.h is present])])
+
+AC_C_CONST
+AC_FUNC_ALLOCA([AC_MSG_ERROR([alloca not found])])
+
+if test "$GCC" != "yes"; then
+  case "$host" in 
+  hppa*) CFLAGS="-Ae $CFLAGS";;
+  esac
+fi
+
+
+#####################################################################
+
+AC_ARG_WITH(gcc-dir, [  --with-gcc-dir=PATH     Specify directory for GCC ])
+
+target_version=0
+
+
+if test "x$with_gcc_dir" != x -a -d "$with_gcc_dir"; then
+   CFLAGS="$CFLAGS -DIN_GCC"
+   CPPFLAGS="-I$with_gcc_dir/gcc -I$with_gcc_dir/include -I$with_gcc_dir/gcc/config -I$with_gcc_dir/libcpp/include -I$with_gcc_dir/g95/gcc $CPPFLAGS"
+
+   DEFAULT_INCLUDES=" "
+
+   AC_CHECK_HEADER(ansidecl.h, [],
+        [AC_MSG_ERROR([ansidecl.h not found, can't include gcc headers])])
+
+   GCC_DIR=$with_gcc_dir
+
+   AC_CHECK_FILE($GCC_DIR/g95/gcc/libbackend.a, [],
+          [AC_MSG_ERROR(libbackend.a not found)])
+
+   AC_MSG_CHECKING([gcc version])
+
+   if test -f $GCC_DIR/gcc/BASE-VER ; then
+      gcc_version=`cat $GCC_DIR/gcc/BASE-VER`
+
+   elif test -f $GCC_DIR/gcc/BASEVER ; then
+      gcc_version=`cat $GCC_DIR/gcc/BASEVER`
+
+   else
+      cat $GCC_DIR/gcc/version.c - > $GCC_DIR/gcc/conftest.c <<EOF
+#include <stdio.h>
+      int main(void) { puts(version_string); return 0;}
+EOF
+       gcc -o conftest $GCC_DIR/gcc/conftest.c
+
+       if test ! $? ; then
+          AC_MSG_ERROR([Can't determine gcc version])
+       fi
+
+       gcc_version=`./conftest | awk '{ print $1; }'`
+   fi
+
+   echo $gcc_version > gcc_version
+   rm -f $GCC_DIR/gcc/conftest.c ./conftest
+
+   target_version=`echo $gcc_version | awk -F. '{ print $1*100+$2*10+$3; }'`
+   AC_DEFINE_UNQUOTED(TARGET_GCC_VERSION, $target_version,
+                      [Version of target gcc])
+
+   AC_MSG_RESULT([$gcc_version])
+
+   DEST_LIBDIR=$prefix/lib/gcc-lib/$host/$gcc_version
+   SAVE_DIR=`pwd`
+   PREFIX=$prefix
+
+   for obj in ggc-page.o options.o opts.o version.o
+   do
+     ar d $GCC_DIR/g95/gcc/libbackend.a $obj
+   done
+   ranlib $GCC_DIR/g95/gcc/libbackend.a
+
+   rm -f $GCC_DIR/gcc/options.c $GCC_DIR/gcc/options.h
+   rm -f $GCC_DIR/g95/gcc/specs.h
+
+   AC_SUBST([GCC_DIR])
+   AC_SUBST([DEST_LIBDIR])
+   AC_SUBST([PREFIX])
+   AC_SUBST([VERSION])
+
+   LDADD0=""
+   if test -f $GCC_DIR/g95/intl/libintl.a ; then
+     LDADD0="$LDADD0 $GCC_DIR/g95/intl/libintl.a"
+
+     if test -f $GCC_DIR/g95/intl/libintl.h ; then
+        CPPFLAGS="$CPPFLAGS -I$GCC_DIR/g95/intl"
+     fi
+
+     if test -f $GCC_DIR/g95/libiconv.a ; then
+        LDADD0="$LDADD0 $GCC_DIR/g95/libiconv.a"
+
+     else
+        AC_CHECKING([to see if libiconv is needed])
+        LIB_SAVE=$LIBS
+        LIBS="-liconv"
+        CPPFLAGS="$CPPFLAGS -I$GCC_DIR/intl"
+
+        AC_TRY_LINK([#include <stdlib.h>
+#include <iconv.h>],
+         [iconv_t cd = iconv_open("","");
+          iconv(cd,NULL,NULL,NULL,NULL);
+          iconv_close(cd);],
+
+          if test -f /usr/local/lib/libiconv.a ; then
+            LIB_SAVE="$LIB_SAVE /usr/local/lib/libiconv.a"
+          else
+            LDADD0="$LDADD0 -liconv"
+          fi
+
+          AC_MSG_RESULT([yes]), AC_MSG_RESULT([no]))
+        LIBS=$LIB_SAVE
+     fi
+   else
+     if test -f /usr/local/lib/libintl.a ; then
+        CPPFLAGS="$CPPFLAGS -I/usr/local/include"        
+        LIBS="$LIBS /usr/local/lib/libintl.a"
+     fi
+
+     if test -f /usr/local/lib/libiconv.a ; then
+        LIBS="$LIBS /usr/local/lib/libiconv.a"
+     fi
+   fi
+
+   target=$host
+
+   echo Loading config.gcc
+   for machine in $build $host $target; do
+          . $GCC_DIR/gcc/config.gcc
+   done
+
+   case $host in
+      *powerpc*-*linux*)
+        extra_parts="$extra_parts crtsavres.o"
+      ;;
+      *alpha*)
+        extra_parts="$extra_parts crtfastmath.o"
+      ;;
+      *irix*)
+        extra_parts="$extra_parts crtbegin.o crtend.o irix-crti.o irix-crtn.o"
+      ;;
+      *i?86*linux*)
+        if test $target_version -ge 410 ; then
+           extra_parts="$extra_parts crtfastmath.o"
+        fi
+      ;;
+   esac
+
+   PARTS=""
+   for part in $extra_parts; do
+     PARTS="$GCC_DIR/g95/gcc/$part $PARTS"
+   done
+
+   case $host in
+     *darwin*)
+       PARTS="$PARTS $GCC_DIR/g95/gcc/libgcc_eh.a"
+    ;;
+   esac
+
+   if test -f $GCC_DIR/g95-specs ; then
+     LDADD0="-specs=$GCC_DIR/g95-specs $LDADD0"
+   fi
+
+   optfile=`grep "^extra_opt_files=" $GCC_DIR/g95/gcc/Makefile         \
+               | cut -d"=" -f2                                         \
+               | awk -v GCC_DIR=$GCC_DIR '{                            \
+                   for (i=1; i<=NF; i++)                               \
+                     printf(" %s/gcc/%s",GCC_DIR,substr($i,11,length($i))); }'`
+
+   if test "x$optfile" = "x" ; then
+      EXTRA_OPTS=""
+   else
+      EXTRA_OPTS="$optfile"
+   fi
+
+   AC_SUBST(EXTRA_OPTS)
+   AC_SUBST(PARTS)
+   AC_SUBST(LDADD0)
+fi
+
+AM_CONDITIONAL(GCC, test "x$with_gcc_dir" != "x")
+AM_CONDITIONAL(GCC41, test $target_version -ge 410)
+
+
+######
+
+TARGET_SYSTEM_ROOT=
+DEFAULT_TARGET_VERSION=$version
+DEFAULT_TARGET_MACHINE=$target_alias
+
+AC_SUBST(TARGET_SYSTEM_ROOT)
+AC_SUBST(DEFAULT_TARGET_VERSION)
+AC_SUBST(DEFAULT_TARGET_MACHINE)
+
+
+
+#############################################################################
+# --enable-debug to turn on debugging (currently defaults to yes)
+
+AC_ARG_ENABLE(debug, [  --enable-debug          compile for debugging],
+              [ok=$enableval], [ok=yes])
+if test "$ok" = "yes"; then
+	# Add more compiler warnings if we are using gcc:
+	# ($GCC is set to "yes" by AC_PROG_CC if we are using gcc.)
+	if test "$GCC" = "yes"; then
+        	CFLAGS="$CFLAGS -Wall -Wmissing-prototypes"
+	fi
+
+        AC_DEFINE(G95_DEBUG,1,[Define to turn on debugging checks.])
+fi
+
+#############################################################################
+
+
+AC_ARG_ENABLE(F, [  --enable-F       Compile as the F compiler],
+              [f_mode=$enableval], [f_mode=0])
+
+if test "$f_mode" = "yes"; then
+  f_mode=1
+else
+  f_mode=0
+fi
+
+AC_DEFINE_UNQUOTED(STD_F, $f_mode, [Compile as F if nonzero])
+
+
+G95_SPEC=
+align_double=0
+
+case $host in
+   *i?86* | *pentium*)
+     AC_DEFINE(FPU_387, 1, [Define if compiling for an x87 FPU])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_LITTLE, [Integer endianness])
+     processor="i386 i686 pentiumpro"
+     ;;
+
+   *x86_64* | *amd64*)
+     AC_DEFINE(FPU_SSE, 1, [Define if compiling for an x87 FPU])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_LITTLE, [Integer endianness])
+     proc_string=x86_64
+     ;;
+
+   *ia64*)
+     AC_DEFINE(FPU_IA64, 1, [Define if compiling for an IA64 FPU])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_LITTLE, [Integer endianness])
+     proc_string=ia64
+     ;;
+
+   *powerpc*)
+     case $host in
+     *aix*)
+       AC_DEFINE(FPU_PPC_AIX, 1, [Define if compiling for a PPC fpu on AIX])
+       ;;
+
+     *darwin*)
+       AC_DEFINE(FPU_PPC_OSX, 1, [Define if compiling for a PPC fpu on Darwin])
+       ;;
+
+     *linux*)
+       AC_DEFINE(FPU_PPC_LINUX, 1,[Define if compiling for a PPC fpu on Linux])
+     ;;
+
+     *)
+       echo host = $host
+       AC_ERROR(Unknown powerpc architecture)
+       ;;
+     esac
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_BIG, [Integer endianness])
+     ;;
+
+   *hppa*)
+     AC_DEFINE(FPU_HPPA, 1, [Define if compiling for an HP-UX])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_BIG, [Integer endianness])
+     proc_string=hppa
+     align_double=1
+     ;;
+
+   *sparc*)
+     AC_DEFINE(FPU_SPARC, 1, [Define if compiling for a SPARC])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_BIG, [Integer endianness])
+     proc_string=sparc
+     align_double=1
+     ;;
+
+   *alpha*)
+     AC_DEFINE(FPU_ALPHA, 1, [Define if compiling for ALPHA processors])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_LITTLE, [Integer endianness])
+     proc_string=alpha
+     G95_SPEC=-mieee
+     ;;
+
+   *mips*)
+     AC_DEFINE(FPU_MIPS, 1, [Define if compiling for a MIPS processors])
+     AC_DEFINE(G95_INTEGER_ENDIAN, END_BIG, [Integer endianness])
+     proc_string=mips
+     align_double=1
+     ;;
+
+   *)
+     echo host = $host
+     AC_ERROR(Unknown floating point architecture) ;;
+esac
+
+
+AC_SUBST(G95_SPEC)
+
+AC_DEFINE_UNQUOTED(G95_ALIGN_DOUBLE, $align_double,
+      [ Define if doubles need to be aligned on eight byte boundaries])
+
+have_windows=0
+
+
+case $host in
+  *linux*)
+    os_string="linux unix"
+    ;;
+
+  *hpux*)
+    os_string="hpux unix"
+    ;;
+
+  *solaris*)
+    os_string="solaris unix"
+    ;;
+
+  *irix*)
+    os_string="irix unix"
+    ;;
+
+  *aix*)
+    os_string="aix unix"
+    ;;
+
+  *netbsd*)
+    os_string="netbsd unix"
+    ;;
+
+  *freebsd*)
+    os_string="freebsd unix"
+    ;;
+
+  *openbsd*)
+    os_string="openbsd unix"
+    ;;
+
+  *cygwin*|*mingw*)
+    os_string="cygwin windows"
+    have_windows=1
+    ;;
+
+  *)
+    os_string=
+    ;;
+esac
+
+
+# Predefined macros
+
+cat >macros.h <<EOF
+/* macros.h-- generated by configure */
+
+char *builtin_macros@<:@@:>@ = {
+   "__G95__ 0",
+   "__G95_MINOR__ 91",
+   "__FORTRAN__ 95",
+   "__GNUC__ 4",
+EOF
+
+echo >> macros.h \"__G95_BUILD__ `date +%Y%m%d`\",
+
+for s in $proc_string
+do
+   echo \"__${s}__ 1\",
+   echo \"__${s} 1\",
+done >> macros.h
+
+for s in $os_string
+do
+   echo \"${s} 1\",
+   echo \"__${s}__ 1\",
+done >> macros.h
+
+echo " NULL };" >>macros.h
+
+
+# Platform specific weirdness
+
+G95_CFLAGS=
+
+case $host in
+*darwin*)
+  CFLAGS="$CFLAGS -no-cpp-precomp"
+  ;;
+
+*cygwin*)
+  LDADD0="$GCC_DIR/g95/gcc/cygwin1.o $LDADD0"
+  LIBS="$LIBS -liconv -lintl"
+  ;;
+
+*openbsd*)
+  G95_CFLAGS="-DSTARTFILE_SPEC=\\\"/usr/lib/crt0.o\\ /usr/lib/crtbegin.o\\\" \
+            -DENDFILE_SPEC=\\\"/usr/lib/crtend.o\ -e\ __start\\\""
+esac
+
+
+# Kind configuration
+
+AC_MSG_CHECKING([default integer size])
+
+AC_ARG_ENABLE(default_int,
+  [  --enable-default-int=<x>    Bits in the default integer (default 32) ],
+  word_size=$enableval, word_size=32 )
+
+case $word_size in
+  32 | 64 )
+    AC_DEFINE_UNQUOTED(G95_WORD, $word_size, [Size of the default integer])
+    AC_MSG_RESULT($word_size)
+    ;;
+  *)
+    AC_MSG_ERROR([Bad word size])
+    ;;
+esac
+
+
+STARTFILE_PREFIX_2=/usr/lib/
+LINK_SPEC=""
+case $host in
+  *x86_64* | *amd64* | *powerpc64* )
+    if test -d /usr/lib64 ; then
+       STARTFILE_PREFIX_2=/usr/lib64
+    fi
+    ;;
+
+  *)
+    ;;
+esac
+
+
+AC_DEFINE_UNQUOTED(HAVE_WINDOWS,$have_windows,[Set if compiling under windows])
+
+AC_CHECK_SIZEOF(long long)
+
+if test $ac_cv_sizeof_long_long -eq 16 ; then
+   AC_DEFINE(G95_WORD16, 1, [Define if a 16 byte integer is available])
+fi
+
+
+AC_CHECK_SIZEOF(void *)
+AC_CHECK_SIZEOF(size_t)
+
+AC_SUBST(EXEEXT)
+AC_SUBST(G95_CFLAGS)
+AC_SUBST(COMMON_LDFLAGS)
+AC_SUBST(G95_WORD)
+AC_SUBST(LINK_SPEC)
+AC_SUBST(STARTFILE_PREFIX_2)
+
+AC_OUTPUT(Makefile)
+
+if test "x$with_gcc_dir" = "x"; then
+  echo
+  echo Warning:
+  echo ------------------------------------------------------------------
+  echo You\'ve configured g95 in a special test mode where it will not be
+  echo able to generate object files.  If this is not what you want, use the
+  echo --with-gcc-dir= option to compile against an appropriate gcc build.
+  echo
+fi
+

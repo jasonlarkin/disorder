@@ -1,0 +1,13 @@
+arith.c array.c bbt.c check.c convert.c data.c decl.c error.c expr.c
+f95-lang.c format.c interface.c intrinsic.c io.c iresolve.c match.c
+matchexp.c misc.c module.c parse.c primary.c options.c resolve.c
+scanner.c select.c simplify.c st.c support.c symbol.c trans.c
+trans-decl.c trans-types.c trans-const.c trans-expr.c trans-stmt.c
+trans-io.c trans-array.c trans-intrinsic.c f95-tree.c dependency.c
+dependency.h g95-config.h g95-support.h g95.h intrinsic.h
+lang-options.h lang-specs.h trans-array.h trans-const.h trans-stmt.h
+trans.h
+
+autogen.sh configure.in Makefile.am
+
+AUTHORS CONTRIB COPYING MANIFEST BUGS NEWS ChangeLog

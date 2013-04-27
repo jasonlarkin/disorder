@@ -1,0 +1,11 @@
+
+The goal of the g95 project is to create a free, open source Fortran 95
+compiler.  The code has been donated to the Free Software
+Foundation for inclusion in GCC, the GNU Compiler Collection.
+
+WARNING:
+
+G95 is in a not-quite-done state.  Almost all of the fortran 95
+standard has been implemented, but there are still many bugs lurking
+in the background.  Use with caution.
+

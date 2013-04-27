@@ -1,0 +1,25 @@
+
+
+MERGE 
+
+
+MAXLOC intrinsics
+
+
+SHAPE
+
+
+Assumed shape arrays need to save the existing descriptor, overwrite
+with local data, and restore on procedure exit in order for pointers
+to these arrays to be set within the a procedure.
+
+
+
+
+Structure constructors in DATA statements.
+
+Subobjects in DATA statements.
+
+
+
+

@@ -1,0 +1,329 @@
+
+;;; Options for g95.
+
+Language
+F95
+
+arch
+F95 Separate
+Specify architexture (ignored)
+
+cpp
+F95
+Force the input files to be run through the C preprocessor
+
+no-cpp
+F95
+Prevent the input files from being C preprocessed
+
+D
+F95 Joined
+Define a preprocessor macro
+
+U
+F95 Joined
+Undefine a preprocessor macro
+
+E
+F95
+Show preprocessed source only
+
+d8
+F95 RejectNegative
+Set the default real and integer kinds to double precision
+
+fc-binding
+F95
+Display C bindings for procedures to standard output
+
+fcase-upper
+F95
+Make all public symbols uppercase
+
+fbackslash
+F95
+Interpret backslashes in character constants as escape code (default).  Use -fno-backslash to treat backslashes literally.
+
+fbounds-check
+F95
+Check array bounds at runtime
+
+fd-comment
+F95
+Make D lines executable statements (fixed form).
+
+fdollar-ok
+F95
+Allow dollar signs in entity names
+
+fendian=
+F95 Joined Separate
+Specify endian for unformatted I/O.  Legal values are 'big' and 'little'
+
+ffixed-form
+F95 RejectNegative
+Assume that the source file is fixed form
+
+ffixed-line-length-80
+F95 RejectNegative
+80 character line width in fixed mode
+
+ffixed-line-length-132
+F95 RejectNegative
+132 character line width in fixed mode
+
+ffree-form
+F95 RejectNegative
+Assume that the source file is free form
+
+ffree-line-length-huge
+F95 RejectNegative
+Large free-form line length, currently 10000.
+
+fimplicit-none
+F95
+Specify that no implicit typing is allowed, unless overridden by explicit IMPLICIT statements
+
+fintrinsic-extensions
+F95
+Allow all intrinsic extensions even in a strict language mode (-std=f95, -std=F, -std=f2003)
+
+fintrinsic-extensions=
+F95 Joined
+Allow specified intrinsic extensions even in a strict language mode (-std=f95, -std=F, -std=f2003).  Comma-separated list of names, case insensitive.
+
+fleading-underscore
+F95
+Add a leading underscore to public names
+
+fmodule-private
+F95
+Set default accessibility of module entities to PRIVATE
+
+fmultiple-save
+F95
+Allow the SAVE attribute to be specified multiple times
+
+fonetrip
+F95
+Force DO-loops to execute at least once (buggy fortran 66)
+
+freal-loops
+F95
+Allow DO-loops with real typed loop variable and parameters
+
+fone-error
+F95
+Force compilation to stop after the first error.
+
+fpack-derived
+F95
+Try to layout derived types as compact as possible
+
+finteger=
+F95 Joined
+-finteger=<n>	Initialize uninitialized scalar integer variables to <n>
+
+flogical=
+F95 Joined
+-flogical=none/true/false	Initialize uninitialized scalar logical variables to true or false
+
+freal=
+F95 Joined
+-freal=none/zero/nan/inf/+inf/-inf	Initialize uninitialized scalar real variables to the given value
+
+fround=
+F95 Joined
+-fround=nearest/plus/minus/zero	Controls compile-time rounding.  Default is round to nearest, plus is round to plus infinity, minus is minus infinity, zero is towards zero.
+
+fpointer=
+F95 Joined
+-fpointer=none/null/invalid	Initialize a scalar pointer to NULL(), or to a non-null location.
+
+fzero
+F95
+Implies -finteger=0, -flogical=false and -freal=zero
+
+fqkind=
+F95 Joined
+-fqkind=<n>	Set the kind for a real with the 'q' exponent to 'n'
+
+fsecond-underscore
+F95
+Append a second trailing underscore in names having an underscore (default).  Use -fno-second-underscore to suppress.
+
+fshort-circuit
+F95
+Cause the .AND. and .OR. operators to not compute the second operand if the value of the expression is known from the first operand.  On by default.
+
+fstatic
+F95
+Put local variables in static memory where possible.
+
+ftrace=
+F95 RejectNegative Joined
+-ftrace=none/frame/full	'-ftrace=frame' will insert code to allow stack tracebacks on abnormal end of program.  This will slow down your program. '-trace=full' additionally allows finding the line number of arithmetic exceptions (slower).  Default is 'none'.
+
+funderscoring
+F95
+Append a trailing underscore in global names (default).  Use -fno-underscoring to suppress.
+
+max-frame-size=
+F95 RejectNegative Joined UInteger
+-max-frame-size=<n>	How large a single stack frame will get before arrays are allocated dynamically
+
+Wno=
+F95 RejectNegative Joined Separate
+Disable warnings (comma separated list of warning numbers).
+
+fmod=
+F95 Joined Separate
+-fmod=<directory>	Put module files in 'directory'
+
+fsloppy-char
+F95
+Prevent type checks when printing formatted characters variables.
+
+fsyntax
+F95
+Show IR (Don't depend on this one staying like it is)
+
+ftr15581
+F95
+Enable TR 15581 allocatable array extensions even in a -std= mode
+
+I
+F95 Joined Separate
+-I<directory>	Append 'directory' to the include and module files search path
+
+i4
+F95 RejectNegative
+Set kinds of integers without specification to kind=4 (32 bits)
+
+i8
+F95 RejectNegative
+Set kinds of integers without specification to kind=8 (64 bits)
+
+include
+F95 Separate RejectNegative
+Auto-include a file.  Does nothing.
+
+M
+F95 RejectNegative
+Write dependencies in Makefile form
+
+r4
+F95
+Set kinds of reals without kind specifications to kind=4 reals
+
+r8
+F95
+Set kinds of reals without kind specifications to double default precision
+
+r10
+F95
+Set kinds of reals without kind specifications to kind=10 reals
+
+r16
+F95
+Set kinds of reals without kind specifications to kind=16 reals
+
+std=f95
+F95 RejectNegative
+Strict fortran 95 checking
+
+std=f2003
+F95 RejectNegative
+Strict fortran 2003 checking
+
+std=F
+F95 RejectNegative
+Warn about non-F features
+
+traditional
+F95
+Cause traditional C preprocessing (default).
+
+nontraditional
+F95
+Cause non-traditional C preprocessing.
+
+Wall
+F95 RejectNegative
+Enable most warning messages
+
+Werror
+F95
+Treat warnings as errors
+
+Werror=
+F95 RejectNegative Joined Separate
+Comma separated list of warnings to treat as errors.
+
+Wglobals
+F95
+Cross-check procedure use and definition within the same source file.  On by default.
+
+Wimplicit-interface
+F95
+Warn about using an implicit interface.
+
+Wimplicit-none
+F95
+Same as -fimplicit-none
+
+Wline-truncation
+F95
+Warn about truncated source lines
+
+Wmissing-intent
+F95
+Warn about missing intents on formal arguments
+
+Wobsolescent
+F95
+Warn about obsolescent constructs
+
+Wprecision-loss
+F95
+Warn about precision loss in implicit type conversions
+
+Wuninitialized
+F95
+Warn about uninitialized variables (DISABLED)
+
+Wunused-label
+F95
+Warn when a label is unused
+
+Wunused-internal-procs
+F95
+Warn if an internal procedure is never used.
+
+Wunused-module-procs
+F95
+Warn about unused module procedures.  Used to build ONLY clauses.
+
+Wunused-module-vars
+F95
+Warn about unused module variables.  Used to build ONLY clauses.
+
+Wunused-parameter
+F95
+Warn about unused parameters.  Not implied by -Wall
+
+Wunused-target
+F95
+Warn about variables that have the TARGET attribute, but are never pointed to.
+
+Wunused-types
+F95
+Warn about unused module types.  Not implies by -Wall.
+
+Wunused-vars
+F95
+Warn about unused variables
+
+Wunset-vars
+F95
+Warn about unset variable

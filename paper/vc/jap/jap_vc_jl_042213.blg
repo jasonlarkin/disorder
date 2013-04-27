@@ -1,17 +1,103 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: jap_vc_jl_042213.aux
+White space in argument---line 2 of file jap_vc_jl_042213.aux
+ : \citation{graebner_phonon_1986,cahill_lattice_1988,lu_thermal_1992,
+ :                                                                     chen_recent_2003,clarke_thermal_2005,snyder_complex_2008, minnich_bulk_2009,toberer_phonon_2011,zebarjadi_perspectives_2012, schiffres_gas_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 6 of file jap_vc_jl_042213.aux
+ : \citation{broido_intrinsic_2007,ward_intrinsic_2010,
+ :                                                      lindsay_thermal_2012,garg_role_2011,shiga_microscopic_2012, tian_phonon_2012,shiomi_thermal_2011,esfarjani_heat_2011, li_thermal_2012,luckyanova_coherent_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 7 of file jap_vc_jl_042213.aux
+ : \citation{ward_ab_2009,garg_role_2011,bao_first-principles_2012,
+ :                                                                  sosso_thermal_2012,lindsay_thermal_2012,tian_phonon_2012, li_thermal_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 9 of file jap_vc_jl_042213.aux
+ : \citation{abeles_lattice_1963,tamura_isotope_1983,garg_role_2011,
+ :                                                                   tian_phonon_2012,lindsay_thermal_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 32 of file jap_vc_jl_042213.aux
+ : \citation{abeles_lattice_1963,klemens_scattering_1955,
+ :                                                        klemens_thermal_1957,callaway_model_1959,mattis_phonon_1957, kamitakahara_vibrations_1974}
+I'm skipping whatever remains of this command
+White space in argument---line 39 of file jap_vc_jl_042213.aux
+ : \citation{turney_predicting_2009,
+ :                                   esfarjani_heat_2011}
+I'm skipping whatever remains of this command
+White space in argument---line 40 of file jap_vc_jl_042213.aux
+ : \citation{klemens_scattering_1955,klemens_thermal_1957,
+ :                                                         mattis_phonon_1957,tamura_isotope_1983}
+I'm skipping whatever remains of this command
+White space in argument---line 41 of file jap_vc_jl_042213.aux
+ : \citation{mattis_phonon_1957,kamitakahara_vibrations_1974,
+ :                                                            tamura_isotope_1983}
+I'm skipping whatever remains of this command
+White space in argument---line 50 of file jap_vc_jl_042213.aux
+ : \citation{abeles_lattice_1963,kamitakahara_vibrations_1974,
+ :                                                             cahill_thermal_2004,cahill_thermal_2005, cahill_lattice_1988,garg_role_2011,lindsay_thermal_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 77 of file jap_vc_jl_042213.aux
+ : \citation{cahill_lattice_1988,duda_reducing_2011,donadio_atomistic_2009,
+ :                                                                          he_heat_2011,he_thermal_2011}
+I'm skipping whatever remains of this command
+White space in argument---line 79 of file jap_vc_jl_042213.aux
+ : \citation{feldman_numerical_1999,duda_reducing_2011,
+ :                                                      donadio_atomistic_2009,he_heat_2011,he_thermal_2011}
+I'm skipping whatever remains of this command
+White space in argument---line 95 of file jap_vc_jl_042213.aux
+ : \citation{ladd_lattice_1986,mcgaughey_quantitative_2004,
+ :                                                          turney_predicting_2009-1,larkin_comparison_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 110 of file jap_vc_jl_042213.aux
+ : \citation{klemens_scattering_1955,klemens_thermal_1957,
+ :                                                         mattis_phonon_1957,tamura_isotope_1983}
+I'm skipping whatever remains of this command
+White space in argument---line 138 of file jap_vc_jl_042213.aux
+ : \citation{maradudin_scattering_1962,ecsedy_thermal_1977,
+ :                                                          turney_predicting_2009-1}
+I'm skipping whatever remains of this command
+White space in argument---line 145 of file jap_vc_jl_042213.aux
+ : \citation{feldman_thermal_1993,feldman_numerical_1999,
+ :                                                        shenogin_predicting_2009}
+I'm skipping whatever remains of this command
+White space in argument---line 168 of file jap_vc_jl_042213.aux
+ : \citation{turney_predicting_2009,esfarjani_heat_2011,
+ :                                                       shiomi_thermal_2011}
+I'm skipping whatever remains of this command
+White space in argument---line 175 of file jap_vc_jl_042213.aux
+ : \citation{esfarjani_method_2008,garg_role_2011,tian_phonon_2012,
+ :                                                                  lindsay_thermal_2012,esfarjani_heat_2011,chaput_phonon-phonon_2011}
+I'm skipping whatever remains of this command
+White space in argument---line 182 of file jap_vc_jl_042213.aux
+ : \citation{abeles_thermal_1962,
+ :                                abeles_lattice_1963,kamitakahara_vibrations_1974, cahill_thermal_2004,cahill_thermal_2005,garg_role_2011, lindsay_thermal_2012,cheaito_experimental_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 183 of file jap_vc_jl_042213.aux
+ : \citation{cahill_lattice_1988,cahill_thermal_2004,
+ :                                                    cahill_thermal_2005,cheaito_experimental_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 186 of file jap_vc_jl_042213.aux
+ : \citation{ward_intrinsic_2010,lindsay_thermal_2012,
+ :                                                     garg_role_2011, shiga_microscopic_2012,tian_phonon_2012, shiomi_thermal_2011,esfarjani_heat_2011, li_thermal_2012,luckyanova_coherent_2012}
+I'm skipping whatever remains of this command
+White space in argument---line 188 of file jap_vc_jl_042213.aux
+ : \citation{kittel_interpretation_1949,graebner_phonon_1986,
+ :                                                            cahill_lattice_1988,sheng_heat_1991}
+I'm skipping whatever remains of this command
+White space in argument---line 189 of file jap_vc_jl_042213.aux
+ : \citation{sheng_heat_1991,allen_thermal_1993,
+ :                                               allen_diffusons_1999,taraskin_determination_1999,xu_energy_2009, vitelli_heat_2010,beltukov_ioffe_2013}
+I'm skipping whatever remains of this command
+White space in argument---line 194 of file jap_vc_jl_042213.aux
+ : \citation{landau_statistical_1980,srivastava_physics_1990,
+ :                                                            rajabpour_thermal_2010}
+I'm skipping whatever remains of this command
 The style file: unsrt.bst
 I found no \bibdata command---while reading file jap_vc_jl_042213.aux
 Warning--I didn't find a database entry for "graebner_phonon_1986"
 Warning--I didn't find a database entry for "cahill_lattice_1988"
 Warning--I didn't find a database entry for "lu_thermal_1992"
-Warning--I didn't find a database entry for "chen_recent_2003"
-Warning--I didn't find a database entry for "clarke_thermal_2005"
-Warning--I didn't find a database entry for "snyder_complex_2008"
-Warning--I didn't find a database entry for "minnich_bulk_2009"
-Warning--I didn't find a database entry for "toberer_phonon_2011"
-Warning--I didn't find a database entry for "zebarjadi_perspectives_2012"
-Warning--I didn't find a database entry for "schiffres_gas_2012"
 Warning--I didn't find a database entry for "tamura_isotope_1983"
 Warning--I didn't find a database entry for "lindsay_thermal_2012"
 Warning--I didn't find a database entry for "abeles_thermal_1962"
@@ -21,16 +107,11 @@ Warning--I didn't find a database entry for "feldman_thermal_1993"
 Warning--I didn't find a database entry for "allen_diffusons_1999"
 Warning--I didn't find a database entry for "broido_intrinsic_2007"
 Warning--I didn't find a database entry for "ward_intrinsic_2010"
-Warning--I didn't find a database entry for "garg_role_2011"
-Warning--I didn't find a database entry for "shiga_microscopic_2012"
-Warning--I didn't find a database entry for "tian_phonon_2012"
-Warning--I didn't find a database entry for "shiomi_thermal_2011"
-Warning--I didn't find a database entry for "esfarjani_heat_2011"
-Warning--I didn't find a database entry for "li_thermal_2012"
-Warning--I didn't find a database entry for "luckyanova_coherent_2012"
 Warning--I didn't find a database entry for "ward_ab_2009"
+Warning--I didn't find a database entry for "garg_role_2011"
 Warning--I didn't find a database entry for "bao_first-principles_2012"
-Warning--I didn't find a database entry for "sosso_thermal_2012"
+Warning--I didn't find a database entry for "li_thermal_2012"
+Warning--I didn't find a database entry for "tian_phonon_2012"
 Warning--I didn't find a database entry for "ashcroft_solid_1976"
 Warning--I didn't find a database entry for "stillinger_computer_1985"
 Warning--I didn't find a database entry for "mcquarrie_statistical_2000"
@@ -39,16 +120,17 @@ Warning--I didn't find a database entry for "goicochea_thermal_2010"
 Warning--I didn't find a database entry for "allen_thermal_1993"
 Warning--I didn't find a database entry for "feldman_numerical_1999"
 Warning--I didn't find a database entry for "klemens_scattering_1955"
-Warning--I didn't find a database entry for "klemens_thermal_1957"
-Warning--I didn't find a database entry for "callaway_model_1959"
-Warning--I didn't find a database entry for "mattis_phonon_1957"
-Warning--I didn't find a database entry for "kamitakahara_vibrations_1974"
 Warning--I didn't find a database entry for "cahill_thermal_2004"
 Warning--I didn't find a database entry for "cahill_thermal_2005"
 Warning--I didn't find a database entry for "skye_thermal_2008"
 Warning--I didn't find a database entry for "landry_thermal_2009"
 Warning--I didn't find a database entry for "tian_enhancing_2012"
 Warning--I didn't find a database entry for "turney_predicting_2009"
+Warning--I didn't find a database entry for "klemens_thermal_1957"
+Warning--I didn't find a database entry for "mattis_phonon_1957"
+Warning--I didn't find a database entry for "kamitakahara_vibrations_1974"
+Warning--I didn't find a database entry for "luckyanova_coherent_2012"
+Warning--I didn't find a database entry for "shiga_microscopic_2012"
 Warning--I didn't find a database entry for "kudman_thermoelectric_1972"
 Warning--I didn't find a database entry for "pei_convergence_2011"
 Warning--I didn't find a database entry for "momma_vesta:_2008"
@@ -65,17 +147,18 @@ Warning--I didn't find a database entry for "he_thermal_2011"
 Warning--I didn't find a database entry for "he_heat_2011"
 Warning--I didn't find a database entry for "donadio_atomistic_2009"
 Warning--I didn't find a database entry for "volz_molecular-dynamics_2000"
+Warning--I didn't find a database entry for "beltukov_ioffe_2013"
 Warning--I didn't find a database entry for "green_density_2011"
 Warning--I didn't find a database entry for "vc_fn1"
 Warning--I didn't find a database entry for "ladd_lattice_1986"
-Warning--I didn't find a database entry for "turney_predicting_2009-1"
-Warning--I didn't find a database entry for "larkin_comparison_2012"
 Warning--I didn't find a database entry for "dove_introduction_1993"
+Warning--I didn't find a database entry for "larkin_comparison_2012"
+Warning--I didn't find a database entry for "turney_predicting_2009-1"
+Warning--I didn't find a database entry for "callaway_model_1959"
 Warning--I didn't find a database entry for "maradudin_scattering_1962"
 Warning--I didn't find a database entry for "taraskin_determination_1999"
 Warning--I didn't find a database entry for "ecsedy_thermal_1977"
 Warning--I didn't find a database entry for "vc_fn2"
-Warning--I didn't find a database entry for "shenogin_predicting_2009"
 Warning--I didn't find a database entry for "sheng_introduction_2006"
 Warning--I didn't find a database entry for "vitelli_heat_2010"
 Warning--I didn't find a database entry for "vc_fn4"
@@ -83,18 +166,17 @@ Warning--I didn't find a database entry for "vc_fn5"
 Warning--I didn't find a database entry for "xu_energy_2009"
 Warning--I didn't find a database entry for "sheng_heat_1991"
 Warning--I didn't find a database entry for "landry_complex_2008"
+Warning--I didn't find a database entry for "esfarjani_heat_2011"
+Warning--I didn't find a database entry for "shiomi_thermal_2011"
 Warning--I didn't find a database entry for "sellan_size_2010"
 Warning--I didn't find a database entry for "esfarjani_method_2008"
-Warning--I didn't find a database entry for "chaput_phonon-phonon_2011"
-Warning--I didn't find a database entry for "cheaito_experimental_2012"
 Warning--I didn't find a database entry for "kittel_interpretation_1949"
 Warning--I didn't find a database entry for "mcgaughey_predicting_2013"
 Warning--I didn't find a database entry for "landau_statistical_1980"
 Warning--I didn't find a database entry for "srivastava_physics_1990"
-Warning--I didn't find a database entry for "rajabpour_thermal_2010"
 You've used 0 entries,
             1791 wiz_defined-function locations,
-            534 strings with 5290 characters,
+            523 strings with 5060 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -133,4 +215,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 error message)
+(There were 24 error messages)

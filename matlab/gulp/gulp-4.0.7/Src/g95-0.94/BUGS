@@ -1,0 +1,46 @@
+
+In a constant format string given to a data transfer statement, the
+locus of any problems in the string isn't guaranteed to come out
+right, because there is not a 1:1 correspondence between source
+characters and characters in the string.  This scheme totally doesn't
+work for format strings that are longer than a physical line.
+
+Fix IMPLICIT to allow forward references of derived types.
+
+Add binary tree to SELECT statement to detect overlapping cases
+
+Array issues in expressions and intrinsics
+
+USE statement
+  Writing a module's namespace to disk
+  Reading symbols into the current namespace
+  Renaming of symbols
+
+Resolve scoping issues
+  Create symbols in correct namespaces
+
+Pointer resolution
+
+Require intents to be done correctly
+
+Finish resolution phase
+
+Finish compiler side of intrinsic functions (Katherine)
+
+Allow init exprs to be numbers raised to integer powers (negative too)
+
+See about making emacs-parsable error messages.
+
+
+Biggies:
+--------
+Interface to code generator
+
+Runtime Library
+
+
+Known bugs:
+-----------
+
+Failure to set the expr_locus field in g95_expr structures.
+
