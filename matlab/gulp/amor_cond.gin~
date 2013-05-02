@@ -1,7 +1,7 @@
-Deaw phon thermal_conductivity
+phon thermal_conductivity
 broaden 1.0
 
-output freq text /home/jason/disorder2/lj/amor/4x/AF/gulp/freq.gout
+output freq text freq.gout
 output xyz
 
 #########################################################################################

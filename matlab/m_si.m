@@ -17,6 +17,11 @@ si.alat = 5.43E-10;
 
 si.alat_amor = 5.43E-10*1.0438;
 
+si.amor.alat = 5.43E-10;
+si.amor.vs = (2/3)*3886.67+(1/3)*8271.51;    %~/disorder2/si/amor/normand/perf4096/anneal_1100K/emin
+si.amor.vs_long = 8271.51;
+si.amor.vs_tran = 3886.67;
+
 si.num_atom_ucell=8;
 si.num_density = (si.num_atom_ucell / (si.alat^3));
 

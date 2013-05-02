@@ -41,7 +41,7 @@ log 	log_heat_${iseed}.lammps
 	compute 		myDis all msd 
 	thermo_style  		custom step temp press etotal vol c_myDis[4]
 	thermo			1000
-	run             	100000	
+	run             	50000	
 #	run             	1000
 	unfix 			1
 	unfix 			2
@@ -52,7 +52,7 @@ log 	log_heat_${iseed}.lammps
 	compute 		myDis all msd
 	thermo_style  		custom step temp press etotal vol c_myDis[4]
 	thermo			1000
-	run             	250000	
+	run             	100000	
 #	run             	10000
 	unfix 			1
 	uncompute		myDis
@@ -65,8 +65,8 @@ log 	log_SED_${iseed}_${ifft}.lammps
 	fix 			1 all nve
 	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
 	dump_modify 		vel sort id
-	dump 			pos all custom ${w_step} dump_${iseed}_${ifft}.pos xu yu zu
-	dump_modify 		pos sort id
+#	dump 			pos all custom ${w_step} dump_${iseed}_${ifft}.pos xu yu zu
+#	dump_modify 		pos sort id
 	compute 		myDis all msd
 	thermo_style 		custom step temp press etotal vol c_myDis[4]
 	thermo			5000
@@ -74,7 +74,7 @@ log 	log_SED_${iseed}_${ifft}.lammps
 	run			${w_total}
 	unfix			1
 	undump			vel
-	undump			pos
+#	undump			pos
 	uncompute		myDis
 
 next ifft

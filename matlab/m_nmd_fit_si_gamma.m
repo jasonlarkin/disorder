@@ -1,4 +1,9 @@
-function m_nmd_fit_si_gamma(str,gamma_guess,PT_PERC,INV_PERC,HLD_SCALING_PCT)
+clear
+str = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
+gamma_guess = 1;
+PT_PERC = 1;
+INV_PERC = 1;
+HLD_SCALING_PCT = 1;
 %m_nmd_fit_lj(str,gamma_guess,PT_PERC,INV_PERC)
 
 str.NMD = str;
@@ -157,13 +162,12 @@ SEDfit.height = SED.height;
 SEDfit.wleft = SED.wleft;
 SEDfit.wright = SED.wright;
 
-loglog(SEDfit.HLDfreq,SEDfit.life,'.',SEDfit.HLDfreq,2*pi./SEDfit.HLDfreq*1E12)
+loglog(SEDfit.HLDfreq,SEDfit.life,'.',...
+    SEDfit.HLDfreq,2*pi./SEDfit.HLDfreq*1E12)
     
 save(strcat(str.NMD,'/NMDfit.mat'), '-struct', 'NMD');
 save(strcat(str.NMD,'/SEDfit.mat'), '-struct', 'SEDfit');
 
 
-end
-    
    
 

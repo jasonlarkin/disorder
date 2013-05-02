@@ -2,7 +2,7 @@
 %x0
 %--------------------------------------------------------------------------
 addpath('/home/jason/disorder/matlab/')
-str.main = '/home/jason/sam/8020/';
+str.main = '/home/jason/disorder/matlab/gulp/';
 name = 'x0.data';
 x0 = m_x0_read( strcat(str.main , name) );
 %--------------------------------------------------------------------------

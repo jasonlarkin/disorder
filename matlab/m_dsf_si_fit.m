@@ -1,55 +1,67 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
 
-%.eigvec = load(strcat(str_af,'AF_eigvec_1.dat'));
-AF.freq = load(strcat(str_af,'AF_freq.dat'));
-AF.x0 = m_x0_read(strcat(str_af,'x0.data'));
+str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/dsf/nmd/';
+DSF(1).DSF = load([str_af 'DSF.mat']);
+DSF(1).DSF.freq_range = DSF(1).DSF.freq_range*1E12; 
 
-% str_nmd = '/home/jason/disorder2/lj/alloy/10K/0.15/10x/NMD/1/work/';
-% nmd = load([str_nmd 'NMDdata.mat']);
-% sed = load([str_nmd 'SEDdata.mat']);
+% str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
+% DSF(1).DSF = load([str_af 'DSF_long_b10.mat']);
+% DSF(2).DSF = load([str_af 'DSF_tran_b10.mat']);
 
-DSF(1).DSF = load([str_af 'DSF_long_b2.5.mat']);
-DSF(2).DSF = load([str_af 'DSF_tran_b2.5.mat']);
 
 imode=0;
 
-for idir = 1:2
+for idir = 1:1
     for ikpt = 1:length(DSF(1).DSF.kpt)
         imode = imode+1
-        if ikpt<=1
-            PT_PERC = 0.01;
+        
+%         if ikpt<=1
+%             PT_PERC = 0.005;
+%             INV_PERC = 1.0;
+%         elseif ikpt<=5
+%             PT_PERC = 0.005;
+%             INV_PERC = 1.0;
+%         else
+%             PT_PERC = 0.005;
+%             INV_PERC = 1.0;
+%         end
+        
+        if ikpt<=2
+            PT_PERC = 0.05;
             INV_PERC = 1.0;
         elseif ikpt<=3
-            PT_PERC = 0.01;
-            INV_PERC = 0.01;
+            PT_PERC = 0.03;
+            INV_PERC = 1.0;
         else
-            PT_PERC = 0.01;
-            INV_PERC = 0.01;
+            PT_PERC = 0.1;
+            INV_PERC = 1.0;
         end
         
 %--------------------------------------------------------------------------
 %tran
 %--------------------------------------------------------------------------
-        [Imax,Jmax] = max(...
-            DSF(idir).DSF.SL(:,ikpt)...
+
+start =50;
+
+    [Imax,Jmax] = max(...
+            DSF(idir).DSF.SL(start:end,ikpt)...
             );
 %Find wleft    
         [I,J] =...
             find(...
-            DSF(idir).DSF.SL(1:Jmax,ikpt) ...
+            DSF(idir).DSF.SL(start:start+Jmax,ikpt) ...
             <...
-            PT_PERC*DSF(idir).DSF.SL(Jmax,ikpt) );
-        wleft = I(length(I))
+            PT_PERC*DSF(idir).DSF.SL(start+Jmax,ikpt) );
+        wleft = start+I(length(I))
 %Find wright
         [I,J] = find(...
-            DSF(idir).DSF.SL(Jmax:length(DSF(idir).DSF.SL),ikpt) ...
+            DSF(idir).DSF.SL(start+Jmax:end,ikpt) ...
             <...
-            PT_PERC*DSF(idir).DSF.SL(Jmax,ikpt) );
-        wright = Jmax + I(1)
+            PT_PERC*DSF(idir).DSF.SL(start+Jmax,ikpt) );
+        wright = start+Jmax + I(1)
 %FIT THE LORENTZIAN(S)
-c0 = [ 2*Imax, 1, DSF(idir).DSF.freq_range(Jmax)/1e12 ];
+c0 = [ 1.5*Imax, 5, DSF(idir).DSF.freq_range(start+Jmax)/1e12 ];
 
     lb(1:length(c0)) = 0.0; ub(1:3:length(c0)) = 100000*Imax; 
     ub(2:3:length(c0)) = 1000*1e15; 
@@ -61,18 +73,18 @@ c0 = [ 2*Imax, 1, DSF(idir).DSF.freq_range(Jmax)/1e12 ];
     lor_func = @(c,w)(c(1))./(1 + ( (w - c(3))./ c(2) ).^2 );
     options =...
         optimset(...
-        'MaxIter',5000,'MaxFunEvals',5000,'TolFun',1e-20,'TolX',1e-6); 
+        'MaxIter',5000,'MaxFunEvals',5000,'TolFun',1e-40,'TolX',1e-30); 
     [c_fit] =...
         lsqcurvefit(...
         lor_func,c0,...
-        DSF(idir).DSF.freq_range(wleft:wright)'/1e12,...
+        DSF(idir).DSF.freq_range(wleft:wright)/1e12,...
         DSF(idir).DSF.SL(wleft:wright,ikpt),...
         lb,ub,options);
 %Store separate liftimes and frequencies for single and MULTIPLE FITS
 center=c_fit(3); lifetime=1/(2*c_fit(2));
     semilogy(...
         DSF(idir).DSF.freq_range/1e12,DSF(idir).DSF.SL(:,ikpt),...
-        DSF(idir).DSF.freq_range(wleft:wright)'/1e12,...
+        DSF(idir).DSF.freq_range(wleft:wright)/1e12,...
         lor_func(c0,DSF(idir).DSF.freq_range(wleft:wright)'/1e12)...
         )
 pause

@@ -116,12 +116,15 @@ tic
 %--------------------------------------------------------------------------
 toc 
 %--------------------------------------------------------------------------
-end %END ifft
+   end %END ifft
 end %iseed
 %seed avg
-SED.SED(:,:,:) =...
-    SED.SED(:,:,:)/NMD.NUM_SEEDS/NMD.NUM_FFTS;
-%Define frequencies
+SED.SED
+n 
+
+
+
+ yim%Define frequencies
     omega = (1:NMD.NUM_OMEGAS)*(NMD.w_max/NMD.NUM_OMEGAS);
 %Output SED
 for imode = 1:size(NMD.modelist(:,imslice),1)

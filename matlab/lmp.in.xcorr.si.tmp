@@ -63,8 +63,8 @@ variable ifft loop ${num_ffts}
 log 	log_SED_${iseed}_${ifft}.lammps
 	reset_timestep  	0
 	fix 			1 all nve
-	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
-	dump_modify 		vel sort id
+#	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
+#	dump_modify 		vel sort id
 	dump 			pos all custom ${w_step} dump_${iseed}_${ifft}.pos xu yu zu
 	dump_modify 		pos sort id
 	compute 		myDis all msd
@@ -73,7 +73,7 @@ log 	log_SED_${iseed}_${ifft}.lammps
 	timestep		${dt}
 	run			${w_total}
 	unfix			1
-	undump			vel
+#	undump			vel
 	undump			pos
 	uncompute		myDis
 
