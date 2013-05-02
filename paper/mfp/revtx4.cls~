@@ -627,8 +627,6 @@ conductivity of a-Si from experiment.}
 \end{figure}
 %--------------------------------------------------------------------------
 
-\clearpage
-
 %--------------------------------------------------------------------------
 \section{\label{S:Introduction}AF Diffusivities}
 %--------------------------------------------------------------------------
@@ -646,8 +644,6 @@ conductivity of a-Si from experiment.}
 \end{figure}
 %--------------------------------------------------------------------------
 
-\clearpage
-
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -660,70 +656,6 @@ conductivity of a-Si from experiment.}
 \end{figure}
 %--------------------------------------------------------------------------
 
-The structure factor at a VC wave vector 
-$\pmb{\kappa}_{VC}$ is defined as\cite{allen_diffusons_1999} 
-\begin{equation}\label{EQ:SLT}
-S^{L,T}\kvcw = 
-\sum_{\nu} E^{L,T}\kvcv
-\delta [\omega-\omega\kgv],
-\end{equation}
-where the summation is over the Gamma modes, $E^{T}$ refers 
-to the transverse polarization and is defined as
-\begin{equation}\label{EQ:EL}
-E^L\kvcv = 
-\left|
-\sum_{b} 
-\hat{\pmb{\kappa}}_{VC} \cdot e\kgvba 
-\EXP{i\pmb{\kappa}_{VC}\cdot\pmb{r}_0\ab{l=0}{b}} 
-\right|^2
-\end{equation}
-and $E^{L}$ refers to the longitudinal polarization and is defined as
-\begin{equation}\label{EQ:ET}
-E^T\kvcv = 
-\left|
-\sum_{b} 
-\hat{\pmb{\kappa}}_{VC} \times e\kgvba 
-\EXP{i\pmb{\kappa}_{VC}\cdot\pmb{r}_0\ab{l=0}{b}} 
-\right|^2.
-\end{equation}
-In Eqs. \eqref{EQ:EL} and \eqref{EQ:ET}, the $b$ summations are 
-over the atoms in the disordered supercell, 
-$\pmb{r}_0\ab{l=0}{b}$ refers to the equilibrium atomic position of 
-atom $b$ in the supercell, $l$ labels the unit cells 
-($l=0$ for the supercell), 
-$\alpha$ labels the Cartesian coordinates, and 
-$\hat{\pmb{\kappa}}_{VC}$ is a unit vector.  
-Explicit disorder is included in the Gamma frequencies 
-$\omega\kgv$ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
-
-
-\begin{equation}\label{Lorentzian_SED}
-\begin{split}
-\DSF(\pmb{\kappa},\omega) =& \frac{1}{N\tau_0}
-\left| \sum_b^N \sum_{\alpha^3}  \int_{0}^{\tau_0} u_{\alpha}\bt \EXP{\Theta} dt \right|^2,
-\end{split}
-\end{equation}
-where $\Theta \equiv i[\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}-\omega t]$. 
-
-\clearpage
-
-%--------------------------------------------------------------------------
-\section{\label{S:Lifetimes}Thermal Conductivity}
-%--------------------------------------------------------------------------
-
-\begin{equation}\label{Lorentzian_SED}
-\begin{split}
-k = \int_{0}^{\omega_{max}} \frac{ d\omega DOS(\omega) C(\omega/T) D(\omega) }{V}
-\end{split}
-\end{equation}
-
-\begin{equation}\label{Lorentzian_SED}
-\begin{split}
-C(\omega/T) = k_{\text{B}}\frac{\hbar\omega/2k_{\text{B}}T}{sinh(\hbar\omega/2k_{\text{B}}T)}^2
-\end{split}
-\end{equation}
-
-
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -735,8 +667,6 @@ C(\omega/T) = k_{\text{B}}\frac{\hbar\omega/2k_{\text{B}}T}{sinh(\hbar\omega/2k_
 conductivity of a-Si from experiment.}
 \end{figure}
 %--------------------------------------------------------------------------
-
-\clearpage
 
 %--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Experimental Results}

@@ -1,19 +1,14 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.11.19)  11 APR 2013 10:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  2 MAY 2013 15:42
 entering extended mode
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **prb_mfp_jl_031113.tex
 (./prb_mfp_jl_031113.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
-(/usr/share/texmf-texlive/tex/latex/revtex4/revtex4.cls
-Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./revtex4.cls
+Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
 cumentation)
  Copyright (c) 2001 The American Physical Society.
  mailto:revtex@aps.org
@@ -38,7 +33,7 @@ ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
 \pagegrid@col=\count82
 Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
 ly upper/lower case changing (DPC)]. on input line 3682.
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -55,8 +50,8 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 \c@figure=\count90
 \c@table=\count91
 
-(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
-Package: natbib 2009/07/16 8.31 (PWD, AO)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
@@ -64,16 +59,15 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 \widetext@top=\box32
 \widetext@bot=\box33
-
-(/usr/share/texmf-texlive/tex/latex/revtex4/revsymb.sty
-Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+ (./revsymb.sty
+Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
 tion)
 LaTeX Info: Redefining \REV@mathfrak on input line 118.
 ))
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup4
@@ -83,24 +77,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 LaTeX Info: Redefining \frak on input line 99.
 LaTeX Info: Redefining \Bbb on input line 101.
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen102
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen103
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
@@ -140,37 +134,35 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-)
-(/usr/share/texmf-texlive/tex/latex/revtex4/aps.rtx
-File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+) (./aps.rtx.tex
+File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
 n)
 )
-(/usr/share/texmf-texlive/tex/latex/revtex4/12pt.rtx
-File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+(./12pt.rtx.tex
+File: 12pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
 on)
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen111
@@ -179,13 +171,13 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 \epsfxsize=\dimen113
 \epsfysize=\dimen114
 )
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
 
-(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen115
 \extrarowheight=\dimen116
@@ -193,18 +185,17 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip48
 \backup@length=\skip49
 ))
-(/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
-)
-(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+) (./multirow.sty
 \bigstrutjot=\dimen117
 )
-(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen118
 \lightrulewidth=\dimen119
@@ -224,8 +215,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count108
 \@thisrulewidth=\dimen130
 )
-(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
+(./subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip50
 \subfigcapskip=\skip51
 \subfigcaptopadj=\dimen131
@@ -236,139 +227,508 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \c@lofdepth=\count110
 \c@subtable=\count111
 \c@lotdepth=\count112
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip54
 \subfig@bottom=\skip55
-)
-(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen133
-\WF@size=\dimen134
-\c@WF@wrappedlines=\count113
-\WF@box=\box36
-\WF@everypar=\toks24
-Package: wrapfig 2003/01/31  v 3.6
-)
-(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+) (./wrapfig.sty
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode not detected.
-)
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 H
+     ere's a replacement for /pub/archive/macros/latex/misc/wrapfig.sty
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 1--6
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 -
+     ------------------------------------ cut here -------------------------...
+
+? 
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+\WF@wrappedlines=\count113
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 7--51
+[]
+ []
+
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
-)
-(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
-Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
-O)
-
-(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
-Package: xcolor-patch 2009/10/02 xcolor patch
-))
-\@linkdim=\dimen135
-\Hy@linkcounter=\count114
-\Hy@pagecounter=\count115
-
-(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
-)
-(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
-)
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)
-
-Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
-(hyperref)                using 11in.
-
-(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
-t (HO)
-))
-Package hyperref Info: Hyper figures OFF on input line 2975.
-Package hyperref Info: Link nesting OFF on input line 2980.
-Package hyperref Info: Hyper index ON on input line 2983.
-Package hyperref Info: Plain pages OFF on input line 2990.
-Package hyperref Info: Backreferencing OFF on input line 2995.
-
-Implicit mode ON; LaTeX internals redefined
-Package hyperref Info: Bookmarks ON on input line 3191.
-LaTeX Info: Redefining \url on input line 3428.
-(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
-Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-)
-(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
-Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
- (HO)
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
-)
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-)))
-\Fld@menulength=\count116
-\Field@Width=\dimen136
-\Fld@charsize=\dimen137
-\Field@toks=\toks25
-Package hyperref Info: Hyper figures OFF on input line 4377.
-Package hyperref Info: Link nesting OFF on input line 4382.
-Package hyperref Info: Hyper index ON on input line 4385.
-Package hyperref Info: backreferencing OFF on input line 4392.
-Package hyperref Info: Link coloring OFF on input line 4397.
-Package hyperref Info: Link coloring with OCG OFF on input line 4402.
-Package hyperref Info: PDF/A mode OFF on input line 4407.
-
-(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
-\Hy@abspage=\count117
-\c@Item=\count118
-\c@Hfootnote=\count119
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
-*hyperref using default driver hdvips*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen133
+\Hy@linkcounter=\count114
+\Hy@pagecounter=\count115
 
-(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
-\pdf@docset=\toks26
-\pdf@box=\box37
-\pdf@toks=\toks27
-\pdf@defaulttoks=\toks28
-\Fld@listcount=\count120
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count116
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count117
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count118
+\Field@Width=\dimen134
+\Fld@charsize=\dimen135
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count119
+\c@Item=\count120
+\c@Hfootnote=\count121
+)
+
+Package hyperref Message: Driver (default): hdvips.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/05/13 v6.82q Hyperref driver for dvips
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/05/13 v6.82q Hyperref definitions for pdfmark specials
+\pdf@docset=\toks24
+\pdf@box=\box36
+\pdf@toks=\toks25
+\pdf@defaulttoks=\toks26
+\Fld@listcount=\count122
+\c@bookmark@seq@number=\count123
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip56
 ))
 (./prb_mfp_jl_031113.aux
 
@@ -387,22 +747,37 @@ LaTeX Warning: Label `S:Introduction' multiply defined.
 LaTeX Warning: Label `S:Introduction' multiply defined.
 
 
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
 LaTeX Warning: Label `S:Introduction' multiply defined.
 
 
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:Lifetimes' multiply defined.
+
+
+LaTeX Warning: Label `Lorentzian_SED' multiply defined.
+
+
+LaTeX Warning: Label `Lorentzian_SED' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
-
-
-LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 
 
 LaTeX Warning: Label `S:Lifetimes:' multiply defined.
@@ -451,31 +826,37 @@ LaTeX Font Info:    ... okay on input line 200.
 Class revtex4 Info: Patching array package. on input line 200.
 Class revtex4 Info: cite was not loaded (OK!) on input line 200.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 200.
-Package hyperref Info: Link coloring OFF on input line 200.
- (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
-Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+\AtBeginShipoutBox=\box37
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
-Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring OFF on input line 200.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count121
+\c@section@level=\count124
 )
 LaTeX Info: Redefining \ref on input line 200.
 LaTeX Info: Redefining \pageref on input line 200.
+LaTeX Info: Redefining \nameref on input line 200.
 
 (./prb_mfp_jl_031113.out) (./prb_mfp_jl_031113.out)
 \@outlinefile=\write3
 \openout3 = `prb_mfp_jl_031113.out'.
 
-\AtBeginShipoutBox=\box38
 LaTeX Font Info:    Try loading font information for U+msa on input line 239.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 239.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1]
 
@@ -638,270 +1019,351 @@ Package natbib Warning: Citation `normand' on page 6 undefined on input line 44
 File: /home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps Gra
 phic file (type eps)
 </home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps>
-File: /home/jason/disorder/si/amor/m_si_amor_life_plot_perfect2.eps Graphic fil
-e (type eps)
+File: /home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps Graphic file (
+type eps)
 
-</home/jason/disorder/si/amor/m_si_amor_life_plot_perfect2.eps>
-File: /home/jason/disorder/si/amor/m_af_si_normand_N0_compare.eps Graphic file 
-(type eps)
+</home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps> [6] [7]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps Graphic file (t
+ype eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_N0_compare.eps>
+</home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps> [8]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_SED_SF_DSF.eps Graphic 
+file (type eps)
+
+</home/jason/disorder/si/amor/m_af_si_normand_4096_SED_SF_DSF.eps>
+
+Package natbib Warning: Citation `allen_diffusons_1999' on page 9 undefined on 
+input line 664.
+
+! Undefined control sequence.
+l.666 S^{L,T}\kvcw
+                   =
+? 
+! Undefined control sequence.
+l.667 \sum_{\nu} E^{L,T}\kvcv
+                             
+? 
+! Undefined control sequence.
+l.668 \delta [\omega-\omega\kgv
+                               ],
+? 
+! Undefined control sequence.
+l.673 E^L\kvcv
+               =
+? 
+! Undefined control sequence.
+l.676 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
+                                           
+? 
+! Undefined control sequence.
+l.682 E^T\kvcv
+               =
+? 
+! Undefined control sequence.
+l.685 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
+                                            
+? 
+! Undefined control sequence.
+l.697 $\omega\kgv
+                 $ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
+? 
+! Undefined control sequence.
+l.697 ... components of the eigenvectors, $e\kgvba
+                                                  $.
+? 
+! Undefined control sequence.
+<argument> \split@tag \begin {split} \DSF 
+                                          (\pmb {\kappa },\omega ) =& \frac ...
+l.704 \end{split}
+                 
+? 
+! Undefined control sequence.
+<argument> ... \int _{0}^{\tau _0} u_{\alpha }\bt 
+                                                  \EXP {\Theta } dt \right |...
+l.704 \end{split}
+                 
+? 
+! Undefined control sequence.
+<argument> \split@tag \begin {split} \DSF 
+                                          (\pmb {\kappa },\omega ) =& \frac ...
+l.704 \end{split}
+                 
+? 
+! Undefined control sequence.
+<argument> ... \int _{0}^{\tau _0} u_{\alpha }\bt 
+                                                  \EXP {\Theta } dt \right |...
+l.704 \end{split}
+                 
+? 
+[9] [10]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Di.eps Graphic file (ty
+pe eps)
+ </home/jason/disorder/si/amor/m_af_si_normand_4096_Di.eps> [11]
 File: /home/jason/disorder/matlab/galli_si_k_tf.eps Graphic file (type eps)
 
 </home/jason/disorder/matlab/galli_si_k_tf.eps>
 
-Package natbib Warning: Citation `freeman_thermal_1986' on page 6 undefined on 
-input line 668.
-
-[6] [7]
-
-Package natbib Warning: Citation `kittel_interpretation_1949' on page 8 undefin
-ed on input line 697.
+Package natbib Warning: Citation `freeman_thermal_1986' on page 12 undefined on
+ input line 762.
 
 
-Package natbib Warning: Citation `cahill_lower_1992' on page 8 undefined on inp
-ut line 697.
+Package natbib Warning: Citation `kittel_interpretation_1949' on page 12 undefi
+ned on input line 791.
 
 
-Package natbib Warning: Citation `cahill_lower_1992' on page 8 undefined on inp
-ut line 703.
+Package natbib Warning: Citation `cahill_lower_1992' on page 12 undefined on in
+put line 791.
 
 
-Package natbib Warning: Citation `PhysRevB.46.6131' on page 8 undefined on inpu
-t line 709.
+Package natbib Warning: Citation `cahill_lower_1992' on page 12 undefined on in
+put line 797.
 
 
-Package natbib Warning: Citation `cahill_lower_1992' on page 8 undefined on inp
-ut line 721.
+Package natbib Warning: Citation `PhysRevB.46.6131' on page 12 undefined on inp
+ut line 803.
+
+[12]
+
+Package natbib Warning: Citation `cahill_lower_1992' on page 13 undefined on in
+put line 815.
 
 
-Package natbib Warning: Citation `cahill_thermal_1987' on page 8 undefined on i
-nput line 721.
+Package natbib Warning: Citation `cahill_thermal_1987' on page 13 undefined on 
+input line 815.
 
 
-Package natbib Warning: Citation `allen_thermal_1993' on page 8 undefined on in
-put line 722.
+Package natbib Warning: Citation `allen_thermal_1993' on page 13 undefined on i
+nput line 816.
 
 
-Package natbib Warning: Citation `graebner_phonon_1986' on page 8 undefined on 
-input line 723.
+Package natbib Warning: Citation `graebner_phonon_1986' on page 13 undefined on
+ input line 817.
 
 
-Package natbib Warning: Citation `shenogin_predicting_2009' on page 8 undefined
- on input line 724.
-
-[8]
-
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 9 undefined on inp
-ut line 743.
+Package natbib Warning: Citation `shenogin_predicting_2009' on page 13 undefine
+d on input line 818.
 
 
-Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 74
-9.
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 13 undefined on in
+put line 837.
 
 
-Package natbib Warning: Citation `He2011a' on page 9 undefined on input line 75
-1.
+Package natbib Warning: Citation `He2011a' on page 13 undefined on input line 8
+43.
 
 
-Package natbib Warning: Citation `bickham_calculation_1998' on page 9 undefined
- on input line 771.
+Package natbib Warning: Citation `He2011a' on page 13 undefined on input line 8
+45.
 
 
-Package natbib Warning: Citation `fabian_anharmonic_1996' on page 9 undefined o
-n input line 774.
+Package natbib Warning: Citation `bickham_calculation_1998' on page 13 undefine
+d on input line 865.
 
 
-Package natbib Warning: Citation `sheng_heat_1991' on page 9 undefined on input
- line 778.
+Package natbib Warning: Citation `fabian_anharmonic_1996' on page 13 undefined 
+on input line 868.
 
 
-Package natbib Warning: Citation `he_heat_2011' on page 9 undefined on input li
-ne 783.
+Package natbib Warning: Citation `sheng_heat_1991' on page 13 undefined on inpu
+t line 872.
+
+[13]
+
+Package natbib Warning: Citation `he_heat_2011' on page 14 undefined on input l
+ine 877.
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 782--784
+Underfull \hbox (badness 1997) in paragraph at lines 876--878
 []\OT1/cmr/m/n/12 The life-times of vi-bra-tional modes in a-Si were pre-dicted
  us-ing nor-mal mode
  []
 
 
-Package natbib Warning: Citation `taraskin_determination_1999' on page 9 undefi
-ned on input line 838.
+Package natbib Warning: Citation `taraskin_determination_1999' on page 14 undef
+ined on input line 932.
 
 
-Package natbib Warning: Citation `feldman_numerical_1999' on page 9 undefined o
-n input line 841.
+Package natbib Warning: Citation `feldman_numerical_1999' on page 14 undefined 
+on input line 935.
 
-[9] [10]
+[14] [15]
 
-Package natbib Warning: Citation `cahill_heat_1989' on page 11 undefined on inp
-ut line 845.
-
-
-Package natbib Warning: Citation `allen_evolution_1998' on page 11 undefined on
- input line 850.
+Package natbib Warning: Citation `cahill_heat_1989' on page 16 undefined on inp
+ut line 939.
 
 
-Package natbib Warning: Citation `garber_numerical_2001' on page 11 undefined o
-n input line 851.
+Package natbib Warning: Citation `allen_evolution_1998' on page 16 undefined on
+ input line 944.
 
 
-Package natbib Warning: Citation `feldman_thermal_1993' on page 11 undefined on
- input line 893.
+Package natbib Warning: Citation `garber_numerical_2001' on page 16 undefined o
+n input line 945.
 
 
-Package natbib Warning: Citation `feldman_numerical_1999' on page 11 undefined 
-on input line 896.
-
-[11]
-
-Package natbib Warning: Citation `biswas_vibrational_1988' on page 12 undefined
- on input line 903.
-
-[12]
-
-Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
-953.
+Package natbib Warning: Citation `feldman_thermal_1993' on page 16 undefined on
+ input line 987.
 
 
-Package natbib Warning: Citation `wallace1972' on page 13 undefined on input li
-ne 953.
+Package natbib Warning: Citation `feldman_numerical_1999' on page 16 undefined 
+on input line 990.
+
+[16]
+
+Package natbib Warning: Citation `biswas_vibrational_1988' on page 17 undefined
+ on input line 997.
+
+[17]
+
+Package natbib Warning: Citation `dove1993' on page 18 undefined on input line 
+1047.
 
 
-Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
-956.
+Package natbib Warning: Citation `wallace1972' on page 18 undefined on input li
+ne 1047.
 
 
-Package natbib Warning: Citation `dove1993' on page 13 undefined on input line 
-966.
+Package natbib Warning: Citation `dove1993' on page 18 undefined on input line 
+1050.
 
 
-LaTeX Warning: Reference `A-Phonon-Life-SED' on page 13 undefined on input line
- 973.
-
-[13]
-
-Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
-ine 989.
+Package natbib Warning: Citation `dove1993' on page 18 undefined on input line 
+1060.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
-ine 1003.
+LaTeX Warning: Reference `A-Phonon-Life-SED' on page 18 undefined on input line
+ 1067.
+
+[18]
+
+Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
+ine 1083.
 
 
-Package natbib Warning: Citation `turney2009a' on page 14 undefined on input li
-ne 1005.
+Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
+ine 1097.
 
 
-Package natbib Warning: Citation `mcgaughey2004a' on page 14 undefined on input
- line 1005.
+Package natbib Warning: Citation `turney2009a' on page 19 undefined on input li
+ne 1099.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
-ine 1014.
+Package natbib Warning: Citation `mcgaughey2004a' on page 19 undefined on input
+ line 1099.
 
 
-Package natbib Warning: Citation `turney2009a' on page 14 undefined on input li
-ne 1016.
+Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
+ine 1108.
 
 
-Package natbib Warning: Citation `ashcroft1976' on page 14 undefined on input l
-ine 1017.
+Package natbib Warning: Citation `turney2009a' on page 19 undefined on input li
+ne 1110.
 
 
-Package natbib Warning: Citation `turney_predicting_2009-1' on page 14 undefine
-d on input line 1031.
+Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
+ine 1111.
 
 
-Package natbib Warning: Citation `ziman2001' on page 14 undefined on input line
- 1043.
+Package natbib Warning: Citation `turney_predicting_2009-1' on page 19 undefine
+d on input line 1125.
 
 
-Overfull \hbox (2.61108pt too wide) detected at line 1049
+Package natbib Warning: Citation `ziman2001' on page 19 undefined on input line
+ 1137.
+
+
+Overfull \hbox (2.61108pt too wide) detected at line 1143
 [] []
  []
 
-[14]
+[19]
 
-Package natbib Warning: Citation `mcquarrie2000' on page 15 undefined on input 
-line 1054.
-
-
-Package natbib Warning: Citation `mcgaughey2004c' on page 15 undefined on input
- line 1057.
+Package natbib Warning: Citation `mcquarrie2000' on page 20 undefined on input 
+line 1148.
 
 
-Package natbib Warning: Citation `goicochea2010' on page 15 undefined on input 
-line 1058.
+Package natbib Warning: Citation `mcgaughey2004c' on page 20 undefined on input
+ line 1151.
 
 
-Package natbib Warning: Citation `mcgaughey2006b' on page 15 undefined on input
- line 1064.
+Package natbib Warning: Citation `goicochea2010' on page 20 undefined on input 
+line 1152.
 
 
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 15 undefined on in
-put line 1072.
+Package natbib Warning: Citation `mcgaughey2006b' on page 20 undefined on input
+ line 1158.
 
 
-Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
-ne 1073.
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 20 undefined on in
+put line 1166.
 
 
-Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 1
-073.
+Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
+ne 1167.
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 1072--1079
+Package natbib Warning: Citation `He2011a' on page 20 undefined on input line 1
+167.
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 1166--1173
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
 
-Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
-ne 1089.
+Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
+ne 1183.
 
 
-Package natbib Warning: Citation `sellan2010b' on page 15 undefined on input li
-ne 1089.
+Package natbib Warning: Citation `sellan2010b' on page 20 undefined on input li
+ne 1183.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 15 undefined on input lin
-e 1101.
+Package natbib Warning: Citation `Larkin2012' on page 20 undefined on input lin
+e 1195.
 
 
-Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
-ne 1101.
+Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
+ne 1195.
 
 
-Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 1
-101.
+Package natbib Warning: Citation `He2011a' on page 20 undefined on input line 1
+195.
 
 
-Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
-ne 1101.
+Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
+ne 1195.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 15 undefined on input lin
-e 1101.
+Package natbib Warning: Citation `Larkin2012' on page 20 undefined on input lin
+e 1195.
 
 
-Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
-ne 1101.
+Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
+ne 1195.
 
 
-Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 1
-101.
+Package natbib Warning: Citation `He2011a' on page 20 undefined on input line 1
+195.
 
 
-Package natbib Warning: Citation `turney2009a' on page 15 undefined on input li
-ne 1101.
+Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
+ne 1195.
 
-(./prb_mfp_jl_031113.bbl [15] [16])
+(./prb_mfp_jl_031113.bbl [20] [21])
 
 Package natbib Warning: There were undefined citations.
 
-[17] (./prb_mfp_jl_031113.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1203.
+[22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1203.
+ (./prb_mfp_jl_031113.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1203.
+
+Package rerunfilecheck Info: File `prb_mfp_jl_031113.out' has not changed.
+(rerunfilecheck)             Checksum: A57EB750C3FF6F46EAED85DDACFB9A3F;2218.
+
 
 LaTeX Warning: There were undefined references.
 
@@ -910,12 +1372,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6804 strings out of 493849
- 92702 string characters out of 1152845
- 189302 words of memory out of 3000000
- 9953 multiletter control sequences out of 15000+50000
+ 7413 strings out of 495060
+ 102015 string characters out of 3182053
+ 210038 words of memory out of 3000000
+ 10504 multiletter control sequences out of 15000+200000
  16734 words of font info for 61 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 38i,25n,29p,607b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 14 hyphenation exceptions out of 8191
+ 36i,25n,29p,607b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_031113.dvi (17 pages, 52656 bytes).
+Output written on prb_mfp_jl_031113.dvi (22 pages, 60344 bytes).
