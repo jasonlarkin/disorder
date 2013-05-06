@@ -1,31 +1,32 @@
 phon dispersion eigenvector thermalconductivity
 
-output freq text RUNPATHfreq.gout
+output freq text freq.gout
 output xyz
 
 ###########################################################################
 #------------------------BKS-----------------------------------------------
 ###########################################################################
-species   3
-Si     core    2.4            
-O      core    -1.2            
+#species   3
+#Si     core    2.4            
+#O      core   -1.2            
 
 qwolf 0.223 12.0
 
-buck  kjmol   
-Si core Si core 84170000000.0  0.0657  2248.10  0.000 12.000
-buck  kjmol
-O  core O  core 40514.0        0.3513  20719.0  0.000 12.000
-buck  kjmol   
-Si core O  core 247240.0       0.2085  6824.80  0.000 12.000
+#buck  kjmol   
+#Si core Si core 84170000000.0  0.0657  2248.10  0.000 12.000
+#buck  kjmol
+#O  core O  core 40514.0        0.3513  20719.0  0.000 12.000
+#buck  kjmol   
+#Si core O  core 247240.0       0.2085  6824.80  0.000 12.000
 
 lennard epsilon 12 6 inter kjmol
-Si core Si core 1276.80        0.4     0        8.5   0 0
+Si core Si core 5107.2        0.4     0        8.5   0 0
 lennard epsilon 12 6 inter kjmol
-Si core Si core 0.04613        2.2     0        8.5   0 0
+Si core Si core 0.18452        2.2     0        8.5   0 0
 lennard epsilon 12 6 inter kjmol
-Si core Si core 1.08340        1.3     0        8.5   0 0
+Si core Si core 4.3336        1.3     0        8.5   0 0
 
+library nodump bks
 
 dispersion
 KPT to KPT

@@ -1,13 +1,13 @@
 clear
 path(path,'/home/jason/disorder/matlab/');
 lj = m_lj; constant = m_constant;
-str.main = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/';
+str.main = '/home/jason/disorder2/sio2/alan/a972/';
 str.matlab = '/home/jason/disorder/matlab/';
 str.gin = 'gulp_af_sio2.tmp';
 %--------------------------------------------------------------------------
 %x0
 %--------------------------------------------------------------------------
-x0 = m_x0_read([str.main 'x0_emin.data']);
+x0 = m_x0_read([str.main 'x0.data']);
 %--------------------------------------------------------------------------
 %gulp
 %--------------------------------------------------------------------------
@@ -31,7 +31,11 @@ m_change_file_strings(...
     change)
 clear orig change
 for itype = 1:length(x0.x)
-a_type(itype).str = 'Si';
+    if x0.m(itype) ==1
+        a_type(itype).str = 'Si';
+    else
+        a_type(itype).str = 'O';
+    end
 end
 coords = m_gulp_coord2gulp( x0 , a_type );
 dlmwrite([str.main 'gulp.gin'],...
