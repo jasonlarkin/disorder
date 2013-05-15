@@ -1,7 +1,7 @@
 clear
 path(path,'/home/jason/disorder/matlab/');
 lj = m_lj; constant = m_constant;
-str.main = '/home/jason/disorder2/sio2/alan/a972/';
+str.main = '/home/jason/disorder2/sio2/alan/a972/emin/';
 str.matlab = '/home/jason/disorder/matlab/';
 str.gin = 'gulp_af_sio2.tmp';
 %--------------------------------------------------------------------------
@@ -23,7 +23,6 @@ orig(5).str = 'RUNPATH';
 change(5).str = str.main;
 orig(6).str = 'KPT';
 change(6).str = '0.0 0.0 0.0';
-
 m_change_file_strings(...
     [str.matlab str.gin],...
     orig,...

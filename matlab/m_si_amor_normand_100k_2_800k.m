@@ -1,6 +1,6 @@
 clear
 x0 = m_x0_read(...
-    '/home/jason/disorder2/si/amor/normand/best100k/x0_best100k.data');
+    '/home/jason/disorder2/sio2/alan/a972/x0.data');
 
 x0n.x = []; x0n.y = []; x0n.z = []; x0n.id = []; x0n.m = [];
 icnt=1;
@@ -28,7 +28,7 @@ pause
 formats = '%2.6f';
 output = [x0n.id x0n.m x0n.x x0n.y x0n.z];
 str.write=...
-    ['/home/jason/disorder2/si/amor/normand/800k/' 'lmp.in.x0'];
+    ['/home/jason/disorder2/sio2/alan/a972/tile/' 'lmp.in.x0'];
 fileID = fopen(str.write,'a');
 for iout = 1:length(output)
 fprintf(fileID,'%5d \t %5d \t %7.7f \t %7.7f \t %7.7f\n',output(iout,:));

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  2 MAY 2013 15:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  15 MAY 2013 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,356 +1014,387 @@ Missing character: There is no « in font cmr12!
 [5]
 
 Package natbib Warning: Citation `normand' on page 6 undefined on input line 44
-2.
+4.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.456 vs_
+         long: 8.2715e+03, vs_tran: 3.8867e+03
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.457 
+      
+? 
 File: /home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps Gra
 phic file (type eps)
 </home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps>
-File: /home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps Graphic file (
-type eps)
-
-</home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps> [6] [7]
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps Graphic file (t
-ype eps)
-
-</home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps> [8]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_SED_SF_DSF.eps Graphic 
 file (type eps)
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_SED_SF_DSF.eps>
 
-Package natbib Warning: Citation `allen_diffusons_1999' on page 9 undefined on 
-input line 664.
+Package natbib Warning: Citation `allen_diffusons_1999' on page 6 undefined on 
+input line 637.
 
 ! Undefined control sequence.
-l.666 S^{L,T}\kvcw
+l.639 S^{L,T}\kvcw
                    =
 ? 
 ! Undefined control sequence.
-l.667 \sum_{\nu} E^{L,T}\kvcv
+l.640 \sum_{\nu} E^{L,T}\kvcv
                              
 ? 
 ! Undefined control sequence.
-l.668 \delta [\omega-\omega\kgv
+l.641 \delta [\omega-\omega\kgv
                                ],
 ? 
 ! Undefined control sequence.
-l.673 E^L\kvcv
+l.646 E^L\kvcv
                =
 ? 
 ! Undefined control sequence.
-l.676 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
+l.649 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
                                            
 ? 
 ! Undefined control sequence.
-l.682 E^T\kvcv
+l.655 E^T\kvcv
                =
 ? 
 ! Undefined control sequence.
-l.685 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
+l.658 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
                                             
 ? 
+[6]
 ! Undefined control sequence.
-l.697 $\omega\kgv
+l.670 $\omega\kgv
                  $ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
 ? 
 ! Undefined control sequence.
-l.697 ... components of the eigenvectors, $e\kgvba
+l.670 ... components of the eigenvectors, $e\kgvba
                                                   $.
 ? 
 ! Undefined control sequence.
 <argument> \split@tag \begin {split} \DSF 
                                           (\pmb {\kappa },\omega ) =& \frac ...
-l.704 \end{split}
+l.677 \end{split}
                  
 ? 
 ! Undefined control sequence.
 <argument> ... \int _{0}^{\tau _0} u_{\alpha }\bt 
                                                   \EXP {\Theta } dt \right |...
-l.704 \end{split}
+l.677 \end{split}
                  
 ? 
 ! Undefined control sequence.
 <argument> \split@tag \begin {split} \DSF 
                                           (\pmb {\kappa },\omega ) =& \frac ...
-l.704 \end{split}
+l.677 \end{split}
                  
 ? 
 ! Undefined control sequence.
 <argument> ... \int _{0}^{\tau _0} u_{\alpha }\bt 
                                                   \EXP {\Theta } dt \right |...
-l.704 \end{split}
+l.677 \end{split}
                  
 ? 
-[9] [10]
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Di.eps Graphic file (ty
-pe eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_Di.eps> [11]
+[7]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps Graphic file (t
+ype eps)
+ </home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps> [8]
+File: /home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps Graphic file (
+type eps)
+
+</home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps> [9]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps Graphic file (t
+ype eps)
+
+</home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps> [10]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_D.eps Graphic file (typ
+e eps)
+
+</home/jason/disorder/si/amor/m_af_si_normand_4096_D.eps> [11]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps Graphic file
+ (type eps)
+
+</home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps> [12]
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda.eps Graphic fil
+e (type eps)
+
+</home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda.eps> [13]
 File: /home/jason/disorder/matlab/galli_si_k_tf.eps Graphic file (type eps)
 
 </home/jason/disorder/matlab/galli_si_k_tf.eps>
 
-Package natbib Warning: Citation `freeman_thermal_1986' on page 12 undefined on
- input line 762.
+Package natbib Warning: Citation `freeman_thermal_1986' on page 14 undefined on
+ input line 820.
 
 
-Package natbib Warning: Citation `kittel_interpretation_1949' on page 12 undefi
-ned on input line 791.
+Package natbib Warning: Citation `kittel_interpretation_1949' on page 14 undefi
+ned on input line 849.
 
 
-Package natbib Warning: Citation `cahill_lower_1992' on page 12 undefined on in
-put line 791.
+Package natbib Warning: Citation `cahill_lower_1992' on page 14 undefined on in
+put line 849.
+
+[14]
+
+Package natbib Warning: Citation `cahill_lower_1992' on page 15 undefined on in
+put line 855.
 
 
-Package natbib Warning: Citation `cahill_lower_1992' on page 12 undefined on in
-put line 797.
+Package natbib Warning: Citation `PhysRevB.46.6131' on page 15 undefined on inp
+ut line 861.
 
 
-Package natbib Warning: Citation `PhysRevB.46.6131' on page 12 undefined on inp
-ut line 803.
-
-[12]
-
-Package natbib Warning: Citation `cahill_lower_1992' on page 13 undefined on in
-put line 815.
+Package natbib Warning: Citation `cahill_lower_1992' on page 15 undefined on in
+put line 873.
 
 
-Package natbib Warning: Citation `cahill_thermal_1987' on page 13 undefined on 
-input line 815.
+Package natbib Warning: Citation `cahill_thermal_1987' on page 15 undefined on 
+input line 873.
 
 
-Package natbib Warning: Citation `allen_thermal_1993' on page 13 undefined on i
-nput line 816.
+Package natbib Warning: Citation `allen_thermal_1993' on page 15 undefined on i
+nput line 874.
 
 
-Package natbib Warning: Citation `graebner_phonon_1986' on page 13 undefined on
- input line 817.
+Package natbib Warning: Citation `graebner_phonon_1986' on page 15 undefined on
+ input line 875.
 
 
-Package natbib Warning: Citation `shenogin_predicting_2009' on page 13 undefine
-d on input line 818.
+Package natbib Warning: Citation `shenogin_predicting_2009' on page 15 undefine
+d on input line 876.
 
 
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 13 undefined on in
-put line 837.
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 15 undefined on in
+put line 895.
 
 
-Package natbib Warning: Citation `He2011a' on page 13 undefined on input line 8
-43.
+Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 9
+01.
 
 
-Package natbib Warning: Citation `He2011a' on page 13 undefined on input line 8
-45.
+Package natbib Warning: Citation `He2011a' on page 15 undefined on input line 9
+03.
 
 
-Package natbib Warning: Citation `bickham_calculation_1998' on page 13 undefine
-d on input line 865.
+Package natbib Warning: Citation `bickham_calculation_1998' on page 15 undefine
+d on input line 923.
+
+[15]
+
+Package natbib Warning: Citation `fabian_anharmonic_1996' on page 16 undefined 
+on input line 926.
 
 
-Package natbib Warning: Citation `fabian_anharmonic_1996' on page 13 undefined 
-on input line 868.
+Package natbib Warning: Citation `sheng_heat_1991' on page 16 undefined on inpu
+t line 930.
 
 
-Package natbib Warning: Citation `sheng_heat_1991' on page 13 undefined on inpu
-t line 872.
-
-[13]
-
-Package natbib Warning: Citation `he_heat_2011' on page 14 undefined on input l
-ine 877.
+Package natbib Warning: Citation `he_heat_2011' on page 16 undefined on input l
+ine 935.
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 876--878
+Underfull \hbox (badness 1997) in paragraph at lines 934--936
 []\OT1/cmr/m/n/12 The life-times of vi-bra-tional modes in a-Si were pre-dicted
  us-ing nor-mal mode
  []
 
 
-Package natbib Warning: Citation `taraskin_determination_1999' on page 14 undef
-ined on input line 932.
-
-
-Package natbib Warning: Citation `feldman_numerical_1999' on page 14 undefined 
-on input line 935.
-
-[14] [15]
-
-Package natbib Warning: Citation `cahill_heat_1989' on page 16 undefined on inp
-ut line 939.
-
-
-Package natbib Warning: Citation `allen_evolution_1998' on page 16 undefined on
- input line 944.
-
-
-Package natbib Warning: Citation `garber_numerical_2001' on page 16 undefined o
-n input line 945.
-
-
-Package natbib Warning: Citation `feldman_thermal_1993' on page 16 undefined on
- input line 987.
+Package natbib Warning: Citation `taraskin_determination_1999' on page 16 undef
+ined on input line 990.
 
 
 Package natbib Warning: Citation `feldman_numerical_1999' on page 16 undefined 
-on input line 990.
+on input line 993.
 
-[16]
+[16] [17]
 
-Package natbib Warning: Citation `biswas_vibrational_1988' on page 17 undefined
- on input line 997.
-
-[17]
-
-Package natbib Warning: Citation `dove1993' on page 18 undefined on input line 
-1047.
+Package natbib Warning: Citation `cahill_heat_1989' on page 18 undefined on inp
+ut line 997.
 
 
-Package natbib Warning: Citation `wallace1972' on page 18 undefined on input li
-ne 1047.
+Package natbib Warning: Citation `allen_evolution_1998' on page 18 undefined on
+ input line 1002.
 
 
-Package natbib Warning: Citation `dove1993' on page 18 undefined on input line 
-1050.
+Package natbib Warning: Citation `garber_numerical_2001' on page 18 undefined o
+n input line 1003.
 
 
-Package natbib Warning: Citation `dove1993' on page 18 undefined on input line 
-1060.
+Package natbib Warning: Citation `feldman_thermal_1993' on page 18 undefined on
+ input line 1045.
 
 
-LaTeX Warning: Reference `A-Phonon-Life-SED' on page 18 undefined on input line
- 1067.
+Package natbib Warning: Citation `feldman_numerical_1999' on page 18 undefined 
+on input line 1048.
 
 [18]
 
-Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
-ine 1083.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
-ine 1097.
-
-
-Package natbib Warning: Citation `turney2009a' on page 19 undefined on input li
-ne 1099.
-
-
-Package natbib Warning: Citation `mcgaughey2004a' on page 19 undefined on input
- line 1099.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
-ine 1108.
-
-
-Package natbib Warning: Citation `turney2009a' on page 19 undefined on input li
-ne 1110.
-
-
-Package natbib Warning: Citation `ashcroft1976' on page 19 undefined on input l
-ine 1111.
-
-
-Package natbib Warning: Citation `turney_predicting_2009-1' on page 19 undefine
-d on input line 1125.
-
-
-Package natbib Warning: Citation `ziman2001' on page 19 undefined on input line
- 1137.
-
-
-Overfull \hbox (2.61108pt too wide) detected at line 1143
-[] []
- []
+Package natbib Warning: Citation `biswas_vibrational_1988' on page 19 undefined
+ on input line 1055.
 
 [19]
 
-Package natbib Warning: Citation `mcquarrie2000' on page 20 undefined on input 
-line 1148.
+Package natbib Warning: Citation `dove1993' on page 20 undefined on input line 
+1105.
 
 
-Package natbib Warning: Citation `mcgaughey2004c' on page 20 undefined on input
- line 1151.
+Package natbib Warning: Citation `wallace1972' on page 20 undefined on input li
+ne 1105.
 
 
-Package natbib Warning: Citation `goicochea2010' on page 20 undefined on input 
-line 1152.
+Package natbib Warning: Citation `dove1993' on page 20 undefined on input line 
+1108.
 
 
-Package natbib Warning: Citation `mcgaughey2006b' on page 20 undefined on input
- line 1158.
+Package natbib Warning: Citation `dove1993' on page 20 undefined on input line 
+1118.
 
 
-LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 20 undefined on in
-put line 1166.
+LaTeX Warning: Reference `A-Phonon-Life-SED' on page 20 undefined on input line
+ 1125.
+
+[20]
+
+Package natbib Warning: Citation `ashcroft1976' on page 21 undefined on input l
+ine 1141.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 1167.
+Package natbib Warning: Citation `ashcroft1976' on page 21 undefined on input l
+ine 1155.
 
 
-Package natbib Warning: Citation `He2011a' on page 20 undefined on input line 1
-167.
+Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
+ne 1157.
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 1166--1173
+Package natbib Warning: Citation `mcgaughey2004a' on page 21 undefined on input
+ line 1157.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 21 undefined on input l
+ine 1166.
+
+
+Package natbib Warning: Citation `turney2009a' on page 21 undefined on input li
+ne 1168.
+
+
+Package natbib Warning: Citation `ashcroft1976' on page 21 undefined on input l
+ine 1169.
+
+
+Package natbib Warning: Citation `turney_predicting_2009-1' on page 21 undefine
+d on input line 1183.
+
+
+Package natbib Warning: Citation `ziman2001' on page 21 undefined on input line
+ 1195.
+
+
+Overfull \hbox (2.61108pt too wide) detected at line 1201
+[] []
+ []
+
+[21]
+
+Package natbib Warning: Citation `mcquarrie2000' on page 22 undefined on input 
+line 1206.
+
+
+Package natbib Warning: Citation `mcgaughey2004c' on page 22 undefined on input
+ line 1209.
+
+
+Package natbib Warning: Citation `goicochea2010' on page 22 undefined on input 
+line 1210.
+
+
+Package natbib Warning: Citation `mcgaughey2006b' on page 22 undefined on input
+ line 1216.
+
+
+LaTeX Warning: Reference `S-Prelim-Vib-Cond-Ordered' on page 22 undefined on in
+put line 1224.
+
+
+Package natbib Warning: Citation `turney2009a' on page 22 undefined on input li
+ne 1225.
+
+
+Package natbib Warning: Citation `He2011a' on page 22 undefined on input line 1
+225.
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 1224--1231
 []\OT1/cmr/m/n/12 For the LJ ar-gon sys-tem stud-ied in Sec-tion [], a fi-nite 
 simulation-size scal-ing
  []
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 1183.
+Package natbib Warning: Citation `turney2009a' on page 22 undefined on input li
+ne 1241.
 
 
-Package natbib Warning: Citation `sellan2010b' on page 20 undefined on input li
-ne 1183.
+Package natbib Warning: Citation `sellan2010b' on page 22 undefined on input li
+ne 1241.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 20 undefined on input lin
-e 1195.
+Package natbib Warning: Citation `Larkin2012' on page 22 undefined on input lin
+e 1253.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 1195.
+Package natbib Warning: Citation `turney2009a' on page 22 undefined on input li
+ne 1253.
 
 
-Package natbib Warning: Citation `He2011a' on page 20 undefined on input line 1
-195.
+Package natbib Warning: Citation `He2011a' on page 22 undefined on input line 1
+253.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 1195.
+Package natbib Warning: Citation `turney2009a' on page 22 undefined on input li
+ne 1253.
 
 
-Package natbib Warning: Citation `Larkin2012' on page 20 undefined on input lin
-e 1195.
+Package natbib Warning: Citation `Larkin2012' on page 22 undefined on input lin
+e 1253.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 1195.
+Package natbib Warning: Citation `turney2009a' on page 22 undefined on input li
+ne 1253.
 
 
-Package natbib Warning: Citation `He2011a' on page 20 undefined on input line 1
-195.
+Package natbib Warning: Citation `He2011a' on page 22 undefined on input line 1
+253.
 
 
-Package natbib Warning: Citation `turney2009a' on page 20 undefined on input li
-ne 1195.
+Package natbib Warning: Citation `turney2009a' on page 22 undefined on input li
+ne 1253.
 
-(./prb_mfp_jl_031113.bbl [20] [21])
+(./prb_mfp_jl_031113.bbl [22] [23])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1203.
-[22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1203.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1261.
+[24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1261.
  (./prb_mfp_jl_031113.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1203.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1203.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1261.
 
-Package rerunfilecheck Info: File `prb_mfp_jl_031113.out' has not changed.
-(rerunfilecheck)             Checksum: A57EB750C3FF6F46EAED85DDACFB9A3F;2218.
 
+
+Package rerunfilecheck Warning: File `prb_mfp_jl_031113.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `prb_mfp_jl_031113.out':
+(rerunfilecheck)             Before: A57EB750C3FF6F46EAED85DDACFB9A3F;2218
+(rerunfilecheck)             After:  CE2A9F2597C160E5C65312FC58043C16;2273.
 
 LaTeX Warning: There were undefined references.
 
@@ -1372,12 +1403,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7413 strings out of 495060
- 102015 string characters out of 3182053
+ 7419 strings out of 495060
+ 102280 string characters out of 3182053
  210038 words of memory out of 3000000
- 10504 multiletter control sequences out of 15000+200000
+ 10507 multiletter control sequences out of 15000+200000
  16734 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,25n,29p,607b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,25n,29p,609b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_031113.dvi (22 pages, 60344 bytes).
+Output written on prb_mfp_jl_031113.dvi (24 pages, 62948 bytes).

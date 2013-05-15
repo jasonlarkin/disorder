@@ -1,4 +1,4 @@
-phon dispersion eigenvector thermalconductivity
+phon dispersion eigenvector optimise thermalconductivity
 
 output freq text freq.gout
 output xyz
@@ -22,9 +22,9 @@ qwolf 0.223 12.0
 lennard epsilon 12 6 inter kjmol
 Si core Si core 5107.2        0.4     0        8.5   0 0
 lennard epsilon 12 6 inter kjmol
-Si core Si core 0.18452        2.2     0        8.5   0 0
+O core O core 0.18452        2.2     0        8.5   0 0
 lennard epsilon 12 6 inter kjmol
-Si core Si core 4.3336        1.3     0        8.5   0 0
+Si core O core 4.3336        1.3     0        8.5   0 0
 
 library nodump bks
 

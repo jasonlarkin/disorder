@@ -431,6 +431,8 @@ to the E/L boundary.
 
 \clearpage
 
+
+
 %--------------------------------------------------------------------------
 \section{\label{S:Simulation}Simulation Details}
 %--------------------------------------------------------------------------
@@ -445,22 +447,13 @@ Alternatively, amorphous samples are made by a melt-quench procedure.
 The crystal phase is melted at a high temperature (20,000 K for silicon) 
 at constant volume.  The liquid is then quenched to a temperature
 
-%--------------------------------------------------------------------------
-\section{\label{S:Introduction}Group Velocity from Structure Factor}
-%--------------------------------------------------------------------------
+structural relaxation: a-LJ, a-sio2,a-Si.  Both a-sio2 and a-Si require 
+annealing at high temperature (about 1/2 Tmelt) to allow structural 
+relaxation. 
 
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
-\end{figure}
-%--------------------------------------------------------------------------
+structural relaxation:  Ul =7.64X10 m/s and UT=3. 67X10, indicates that 
+there has been structural relaxation 
+vs_long: 8.2715e+03, vs_tran: 3.8867e+03
 
 
 % ``The vertical lines
@@ -611,7 +604,7 @@ conductivity of a-Si from experiment.}
 % \cite{feldman_thermal_1993}
 
 %--------------------------------------------------------------------------
-\section{\label{S:Introduction}Lifetimes}
+\section{\label{S:Introduction}Group Velocity from Structure Factor}
 %--------------------------------------------------------------------------
 
 
@@ -619,7 +612,7 @@ conductivity of a-Si from experiment.}
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps}
+{/home/jason/disorder/si/amor/m_dsf_si_amor_plot_disp_perfect2_100.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:phonon_diff} film thickness dependant thermal 
@@ -627,26 +620,6 @@ conductivity of a-Si from experiment.}
 \end{figure}
 %--------------------------------------------------------------------------
 
-\clearpage
-
-%--------------------------------------------------------------------------
-\section{\label{S:Introduction}AF Diffusivities}
-%--------------------------------------------------------------------------
-
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
-\end{figure}
-%--------------------------------------------------------------------------
-
-\clearpage
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -708,8 +681,107 @@ where $\Theta \equiv i[\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}-\omega t]$.
 \clearpage
 
 %--------------------------------------------------------------------------
+\section{\label{S:Introduction}Density of States}
+%--------------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
+
+
+%--------------------------------------------------------------------------
+\section{\label{S:Introduction}Lifetimes}
+%--------------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_si_amor_life_he_compare.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
+
+%--------------------------------------------------------------------------
+\section{\label{S:Introduction}AF Diffusivities}
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_D.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
+
+%--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Thermal Conductivity}
 %--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
 
 \begin{equation}\label{Lorentzian_SED}
 \begin{split}
@@ -723,20 +795,6 @@ C(\omega/T) = k_{\text{B}}\frac{\hbar\omega/2k_{\text{B}}T}{sinh(\hbar\omega/2k_
 \end{split}
 \end{equation}
 
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_Di.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
-\end{figure}
-%--------------------------------------------------------------------------
-
-\clearpage
 
 %--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Experimental Results}

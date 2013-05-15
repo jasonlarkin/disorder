@@ -96,7 +96,7 @@ if last_status == 1
      if (strcmpi(id,'ITEM: NUMBER OF ATOMS'))
             Natoms = str2num(fgetl(dump));
      else
-      if (strcmpi(id,'ITEM: BOX BOUNDS'))
+      if (strcmpi(id,'ITEM: BOX BOUNDS pp pp pp')) %(strcmpi(id,'ITEM: BOX BOUNDS'))
             x_bound(1,:) = str2num(fgetl(dump));
             y_bound(1,:) = str2num(fgetl(dump));
             z_bound(1,:) = str2num(fgetl(dump));
