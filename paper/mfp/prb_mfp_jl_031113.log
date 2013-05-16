@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  15 MAY 2013 14:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  16 MAY 2013 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,6 +744,18 @@ LaTeX Warning: Label `S:Simulation' multiply defined.
 LaTeX Warning: Label `S:Introduction' multiply defined.
 
 
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `S:Introduction' multiply defined.
+
+
+LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
 LaTeX Warning: Label `S:Introduction' multiply defined.
 
 
@@ -765,13 +777,13 @@ LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 
-LaTeX Warning: Label `Lorentzian_SED' multiply defined.
-
-
-LaTeX Warning: Label `Lorentzian_SED' multiply defined.
-
-
 LaTeX Warning: Label `FIG:phonon_diff' multiply defined.
+
+
+LaTeX Warning: Label `Lorentzian_SED' multiply defined.
+
+
+LaTeX Warning: Label `Lorentzian_SED' multiply defined.
 
 
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
@@ -1386,15 +1398,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1261.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1261.
 
+Package rerunfilecheck Info: File `prb_mfp_jl_031113.out' has not changed.
+(rerunfilecheck)             Checksum: CE2A9F2597C160E5C65312FC58043C16;2273.
 
-
-Package rerunfilecheck Warning: File `prb_mfp_jl_031113.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `prb_mfp_jl_031113.out':
-(rerunfilecheck)             Before: A57EB750C3FF6F46EAED85DDACFB9A3F;2218
-(rerunfilecheck)             After:  CE2A9F2597C160E5C65312FC58043C16;2273.
 
 LaTeX Warning: There were undefined references.
 
@@ -1403,12 +1409,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7419 strings out of 495060
- 102280 string characters out of 3182053
- 210038 words of memory out of 3000000
- 10507 multiletter control sequences out of 15000+200000
+ 7420 strings out of 495060
+ 102293 string characters out of 3182053
+ 210134 words of memory out of 3000000
+ 10508 multiletter control sequences out of 15000+200000
  16734 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,25n,29p,609b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_031113.dvi (24 pages, 62948 bytes).
+Output written on prb_mfp_jl_031113.dvi (24 pages, 63032 bytes).

@@ -84,12 +84,12 @@ sio2.cond(2) = (con.kb / sio2.VOLUME)*sum(D(2).D(:,3));
 
 debye.num = 100;
 debye.A=1E-29;
-debye.B=0.8E21;
+debye.B=1.3E21;
 debye.c = (1/3)*si.amor.vs_long + (2/3)*si.amor.vs_tran;
 debye.wmin = min(Di(8,1).Di(:,2)); %4.113E12
-debye.wcut = 1.162E13; debye.dw = debye.wcut/debye.num;
-debye.freq_range = linspace(debye.wmin/debye.num,debye.wmin,debye.num);
-debye.dos = 3*(debye.freq_range.^2)/(2*si.amor.vs_tran^3*pi^2)*VOLUME;
+debye.wcut = 1.1625E13; debye.dw = debye.wcut/debye.num;
+debye.freq_range = linspace(debye.wcut/debye.num,debye.wcut,debye.num);
+debye.dos = 3*(debye.freq_range.^2)/(2*(0.935*si.amor.vs_tran)^3*pi^2)*VOLUME;
 debye.cond = (con.kb/VOLUME)*(debye.dos*debye.dw)*debye.B.*(debye.freq_range.^(-2));
 debye.mfp = 3*debye.B.*(debye.freq_range.^(-2))/si.amor.vs_tran;
 [Y debye.Isort] = sort(debye.mfp);
@@ -275,8 +275,8 @@ pause
 %wcut
 [debye.Icut1 debye.Jcut1] = find( Di(8,1).Di(:,2) < debye.wcut + 0.0001E12);
 [debye.Icut2 debye.Jcut2] = find( Di(8,1).Di(:,2) > debye.wcut - 0.0001E12);
-[SED.Icut1 SED.Jcut1] = find( SED.HLDfreq < debye.wcut + 0.0001E12);
-[SED.Icut2 SED.Jcut2] = find( SED.HLDfreq > debye.wcut - 0.0001E12);
+[SED.Icut1 SED.Jcut1] = find( SED.HLDfreq < 0.0 + 0.0001E12);
+[SED.Icut2 SED.Jcut2] = find( SED.HLDfreq > 0.0 - 0.0001E12);
 VOLUME = (8*5.43E-10)^3;
 debye.cut(1).cond = (con.kb / VOLUME)*Di(8,1).Di(debye.Icut1,3);
 debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut1,3)/si.amor.vs_tran;
@@ -300,6 +300,20 @@ sum(SED.cut(2).cond)
 %semilogx(Di(8,1).Di(:,2),cumtrapz((con.kb / VOLUME)*Di(8,1).Di(:,3) ),'.')
 %semilogx(flipdim(debye.mfp,2),sum(debye.cond) + sum(SED.cut(1).cond)+cumtrapz(debye.cond))
 %semilogx( flipdim(SED.cut(1).mfp'), cumtrapz(SED.cut(1).cond))
+
+%Di
+loglog(...
+    SED.HLDfreq,((1/3))*si.amor.vs_tran^2*(1.0*SED.life*1E-12),...
+    Di(8,1).Di(debye.Icut2,2),Di(8,1).Di(debye.Icut2,3),...
+    linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
+    (1/3)*(5.43E-10/2)*si.amor.vs_tran*ones(100,1),...
+    linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
+    debye.B*linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100).^(-2)...
+    )
+axis([ 3E12 1.3E14 1E-8 1E-4])
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
 
 regner.cond(1).cond = load('/home/jason/disorder/si/amor/regner/500nm.dat');
 regner.cond(2).cond = load('/home/jason/disorder/si/amor/regner/1000nm.dat');
