@@ -21,7 +21,8 @@ SED=load(strcat(str.NMD,'SEDavg.mat'));
 [tmp,str.main]=system('pwd');
 
 
-for imode=1:size(SED.modemaster,2)      
+
+for imode=5:size(SED.modemaster,2)      
 %PRINT CURRENT KPT
     imode
 %scaling
@@ -29,9 +30,11 @@ for imode=1:size(SED.modemaster,2)
 %              
 
 if imode<150
-    PT_PERC=0.001; INV_PERC = 0.4; gamma_guess = 10;
+    PT_PERC=0.05; INV_PERC = 0.01; gamma_guess = 1;
+% elseif imode > 2600
+%     PT_PERC=0.3; INV_PERC = 1.0; gamma_guess = 4;
 else
-    PT_PERC=0.001; INV_PERC = 0.4; gamma_guess = 4;
+    PT_PERC=0.05; INV_PERC = 0.01; gamma_guess = 4;
 end
 
 SED.HLDfreq(imode)
@@ -51,7 +54,7 @@ w_guess =...
 %pause
 %--------------------------------------------------------------------------
 
-if imode<5
+if imode<4
     
 %Store 
     SED.sedfreq( imode ) = 0;

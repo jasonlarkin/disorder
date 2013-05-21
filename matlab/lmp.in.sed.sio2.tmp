@@ -1,0 +1,101 @@
+#--------------------------------------------------------------------------
+#input structure
+#--------------------------------------------------------------------------
+units		metal
+atom_style	charge
+read_data	IN.X0
+#--------------------------------------------------------------------------
+#BKS+LJ
+#--------------------------------------------------------------------------
+neighbor 2.0 bin
+neigh_modify delay 10
+#set type 1 charge 2.4
+#set type 2 charge -1.2
+## Si type 1, O type 2
+
+pair_style hybrid/overlay buck 10.0 lj/cut 8.5 coul/wolf 0.223 10.0
+pair_coeff 1 1 buck 0.0 0.10 0.0
+pair_coeff 1 2 buck 18003.7572 0.205205 133.5381
+pair_coeff 2 2 buck 1388.7730 0.362319 175.0
+pair_coeff 1 1 lj/cut 13.2331 0.4 
+pair_coeff 2 2 lj/cut 0.00047810388 2.2
+pair_coeff 1 2 lj/cut 0.01122865 1.3
+pair_coeff * * coul/wolf
+
+#pair_style coul/wolf 0.223 10.0
+#pair_coeff * *
+#pair_style buck 10.0
+#pair_coeff 1 1 0.0 0.10 0.0
+#pair_coeff 1 2 18003.7572 0.205205 133.5381
+#pair_coeff 2 2 1388.7730 0.362319 175.0
+#pair_style lj/cut 8.5
+#pair_coeff 1 1 13.2331 0.4 
+#pair_coeff 2 2 0.00047810388 2.2 
+#pair_coeff 1 2 0.01122865 1.3  
+#--------------------------------------------------------------------------
+#variables
+#--------------------------------------------------------------------------
+variable   	dt 		equal 0.000905
+#--------------------------------------------------------------------------
+
+#--------------------------------------------------------------------------
+#SED parameters
+#--------------------------------------------------------------------------
+variable	w_step		equal T_STEP		
+variable	w_total		equal T_FFT
+variable	t_total		equal T_TOTAL
+variable	num_ffts	equal ${t_total}/${w_total}
+
+##########SEED##########################################################
+variable iseed equal ISEED_TMP
+variable seed equal SEED_TMP
+
+#--------------------------------------------------------------------------
+variable 	T_run 		equal 300
+#--------------------------------------------------------------------------
+
+log 	log_heat_${iseed}.lammps
+
+#------------ NVE rescale ---------------------------------------------------------------------	
+	velocity 		all create ${T_run} ${seed} rot yes dist gaussian
+	fix 			1 all nve
+	fix 			2 all temp/rescale 1 ${T_run} ${T_run} 0.01 1.0
+	timestep		${dt}
+	compute 		myDis all msd 
+	thermo_style  		custom step temp press etotal vol c_myDis[4]
+	thermo			1000
+	run             	50000	
+#	run             	1000
+	unfix 			1
+	unfix 			2
+	uncompute		myDis
+#------------ NVE -----------------------------------------------------------------------------	
+	fix 			1 all nve
+	timestep		${dt}
+	compute 		myDis all msd
+	thermo_style  		custom step temp press etotal vol c_myDis[4]
+	thermo			1000
+	run             	100000	
+#	run             	10000
+	unfix 			1
+	uncompute		myDis
+#------SED-------------------------------------------------------------------------
+label loop_fft
+variable ifft loop ${num_ffts}
+
+log 	log_SED_${iseed}_${ifft}.lammps
+	reset_timestep  	0
+	fix 			1 all nve
+	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
+	dump_modify 		vel sort id
+	compute 		myDis all msd
+	thermo_style 		custom step temp press etotal vol c_myDis[4]
+	thermo			5000
+	timestep		${dt}
+	run			${w_total}
+	unfix			1
+	undump			vel
+	uncompute		myDis
+
+next ifft
+jump LMP_TMP loop_fft

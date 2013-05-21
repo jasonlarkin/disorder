@@ -199,7 +199,7 @@
 %--------------------------------------------------------------------------
 \begin{document}
 %--------------------------------------------------------------------------
-\title{Predicting Vibrational Mean Free Paths in Disordered Systems}
+\title{Predicting Vibrational Mean Free Paths in Amorphous Materials}
 %--------------------------------------------------------------------------
 \author{Jason M. Larkin}
 \affiliation{Department of Mechanical Engineering\\Carnegie Mellon 
@@ -227,9 +227,12 @@ thermal conductivity of disordered systems, they only
 provide a qualitative description of the vibrations that contribute to the 
 lattice thermal conductivity.
 Using lattice dynamics calculations and molecular dynamics simulations on 
-Lennard-Jones crystalline, alloy, and amorphous systems, we predict and 
+model amorphous silicon and silica, we predict and 
 characterize the contributions from phonons and localized vibrations to 
-lattice thermal conductivity. 
+lattice thermal conductivity. The vibrational mean free paths are 
+predicted for these two amorphous materials and the thermal 
+conductivity accumulation fucntion is compared with recent experimental 
+results.
 
 % The results are used to motivate simple and 
 % computationally cheap models to predict the lattice thermal conductivity 
@@ -276,11 +279,6 @@ The spectrum of phonon MFPs and the accumulated thermal conductivity
 are predicted for a model of amorphous silicon. Predictions of thermal 
 conductivity using a boundary scattering model demonstrates  
 
-Fig 4 of this work shows a dispersion extracted by locating the peaks in 
-the structure factor.\cite{vitelli_heat_2010} 
-
-Fig. 5 discusses how since the low freq modes are sparse, there is a 
-resonant effect between \cite{feldman_numerical_1999}
 
 %--------------------------------------------------------------------------
 \section{\label{S:Theory}Thermal Conductivity Theory and Formulation}
@@ -604,9 +602,35 @@ vs_long: 8.2715e+03, vs_tran: 3.8867e+03
 % \cite{feldman_thermal_1993}
 
 %--------------------------------------------------------------------------
+\section{\label{S:Introduction}Density of States}
+%--------------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+\clearpage
+
+
+
+%--------------------------------------------------------------------------
 \section{\label{S:Introduction}Group Velocity from Structure Factor}
 %--------------------------------------------------------------------------
 
+Fig 4 of this work shows a dispersion extracted by locating the peaks in 
+the structure factor.\cite{vitelli_heat_2010} 
+
+Fig. 5 discusses how since the low freq modes are sparse, there is a 
+resonant effect between \cite{feldman_numerical_1999}
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -679,26 +703,6 @@ $\omega\kgv$ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
 where $\Theta \equiv i[\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}-\omega t]$. 
 
 \clearpage
-
-%--------------------------------------------------------------------------
-\section{\label{S:Introduction}Density of States}
-%--------------------------------------------------------------------------
-
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps}
-\vspace*{-5mm}
-\end{center}
-\caption{\label{FIG:phonon_diff} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
-\end{figure}
-%--------------------------------------------------------------------------
-
-\clearpage
-
 
 %--------------------------------------------------------------------------
 \section{\label{S:Introduction}Lifetimes}
@@ -953,91 +957,11 @@ mode decomposition.\cite{he_heat_2011}
 
 \vspace*{100mm}
 
-%--------------------------------------------------------------------------
-\subsection{\label{S:Lifetimes:}Ioffe-Regel Limit}
-%--------------------------------------------------------------------------
 
-% %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=0.6]
-% {/home/jason/disorder/lj/alloy/LJ_alloy_life_period.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:phonon_diff} film thickness dependant thermal 
-% conductivity of a-Si from experiment.}
-% \end{figure}
-% %--------------------------------------------------------------------------
 
-% %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=0.6]
-% {/home/jason/disorder/lj/alloy/LJ_alloy_amorphous_life_period.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:phonon_diff} film thickness dependant thermal 
-% conductivity of a-Si from experiment.}
-% \end{figure}
-% %--------------------------------------------------------------------------
-
-\vspace*{100mm}
 
 %--------------------------------------------------------------------------
-\subsection{\label{S:Lifetimes:}Characterization of Vibrational Modes}
-%--------------------------------------------------------------------------
-If determined by the Ioffe-Regel limit, $\tau \kv < 1/\omega \kv$.
-\cite{taraskin_determination_1999} However, for thermal transport 
-analysis this definition is not useful on its own. Show that Anderson 
-loclization is exponetial depenance of mode excitation on distance from 
-some local center\cite{feldman_numerical_1999}.
-
-According to Cahill, the lifetimes of vibrations in amorphous materials 
-is taken to be one half the period, $\tau = \pi/\omega $.
-\cite{cahill_heat_1989}
-
-Participation ratio:
-For a finite system, the participation is limited by system size.
-evolution of a vibrational wave packet on a disordered chain.
-\cite{allen_evolution_1998}, shows participation ratio limitation. Also 
-\cite{garber_numerical_2001}.
-
-%--------------------------------------------------------------------------
-\section{\label{S:GroupVeloctiy}Effective Mode Velocity}
-%--------------------------------------------------------------------------
-
-%--------------------------------------------------------------------------
-\subsection{\label{S-Motivation-Amorphous}AF Velocity}
-%--------------------------------------------------------------------------
-- measured using NMD and anharmonic MD.
-- extract effective Diffuson velocity, compare to sound speed
-
-% %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=0.6]
-% {/home/jason/disorder/lj/alloy/LJ_alloy_vaf_2.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:phonon_diff} AF effective velocity}
-% \end{figure}
-% %--------------------------------------------------------------------------
-
-% %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=0.6]
-% {/home/jason/disorder/lj/alloy/LJ_alloy_vaf.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:phonon_diff} AF effective velocity}
-% \end{figure}
-% %--------------------------------------------------------------------------
-
-\vspace*{100mm}
-
-%--------------------------------------------------------------------------
-\subsection{\label{S:Lifetimes:}Dynamic Structrue Factor}
+\subsection{\label{S:Lifetimes:}Structrue Factor}
 %--------------------------------------------------------------------------
 If all modes are summed over, this gives the frequency spectrum
 needed to construct a (nonstationary) propagating state with a
@@ -1057,36 +981,9 @@ mode in Fig. 3(b). \cite{biswas_vibrational_1988}
 The dynamic structure factor can be useful for demonstrating the 
 plane-wave character of low-frequency vibrations.  However, on a 
 mode-by-mode basis, it is unable in general to characterize a given mode 
-as either localized or delocalized.  In fact, results   
-frequency modes in a disordered systems
-
-% %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=0.6]
-% {/home/jason/disorder/matlab/LJ_DSF.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:phonon_diff} dynamic structure factor for LJ alloys 
-% and amorphous solids.}
-% \end{figure}
-% %--------------------------------------------------------------------------
+as either localized or delocalized.  Thus, it is not possible to 
 
 \vspace*{100mm}
-
-%--------------------------------------------------------------------------
-\section{\label{S-Motivation-Amorphous}Role of Anharmonicity in 
-Disordered Thermal Transport}
-%--------------------------------------------------------------------------
-- run harmoninc FC MD, predict thermal conductivity using GK
-
-- compare anharmonic GK, harmonic GK, and AF predictions. May possibly 
-need to run "stiffer" system to compare with 
-$k_{si} = k_{ph} + k{AF} = 0.5+0.5$. 
-
-
-\vspace*{100mm}
-
 
 %--------------------------------------------------------------------------
 \appendix
@@ -1094,165 +991,7 @@ $k_{si} = k_{ph} + k{AF} = 0.5+0.5$.
 \section{\label{A-Predicting-Phonons}Predicting Vibrational Lifetimes}
 %--------------------------------------------------------------------------
 
-
-\subsection{\label{A-Phonon-Normal-Modes}Vibrations in Ordered and 
-Disordered Solids}
-%--------------------------------------------------------------------------
-In a crystal (periodic) system, the vibrations of atoms are described by a 
-basis of eigenfunctions called phonon normal modes, which are determined by 
-the properties of the crystal (see Appendix 
-\ref{A-Allowed-Wavevectors-Ordered}). The eigenvalues of this basis are the 
-phonon mode frequencies (energies).\cite{dove1993,wallace1972} The atomic 
-velocities can be represented by the velocity normal mode coordinate, 
-defined as 
-\cite{dove1993}
-\begin{equation}\label{E:udot_HLD}
-\begin{split}
-\dot{u}_{\alpha}\lbt = &\SUMprime{2}{} \frac{1}{\sqrt{m_bN}} 
-\EXP{i\pmb{\kappa}^{'}\cdot\mathbf{r}_0\ab{l}{0}} e^*\kvba 
-\dot{q}\kvt{}{}{}.
-\end{split}
-\end{equation}
-Here, $\dot{q}\kvt{}{}{}$ represents the kinetic energy $T \kvt$ of the 
-mode with phonon frequency $\omega_0\kv$ by
-\cite{dove1993}
-\begin{equation}\label{E:udot_HLD}
-\begin{split}
-T \kvt= \frac{\dot{q}^*\kvt{}{}{}\dot{q}\kvt{}{}{}}{2}.
-\end{split}
-\end{equation}
-The phonon mode kinetic energies $T \kvt$ are used to calculate the phonon 
-spectral energy denisty in Appendix \ref{A-Phonon-Life-SED}.
-
-\subsection{\label{A-Allowed-Wavevectors-Ordered}Allowed Wavevectors in 
-Ordered Systems}
-%--------------------------------------------------------------------------
-The phonon spectral energy is defined for the allowed wavevectors of a 
-crystal, which can be specified from the crystal structure's Bravais 
-lattice and its basis, i.e. unit cell. A $D$-dimensional Bravais lattice 
-is a collection of points with
-positions
-\begin{equation}\label{crys_pos}
-\begin{split}
-\mathbf{u}_0\ab{l}{0} =& \sum^D_{\alpha} N_{\alpha}\mathbf{a}_{\alpha}
-\end{split}
-\end{equation}
-where $N_{\alpha}$ and the summations if over the lattice vectors, 
-$\mathbf{a}_{\alpha}$.\cite{ashcroft1976} The basis (or unit cell) is the 
-building block of the crystal and they are arranged on the points defined 
-by the Bravais lattice. The equillibrium position of any atom in the crystal 
-can be described by
-\begin{equation}\label{crys_pos2}
-\begin{split}
-\mathbf{u}_0\ab{l}{b} = \mathbf{u}_0\ab{l}{0} + \mathbf{u}_0\ab{0}{b}
-\end{split}
-\end{equation}
-where $\mathbf{u}_0\ab{l}{0}$ is the equilibrium position of the 
-$l^{\textrm{th}}$ unit cell and $\mathbf{u}_0\ab{0}{b}$ is the equilibrium 
-position of the and $b^{\textrm{th}}$ atom in the unit cell relative to 
-$\mathbf{u}_0\ab{l}{0}$.
-For the LJ systems studied here, the cubic conventional cells are used with 
-four atoms per unit cell.\cite{ashcroft1976} For our MD simulations, cubic 
-simulation domains with periodic boundary conditions are used with 
-$N_1 = N_2 = N_3 = N_0$.\cite{turney2009a,mcgaughey2004a} The allowed 
-wavevectors for such crystal structures are
-\begin{equation}\label{crys_pos3}
-\begin{split}
-\pmb{\kappa} = \sum_{\alpha} \mathbf{b}_{\alpha} 
-\frac{n_{\alpha}}{N_{\alpha}},
-\end{split}
-\end{equation}
-where $\mathbf{b}_{\alpha}$ are the reciprocal lattice 
-vectors\cite{ashcroft1976} and $-N_{\alpha}/2 < n_{\alpha} 
-\leq N_{\alpha}/2$, where $n_{\alpha}$ are integers and $N_{\alpha}$ 
-are even integers.\cite{turney2009a} The wavevectors are taken to be 
-in the first Brioullin zone.\cite{ashcroft1976}
-
-%--------------------------------------------------------------------------
-\subsubsection*{Allowed Wavevectors in Disordered Materials}
-%--------------------------------------------------------------------------
-Strictly speaking, the only allowed wavector in a disordered system is the 
-gamma point ($\kappa = [0 0 0]$). As such, the lattice dynamics calculations 
-are performed at the gamma point:
-
-
-%--------------------------------------------------------------------------
-\subsection{\label{S:Lifetimes:}Normal Mode Decomposition}
-%--------------------------------------------------------------------------
-Normal mode decomposition and its limitations.
-\cite{turney_predicting_2009-1} 
-
-If $\gamma \kv > \omega \kv$, then the vibrational mode is overdamped.  
-Discuss why real-space method is necessary in this case.
-
-
-%--------------------------------------------------------------------------
-\subsection{\label{A-Thermal-Cond}Thermal Conductivity}
-%--------------------------------------------------------------------------
-Once the lifetimes (MFPs) and group velocities of all virbrational modes 
-in the
-Brillouin zone are obtained, the bulk thermal conductivity in direction
-$\mathbf{n}$, $k_{\mathbf{n}}$, can be calculated from \cite{ziman2001}
-\begin{equation}\label{E-size:k_bulk}\
-\begin{split}
-k_{\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph} \kv v^{2}_{g,\mathbf{n}} 
-\kv \tau \kv.
-\end{split}
-\end{equation}
-Here, $c_{ph}$ is the phonon volumetric specific heat and 
-${v}_{g,\mathbf{n}}$ is
-the component of the group velocity vector in direction $\mathbf{n}$. 
-Since the systems we consider are classical and obey Maxwell-Boltzmann 
-statistics,\cite{mcquarrie2000} the
-specific heat is $k_{B}/V$ per mode in the harmonic limit where $V$ 
-is the system volume. This approximation is used here and has been shown 
-to be suitable for LJ argon\cite{mcgaughey2004c} and SW silicon.
-\cite{goicochea2010} The group
-velocity vector is the gradient of the dispersion curves 
-(i.e., $\partial \omega / \partial \pmb{\kappa}$), which can be 
-calculated from the frequencies and wavevectors using finite differences. 
-In this work, the group velocities are calculated using finite difference 
-and quasi-harmonic lattice dynamics because a very small finite difference 
-can be used which reduces the error.\cite{mcgaughey2006b} To predict a 
-bulk thermal conductivity, it is necessary to perform a finite simulation 
-size scaling procedure as discussed in Appendix \ref{A-Finite-Sim}.
-
-%--------------------------------------------------------------------------
-\section{\label{A-Finite-Sim}Finite Simulation-Size Scaling for Thermal 
-Conductivity}
-%--------------------------------------------------------------------------
-For the LJ argon system studied in Section \ref{S-Prelim-Vib-Cond-Ordered}, 
-a finite simulation-size scaling procedure\cite{turney2009a,He2011a} is 
-used to compare the thermal conductivity predictions from $\Phi$ and $\Phi'$ 
-to those from the Green-Kubo method. The scaling procedure is demonstrated in 
-Fig$.$ \ref{FIG:LJ_COND}. The thermal conductivity is predicted from $\Phi$ 
-or $\Phi'$ and MD simulations with $N_0 = 4,6,8,$ and $10$. The bulk 
-conductivity, $k_{\infty}$, is then estimated by fitting the data to
-\begin{equation}\label{k_size}
-\begin{split}
-1/k = 1/k_{\infty} + A/N_0,
-\end{split}
-\end{equation}
-where $A$ is a constant. This procedure is necessary because the first 
-Brillouin zone is only sampled at a finite number of points for a finite 
-simulation size, with no contribution from the volume at its center. To 
-predict a bulk thermal conductivity, it is important to sample points near 
-the Brillouin zone center, where the modes can have large lifetimes and 
-group velocities.\cite{turney2009a,sellan2010b} 
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-%\includegraphics[angle=0,width=70.0mm]{LJ_NMD_SED_COND_2.eps}
-\end{center}
-\caption{\label{FIG:LJ_COND} Thermal conductivity predictions for LJ argon 
-calculated using phonon lifetimes predicted by $\Phi$ and $\Phi'$.
-\cite{Larkin2012} (a) The finite simulation-size scaling extrapolation 
-\cite{turney2009a,He2011a} is used to compare the results to bulk 
-predictions made using the Green-Kubo method. (b) The bulk results for 
-$\Phi$ and Green-Kubo are in good agreement temperatures of $20$ and 
-$40$ K with those of other atomistic simulation methods.\cite{turney2009a}}
-\end{figure}
-%--------------------------------------------------------------------------
+stuff
 
 
 \clearpage

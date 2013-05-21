@@ -3,6 +3,6 @@ cd $PBS_O_WORKDIR
 module load openmpi-psm-gcc
 
 RUNPATH=runpath
-EXEPATH=/opt/mcgaugheygroup/lammps-19Feb13/src
+EXEPATH=/opt/mcgaugheygroup/lammps-19Feb13/src/lmp_generic
 
 mpirun -np `cat $PBS_NODEFILE | wc -l` $EXEPATH/lmp_generic < $RUNPATH/LMP_TMP 

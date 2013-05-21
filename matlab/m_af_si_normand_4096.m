@@ -6,7 +6,10 @@ DSF(1).DSF =...
     load('/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/DSF_FIT_b10.mat');
 DSF(2).DSF =...
     load('/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/dsf/nmd/DSF_FIT.mat');
-SED =...
+
+SED(1).SED =...
+    load('/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/SEDfit_fixed.mat');
+SED(2).SED =...
     load('/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/SEDfit_fixed.mat');
 
 Di(8,1).Di =...
@@ -15,7 +18,7 @@ Di(8,1).Di =...
 Di(8,1).Di(:,3) = Di(8,1).Di(:,3)*(3/4)/10;
 VOLUME = (8*5.43E-10)^3;
 cond(8,1) = (con.kb / VOLUME)*sum(Di(8,1).Di(:,3));
-[Di(8,1).dosx Di(8,1).dosy] = m_dos(Di(8,1).Di(:,2), 55 , 1);
+[Di(8,1).dosx Di(8,1).dosy] = m_dos(Di(8,1).Di(:,2), 55 , 1, VOLUME);
 
 Di(8,5).Di =...
     m_gulp_af_si_readDi(...
@@ -23,7 +26,7 @@ Di(8,5).Di =...
 Di(8,5).Di(:,3) = Di(8,5).Di(:,3)*(3/4)/10;
 VOLUME = (8*5.43E-10)^3;
 cond(8,5) = (con.kb / VOLUME)*sum(Di(8,5).Di(:,3));
-[Di(8,5).dosx Di(8,5).dosy] = m_dos(Di(8,5).Di(:,2), 100 , 1);
+[Di(8,5).dosx Di(8,5).dosy] = m_dos(Di(8,5).Di(:,2), 100 , 1, VOLUME);
 
 Di(8,10).Di =...
     m_gulp_af_si_readDi(...
@@ -31,7 +34,7 @@ Di(8,10).Di =...
 Di(8,10).Di(:,3) = Di(8,10).Di(:,3)*(3/4)/10;
 VOLUME = (8*5.43E-10)^3;
 cond(8,10) = (con.kb / VOLUME)*sum(Di(8,10).Di(:,3));
-[Di(8,10).dosx Di(8,10).dosy] = m_dos(Di(8,10).Di(:,2), 150 , 1);
+[Di(8,10).dosx Di(8,10).dosy] = m_dos(Di(8,10).Di(:,2), 150 , 1, VOLUME);
 
 Di(8,11).Di =...
     m_gulp_af_si_readDi(...
@@ -64,15 +67,72 @@ cond(8,14) = (con.kb / VOLUME)*sum(Di(8,14).Di(:,3));
 %--------------------------------------------------------------------------
 %sio2
 %--------------------------------------------------------------------------
-D(1).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/','Di.gout');
-D(1).D(:,3) = D(1).D(:,3)*(3/4)/10;
+
+siO2 = m_sio2
+
+sio2.D(1).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/emin/','Di_b1.gout');
+sio2.D(1).D(:,3) = sio2.D(1).D(:,3)*(3/4)/10;
 sio2.VOLUME = (24.5E-10)^3;
-sio2.cond(1) = (con.kb / sio2.VOLUME)*sum(D(1).D(:,3));
-[D(1).dosx D(1).dosy] = m_dos(D(1).D(:,2), 100 , 1);
-D(2).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/','Di_b10.gout');
-D(2).D(:,3) = D(2).D(:,3)*(3/4)/10;
-sio2.VOLUME = (24.5E-10)^3;
-sio2.cond(2) = (con.kb / sio2.VOLUME)*sum(D(2).D(:,3));
+sio2.cond(1) = (con.kb / sio2.VOLUME)*sum(sio2.D(1).D(:,3));
+[sio2.D(1).dosx sio2.D(1).dosy] = m_dos(sio2.D(1).D(:,2), 100 , 1, sio2.VOLUME);
+sio2.D(2).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/emin/','Di_b2.gout');
+sio2.D(2).D(:,3) = sio2.D(2).D(:,3)*(3/4)/10;
+sio2.cond(2) = (con.kb / sio2.VOLUME)*sum(sio2.D(2).D(:,3));
+sio2.D(3).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/emin/','Di_b3.gout');
+sio2.D(3).D(:,3) = sio2.D(3).D(:,3)*(3/4)/10;
+sio2.cond(3) = (con.kb / sio2.VOLUME)*sum(sio2.D(3).D(:,3));
+sio2.D(4).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/emin/','Di_b4.gout');
+sio2.D(4).D(:,3) = sio2.D(4).D(:,3)*(3/4)/10;
+sio2.cond(4) = (con.kb / sio2.VOLUME)*sum(sio2.D(4).D(:,3));
+sio2.D(5).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a972/emin/','Di_b5.gout');
+sio2.D(5).D(:,3) = sio2.D(5).D(:,3)*(3/4)/10;
+sio2.cond(5) = (con.kb / sio2.VOLUME)*sum(sio2.D(5).D(:,3));
+
+loglog(...
+sio2.D(1).D(:,2),sio2.D(1).D(:,3),'.',...
+sio2.D(4).D(:,2),sio2.D(4).D(:,3),'.'...
+)
+
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+
+sio2.D(1,2).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/a288/tile/emin/','Di_b1.gout');
+sio2.D(1,2).D(:,3) = sio2.D(1,2).D(:,3)*(3/4)/10;
+sio2.cond(1,2) = (con.kb / sio2.VOLUME)*sum(sio2.D(1,2).D(:,3));
+
+loglog(...
+    sio2.D(1).D(:,2),sio2.D(1).D(:,3),'.',...
+    sio2.D(1,2).D(:,2),sio2.D(1,2).D(:,3),'.'...
+    )
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+sio2.SED(1).SED =...
+    load('/home/jason/disorder2/sio2/alan/a288/tile/emin/SEDfit_inv1.mat');
+sio2.SED(2).SED =...
+    load('/home/jason/disorder2/sio2/alan/a288/tile/emin/SEDfit_inv2.mat');
+sio2.SED(4).SED =...
+    load('/home/jason/disorder2/sio2/alan/a288/tile/emin/SEDfit_inv4.mat');
+
+sio2.SED(1,2).SED =...
+    load('/home/jason/disorder2/sio2/alan/a972/emin/SEDfit.mat');
+
+loglog(...
+    sio2.SED(1).SED.HLDfreq(12:end),sio2.SED(1).SED.life(12:end)*1e-12,'.',...
+    sio2.SED(2).SED.HLDfreq(12:end),sio2.SED(2).SED.life(12:end)*1e-12,'.',...
+    sio2.SED(4).SED.HLDfreq(12:end),sio2.SED(4).SED.life(12:end)*1e-12,'.',...
+    sio2.SED(1,2).SED.HLDfreq(12:end),sio2.SED(1,2).SED.life(12:end)*1e-12,'.',...
+    sio2.SED(4).SED.HLDfreq(12:end),2*pi./sio2.SED(4).SED.HLDfreq(12:end)...
+    )
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+loglog(...
+    sio2.SED(1).SED.HLDfreq(12:end),sio2.SED(1).SED.life(12:end)*1e-12,'.',...
+    sio2.D(1).D(:,2),sio2.D(1).D(:,3),'.'...
+    )
+
 
 %--------------------------------------------------------------------------
 %debye
@@ -87,9 +147,10 @@ debye.A=1E-29;
 debye.B=1.3E21;
 debye.c = (1/3)*si.amor.vs_long + (2/3)*si.amor.vs_tran;
 debye.wmin = min(Di(8,1).Di(:,2)); %4.113E12
-debye.wcut = 1.1625E13; debye.dw = debye.wcut/debye.num;
+debye.wcut = 1.1625E13; 
+debye.dw = debye.wcut/debye.num;
 debye.freq_range = linspace(debye.wcut/debye.num,debye.wcut,debye.num);
-debye.dos = 3*(debye.freq_range.^2)/(2*(0.935*si.amor.vs_tran)^3*pi^2)*VOLUME;
+debye.dos = 3*(debye.freq_range.^2)/(2*(0.93*si.amor.vs_tran)^3*pi^2)*VOLUME;
 debye.cond = (con.kb/VOLUME)*(debye.dos*debye.dw)*debye.B.*(debye.freq_range.^(-2));
 debye.mfp = 3*debye.B.*(debye.freq_range.^(-2))/si.amor.vs_tran;
 [Y debye.Isort] = sort(debye.mfp);
@@ -238,6 +299,21 @@ axis([ 3E12 1.3E14 1E-8 1E-4])
 pause
 %--------------------------------------------------------------------------
 clf
+%subplot(2,1,2),...
+%Di
+loglog(...
+    SED.HLDfreq,((1/3))*si.amor.vs_tran^2*(1.0*SED.life*1E-12),...
+    Di(8,1).Di(:,2),Di(8,1).Di(:,3),...
+    linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
+    (1/3)*(5.43E-10/2)*si.amor.vs_tran*ones(100,1),...
+    linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
+    debye.B*linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100).^(-2)...
+    )
+axis([ 3E12 1.3E14 1E-8 1E-4])
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
+clf
 
 % %SED/AF
 % %subplot(2,1,1),...
@@ -268,7 +344,20 @@ axis([ 3E12 1.3E14 1E-10 1E-7])
 %--------------------------------------------------------------------------
 pause
 %--------------------------------------------------------------------------
-
+%vAF
+%subplot(3,1,1),...
+    loglog(...
+    Di(8,1).Di(:,2),3*Di(8,1).Di(:,3)/si.amor.vs_tran,...
+    SED.HLDfreq,si.amor.vs_tran*(1.0*SED.life*1E-12),...
+    linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
+    (8*5.43E-10)*ones(100,1),...
+    linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
+    (5.43E-10/2)*ones(100,1)...
+    )
+axis([ 3E12 1.3E14 1E-10 1E-7])
+%--------------------------------------------------------------------------
+pause
+%--------------------------------------------------------------------------
 
 
 

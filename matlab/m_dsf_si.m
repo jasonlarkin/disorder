@@ -1,28 +1,24 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
+str_af = '/home/jason/disorder2/sio2/alan/a972/emin/';
 
-AF.eigvec = load(strcat(str_af,'AF_eigvec.dat'));
-AF.freq = load(strcat(str_af,'AF_freq.dat'))';
+AF.eigvec = load(strcat(str_af,'eigvec.dat'));
+AF.freq = load(strcat(str_af,'freq.dat'))';
 AF.x0 = m_x0_read([str_af 'x0.data']);
 
-nmd.alat = 5.43;
+nmd.alat = 4.75;
 
-%4x: 2s 6x: 20 s 8x: 100 s
-
-% str_nmd = '/home/jason/disorder2/lj/alloy/10K/0.5/10x/NMD/1/work/';
-% nmd = load([str_nmd 'NMDdata.mat']);
-% sed = load([str_nmd 'SEDdata.mat']);
-
-%full
-% AF.kpt(:,1) = nmd.kptmaster(:,1); 
-% AF.kpt(:,2) = nmd.kptmaster(:,2);
-% AF.kpt(:,3) = nmd.kptmaster(:,3);
-%AK.kpt = [AF.kpt(:,1)/nmd.Nx AF.kpt(:,2)/nmd.Ny AF.kpt(:,3)/nmd.Nz]
+%silica
 %100
-AF.kpt(:,1) = [0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0]'; 
+AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
 AF.kpt(:,2) = 0;
 AF.kpt(:,3) = 0;
+
+
+%100
+% AF.kpt(:,1) = [0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0]'; 
+% AF.kpt(:,2) = 0;
+% AF.kpt(:,3) = 0;
 %111
 % AF.kpt(:,1) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
 % AF.kpt(:,2) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]';
@@ -32,24 +28,6 @@ AF.kpt(:,3) = 0;
 % AF.kpt(:,2) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]';
 % AF.kpt(:,3) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]';
 
-
-% %010
-% AF.kpt(:,2) = [0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
-% AF.kpt(:,1) = 0;
-% AF.kpt(:,3) = 0;
-% %001
-% AF.kpt(:,3) = [0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
-% AF.kpt(:,1) = 0;
-% AF.kpt(:,2) = 0;
-
-%110
-% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
-% AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
-% AF.kpt(:,3) = 0;
-%111
-% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
-% AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
-% AF.kpt(:,3) = [0.1 0.2 0.3 0.4 0.5]';
 
 BROADEN = 1.0;
 rng(11111);
@@ -90,8 +68,8 @@ end
 for ikpt=1:size(AF.kpt,1)
     ikpt
 semilogy(...
-        DSF_tran.freq_range,DSF_tran.SL(:,ikpt),'.',...
-        DSF_long.freq_range,4*DSF_long.SL(:,ikpt),'.'...
+        DSF_tran.freq_range,smooth(DSF_tran.SL(:,ikpt),7),'.',...
+        DSF_long.freq_range,4*smooth(DSF_long.SL(:,ikpt),7),'.'...
         )
 pause
 end

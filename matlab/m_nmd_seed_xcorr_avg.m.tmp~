@@ -18,7 +18,7 @@ tic
                 num2str(NMD.modemaster(imode)),'.txt');
         dummy = load(str.read); 
         %sed
-        SED.sed(1:NMD.NUM_TSTEPS/2,imode) = dummy(:,2);
+        SED.sed(1:NMD.NUM_TSTEPS,imode) = dummy(:,2);
         %omega
         SED.omega = dummy(:,1);
 %--------------------------------------------------------------------------
