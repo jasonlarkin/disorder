@@ -1,16 +1,24 @@
 clear
 %--------------------------------------------------------------------------
+%str.main='/home/jason/disorder2/sio2/alan/a288/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/a288/tile/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/576a/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/576a/tile/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/a972/emin/gk/';
 str.main='/home/jason/disorder2/sio2/alan/a972/tile/gk/';
-%str.main='/home/jason/disorder2/si/amor/prepare/8x/gk/';
+
 %--------------------------------------------------------------------------
-%GK.Nx = 5;
-GK.Lx = 49.0; %GK.Ly = GK.Nx*5.43; GK.Lz = GK.Nx*5.43;
-% GK.Nx = 2.0;
-% GK.Lx = GK.Nx*21.2; GK.Ly = GK.Nx*21.2; GK.Lz = GK.Nx*21.2;
+
+% GK.Lx = 15.97; GK.SEEDS=[1:10];
+% GK.Lx = 2*15.97; GK.SEEDS=[1:8];
+%GK.Lx = 20.13; GK.SEEDS=[1:3 5 9];
+%GK.Lx = 2*20.13; GK.SEEDS=[1 2 5 6];
+%GK.Lx = 24.5; GK.SEEDS=[3 4 6 7 8 9];
+GK.Lx = 2*24.5; GK.SEEDS=[1 2 3 4];
 
 GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------
-GK.SEEDS=[1:1];
+
 %42x
 %GK.SEEDS=[1 2 3:8];
 %--------------------------------------------------------------------------

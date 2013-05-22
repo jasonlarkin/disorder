@@ -1,23 +1,24 @@
 clear
 %--------------------------------------------------------------------------
-
-%GK.Nx = 8;
-%str.main='/home/jason/disorder2/si/amor/normand/perf4096/gk/';
-%GK.SEEDS=[1:5];
-
-% GK.Nx = 22.845;
-% str.main='/home/jason/disorder2/si/amor/normand/best100k/gk/';
-% GK.SEEDS=[1:5];
-
-GK.Nx = 2*22.845;
-str.main='/home/jason/disorder2/si/amor/normand/800k/';
-GK.SEEDS=[1:2];
+%str.main='/home/jason/disorder2/sio2/alan/a288/emin/gk/';
+str.main='/home/jason/disorder2/sio2/alan/a288/tile/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/576a/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/576a/tile/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/a972/emin/gk/';
+%str.main='/home/jason/disorder2/sio2/alan/a972/tile/gk/';
 
 %--------------------------------------------------------------------------
-GK.Lx = GK.Nx*5.43;
+
+GK.Lx = 15.97
+    GK.Lx = 2*15.97
+    GK.Lx = 20.13
+    GK.Lx = 2*20.13
+    24.5
+    49.0
+
 GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------
-
+GK.SEEDS=[1:8];
 %42x
 %GK.SEEDS=[1 2 3:8];
 %--------------------------------------------------------------------------
@@ -26,9 +27,9 @@ GK.NUM_SEEDS=size(GK.SEEDS,2);
 GK.Tset = [300];
 GK.NUM_TEMPS=size(GK.Tset,2);
 
-GK.p = 250000; GK.s = 10; GK.d = GK.p*GK.s;
-GK.total_steps = 2500000;
-GK.dt = 0.0005; 
+GK.p = 100000; GK.s = 10; GK.d = GK.p*GK.s;
+GK.total_steps = 1000000;
+GK.dt = 0.000905; 
 
 % GK.p = 250000; GK.s = 10; GK.d = GK.p*GK.s;
 % GK.total_steps = 2500000;
