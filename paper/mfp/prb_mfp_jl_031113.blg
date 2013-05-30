@@ -1,102 +1,54 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: prb_mfp_jl_031113.aux
-I couldn't open database file /home/jason/ntpl-ref/ntpl-jason/ntpl-032013.bib
----line 160 of file prb_mfp_jl_031113.aux
- : \bibdata{/home/jason/ntpl-ref/ntpl-jason/ntpl-032013
- :                                                     }
-I'm skipping whatever remains of this command
 The style file: apsrev.bst
-I found no database files---while reading file prb_mfp_jl_031113.aux
-Warning--I didn't find a database entry for "freeman_thermal_1986"
-Warning--I didn't find a database entry for "cahill_lower_1992"
-Warning--I didn't find a database entry for "wada_thermal_1996"
-Warning--I didn't find a database entry for "zink_thermal_2006"
-Warning--I didn't find a database entry for "yang_anomalously_2010"
-Warning--I didn't find a database entry for "cahill_thermal_1994"
-Warning--I didn't find a database entry for "kuo_thermal_1992"
-Warning--I didn't find a database entry for "moon_thermal_2002"
-Warning--I didn't find a database entry for "liu_high_2009"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-050913.bib
 Warning--I didn't find a database entry for "einstein1911"
 Warning--I didn't find a database entry for "kittel1949"
 Warning--I didn't find a database entry for "cahill1992"
-Warning--I didn't find a database entry for "vitelli_heat_2010"
-Warning--I didn't find a database entry for "feldman_numerical_1999"
-Warning--I didn't find a database entry for "dove1993"
-Warning--I didn't find a database entry for "allen1993"
-Warning--I didn't find a database entry for "shenogin2009"
-Warning--I didn't find a database entry for "klemens1955"
-Warning--I didn't find a database entry for "klemens1957"
-Warning--I didn't find a database entry for "freeman1986"
-Warning--I didn't find a database entry for "allen_diffusons_1999"
-Warning--I didn't find a database entry for "allen_thermal_1993"
-Warning--I didn't find a database entry for "feldman_thermal_1993"
-Warning--I didn't find a database entry for "mcgaughey2004a"
-Warning--I didn't find a database entry for "kittel_interpretation_1949"
-Warning--I didn't find a database entry for "PhysRevB.46.6131"
-Warning--I didn't find a database entry for "cahill_thermal_1987"
-Warning--I didn't find a database entry for "graebner_phonon_1986"
-Warning--I didn't find a database entry for "shenogin_predicting_2009"
-Warning--I didn't find a database entry for "He2011a"
-Warning--I didn't find a database entry for "bickham_calculation_1998"
-Warning--I didn't find a database entry for "fabian_anharmonic_1996"
-Warning--I didn't find a database entry for "sheng_heat_1991"
-Warning--I didn't find a database entry for "he_heat_2011"
-Warning--I didn't find a database entry for "taraskin_determination_1999"
-Warning--I didn't find a database entry for "cahill_heat_1989"
-Warning--I didn't find a database entry for "allen_evolution_1998"
-Warning--I didn't find a database entry for "garber_numerical_2001"
-Warning--I didn't find a database entry for "biswas_vibrational_1988"
-Warning--I didn't find a database entry for "wallace1972"
-Warning--I didn't find a database entry for "ashcroft1976"
-Warning--I didn't find a database entry for "turney2009a"
-Warning--I didn't find a database entry for "turney_predicting_2009-1"
-Warning--I didn't find a database entry for "ziman2001"
-Warning--I didn't find a database entry for "mcquarrie2000"
-Warning--I didn't find a database entry for "mcgaughey2004c"
-Warning--I didn't find a database entry for "goicochea2010"
-Warning--I didn't find a database entry for "mcgaughey2006b"
-Warning--I didn't find a database entry for "sellan2010b"
-Warning--I didn't find a database entry for "Larkin2012"
-Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
-You've used 0 entries,
+Warning--I didn't find a database entry for "normand"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 26 entries,
             3411 wiz_defined-function locations,
-            1205 strings with 10890 characters,
-and the built_in function-call counts, 46 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 9
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+            1332 strings with 15414 characters,
+and the built_in function-call counts, 20319 in all, are:
+= -- 1209
+> -- 650
+< -- 91
++ -- 528
+- -- 158
+* -- 2748
+:= -- 2154
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 105
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 1673
+empty$ -- 1698
+format.name$ -- 402
+if$ -- 3966
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 15
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 27
+missing$ -- 258
+newline$ -- 93
+num.names$ -- 78
+pop$ -- 421
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 104
 quote$ -- 0
-skip$ -- 1
+skip$ -- 852
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 1052
+swap$ -- 1348
+text.length$ -- 79
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 154
 warning$ -- 0
-while$ -- 0
+while$ -- 75
 width$ -- 0
-write$ -- 14
-(There were 2 error messages)
+write$ -- 290
+(There were 4 warnings)

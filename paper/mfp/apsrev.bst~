@@ -1,5 +1,5 @@
 %\documentclass[aps,prb,twocolumn,superscriptaddress,preprintnumbers,amsmath,amssymb,floatfix]{revtex4}
-\documentclass[aps,prb,twocolumn,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,twocolumn,superscriptaddress,amsmath,amssymb,floatfix]{revtex4}
 %\documentclass[aps,prl,onecolumn,groupedaddress,amsmath,amssymb,12pt]{revtex4}
 \usepackage[dvips]{epsfig}
 \usepackage{graphicx}
@@ -291,45 +291,20 @@ k = sum over modes
 
 For a perfect system, all vibrational modes are phonons.  
 
-For a perfect lattice, 
-all vibrational modes are phonon modes, which by 
-definition are delocalized, propagating plane waves.
-\cite{ziman_electrons_2001} Using the single-mode relaxation
-time approximation \cite{ziman_electrons_2001} to solve 
-the Boltzmann transport equation gives an 
-expression for thermal conductivity in direction $\mathbf{n}$,
 \begin{equation}\label{EQ:M:k_vib}
 \begin{split}
 k_{vib,\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph}\kv 
 \pmb{v}^{2}_{g,\mathbf{n}}\kv \tau\kv.
 \end{split}
 \end{equation}
-Here, the sum is over the phonon modes in the first Brillouin 
-zone, $\pmb{\kappa}$ is the wave vector, and 
-$\nu$ labels the polarization branch.  
-The phonon mode has frequency $\omega\kv$, 
-volumetric specific heat $c_{ph}\kv$, 
-$\mathbf{n}$-component of the 
-group velocity vector ${v}_{g,\mathbf{n}}\kv$, 
-and lifetime $\tau\kv$. 
 
-For amorphous materials, only in the low-frequency (long-wavelength)  
-limit can the vibrational modes can be considered phonons. The 
-amorphous materials studied in this work are isotropic, so $k_{vib}$ 
-and $v_{g}$ are quantities indepdent of the direction $\mathbf{n}$.
+Of particular interest is the phonon mean free path (MFP),
 
-The phonon mean free path (MFP),
 \begin{equation}\label{EQ:M:phonon_mfp}
 \begin{split}
-\Lambda\kv = |\pmb{v}^{2}_{g}\kv| \tau\kv,
+\Lambda\kv = |\pmb{v}^{2}_{g,\mathbf{n}}\kv| \tau\kv,
 \end{split}
 \end{equation}
-is the distance the phonon travels before scattering. Because 
-there is a spectrum of vibrational modes in cyrstalline and
-amorphous systems, there are typically a range of vibrational 
-MFPs.(cite) By reducing the system feature sizes, the vibrational MFPs 
-can be reduced due to boundary scattering.(cite) 
-
 
 which requires a group velocity.  
 
@@ -378,8 +353,6 @@ studies find that $k_{ph}$ is substatiantially less.
 \subsection{\label{S-Motivation}Thermal Diffusivity Limits}
 %--------------------------------------------------------------------------
 
-
-
 k = sum c D, only for low-w, long-lambda limit does 
 D = 1/3 v^2 tau, or 1/3 v Lambda
 
@@ -391,6 +364,9 @@ defined. Numerically we find that D i for diffusons is of order
 pendent of the particular state i, depending only on the en-
 ergy as seen in Fig. 12. Our Eq. ͑7͒ for the heat conductivity
 is a close analog of Eq. ͑A4͒.
+''
+
+
 
 \begin{equation}\label{EQ:IR}
 \tau = \frac{2\pi}{\omega}.
@@ -419,17 +395,6 @@ after Anderson localization was understood, because a
 misconception arose that the P/D boundary (which cer-
 tainly lies low in the spectrum of a glass) should lie close
 to the E/L boundary.
-
-Assuming that all vibrational modes travel with the sound speed, $v_s$, and 
-scatter over a distance of the lattice constant, $a$, 
-a high-scatter (HS) limit of thermal conductivity in the classical 
-limit is\cite{cahill_lattice_1988} 
-\begin{equation}\label{EQ:M:k_AF,HS}
-k_{HS} = \frac{k_{\text{B}}}{V_b}b v_s a,
-\end{equation}
-where $V_b$ is the volume of the unit cell and $b$ is the number of atoms 
-in the unit cell. The HS limit will be used to 
-discuss the differences between the LJ argon and SW silicon alloys. 
 
 Predictions for a-Si, also effects of mass disorder.
 \cite{feldman_thermal_1993}: is Di pinned near a value of Di~(1/3)va?
@@ -510,29 +475,6 @@ smaller samples, and then performing a liquid quench procedure similar to
 Alan. Results for these quenched, fully amorphous samples agree closely
 with those of the unquenched, tiled samples. 
 
-%--------------------------------------------------------------------------
-\subsection{\label{S:Simulation:Sample:Si}Simulation Details}
-%--------------------------------------------------------------------------
-
-The MD simulations were performed using LAMMPS.\cite{plimpton_fast_1995} 
-
-dt = 0.00905 , dt = 0.0005
-
-2^20 for 10 seeds. For the GK method, the thermal conductivity is 
-predicted by window averaging the integral of the heat current 
-autocorrelation function (HCACF). For a-SiO$_2$ and s-Si, a interval 
-of the the HCACF integral can be found which is constant within the 
-statistical noise. 
-
-The trajectories from the MD simulatoins used for the GK 
-calcaultions (Setion ) are also used in the normal mode decomposition method 
-(Section ).
-
-The AF calculation is performed using the package GULP. A Lorentzian 
-broadening is used of $5\delta\omega_{avg}$ and $14\delta\omega_{avg}$ for 
-a-Si and a-SiO$^2$. Varying the broadening around these values does not 
-change the resulting thermal conductivity significantly (see Section ). 
-
 
 
 
@@ -547,19 +489,7 @@ change the resulting thermal conductivity significantly (see Section ).
 Feldman measure the DOS using the average level spacing.
 \cite{feldman_numerical_1999} 
 
-\begin{equation}\label{EQ:DOS}
-DOS(\omega) = \sum_i \delta{\omega_i - \omega},
-\end{equation}
-
-where a unit step function is used to broaden 
-$\delta(\omega_i - \omega)$.
-
-Debye Model: 
-
-\begin{equation}\label{EQ:DOS_debye}
-DOS(\omega) = \frac{3*\pi\omega^2}{2v_s^3},
-\end{equation}
-
+Debye Model: D(\omega) = 3*\pi \omega^2 / (2* v_s^3)
 
 See it clearly for a-Si, only barely for a-SiO_2
 
@@ -579,18 +509,18 @@ conductivity of a-Si from experiment.}
 
 estimates of the sound speeds from the elastic constants are  
 
+$v_{s,T,elas} = 3,886$ , $v_{s,L,elas} = 8,271$
+$v_{s,T,elas} = 3,161$ $v_{s,L,elas} = 5,100$
+
 A fit of the DOS gives
+
+$v_{s,T,DOS} = 3,615$ 
+$v_{s,T,DOS} = 2,339$
 
 
 \begin{equation}\label{EQ:M:vs}
 v_s = \frac{1}{3}v_{s,L} + \frac{2}{3}v_{s,T},
 \end{equation}
-
-\begin{equation}\label{EQ:Bmod}
-v_s = \frac{B_{mod}}{\rho},
-\end{equation}
-
-
 
 ``The vertical lines
 starting on the frequency axis give the inverse participation ratios of
@@ -668,8 +598,8 @@ as either localized or delocalized.  Thus, it is not possible to
 estimates of the sound speeds are found from using finite difference 
 of the peaks in $S_{T,L}$ for different values of $k$. 
 
-
-
+$v_{s,T,elas} = 3,699$ , $v_{s,L,elas} = 8,047$
+$v_{s,T,elas} = 2,732$ $v_{s,L,elas} = 4,779$
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -721,10 +651,6 @@ $\hat{\pmb{\kappa}}_{VC}$ is a unit vector.
 Explicit disorder is included in the Gamma frequencies 
 $\omega\kgv$ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
 
-\begin{equation}\label{EQ:dwdk}
-\pmb{\text{v}}_{g,\mathbf{n}}\kv = \frac{\partial \omega\kv}{\partial \pmb{\kappa}}.
-\end{equation}
-
 A group velocity can be assigned by taking
 a slope of a graph of peak frequency versus wave vector.
 This velocity (=7X10 cm/sec) is slightly smaller than
@@ -754,40 +680,6 @@ evertheless, they are extended
 contribute a significant heat current.
 \cite{feldman_thermal_1993}
 
-Table \ref{T:cond_table}.
-
-%--------------------------------------------------------------------------
-\begin{center}
-%\begingroup
-\squeezetable
-\begin{table}
-\caption{\label{T:cond_table}
-Estimated from the elastic constants, the pre-annealed group velocities are 
-$v_{s,T,elas} = 3,670$ , $v_{s,L,elas} = 7,840$
-$v_{s,T,elas} = 2,541$ , $v_{s,L,elas} = 4,761 $
-}
-\begin{ruledtabular}
-\begin{tabular}{llllll}
-\hline
-method~~~~~~~\vline $B_{mod}$ (Eq. \eqref{EQ:Bmod}) \vline $S_{T,L}$ (Eq. \eqref{EQ:SLT}, \eqref{EQ:dwdk} )  \vline DOS (Eq. \eqref{EQ:DOS_debye})  \\
-\hline
-a-SiO$_2$  \\
-\hline
-transverse~~~~\vline 3,161~~~~~~~~~~~~~~~ \vline 2,732~~~~~~~~~~~~~~~~~~~~~~ \vline 2,339  \\
-\hline
-longitudinal~\,\vline 5,100~~~~~~~~~~~~~~~ \vline 4,779~~~~~~~~~~~~~~~~~~~~~~ \vline   \\
-\hline
-a-Si  \\
-\hline
-transverse~~~~\vline 3,886~~~~~~~~~~~~~~~ \vline 3,699~~~~~~~~~~~~~~~~~~~~~~ \vline 3,615  \\
-\hline
-longitudinal~\,\vline 8,271~~~~~~~~~~~~~~~ \vline 8,047~~~~~~~~~~~~~~~~~~~~~~ \vline   \\
-\end{tabular}
-\end{ruledtabular}
-\end{table}
-%\endgroup
-\end{center}
-%--------------------------------------------------------------------------
 
 %\clearpage
 %\vspace{50mm}
@@ -950,37 +842,6 @@ conductivity of a-Si from experiment.}
 \subsection{\label{S:Lifetimes}Bulk}
 %--------------------------------------------------------------------------
 
-Assuming the thermal conductivity form Eq.  for the lowest frequency modes in 
-the system, the thermal conductivity as a function of the system size 
-takes the form
-\begin{equation}\label{EQ:k0}
-\frac{k(N_0)}{k_{bulk}} = 1 - \frac{c_0}{N_0},
-\end{equation}
-
-``We find that we cannot define a wave vector for the
-majority of the states, but the intrinsic harmonic diffusivity is still well-defined and has a numerical value
-similar to what one gets by using the Boltzmann result, replacing v by a sound velocity and replacing l by
-an interatomic distance a.
-''\cite{feldman_thermal_1993}
-
-``In order to fit the experimental sc( T) it is necessary to add a Debye-
-like continuation from 10 meV down to 0 meV. The harmonic diffusivity becomes a Rayleigh m
-law
-and gives a divergent ~(T) as T~O. To eliminate this we make the standard assumption of resonant-
-plus-relaxational absorption from two-level systems (this is an anharmonic effect which would lie outside
-our model even if it did contain two-level systems implicitly).
-''\cite{feldman_thermal_1993}
-
-\begin{equation}\label{EQ:}
-\begin{split}
-k = \int_{0}^{\omega_{cut}} \frac{ d\omega DOS(\omega) C(\omega) D(\omega) }{V} + 
-\frac{1}{V}\sum_i C(\omega) D(\omega) 
-\end{split}
-\end{equation}
-
-Debye model. k_tot = k_phonon + k_AF. For lack of a rigorous definition 
-of phonon vs diffusion, we will define k_phon = k_debye. 
-
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -1009,7 +870,41 @@ conductivity of a-Si from experiment.}
 \end{figure}
 %--------------------------------------------------------------------------
 
+``We find that we cannot define a wave vector for the
+majority of the states, but the intrinsic harmonic diffusivity is still well-defined and has a numerical value
+similar to what one gets by using the Boltzmann result, replacing v by a sound velocity and replacing l by
+an interatomic distance a.
+''\cite{feldman_thermal_1993}
 
+``In order to fit the experimental sc( T) it is necessary to add a Debye-
+like continuation from 10 meV down to 0 meV. The harmonic diffusivity becomes a Rayleigh m
+law
+and gives a divergent ~(T) as T~O. To eliminate this we make the standard assumption of resonant-
+plus-relaxational absorption from two-level systems (this is an anharmonic effect which would lie outside
+our model even if it did contain two-level systems implicitly).
+''\cite{feldman_thermal_1993}
+
+\begin{equation}\label{EQ:}
+\begin{split}
+k = \int_{0}^{\omega_{max}} \frac{ d\omega DOS(\omega) C(\omega/T) D(\omega) }{V}
+\end{split}
+\end{equation}
+
+\begin{equation}\label{Lorentzian_SED}
+\begin{split}
+C(\omega/T) = k_{\text{B}}\frac{\hbar\omega/2k_{\text{B}}T}{sinh(\hbar\omega/2k_{\text{B}}T)}^2
+\end{split}
+\end{equation}
+
+Assuming the thermal conductivity form Eq.  for the lowest frequency modes in 
+the system, the thermal conductivity as a function of the system size 
+takes the form
+\begin{equation}\label{EQ:k0}
+\frac{k(N_0)}{k_{bulk}} = 1 - \frac{c_0}{N_0},
+\end{equation}
+
+Debye model. k_tot = k_phonon + k_AF. For lack of a rigorous definition 
+of phonon vs diffusion, we will define k_phon = k_debye. 
 
 
 %\clearpage
