@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 clear
 %--------------------------------------------------------------------------
-    nmd.str.main = '/home/jason/disorder2/sio2/alan/a972/emin/' ;
+    nmd.str.main = '/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/' ;
     nmd.str.matlab = '/home/jason/disorder/matlab/';
     nmd.str.gulp = 'gulp_disp_si_conv.tmp';
     nmd.str.lmp_in = 'lmp.in.x0.alloy.single.si.tmp';
@@ -21,14 +21,14 @@ nmd.constant = m_constant;
     nmd.NUM_ATOMS_TYPE = 2;
 %--------------------------------------------------------------------------
 
-nmd.walltime.lammps = 8; nmd.cpu.lammps = 8; 
+nmd.walltime.lammps = 4; nmd.cpu.lammps = 8; 
 nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 12;
 
 %--------------------------------------------------------------------------
     nmd.Nx = 8; nmd.Ny = 8; nmd.Nz = 8;
 %--------------------------------------------------------------------------
     nmd.seed.alloy = 1;
-    nmd.seed.initial = 1:10;
+    nmd.seed.initial = 1:20;
 %--------------------------------------------------------------------------
 
 %SED PARAMETERS------------------------------------------------------------    
@@ -42,7 +42,7 @@ nmd.walltime.matlab = 12; nmd.cpu.matlab = 1; nmd.mem.matlab = 12;
 %--------------------------------------------------------------------------   
 
 %TIMES---------------------------------------------------------------------
-    nmd.t_total = 2^19; nmd.t_fft = 2^19; nmd.t_step = 2^3; nmd.dt = 0.000905;
+    nmd.t_total = 2^18; nmd.t_fft = 2^18; nmd.t_step = 2^3; nmd.dt = 0.000905;
     nmd.NUM_TSTEPS = nmd.t_fft/nmd.t_step; 
 %-------------------------------------------------------------------------- 
 

@@ -3,7 +3,7 @@ clear
 lj = m_lj; constant = m_constant;
 
 str.main =...
-    '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/';
+    '/home/jason/disorder2/sio2/alan/a288/tile/anneal/';
 
 x0.Nx = 8;
 

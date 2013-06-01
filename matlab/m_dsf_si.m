@@ -1,16 +1,20 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/sio2/alan/a972/emin/';
+str_af = '/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/';
 
 AF.eigvec = load(strcat(str_af,'eigvec.dat'));
 AF.freq = load(strcat(str_af,'freq.dat'))';
 AF.x0 = m_x0_read([str_af 'x0.data']);
 
-nmd.alat = 4.75;
+nmd.alat = (31.94^3/2304)^(1/3);
 
 %silica
 %100
-AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
+% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
+% AF.kpt(:,2) = 0;
+% AF.kpt(:,3) = 0;
+
+AF.kpt(:,1) = (1/16)*[1 2 3 4 5 6 7 8]'; 
 AF.kpt(:,2) = 0;
 AF.kpt(:,3) = 0;
 
@@ -29,7 +33,7 @@ AF.kpt(:,3) = 0;
 % AF.kpt(:,3) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]';
 
 
-BROADEN = 1.0;
+BROADEN = 20.0;
 rng(11111);
 
 DSF_long_avg.SL = zeros(length(AF.freq), size(AF.kpt,1));

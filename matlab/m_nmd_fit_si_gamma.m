@@ -1,5 +1,5 @@
 clear
-str = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
+str = '/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/';
 gamma_guess = 1;
 PT_PERC = 1;
 INV_PERC = 1;
@@ -22,19 +22,19 @@ SED=load(strcat(str.NMD,'SEDavg.mat'));
 
 
 
-for imode=5:size(SED.modemaster,2)      
+for imode=4:size(SED.modemaster,2)      
 %PRINT CURRENT KPT
     imode
 %scaling
     HLD_SCALING_PCT=0.95;
 %              
 
-if imode<150
-    PT_PERC=0.05; INV_PERC = 0.01; gamma_guess = 1;
+if imode<250
+    PT_PERC=0.0025; INV_PERC = 1.0; gamma_guess = 1;
 % elseif imode > 2600
 %     PT_PERC=0.3; INV_PERC = 1.0; gamma_guess = 4;
 else
-    PT_PERC=0.05; INV_PERC = 0.01; gamma_guess = 4;
+    PT_PERC=0.005; INV_PERC = 1.0; gamma_guess = 4;
 end
 
 SED.HLDfreq(imode)

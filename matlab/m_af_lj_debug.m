@@ -1,6 +1,8 @@
 function [freq Di kappa] = m_af_lj( x0 , eps , str_main , tf_eig )
 %[freq Di kappa] = m_af_lj( x0 , eps , str_main , tf_eig )
 
+format short
+
 %--------------------------------------------------------------------------
 %AF settings
 %--------------------------------------------------------------------------
@@ -185,6 +187,10 @@ AF.timing.dynam.telapsed
 %END: DYNAM
 %--------------------------------------------------------------------------
 
+LD.freq
+
+pause
+
 %--------------------------------------------------------------------------
 %BEGIN: AF
 %--------------------------------------------------------------------------
@@ -217,9 +223,9 @@ LD.RIJX(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijx;
 
-LD.RIJX(:,:)
-
 LD.rijx(:,:)
+
+LD.RIJX(:,:)
 
 pause
 
@@ -229,6 +235,8 @@ LD.vij_x =...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJX)*LD.eigvec);
 
 (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJX)*LD.eigvec)
+
+LD.vij_x
 
 pause
 
@@ -246,12 +254,15 @@ LD.Sij_x(1:LD.NUM_MODES+1:LD.NUM_MODES*LD.NUM_MODES) = 0;
 LD=rmfield(LD,'vij_x');
 %--------------------------------------------------------------------------
 %apply lor width
+LD.Sij_x
 LD.Sij_x = LD.lor.*( abs(LD.Sij_x).^2 );
 LD.Sij_x
 pause
 %add its part to Di
 LD.Di = (pi./(3*LD.freq.^2) ).* ( sum(LD.Sij_x,2) );
 Inan = isnan(LD.Di); I = Inan==1; LD.Di(I) = 0.0;
+LD.Di
+pause
 %--------------------------------------------------------------------------
 LD=rmfield(LD,'Sij_x');
 %--------------------------------------------------------------------------

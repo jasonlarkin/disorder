@@ -1,18 +1,18 @@
 clear
 lj = m_lj; constant = m_constant;
 
-str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/dsf/nmd/';
-DSF(1).DSF = load([str_af 'DSF.mat']);
-DSF(1).DSF.freq_range = DSF(1).DSF.freq_range*1E12; 
+% str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/dsf/nmd/';
+% DSF(1).DSF = load([str_af 'DSF.mat']);
+% DSF(1).DSF.freq_range = DSF(1).DSF.freq_range*1E12; 
 
-% str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
-% DSF(1).DSF = load([str_af 'DSF_long_b10.mat']);
-% DSF(2).DSF = load([str_af 'DSF_tran_b10.mat']);
+str_af = '/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/';
+DSF(1).DSF = load([str_af 'DSF_long_b20_16.mat']);
+DSF(2).DSF = load([str_af 'DSF_tran_b20_16.mat']);
 
 
 imode=0;
 
-for idir = 1:1
+for idir = 1:2
     for ikpt = 1:length(DSF(1).DSF.kpt)
         imode = imode+1
         
@@ -27,11 +27,11 @@ for idir = 1:1
 %             INV_PERC = 1.0;
 %         end
         
-        if ikpt<=2
-            PT_PERC = 0.05;
+        if ikpt<=1
+            PT_PERC = 0.09;
             INV_PERC = 1.0;
         elseif ikpt<=3
-            PT_PERC = 0.03;
+            PT_PERC = 0.2;
             INV_PERC = 1.0;
         else
             PT_PERC = 0.1;
@@ -78,7 +78,7 @@ c0 = [ 1.5*Imax, 5, DSF(idir).DSF.freq_range(start+Jmax)/1e12 ];
         lsqcurvefit(...
         lor_func,c0,...
         DSF(idir).DSF.freq_range(wleft:wright)/1e12,...
-        DSF(idir).DSF.SL(wleft:wright,ikpt),...
+        DSF(idir).DSF.SL(wleft:wright,ikpt)',...
         lb,ub,options);
 %Store separate liftimes and frequencies for single and MULTIPLE FITS
 center=c_fit(3); lifetime=1/(2*c_fit(2));

@@ -1,7 +1,7 @@
 clear
 path(path,'/home/jason/disorder/matlab/');
 lj = m_lj; constant = m_constant;
-str.main = '/home/jason/disorder2/sio2/alan/a972/emin/';
+str.main = '/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/';
 str.matlab = '/home/jason/disorder/matlab/';
 str.gin = 'gulp_af_sio2.tmp';
 %--------------------------------------------------------------------------

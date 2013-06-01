@@ -1,28 +1,25 @@
 clear
 lj = m_lj; constant = m_constant;
-str_af = '/home/jason/disorder2/si/amor/normand/perfect2/anneal_900K/';
 
-AF.eigvec = load(strcat(str_af,'AF_eigvec.dat'));
-AF.freq = load(strcat(str_af,'AF_freq.dat'))';
-AF.x0 = m_x0_read([str_af 'x0_nve.data']);
+%str_af = '/home/jason/disorder2/si/amor/normand/perf4096/anneal_1100K/emin/';
+str_af = '/home/jason/disorder2/sio2/alan/a972/emin/';
 
-nmd.alat = 5.43;
+AF.eigvec = load(strcat(str_af,'eigvec.dat'));
+AF.freq = load(strcat(str_af,'freq.dat'))';
+AF.x0 = m_x0_read([str_af 'x0.data']);
 
-%4x: 2s 6x: 20 s 8x: 100 s
-
-% str_nmd = '/home/jason/disorder2/lj/alloy/10K/0.5/10x/NMD/1/work/';
-% nmd = load([str_nmd 'NMDdata.mat']);
-% sed = load([str_nmd 'SEDdata.mat']);
-
-%full
-% AF.kpt(:,1) = nmd.kptmaster(:,1); 
-% AF.kpt(:,2) = nmd.kptmaster(:,2);
-% AF.kpt(:,3) = nmd.kptmaster(:,3);
-%AK.kpt = [AF.kpt(:,1)/nmd.Nx AF.kpt(:,2)/nmd.Ny AF.kpt(:,3)/nmd.Nz]
+nmd.alat = 4.75;
+%silica
 %100
-AF.kpt(:,1) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
+AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
 AF.kpt(:,2) = 0;
 AF.kpt(:,3) = 0;
+
+%nmd.alat = 5.43;
+%100
+% AF.kpt(:,1) = [0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0]'; 
+% AF.kpt(:,2) = 0;
+% AF.kpt(:,3) = 0;
 %111
 % AF.kpt(:,1) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
 % AF.kpt(:,2) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]';
@@ -33,26 +30,9 @@ AF.kpt(:,3) = 0;
 % AF.kpt(:,3) = [0.05 0.075 0.1 0.125 0.15 0.175 0.2 0.25 0.3 0.35 0.4 0.45 0.5]';
 
 
-% %010
-% AF.kpt(:,2) = [0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
-% AF.kpt(:,1) = 0;
-% AF.kpt(:,3) = 0;
-% %001
-% AF.kpt(:,3) = [0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5]'; 
-% AF.kpt(:,1) = 0;
-% AF.kpt(:,2) = 0;
 
-%110
-% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
-% AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
-% AF.kpt(:,3) = 0;
-%111
-% AF.kpt(:,1) = [0.1 0.2 0.3 0.4 0.5]'; 
-% AF.kpt(:,2) = [0.1 0.2 0.3 0.4 0.5]';
-% AF.kpt(:,3) = [0.1 0.2 0.3 0.4 0.5]';
-
-BROADEN = 20;
-NUM_RAND = 20;
+BROADEN = 10;
+NUM_RAND = 1;
 rng(11111);
 
 DSF_long_avg.SL = zeros(length(AF.freq), size(AF.kpt,1));

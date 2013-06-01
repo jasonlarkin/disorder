@@ -7,48 +7,48 @@ Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-050913.bib
 Warning--I didn't find a database entry for "einstein1911"
 Warning--I didn't find a database entry for "kittel1949"
 Warning--I didn't find a database entry for "cahill1992"
-Warning--I didn't find a database entry for "normand"
+Warning--I didn't find a database entry for "mousseau_high-quality_2000"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 26 entries,
+You've used 27 entries,
             3411 wiz_defined-function locations,
-            1332 strings with 15414 characters,
-and the built_in function-call counts, 20319 in all, are:
-= -- 1209
-> -- 650
-< -- 91
-+ -- 528
-- -- 158
-* -- 2748
-:= -- 2154
-add.period$ -- 26
-call.type$ -- 26
-change.case$ -- 105
-chr.to.int$ -- 26
-cite$ -- 26
-duplicate$ -- 1673
-empty$ -- 1698
-format.name$ -- 402
-if$ -- 3966
+            1337 strings with 15506 characters,
+and the built_in function-call counts, 20757 in all, are:
+= -- 1232
+> -- 657
+< -- 93
++ -- 532
+- -- 160
+* -- 2799
+:= -- 2209
+add.period$ -- 27
+call.type$ -- 27
+change.case$ -- 109
+chr.to.int$ -- 27
+cite$ -- 27
+duplicate$ -- 1717
+empty$ -- 1746
+format.name$ -- 407
+if$ -- 4050
 int.to.chr$ -- 1
-int.to.str$ -- 27
-missing$ -- 258
-newline$ -- 93
-num.names$ -- 78
-pop$ -- 421
+int.to.str$ -- 28
+missing$ -- 266
+newline$ -- 96
+num.names$ -- 81
+pop$ -- 436
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 108
 quote$ -- 0
-skip$ -- 852
+skip$ -- 869
 stack$ -- 0
-substring$ -- 1052
-swap$ -- 1348
-text.length$ -- 79
+substring$ -- 1063
+swap$ -- 1375
+text.length$ -- 80
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
+type$ -- 158
 warning$ -- 0
-while$ -- 75
+while$ -- 77
 width$ -- 0
-write$ -- 290
+write$ -- 299
 (There were 4 warnings)
