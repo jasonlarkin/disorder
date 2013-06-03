@@ -165,10 +165,10 @@ LD=rmfield(LD,'Phisum');
 %--------------------------------------------------------------------------
 %find eigenvalues and eigenvectors
 %--------------------------------------------------------------------------
-LD.Dynam
+%LD.Dynam
 LD.Dynam = (1/2)*(LD.Dynam' + LD.Dynam);
-LD.Dynam
-pause
+%LD.Dynam
+%pause
 [LD.eigvec LD.eigval] = eig(LD.Dynam);
 LD.freq = sqrt(diag(LD.eigval));
 %--------------------------------------------------------------------------
@@ -187,9 +187,8 @@ AF.timing.dynam.telapsed
 %END: DYNAM
 %--------------------------------------------------------------------------
 
-LD.freq
-
-pause
+%LD.freq
+%pause
 
 %--------------------------------------------------------------------------
 %BEGIN: AF
@@ -223,20 +222,20 @@ LD.RIJX(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijx;
 LD.RIJX(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijx;
 
-LD.rijx(:,:)
+%LD.rijx(:,:)
 
-LD.RIJX(:,:)
+%LD.RIJX(:,:)
 
-pause
+%pause
 
 %--------------------------------------------------------------------------
 LD.vij_x =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJX)*LD.eigvec);
 
-LD.vij_x
+%LD.vij_x
 
-pause
+%pause
 
 Inan = isnan(LD.vij_x); I = Inan==1; LD.vij_x(I) = 0.0;
 Iinf = isinf(LD.vij_x); I = Iinf==1; LD.vij_x(I) = 0.0;
@@ -279,20 +278,18 @@ LD.RIJY(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijy;
 LD.RIJY(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijy;
 LD.RIJY(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijy;
 
-LD.RIJY(:,:)
+%LD.RIJY(:,:)
 
-LD.rijy(:,:)
+%LD.rijy(:,:)
 
-pause
+%pause
 
 %--------------------------------------------------------------------------
 LD.vij_y =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJY)*LD.eigvec);
 
-LD.vij_y
-
-pause
+%pause
 
 Inan = isnan(LD.vij_y); I = Inan==1; LD.vij_y(I) = 0.0;
 Iinf = isinf(LD.vij_y); I = Iinf==1; LD.vij_y(I) = 0.0;
@@ -309,8 +306,8 @@ LD=rmfield(LD,'vij_y');
 %--------------------------------------------------------------------------
 %apply lor width
 LD.Sij_y = LD.lor.*( abs(LD.Sij_y).^2 );
-LD.Sij_y
-pause
+%LD.Sij_y
+%pause
 %add its part to Di
 LD.Di = LD.Di + (pi./(3*LD.freq.^2) ).* ( sum(LD.Sij_y,2) );
 Inan = isnan(LD.Di); I = Inan==1; LD.Di(I) = 0.0;
@@ -332,20 +329,18 @@ LD.RIJZ(3:3:LD.NUM_MODES,1:3:LD.NUM_MODES) = LD.rijz;
 LD.RIJZ(3:3:LD.NUM_MODES,2:3:LD.NUM_MODES) = LD.rijz;
 LD.RIJZ(3:3:LD.NUM_MODES,3:3:LD.NUM_MODES) = LD.rijz;
 
-LD.RIJZ(:,:)
+%LD.RIJZ(:,:)
 
-LD.rijz(:,:)
+%LD.rijz(:,:)
 
-pause
+%pause
 
 %--------------------------------------------------------------------------
 LD.vij_z =...
     ((1/2)./sqrt(LD.freq*LD.freq')).*...
     (LD.eigvec'*bsxfun(@times,LD.Dynam,LD.RIJZ)*LD.eigvec);
 
-LD.vij_z
-
-pause
+%pause
 
 Inan = isnan(LD.vij_z); I = Inan==1; LD.vij_z(I) = 0.0;
 Iinf = isinf(LD.vij_z); I = Iinf==1; LD.vij_z(I) = 0.0;
@@ -362,8 +357,8 @@ LD=rmfield(LD,'vij_z');
 %--------------------------------------------------------------------------
 %apply lor width
 LD.Sij_z = LD.lor.*( abs(LD.Sij_z).^2 );
-LD.Sij_z
-pause
+%LD.Sij_z
+%pause
 %add its part to Di
 LD.Di = LD.Di + (pi./(3*LD.freq.^2) ).* ( sum(LD.Sij_z,2) );
 Inan = isnan(LD.Di); I = Inan==1; LD.Di(I) = 0.0;

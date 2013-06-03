@@ -809,46 +809,26 @@ longitudinal~\,\vline 8,271~~~~~~~~~~~~~~~ \vline 8,047~~~~~~~~~~~~~~~~~~~~~~ \v
 %\vspace{50mm}
 
 %--------------------------------------------------------------------------
-\subsection{\label{S:Lifetimes}Mode Lifetimes}
+\subsection{\label{S:Life}Mode Lifetimes}
 %--------------------------------------------------------------------------
 
-\begin{equation}\label{A:E:Lorentzian_NMD}
-\begin{split}
-\Phi(\pmb{\kappa},\omega) = 2\sum_{\nu}^{3n} T\kvw=2\sum_{\nu}^{3n} 
-\lim_{\tau_0\rightarrow\infty}\frac{1}{2\tau_0}\left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kvt\exp(-i\omega t)dt\right|^2,
-\end{split}
-\end{equation}
+%--------------------------------------------------------------------------
+\subsubsection{\label{S:Life_SF}From Structure Factor}
+%--------------------------------------------------------------------------
 
-\begin{equation}\label{E:Lorentzian_NMD}
-\begin{split}
-\Phi(\pmb{\kappa},\omega) = \sum_{\nu}^{3n}C_0\kv\frac{\Gamma\kv/\pi}{[\omega_0\kv-\omega]^2+\Gamma^2\kv},
-\end{split}
-\end{equation}
+beltukov which is a constant related to the DOS.
+\cite{beltukov_ioffe-regel_2013} 
 
-\begin{equation}\label{A:E:qdot_HLD}
-\begin{split}
-\dot{q}\kvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}\lbt e^*\kvba\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}},
-\end{split}
-\end{equation}
+%--------------------------------------------------------------------------
+\subsubsection{\label{S:Life_NMD}From Normal Mode Decomposition}
+%--------------------------------------------------------------------------
 
-Once the group velocities are predicted using the VC dispersion, 
-the mode lifetimes are required to predict the thermal 
-conductivity using Eq. \eqref{EQ:k_vib}. 
-As an alternative to the VC-ALD approach for predicting lifetimes, 
-which is discussed in the next section,  
-we first use the MD simulation-based 
-NMD method.\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,
+We use the MD simulation-based 
+NMD method to predict the lifetimes .\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,
 turney_predicting_2009-1,larkin_comparison_2012} In NMD, the 
 atomic trajectories are first mapped onto the vibrational 
-mode coordinate $q\kvt$ and its time derivative $\dot{q}\kvt$ by
+mode coordinate time derivative,
 \cite{dove_introduction_1993}
-\begin{equation}\label{EQ:q}
-\begin{split}
-q\kvt=&\SUM{0}{}\sqrt{\frac{m_b}{N}}u_{\alpha}\lbt e^*\kvba
-\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}}
-\end{split}
-\end{equation}
-and
 \begin{equation}\label{EQ:qdot}
 \begin{split}
 \dot{q}\kvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}
@@ -859,18 +839,33 @@ Here, $m_b$ is the mass of the $b_{th}$ atom in the unit cell,
 $u_{\alpha}$ is the $\alpha$-component of the atomic displacement 
 from equilibrium, $\dot{u}_{\alpha}$ is the $\alpha$-component 
 of the atomic velocity, and $t$ is time.    
-The total energy of each vibrational mode, $E\kvt$, is calculated 
+
+The spectral energy of each vibrational mode, $\Phi\kvt$, is calculated 
 from 
-\begin{equation}\label{A:E}
+\begin{equation}\label{A:E:Lorentzian_NMD}
 \begin{split}
-E\kvt = \frac{\omega\kv^2}{2} q\kvt^*q\kvt + 
-\frac{1}{2}\dot{q}\kvt^*\dot{q}\kvt.
+\Phi(\pmb{\kappa},\omega) = 2\sum_{\nu}^{3n} T\kvw=2\sum_{\nu}^{3n} 
+\lim_{\tau_0\rightarrow\infty}\frac{1}{2\tau_0}
+\left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kvt
+\exp(-i\omega t)dt\right|^2,
 \end{split}
 \end{equation}
-The vibrational mode lifetime is predicted using 
-\begin{equation}\label{EQ:tau_nmd}
-\tau\kv = \int_{0}^{t^*}
-\frac{<E\kvt E\kvzero>}{ <E\kvzero E\kvzero> }dt,
+
+The vibrational mode lifetime is predicted by fitting each mode's 
+spectral energy $\Phi(\nu,\omega)$ to a Lorentzian function
+\begin{equation}\label{EQ:Lorentzian_NMD}
+\begin{split}
+\Phi(\nu,\omega) = \sum_{\nu}^{3n}
+\frac{C_0(\nu)}{[\omega_0(\nu)-\omega]^2+\Gamma^2(\nu)},
+\end{split}
+\end{equation}
+where the constant $C_0(\nu)$ is related to the average energy of 
+each mode and the linewidth $\Gamma(\nu)$.
+\cite{larkin_comparison_2012} The mode lifetime is given by
+\begin{equation}\label{EQ:Life}
+\begin{split}
+\tau(\nu) = \frac{1}{2\Gamma(\nu)}
+\end{split}
 \end{equation}
 
 Lifetimes in amorphous silicon predicted before using a normal mode 
@@ -879,12 +874,6 @@ approach, but mode-by-mode properties were not presented.
 
 Lifetimes were predicted using anharmonic lattice dynamics, but no thermal 
 transport properties were predicted.\cite{fabian_anharmonic_1996}
-
-Thermal diffusivity was predicted for a percolation network which showed 
-Rayleigh type scattering dependance in the low-frequency limit.
-\cite{sheng_heat_1991}
-
-Thermal diffusivity has been predicted using a wave-packet method
 
 The lifetimes of vibrational modes in a-Si were predicted using normal 
 mode decomposition.\cite{he_heat_2011}
@@ -976,6 +965,12 @@ conductivity of a-Si from experiment.}
 \subsection{\label{S:Diffusivities}Diffusivities}
 %--------------------------------------------------------------------------
 
+Thermal diffusivity was predicted for a percolation network which showed 
+Rayleigh type scattering dependance in the low-frequency limit.
+\cite{sheng_heat_1991}
+
+Thermal diffusivity has been predicted using a wave-packet method
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -999,6 +994,8 @@ Using the lifetimes predicted from the structure factor peaks and the
 transverse sound speed, the MFP is about the size of the simulation cell 
 $L$. 
 
+
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -1021,6 +1018,25 @@ conductivity of a-Si from experiment.}
 %--------------------------------------------------------------------------
 \subsection{\label{S:Bulk}Bulk}
 %--------------------------------------------------------------------------
+
+We use the GK method to predict the thermal conductivity. The GK method 
+is relatively inexpensive compared to the NMD and AF methods so that 
+large system sizes 
+can be simulated (see Section ).  
+
+For smaller system sizes, the same trajectories are used for the GK and 
+NMD methods. The MD simulations were run with the same parameters 
+as the NMD metho (see Section ). 
+
+The predicted thermal condcutivties from the GK method are plotted 
+in Fig. . For a-SiO2, the thermal conductivity is size independent 
+within the errors.  For a-Si, there is a clear size-dependance of the 
+thermal conductivity
+
+To compare the results of the mode-based methods (NMD and AF) and 
+the GK method, it is necessary to estimate the missing contribution from 
+vibrational modes with frequency less than the minimum frequency of 
+the finnite systems. 
 
 Assuming the thermal conductivity form Eq.  for the lowest frequency modes in 
 the system, the thermal conductivity as a function of the system size 

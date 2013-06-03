@@ -10,13 +10,17 @@
 \BOOKMARK [2][-]{section*.10}{Simulation Details}{section*.6}% 10
 \BOOKMARK [1][-]{section*.11}{Vibrational Properties}{}% 11
 \BOOKMARK [2][-]{section*.12}{Density of States}{section*.11}% 12
-\BOOKMARK [2][-]{section*.13}{Struture Factor}{section*.11}% 13
-\BOOKMARK [2][-]{section*.14}{Mode Lifetimes}{section*.11}% 14
-\BOOKMARK [2][-]{section*.15}{Diffusivities}{section*.11}% 15
-\BOOKMARK [2][-]{section*.16}{Mean Free Paths}{section*.11}% 16
-\BOOKMARK [1][-]{section*.17}{Thermal Conductivity}{}% 17
-\BOOKMARK [2][-]{section*.18}{Bulk}{section*.17}% 18
-\BOOKMARK [2][-]{section*.19}{Accumulation}{section*.17}% 19
-\BOOKMARK [2][-]{section*.20}{Discussion}{section*.17}% 20
-\BOOKMARK [1][-]{section*.21}{Summary}{}% 21
-\BOOKMARK [1][-]{section*.22}{References}{}% 22
+\BOOKMARK [2][-]{section*.13}{Group Velocity}{section*.11}% 13
+\BOOKMARK [3][-]{section*.14}{From Elastic Constants and DOS}{section*.13}% 14
+\BOOKMARK [3][-]{section*.15}{From Struture Factor}{section*.13}% 15
+\BOOKMARK [2][-]{section*.16}{Mode Lifetimes}{section*.11}% 16
+\BOOKMARK [3][-]{section*.17}{From Structure Factor}{section*.16}% 17
+\BOOKMARK [3][-]{section*.18}{From Normal Mode Decomposition}{section*.16}% 18
+\BOOKMARK [2][-]{section*.19}{Diffusivities}{section*.11}% 19
+\BOOKMARK [2][-]{section*.20}{Mean Free Paths}{section*.11}% 20
+\BOOKMARK [1][-]{section*.21}{Thermal Conductivity}{}% 21
+\BOOKMARK [2][-]{section*.22}{Bulk}{section*.21}% 22
+\BOOKMARK [2][-]{section*.23}{Accumulation}{section*.21}% 23
+\BOOKMARK [2][-]{section*.24}{Discussion}{section*.21}% 24
+\BOOKMARK [1][-]{section*.25}{Summary}{}% 25
+\BOOKMARK [1][-]{section*.26}{References}{}% 26

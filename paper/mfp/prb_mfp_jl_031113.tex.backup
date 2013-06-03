@@ -643,6 +643,8 @@ v_{s} = \frac{1}{3}v_{s,L} + \frac{1}{3}v_{s,T}.
 \end{equation}
 This is backed up by theoretical(cite) and experimental(cite) results. 
 
+
+
 %--------------------------------------------------------------------------
 \subsubsection{\label{S:Structure}From Struture Factor}
 %--------------------------------------------------------------------------
@@ -667,56 +669,17 @@ for the HS model, Eq. \eqref{EQ:M:k_AF,HS}.
 for any material.\cite{feldman_numerical_1999,duda_reducing_2011,
 donadio_atomistic_2009,he_heat_2011,he_thermal_2011}
 
-Fig 4 of this work shows a dispersion extracted by locating the peaks in 
-the structure factor.\cite{vitelli_heat_2010} 
-
-Fig. 5 discusses how since the low freq modes are sparse, there is a 
-resonant effect between \cite{feldman_numerical_1999}
-
-If all modes are summed over, this gives the frequency spectrum
-needed to construct a (nonstationary) propagating state with a
-pure wave vector Q and pure longitudinal or transverse polarization
- \cite{feldman_thermal_1993}. Locations of spectral peaks are peaked 
-like a acoustic dispersion branches. Only low-frequency vibrations 
-have an (approximate) wavevector in disordered systems, and there is 
-no theorem guranteeing this. \cite{feldman_numerical_1999}
-
-However, it is very
-difficult to distinguish between localized and extended
-modes at high frequencies on the basis of their $S(k,\nu)$
-functions, as illustrated by the very similar scattering
-functions for a 67-meV localized and a 63-meV extended
-mode in Fig. 3(b). \cite{biswas_vibrational_1988}
-
-The dynamic structure factor can be useful for demonstrating the 
-plane-wave character of low-frequency vibrations.  However, on a 
-mode-by-mode basis, it is unable in general to characterize a given mode 
-as either localized or delocalized.  Thus, it is not possible to 
-
-
-\begin{equation}\label{EQ:Dynamical}
-\pmb{\text{v}}_{g,\mathbf{n}}\kv = \frac{\partial \omega\kv}{\partial \pmb{\kappa}}.
-\end{equation}
-
-estimates of the sound speeds are found from using finite difference 
-of the peaks in $S_{T,L}$ for different values of $k$. 
-
-
-
-
-%--------------------------------------------------------------------------
-\begin{figure}
-\begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2.eps}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps}
-\end{center}
-\caption{\label{FIG:disp} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
-\end{figure}
-%--------------------------------------------------------------------------
-
+Calculating the structure factors of the supercell Gamma   
+modes is a method to test for their plane-wave 
+character at a particular wave vector and 
+polarization corresponding to the VC. 
+\cite{allen_diffusons_1999,feldman_numerical_1999} 
+Feldman et al. used the structure factor to predict an effective 
+dispersion for a model of amorphous silicon, but did not predict 
+group velocities.\cite{feldman_numerical_1999} 
+Volz and Chen used the dynamic structure factor to predict the
+dispersion of crystalline SW silicon using MD simulation.
+\cite{volz_molecular-dynamics_2000}
 
 The structure factor at a VC wave vector 
 $\pmb{\kappa}_{VC}$ is defined as\cite{allen_diffusons_1999} 
@@ -754,38 +717,58 @@ $\hat{\pmb{\kappa}}_{VC}$ is a unit vector.
 Explicit disorder is included in the Gamma frequencies 
 $\omega\kgv$ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
 
+Fig 4 of this work shows a dispersion extracted by locating the peaks in 
+the structure factor.\cite{vitelli_heat_2010} 
+
+Fig. 5 discusses how since the low freq modes are sparse, there is a 
+resonant effect between \cite{feldman_numerical_1999}
+
+The structure factor gives the frequency spectrum
+needed to construct a (nonstationary) propagating state with a
+pure wave vector Q and pure longitudinal or transverse polarization
+ \cite{feldman_thermal_1993}. Locations of spectral peaks are peaked 
+like a acoustic dispersion branches. Only low-frequency vibrations 
+have an (approximate) wavevector in disordered systems, and there is 
+no theorem guranteeing this. \cite{feldman_numerical_1999}
+
+However, it is very
+difficult to distinguish between localized and extended
+modes at high frequencies on the basis of their $S(k,\nu)$
+functions, as illustrated by the very similar scattering
+functions for a 67-meV localized and a 63-meV extended
+mode in Fig. 3(b). \cite{biswas_vibrational_1988}
+
+The dynamic structure factor can be useful for demonstrating the 
+plane-wave character of low-frequency vibrations.  However, on a 
+mode-by-mode basis, it is unable in general to characterize a given mode 
+as either localized or delocalized.  Thus, it is not possible to 
+\begin{equation}\label{EQ:Dynamical}
+\pmb{\text{v}}_{g,\mathbf{n}}\kv = \frac{\partial \omega\kv}{\partial \pmb{\kappa}}.
+\end{equation}
+estimates of the sound speeds are found from using finite difference 
+of the peaks in $S_{T,L}$ for different values of $k$. 
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2.eps}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps}
+\end{center}
+\caption{\label{FIG:disp} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+
+A group velocity can be assigned by taking
+a slope of a graph of peak frequency versus wave vector.
+\cite{feldman_thermal_1993}  
 \begin{equation}\label{EQ:dwdk}
 \pmb{\text{v}}_{g,\mathbf{n}}\kv = \frac{\partial \omega\kv}{\partial \pmb{\kappa}}.
 \end{equation}
 
-A group velocity can be assigned by taking
-a slope of a graph of peak frequency versus wave vector.
-This velocity (=7X10 cm/sec) is slightly smaller than
-the acoustic velocity seen at smaller Q's. The mean free
-path is about the same as for the first peak, namely, the
-cell size. At larger wave vectors there is a dramatic
-change in the spectral shape. Insofar as they can b
-defined, full widths at half maximum are 30 —
-oo f h
-60%%u
-eak fre quency, which corresponds to m
-mean free paths
-u
-p
-(with a generous choice of acoustic velocities) a f
-wi
-2 or more smaller than the corresponding crystalline
-t th 1
-wavelengths.
-Clearly the mod
-spectrum are marginally propagating, whereas the major-
-of energies an wave vectors, are not p opaga t'ing in any
-pro a
-e,
-sense.
-evertheless, they are extended
-contribute a significant heat current.
-\cite{feldman_thermal_1993}
 
 Table \ref{T:cond_table}.
 
@@ -829,24 +812,12 @@ longitudinal~\,\vline 8,271~~~~~~~~~~~~~~~ \vline 8,047~~~~~~~~~~~~~~~~~~~~~~ \v
 \subsection{\label{S:Lifetimes}Mode Lifetimes}
 %--------------------------------------------------------------------------
 
-Once the group velocities are predicted using the VC dispersion, 
-the mode lifetimes are required to predict the thermal 
-conductivity using Eq. \eqref{EQ:k_vib}. 
-As an alternative to the VC-ALD approach for predicting lifetimes, 
-which is discussed in the next section,  
-we first use the MD simulation-based 
-NMD method.\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,
+We use the MD simulation-based 
+NMD method to predict the lifetimes .\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,
 turney_predicting_2009-1,larkin_comparison_2012} In NMD, the 
 atomic trajectories are first mapped onto the vibrational 
-mode coordinate $q\kvt$ and its time derivative $\dot{q}\kvt$ by
+mode coordinate time derivative,
 \cite{dove_introduction_1993}
-\begin{equation}\label{EQ:q}
-\begin{split}
-q\kvt=&\SUM{0}{}\sqrt{\frac{m_b}{N}}u_{\alpha}\lbt e^*\kvba
-\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}}
-\end{split}
-\end{equation}
-and
 \begin{equation}\label{EQ:qdot}
 \begin{split}
 \dot{q}\kvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}
@@ -857,19 +828,24 @@ Here, $m_b$ is the mass of the $b_{th}$ atom in the unit cell,
 $u_{\alpha}$ is the $\alpha$-component of the atomic displacement 
 from equilibrium, $\dot{u}_{\alpha}$ is the $\alpha$-component 
 of the atomic velocity, and $t$ is time.    
-The total energy of each vibrational mode, $E\kvt$, is calculated 
+
+The spectral energy of each vibrational mode, $\Phi\kvt$, is calculated 
 from 
-\begin{equation}\label{A:E}
+\begin{equation}\label{A:E:Lorentzian_NMD}
 \begin{split}
-E\kvt = \frac{\omega\kv^2}{2} q\kvt^*q\kvt + 
-\frac{1}{2}\dot{q}\kvt^*\dot{q}\kvt.
+\Phi(\pmb{\kappa},\omega) = 2\sum_{\nu}^{3n} T\kvw=2\sum_{\nu}^{3n} 
+\lim_{\tau_0\rightarrow\infty}\frac{1}{2\tau_0}\left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kvt\exp(-i\omega t)dt\right|^2,
 \end{split}
 \end{equation}
-The vibrational mode lifetime is predicted using 
-\begin{equation}\label{EQ:tau_nmd}
-\tau\kv = \int_{0}^{t^*}
-\frac{<E\kvt E\kvzero>}{ <E\kvzero E\kvzero> }dt,
+
+The vibrational mode lifetime is predicted by fitting each mode's 
+spectral energy to a Lorentzian function
+\begin{equation}\label{E:Lorentzian_NMD}
+\begin{split}
+\Phi(\pmb{\kappa},\omega) = \sum_{\nu}^{3n}C_0\kv\frac{\Gamma\kv/\pi}{[\omega_0\kv-\omega]^2+\Gamma^2\kv},
+\end{split}
 \end{equation}
+where
 
 Lifetimes in amorphous silicon predicted before using a normal mode 
 approach, but mode-by-mode properties were not presented.
@@ -877,12 +853,6 @@ approach, but mode-by-mode properties were not presented.
 
 Lifetimes were predicted using anharmonic lattice dynamics, but no thermal 
 transport properties were predicted.\cite{fabian_anharmonic_1996}
-
-Thermal diffusivity was predicted for a percolation network which showed 
-Rayleigh type scattering dependance in the low-frequency limit.
-\cite{sheng_heat_1991}
-
-Thermal diffusivity has been predicted using a wave-packet method
 
 The lifetimes of vibrational modes in a-Si were predicted using normal 
 mode decomposition.\cite{he_heat_2011}
@@ -974,6 +944,12 @@ conductivity of a-Si from experiment.}
 \subsection{\label{S:Diffusivities}Diffusivities}
 %--------------------------------------------------------------------------
 
+Thermal diffusivity was predicted for a percolation network which showed 
+Rayleigh type scattering dependance in the low-frequency limit.
+\cite{sheng_heat_1991}
+
+Thermal diffusivity has been predicted using a wave-packet method
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -992,6 +968,12 @@ conductivity of a-Si from experiment.}
 %--------------------------------------------------------------------------
 \subsection{\label{S:MFP}Mean Free Paths}
 %--------------------------------------------------------------------------
+
+Using the lifetimes predicted from the structure factor peaks and the 
+transverse sound speed, the MFP is about the size of the simulation cell 
+$L$. 
+
+
 
 %--------------------------------------------------------------------------
 \begin{figure}
@@ -1015,6 +997,24 @@ conductivity of a-Si from experiment.}
 %--------------------------------------------------------------------------
 \subsection{\label{S:Bulk}Bulk}
 %--------------------------------------------------------------------------
+
+We use the GK method to predict the thermal conductivity. The GK method 
+is relatively inexpensive compared to the NMD and AF methods so that 
+large system sizes 
+can be used for a-Si (800,000 atoms, $L=24$ nm) and 
+a-SiO$_2$ (34,000 atoms, $L=8$ nm). 
+
+For smaller system sizes, the same trajectories are used for the GK and 
+NMD methods. The MD simulations were run with the same parameters 
+as the NMD metho (see Section ). 
+
+The predicted thermal condcutivties from the GK method are plotted 
+in Fig. . 
+
+To compare the results of the mode-based methods (NMD and AF) and 
+the GK method, it is necessary to estimate the missing contribution from 
+vibrational modes with frequency less than the minimum frequency of 
+the finnite systems. 
 
 Assuming the thermal conductivity form Eq.  for the lowest frequency modes in 
 the system, the thermal conductivity as a function of the system size 
