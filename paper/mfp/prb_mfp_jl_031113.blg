@@ -8,47 +8,51 @@ Warning--I didn't find a database entry for "einstein1911"
 Warning--I didn't find a database entry for "kittel1949"
 Warning--I didn't find a database entry for "cahill1992"
 Warning--I didn't find a database entry for "mousseau_high-quality_2000"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "beltukov_ioffe-regel_2013"
+Warning--I didn't find a database entry for "larkin_evaluation_2013"
+Warning--I didn't find a database entry for "allen_"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 27 entries,
+You've used 34 entries,
             3411 wiz_defined-function locations,
-            1337 strings with 15506 characters,
-and the built_in function-call counts, 20757 in all, are:
-= -- 1232
-> -- 657
-< -- 93
-+ -- 532
-- -- 160
-* -- 2799
-:= -- 2209
-add.period$ -- 27
-call.type$ -- 27
-change.case$ -- 109
-chr.to.int$ -- 27
-cite$ -- 27
-duplicate$ -- 1717
-empty$ -- 1746
-format.name$ -- 407
-if$ -- 4050
-int.to.chr$ -- 1
-int.to.str$ -- 28
-missing$ -- 266
-newline$ -- 96
-num.names$ -- 81
-pop$ -- 436
+            1383 strings with 16918 characters,
+and the built_in function-call counts, 26746 in all, are:
+= -- 1601
+> -- 838
+< -- 119
++ -- 683
+- -- 204
+* -- 3591
+:= -- 2831
+add.period$ -- 34
+call.type$ -- 34
+change.case$ -- 137
+chr.to.int$ -- 33
+cite$ -- 34
+duplicate$ -- 2176
+empty$ -- 2248
+format.name$ -- 520
+if$ -- 5254
+int.to.chr$ -- 2
+int.to.str$ -- 35
+missing$ -- 337
+newline$ -- 117
+num.names$ -- 102
+pop$ -- 552
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 136
 quote$ -- 0
-skip$ -- 869
+skip$ -- 1139
 stack$ -- 0
-substring$ -- 1063
-swap$ -- 1375
-text.length$ -- 80
+substring$ -- 1467
+swap$ -- 1749
+text.length$ -- 102
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
+type$ -- 200
 warning$ -- 0
-while$ -- 77
+while$ -- 98
 width$ -- 0
-write$ -- 299
-(There were 4 warnings)
+write$ -- 372
+(There were 8 warnings)
