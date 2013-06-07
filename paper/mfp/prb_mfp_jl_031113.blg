@@ -1,58 +1,60 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: prb_mfp_jl_031113.aux
+White space in argument---line 19 of file prb_mfp_jl_031113.aux
+ : \citation{von
+ :               Gutfeld_heat_1964}
+I'm skipping whatever remains of this command
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-050913.bib
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-060313.bib
 Warning--I didn't find a database entry for "einstein1911"
 Warning--I didn't find a database entry for "kittel1949"
 Warning--I didn't find a database entry for "cahill1992"
-Warning--I didn't find a database entry for "mousseau_high-quality_2000"
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "beltukov_ioffe-regel_2013"
-Warning--I didn't find a database entry for "larkin_evaluation_2013"
 Warning--I didn't find a database entry for "allen_"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 34 entries,
+Warning--empty booktitle in slack_thermal_1979
+You've used 75 entries,
             3411 wiz_defined-function locations,
-            1383 strings with 16918 characters,
-and the built_in function-call counts, 26746 in all, are:
-= -- 1601
-> -- 838
-< -- 119
-+ -- 683
-- -- 204
-* -- 3591
-:= -- 2831
-add.period$ -- 34
-call.type$ -- 34
-change.case$ -- 137
-chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 2176
-empty$ -- 2248
-format.name$ -- 520
-if$ -- 5254
+            1636 strings with 26922 characters,
+and the built_in function-call counts, 64361 in all, are:
+= -- 3654
+> -- 2357
+< -- 323
++ -- 2008
+- -- 576
+* -- 8901
+:= -- 6599
+add.period$ -- 75
+call.type$ -- 75
+change.case$ -- 300
+chr.to.int$ -- 74
+cite$ -- 76
+duplicate$ -- 5340
+empty$ -- 5254
+format.name$ -- 1404
+if$ -- 12462
 int.to.chr$ -- 2
-int.to.str$ -- 35
-missing$ -- 337
-newline$ -- 117
-num.names$ -- 102
-pop$ -- 552
+int.to.str$ -- 76
+missing$ -- 814
+newline$ -- 240
+num.names$ -- 226
+pop$ -- 1276
 preamble$ -- 1
-purify$ -- 136
+purify$ -- 300
 quote$ -- 0
-skip$ -- 1139
+skip$ -- 2727
 stack$ -- 0
-substring$ -- 1467
-swap$ -- 1749
-text.length$ -- 102
+substring$ -- 3003
+swap$ -- 4438
+text.length$ -- 293
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
-warning$ -- 0
-while$ -- 98
+type$ -- 446
+warning$ -- 1
+while$ -- 223
 width$ -- 0
-write$ -- 372
-(There were 8 warnings)
+write$ -- 817
+(There was 1 error message)

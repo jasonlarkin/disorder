@@ -244,6 +244,89 @@ results.
 \clearpage
 \section{\label{S:Introduction}Introduction}
 %--------------------------------------------------------------------------
+
+Thermal transport at scales comparable to phonon wave-
+lengths and mean free paths (MFPs) is presently a topic of
+considerable interest [1–4].\cite{cahill_nanoscale_2003,
+yu_reduction_2010,hochbaum_enhanced_2008,pernot_precise_2010}
+
+Recently, nanostructured materials
+such as nanowires, superlattices, and nanocomposites with
+strongly reduced thermal conductivities due to phonon
+scattering at interfaces and boundaries have been reported
+and are being assessed for use in thermoelectrics applica-
+tions [3,4,6,7].\cite{hochbaum_enhanced_2008,pernot_precise_2010,
+boukai_silicon_2008,poudel_high-thermoelectric_2008}
+
+Another type of size effect can occur if
+there is a temperature gradient over length scales compa-
+rable to phonon MFPs. In this case, local thermal equilib-
+rium does not exist and the transport is nondiffusive.
+
+Transient ballistic transport has been studied using heat-
+pulse techniques at cryogenic temperatures [8].
+\cite{von Gutfeld_heat_1964} 
+
+A nonlocal
+theory of heat transport was proposed as a modification of
+diffusion theory [9].\cite{mahan_nonlocal_1988} 
+
+It was also predicted that the heat
+conduction from a nanoparticle is significantly reduced
+from the Fourier law prediction.\cite{chen_particularities_2000}
+
+raditionally, empirical expressions and
+simple relaxation time models have been the only means
+to estimate MFPs [11].\cite{holland_analysis_1963} 
+
+Recent first-principles calculations
+show that MFPs of phonons relevant to thermal conduc-
+tivity vary by more than 5 orders of magnitude [12].
+\cite{ward_intrinsic_2010}
+
+Experimentally, inelastic neutron scattering has been
+used to measure phonon lifetimes in certain materials,
+but this technique is more suited for single crystal samples
+[13].\cite{christianson_phonon_2008} 
+
+An x-ray diffraction and thermoreflectance technique
+can measure ballistic transport in some structures [14].
+\cite{highland_ballistic-phonon_2007}
+
+Koh
+et al. proposed a technique which uses a variation of
+modulation frequency to measure MFPs, but this technique
+is limited by the modulation frequency [15].
+\cite{koh_frequency_2007}
+
+hermal conductivity (k), which relates the heat flux (!
+q)
+and temperature gradient (rT) in a material through the
+Fourier law, !
+q 1⁄4 À krT, results from the cumulative
+contributions of phonons with a broad range of mean free paths
+(MFPs). The spectral MFP distribution is critical in nanostruc-
+tured materials and devices, where size effects selectively scatter
+phonons or create non-Fourier conduction based on individual
+phonon MFPs. Such effects have an impact on heat dissipation in
+nanoelectronics and photonics, as well as the design of
+nanostructured thermoelectric materials with reduced thermal
+conductivity1–9. Because of its ubiquity in electronics, crystalline
+silicon (c-Si) has emerged as the prototypical material of study,
+yet controversy persists on what phonon MFPs dominate thermal
+transport, even in the bulk material. Kinetic theory defines the
+thermal conductivity as k 1⁄4 Cvs LG =3, where C is the volumetric
+heat capacity, vs is the speed of sound and LG is the average
+(or grey) MFP. For c-Si, kinetic theory yields LG 1⁄4 41 nm at a
+temperature (T) of 300 K10. This grey approximation severely
+underestimates the MFPs of the phonons that contribute
+significantly to thermal conductivity because (i) dispersion
+makes vs an overestimate of the average group velocity of
+acoustic phonons and (ii) optical phonons contribute to C but
+negligibly to bulk k (ref. 11). Thermal conductivity measurements
+of thin silicon films indicate that an effective MFP of 300 nm at
+T 1⁄4 300 K is more appropriate12.
+
 The thermal conductivity of amorphous solids display 
 unique temperature dependance compared to ordered solids.
 \cite{freeman_thermal_1986} 
@@ -279,6 +362,45 @@ The spectrum of phonon MFPs and the accumulated thermal conductivity
 are predicted for a model of amorphous silicon. Predictions of thermal 
 conductivity using a boundary scattering model demonstrates  
 
+Measurements of a-Si thin films 
+demonstrate a film-thickness dependance of the thermal conductivtiy.
+
+\cite{wada_thermal_1996} find 1.8 W/m-K, similar to the SW results 
+presented here.
+
+Yang et al find as high as 7 W/m-K.\cite{yang_anomalously_2010}
+
+Liu et al. find a film dependanc between 60 and 80 microns.
+\cite{liu_high_2009} Claim the HWCVD method and hydrogenation 
+creates the most ordered a-Si.
+
+zink shows no plateau at low T for a-Si thin film, indicating 
+the scattering of long-wavelength phonon-like modes 
+by the boundaries.\cite{zink_thermal_2006}
+
+Show film thickness dependance up to 10 microns.
+\cite{kuo_thermal_1992}
+
+4.8 W/m-K.\cite{hasselman_thermal_1989}
+
+minnich tudies c-Si\cite{minnich_thermal_2011}
+
+The understanding of the accumulation function for bulk 
+crystalline has made significant advancement experimentally
+\cite{}
+and 
+theoretically.\cite{yang_mean_2013} However, understanding 
+of accumulation in amorphous systems is still not 
+well understood.
+\cite{feldman_thermal_1993,feldman_numerical_1999,he_thermal_2011}
+
+recent measurements of the accumulation function by Regner .
+\cite{regner_broadband_2013}
+
+Measurements of the thermal condutivity of a-SiO$_2$ thin 
+films show no significant dependance on the film thickness. 
+\cite{lee_heat_1997,yamane_measurement_2002} 
+
 
 %--------------------------------------------------------------------------
 \section{\label{S:Theory}Theoretical Formulation}
@@ -287,6 +409,25 @@ conductivity using a boundary scattering model demonstrates
 %--------------------------------------------------------------------------
 \section{\label{S:Theory}Thermal Diffusivity}
 %--------------------------------------------------------------------------
+
+\begin{equation}\label{EQ:kvib}
+\begin{split}
+k_{vib} = k_{ph} + k_{AF}  
+\end{split}
+\end{equation}
+
+To calculate the contribution from $k_{ph}$ and $k_{AF}$, we follow the 
+approach used in Ref \cite{feldman_thermal_1993,feldman_numerical_1999}
+\begin{equation}\label{EQ:kvib2}
+\begin{split}
+k_{vib} = \int_{0}^{\omega_{cut}} 
+\frac{ d\omega DOS(\omega) C(\omega) D(\omega) }{V} + 
+\frac{1}{V}\sum_i C_i(\omega) D_i(\omega) 
+\end{split}
+\end{equation}
+where we will consider the phonon contribution $k_{ph}$ to be the 
+first term in Eq. and the diffuson contribution $k_{AF}$. to be 
+the second.  Based , there is 
 
 The macroscopic thermal diffuvisity comes from 
 \begin{equation}\label{EQ:M:k_AF}
@@ -325,16 +466,7 @@ quantify the contribution of phonon-like modes in a-Si and
 a-SiO$_2$ (see 
 Section ).  
 
-\begin{equation}\label{EQ:}
-\begin{split}
-k = \int_{0}^{\omega_{cut}} 
-\frac{ d\omega DOS(\omega) C(\omega) D(\omega) }{V} + 
-\frac{1}{V}\sum_i C_i(\omega) D_i(\omega) 
-\end{split}
-\end{equation}
-where we will consider the phonon contribution $k_{ph}$ to be the 
-first term in Eq. and the diffuson contribution $k_{AF}$. to be 
-the second.  Based , there is 
+
 
 Using the single-mode relaxation
 time approximation \cite{ziman_electrons_2001} to solve 
@@ -393,16 +525,8 @@ D_{ph}\kv = v\kv^{2} \tau\kv.
 \end{equation}
 
 %--------------------------------------------------------------------------
-\subsection{\label{S:Diffusons}Diffusons}
-%--------------------------------------------------------------------------
-
-
-
-%--------------------------------------------------------------------------
 \subsection{\label{S:Limits}Thermal Diffusivity Limits}
 %--------------------------------------------------------------------------
-
-
 
 k = sum c D, only for low-w, long-lambda limit does 
 D = 1/3 v^2 tau, or 1/3 v Lambda
@@ -472,7 +596,7 @@ high-scatter limite Eq. .(cite)
 %--------------------------------------------------------------------------
 
 We use models created by the Wooten-Winer-Weaire (WWW) algorithm in  
-Ref. \citenum{mousseau_high-quality_2000}.  Sample sizes of 
+Ref. \citenum{barkema_high-quality_2000}.  Sample sizes of 
 216, 1000, 4096, and 100,000 atoms. The Stillinger-Weber potential is 
 then used with these samples and the denisty $\rho$ is set to 
 kg/m$^3$, which 
@@ -623,6 +747,11 @@ The DOS predicted for jammed systems are similarly dominated by
 the transverse sound speed,\cite{} while results for disorded lattices 
 are
 
+The DOS for a-Si is bears striking resemblance to the DOS of 
+crystalline systems, with more pronounced features than even some 
+disordered lattices.
+\cite{williams_numerical_1989,larkin_predicting_2013,beltukov_ioffe-regel_2013,
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -644,6 +773,18 @@ conductivity of a-Si from experiment.}
 %--------------------------------------------------------------------------
 \subsubsection{\label{S:Structure}From Elastic Constants and DOS}
 %--------------------------------------------------------------------------
+
+Freeman gives 4100 m/s for a-SiO$_2$\cite{freeman_thermal_1986}
+
+3,700 5,100 from \cite{pohl_low-temperature_2002}
+
+for a-Si 3,800-4,800\cite{pohl_low-temperature_2002}
+
+Experimentally measured values of sound speed for a-Si are 4,160
+\cite{senn_physics_1979} and 
+4,290 m/s\cite{vacher_attenuation_1980}.
+
+\cite{feldman_elastic_1991} 
 
 The transverse and logitudinal sound speeds of a material can be related 
 to the material's elastic constants, which determine the bulk ($G$) and 
@@ -671,6 +812,9 @@ This is backed up by theoretical(cite) and experimental(cite) results.
 %--------------------------------------------------------------------------
 \subsubsection{\label{S:Structure}From Struture Factor}
 %--------------------------------------------------------------------------
+
+you cannot assign a unique wavevector to individual modes.
+\cite{biswas_vibrational_1988}
 
 For a disordered solid, the three acoustic group 
 velocities (two transverse and one 
@@ -703,6 +847,9 @@ group velocities.\cite{feldman_numerical_1999}
 Volz and Chen used the dynamic structure factor to predict the
 dispersion of crystalline SW silicon using MD simulation.
 \cite{volz_molecular-dynamics_2000}
+
+which has also been used to determine the dispersion relation 
+from experimentally derived predictions.\cite{green_density_2011} 
 
 The structure factor at a VC wave vector 
 $\pmb{\kappa}_{VC}$ is defined as\cite{allen_diffusons_1999} 
@@ -765,6 +912,9 @@ pure wave vector Q and pure longitudinal or transverse polarization
 like a acoustic dispersion branches. Only low-frequency vibrations 
 have an (approximate) wavevector in disordered systems, and there is 
 no theorem guranteeing this. \cite{feldman_numerical_1999}
+
+It is not possible to identify a unique wavevector for each 
+mode \cite{silbert_normal_2009}
 
 However, it is very
 difficult to distinguish between localized and extended
@@ -855,7 +1005,7 @@ longitudinal~\,\vline 8,271~~~~~~~~~~~~~~~ \vline 8,047~~~~~~~~~~~~~~~~~~~~~~ \v
 \subsubsection{\label{S:Life_SF}From Structure Factor}
 %--------------------------------------------------------------------------
 
-
+Ioffe-Regel limit \cite{taraskin_determination_1999}.
 
 %--------------------------------------------------------------------------
 \subsubsection{\label{S:Life_NMD}From Normal Mode Decomposition}
@@ -906,15 +1056,13 @@ each mode and the linewidth $\Gamma(\nu)$.
 \end{split}
 \end{equation}
 
-Lifetimes in amorphous silicon predicted before using a normal mode 
-approach, but mode-by-mode properties were not presented.
-\cite{bickham_calculation_1998}
-
 Lifetimes were predicted using anharmonic lattice dynamics, but no thermal 
 transport properties were predicted.\cite{fabian_anharmonic_1996}
 
 The lifetimes of vibrational modes in a-Si were predicted using normal 
 mode decomposition.\cite{he_heat_2011}
+
+
 
 The mode lifetimes show a similar 
 plateau at higher frequencies, particularly for a-Si, which has been 
@@ -934,6 +1082,20 @@ crease as frequency increases. This is in contrast to recent
 experimental claims that the modes decay on nanosecond
 scales and their lifetimes increase as frequency increases.
 \cite{fabian_anharmonic_1996} 
+
+The lifetimes found by this method
+are in good agreement with the perturbative calculations of
+Fabian and Allen and are on the order of 10 ps at low tem-
+peratures in both 216 and 4096 atom supercells.
+\cite{bickham_calculation_1998}
+
+Our results indicate that all of
+these processes occur on a much faster time scale than the
+ϳ1 ns temporal resultion of the Raman experiments, so it is
+not obvious that the measured relaxation rates should be
+identified with vibrational lifetimes.
+\cite{bickham_numerical_1999}
+
 
 ``The
 modes of mixed character which lie outside or in between
@@ -991,6 +1153,9 @@ The plateau disappears from their data in much the same way
 that it disappears from our theory due to extra damping of
 small-Q propagons.
 
+scattering from static imperfections would predicts Rayleigh type 
+scattering \cite{klemens_scattering_1955}
+
 %--------------------------------------------------------------------------
 %\begin{figure}
 %\begin{center}
@@ -1022,13 +1187,30 @@ conductivity of a-Si from experiment.}
 \subsection{\label{S:Diffusivities}Diffusivities}
 %--------------------------------------------------------------------------
 
+
+
+This supports the idea of Slack for a-SiO$_2$\cite{slack_thermal_1979}
+While the thermal conductivity of a-SiO , the material is characterized by 
+a constant similar for other amorphous
+materials such as Lennard-Jones argon\cite{larkin_predicting_2013} 
+and a model of a-GeTe.\cite{sosso_thermal_2012}
+
+
 Thermal diffusivity was predicted for a percolation network which showed 
 Rayleigh type scattering dependance in the low-frequency limit.
 \cite{sheng_heat_1991}
 
+which generally agree with diffusivities computed according to the 
+formula of Edwards and THoules.\cite{edwards_numerical_1972,
+feldman_numerical_1999,beltukov_ioffe-regel_2013}
+
 Thermal diffusivity has been predicted using a wave-packet method
 
 It was shown 
+
+Garber shows that these high-frequency modes are localized in the 
+Anderson sense, showing exponential decay of the mode eigenvector.
+\cite{garber_numerical_2001}
 
 It was shown that the diffusivity $D_{AF}(\omega) \propto DOS(\omega)$ 
 at low frequency when the modes are spatially uncorrelated and the 
@@ -1062,7 +1244,7 @@ Both a-SiO$_2$ and a-Si have a region at higher frequencies where the
 AF-predicted mode diffusivities are relatively constant. This behavior 
 has been reported for a number of disordered systems such as 
 disordered lattices
-\cite{sheng_heat_1991,beltukov_ioffe-regel_2013,larkin_evaluation_2013} 
+\cite{sheng_heat_1991,beltukov_ioffe-regel_2013,larkin_predicting_2013} 
 and jammed systems. At the higest frequencies the AF-predicted 
 diffusivities trend exponentially to zero, which is an indication 
 that these modes are ''locons``, spatially localized modes which 
@@ -1125,6 +1307,9 @@ conductivity of a-Si from experiment.}
 \subsection{\label{S:Bulk}Bulk}
 %--------------------------------------------------------------------------
 
+Lee found a value of around 1 W/m-K 
+but with very small supercell sizes.\cite{lee_molecular-dynamics_1991}
+
 We use the GK method to predict the thermal conductivity. The GK method 
 is relatively inexpensive compared to the NMD and AF methods so that 
 large system sizes 
@@ -1170,6 +1355,9 @@ our model even if it did contain two-level systems implicitly).
 Debye model. k_tot = k_phonon + k_AF. For lack of a rigorous definition 
 of phonon vs diffusion, we will define k_phon = k_debye. 
 
+The relative contribution of k_phonon and k_AF is also predicted to 
+be similar for silicon nanowires.\cite{donadio_atomistic_2009} 
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -1190,7 +1378,7 @@ a-Si prediced using the GK method.}
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda.eps}
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda_2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:accum} film thickness dependant thermal 
@@ -1204,6 +1392,51 @@ conductivity of a-Si from experiment.}
 %--------------------------------------------------------------------------
 \subsection{\label{S:Lifetimes}Discussion}
 %--------------------------------------------------------------------------
+
+This agress with previous estimates for the contribution of low 
+frequency ($\omega<30 rads/s$) \cite{love_estimate_1990}
+
+Moedling shows that alloying a-Si with Ge can further reduce 
+the thermal conductivity of the bulk and thin films.
+\cite{bouchard_vibrational_1988,feldman_thermal_1993} 
+
+The agree-
+ment between the 3! and the TDTR measurements at
+1.11 MHz suggests that phonons with ‘ > ðD=!Þ1=2 1⁄4
+612 nm are not significant for thermal conduction in this
+sample. Furthermore, the difference between the high and
+low frequency measurements by TDTR indicates that pho-
+nons with 162 < ‘ < 612 nm contribute 40$\%$ of the of
+the sample.\cite{liu_high_2009}
+
+The acoustic projected spectral density SðQ; EÞ is shown
+in Fig. 3. From the Q 1⁄4 h100i transverse and longitudinal
+projections, we obtain the respective phase velocities of
+vt = 4,740 $v_l$ = 7,830 m/s Wooten model, where $v_t$ is 
+significantly higher than the value for our a-Si model 
+(see Table ).\cite{liu_high_2009} 
+
+Even though the DOS of the WWW produced structures compare well with 
+other models and also experimental measurements, it has been 
+demonstrated that the spectral properties at low frequency can be 
+much different, particularly the linewdith of the structure 
+factor.\cite{liu_high_2009} It is possible that the 
+
+Based on the variation of thermal conductivity with film thickness, 
+Liu et al also report a MFP scaling of 
+$\Lambda \propto \omega^{-2}$.\cite{liu_high_2009} Similar experimental 
+results were obtained for a-SiO$_2$.
+\cite{masciovecchio_evidence_2006}
+
+Tight-binding models for a-Si can improve the low-frequency 
+DOS prediction compared to experiment.\cite{feldman_tight-binding_2004}
+
+
+A combination of frequency-domain, time-domain, and variable 
+physical heating size measurments would be helpful in investigating
+\cite{koh_frequency_2007,siemens_quasi-ballistic_2010,
+minnich_thermal_2011,regner_broadband_2013}
+
 
 %--------------------------------------------------------------------------
 \section{\label{S:Lifetimes}Summary}
