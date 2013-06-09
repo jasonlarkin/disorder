@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: jap_vc_jl_060413.aux
+White space in argument---line 99 of file jap_vc_jl_060413.aux
+ : \citation{donadio_atomistic_2009,he_heat_2011,he_morphology_2011,
+ :                                                                   he_lattice_2012,hori_phonon_2013}
+I'm skipping whatever remains of this command
 The style file: unsrt.bst
 I found no \bibdata command---while reading file jap_vc_jl_060413.aux
 Warning--I didn't find a database entry for "graebner_phonon_1986"
@@ -65,14 +69,16 @@ Warning--I didn't find a database entry for "mcgaughey_phonon_2006"
 Warning--I didn't find a database entry for "he_thermal_2011"
 Warning--I didn't find a database entry for "he_heat_2011"
 Warning--I didn't find a database entry for "donadio_atomistic_2009"
-Warning--I didn't find a database entry for "volz_molecular-dynamics_2000"
+Warning--I didn't find a database entry for "hori_phonon_2013"
 Warning--I didn't find a database entry for "beltukov_ioffe_2013"
+Warning--I didn't find a database entry for "volz_molecular-dynamics_2000"
 Warning--I didn't find a database entry for "green_density_2011"
 Warning--I didn't find a database entry for "vc_fn1"
 Warning--I didn't find a database entry for "ladd_lattice_1986"
 Warning--I didn't find a database entry for "turney_predicting_2009-1"
 Warning--I didn't find a database entry for "larkin_comparison_2012"
 Warning--I didn't find a database entry for "dove_introduction_1993"
+Warning--I didn't find a database entry for "he_morphology_2011"
 Warning--I didn't find a database entry for "maradudin_scattering_1962"
 Warning--I didn't find a database entry for "taraskin_determination_1999"
 Warning--I didn't find a database entry for "ecsedy_thermal_1977"
@@ -86,10 +92,8 @@ Warning--I didn't find a database entry for "xu_energy_2009"
 Warning--I didn't find a database entry for "sheng_heat_1991"
 Warning--I didn't find a database entry for "landry_complex_2008"
 Warning--I didn't find a database entry for "sellan_size_2010"
-Warning--I didn't find a database entry for "he_morphology_2011"
 Warning--I didn't find a database entry for "esfarjani_method_2008"
 Warning--I didn't find a database entry for "chaput_phonon-phonon_2011"
-Warning--I didn't find a database entry for "hori_phonon_2013"
 Warning--I didn't find a database entry for "cheaito_experimental_2012"
 Warning--I didn't find a database entry for "kittel_interpretation_1949"
 Warning--I didn't find a database entry for "mcgaughey_predicting_2013"
@@ -137,4 +141,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 error message)
+(There were 2 error messages)
