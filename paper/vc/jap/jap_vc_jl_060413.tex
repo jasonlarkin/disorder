@@ -258,7 +258,7 @@ explicitly and under the VC approximation, with differences found in the
 high-concentration alloys at high frequencies. 
 Notably, the lifetimes of high-frequency modes are underpredicted using the
 VC approximation, a result we attribute to the neglect of higher-order terms 
-in the model used to include point defect scattering.
+in the model used to include point-defect scattering.
 The mode properties are then used to predict thermal conductivity under the
 VC approximation.
 For the Lennard-Jones alloys, where high-frequency modes make a significant
@@ -552,7 +552,7 @@ In Ni$_{0.55}$Pd$_{0.45}$,
 which has a large mass ratio (1.8) and concentration of each species, 
 experimental measurements of   
 vibrational frequencies and linewidths agree well with 
-predictions from the perturbative mass disorder theory.
+predictions from the perturbative mass-disorder theory.
 \cite{mattis_phonon_1957,kamitakahara_vibrations_1974,tamura_isotope_1983} 
 
 Using DFT methods to predict 
@@ -690,7 +690,7 @@ Concentrations, $c$, of $0,0.05,0.15$ and $0.5$ are considered.
 % Based on the previous works of others, we only consider mass disorder.
 
 For LJ argon, the lattice constant 
-at a temperature of 10 K is $5.290 \AA$.\cite{mcgaughey_phonon_2004} 
+at a temperature of 10 K is 5.290 $\AA$.\cite{mcgaughey_phonon_2004} 
 The MD simulations were performed using LAMMPS.\cite{plimpton_fast_1995} 
 Efficient MD 
 codes like LAMMPS scale linearly with the number of atoms in 
@@ -705,7 +705,7 @@ $NPT$ (constant number of atoms $N$, pressure $P$, and temperature $T$)
 ensemble at zero pressure and a temperature of 10 K.  
 The effective zero-pressure lattice constant  
 of the amorphous phase at this temperature, based on the atomic 
-density, is $5.389 \AA$.  
+density, is 5.389 $\AA$.  
 For SW silicon, we use a lattice constant of 5.43 $\AA$ 
 for all calculations, which brings the perfect crystal GK 
 thermal conductivity predictions at a temperature of 300 K
@@ -718,7 +718,7 @@ number of atoms, volume, and temperature) ensemble for
 $10^6$ time steps. Data is then collected from simulations in the $NVE$ 
 (constant number of 
 atoms, volume, and total energy) ensemble. For LJ argon, the potential 
-energy is cutoff and shifted at $8.5 \AA$ (the force is not adjusted). 
+energy is cutoff and shifted at 8.5 $\AA$ (the force is not adjusted). 
 Time steps of 4.285 and 0.5 fs were used for the LJ argon and 
 SW silicon simulations. The same atomic trajectories are used for the 
 NMD and GK methods. 
@@ -752,7 +752,7 @@ and AF calculations (see Section \ref{S:Diffusivities}).
 
 The DOS for the VC and Gamma modes are plotted in Figs. \ref{F:DOS}(a), 
 \ref{F:DOS}(b), and \ref{F:DOS}(c) 
-for concentrations of 0.05, 0.15 and 0.5 for 
+for concentrations of 0.05, 0.15, and 0.5 for 
 $N_0=12$ (6,912 atoms). The VC and Gamma DOS 
 agree at low frequencies for all concentrations, 
 where they follow the prediction of the Debye approximation that 
@@ -943,7 +943,7 @@ polarizations along high-symmetry directions
 of the mass disordered LJ argon supercells ($N_0=10$, $c=0.05,0.5$).  
 Center panels:
 The VC predicted dispersion curves (solid lines) agree well with the 
-locations of the peaks in $S_{L}$ and $S_{T}$. The wavenumber axis 
+locations of the peaks in $S_{L}$ and $S_{T}$ (data points). The wavenumber axis 
 in the center panel is normalized by the maximum value of the wavenumber  
 in the given direction. 
 }
@@ -1037,7 +1037,7 @@ Even for larger disorder ($c=0.5$),
 where the energy autocorrelations 
 deviate from an exponential decay, 
 an effective lifetime can still be predicted 
-using Eq. \eqref{EQ:tau_nmd} (see \ref{A:NMD XCORR}). 
+using Eq. \eqref{EQ:tau_nmd} (see Appendix \ref{A:NMD XCORR}). 
 The lifetimes predicted using VC-NMD and Gamma-NMD  
 are shown in Figs. \ref{F:VC Gamma life}(a)-\ref{F:VC Gamma life}(d) 
 for the LJ argon crystal and all alloys at a temperature of 10 K. 
@@ -1048,7 +1048,7 @@ For a small interval of frequency, there is a wider range of
 predicted lifetimes for Gamma-NMD. This spread is because there 
 is no symmetry-averaging of the mode properties, 
 which is possible for the VC by considering the crystal 
-lattice's irreducible BZ.\cite{ashcroft_solid_1976} 
+lattice's irreducible Brillouin zone.\cite{ashcroft_solid_1976} 
 
 The lifetimes predicted by both VC-NMD and Gamma-NMD 
 show a $\omega^{-2}$ scaling at low frequency and a $\omega^{-4}$ 
@@ -1148,7 +1148,7 @@ SW silicon\cite{stillinger_computer_1985} so that we believe the effects
 of higher-order phonon processes are 
 negligible.\cite{ecsedy_thermal_1977,turney_predicting_2009-1} 
 We predict the phonon-phonon lifetimes using the method 
-described in Ref. \cite{turney_predicting_2009-1}, 
+described in Ref. \citenum{turney_predicting_2009-1}, 
 with all classical expressions for the populations to remain 
 consistent with the classical MD-based methods from 
 Section \ref{S:From VC Gamma}. 
@@ -1212,8 +1212,8 @@ resulting thermal conductivities agree within their uncertainties
 % frequencies near $\omega = 10$ in Fig. for $c=0.05,0.15$, 
 % but seem to follow more closely $\omega^{-4}$ for $c=0.5$. 
 
-The Tamura theory was developed to predict the reduction of lifetimes 
-in isotopic crystals, which is only weakly disordered 
+Tamura applied his theory to predict the reduction of lifetimes 
+in isotopic germanium, which is weakly disordered 
 ($\sim$ 5$\%$ variation in the atomic masses). In the LJ alloys, the 
 masses differ by a factor of three. Large mass ratios were also 
 considered in DFT VC-ALD studies of SiGe  
@@ -1696,7 +1696,7 @@ the extrapolation requirements and only GK and VC-ALD can be used to
 predict a bulk value from Eq. \eqref{EQ:k0}. While a previous 
 study found that it was necessary to use cell sizes of $N_0 = 60$ for Tersoff silicon 
 alloys,\cite{he_morphology_2011} we find that  
-Eq. \eqref{EQ:k0} is valid for SW silicon and $38 \ge N_0 \le 42$. 
+Eq. \eqref{EQ:k0} is valid for SW silicon and $38 \le N_0 \le 42$. 
 This system-size requirement highlights the efficiency of the 
 VC-ALD method compared to VC-NMD, which is necessary when 
 computationally-expensive DFT calculations are used.
