@@ -5,9 +5,9 @@ lj = m_lj; constant = m_constant;
 % DSF(1).DSF = load([str_af 'DSF.mat']);
 % DSF(1).DSF.freq_range = DSF(1).DSF.freq_range*1E12; 
 
-str_af = '/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/';
-DSF(1).DSF = load([str_af 'DSF_long_b20_16.mat']);
-DSF(2).DSF = load([str_af 'DSF_tran_b20_16.mat']);
+str_af = '/home/jason/Dropbox/sio2/';
+DSF(1).DSF = load([str_af 'DSF_long.mat']);
+DSF(2).DSF = load([str_af 'DSF_tran.mat']);
 
 
 imode=0;
@@ -28,13 +28,13 @@ for idir = 1:2
 %         end
         
         if ikpt<=1
-            PT_PERC = 0.09;
+            PT_PERC = 0.3;
             INV_PERC = 1.0;
         elseif ikpt<=3
-            PT_PERC = 0.2;
+            PT_PERC = 0.3;
             INV_PERC = 1.0;
         else
-            PT_PERC = 0.1;
+            PT_PERC = 0.3;
             INV_PERC = 1.0;
         end
         
@@ -114,7 +114,8 @@ end
 % DSF_FIT.life(J) = 12.43234; 
 
 loglog(...
-    DSF_FIT.freq, DSF_FIT.life,'.',...
+    DSF_FIT.freq(1:10), DSF_FIT.life(1:10),'.',...
+    DSF_FIT.freq(11:end), DSF_FIT.life(11:end),'.',...
     DSF_FIT.freq,2*pi./DSF_FIT.freq,...
     DSF_FIT.freq,(1E4)*1./(DSF_FIT.freq.^4),...
     DSF_FIT.freq,(1E3)*1./(DSF_FIT.freq.^2)...

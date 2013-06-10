@@ -6,7 +6,7 @@ clear
 %str.main='/home/jason/disorder2/sio2/alan/576a/tile/emin/gk/';
 %str.main='/home/jason/disorder2/sio2/alan/a972/emin/gk/';
 %str.main='/home/jason/disorder2/sio2/alan/a972/tile/gk/';
-str.main='/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/gk/';
+str.main='/home/jason/disorder2/sio2/alan/576a/tile/anneal/emin/tile/';
 
 %--------------------------------------------------------------------------
 
@@ -16,7 +16,8 @@ str.main='/home/jason/disorder2/sio2/alan/a288/tile/anneal/emin/gk/';
 %GK.Lx = 2*20.13; GK.SEEDS=[1 2 5 6];
 %GK.Lx = 24.5; GK.SEEDS=[3 4 6 7 8 9];
 %GK.Lx = 2*24.5; GK.SEEDS=[1 2 3 4];
-GK.Lx = 31.9400; GK.SEEDS=[2 4 5];
+%GK.Lx = 31.9400; GK.SEEDS=[2 4 5];
+GK.Lx = 80.52; GK.SEEDS=[3 7];
 
 GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------

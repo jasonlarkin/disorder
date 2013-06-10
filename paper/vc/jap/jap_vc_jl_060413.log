@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  8 JUN 2013 20:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  10 JUN 2013 11:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -225,30 +225,42 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ) (./lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count113
-) (./jap_vc_jl_060413.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(./jap_vc_jl_060413.aux)
 \openout1 = `jap_vc_jl_060413.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 228.
-LaTeX Font Info:    ... okay on input line 228.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 228.
-LaTeX Font Info:    ... okay on input line 228.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 228.
-LaTeX Font Info:    ... okay on input line 228.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 228.
-LaTeX Font Info:    ... okay on input line 228.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 228.
-LaTeX Font Info:    ... okay on input line 228.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 228.
-LaTeX Font Info:    ... okay on input line 228.
-Class revtex4 Info: Patching array package. on input line 228.
-Class revtex4 Info: cite was not loaded (OK!) on input line 228.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 228.
-LaTeX Font Info:    Try loading font information for U+msa on input line 281.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+Class revtex4 Info: Patching array package. on input line 229.
+Class revtex4 Info: cite was not loaded (OK!) on input line 229.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 229.
+LaTeX Font Info:    Try loading font information for U+msa on input line 282.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 281.
+LaTeX Font Info:    Try loading font information for U+msb on input line 282.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -257,16 +269,16 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 File: /home/jason/disorder/paper/vc/fig1.eps Graphic file (type eps)
  </home/jason/disorder/paper/vc/fig1.eps> [6]
 
-LaTeX Warning: Command \r invalid in math mode on input line 692.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 707.
+LaTeX Warning: Command \r invalid in math mode on input line 693.
 
 
 LaTeX Warning: Command \r invalid in math mode on input line 708.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 720.
+LaTeX Warning: Command \r invalid in math mode on input line 709.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 721.
 
 [7] [8]
 File: /home/jason/disorder/paper/vc/fig2.eps Graphic file (type eps)
@@ -352,14 +364,14 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2704
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2705
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2704.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2705.
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -391,12 +403,12 @@ Use acknowledgments instead.
 
 [41] (./jap_vc_jl_060413.aux) ) 
 Here is how much of TeX's memory you used:
- 3996 strings out of 495060
- 51839 string characters out of 3182053
- 222427 words of memory out of 3000000
- 7134 multiletter control sequences out of 15000+200000
+ 4181 strings out of 495060
+ 54884 string characters out of 3182053
+ 223403 words of memory out of 3000000
+ 7311 multiletter control sequences out of 15000+200000
  15341 words of font info for 56 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,25n,32p,935b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on jap_vc_jl_060413.dvi (41 pages, 108120 bytes).
+Output written on jap_vc_jl_060413.dvi (41 pages, 115280 bytes).
