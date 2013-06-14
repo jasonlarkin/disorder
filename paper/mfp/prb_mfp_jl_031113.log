@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  10 JUN 2013 10:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  14 JUN 2013 01:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,10 +620,13 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 7--51
 
 ) (./prb_mfp_jl_031113.aux
 
-LaTeX Warning: Label `S:Theory' multiply defined.
+LaTeX Warning: Label `EQ:kvib2' multiply defined.
 
 
-LaTeX Warning: Label `EQ:M:k_AF' multiply defined.
+LaTeX Warning: Label `EQ:kvib2' multiply defined.
+
+
+LaTeX Warning: Label `EQ:DB' multiply defined.
 
 
 LaTeX Warning: Label `EQ:k_sum' multiply defined.
@@ -650,6 +653,9 @@ LaTeX Warning: Label `EQ:Dynamical' multiply defined.
 LaTeX Warning: Label `EQ:Lorentzian_NMD' multiply defined.
 
 
+LaTeX Warning: Label `EQ:Life' multiply defined.
+
+
 LaTeX Warning: Label `S:Lifetimes' multiply defined.
 
 )
@@ -670,11 +676,11 @@ LaTeX Font Info:    ... okay on input line 196.
 Class revtex4 Info: Patching array package. on input line 196.
 Class revtex4 Info: cite was not loaded (OK!) on input line 196.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 196.
-LaTeX Font Info:    Try loading font information for U+msa on input line 238.
+LaTeX Font Info:    Try loading font information for U+msa on input line 236.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 238.
+LaTeX Font Info:    Try loading font information for U+msb on input line 236.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -685,7 +691,7 @@ Missing character: There is no ì in font cmr10!
 
 
 Package natbib Warning: Citation `von Gutfeld_heat_1964' on page 1 undefined on
- input line 264.
+ input line 262.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -707,233 +713,166 @@ Missing character: There is no Ñ in font cmr10!
 [1]
 
 Package natbib Warning: Citation `einstein1911' on page 2 undefined on input li
-ne 349.
+ne 347.
 
 
 Package natbib Warning: Citation `kittel1949' on page 2 undefined on input line
- 349.
+ 347.
 
 
 Package natbib Warning: Citation `cahill1992' on page 2 undefined on input line
- 349.
+ 347.
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 384--392
+Underfull \hbox (badness 2376) in paragraph at lines 382--390
 []\OT1/cmr/m/n/10 The un-der-stand-ing of the ac-cu-mu-la-tion func-tion
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 384--392
+Underfull \hbox (badness 1881) in paragraph at lines 382--390
 \OT1/cmr/m/n/10 experimentally$[]$ and theoretically.$[]$ How-ever, un-der-
  []
 
-! Undefined control sequence.
-<argument> \rhoC 
-                 _{V}
-l.431 D = \frac{k_{thermal}}{\rhoC_{V}}
-                                        ,
-? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--472
+Package natbib Warning: Citation `ashcroft' on page 2 undefined on input line 4
+14.
+
+
+Package natbib Warning: Citation `ashcroft' on page 2 undefined on input line 4
+43.
+
+
+Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 2 undefined o
+n input line 469.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 492--499
 []\OT1/cmr/m/n/10 Using the single-mode re-lax-ation time
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 468--472
+Underfull \hbox (badness 2680) in paragraph at lines 492--499
 \OT1/cmr/m/n/10 approximation$[]$ to solve the Boltz-mann trans-port
  []
 
-[2]
 
-LaTeX Warning: Reference `EQ:M:k_l,sum' on page 3 undefined on input line 509.
+Underfull \hbox (badness 1424) in paragraph at lines 492--499
+\OT1/cmr/m/n/10 and a sin-gle phonon po-lar-iza-tion,(cite) mak-ing the
+ []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.529 D = 1/3 v^
-                2 tau, or 1/3 v Lambda
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.530 
-      
-? 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ª in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no ë in font cmr10!
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no í in font cmr10!
 
-LaTeX Warning: Command \r invalid in math mode on input line 601.
+Package natbib Warning: Citation `mcquarrie_statistical_2000' on page 3 undefin
+ed on input line 511.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.607 vs_
-         long: 8.2715e+03, vs_tran: 3.8867e+03
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.608 
-      
-? 
+
+Package natbib Warning: Citation `goicochea_thermal_2010' on page 3 undefined o
+n input line 515.
+
+
+LaTeX Warning: Reference `EQ:M:k_l,sum' on page 3 undefined on input line 609.
+
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
-[]\OT1/cmr/m/n/10 The MD sim-u-la-tions were per-formed us-ing
- []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.659 2^
-        20 for 10 seeds. For the GK method, the thermal conductivity is
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.661 ...correlation function (HCACF). For a-SiO$_
-                                                  2$ and s-Si, a interval
-? 
-
-Overfull \hbox (478.25148pt too wide) in paragraph at lines 659--664
-[]\OT1/cmr/m/n/10 2$[]0\OML/cmm/m/it/10 for\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 s
-eeds:FortheGKmethod; thethermalconductivityispredictedbywindowaveragingtheinteg
-raloftheheatcurrentautocorrelationfunction\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HCA
-CF\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :Fora \OMS/cmsy/m/n/10 ^^@
- []
+LaTeX Warning: Command \r invalid in math mode on input line 722.
 
 
-LaTeX Warning: Reference `S:' on page 4 undefined on input line 694.
+Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 4 undefined o
+n input line 766.
 
-Runaway argument?
-{williams_numerical_1989,larkin_predicting_2013,beltukov_ioffe-regel_\ETC.
-! Paragraph ended before \@citex was complete.
-<to be read again> 
-                   \par 
-l.751 
-      
-? 
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps Graphic file (t
-ype eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps>
-Overfull \hbox (2.93001pt too wide) in paragraph at lines 756--758
- [] 
- []
+
+Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 4 undefined o
+n input line 769.
+
+
+Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 4 undefined o
+n input line 773.
 
 [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 776.
+LaTeX Warning: Reference `S:' on page 5 undefined on input line 813.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 776.
+Package natbib Warning: Citation `williams_numerical_1989' on page 5 undefined 
+on input line 851.
 
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 836--847
+[5]
+Underfull \hbox (badness 1248) in paragraph at lines 960--971
 []\OT1/cmr/m/n/10 Calculating the struc-ture fac-tors of the su-per-cell
  []
 
 ! Undefined control sequence.
-l.854 S^{L,T}\kvcw
+l.978 S^{L,T}\kvcw
                    =
 ? 
 ! Undefined control sequence.
-l.855 \sum_{\nu} E^{L,T}\kvcv
+l.979 \sum_{\nu} E^{L,T}\kvcv
                              
 ? 
 ! Undefined control sequence.
-l.856 \delta [\omega-\omega\kgv
+l.980 \delta [\omega-\omega\kgv
                                ],
 ? 
 ! Undefined control sequence.
-l.861 E^L\kvcv
+l.985 E^L\kvcv
                =
 ? 
 ! Undefined control sequence.
-l.864 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
+l.988 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
                                            
 ? 
 ! Undefined control sequence.
-l.870 E^T\kvcv
+l.994 E^T\kvcv
                =
 ? 
 ! Undefined control sequence.
-l.873 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
+l.997 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
                                             
 ? 
 ! Undefined control sequence.
-l.885 $\omega\kgv
-                 $ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
+l.1009 $\omega\kgv
+                  $ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
 ? 
 ! Undefined control sequence.
-l.885 ... components of the eigenvectors, $e\kgvba
+l.1009 ...components of the eigenvectors, $e\kgvba
                                                   $.
 ? 
 ! Undefined control sequence.
-l.888 factor peak $S^{L,T}\kvcw
-                               $ to a Lorentzian function
+l.1012 factor peak $S^{L,T}\kvcw
+                                $ to a Lorentzian function
 ? 
 ! Undefined control sequence.
 <argument> \split@tag \begin {split} S^{L,T}\kvcw 
                                                   = \sum _{\nu }^{3n} \frac ...
-l.893 \end{split}
-                 
+l.1017 \end{split}
+                  
 ? 
 ! Undefined control sequence.
 <argument> \split@tag \begin {split} S^{L,T}\kvcw 
                                                   = \sum _{\nu }^{3n} \frac ...
-l.893 \end{split}
-                 
+l.1017 \end{split}
+                  
 ? 
-[5]
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps Graphic
- file (type eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps>
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps Graphic fil
-e (type eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps>
-
-LaTeX Warning: Reference `T:cond_table' on page 6 undefined on input line 959.
+LaTeX Warning: Reference `T:cond_table' on page 6 undefined on input line 1083.
 
 
-LaTeX Warning: Reference `EQ:Bmod' on page 6 undefined on input line 974.
 
-
-Overfull \hbox (1.52318pt too wide) in alignment at lines 972--987
- [] [][][][][]
- []
-
-
-Overfull \hbox (70.96283pt too wide) in paragraph at lines 1037--1037
-[] 
- []
+LaTeX Warning: Reference `EQ:Bmod' on page 6 undefined on input line 1098.
 
 [6]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1037.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1134.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1037.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1134.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Overfull \hbox (70.96283pt too wide) in paragraph at lines 1163--1163
+[] 
+ []
 
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no ì in font cmr10!
@@ -1007,28 +946,12 @@ Missing character: There is no å in font cmr10!
 Missing character: There is no ´ in font cmr10!
 Missing character: There is no Œ in font cmr10!
 Missing character: There is no ∫ in font cmr10!
+[7]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no ¨ in font cmr10!
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps Graphic file (t
-ype eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_tau.eps>
-Overfull \hbox (2.93001pt too wide) in paragraph at lines 1172--1174
- [] 
- []
 
-[7]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1196.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1196.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 1217--1229
+Underfull \hbox (badness 1210) in paragraph at lines 1343--1355
 []\OT1/cmr/m/n/10 At low fre-quen-cies, the AF-predicted and NMD-
  []
 
@@ -1045,58 +968,42 @@ Missing character: There is no ë in font cmr10!
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no í in font cmr10!
 
-Underfull \hbox (badness 2343) in paragraph at lines 1230--1239
+Underfull \hbox (badness 2343) in paragraph at lines 1356--1365
 []\OT1/cmr/m/n/10 In sum-mary, we ob-tain a frequency-independent
  []
 
 
-Package natbib Warning: Citation `allen_' on page 8 undefined on input line 125
-5.
+Package natbib Warning: Citation `allen_' on page 8 undefined on input line 138
+1.
 
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps Graphic file (t
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_vAF.eps Graphic file (t
 ype eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps>
-Overfull \hbox (2.93001pt too wide) in paragraph at lines 1263--1265
- [] 
- []
-
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps Graphic file
- (type eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps>
-Overfull \hbox (6.94499pt too wide) in paragraph at lines 1288--1290
+</home/jason/disorder/si/amor/m_af_si_normand_4096_vAF.eps>
+Overfull \hbox (12.9675pt too wide) in paragraph at lines 1407--1409
  [] 
  []
 
 [8]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1328.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1328.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1352 Debye model. k_
+l.1496 Debye model. k_
                       tot = k_phonon + k_AF. For lack of a rigorous definition
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1354 
+l.1498 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1354
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1498
 []\OT1/cmr/m/n/10 Debye model. k$[]\OML/cmm/m/it/10 ot \OT1/cmr/m/n/10 = \OML/c
 mm/m/it/10 k[]honon \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (111.17499pt too wide) in paragraph at lines 1352--1354
+Overfull \hbox (111.17499pt too wide) in paragraph at lines 1496--1498
 \OML/cmm/m/it/10 k[]F:Forlackofarigorousdefinitionofphononvsdiffusion; wewillde
 finek[]hon \OT1/cmr/m/n/10 =
  []
@@ -1104,64 +1011,57 @@ finek[]hon \OT1/cmr/m/n/10 =
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1355 The relative contribution of k_
+l.1499 The relative contribution of k_
                                       phonon and k_AF is also predicted to
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1357 
+l.1501 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1355--1357
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1501
 []\OT1/cmr/m/n/10 The rel-a-tive con-tri-bu-tion of
  []
 
 
-Overfull \hbox (49.4126pt too wide) in paragraph at lines 1355--1357
+Overfull \hbox (49.4126pt too wide) in paragraph at lines 1499--1501
 \OT1/cmr/m/n/10 k$[]\OML/cmm/m/it/10 hononandk[]Fisalsopredictedtobesimilarfors
 iliconnanowires:[]$ 
  []
 
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond.eps Graphic fil
-e (type eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond.eps>
-Overfull \hbox (7.94875pt too wide) in paragraph at lines 1362--1364
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps Graphic f
+ile (type eps)
+</home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps>
+Overfull \hbox (14.97499pt too wide) in paragraph at lines 1506--1508
  [] 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1366 a-Si prediced using the GK method.}
+l.1510 a-Si prediced using the GK method.}
                                           
 ? 
 ! Extra }, or forgotten $.
 \sbox ...hbox {\color@setgroup #2\color@endgroup }
                                                   
-l.1366 a-Si prediced using the GK method.}
+l.1510 a-Si prediced using the GK method.}
                                           
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1366 a-Si prediced using the GK method.}
+l.1510 a-Si prediced using the GK method.}
                                           
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1366 a-Si prediced using the GK method.}
+l.1510 a-Si prediced using the GK method.}
                                           
 ? 
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda_2.eps Graphic f
-ile (type eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_kLambda_2.eps>
-Overfull \hbox (7.94875pt too wide) in paragraph at lines 1378--1380
- [] 
- []
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
@@ -1175,25 +1075,16 @@ Missing character: There is no Ñ in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no û in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ñ in font cmr10!
 [9]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1409.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1409.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no û in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-
-LaTeX Warning: Reference `T:cond_table' on page 10 undefined on input line 1442
+LaTeX Warning: Reference `T:cond_table' on page 10 undefined on input line 1586
 .
 
 (./prb_mfp_jl_031113.bbl [10]
@@ -1539,18 +1430,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 750 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 3816 strings out of 495060
- 49578 string characters out of 3182053
- 165327 words of memory out of 3000000
- 6944 multiletter control sequences out of 15000+200000
+ 3806 strings out of 495060
+ 49143 string characters out of 3182053
+ 163720 words of memory out of 3000000
+ 6940 multiletter control sequences out of 15000+200000
  14510 words of font info for 54 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,25n,27p,309b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,25n,27p,309b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_031113.dvi (12 pages, 79380 bytes).
+Output written on prb_mfp_jl_031113.dvi (12 pages, 84200 bytes).

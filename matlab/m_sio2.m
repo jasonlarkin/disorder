@@ -1,5 +1,6 @@
 function sio2 = m_sio2
 
+con = m_constant;
 
 % jason@gilgamesh > grep -A 15 "km/s" gulp.gout
 %   Velocity S-wave (km/s)  =       3.16110       3.25143       3.20658
@@ -17,4 +18,15 @@ function sio2 = m_sio2
 % -------------------------------------------------------------------------------
 
 sio2.vs_tran = 3009.89;
-sio2.vs_long = 4672.47;
+sio2.vs_long = 4672.47; sio2.c = (1/3)*sio2.vs_long + (2/3)*sio2.vs_tran;
+
+sio2.num_density = (4608) / ((40.3E-10)^3);
+
+sio2.prefactor =...
+    (3/2)*( (pi/6)^(1/3))*con.kb*...
+    sio2.num_density^(2/3);
+sio2.high_scatter = [...
+    sio2.prefactor*sio2.vs_tran...
+    ];
+
+end

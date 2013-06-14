@@ -32,7 +32,7 @@ constant = m_constant; lj = m_lj;
 %remove 0-freq
 [dosy dosx]= hist(freq,NUM_BINS);
 %dosy = dosy/sum(dosy);
-dosy = dosy/(max(freq)/NUM_BINS);
+dosy = dosy/(max(freq)/NUM_BINS)/VOLUME;
 
 end
 
