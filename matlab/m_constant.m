@@ -11,6 +11,7 @@ constant.eV2J = 1.60217646E-19;
 constant.avog = 6.02214129E23;
 constant.g2kg = 1E3;
 constant.Rideal = 8.314; %J/mol-K
+constant.meV2rads = 2*pi*2.41804E14 * 1E-3;
 end
 %--------------------------------------------------------------------------	
 

@@ -229,6 +229,9 @@ clf
 % units: W/m-K = [ rads/s ] [ () ] [ J/K ] [ m^2/s ][ 1/m^3 ]
 % units: DOS = [ 1 / rads/s ]
 
+%--------------------------------------------------------------------------
+%w^-2
+%--------------------------------------------------------------------------
 debye.num = 500;
 debye.A=1E-29;
 debye.B=(8.9050e-06/9.6200e-06)*1.3E21;
@@ -255,9 +258,55 @@ film_thick_2000 = 2000*1E-9;
 debye.mfp_film_2000 = 1./( 1./debye.mfp + 1./film_thick_2000 );
 debye.cond_film_2000 = (debye.mfp_film_2000./debye.mfp).*debye.cond;
 [Y debye.Isort] = sort(debye.mfp);
+
+film_thick_80000 = 80000*1E-9;
+debye.mfp_film_80000 = 1./( 1./debye.mfp + 1./film_thick_80000 );
+debye.cond_film_80000 = (debye.mfp_film_80000./debye.mfp).*debye.cond;
+[Y debye.Isort] = sort(debye.mfp);
+
+
 sum(debye.cond)
 sum(debye.cond_film_500)
-sum(debye.cond_film_2000)
+sum(debye.cond_film_80000)
+
+%--------------------------------------------------------------------------
+%w^-4
+%--------------------------------------------------------------------------
+debye_w4.num = 500;
+debye_w4.A=1E-29;
+debye_w4.B=0.75*1E26*(8.9050e-06/9.6200e-06)*1.3E21;
+% debye.B=(1.25^2)*(8.9050e-06/9.6200e-06)*1.3E21;
+debye_w4.c = 0.95*si.amor.vs_tran;
+debye_w4.wmin = min(Di(8,1).Di(:,2)); %4.113E12
+debye_w4.wcut = 1.6E13; 
+debye_w4.dw = debye_w4.wcut/debye_w4.num;
+debye_w4.freq_range = linspace(debye_w4.wcut/debye_w4.num,debye_w4.wcut,debye_w4.num);
+debye_w4.dos = 3*(debye_w4.freq_range.^2)/(2*(0.93*si.amor.vs_tran)^3*pi^2)*VOLUME;
+%debye.dos = 3*(debye.freq_range.^2)/(2*(1.25*si.amor.vs_tran)^3*pi^2)*VOLUME;
+debye_w4.cond = (con.kb/VOLUME)*(debye_w4.dos*debye_w4.dw)*debye_w4.B.*(debye_w4.freq_range.^(-4));
+debye_w4.mfp = 3*debye_w4.B.*(debye.freq_range.^(-4))/(0.93*si.amor.vs_tran);
+
+film_thick_50 = 50*1E-9; 
+debye_w4.mfp_film_50 = 1./( 1./debye_w4.mfp + 1./film_thick_50 );
+debye_w4.cond_film_50 = (debye_w4.mfp_film_50./debye_w4.mfp).*debye_w4.cond;
+
+film_thick_500 = 500*1E-9; 
+debye_w4.mfp_film_500 = 1./( 1./debye_w4.mfp + 1./film_thick_500 );
+debye_w4.cond_film_500 = (debye_w4.mfp_film_500./debye_w4.mfp).*debye_w4.cond;
+
+film_thick_2000 = 2000*1E-9;
+debye_w4.mfp_film_2000 = 1./( 1./debye_w4.mfp + 1./film_thick_2000 );
+debye_w4.cond_film_2000 = (debye_w4.mfp_film_2000./debye_w4.mfp).*debye_w4.cond;
+[Y debye_w4.Isort] = sort(debye_w4.mfp);
+
+film_thick_80000 = 80000*1E-9;
+debye_w4.mfp_film_80000 = 1./( 1./debye_w4.mfp + 1./film_thick_80000 );
+debye_w4.cond_film_80000 = (debye_w4.mfp_film_80000./debye_w4.mfp).*debye_w4.cond;
+[Y debye_w4.Isort] = sort(debye_w4.mfp);
+sum(debye_w4.cond)
+sum(debye_w4.cond_film_500)
+sum(debye_w4.cond_film_2000)
+sum(debye_w4.cond_film_80000)
 
 %--------------------------------------------------------------------------
 %debye sio2
@@ -509,7 +558,9 @@ loglog(...
     linspace(min(Di(8,10).Di(:,2)),max(Di(8,10).Di(:,2)),100),...
     (1/3)*(5.43E-10/2)*si.amor.vs_tran*ones(100,1),...
     linspace(min(Di(8,10).Di(:,2)), debye.wcut ,100),...
-    debye.B*linspace(min(Di(8,10).Di(:,2)), debye.wcut ,100).^(-2)...
+    debye.B*linspace(min(Di(8,10).Di(:,2)), debye.wcut ,100).^(-2),...
+    linspace(min(Di(8,10).Di(:,2)), debye_w4.wcut ,100),...
+    debye_w4.B*linspace(min(Di(8,10).Di(:,2)), debye_w4.wcut ,100).^(-4)...
     )
 axis([ 1E12 4.0E14 1E-7 1E-4])
 subplot(2,1,2),...
@@ -587,7 +638,7 @@ pause
 %--------------------------------------------------------------------------
 
 %si
-%wcut
+%w2
 [debye.Icut1 debye.Jcut1] = find( Di(8,1).Di(:,2) < debye.wcut + 0.0001E12);
 [debye.Icut2 debye.Jcut2] = find( Di(8,1).Di(:,2) > debye.wcut - 0.0001E12);
 [SED(1).Icut1 SED(1).Jcut1] = find( SED(1).SED.HLDfreq < 0.0 + 0.0001E12);
@@ -610,6 +661,19 @@ SED(1).SED.cut(2).mfp = si.amor.vs_tran*SED(1).SED.life(SED(1).Jcut2)*1E-12';
 [Y SED(1).SED.cut(2).Isort] = sort(SED(1).SED.cut(2).mfp);
 sum(SED(1).SED.cut(1).cond)
 sum(SED(1).SED.cut(2).cond)
+%w4
+[debye_w4.Icut1 debye_w4.Jcut1] = find( Di(8,1).Di(:,2) < debye_w4.wcut + 0.0001E12);
+[debye_w4.Icut2 debye_w4.Jcut2] = find( Di(8,1).Di(:,2) > debye_w4.wcut - 0.0001E12);
+VOLUME = (8*5.43E-10)^3;
+debye_w4.cut(1).cond = (con.kb / VOLUME)*(1.2*Di(8,1).Di(debye_w4.Icut1,3));
+debye_w4.cut(2).mfp = sqrt(3*Di(8,1).Di(debye_w4.Icut1,3).*SED(1).SED.life(debye_w4.Icut1+4)'*1E-12 );
+%debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut1,3)/si.amor.vs_tran;
+sum(debye_w4.cut(1).cond)
+debye_w4.cut(2).cond = (con.kb / VOLUME)*Di(8,1).Di(debye_w4.Icut2,3);
+debye_w4.cut(2).mfp = sqrt(3*(Di(8,1).Di(debye_w4.Icut2,3)).*SED(1).SED.life(debye_w4.Icut2+4)'*1E-12 );
+%debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
+[Y debye_w4.cut(2).Isort] = sort(debye_w4.cut(2).mfp);
+sum(debye_w4.cut(2).cond)
 
 %sio2
 %wcut
@@ -622,19 +686,19 @@ sio2.debye.cut(1).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut1,3
 sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut1,3).*sio2.SED(1).SED.life(sio2.debye.Icut1+3)'*1E-12 );
 debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut1,3)/si.amor.vs_tran;
 sum(sio2.debye.cut(1).cond)
-sio2.debye.cut(2).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut2,3);
-sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut2,3).*sio2.SED(1).SED.life(sio2.debye.Icut2+3)'*1E-12 );
-debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
-[Y sio2.debye.cut(2).Isort] = sort(sio2.debye.cut(2).mfp);
-sum(sio2.debye.cut(2).cond)
-sio2.SED(1).cut(1).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12)';
-sio2.SED(1).cut(1).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12';
-[Y sio2.SED(1).cut(1).Isort] = sort(sio2.SED(1).cut(1).mfp);
-sio2.SED(1).SED.cut(2).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12)';
-sio2.SED(1).SED.cut(2).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12';
-[Y sio2.SED(1).SED.cut(2).Isort] = sort(sio2.SED(1).SED.cut(2).mfp);
-sum(sio2.SED(1).SED.cut(1).cond)
-sum(sio2.SED(1).SED.cut(2).cond)
+% sio2.debye.cut(2).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut2,3);
+% sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut2,3).*sio2.SED(1).SED.life(sio2.debye.Icut2+3)'*1E-12 );
+% debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
+% [Y sio2.debye.cut(2).Isort] = sort(sio2.debye.cut(2).mfp);
+% sum(sio2.debye.cut(2).cond)
+% sio2.SED(1).cut(1).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12)';
+% sio2.SED(1).cut(1).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12';
+% [Y sio2.SED(1).cut(1).Isort] = sort(sio2.SED(1).cut(1).mfp);
+% sio2.SED(1).SED.cut(2).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12)';
+% sio2.SED(1).SED.cut(2).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12';
+% [Y sio2.SED(1).SED.cut(2).Isort] = sort(sio2.SED(1).SED.cut(2).mfp);
+% sum(sio2.SED(1).SED.cut(1).cond)
+% sum(sio2.SED(1).SED.cut(2).cond)
 
 %semilogx(Di(8,1).Di(:,2),cumtrapz((con.kb / VOLUME)*Di(8,1).Di(:,3) ),'.')
 %semilogx(flipdim(debye.mfp,2),sum(debye.cond) + sum(SED.cut(1).cond)+cumtrapz(debye.cond))
@@ -678,8 +742,12 @@ semilogx(...
 subplot(2,1,2),...
 semilogx(...
     debye.cut(2).mfp(debye.cut(2).Isort) , cumtrapz(debye.cut(2).cond(debye.cut(2).Isort)),...   %SED(1).cut(1).mfp(SED(1).cut(1).Isort) , sum(debye.cut(2).cond) + cumtrapz(SED(1).cut(1).cond(SED(1).cut(1).Isort)),...
-    debye.mfp_film_50(debye.Isort) , sum(debye.cut(2).cond) + sum(SED(1).cut(1).cond)+cumtrapz(debye.cond_film_50(debye.Isort)),...
-    debye.mfp(debye.Isort) , sum(debye.cut(2).cond) + sum(SED(1).cut(1).cond)+cumtrapz(debye.cond(debye.Isort)),... %(8*5.43E-10)*ones(1,100) , linspace(0,2,100),... ((5.43/2)*1E-10)*ones(1,100) , linspace(0,2,100),...
+    debye.mfp_film_50(debye.Isort) , sum(debye.cut(2).cond) +cumtrapz(debye.cond_film_50(debye.Isort)),...
+    debye.mfp_film_2000(debye.Isort) , sum(debye.cut(2).cond) +cumtrapz(debye.cond_film_2000(debye.Isort)),...
+    debye.mfp_film_80000(debye.Isort) , sum(debye.cut(2).cond) +cumtrapz(debye.cond_film_80000(debye.Isort)),...
+    debye_w4.mfp_film_50(debye_w4.Isort) , sum(debye_w4.cut(2).cond) +cumtrapz(debye_w4.cond_film_50(debye_w4.Isort)),...
+    debye_w4.mfp_film_2000(debye_w4.Isort) , sum(debye_w4.cut(2).cond) +cumtrapz(debye_w4.cond_film_2000(debye_w4.Isort)),...
+    debye_w4.mfp_film_80000(debye_w4.Isort) , sum(debye_w4.cut(2).cond) +cumtrapz(debye_w4.cond_film_80000(debye_w4.Isort)),...
     galli.sputtered.tf', galli.sputtered.k',...
     galli.cvd.tf', galli.cvd.k',...
     regner.cond(1).cond(:,1)*1e-6 , regner.cond(1).cond(:,2)*1.7,...
