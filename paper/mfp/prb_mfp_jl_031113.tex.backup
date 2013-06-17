@@ -195,7 +195,8 @@
 %--------------------------------------------------------------------------
 \begin{document}
 %--------------------------------------------------------------------------
-\title{Predicting Vibrational Mean Free Paths in Amorphous Materials}
+\title{Predicting Vibrational Mean Free Paths and Thermal Conductivity 
+Accumulations for Amorphous Materials}
 %--------------------------------------------------------------------------
 \author{Jason M. Larkin}
 \author{Alan J. H. McGaughey}
@@ -332,8 +333,6 @@ solid.
 Measurements by all the refs from Galli paper, including Moon.
 \cite{wada_thermal_1996,zink_thermal_2006,yang_anomalously_2010,
 cahill_thermal_1994,kuo_thermal_1992,moon_thermal_2002,liu_high_2009}
-The key to understanding such measurement is to estimate a MFP for the 
-vibrational modes in disordered systems. 
 
 The goal of this work is to predict the MFP of vibrational modes in 
 disordered systems. Simple Lennard-Jones systems will be studied.  A 
@@ -346,6 +345,15 @@ amorphous samples as phonon-like or diffuson will be investigated. These
 results will be compared to the phenomenological Einstein and Cahill-Pohl 
 models,\cite{einstein1911,kittel1949,cahill1992}.
 
+The dominant heat carriers in a-SiO$_2$ are shown to be diffusons: 
+non-propagating vibrational modes which carry a significant amount 
+of heat. The contribution of low-frequency modes to heat transport 
+is shown to be 
+
+For modeling the low frequency vibrational modes in a-Si, two types of 
+scattering mechanisms are considered: (a) phonon-phonon 
+scattering
+
 The vibrational modes in these systems are
 characterized in the limit of propagating (phonon) and 
 non-propagating (diffuson) modes by predicting the mode lifetimes and 
@@ -353,8 +361,25 @@ estimating their mean free paths. Estimating an effective dispersion
 relation is necessary for calculating an effective group velocity for 
 disordered, which is crucial for transforming lifetimes to MFPs.
 The spectrum of phonon MFPs and the accumulated thermal conductivity 
-are predicted for a model of amorphous silicon. Predictions of thermal 
+are predicted for a model of amorphous silicon. 
+
+
+In this work, we consider two ``stiff glass'' amorphous systems:
+Structural relxation phenomena do not dominate the dynamics 
+of the.\cite{gotze_evolution_2000} 
+
+In this paper, primarily states are studied where T is so
+far below T c and ␸ so far above ␸ c that structural-relaxation
+phenomena do not dominate the dynamics within the win-
+dow of interest. These states are referred to as stiff-glass
+states. The dynamical window considered is the one of
+normal-condensed-matter physics, i.e., spectra are discussed
+within a two-decade regime for the frequency ␻ around and
+below the Debye frequency ␻ D .
+
+Predictions of thermal 
 conductivity using a boundary scattering model demonstrates  
+
 
 Measurements of a-Si thin films 
 demonstrate a film-thickness dependance of the thermal conductivtiy.
@@ -395,6 +420,92 @@ Measurements of the thermal condutivity of a-SiO$_2$ thin
 films show no significant dependance on the film thickness. 
 \cite{lee_heat_1997,yamane_measurement_2002} 
 
+w4 vs w2
+
+Initial work by Zeller and Pohl\cite{zeller_thermal_1971} 
+and later by Grabner et al.\cite{graebner_phonon_1986}  
+demonstrated that the low-frequency, long-wavelength 
+vibrations in glasses that dominate at low temperature can 
+be characterized using Rayleigh 
+type scattering, $\Lambda \propto \omega^{-4}$. 
+
+Experimental measurements of linewdiths in a-SiO2 
+seemed to be explained by Rayleigh scattering.
+\cite{wischnewski_sound-wave_1998}
+However, in a separate experiment on a-SiO2, 
+a cross-over from w2, to w4, and back to w2 was observed.
+\cite{masciovecchio_evidence_2006} Theory from Schirmacher et al. predicted 
+an w4 scaling below a system dependent onset frequency.
+\cite{schirmacher_thermal_2006,schirmacher_acoustic_2007}
+Another experiment reported Rayleigh-like scattering (and even 
+stronger) while demonstrating that w2-like scaling 
+can be mistaken by considering large intervals of 
+frequency and wavelength.\cite{ruffle_observation_2003}
+
+
+
+w4, as predicted for phonons scattering off point defects under 
+the Debye approximation.
+sound-wave scattering in a-SiO$_2$ shows Rayleigh type 
+\cite{wischnewski_sound-wave_1998}
+numerical study of disordered lattices with varying coordination 
+show Rayleigh type scattering.\cite{wyart_scaling_2010} 
+
+w2, as predicted for phonons scattering off other phonon, where 
+the Debye approximation is often used. 
+
+Fabian and Allen predict w2 dependance for model of a-Si.\cite{fabian_theory_1999}
+
+shows $\tau ~ \omega^{-2}$ for a hard-sphere model.\cite{gotze_evolution_2000} 
+shows w2 scaling of the inverse linewdiths from structure factor of model 
+glasses.\cite{shintani_universal_2008}
+shows w2 for long, w2.5 for tran for a model of a-SiO2.\cite{horbach_high_2001}
+
+review paper on aiSO2: models and experimental data for a-SiO2 shows w2 for 
+short wavelength, high frequency modes and scaling near w2.5 at low frequency.
+\cite{ruocco_high-frequency_2001} 
+
+Using theory based on the random spatial variation of the shear modulus, 
+a transition from w4 to w2 scaling is observed at frequencies much lower
+than the so-called ``Boson peak`` frequency.\cite{schirmacher_acoustic_2007}
+
+experiment from Benassi et al. show a Q^2 dependance.\cite{benassi_evidence_1996}
+
+Experimentally, for Q larger
+than 1 nm 1 , all glasses studied so far show / Qx , with x
+very close to 2, see Ref. \citenum{masciovecchio_evidence_2006} for a review. 
+
+a-Si
+Christie et al. find a best fit of w2.5 for a model of a-Si, although adequate 
+fits to w2 and w4 were shown.\cite{christie_vibrational_2007} 
+
+The nature of vibrations in amorphous systems in this
+frequency region is not yet fully understood. It is known
+that a force-constant-disordered crystalline lattice gives 
+w4,\cite{schirmacher_harmonic_1998,taraskin_origin_2001} 
+while many positionally disordered materials, including a-Si, 
+give w2, as does a positionally disordered analytical model.
+\cite{martin-mayor_dynamical_2001,ciliberti_brillouin_2003} 
+
+It may therefore be positional disorder which is responsible 
+for the reduction
+in the exponent from 4 to 2, although the mechanism of
+this reduction remains unclear. Of particular interest is
+the recent experimental work of Masciovecchio et al.,
+\cite{masciovecchio_evidence_2006}
+which suggests that there may be three regimes in vitreous
+silica, with respectively w2 to w4 and back to w2. If this
+behavior is generally true, then these regions could occur
+at different ranges of wavevector for different materials,
+and this could account for different dependences being
+observed between different materials; the w4 dependence in 
+lithium diborate,\cite{ruffle_observation_2003} and for 
+the intermediate value
+of exponent 2.54 found for the transverse polarization
+by Christie et al.\cite{christie_vibrational_2007} and others.
+
+
+\cite{sheng_heat_1991,feldman_numerical_1999}
 
 %--------------------------------------------------------------------------
 \section{\label{S:Theory}Theoretical Formulation}
@@ -407,7 +518,7 @@ films show no significant dependance on the film thickness.
 To calculate the total vibrational thermal conductivity $k_{vib}$ of a 
 disordered system, we predict 
 the contributions from $k_{ph}$ and $k_{AF}$, 
-\begin{equation}
+\begin{equation}\label{EQ:kvib}
 \begin{split}
 k_{vib} = k_{ph} + k_{AF},
 \end{split}
@@ -437,17 +548,17 @@ The thermal conductivity of silicon nanowires \cite{donadio_atomistic_2009}
 
 To calculate the total vibrational thermal conductivity $k_{vib}$, we predict 
 the contributions from $k_{ph}$ and $k_{AF}$. We use a Debye model 
-for $k_{ph}$\cite{ashcroft} and the Allen-Feldman theory of diffusons 
+for $k_{ph}$(cite) and the Allen-Feldman theory of diffusons 
 for $k_{AF}$\cite{feldman_thermal_1993,feldman_numerical_1999}
 The phonon contribution is
-\begin{equation}\label{EQ:kvib2}
+\begin{equation}\label{EQ:kph}
 \begin{split}
 k_{ph} = \frac{1}{V}\int_{0}^{\omega_{cut}} 
 d\omega DOS(\omega) C(\omega) D(\omega)
 \end{split}
 \end{equation}
 and the AF diffuson contribution is
-\begin{equation}\label{EQ:kvib2}
+\begin{equation}\label{EQ:kAF}
 \begin{split}
 k_{AF} = \frac{1}{V}\sum_{\omega_i>\omega_{cut}} C_i(\omega) D_{AF,i}(\omega) 
 \end{split}
@@ -496,9 +607,9 @@ polarization,(cite) making the
 properties a function of the mode frequency $\omega$ only. 
 
 The phonon specific heat $C(\omega)$ is taken to be 
-\begin{equation}\label{EQ:DB}
+\begin{equation}\label{EQ:Cw}
 \begin{split}
-D(\omega) = B\omega^{-2} 
+C(\omega) = \frac{k_{\text{B}}}{V}  
 \end{split}
 \end{equation}
 
@@ -520,42 +631,58 @@ Since the amorphous materials studied in this work are isotropic,
 $k_{ph}$ and $v_{g}$ are scalar quantities indepdent of the direction 
 $\mathbf{n}$. 
 
-\begin{equation}\label{EQ:DB}
+The phonon thermal diffusivity, $D(\omega)$, is modeled using 
+\begin{equation}\label{EQ:Dw2}
 \begin{split}
 D(\omega) = B\omega^{-2} 
 \end{split}
 \end{equation}
+which is a scaling predicted for Umklapp scattering, and
+\begin{equation}\label{EQ:Dw4}
+\begin{split}
+D(\omega) = B\omega^{-4} 
+\end{split}
+\end{equation}
+which is the scaling precited by Rayleigh scattering. 
 
+In the phonon gas model, the thermal diffusivities can be expressed as
 \begin{equation}\label{EQ:Dtau}
 \begin{split}
-D(\omega) = \frac{1}{3}v^2_g\tau(\omega)
+D(\omega) = \frac{1}{3}v^2_g(\omega)\tau(\omega)
 \end{split}
 \end{equation}
-
-
-
+where the physical picture is of propagating plane waves which 
+travel with velocity $v_g$ and for a time $\tau$ before scattering. 
+An equivalent physical picture in terms of a scattering length 
+for the thermal diffuivity is
 \begin{equation}\label{EQ:DLambda}
 \begin{split}
-D(\omega) = \frac{1}{3}v_g \Lambda
+D(\omega) = \frac{1}{3}v_g \Lambda(\omega),
 \end{split}
 \end{equation}
-
-The vibrational mean free path (MFP),
+where $\Lambda$ is the phonon mean free path (MFP), defined as 
 \begin{equation}\label{EQ:Lambda}
 \begin{split}
-\Lambda\kv = v^{2}_{g} \tau,
+\Lambda(\omega) = v^{2}_{g} \tau(\omega).
 \end{split}
 \end{equation}
-is the distance the phonon travels before scattering. The 
-transformation from lifetime to MFP requires a group velocity.
+Both defintions Eqs. and are only valid in the propagating 
+limit, i.e. the Ioffe-Regel limit (Eq. or ). 
 
-Under the Debye model, which assumes isotropic and linear dispersion 
-$v_g = v_s$, 
-the denisty of states $DOS(\omega)$ is
+Under the Debye approximation, 
+which assumes isotropic and linear dispersion (i.e., $v_g = v_s$), 
+the denisty of states, $DOS(\omega)$, is
 \begin{equation}\label{EQ:DOS_debye}
 DOS(\omega) = \frac{3\pi\omega^2}{2v_{s,DOS}^3},
 \end{equation}
 where $v_s$ is an appropriate sound speed (see Section ).(cite)
+
+The form for $D(\omega)$ (Eq. ) and the $DOS(\omega)$ (Eq. ) 
+cause a cancellation of $\omega$ dependance in Eq. and ensures the 
+thermal conductivity (Eq. ) is finite. The form for $D(\omega)$ 
+(Eq. ) causes the thermal conductivity (Eq. ) to diverge 
+in the low-frequency limit as the system size is increased as 
+$L^{1/4}$.(cite)  
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:Theory:Thermal:Diffusons}Diffusons}
@@ -567,83 +694,42 @@ longer pure plane-waves (i.e., phonon modes), except in the low-frequency
 the Allen-Feldman (AF) theory computes 
 the contribution of diffusive, non-propagating modes (i.e., diffusons) 
 to thermal conductivity\cite{allen_thermal_1993} 
-\begin{equation}\label{EQ:M:k_AF}
-k_{AF} = \sum_{diffusons} \frac{k_{\text{B}}}{V} D_{AF,i}(\omega_i),
+\begin{equation}\label{EQ:DAF}
+\begin{split}
+D_{AF,i} = \frac{\pi V^2}{\hbar^2\omega^2_i}\sum_{j\neq i}
+|\left< i | J_{x,y,z} | j \right>|^2 \delta(\omega_i - \omega_j)
+\end{split}
 \end{equation}
 where $D_{AF,i}$ is the mode diffusivity and $\omega_i$ is the 
 frequency of the $i$th diffuson. The diffusivity of diffusons 
 can be calculated from harmonic lattice dynamics theory.
 \cite{allen_thermal_1993,feldman_thermal_1993,feldman_numerical_1999} 
 
-
-
-\begin{equation}\label{EQ:M:k_vib}
-\begin{split}
-k_{ph}=&\sum_{\pmb{\kappa}} \sum_\nu c_{ph}\kv 
-\pmb{v}^{2}_{g}\kv \tau\kv.
-\end{split}
-\end{equation}
-
-
-For Eq. , the sum is over the phonon modes in the first Brillouin 
-zone, $\pmb{\kappa}$ is the wave vector, and 
-$\nu$ labels the polarization branch.  
-The phonon mode has frequency $\omega\kv$, 
-volumetric specific heat $C_{ph}\kv$,  
-group velocity vector $\pmb{v}_{g,\mathbf{n}}\kv$, 
-and lifetime $\tau\kv$. 
-
-
-Because 
-there is a spectrum of vibrational modes in cyrstalline and
-amorphous systems, there are typically a range of vibrational 
-MFPs.(cite) By reducing the system feature sizes, the vibrational MFPs 
-can be reduced due to boundary scattering.(cite) 
-
-
-
-
-Taking the phonon mode specific heat to be $c_{ph} \kv = k_{B}$, the phonon 
-mode specific vibrational conductivity (Eq$.$ \eqref{EQ:M:k_l,sum}) can be 
-written as
-\begin{equation}\label{EQ:k_sum}
-\begin{split}
-k_{ph,\mathbf{n}}=&\sum_{\pmb{\kappa}} \sum_\nu k_{B} D_{ph}\kv,
-\end{split}
-\end{equation}
-and the vibrational conductivity is determined by the phonon mode 
-diffusitivies, defined as
-\begin{equation}\label{EQ:k_sum}
-\begin{split}
-D_{ph}\kv = v\kv^{2} \tau\kv.
-\end{split}
-\end{equation}
-
-By using lattice dynamics calculations and molecular dynamics simulations, 
-we predict the inputs to Eq. in Section and the 
-thermal conductivity $k_{vib}$ in Section . The MFPs of phonons and 
-diffusons is predicted from Eqs. and , and the thermal conductivity 
-accumulation is predicted in Section 
-
-
 %--------------------------------------------------------------------------
 \subsection{\label{S:Limits}Thermal Diffusivity Limits}
 %--------------------------------------------------------------------------
 
-In the low-frequency, long-wavelength limit, the mode thermal diffusivity 
-has the form of Eqs. eqref or eqref .(cite)  The mode diffusivities 
+For disordered materials In the low-frequency, long-wavelength limit, 
+the mode thermal diffusivity 
+has the form of Eq. or .(cite)  The mode diffusivities 
 generally decrease with increasing frequency,(cite) often reaching a 
 plateau,(cite) and then decrease exponentially to zero as the modes become 
-localized.(cite) 
+localized.(cite) The diffuson thermal diffusivities, Eq. , can not, 
+in general, be 
+expressed as either Eq. or , as the mode group velocities, 
+lifetimes, and/or MFPs can not be estimated independently.
+\cite{allen_thermal_1993,feldman_thermal_1993,
+feldman_numerical_1999,allen_evolution_1998}
+
 It is useful to consider a high-scatter limit for the mode diffusivity,
-\begin{equation}\label{EQ:M:D_HS}
+\begin{equation}\label{EQ:D_HS}
 D_{HS} = \frac{1}{3} v_s a,
 \end{equation}
 where it is assumed that all vibrational modes travel with the sound speed, 
 $v_s$, and scatter over a distance of the lattice constant, $a$. This 
 diffusivity assumption leads to a high-scatter (HS) limit of thermal 
 conductivity in the classical limit\cite{cahill_lattice_1988} 
-\begin{equation}\label{EQ:M:k_AF,HS}
+\begin{equation}\label{EQ:k_HS}
 k_{HS} = \frac{k_{\text{B}}}{V_b}b v_s a,
 \end{equation}
 where $V_b$ is the volume of the unit cell and $b$ is the number of atoms 
@@ -651,12 +737,12 @@ in the unit cell.
 
 For mode lifetimes which depend on frequency, the Ioffe-Regel (IR) limit 
 is
-\begin{equation}\label{EQ:IR}
+\begin{equation}\label{EQ:IR_tau}
 \tau = \frac{2\pi}{\omega}.
 \end{equation}
 Assuming linear dispersion ($i.e., \omega = v_s k$), the IR limit for 
 MFP is 
-\begin{equation}\label{EQ:IR}
+\begin{equation}\label{EQ:IR_Lambda}
 \Lambda = \lambda,
 \end{equation}
 where $\lambda$ is the wavelength of the vibrational mode. 
@@ -692,6 +778,12 @@ demonstrated that these are not true high-scatter limits.
 \cite{feldman_thermal_1993} Recently, the thermal conductivity 
 of several materials has been measured to be significantly below 
 $k_{HS}$.(cite) 
+
+By using lattice dynamics calculations and molecular dynamics simulations, 
+we predict the inputs to Eq. in Section and the 
+thermal conductivity $k_{vib}$ in Section . The MFPs of phonons and 
+diffusons is predicted from Eqs. and , and the thermal conductivity 
+accumulation is predicted in Section 
 
 %\clearpage
 %\vspace{50mm}
@@ -813,14 +905,6 @@ and AF calculations (see Section \ref{S:Diffusivities}).
 The frequencies and eignvectors were computed using harmonic
 lattice dynamics calculations and GULP.\cite{gale_general_2003} 
 The calculation of the AF diffuson thermal diffusivities (Eq. ) 
-
-\begin{equation}\label{EQ:k_sum}
-\begin{split}
-D_{AF,i} = \frac{\pi V^2}{\hbar^2\omega^2_i}\sum_{j\neq i}
-|\left< i | J_{x,y,z} | j \right>|^2 \delta(\omega_i - \omega_j)
-\end{split}
-\end{equation}
-
 is performed using GULP and a Lorentzian 
 broadening of $5\delta\omega_{avg}$ and $14\delta\omega_{avg}$ for 
 a-Si and a-SiO$^2$, where $\delta\omega_{avg}$ is the average mode 
@@ -854,7 +938,7 @@ As the system size $L$ is increased, the lowest frequency mode will
 continue to decrease and the gaps in frequency will fill in.(cite)  
 The DOS for a-Si is similar to the 
 DOS of crystalline silicon,
-\cite{williams_numerical_1989,donadio_atomistic_2009} particularly 
+\cite{williams_numerical_1985,donadio_atomistic_2009} particularly 
 at low-frequency, and with pronounced features as in disordered lattices.
 \cite{larkin_predicting_2013,beltukov_ioffe-regel_2013} The DOS for 
 a-SiO$_2$ is essentially constant over most of the frequency-range, 
@@ -877,6 +961,24 @@ an order of magnitude less than the transverse modes for a given
 frequency interval. For a-SiO$_2$, the logitudinal and transverse 
 sound speeds are closer.(cite experimental a-DOS) 
 
+The intensity for the dynamic structure factor of the TA branch 
+was found to be 6-8 times larger than the LA branch for a model 
+of a-SiO2.\cite{horbach_high_2001} A similar factor of 4-5 difference 
+was found in the static structure factors for a mode of a-SiO2.
+\cite{taraskin_phonons_1997}
+We find that the DOS for our 
+model of a-SiO2 is also dominated by transverse modes (see Table ). 
+
+
+
+The observation that the acoustic modes are located on
+top of a flat background for intermediate values of q has re-
+cently been found by G ̈
+otze and Mayr as an essential
+result in their analytic calculation of the spectra within
+mode-coupling theory.
+\cite{gotze_evolution_2000}
+
 The DOS predicted for jammed systems are similarly dominated by 
 the transverse sound speed,\cite{vitelli_heat_2010} 
 while results for disorded lattices demonstrate 
@@ -889,8 +991,17 @@ while results for disorded lattices demonstrate
 {/home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps}
 \vspace*{-5mm}
 \end{center}
-\caption{\label{FIG:DOS} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
+\caption{\label{FIG:DOS} Vibrational DOS predicted for our 
+models of a-SiO2 and a-Si using Eq. \eqref{EQ:DOS}. Both models 
+show a scaling at low frequency $DOS(\omega)\propto\omega^{-2}$, 
+which is predicted by the Debye approximation 
+(Eq. \eqref{EQ:DOS_debye}) using the transverse sound speeds 
+predicted using various methods (Table \ref{T:vs}). At high frequency, 
+the DOS of a-SiO2 shows a plateau and then a sharp feature corresponding 
+to a gap in the vibrational spectrum due to the Si and O bonds.(cite) 
+For a-Si, there are two sharp peaks, which show as small peaks in the 
+preditions of the vibrational mode lifetimes (Fig. \ref{FIG:Lifetimes}) 
+and mode diffusivities (Fig. \ref{FIG:diffusivities}).}
 \end{figure}
 %--------------------------------------------------------------------------
 %\clearpage
@@ -1024,9 +1135,9 @@ on the atomic number densities.(cite)
 Frequencies $\omega_0(\kappa)$ and lifetimes $\Gamma(\kappa)$ are predicted 
 by fitting each structure 
 factor peak $S^{L,T}\kvcw$ to a Lorentzian function
-\begin{equation}\label{EQ:Lorentzian_NMD}
+\begin{equation}\label{EQ:Lorentzian_SLT}
 \begin{split}
-S^{L,T}(\kappa,\omega) = \sum_{\nu}^{3n}
+S^{L,T}(\kappa,\omega) = 
 \frac{C_0(\nu)}{[\omega_0(\kappa)-\omega]^2+\Gamma^2(\kappa)},
 \end{split}
 \end{equation}
@@ -1036,16 +1147,17 @@ plotting $\omega_0(\kappa)$ in the middle panel of Fig. , where the bars
 indicate the peak widths $\Gamma(\kappa)$. 
 
 Sound speeds are estimated by finite differencing, 
-\begin{equation}\label{EQ:Dynamical}
-\pmb{\text{v}_{s}} = \frac{ \delta \omega_0(\kappa)}{\delta \kappa}.
+\begin{equation}\label{EQ:vs_dwdk}
+v_{s} = \frac{ \delta \omega_0(\kappa)}{\delta \kappa}.
 \end{equation}
 Estimates of the sound speeds are found from using finite difference 
 of the peaks in $S_{T,L}$ are shown in Table. The values are close to 
 those obtained from the elastic constants (see Section ). 
 
 The dispersion for a-SiO$_2$ 
-The dispersion for a-SiO$_2$ more closely resembles the so-called 
-''dispersion law for diffusons``, where $\omega \propto q^2$.
+For intermediate $\kappa$, the longitudinal dispersion for a-SiO$_2$ 
+more closely resembles 
+the so-called ''dispersion law for diffusons``, where $\omega \propto q^2$.
 \cite{beltukov_ioffe-regel_2013}
 
 The structure factor gives the frequency spectrum
@@ -1066,16 +1178,24 @@ The transverse sound speed predicted by the DOS is used for both
 a-SiO$_2$ and a-Si throuhout the rest of this work. 
 
 %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=1.0]
-% {/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps}
-% \includegraphics[scale=1.0]
-% {/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps}
-% \end{center}
-% \caption{\label{FIG:disp} film thickness dependant thermal 
-% conductivity of a-Si from experiment.}
-% \end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps}
+\end{center}
+\caption{\label{FIG:disp} Longitudinal (left panel) and transverse 
+(right panel) structure factors (Eq. \eqref{EQ:SLT}) for a-SiO2 (top 
+plot) and a-Si (bottom plot). Sound speeds are estimated by finite 
+differencing (Eq. \eqref{EQ:vs_dwdk}) of the lowest frequency peaks and 
+are reported in Table \ref{T:vs}. The dispersion for a-SiO2 is only 
+linear for the lowest frequency, smallest wavenumbers. The dispersion 
+for a-Si is linear over a wider range of wavenumber. Lifetimes are 
+predicted from the widths of the structure factor peaks 
+(Eq. \eqref{EQ:Lorentzian_SLT}) and are 
+plotted in Fig. \ref{FIG:Lifetimes}. }
+\end{figure}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
@@ -1162,8 +1282,14 @@ Ioffe-Regel limit \cite{taraskin_determination_1999}.
 {/home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps}
 \vspace*{-5mm}
 \end{center}
-\caption{\label{FIG:Lifetimes} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
+\caption{\label{FIG:Lifetimes} vibrational mode lifetimes predicted by 
+NMD (Eq. ) and the structure factors (Eq. ) for a-SiO2 (top plot) and 
+a-Si (bottom plot).  The IR limit (Eq. ) is a lower limit for the 
+mode lifetimes, while the lifetimes from the structure factors fall 
+below this limit, partiularly for a-SiO2. The structure factor 
+lifetimes generally follow a scaling $\tau\propto\omega^{-2}$ for both 
+systems, while the mode lifetimes show a plateau before crossing the 
+IR limit. }
 \end{figure}
 %--------------------------------------------------------------------------
 
@@ -1196,9 +1322,9 @@ from equilibrium, $\dot{u}_{\alpha}$ is the $\alpha$-component
 of the atomic velocity, and $t$ is time.    
 The spectral energy of each vibrational mode, $\Phi\kvt$, is calculated 
 from 
-\begin{equation}\label{A:E:Lorentzian_NMD}
+\begin{equation}\label{A:E:Phi_NMD}
 \begin{split}
-\Phi(\pmb{\kappa},\omega) = 2\sum_{\nu}^{3n} T\kvw=2\sum_{\nu}^{3n} 
+\Phi(\nu,\omega) = 
 \lim_{\tau_0\rightarrow\infty}\frac{1}{2\tau_0}
 \left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kvt
 \exp(-i\omega t)dt\right|^2,
@@ -1209,14 +1335,14 @@ The vibrational mode frequency and lifetime is predicted by fitting each mode's
 spectral energy $\Phi(\nu,\omega)$ (see Appendix ) to a Lorentzian function
 \begin{equation}\label{EQ:Lorentzian_NMD}
 \begin{split}
-\Phi(\nu,\omega) = \sum_{\nu}^{3n}
+\Phi(\nu,\omega) = 
 \frac{C_0(\nu)}{[\omega_0(\nu)-\omega]^2+\Gamma^2(\nu)},
 \end{split}
 \end{equation}
 where the constant $C_0(\nu)$ is related to the average energy of 
 each mode and the linewidth $\Gamma(\nu)$.
 \cite{larkin_comparison_2012} The mode lifetime is given by
-\begin{equation}\label{EQ:Life}
+\begin{equation}\label{EQ:NMD_life}
 \begin{split}
 \tau(\nu) = \frac{1}{2\Gamma(\nu)}
 \end{split}
@@ -1228,7 +1354,6 @@ At high frequency the mode lifetimes are roughly constant
 without definite scaling. There is a peak near 
 2 10^{14} rads/s which corresponds to a peak in the DOS (see Fig. ).  
 
-
 The mode lifetimes show a similar 
 plateau at higher frequencies, particularly for a-Si, which has been 
 reported for disordered lattices.\cite{larkin_predicting_2013}
@@ -1236,16 +1361,10 @@ reported for disordered lattices.\cite{larkin_predicting_2013}
 For a-Si, a transition to a constant lifetime plateau occurs near 
 1 10^{14} rads/s, which corresponds to where the DOS peaks in Fig. . 
 Similar behavior was observed for model disordered lattices.
-\cite{beltukov_ioffe-regel_2013
+\cite{he_heat_2011,larkin_predicting_2013} 
 
-We
-find that the diffusivity ͓15͔ displays a well-defined kink at a
-frequency ␻d that separates the low ␻ regime of divergent
-diffusivity ͑consistent with Rayleigh law͒ from a character-
-istic plateau that persists up to high ␻ where localization sets
-in.\cite{vitelli_heat_2010}
 
-------
+
 %--------------------------------------------------------------------
 %\begin{figure}
 %\begin{center}
@@ -1265,25 +1384,71 @@ in.\cite{vitelli_heat_2010}
 \subsubsection{\label{S:Life_NMD}Discussion}
 %--------------------------------------------------------------------------
 
+For model a-LJ, the lifetimes predicted by the static and dynamic 
+structure factors and the NMD method are in close agreement 
+at low temperature.\cite{mazzacurati_low-frequency_1996} 
+At low frequency for our model of a-Si, good 
+agreement sis found between the structure factor and NMD predicted 
+lifetimes.
+
+The lifetimes predicted by NMD and scaled by the sound speed 
+diverge from the AF predicted mode diffusivities when the mode 
+lifetimes approach the IR limit, shown in 
+Fig. . This is an indication that the modes have transitioned 
+from propagating (where the diffusivitity $D$ and lifetime are 
+related by $D = (1/3)v^2_s\tau$) to non-propagating where 
+$D$ and $\tau$ need not be related.
+\cite{allen_thermal_1993,feldman_thermal_1993,feldman_numerical_1999,
+allen_evolution_1998}
+
+
+For a model of a-SiO2, the lowest frequency structure factor 
+lifetimes (inverse linewidths) are already below the IR limit.
+\cite{taraskin_phonons_1997}
 
 These time scales are close to those reported in Ref for similar 
 a-Si structures. The lifetimes are also on the order of those
 reported for similar models of a-Si using MD-based and anharmonic 
 lattice dynamics methods.(cite) 
 
+Fabian finds lifetimes on the order of picoseconds for a-Si and 
+para-crystalline silicon.
+\cite{fabian_anharmonic_1996,fabian_numerical_2003}
+
 A previous study of a-Si predicted vibrational lifetimes on the 
 order of 100 ps, about ten times the values reported here and in 
 other studies.(cite) While the samples 
 
+For a-Si, the scaling at low frequency shows 
+$\tau \propto \omega^{-2}$.  The same scaling was found in previous 
+studies using similar models for a-Si.(cite) 
+
+Also
+shown as a solid curve is the phonon gas model, where the
+fitted formula 1/␶ Q ϭ2⌫ i κQ 2
+is used for transverse
+i
+propagons, and it is assumed that transverse and longitudinal
+propagons have the same diffusivity. Notice that the gas-
+model result fits perfectly onto the higher frequency diffuson
+result, indicating mutual consistency of the two different
+transport theories in the region of overlap 10 meV Ͻ␻Ͻ20
+meV.
+
+A numerical investigation of Bickham\cite{bickham_numerical_1999} 
+indeed shows that a strong perturbation of the vibrational
+spectrum of a-Si can relax on a 100 ps time scale, compared
+to 10 ps for a weak perturbation. In addition to pure vibra-
+tional relaxation, it is also likely, as suggested by Bickham
+and Feldman,\cite{bickham_calculation_1998} 
+that correspondingly large local deviations in
+the atomic displacements cause local structural rearrange-
+ments which may relax to local metastable minima while
+emitting phonons.
+
 %--------------------------------------------------------------------------
 \subsection{\label{S:Diffusivities}Diffusivities}
 %--------------------------------------------------------------------------
-
-This supports the idea of Slack for a-SiO$_2$\cite{slack_thermal_1979}
-While the thermal conductivity of a-SiO , the material is characterized by 
-a constant similar for other amorphous
-materials such as Lennard-Jones argon\cite{larkin_predicting_2013} 
-and a model of a-GeTe.\cite{sosso_thermal_2012}
 
 
 Thermal diffusivity was predicted for a percolation network which showed 
@@ -1345,37 +1510,62 @@ has been explained heuristically by assuming that phonons
 are scattered so strongly by structural disorder that trans-
 port becomes diffusive, with a frequency regime of small,
 constant thermal diffusivity.
-\cite{kittel_interpretation_1949,sheng_heat_1991,allen_} 
-
-
+\cite{kittel_interpretation_1949,sheng_heat_1991,allen_thermal_1993} 
 
 %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=1.0]
-% {/home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:diffusivities} film thickness dependant thermal 
-% conductivity of a-Si from experiment.}
-% \end{figure}
+\subsection{\label{S:Diffusivities}Discussion}
 %--------------------------------------------------------------------------
 
-\begin{equation}\label{EQ:Life}
+This supports the idea of Slack for a-SiO$_2$\cite{slack_thermal_1979}
+While the thermal conductivity of a-SiO , the material is characterized by 
+a constant similar for other amorphous
+materials such as Lennard-Jones argon\cite{larkin_predicting_2013} 
+and a model of a-GeTe.\cite{sosso_thermal_2012}
+
+At low frequency, our model supports the scaling 
+$D(\omega) = B \omega^{-2}$ and not $D(\omega) = B \omega^{-4}$ as is 
+predicted by the Rayleigh scattering from density fluctuations acting 
+as scattering centers.(cite) Rayleigh scattering 
+
+Using the NMD-predicted lifetimes and AF-predicted diffusivities, a 
+representative velocity can be computed, 
+\begin{equation}\label{EQ:vAF}
 \begin{split}
-v_{AF} = \frac{D_{i}}{2\Gamma(\nu)}
+v_{AF} = \frac{D_{i}}{2\Gamma(\nu)},
 \end{split}
 \end{equation}
+and is shown in the inset of Fig. . For a-Si, $v_{AF}$ follows a 
+decreasing trend with increasing frequency, similar to the trend 
+for group velocities in a simple monatomic crystal.(cite) 
 
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_vAF.eps}
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps}
 \vspace*{-5mm}
 \end{center}
-\caption{\label{FIG:Lifetimes} .}
+\caption{\label{FIG:diffusivities} vibrational mode diffusivities 
+predicted from NMD (using Eqs. \eqref{EQ:Dtau} and \eqref{EQ:NMD_life} 
+with the sound speed $v_{s,DOS}$ 
+from Table \ref{T:vs}) and AF theory (Eq. \eqref{EQ:DAF}). 
+Also shown are the 
+extrapolations Eqs. \eqref{EQ:Dw2} and \eqref{EQ:Dw4}, which are used 
+with Eq. \eqref{EQ:kph} to predict the thermal conductivity accumulations 
+in Fig. , and the high-scatter limit Eq. \eqref{EQ:D_HS}. 
+}
 \end{figure}
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+% \begin{figure}
+% \begin{center}
+% \includegraphics[scale=1.0]
+% {/home/jason/disorder/si/amor/m_af_si_normand_4096_vAF.eps}
+% \vspace*{-5mm}
+% \end{center}
+% \caption{\label{FIG:Lifetimes} .}
+% \end{figure}
 %--------------------------------------------------------------------------
 
 
@@ -1391,17 +1581,29 @@ transverse sound speed, the MFP is about the size of the simulation cell
 $L$. 
 
 
+\begin{equation}\label{EQ:LambdaAF}
+\begin{split}
+\Lambda_{AF} = 3 (D_{AF,i}\tau_{NMD})^{1/2},
+\end{split}
+\end{equation}
+
+
 
 %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=1.0]
-% {/home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:mfp} film thickness dependant thermal 
-% conductivity of a-Si from experiment.}
-% \end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_2.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:mfp} vibrational MFPs predicted from NMD using Eq. 
+\eqref{EQ:Lambda} and the sound speed predicted in Table \ref{T:vs}
+and from NMD and AF using Eq. \eqref{EQ:LambdaAF}. Good agreement 
+between the two methods is seen at low frequency, indicating that the 
+modes are propagating and Eqs. \eqref{EQ:Dtau} and \eqref{EQ:DLambda} 
+are valid. The majority of MFPs in the intermediate the high-frequency range 
+lie between }
+\end{figure}
 %--------------------------------------------------------------------------
 
 %\clearpage
@@ -1483,15 +1685,27 @@ a-Si prediced using the GK method.}
 %--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
-% \begin{figure}
-% \begin{center}
-% \includegraphics[scale=1.0]
-% {/home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_3.eps}
-% \vspace*{-5mm}
-% \end{center}
-% \caption{\label{FIG:accum} film thickness dependant thermal 
-% conductivity of a-Si from experiment.}
-% \end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:accum} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.0]
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_si.eps}
+\vspace*{-5mm}
+\end{center}
+\caption{\label{FIG:accum} film thickness dependant thermal 
+conductivity of a-Si from experiment.}
+\end{figure}
 %--------------------------------------------------------------------------
 
 %\clearpage
@@ -1500,6 +1714,15 @@ a-Si prediced using the GK method.}
 %--------------------------------------------------------------------------
 \subsection{\label{S:Lifetimes}Discussion}
 %--------------------------------------------------------------------------
+
+Amorphous silicon, however, can be
+prepared only in thin films, where voids and other inho-
+mogeneities are unavoidable. Voids loosen the strict re-
+quirements of a tetrahedral random network (for example,
+by introducing free boundary conditions). 
+The broadband experiments must then be performed on films prepared using 
+the same technique over a wider-range of film thicknesses (1-100 microns).
+(cite)
 
 This agress with previous estimates for the contribution of low 
 frequency ($\omega<30 rads/s$) \cite{love_estimate_1990}
@@ -1546,9 +1769,7 @@ factor.\cite{liu_high_2009} It is possible that the
 
 Based on the variation of thermal conductivity with film thickness, 
 Liu et al also report a MFP scaling of 
-$\Lambda \propto \omega^{-2}$.\cite{liu_high_2009} Similar experimental 
-results were obtained for a-SiO$_2$.
-\cite{masciovecchio_evidence_2006}
+$\Lambda \propto \omega^{-2}$.\cite{liu_high_2009} 
 
 Tight-binding models for a-Si can improve the low-frequency 
 DOS prediction compared to experiment.\cite{feldman_tight-binding_2004}

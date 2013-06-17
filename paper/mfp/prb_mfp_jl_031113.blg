@@ -1,60 +1,53 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: prb_mfp_jl_031113.aux
-White space in argument---line 19 of file prb_mfp_jl_031113.aux
- : \citation{von
- :               Gutfeld_heat_1964}
-I'm skipping whatever remains of this command
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-060313.bib
-Warning--I didn't find a database entry for "einstein1911"
-Warning--I didn't find a database entry for "kittel1949"
-Warning--I didn't find a database entry for "cahill1992"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "allen_"
+Warning--I didn't find a database entry for "von-Gutfeld_heat_1964"
+Warning--I didn't find a database entry for "ashcroft"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in slack_thermal_1979
-You've used 75 entries,
+You've used 102 entries,
             3411 wiz_defined-function locations,
-            1636 strings with 26922 characters,
-and the built_in function-call counts, 64361 in all, are:
-= -- 3654
-> -- 2357
-< -- 323
-+ -- 2008
-- -- 576
-* -- 8901
-:= -- 6599
-add.period$ -- 75
-call.type$ -- 75
-change.case$ -- 300
-chr.to.int$ -- 74
-cite$ -- 76
-duplicate$ -- 5340
-empty$ -- 5254
-format.name$ -- 1404
-if$ -- 12462
-int.to.chr$ -- 2
-int.to.str$ -- 76
-missing$ -- 814
-newline$ -- 240
-num.names$ -- 226
-pop$ -- 1276
+            1788 strings with 32151 characters,
+and the built_in function-call counts, 84599 in all, are:
+= -- 4849
+> -- 3018
+< -- 415
++ -- 2543
+- -- 736
+* -- 11704
+:= -- 8754
+add.period$ -- 102
+call.type$ -- 102
+change.case$ -- 408
+chr.to.int$ -- 100
+cite$ -- 103
+duplicate$ -- 7078
+empty$ -- 6945
+format.name$ -- 1817
+if$ -- 16363
+int.to.chr$ -- 3
+int.to.str$ -- 103
+missing$ -- 1083
+newline$ -- 321
+num.names$ -- 307
+pop$ -- 1704
 preamble$ -- 1
-purify$ -- 300
+purify$ -- 408
 quote$ -- 0
-skip$ -- 2727
+skip$ -- 3524
 stack$ -- 0
-substring$ -- 3003
-swap$ -- 4438
-text.length$ -- 293
+substring$ -- 3871
+swap$ -- 5842
+text.length$ -- 373
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 446
+type$ -- 606
 warning$ -- 1
-while$ -- 223
+while$ -- 303
 width$ -- 0
-write$ -- 817
-(There was 1 error message)
+write$ -- 1112
+(There were 3 warnings)

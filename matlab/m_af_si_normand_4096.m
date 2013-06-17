@@ -177,15 +177,17 @@ sio2.cond(3,3) = (con.kb / sio2.VOLUME(1,3))*sum(sio2.D(3,3).D(:,3));
 
 
 sio2.VOLUME(4,3) = (40.26E-10)^3;
-sio2.D(4,3).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/576a/tile/','Di_b10.gout');
-sio2.D(4,3).D(:,3) = sio2.D(4,3).D(:,3)*(3/4)/10;
+sio2.D(4,3).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/576a/tile/','Di_b15.gout');
+sio2.D(4,3).D(:,3) = 1.12*sio2.D(4,3).D(:,3)*(3/4)/10;
 sio2.cond(4,3) = (con.kb / sio2.VOLUME(4,3))*sum(sio2.D(4,3).D(:,3));
 [sio2.D(4,3).dosx sio2.D(4,3).dosy] = m_dos(sio2.D(4,3).D(:,2), 175 , 1, sio2.VOLUME(4,3));
-sio2.VOLUME(5,3) = (40.26E-10)^3;
-sio2.D(5,3).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/576a/tile/','Di_b20.gout');
-sio2.D(5,3).D(:,3) = sio2.D(5,3).D(:,3)*(3/4)/10;
-sio2.cond(5,3) = (con.kb / sio2.VOLUME(5,3))*sum(sio2.D(5,3).D(:,3));
-[sio2.D(5,3).dosx sio2.D(5,3).dosy] = m_dos(sio2.D(5,3).D(:,2), 600 , 1, sio2.VOLUME(5,3));
+[sio2.D(5,3).dosx sio2.D(5,3).dosy] = m_dos(sio2.D(4,3).D(:,2), 30 , 1, sio2.VOLUME(4,3));
+
+% sio2.VOLUME(5,3) = (40.26E-10)^3;
+% sio2.D(5,3).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/576a/tile/','Di_b20.gout');
+% sio2.D(5,3).D(:,3) = sio2.D(5,3).D(:,3)*(3/4)/10;
+% sio2.cond(5,3) = (con.kb / sio2.VOLUME(5,3))*sum(sio2.D(5,3).D(:,3));
+% [sio2.D(5,3).dosx sio2.D(5,3).dosy] = m_dos(sio2.D(5,3).D(:,2), 600 , 1, sio2.VOLUME(5,3));
 
 clf
 loglog(...
@@ -197,8 +199,7 @@ pause
 clf
 loglog(...
     sio2.SED(2).SED.freq,(1/3)*(siO2.vs_tran*0.78)^2*sio2.SED(2).SED.life,'.',...
-    sio2.D(4,3).D(:,2),sio2.D(4,3).D(:,3),'.',...
-    sio2.D(5,3).D(3:end,2),sio2.D(5,3).D(3:end,3),'.'...
+    sio2.D(4,3).D(:,2),sio2.D(4,3).D(:,3),'.'...
     )
 %--------------------------------------------------------------------------
 pause
@@ -234,11 +235,12 @@ clf
 %--------------------------------------------------------------------------
 debye.num = 500;
 debye.A=1E-29;
-debye.B=(8.9050e-06/9.6200e-06)*1.3E21;
-% debye.B=(1.25^2)*(8.9050e-06/9.6200e-06)*1.3E21;
+%debye.B=(8.9050e-06/9.6200e-06)*1.3E21;
+debye.B=0.5*(8.9050e-06/9.6200e-06)*1.3E21;
 debye.c = 0.95*si.amor.vs_tran;
 debye.wmin = min(Di(8,1).Di(:,2)); %4.113E12
-debye.wcut = 1.1625E13; 
+%debye.wcut = 1.1625E13; 
+debye.wcut = 1.6E13; 
 debye.dw = debye.wcut/debye.num;
 debye.freq_range = linspace(debye.wcut/debye.num,debye.wcut,debye.num);
 debye.dos = 3*(debye.freq_range.^2)/(2*(0.93*si.amor.vs_tran)^3*pi^2)*VOLUME;
@@ -317,10 +319,10 @@ sio2.debye.A=1E-29;
 sio2.debye.B=0.75*2.3*0.4E20;
 sio2.debye.c = (1/3)*siO2.vs_long + (2/3)*siO2.vs_tran;
 sio2.debye.wmin = min(sio2.D(1,2).D(:,2)); %4.113E12
-sio2.debye.wcut = 3.181E12; 
+sio2.debye.wcut = 4.181E12; 
 sio2.debye.dw = sio2.debye.wcut/sio2.debye.num;
 sio2.debye.freq_range = linspace(sio2.debye.wcut/sio2.debye.num,sio2.debye.wcut,sio2.debye.num);
-sio2.debye.dos = 3*(sio2.debye.freq_range.^2)/(2*(0.78*siO2.vs_tran)^3*pi^2)*sio2.VOLUME(3,3);
+sio2.debye.dos = 3*(sio2.debye.freq_range.^2)/(2*(0.77*siO2.vs_tran)^3*pi^2)*sio2.VOLUME(3,3);
 sio2.debye.cond = (con.kb/sio2.VOLUME(1,2))*(sio2.debye.dos*sio2.debye.dw)*sio2.debye.B.*(sio2.debye.freq_range.^(-2));
 sio2.debye.mfp = 3*sio2.debye.B.*(sio2.debye.freq_range.^(-2))/siO2.vs_tran;
 [Y sio2.debye.Isort] = sort(sio2.debye.mfp);
@@ -733,12 +735,12 @@ galli = m_si_amor_galli_k_tf;
 %     (8*5.43E-10)*ones(1,100) , linspace(0,2,100),...
 %     ((5.43/2)*1E-10)*ones(1,100) , linspace(0,2,100)...
 %     )
-subplot(2,1,1),...
-semilogx(...
-    sio2.debye.cut(2).mfp(sio2.debye.cut(2).Isort) , cumtrapz(sio2.debye.cut(2).cond(sio2.debye.cut(2).Isort)),...
-    sio2.debye.mfp_film_500(sio2.debye.Isort) , sum(sio2.debye.cut(2).cond) + cumtrapz(sio2.debye.cond_film_500(sio2.debye.Isort)),...
-    regner.sio2.cond(:,1)*1e-6,regner.sio2.cond(:,2)*1.4,'.'...
-    )
+% subplot(2,1,1),...
+% semilogx(...
+%     sio2.debye.cut(2).mfp(sio2.debye.cut(2).Isort) , cumtrapz(sio2.debye.cut(2).cond(sio2.debye.cut(2).Isort)),...
+%     sio2.debye.mfp_film_500(sio2.debye.Isort) , sum(sio2.debye.cut(2).cond) + cumtrapz(sio2.debye.cond_film_500(sio2.debye.Isort)),...
+%     regner.sio2.cond(:,1)*1e-6,regner.sio2.cond(:,2)*1.4,'.'...
+%     )
 subplot(2,1,2),...
 semilogx(...
     debye.cut(2).mfp(debye.cut(2).Isort) , cumtrapz(debye.cut(2).cond(debye.cut(2).Isort)),...   %SED(1).cut(1).mfp(SED(1).cut(1).Isort) , sum(debye.cut(2).cond) + cumtrapz(SED(1).cut(1).cond(SED(1).cut(1).Isort)),...

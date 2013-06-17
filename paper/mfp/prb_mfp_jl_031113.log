@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  14 JUN 2013 21:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  17 JUN 2013 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,19 +620,13 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 7--51
 
 ) (./prb_mfp_jl_031113.aux
 
-LaTeX Warning: Label `EQ:kvib2' multiply defined.
+LaTeX Warning: Label `S:Theory:Thermal' multiply defined.
 
 
-LaTeX Warning: Label `EQ:DB' multiply defined.
+LaTeX Warning: Label `S:Theory:Thermal' multiply defined.
 
 
-LaTeX Warning: Label `EQ:k_sum' multiply defined.
-
-
-LaTeX Warning: Label `EQ:IR' multiply defined.
-
-
-LaTeX Warning: Label `EQ:k_sum' multiply defined.
+LaTeX Warning: Label `S:Theory:Thermal' multiply defined.
 
 
 LaTeX Warning: Label `S:Structure' multiply defined.
@@ -645,24 +639,12 @@ LaTeX Warning: Label `EQ:Dynamical' multiply defined.
 
 
 LaTeX Warning: Label `S:Structure' multiply defined.
-
-
-LaTeX Warning: Label `EQ:Dynamical' multiply defined.
-
-
-LaTeX Warning: Label `EQ:Lorentzian_NMD' multiply defined.
 
 
 LaTeX Warning: Label `S:Life_NMD' multiply defined.
 
 
 LaTeX Warning: Label `S:Diffusivities' multiply defined.
-
-
-LaTeX Warning: Label `EQ:Life' multiply defined.
-
-
-LaTeX Warning: Label `FIG:Lifetimes' multiply defined.
 
 
 LaTeX Warning: Label `FIG:accum' multiply defined.
@@ -702,223 +684,167 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
 
-Package natbib Warning: Citation `von Gutfeld_heat_1964' on page 1 undefined on
- input line 263.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-[1]
-
-Package natbib Warning: Citation `einstein1911' on page 2 undefined on input li
-ne 348.
+Package natbib Warning: Citation `von-Gutfeld_heat_1964' on page 1 undefined on
+ input line 280.
 
 
-Package natbib Warning: Citation `kittel1949' on page 2 undefined on input line
- 348.
-
-
-Package natbib Warning: Citation `cahill1992' on page 2 undefined on input line
- 348.
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 383--391
+Underfull \hbox (badness 2376) in paragraph at lines 304--314
 []\OT1/cmr/m/n/10 The un-der-stand-ing of the ac-cu-mu-la-tion func-tion
  []
 
+[1]
+Underfull \hbox (badness 4792) in paragraph at lines 403--405
+[]\OT1/cmr/m/n/10 experiment from Be-nassi et al. show a $\OML/cmm/m/it/10 k[]$
 
-Underfull \hbox (badness 1881) in paragraph at lines 383--391
-\OT1/cmr/m/n/10 experimentally$[]$ and theoretically.$[]$ How-ever, un-der-
  []
 
 
-Package natbib Warning: Citation `ashcroft' on page 2 undefined on input line 4
-16.
-
-
-Package natbib Warning: Citation `ashcroft' on page 2 undefined on input line 4
-41.
-
-
-Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 2 undefined o
-n input line 468.
+Package natbib Warning: Citation `ashcroft' on page 2 undefined on input line 5
+15.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 491--498
+Underfull \hbox (badness 10000) in paragraph at lines 590--597
 []\OT1/cmr/m/n/10 Using the single-mode re-lax-ation time
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 491--498
+Underfull \hbox (badness 2680) in paragraph at lines 590--597
 \OT1/cmr/m/n/10 approximation$[]$ to solve the Boltz-mann trans-port
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 491--498
+Underfull \hbox (badness 1424) in paragraph at lines 590--597
 \OT1/cmr/m/n/10 and a sin-gle phonon po-lar-iza-tion,(cite) mak-ing the
  []
 
 
-Package natbib Warning: Citation `mcquarrie_statistical_2000' on page 3 undefin
-ed on input line 510.
-
-
-Package natbib Warning: Citation `goicochea_thermal_2010' on page 3 undefined o
-n input line 514.
-
-
-LaTeX Warning: Reference `EQ:M:k_l,sum' on page 3 undefined on input line 608.
+Underfull \hbox (badness 2351) in paragraph at lines 661--664
+[]\OT1/cmr/m/n/10 Under the De-bye ap-prox-i-ma-tion, which as-sumes
+ []
 
 [3]
 
-LaTeX Warning: Command \r invalid in math mode on input line 721.
-
-
-Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 4 undefined o
-n input line 765.
-
-
-Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 4 undefined o
-n input line 768.
-
-
-Package natbib Warning: Citation `mcgaughey_thermal_2004' on page 4 undefined o
-n input line 772.
+LaTeX Warning: Command \r invalid in math mode on input line 801.
 
 [4]
 
-LaTeX Warning: Reference `S:' on page 5 undefined on input line 812.
+LaTeX Warning: Reference `S:' on page 5 undefined on input line 892.
 
-
-Package natbib Warning: Citation `williams_numerical_1989' on page 5 undefined 
-on input line 858.
-
+[5]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps Graphic file (t
 ype eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps>
-Overfull \hbox (2.93001pt too wide) in paragraph at lines 890--892
+ </home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps>
+Overfull \hbox (2.93001pt too wide) in paragraph at lines 980--982
  [] 
  []
 
 
-Package natbib Warning: Citation `hori_phonon_2013' on page 5 undefined on inpu
-t line 912.
-
-[5]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 925.
+LaTeX Warning: Reference `EQ:M:k_AF,HS' on page 6 undefined on input line 1020.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 925.
 
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 969--982
+Underfull \hbox (badness 1248) in paragraph at lines 1068--1081
 []\OT1/cmr/m/n/10 Calculating the struc-ture fac-tors of the su-per-cell
  []
 
 ! Undefined control sequence.
-l.986 S^{L,T}\kvcw
-                   =
+l.1085 S^{L,T}\kvcw
+                    =
 ? 
 ! Undefined control sequence.
-l.987 \sum_{\nu} E^{L,T}\kvcv
-                             
+l.1086 \sum_{\nu} E^{L,T}\kvcv
+                              
 ? 
 ! Undefined control sequence.
-l.988 \delta [\omega-\omega\kgv
-                               ],
+l.1087 \delta [\omega-\omega\kgv
+                                ],
 ? 
+[6]
 ! Undefined control sequence.
-l.993 E^L\kvcv
-               =
-? 
-! Undefined control sequence.
-l.996 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
-                                           
-? 
-! Undefined control sequence.
-l.1002 E^T\kvcv
+l.1092 E^L\kvcv
                 =
 ? 
 ! Undefined control sequence.
-l.1005 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
+l.1095 \hat{\pmb{\kappa}}_{VC} \cdot e\kgvba
+                                            
+? 
+! Undefined control sequence.
+l.1101 E^T\kvcv
+                =
+? 
+! Undefined control sequence.
+l.1104 \hat{\pmb{\kappa}}_{VC} \times e\kgvba
                                              
 ? 
 ! Undefined control sequence.
-l.1017 $\omega\kgv
+l.1116 $\omega\kgv
                   $ and the $3N_a$ components of the eigenvectors, $e\kgvba$.
 ? 
 ! Undefined control sequence.
-l.1017 ...components of the eigenvectors, $e\kgvba
+l.1116 ...components of the eigenvectors, $e\kgvba
                                                   $.
 ? 
 
-LaTeX Warning: Command \r invalid in math mode on input line 1023.
+LaTeX Warning: Command \r invalid in math mode on input line 1122.
 
 ! Undefined control sequence.
-l.1027 factor peak $S^{L,T}\kvcw
+l.1126 factor peak $S^{L,T}\kvcw
                                 $ to a Lorentzian function
 ? 
-[6]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps Graphic
  file (type eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps>
+</home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps>
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps Graphic fil
 e (type eps)
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps>
 
-LaTeX Warning: Reference `EQ:Bmod' on page 7 undefined on input line 1095.
+LaTeX Warning: Reference `EQ:Bmod' on page 7 undefined on input line 1203.
 
 
-LaTeX Warning: Reference `EQ:dwdk' on page 7 undefined on input line 1095.
+LaTeX Warning: Reference `EQ:dwdk' on page 7 undefined on input line 1203.
+
+
+Overfull \hbox (2.11476pt too wide) in alignment at lines 1201--1216
+ [] [][][][][]
+ []
 
 Missing character: There is no œ in font cmr10!
 Missing character: There is no ≥ in font cmr10!
-[7]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps Graphic file 
 (type eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps>
-Overfull \hbox (14.97499pt too wide) in paragraph at lines 1163--1165
+</home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps>
+Overfull \hbox (14.97499pt too wide) in paragraph at lines 1271--1273
  [] 
  []
 
+[7]
 
-Overfull \hbox (70.96283pt too wide) in paragraph at lines 1207--1207
-[] 
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1296.
 
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1296.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+[8]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1230 2 10^
+l.1344 2 10^
             {14} rads/s which corresponds to a peak in the DOS (see Fig. ).
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1231 
+l.1345 
        
 ? 
 
-Overfull \hbox (7.3342pt too wide) in paragraph at lines 1226--1231
+Overfull \hbox (7.3342pt too wide) in paragraph at lines 1340--1345
 \OT1/cmr/m/n/10 10$[]\OML/cmm/m/it/10 rads=swhichcorrespondstoapeakintheDOS\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 seeFig:\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :$ 
  []
@@ -926,27 +852,27 @@ Overfull \hbox (7.3342pt too wide) in paragraph at lines 1226--1231
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1237 1 10^
+l.1351 1 10^
             {14} rads/s, which corresponds to where the DOS peaks in Fig. .
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1240 
+l.1354 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1236--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1354
 []\OT1/cmr/m/n/10 For a-Si, a tran-si-tion to a con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1236--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1354
 \OT1/cmr/m/n/10 stant life-time plateau oc-curs near 1
  []
 
 
-Overfull \hbox (288.7409pt too wide) in paragraph at lines 1236--1240
+Overfull \hbox (288.7409pt too wide) in paragraph at lines 1350--1354
 \OT1/cmr/m/n/10 10$[]\OML/cmm/m/it/10 rads=s; whichcorrespondstowheretheDOSpeak
 sinFig::Similarbehaviorwasobservedformodeldisorderedlattices:[]$ 
  []
@@ -968,8 +894,8 @@ Missing character: There is no ê in font cmr10!
 Missing character: There is no ª in font cmr10!
 Missing character: There is no œ in font cmr10!
 Missing character: There is no Ω in font cmr10!
-[8]
-Underfull \hbox (badness 1210) in paragraph at lines 1314--1326
+
+Underfull \hbox (badness 1210) in paragraph at lines 1464--1476
 []\OT1/cmr/m/n/10 At low fre-quen-cies, the AF-predicted and NMD-
  []
 
@@ -986,41 +912,31 @@ Missing character: There is no ë in font cmr10!
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no í in font cmr10!
 
-Underfull \hbox (badness 2343) in paragraph at lines 1327--1336
+Underfull \hbox (badness 2343) in paragraph at lines 1477--1486
 []\OT1/cmr/m/n/10 In sum-mary, we ob-tain a frequency-independent
  []
 
-
-Package natbib Warning: Citation `allen_' on page 9 undefined on input line 135
-2.
-
+[9]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps Graphic file (t
 ype eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1374--1376
+ </home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps>
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1534--1536
  [] 
  []
 
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_vAF.eps Graphic file (t
-ype eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_vAF.eps>
-Overfull \hbox (12.9675pt too wide) in paragraph at lines 1392--1394
+File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_2.eps Graphic fi
+le (type eps)
+</home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_2.eps>
+Overfull \hbox (6.94499pt too wide) in paragraph at lines 1585--1587
  [] 
  []
 
-File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps Graphic file
- (type eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda.eps>
-Overfull \hbox (6.94499pt too wide) in paragraph at lines 1417--1419
- [] 
- []
+[10]
 
-[9]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1443.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1648.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1443.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1648.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -1028,23 +944,23 @@ Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1481 Debye model. k_
+l.1659 Debye model. k_
                       tot = k_phonon + k_AF. For lack of a rigorous definition
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1483 
+l.1661 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1481--1483
+Underfull \hbox (badness 10000) in paragraph at lines 1659--1661
 []\OT1/cmr/m/n/10 Debye model. k$[]\OML/cmm/m/it/10 ot \OT1/cmr/m/n/10 = \OML/c
 mm/m/it/10 k[]honon \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (111.17499pt too wide) in paragraph at lines 1481--1483
+Overfull \hbox (111.17499pt too wide) in paragraph at lines 1659--1661
 \OML/cmm/m/it/10 k[]F:Forlackofarigorousdefinitionofphononvsdiffusion; wewillde
 finek[]hon \OT1/cmr/m/n/10 =
  []
@@ -1052,22 +968,22 @@ finek[]hon \OT1/cmr/m/n/10 =
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1484 The relative contribution of k_
+l.1662 The relative contribution of k_
                                       phonon and k_AF is also predicted to
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1486 
+l.1664 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1484--1486
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1664
 []\OT1/cmr/m/n/10 The rel-a-tive con-tri-bu-tion of
  []
 
 
-Overfull \hbox (49.4126pt too wide) in paragraph at lines 1484--1486
+Overfull \hbox (49.4126pt too wide) in paragraph at lines 1662--1664
 \OT1/cmr/m/n/10 k$[]\OML/cmm/m/it/10 hononandk[]Fisalsopredictedtobesimilarfors
 iliconnanowires:[]$ 
  []
@@ -1075,55 +991,45 @@ iliconnanowires:[]$
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps Graphic f
 ile (type eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps>
-Overfull \hbox (14.97499pt too wide) in paragraph at lines 1491--1493
+Overfull \hbox (14.97499pt too wide) in paragraph at lines 1669--1671
  [] 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1495 a-Si prediced using the GK method.}
-                                          
+l.1678 Fig. \ref{FIG:diffusivities}). }
+                                       
 ? 
 ! Extra }, or forgotten $.
 \sbox ...hbox {\color@setgroup #2\color@endgroup }
                                                   
-l.1495 a-Si prediced using the GK method.}
-                                          
+l.1678 Fig. \ref{FIG:diffusivities}). }
+                                       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1495 a-Si prediced using the GK method.}
-                                          
+l.1678 Fig. \ref{FIG:diffusivities}). }
+                                       
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1495 a-Si prediced using the GK method.}
-                                          
+l.1678 Fig. \ref{FIG:diffusivities}). }
+                                       
 ? 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps Graph
 ic file (type eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1507--1509
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1690--1692
  [] 
  []
-
-[10]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1514.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1514.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_si.eps Graphic
  file (type eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_si.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1519--1521
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1710--1712
  [] 
  []
 
@@ -1148,29 +1054,38 @@ Missing character: There is no å in font cmr10!
 Missing character: There is no ´ in font cmr10!
 Missing character: There is no Œ in font cmr10!
 Missing character: There is no ∫ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no û in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no û in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ñ in font cmr10!
 [11]
 
-LaTeX Warning: Reference `T:cond_table' on page 12 undefined on input line 1597
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1754.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1754.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no û in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no û in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+
+LaTeX Warning: Reference `T:cond_table' on page 12 undefined on input line 1795
 .
 
 (./prb_mfp_jl_031113.bbl [12]
@@ -1193,61 +1108,25 @@ Missing character: There is no ì in font cmr9!
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 4391) in paragraph at lines 101--106
- []\OT1/cmr/m/n/9 G. D. Ma-han and F. Claro, Phys. Rev. B \OT1/cmr/bx/n/9 38\OT
-1/cmr/m/n/9 ,
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 101--106
- \OT1/cmr/m/n/9 19631969 (1988), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
-rg / doi / 10 .
- []
-
-
-Underfull \hbox (badness 4467) in paragraph at lines 120--125
+Underfull \hbox (badness 3568) in paragraph at lines 101--106
  []\OT1/cmr/m/n/9 A. Ward and D. A. Broido, Phys. Rev. B \OT1/cmr/bx/n/9 81\OT1
 /cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 147--159
- \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
-103 / PhysRevB . 76 .
+Underfull \hbox (badness 4739) in paragraph at lines 101--106
+ \OT1/cmr/m/n/9 085205 (2010), URL $\OT1/cmtt/m/n/9 http : / / link . aps . org
+ / doi / 10 .
  []
 
-
-Underfull \hbox (badness 2401) in paragraph at lines 161--166
- []\OT1/cmr/m/n/9 Y. K. Koh and D. G. Cahill, Phys. Rev. B \OT1/cmr/bx/n/9 76\O
-T1/cmr/m/n/9 ,
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 171.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 171.
-
-Underfull \hbox (badness 1303) in paragraph at lines 168--173
- \OT1/cmr/bx/n/9 34\OT1/cmr/m/n/9 , 5684\OMS/cmsy/m/n/9 n\OT1/cmr/m/n/9 textbac
-kslashtextbackslashtextbackslash965690
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
@@ -1255,51 +1134,35 @@ Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 1603) in paragraph at lines 235--243
- \OT1/cmr/m/n/9 los, In-ter-na-tional Jour-nal of Heat and Mass Trans-
+Underfull \hbox (badness 3492) in paragraph at lines 129--134
+ []\OT1/cmr/m/n/9 G. D. Ma-han and F. Claro, Phys. Rev. B \OT1/cmr/bx/n/9 38\OT
+1/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 235--243
- \OT1/cmr/m/n/9 fer \OT1/cmr/bx/n/9 45\OT1/cmr/m/n/9 , 2439  2447 (2002), ISSN 
-0017-9310, URL
+Underfull \hbox (badness 1867) in paragraph at lines 161--166
+ []\OT1/cmr/m/n/9 Y. K. Koh and D. G. Cahill, Phys. Rev. B \OT1/cmr/bx/n/9 76\O
+T1/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--243
- \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article / pii
- /
+Underfull \hbox (badness 4739) in paragraph at lines 161--166
+ \OT1/cmr/m/n/9 075207 (2007), URL $\OT1/cmtt/m/n/9 http : / / link . aps . org
+ / doi / 10 .
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 247--258
- \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
-103 / PhysRevLett .
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 261--271
- []\OT1/cmr/m/n/9 L. Wiec-zorek, H. Goldsmid, and G. Paul, in \OT1/cmr/m/it/9 T
-her-
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 261--271
- \OT1/cmr/m/it/9 mal Con-duc-tiv-ity 20\OT1/cmr/m/n/9 , edited by D. Has-sel-ma
-n and
- []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 261--271
- \OT1/cmr/m/n/9 J. Thomas, J.R. (Springer US, 1989), pp. 235--241,
- []
-
-
-Underfull \hbox (badness 4120) in paragraph at lines 286--291
+Underfull \hbox (badness 3168) in paragraph at lines 197--202
  []\OT1/cmr/m/n/9 F. Yang and C. Dames, Phys-i-cal Re-view B \OT1/cmr/bx/n/9 87
 \OT1/cmr/m/n/9 ,
  []
 
+
+Underfull \hbox (badness 4739) in paragraph at lines 197--202
+ \OT1/cmr/m/n/9 035437 (2013), URL $\OT1/cmtt/m/n/9 http : / / link . aps . org
+ / doi / 10 .
+ []
+
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
@@ -1307,18 +1170,18 @@ Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--320
+Underfull \hbox (badness 10000) in paragraph at lines 223--231
  []\OT1/cmr/m/n/9 Y. He, D. Dona-dio, J.-H. Lee, J. C.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--320
+Underfull \hbox (badness 10000) in paragraph at lines 223--231
  \OT1/cmr/m/n/9 Gross-man, and G. Galli, ACS Nano \OT1/cmr/bx/n/9 5\OT1/cmr/m/n
 /9 ,
  []
 
 
-Overfull \hbox (87.28595pt too wide) in paragraph at lines 312--320
+Overfull \hbox (90.95256pt too wide) in paragraph at lines 223--231
  \OT1/cmr/m/n/9 1839\OMS/cmsy/m/n/9 n\OT1/cmr/m/n/9 textbackslashtextbackslasht
 extbackslashtextbackslashtextbackslash961844
  []
@@ -1338,47 +1201,172 @@ Missing character: There is no ì in font cmr9!
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 1571) in paragraph at lines 378--383
- \OT1/cmr/m/n/9 49854990 (2000), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
-rg / doi / 10 .
+Underfull \hbox (badness 1057) in paragraph at lines 312--320
+ \OT1/cmr/m/n/9 los, In-ter-na-tional Jour-nal of Heat and Mass Trans-
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 312--320
+ \OT1/cmr/m/n/9 fer \OT1/cmr/bx/n/9 45\OT1/cmr/m/n/9 , 2439  2447 (2002), ISSN 
+0017-9310, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--320
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article /
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 338--348
+ \OT1/cmr/m/it/9 mal Con-duc-tiv-ity 20\OT1/cmr/m/n/9 , edited by D. Has-sel-ma
+n and
  []
 
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--390
+Underfull \hbox (badness 2856) in paragraph at lines 350--355
+ []\OT1/cmr/m/n/9 R. C. Zeller and R. O. Pohl, Phys. Rev. B \OT1/cmr/bx/n/9 4\O
+T1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1418) in paragraph at lines 380--394
+ []\OT1/cmr/m/n/9 C. Mas-ciovec-chio, G. Baldi, S. Caponi, L. Comez,
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 380--394
+ \OT1/cmr/m/n/9 S. Di Fonzo, D. Fioretto, A. Fontana, A. Gessini,
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 380--394
+ \OT1/cmr/m/n/9 S. C. San-tucci, F. Sette, et al., Phys. Rev. Lett.
+ []
+
+[13]
+Missing character: There is no √ in font cmr9!
+Missing character: There is no © in font cmr9!
+
+Underfull \hbox (badness 1939) in paragraph at lines 412--420
+ []\OT1/cmr/m/n/9 B. Ruffl, M. Foret, E. Courtens, R. Vacher, and
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 412--420
+ \OT1/cmr/m/n/9 G. Monaco, Phys. Rev. Lett. \OT1/cmr/bx/n/9 90\OT1/cmr/m/n/9 , 
+095502 (2003),
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 422--426
+ []\OT1/cmr/m/n/9 M. Wyart, EPL (Eu-ro-physics Let-ters) \OT1/cmr/bx/n/9 89\OT1
+/cmr/m/n/9 , 64001
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1968) in paragraph at lines 428--433
+ []\OT1/cmr/m/n/9 J. Fabian and P. B. Allen, Phys. Rev. Lett. \OT1/cmr/bx/n/9 8
+2\OT1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no √ in font cmr9!
+Missing character: There is no ∂ in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 3058) in paragraph at lines 442--447
+ \OT1/cmr/m/n/9 ISSN 1476-1122, URL $\OT1/cmtt/m/n/9 http : / / dx . doi . org 
+/ 10 . 1038 /
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1478) in paragraph at lines 482--489
+ []\OT1/cmr/m/n/9 J. K. Christie, S. N. Taraskin, and S. R. El-liott,
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1052) in paragraph at lines 522--530
+ \OT1/cmr/bx/n/9 119\OT1/cmr/m/n/9 , 8577 (2003), URL $\OT1/cmtt/m/n/9 http : /
+ / link . aip . org / link /
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 542--550
+ []\OT1/cmr/m/n/9 G. C. Sosso, D. Dona-dio, S. Car-a-vati, J. Behler,
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--628
  []\OT1/cmr/m/n/9 S. Plimp-ton, Jour-nal of Com-pu-ta-tional Physics
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 385--390
- \OT1/cmr/bx/n/9 117\OT1/cmr/m/n/9 , 1  19 (1995), ISSN 0021-9991, URL $\OT1/cm
-tt/m/n/9 http :
+Underfull \hbox (badness 10000) in paragraph at lines 623--628
+ \OT1/cmr/bx/n/9 117\OT1/cmr/m/n/9 , 1  19 (1995), ISSN 0021-9991, URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--390
- \OT1/cmtt/m/n/9 / / www . sciencedirect . com / science / article / pii /
+Underfull \hbox (badness 10000) in paragraph at lines 623--628
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article /
  []
 
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
-[13]
-Underfull \hbox (badness 6842) in paragraph at lines 417--423
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 5417) in paragraph at lines 710--716
  []\OT1/cmr/m/n/9 R. Vacher, H. Suss-ner, and M. Schmidt, Solid
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 417--423
- \OT1/cmr/m/n/9 State Com-mu-ni-ca-tions \OT1/cmr/bx/n/9 34\OT1/cmr/m/n/9 , 279
-  (1980), ISSN 0038-
- []
-
-
-Underfull \hbox (badness 4765) in paragraph at lines 417--423
+Underfull \hbox (badness 1694) in paragraph at lines 710--716
  \OT1/cmr/m/n/9 1098, URL $\OT1/cmtt/m/n/9 http : / / www . sciencedirect . com
  / science /
  []
@@ -1389,36 +1377,76 @@ Missing character: There is no ì in font cmr9!
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 1721) in paragraph at lines 435--443
+Underfull \hbox (badness 1163) in paragraph at lines 753--761
  []\OT1/cmr/m/n/9 R. Biswas, A. M. Bouchard, W. A. Kami-taka-hara,
  []
 
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 2582) in paragraph at lines 566--571
+Underfull \hbox (badness 1968) in paragraph at lines 772--777
  []\OT1/cmr/m/n/9 J. Fabian and P. B. Allen, Phys. Rev. Lett. \OT1/cmr/bx/n/9 7
 7\OT1/cmr/m/n/9 ,
  []
 
+[14]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 1571) in paragraph at lines 566--571
- \OT1/cmr/m/n/9 38393842 (1996), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
-rg / doi / 10 .
+Underfull \hbox (badness 10000) in paragraph at lines 793--799
+ []\OT1/cmr/m/n/9 S. N. Taraskin and S. R. El-liott, Philo-soph-i-
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 793--799
+ \OT1/cmr/m/n/9 cal Mag-a-zine Part B \OT1/cmr/bx/n/9 79\OT1/cmr/m/n/9 , 174717
+54 (1999), URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--799
+ \OT1/cmtt/m/n/9 http : / / www . tandfonline . com / doi / abs / 10 . 1080 /
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 4328) in paragraph at lines 844--852
+ []\OT1/cmr/m/n/9 J. Fabian, J. L. Feld-man, C. S. Hell-berg, and
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 2875) in paragraph at lines 854--859
+ \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / www . sciencemag . org / conten
+t / 253 / 5019 /
+ []
+
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 2875) in paragraph at lines 869--877
+ \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / www . tandfonline . com / doi /
+ abs / 10 . 1080 /
  []
 
 Missing character: There is no ‚ in font cmr9!
@@ -1430,76 +1458,12 @@ Missing character: There is no ì in font cmr9!
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 2495) in paragraph at lines 604--612
- []\OT1/cmr/m/n/9 G. C. Sosso, D. Dona-dio, S. Car-a-vati, J. Behler,
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 604--612
- \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
-103 / PhysRevB . 86 .
- []
-
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--619
- \OT1/cmtt/m/n/9 http : / / www . sciencemag . org / content / 253 / 5019 / 539
- .
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1360) in paragraph at lines 629--637
- \OT1/cmr/m/n/9 Feld-man, Philo-soph-i-cal Mag-a-zine Let-ters \OT1/cmr/bx/n/9 
-81\OT1/cmr/m/n/9 , 433439
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1342) in paragraph at lines 656--665
- \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
-103 / PhysRevB . 43 .
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1571) in paragraph at lines 667--672
- \OT1/cmr/m/n/9 18451847 (1990), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
-rg / doi / 10 .
- []
-
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ì in font cmr9!
-
-Underfull \hbox (badness 1721) in paragraph at lines 675--683
+Underfull \hbox (badness 1163) in paragraph at lines 922--930
  []\OT1/cmr/m/n/9 A. M. Bouchard, R. Biswas, W. A. Kami-taka-hara,
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 687--701
- []\OT1/cmr/m/n/9 C. Mas-ciovec-chio, G. Baldi, S. Caponi, L. Comez,
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 687--701
- \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
-103 / PhysRevLett .
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 704--711
- \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
-103 / PhysRevB . 70 .
  []
 
 Missing character: There is no ‚ in font cmr9!
@@ -1509,7 +1473,7 @@ Missing character: There is no ì in font cmr9!
 
 Package natbib Warning: There were undefined citations.
 
-[14] (./prb_mfp_jl_031113.aux)
+[15] (./prb_mfp_jl_031113.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1518,12 +1482,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3828 strings out of 495060
- 49975 string characters out of 3182053
- 164050 words of memory out of 3000000
- 6954 multiletter control sequences out of 15000+200000
+ 3905 strings out of 495060
+ 52256 string characters out of 3182053
+ 140789 words of memory out of 3000000
+ 7032 multiletter control sequences out of 15000+200000
  14510 words of font info for 54 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,25n,27p,309b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,25n,27p,1363b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_031113.dvi (14 pages, 86284 bytes).
+Output written on prb_mfp_jl_031113.dvi (15 pages, 100464 bytes).
