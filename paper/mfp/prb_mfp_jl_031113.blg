@@ -5,13 +5,16 @@ The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-060313.bib
 Warning--I didn't find a database entry for "von-Gutfeld_heat_1964"
+Warning--I didn't find a database entry for "zink_excess_2006"
+Warning--I didn't find a database entry for "scopigno_observation_2001"
 Warning--I didn't find a database entry for "ashcroft"
+Warning--I didn't find a database entry for "feldman_calculations_2002"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in slack_thermal_1979
 You've used 102 entries,
             3411 wiz_defined-function locations,
-            1788 strings with 32151 characters,
+            1791 strings with 32217 characters,
 and the built_in function-call counts, 84599 in all, are:
 = -- 4849
 > -- 3018
@@ -50,4 +53,4 @@ warning$ -- 1
 while$ -- 303
 width$ -- 0
 write$ -- 1112
-(There were 3 warnings)
+(There were 6 warnings)

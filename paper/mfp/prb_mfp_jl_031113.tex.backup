@@ -240,6 +240,8 @@ results.
 \section{\label{S:Introduction}Introduction}
 %--------------------------------------------------------------------------
 
+Thermal transport, MFPs
+
 Thermal transport at scales comparable to phonon wave-
 lengths and mean free paths (MFPs) is presently a topic of
 considerable interest [1–4].\cite{cahill_nanoscale_2003,
@@ -249,178 +251,103 @@ Recently, nanostructured materials
 such as nanowires, superlattices, and nanocomposites with
 strongly reduced thermal conductivities due to phonon
 scattering at interfaces and boundaries have been reported
-and are being assessed for use in thermoelectrics applica-
-tions [3,4,6,7].\cite{hochbaum_enhanced_2008,pernot_precise_2010,
+and are being considered for use in thermoelectrics applications.
+\cite{hochbaum_enhanced_2008,pernot_precise_2010,
 boukai_silicon_2008,poudel_high-thermoelectric_2008}
-
-Another type of size effect can occur if
-there is a temperature gradient over length scales compa-
-rable to phonon MFPs. In this case, local thermal equilib-
-rium does not exist and the transport is nondiffusive.
-
-Transient ballistic transport has been studied using heat-
-pulse techniques at cryogenic temperatures [8].
-\cite{von Gutfeld_heat_1964} 
-
-A nonlocal
-theory of heat transport was proposed as a modification of
-diffusion theory [9].\cite{mahan_nonlocal_1988} 
-
-It was also predicted that the heat
-conduction from a nanoparticle is significantly reduced
-from the Fourier law prediction.\cite{chen_particularities_2000}
-
-raditionally, empirical expressions and
+Recent empirical and first-principles calculations
+show that MFPs of phonons relevant to thermal conduc-
+tivity vary by more than 5 orders of magnitude in crystalline 
+materials.\cite{ward_intrinsic_2010}
+Traditionally, empirical expressions and
 simple relaxation time models have been the only means
 to estimate MFPs [11].\cite{holland_analysis_1963} 
-
-Recent first-principles calculations
-show that MFPs of phonons relevant to thermal conduc-
-tivity vary by more than 5 orders of magnitude [12].
-\cite{ward_intrinsic_2010}
-
-Experimentally, inelastic neutron scattering has been
-used to measure phonon lifetimes in certain materials,
-but this technique is more suited for single crystal samples
-[13].\cite{christianson_phonon_2008} 
-
-An x-ray diffraction and thermoreflectance technique
-can measure ballistic transport in some structures [14].
-\cite{highland_ballistic-phonon_2007}
-
-Koh
-et al. proposed a technique which uses a variation of
-modulation frequency to measure MFPs, but this technique
-is limited by the modulation frequency [15].
-\cite{koh_frequency_2007}
-
-hermal conductivity (k), which relates the heat flux (!
-q)
-and temperature gradient (rT) in a material through the
-Fourier law, !
-q 1⁄4 À krT, results from the cumulative
-contributions of phonons with a broad range of mean free paths
-(MFPs). The spectral MFP distribution is critical in nanostruc-
-tured materials and devices, where size effects selectively scatter
-phonons or create non-Fourier conduction based on individual
-phonon MFPs. Such effects have an impact on heat dissipation in
-nanoelectronics and photonics, as well as the design of
-nanostructured thermoelectric materials with reduced thermal
-conductivity1–9. Because of its ubiquity in electronics, crystalline
-silicon (c-Si) has emerged as the prototypical material of study,
-yet controversy persists on what phonon MFPs dominate thermal
-transport, even in the bulk material. Kinetic theory defines the
-thermal conductivity as k 1⁄4 Cvs LG =3, where C is the volumetric
-heat capacity, vs is the speed of sound and LG is the average
-(or grey) MFP. For c-Si, kinetic theory yields LG 1⁄4 41 nm at a
-temperature (T) of 300 K10. This grey approximation severely
-underestimates the MFPs of the phonons that contribute
-significantly to thermal conductivity because (i) dispersion
-makes vs an overestimate of the average group velocity of
-acoustic phonons and (ii) optical phonons contribute to C but
-negligibly to bulk k (ref. 11). Thermal conductivity measurements
-of thin silicon films indicate that an effective MFP of 300 nm at
-T 1⁄4 300 K is more appropriate12.
 
 The thermal conductivity of amorphous solids display 
 unique temperature dependance compared to ordered solids.
 \cite{freeman_thermal_1986} 
 Cahill argued that the lattice vibrations 
-in a disordered crystal are essentially the same as those of an amorhous 
-solid.
-\cite{cahill_lower_1992} 
+in a disordered crystal are essentially the same as those of an 
+amorphous solid.\cite{cahill_lower_1992} 
 
-Measurements by all the refs from Galli paper, including Moon.
-\cite{wada_thermal_1996,zink_thermal_2006,yang_anomalously_2010,
-cahill_thermal_1994,kuo_thermal_1992,moon_thermal_2002,liu_high_2009}
+Non-local
 
-The goal of this work is to predict the MFP of vibrational modes in 
-disordered systems. Simple Lennard-Jones systems will be studied.  A 
-perfect LJ crystal are alloyed with a species of differing mass and 
-amorphous samples are prepared. Thermal transport will be studied to 
-quantify and characterize the ordered and 
-disordered contributions to lattice thermal conductivity. In particular, a 
-more rigorous way to classify vibrational modes in disordered alloys and 
-amorphous samples as phonon-like or diffuson will be investigated. These 
-results will be compared to the phenomenological Einstein and Cahill-Pohl 
-models,\cite{einstein1911,kittel1949,cahill1992}.
+Another type of size effect can occur if
+there is a temperature gradient over length scales compa-
+rable to phonon MFPs. In this case, local thermal equilib-
+rium does not exist and the transport is nondiffusive.
+Transient ballistic transport has been studied using heat-
+pulse techniques at cryogenic temperatures [8].
+\cite{von-Gutfeld_heat_1964} 
+A nonlocal
+theory of heat transport was proposed as a modification of
+diffusion theory [9].\cite{mahan_nonlocal_1988} 
+It was also predicted that the heat
+conduction from a nanoparticle is significantly reduced
+from the Fourier law prediction.\cite{chen_particularities_2000}
 
-The dominant heat carriers in a-SiO$_2$ are shown to be diffusons: 
-non-propagating vibrational modes which carry a significant amount 
-of heat. The contribution of low-frequency modes to heat transport 
-is shown to be 
+Experimental
 
-For modeling the low frequency vibrational modes in a-Si, two types of 
-scattering mechanisms are considered: (a) phonon-phonon 
-scattering
+Broadband Techniques
 
-The vibrational modes in these systems are
-characterized in the limit of propagating (phonon) and 
-non-propagating (diffuson) modes by predicting the mode lifetimes and 
-estimating their mean free paths. Estimating an effective dispersion
-relation is necessary for calculating an effective group velocity for 
-disordered, which is crucial for transforming lifetimes to MFPs.
-The spectrum of phonon MFPs and the accumulated thermal conductivity 
-are predicted for a model of amorphous silicon. 
-
-
-In this work, we consider two ``stiff glass'' amorphous systems:
-Structural relxation phenomena do not dominate the dynamics 
-of the.\cite{gotze_evolution_2000} 
-
-In this paper, primarily states are studied where T is so
-far below T c and ␸ so far above ␸ c that structural-relaxation
-phenomena do not dominate the dynamics within the win-
-dow of interest. These states are referred to as stiff-glass
-states. The dynamical window considered is the one of
-normal-condensed-matter physics, i.e., spectra are discussed
-within a two-decade regime for the frequency ␻ around and
-below the Debye frequency ␻ D .
-
-Predictions of thermal 
-conductivity using a boundary scattering model demonstrates  
-
-
-Measurements of a-Si thin films 
-demonstrate a film-thickness dependance of the thermal conductivtiy.
-
-\cite{wada_thermal_1996} find 1.8 W/m-K, similar to the SW results 
-presented here.
-
-Yang et al find as high as 7 W/m-K.\cite{yang_anomalously_2010}
-
-Liu et al. find a film dependanc between 60 and 80 microns.
-\cite{liu_high_2009} Claim the HWCVD method and hydrogenation 
-creates the most ordered a-Si.
-
-zink shows no plateau at low T for a-Si thin film, indicating 
-the scattering of long-wavelength phonon-like modes 
-by the boundaries.\cite{zink_thermal_2006}
-
-Show film thickness dependance up to 10 microns.
-\cite{kuo_thermal_1992}
-
-4.8 W/m-K.\cite{hasselman_thermal_1989}
-
-minnich tudies c-Si\cite{minnich_thermal_2011}
+Experimentally, inelastic neutron scattering has been
+used to measure phonon lifetimes in certain materials,
+but this technique is more suited for single crystal samples
+[13].\cite{christianson_phonon_2008} 
+Koh et al. proposed a technique which uses a variation of
+modulation frequency to measure MFPs, but this technique
+is limited by the modulation frequency [15].
+\cite{koh_frequency_2007}
+An x-ray diffraction and thermoreflectance technique
+can measure ballistic transport in some structures [14].
+\cite{highland_ballistic-phonon_2007}
 
 The understanding of the accumulation function for bulk 
 crystalline has made significant advancement experimentally
-\cite{}
+\cite{minnich_thermal_2011}
 and 
 theoretically.\cite{yang_mean_2013} However, understanding 
 of accumulation in amorphous systems is still not 
 well understood.
 \cite{feldman_thermal_1993,feldman_numerical_1999,he_thermal_2011}
-
 recent measurements of the accumulation function by Regner .
 \cite{regner_broadband_2013}
+
+Film Thickness Dependance
 
 Measurements of the thermal condutivity of a-SiO$_2$ thin 
 films show no significant dependance on the film thickness. 
 \cite{lee_heat_1997,yamane_measurement_2002} 
+Measurements by all the refs from Galli paper, showing strong
+dependance on film thickness.
+\cite{wada_thermal_1996,zink_thermal_2006,yang_anomalously_2010,
+cahill_thermal_1994,kuo_thermal_1992,moon_thermal_2002,liu_high_2009}
 
-w4 vs w2
+a-Si
+
+\cite{wada_thermal_1996} find 1.8 W/m-K, similar to the SW results 
+presented here.
+Yang et al find as high as 6 W/m-K.\cite{yang_anomalously_2010}
+Liu et al. find a film dependanc between 60 and 80 microns.
+\cite{liu_high_2009} Claim the HWCVD method and hydrogenation 
+creates the most ordered a-Si.
+zink shows no plateau at low T for a-Si thin film, indicating 
+the scattering of long-wavelength phonon-like modes 
+by the boundaries.\cite{zink_thermal_2006}
+Show film thickness dependance up to 10 microns.
+\cite{kuo_thermal_1992}
+4.8 W/m-K.\cite{hasselman_thermal_1989}
+
+
+%--------------------------------------------------------------------------
+\subsection{\label{S:Theory:Thermal}Low-frequency Scalings: w4 vs w2}
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\subsection{\label{S:Theory:Thermal}w4}
+%--------------------------------------------------------------------------
+
+w4: as predicted for phonons scattering off point defects under 
+the Debye approximation.
 
 Initial work by Zeller and Pohl\cite{zeller_thermal_1971} 
 and later by Grabner et al.\cite{graebner_phonon_1986}  
@@ -442,24 +369,32 @@ stronger) while demonstrating that w2-like scaling
 can be mistaken by considering large intervals of 
 frequency and wavelength.\cite{ruffle_observation_2003}
 
-
-
-w4, as predicted for phonons scattering off point defects under 
-the Debye approximation.
 sound-wave scattering in a-SiO$_2$ shows Rayleigh type 
 \cite{wischnewski_sound-wave_1998}
 numerical study of disordered lattices with varying coordination 
 show Rayleigh type scattering.\cite{wyart_scaling_2010} 
 
-w2, as predicted for phonons scattering off other phonon, where 
+%--------------------------------------------------------------------------
+\subsection{\label{S:Theory:Thermal}w2}
+%--------------------------------------------------------------------------
+
+w2: as predicted for phonons scattering off other phonon, where 
 the Debye approximation is often used. 
 
-Fabian and Allen predict w2 dependance for model of a-Si.\cite{fabian_theory_1999}
+Low temperature conductivity and specific heat measurements demonstrate 
+that the propagating modes in a-Si and doped a-Si follow 
+$\Lambda \propto \omega^{-2}$.
+\cite{zink_thermal_2006,zink_excess_2006} 
 
-shows $\tau ~ \omega^{-2}$ for a hard-sphere model.\cite{gotze_evolution_2000} 
+Fabian and Allen predict w2 dependance for model of a-Si.
+\cite{fabian_theory_1999}
+
+shows $\tau ~ \omega^{-2}$ for a hard-sphere model.
+\cite{gotze_evolution_2000} 
 shows w2 scaling of the inverse linewdiths from structure factor of model 
 glasses.\cite{shintani_universal_2008}
-shows w2 for long, w2.5 for tran for a model of a-SiO2.\cite{horbach_high_2001}
+shows w2 for long, w2.5 for tran for a model of a-SiO2.
+\cite{horbach_high_2001}
 
 review paper on aiSO2: models and experimental data for a-SiO2 shows w2 for 
 short wavelength, high frequency modes and scaling near w2.5 at low frequency.
@@ -467,17 +402,19 @@ short wavelength, high frequency modes and scaling near w2.5 at low frequency.
 
 Using theory based on the random spatial variation of the shear modulus, 
 a transition from w4 to w2 scaling is observed at frequencies much lower
-than the so-called ``Boson peak`` frequency.\cite{schirmacher_acoustic_2007}
+than the so-called ``Boson peak`` frequency.
+\cite{schirmacher_acoustic_2007}
 
-experiment from Benassi et al. show a Q^2 dependance.\cite{benassi_evidence_1996}
+experiment from Benassi et al. show a $k^2$ 
+dependance.\cite{benassi_evidence_1996}
 
 Experimentally, for Q larger
-than 1 nm 1 , all glasses studied so far show / Qx , with x
+than 1 nm 1 , all glasses studied so far show $\tau \propto k^x$ , with x
 very close to 2, see Ref. \citenum{masciovecchio_evidence_2006} for a review. 
 
 a-Si
-Christie et al. find a best fit of w2.5 for a model of a-Si, although adequate 
-fits to w2 and w4 were shown.\cite{christie_vibrational_2007} 
+Christie et al. find a best fit of w2.5 for a model of a-Si, although 
+adequate fits to w2 and w4 were shown.\cite{christie_vibrational_2007} 
 
 The nature of vibrations in amorphous systems in this
 frequency region is not yet fully understood. It is known
@@ -504,8 +441,70 @@ the intermediate value
 of exponent 2.54 found for the transverse polarization
 by Christie et al.\cite{christie_vibrational_2007} and others.
 
+In conclusion we have shown that in a system without any
+periodic order such as a monatomic liquid, one observes in-
+elastic excitations that can be interpreted as the noncrystal-
+line counterpart of Umklapp peaks.\cite{scopigno_observation_2001}
 
-\cite{sheng_heat_1991,feldman_numerical_1999}
+
+The goal of this work...
+
+In this work, we consider two ``stiff glass'' amorphous systems:
+Structural relxation phenomena do not dominate the dynamics 
+of the.\cite{gotze_evolution_2000} 
+
+For modeling the low frequency vibrational modes, two types of 
+scattering mechanisms are considered: (a) phonon-phonon 
+scattering (b) Rayleigh scattering.
+
+The vibrational modes in these systems are
+characterized in the limit of propagating (phonon) and 
+non-propagating (diffuson) modes by predicting the mode lifetimes and 
+estimating their mean free paths. 
+The spectrum of vibrational MFPs and the accumulated thermal conductivity 
+are predicted for a-SiO2 and a-Si. 
+The dominant heat carriers in a-SiO$_2$ are shown to be diffusons: 
+non-propagating vibrational modes which carry a significant amount 
+of heat. For a-Si, ...
+
+% The goal of this work is to predict the MFP of vibrational modes in 
+% disordered systems. Simple Lennard-Jones systems will be studied.  A 
+% perfect LJ crystal are alloyed with a species of differing mass and 
+% amorphous samples are prepared. Thermal transport will be studied to 
+% quantify and characterize the ordered and 
+% disordered contributions to lattice thermal conductivity. In particular, a 
+% more rigorous way to classify vibrational modes in disordered alloys and 
+% amorphous samples as phonon-like or diffuson will be investigated. These 
+% results will be compared to the phenomenological Einstein and Cahill-Pohl 
+% models,\cite{einstein1911,kittel1949,cahill1992}.
+
+% hermal conductivity (k), which relates the heat flux (!
+% q)
+% and temperature gradient (rT) in a material through the
+% Fourier law, !
+% q 1⁄4 À krT, results from the cumulative
+% contributions of phonons with a broad range of mean free paths
+% (MFPs). The spectral MFP distribution is critical in nanostruc-
+% tured materials and devices, where size effects selectively scatter
+% phonons or create non-Fourier conduction based on individual
+% phonon MFPs. Such effects have an impact on heat dissipation in
+% nanoelectronics and photonics, as well as the design of
+% nanostructured thermoelectric materials with reduced thermal
+% conductivity1–9. Because of its ubiquity in electronics, crystalline
+% silicon (c-Si) has emerged as the prototypical material of study,
+% yet controversy persists on what phonon MFPs dominate thermal
+% transport, even in the bulk material. Kinetic theory defines the
+% thermal conductivity as k 1⁄4 Cvs LG =3, where C is the volumetric
+% heat capacity, vs is the speed of sound and LG is the average
+% (or grey) MFP. For c-Si, kinetic theory yields LG 1⁄4 41 nm at a
+% temperature (T) of 300 K10. This grey approximation severely
+% underestimates the MFPs of the phonons that contribute
+% significantly to thermal conductivity because (i) dispersion
+% makes vs an overestimate of the average group velocity of
+% acoustic phonons and (ii) optical phonons contribute to C but
+% negligibly to bulk k (ref. 11). Thermal conductivity measurements
+% of thin silicon films indicate that an effective MFP of 300 nm at
+% T 1⁄4 300 K is more appropriate12.
 
 %--------------------------------------------------------------------------
 \section{\label{S:Theory}Theoretical Formulation}
@@ -1177,6 +1176,14 @@ frequency is also dominated by transverse sound speed.\cite{vitelli_heat_2010}
 The transverse sound speed predicted by the DOS is used for both 
 a-SiO$_2$ and a-Si throuhout the rest of this work. 
 
+As in other studies we find that there
+is a positive dispersion of the longitudinal branch
+initially and then there is the usual negative dis-
+persion at higher frequencies. The onset of this
+positive dispersion seems to be approximately as-
+sociated with the Ioffe–Regel crossover for trans-
+verse polarization.\cite{feldman_calculations_2002}
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -1583,7 +1590,7 @@ $L$.
 
 \begin{equation}\label{EQ:LambdaAF}
 \begin{split}
-\Lambda_{AF} = 3 (D_{AF,i}\tau_{NMD})^{1/2},
+\Lambda_{AF} = 3 (D_{AF,i}(\omega)\tau(\omega))^{1/2},
 \end{split}
 \end{equation}
 
@@ -1602,7 +1609,12 @@ and from NMD and AF using Eq. \eqref{EQ:LambdaAF}. Good agreement
 between the two methods is seen at low frequency, indicating that the 
 modes are propagating and Eqs. \eqref{EQ:Dtau} and \eqref{EQ:DLambda} 
 are valid. The majority of MFPs in the intermediate the high-frequency range 
-lie between }
+lie between the simulation box size $L$ and the bond distance $a$. The 
+inset compares the representative mode velocities Eq. \eqref{EQ:vAF} and 
+the sound speeds. For a-Si, $v_{AF}$ decreases with increasing freuquency, 
+similar to the behavior of a monatomic crystal.(cite) The MFPs and 
+mode velocities only approach zero at the highest frequencies, which is 
+an indication that the modes are localized.}
 \end{figure}
 %--------------------------------------------------------------------------
 
@@ -1676,7 +1688,12 @@ be similar for silicon nanowires.\cite{donadio_atomistic_2009}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:cond} Thermal conductivities of a-SiO^2 and 
-a-Si prediced using the GK method.}
+a-Si prediced using the GK method. For a-SiO2, the thermal conductivity 
+is size-independent, indicating there is no important contribution 
+from phonons (Eq. \eqref{EQ:kph}). For a-Si, there is a clear size 
+dependance, which is accounted for by using Eq. \eqref{EQ:kph} and 
+an Umklapp extrapolation (Eq. \eqref{EQ:Dw2}, 
+Fig. \ref{FIG:diffusivities}). }
 \end{figure}
 %--------------------------------------------------------------------------
 
@@ -1691,8 +1708,16 @@ a-Si prediced using the GK method.}
 {/home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps}
 \vspace*{-5mm}
 \end{center}
-\caption{\label{FIG:accum} film thickness dependant thermal 
-conductivity of a-Si from experiment.}
+\caption{\label{FIG:accum} Thermal conductivity accumulations and thermal 
+conducitivities versus film thickness for a-SiO2 (top plot) and a-Si 
+(bottom plot) from: (i) predictions from this work, (ii) recent broadband 
+measurements of Regner et al, (iii) various experimental measurements 
+for a wide-range of a-Si film thicknesses. While the thermal conductivity 
+predictions for a-SiO2 and a-Si in this work seem to be well-characterized 
+by Umklapp type scaling of the MFPs (Eq. \eqref{EQ:Dw2}), this scaling 
+is not able to predict the dramatic increase of thermal conducitivity 
+with increasing film thickness from experimentl measurements of a-Si thin 
+films. }
 \end{figure}
 %--------------------------------------------------------------------------
 

@@ -113,6 +113,18 @@
 \begin{smallmatrix} &\pmb{\kappa} &b \\ &\nu &\alpha\end{smallmatrix}
 \mspace{-2.0mu};t\right)}
 %--------------------------------------------------------------------------
+
+
+\newcommand{\kgvba}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix} &\pmb{\kappa}=\pmb{0} &b \\ &\nu 
+&\alpha\end{smallmatrix}\mspace{-3.0mu}\right)}
+
+\newcommand{\kgv}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa}=\mathbf{0} \\&\nu\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+%--------------------------------------------------------------------------
+
 \newcommand{\kvbatp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
 \begin{smallmatrix} &\pmb{\kappa} &b' \\ &\nu &\alpha'\end{smallmatrix}
 \mspace{-2.0mu};t\right)}
@@ -157,6 +169,10 @@
 \begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
 \mspace{-2.0mu};t\right)}
 
+\newcommand{\kgvt}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa=0} \\&\nu\end{smallmatrix}
+\mspace{-2.0mu};t\right)}
+
 \newcommand{\kpvt}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
 \begin{smallmatrix}&\pmb{\kappa}^{'} \\&\nu\end{smallmatrix}
 \mspace{-2.0mu};t\right)}
@@ -167,6 +183,10 @@
 
 \newcommand{\kv}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
 \begin{smallmatrix}&\pmb{\kappa} \\&\nu\end{smallmatrix}
+\mspace{-3.0mu}\right)}
+
+\newcommand{\kw}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
+\begin{smallmatrix}&\pmb{\kappa} \\&\omega\end{smallmatrix}
 \mspace{-3.0mu}\right)}
 
 \newcommand{\kpvp}{\mspace{-4.0mu}\left(\mspace{-8.0mu}
@@ -381,6 +401,11 @@ show Rayleigh type scattering.\cite{wyart_scaling_2010}
 w2: as predicted for phonons scattering off other phonon, where 
 the Debye approximation is often used. 
 
+Low temperature conductivity and specific heat measurements demonstrate 
+that the propagating modes in a-Si and doped a-Si follow 
+$\Lambda \propto \omega^{-2}$.
+\cite{zink_thermal_2006,zink_excess_2006} 
+
 Fabian and Allen predict w2 dependance for model of a-Si.
 \cite{fabian_theory_1999}
 
@@ -435,6 +460,11 @@ lithium diborate,\cite{ruffle_observation_2003} and for
 the intermediate value
 of exponent 2.54 found for the transverse polarization
 by Christie et al.\cite{christie_vibrational_2007} and others.
+
+In conclusion we have shown that in a system without any
+periodic order such as a monatomic liquid, one observes in-
+elastic excitations that can be interpreted as the noncrystal-
+line counterpart of Umklapp peaks.\cite{scopigno_observation_2001} 
 
 
 The goal of this work...
@@ -646,13 +676,13 @@ An equivalent physical picture in terms of a scattering length
 for the thermal diffuivity is
 \begin{equation}\label{EQ:DLambda}
 \begin{split}
-D(\omega) = \frac{1}{3}v_g \Lambda(\omega),
+D(\omega) = \frac{1}{3}v_g(\omega) \Lambda(\omega),
 \end{split}
 \end{equation}
 where $\Lambda$ is the phonon mean free path (MFP), defined as 
 \begin{equation}\label{EQ:Lambda}
 \begin{split}
-\Lambda(\omega) = v^{2}_{g} \tau(\omega).
+\Lambda(\omega) = v_{g}(\omega) \tau(\omega).
 \end{split}
 \end{equation}
 Both defintions Eqs. and are only valid in the propagating 
@@ -977,7 +1007,7 @@ while results for disorded lattices demonstrate
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_DOS.eps}
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_2.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:DOS} Vibrational DOS predicted for our 
@@ -1042,11 +1072,11 @@ sound speed is markedly increased $v_{s,T} = 4,740$ m/s.
 The transverse and logitudinal sound speeds of a material can be related 
 to the material's elastic constants, which determine the bulk ($G$) and 
 shear ($K$) moduli.(cite) The transverse sound speed is given by(cite)  
-\begin{equation}\label{EQ:Dynamical}
+\begin{equation}\label{EQ:vs_T_elas}
 v_{s,T} = \frac{G}{\rho}^{1/2},
 \end{equation}
 and the longitudinal by
-\begin{equation}\label{EQ:Dynamical}
+\begin{equation}\label{EQ:vs_L_elas}
 v_{s,L} = \frac{4G + 3K}{3\rho}^{1/2}.
 \end{equation}
 We use the bulk and shear moduli defined in terms of the elastic 
@@ -1056,8 +1086,8 @@ elastic constants are reported in Table . It is clear that the DOS of
 our models for a-Si and a-SiO$_2$ are characterized by using the 
 transverse sound speeds, rather than an averaging of the transverse 
 and longitudinal, 
-\begin{equation}\label{EQ:Dynamical}
-v_{s} = \frac{1}{3}v_{s,L} + \frac{1}{3}v_{s,T}. 
+\begin{equation}\label{EQ:vs_avg}
+v_{s} = \frac{2}{3}v_{s,L} + \frac{1}{3}v_{s,T}. 
 \end{equation}
 This is backed up by theoretical(cite) and experimental(cite) results. 
 
@@ -1082,27 +1112,27 @@ the dispersion relation from experimentally derived predictions.
 The structure factor at a VC wave vector 
 $\pmb{\kappa}_{VC}$ is defined as\cite{allen_diffusons_1999} 
 \begin{equation}\label{EQ:SLT}
-S^{L,T}\kvcw = 
-\sum_{\nu} E^{L,T}\kvcv
-\delta [\omega-\omega\kgv],
+S^{L,T}\kw = 
+\sum_{\nu} E^{L,T}\kv
+\delta (\omega-\omega\kgv),
 \end{equation}
 where the summation is over the Gamma modes, $E^{T}$ refers 
 to the transverse polarization and is defined as
 \begin{equation}\label{EQ:EL}
-E^L\kvcv = 
+E^L\kv = 
 \left|
 \sum_{b} 
-\hat{\pmb{\kappa}}_{VC} \cdot e\kgvba 
-\EXP{i\pmb{\kappa}_{VC}\cdot\pmb{r}_0\ab{l=0}{b}} 
+\hat{\pmb{\kappa}} \cdot e\kgvba 
+\EXP{i\pmb{\kappa}\cdot\pmb{r}_0\ab{l=0}{b}} 
 \right|^2
 \end{equation}
 and $E^{L}$ refers to the longitudinal polarization and is defined as
 \begin{equation}\label{EQ:ET}
-E^T\kvcv = 
+E^T\kv = 
 \left|
 \sum_{b} 
-\hat{\pmb{\kappa}}_{VC} \times e\kgvba 
-\EXP{i\pmb{\kappa}_{VC}\cdot\pmb{r}_0\ab{l=0}{b}} 
+\hat{\pmb{\kappa}} \times e\kgvba 
+\EXP{i\pmb{\kappa}\cdot\pmb{r}_0\ab{l=0}{b}} 
 \right|^2.
 \end{equation}
 In Eqs. \eqref{EQ:EL} and \eqref{EQ:ET}, the $b$ summations are 
@@ -1126,8 +1156,8 @@ by fitting each structure
 factor peak $S^{L,T}\kvcw$ to a Lorentzian function
 \begin{equation}\label{EQ:Lorentzian_SLT}
 \begin{split}
-S^{L,T}(\kappa,\omega) = 
-\frac{C_0(\nu)}{[\omega_0(\kappa)-\omega]^2+\Gamma^2(\kappa)},
+S^{L,T}\kw = 
+\frac{C_0(\pmb{\kappa})}{[\omega_0(\pmb{\kappa})-\omega]^2+\Gamma^2(\pmb{\kappa})},
 \end{split}
 \end{equation}
 where $C_0(\nu)$ is a constant related to the DOS.
@@ -1166,6 +1196,14 @@ frequency is also dominated by transverse sound speed.\cite{vitelli_heat_2010}
 The transverse sound speed predicted by the DOS is used for both 
 a-SiO$_2$ and a-Si throuhout the rest of this work. 
 
+As in other studies we find that there
+is a positive dispersion of the longitudinal branch
+initially and then there is the usual negative dis-
+persion at higher frequencies. The onset of this
+positive dispersion seems to be approximately as-
+sociated with the Ioffe–Regel crossover for trans-
+verse polarization.\cite{feldman_calculations_2002}
+
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
@@ -1200,7 +1238,7 @@ $v_{s,T,elas} = 2,541$ , $v_{s,L,elas} = 4,761 $ (see Section ).
 \begin{ruledtabular}
 \begin{tabular}{llllll}
 \hline
-method~~~~~~~\vline $B_{mod}$ (Eq. \eqref{EQ:Bmod}) \vline $S_{T,L}$ (Eq. \eqref{EQ:SLT}, \eqref{EQ:dwdk} )  \vline DOS (Eq. \eqref{EQ:DOS_debye})  \\
+method~~~~~~~\vline Eqs. \eqref{EQ:vs_T_elas}, \eqref{EQ:vs_L_elas} ~~~\vline Eqs. \eqref{EQ:SLT}, \eqref{EQ:vs_dwdk} ~~~~~~~~ \vline DOS Eq. \eqref{EQ:DOS_debye}  \\
 \hline
 a-SiO$_2$  \\
 \hline
@@ -1301,8 +1339,8 @@ mode coordinate time derivative,
 \cite{dove_introduction_1993}
 \begin{equation}\label{EQ:qdot}
 \begin{split}
-\dot{q}\kvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}
-\lbt e^*\kvba\EXP{i\pmb{\kappa}\cdot\mathbf{r}_0\ab{l}{0}}.
+\dot{q}\kgvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}
+\lbt e^*\kgvba\EXP{i(\pmb{0}\cdot\mathbf{r}_0\ab{l}{0}}.
 \end{split}
 \end{equation}
 Here, $m_b$ is the mass of the $b_{th}$ atom in the unit cell, 
@@ -1315,7 +1353,7 @@ from
 \begin{split}
 \Phi(\nu,\omega) = 
 \lim_{\tau_0\rightarrow\infty}\frac{1}{2\tau_0}
-\left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kvt
+\left|\frac{1}{\sqrt{2\pi}}\int_{0}^{\tau_0}\dot{q}\kgvt
 \exp(-i\omega t)dt\right|^2,
 \end{split}
 \end{equation}
@@ -1520,7 +1558,7 @@ Using the NMD-predicted lifetimes and AF-predicted diffusivities, a
 representative velocity can be computed, 
 \begin{equation}\label{EQ:vAF}
 \begin{split}
-v_{AF} = \frac{D_{i}}{2\Gamma(\nu)},
+v_{AF}(\omega) = \left(3\frac{D_{AF,i}(\omega)}{\tau(\omega)}\right)^{1/2},
 \end{split}
 \end{equation}
 and is shown in the inset of Fig. . For a-Si, $v_{AF}$ follows a 
@@ -1531,7 +1569,7 @@ for group velocities in a simple monatomic crystal.(cite)
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_D_2.eps}
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_D_3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:diffusivities} vibrational mode diffusivities 
@@ -1572,7 +1610,7 @@ $L$.
 
 \begin{equation}\label{EQ:LambdaAF}
 \begin{split}
-\Lambda_{AF} = 3 (D_{AF,i}(\omega)\tau(\omega))^{1/2},
+\Lambda_{AF}(\omega) = (3D_{AF,i}(\omega)\tau(\omega))^{1/2},
 \end{split}
 \end{equation}
 
@@ -1582,7 +1620,7 @@ $L$.
 \begin{figure}
 \begin{center}
 \includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_2.eps}
+{/home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_3.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:mfp} vibrational MFPs predicted from NMD using Eq. 
@@ -1637,7 +1675,7 @@ Assuming the thermal conductivity form Eq.  for the lowest frequency modes in
 the system, the thermal conductivity as a function of the system size 
 takes the form
 \begin{equation}\label{EQ:k0}
-\frac{k(N_0)}{k_{bulk}} = 1 - \frac{c_0}{N_0},
+\frac{k(L)}{k_{bulk}} = 1 - \frac{c_0}{L},
 \end{equation}
 
 ``We find that we cannot define a wave vector for the
@@ -1682,6 +1720,10 @@ Fig. \ref{FIG:diffusivities}). }
 %--------------------------------------------------------------------------
 \subsection{\label{S:Accumulation}Accumulation}
 %--------------------------------------------------------------------------
+
+\begin{equation}\label{EQ:matth}
+\frac{1}{\Lambda_{eff}(\omega)} = \frac{1}{\Lambda(\omega)} + \frac{1}{t_f}  ,
+\end{equation}
 
 %--------------------------------------------------------------------------
 \begin{figure}
