@@ -1,0 +1,56 @@
+md conp
+title
+Example of a shell model MD run for quartz
+end
+#
+#  Structure
+#
+cell
+   4.833380   4.833380   5.345010  90.000000  90.000000 120.000000
+fractional    3
+Si    core 0.4637458 0.0000000 1/3       4.00000000 1.0000 0.00000              
+O     core 0.4081548 0.2788194 0.2249952 0.86902000 1.0000 0.00000              
+O     shel 0.4280757 0.2762203 0.2130847 -2.8690199 1.0000 0.00000              
+space
+152
+#
+#  Potentials
+#
+species   3
+Si     core    4.000000            
+O      core    0.869020            
+O      shel   -2.869020            
+buck     
+Si    core O     shel    1283.907000 0.320520   10.66158  0.000 12.000
+buck     
+O     shel O     shel   22764.000000 0.149000   27.87900  0.000 12.000
+spring
+O        74.920000
+three      
+Si    core O     shel O     shel   2.097240 109.470000  1.800  1.800  3.500
+#
+#  Use a 1 Angstrom taper on the short range potential for smoothness
+#
+cutp 12.0 1.0
+#
+#  MD options
+#
+integrator leapfrog verlet
+ensemble npt 0.05 0.05
+temperature 300
+equil 0.5 ps
+produ 0.20 ps
+timestep 0.0001 ps
+sample 0.01 ps
+write 0.01 ps
+#
+#  Choice of algorithms :
+#
+#  Comment/uncomment one of the two following lines
+shellmass 
+O 0.1
+#iterations 5
+#
+#  End of choice
+#
+output trajectory example16.trg

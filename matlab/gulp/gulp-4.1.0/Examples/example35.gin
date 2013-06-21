@@ -1,0 +1,24 @@
+grad conp prop
+cell
+4.090000   4.090000   4.090000  90.000000  90.000000  90.000000
+fractional    4
+Ag    core 0.0000000 0.0000000 0.0000000 0.00000000 1.0000 0.00000              
+Ag    core 0.0000000 0.5000000 0.5000000 0.00000000 1.0000 0.00000              
+Ag    core 0.5000000 0.0000000 0.5000000 0.00000000 1.0000 0.00000              
+Ag    core 0.5000000 0.5000000 0.0000000 0.00000000 1.0000 0.00000              
+#
+#  Voter-Chen Ag potentials
+#
+species
+Ag core  0.000
+morse 
+Ag core Ag core 0.6721 1.8260 2.5700 0.0 5.542
+cutp 5.542 voter 
+manybody
+Ag core Ag core  0.0 5.5420
+eam_density voter
+Ag core   1.0 3.9060
+eam_potential_shift 
+Ag core Ag core 10.4262977 3.9060 5.542
+eam_functional numeric
+Ag core ag.dbout

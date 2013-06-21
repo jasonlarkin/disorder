@@ -1,0 +1,53 @@
+opti conv prop phon nodens pot noauto 
+
+cartesian
+H1 core 0.000000 0.000000 0.000000 0.083000 1.000000 0.0 1 1 1 
+C1 core 1.118740 0.000000 0.000000 -0.179000 1.000000 0.0 1 1 1 
+H1 core 1.469960 1.060840 0.000000 0.080000 1.000000 0.0 1 1 1 
+H1 core 1.466690 -0.484750 -0.946660 0.085000 1.000000 0.0 1 1 1 
+C2 core 1.636480 -0.742470 1.172050 -0.067000 1.000000 0.0 1 1 1 
+C2 core 1.189920 -2.044510 1.425460 -0.133000 1.000000 0.0 1 1 1 
+C2 core 1.688600 -2.757540 2.519220 -0.066000 1.000000 0.0 1 1 1 
+C2 core 2.629890 -2.169020 3.364200 -0.134000 1.000000 0.0 1 1 1 
+C2 core 3.073880 -0.870390 3.119430 -0.124000 1.000000 0.0 1 1 1 
+C2 core 2.581500 -0.157540 2.025440 -0.135000 1.000000 0.0 1 1 1 
+H1 core 0.443060 -2.506140 0.763500 0.131000 1.000000 0.0 1 1 1 
+H1 core 3.813240 -0.403260 3.785890 0.130000 1.000000 0.0 1 1 1 
+H1 core 2.931040 0.866150 1.829650 0.130000 1.000000 0.0 1 1 1 
+H1 core 3.028650 -2.732340 4.220820 0.130000 1.000000 0.0 1 1 1 
+C1 core 1.204180 -4.135620 2.773060 -0.180000 1.000000 0.0 1 1 1 
+H1 core 1.409940 -4.789150 1.889220 0.084000 1.000000 0.0 1 1 1 
+H1 core 0.100510 -4.131300 2.954400 0.084000 1.000000 0.0 1 1 1 
+H1 core 1.704290 -4.584490 3.664340 0.080000 1.000000 0.0 1 1 1 
+
+Species
+C1 core C_3
+C2 core C_R
+H1 core H_
+
+connect 1 2 single  0 0 0
+connect 2 3 single  0 0 0
+connect 2 4 single  0 0 0
+connect 2 5 single  0 0 0
+connect 5 6 resonant  0 0 0
+connect 5 10 resonant  0 0 0
+connect 6 7 resonant  0 0 0
+connect 6 11 single  0 0 0
+connect 7 8 resonant  0 0 0
+connect 7 15 single  0 0 0
+connect 8 9 resonant  0 0 0
+connect 8 14 single  0 0 0
+connect 9 10 resonant  0 0 0
+connect 9 12 single  0 0 0
+connect 10 13 single  0 0 0
+connect 15 16 single  0 0 0
+connect 15 17 single  0 0 0
+connect 15 18 single  0 0 0
+
+library uff
+
+output arc example49.arc
+output phonon m-xylene
+output frc example49.frc
+
+dump every example49.res

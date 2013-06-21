@@ -1,0 +1,10 @@
+opti conp phon noden eigen mole eckart
+cart
+O2   core   0.20000   0.00000  0.00000
+H2   core   0.80000   0.60000  0.30000
+H2   core  -0.80000   0.60000  0.10000
+
+harmonic intra bond
+H2    core O2    core  45.9300      1.01200      0.00    0 0
+three bond intra regular
+O2    core H2    core H2    core 3.29136     113.24     0 0

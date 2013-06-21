@@ -1,0 +1,38 @@
+conj pred cost genetic optimise conv
+name rutile
+cell
+4.49230    4.49230    2.89300   90.00000   90.00000   90.00000
+contents  8
+Ti1   core  4.000000 6
+Ti2   core  4.000000 6
+O1    core -2.000000 3
+O2    core -2.000000 3
+O3    core -2.000000 3
+O4    core -2.000000 3
+name anatase
+cell
+3.77600    3.77600    9.48600   90.00000   90.00000   90.00000
+contents  8
+Ti1   core  4.000000 
+Ti2   core  4.000000 
+Ti3   core  4.000000 
+Ti4   core  4.000000 
+O1    core -2.000000 
+O2    core -2.000000 
+O3    core -2.000000 
+O4    core -2.000000 
+O5    core -2.000000 
+O6    core -2.000000 
+O7    core -2.000000 
+O8    core -2.000000 
+buck
+Ti core O core  754.200 0.3879  0.00 0.0 10.0
+buck
+O  core O core 22764.00 0.1490 27.88 0.0 12.0
+predict
+configurations  100 100 2
+tour  0.9
+cross 0.5
+grid 4 8 10
+end
+output xtl

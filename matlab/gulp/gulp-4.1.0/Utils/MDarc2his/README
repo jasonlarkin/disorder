@@ -1,0 +1,10 @@
+This utility converts an arc file format movie from GULP into a DLPOLY history file.
+
+1) Compile the code:
+
+gfortran -o arc2his *.f90
+
+2) To run:
+
+./arc2his < myfile.arc > myfile.his
+

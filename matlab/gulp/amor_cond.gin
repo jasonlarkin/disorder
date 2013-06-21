@@ -1,5 +1,6 @@
 phon thermalconductivity
-broaden 1.0
+broaden 10.0
+temperature 1000
 
 output freq text freq.gout
 output xyz

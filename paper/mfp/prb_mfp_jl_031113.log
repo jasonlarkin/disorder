@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  18 JUN 2013 13:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  21 JUN 2013 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,395 +229,6 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \c@lotdepth=\count112
 \subfig@top=\skip54
 \subfig@bottom=\skip55
-) (./wrapfig.sty
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 H
-     ere's a replacement for /pub/archive/macros/latex/misc/wrapfig.sty
-? 
-Missing character: There is no H in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ' in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no D in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no P in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no . in font nullfont!
-
-Overfull \hbox (10.0pt too wide) in paragraph at lines 1--6
-[]
- []
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 -
-     ------------------------------------ cut here -------------------------...
-
-? 
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-\WF@wrappedlines=\count113
-
-Overfull \hbox (10.0pt too wide) in paragraph at lines 7--51
-[]
- []
-
 ) (./prb_mfp_jl_031113.aux
 
 LaTeX Warning: Label `S:Theory:Thermal' multiply defined.
@@ -679,93 +290,197 @@ Missing character: There is no ì in font cmr10!
 
 
 Package natbib Warning: Citation `von-Gutfeld_heat_1964' on page 1 undefined on
- input line 300.
+ input line 303.
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 324--334
+Underfull \hbox (badness 2376) in paragraph at lines 327--337
 []\OT1/cmr/m/n/10 The un-der-stand-ing of the ac-cu-mu-la-tion func-tion
  []
 
 [1]
 
+Package natbib Warning: Citation `feldman_calculations_2002' on page 2 undefine
+d on input line 374.
+
+
+Package natbib Warning: Citation `baldi_thermal_2008' on page 2 undefined on in
+put line 380.
+
+
+Package natbib Warning: Citation `baldi_thermal_2008' on page 2 undefined on in
+put line 387.
+
+
+Package natbib Warning: Citation `baldi_sound_2010' on page 2 undefined on inpu
+t line 399.
+
+
+Package natbib Warning: Citation `baldi_elastic_2011' on page 2 undefined on in
+put line 421.
+
+
+Package natbib Warning: Citation `baldi_emergence_2013' on page 2 undefined on 
+input line 422.
+
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no í in font cmr10!
+
+Package natbib Warning: Citation `schmid_raman_2008' on page 2 undefined on inp
+ut line 432.
+
+
+Package natbib Warning: Citation `schirmacher_vibrational_2008' on page 2 undef
+ined on input line 432.
+
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no ë in font cmr10!
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no í in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no ∑ in font cmr10!
+
+Underfull \hbox (badness 3895) in paragraph at lines 428--445
+[]\OT1/cmr/m/n/10 A field-theoretically mo-ti-vated mean-field the-ory
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ª in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ª in font cmr10!
+
+Package natbib Warning: Citation `ganter_rayleigh_2010' on page 2 undefined on 
+input line 452.
+
+
+Package natbib Warning: Citation `taraskin_propagation_2000' on page 2 undefine
+d on input line 468.
+
+
+Package natbib Warning: Citation `pompe_thermal_1988' on page 2 undefined on in
+put line 480.
+
+
+Package natbib Warning: Citation `cahill_thermal_1989' on page 2 undefined on i
+nput line 480.
+
+
 Package natbib Warning: Citation `zink_excess_2006' on page 2 undefined on inpu
-t line 407.
+t line 485.
 
 
-Underfull \hbox (badness 4792) in paragraph at lines 428--430
+Package natbib Warning: Citation `pompe_thermal_1988' on page 2 undefined on in
+put line 487.
+
+
+Package natbib Warning: Citation `cahill_thermal_1989' on page 2 undefined on i
+nput line 488.
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 525--527
 []\OT1/cmr/m/n/10 experiment from Be-nassi et al. show a $\OML/cmm/m/it/10 k[]$
 
  []
 
-
-Package natbib Warning: Citation `scopigno_observation_2001' on page 2 undefine
-d on input line 467.
-
-
-Package natbib Warning: Citation `ashcroft' on page 2 undefined on input line 5
-45.
-
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 620--627
+
+Package natbib Warning: Citation `scopigno_observation_2001' on page 3 undefine
+d on input line 564.
+
+
+Package natbib Warning: Citation `ashcroft_solid_1976' on page 3 undefined on i
+nput line 643.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--725
 []\OT1/cmr/m/n/10 Using the single-mode re-lax-ation time
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 620--627
+Underfull \hbox (badness 2680) in paragraph at lines 718--725
 \OT1/cmr/m/n/10 approximation$[]$ to solve the Boltz-mann trans-port
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 620--627
+Underfull \hbox (badness 1424) in paragraph at lines 718--725
 \OT1/cmr/m/n/10 and a sin-gle phonon po-lar-iza-tion,(cite) mak-ing the
  []
 
-
-Underfull \hbox (badness 2351) in paragraph at lines 691--694
+[3]
+Underfull \hbox (badness 2351) in paragraph at lines 789--792
 []\OT1/cmr/m/n/10 Under the De-bye ap-prox-i-ma-tion, which as-sumes
  []
 
-[3]
-
-LaTeX Warning: Command \r invalid in math mode on input line 831.
-
 [4]
 
-LaTeX Warning: Reference `S:' on page 5 undefined on input line 922.
+LaTeX Warning: Command \r invalid in math mode on input line 929.
+
+
+Package natbib Warning: Citation `durandurdu_<i>ab_2002' on page 5 undefined on
+ input line 937.
+
+
+Package natbib Warning: Citation `bernstein_structural_2006' on page 5 undefine
+d on input line 937.
+
+
+Package natbib Warning: Citation `bernstein_structural_2006' on page 5 undefine
+d on input line 941.
 
 [5]
+
+LaTeX Warning: Reference `S:' on page 6 undefined on input line 1022.
+
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no à in font cmr10!
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_2.eps Graphic file 
 (type eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_2.eps>
-Overfull \hbox (7.94875pt too wide) in paragraph at lines 1010--1012
+</home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_2.eps>
+Overfull \hbox (7.94875pt too wide) in paragraph at lines 1110--1112
  [] 
  []
 
 
-LaTeX Warning: Reference `EQ:M:k_AF,HS' on page 6 undefined on input line 1050.
+LaTeX Warning: Reference `EQ:M:k_AF,HS' on page 6 undefined on input line 1150.
 
 
-
-Underfull \hbox (badness 1248) in paragraph at lines 1098--1111
+[6]
+Underfull \hbox (badness 1248) in paragraph at lines 1198--1211
 []\OT1/cmr/m/n/10 Calculating the struc-ture fac-tors of the su-per-cell
  []
 
-[6]
 
-LaTeX Warning: Command \r invalid in math mode on input line 1152.
+LaTeX Warning: Command \r invalid in math mode on input line 1252.
 
-! Undefined control sequence.
-l.1156 factor peak $S^{L,T}\kvcw
-                                $ to a Lorentzian function
-? 
+
+Package natbib Warning: Citation `feldman_calculations_2002' on page 7 undefine
+d on input line 1269.
+
+[7]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Package natbib Warning: Citation `feldman_calculations_2002' on page 7 undefine
-d on input line 1205.
+
+Package natbib Warning: Citation `feldman_calculations_2002' on page 8 undefine
+d on input line 1312.
+
+
+Package natbib Warning: Citation `baldi_thermal_2008' on page 8 undefined on in
+put line 1328.
+
+
+Package natbib Warning: Citation `ruzicka_evidence_2004' on page 8 undefined on
+ input line 1331.
 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps Graphic
  file (type eps)
@@ -773,73 +488,50 @@ File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps Graphic
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps Graphic fil
 e (type eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps>
+</home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps> [8]
 Missing character: There is no œ in font cmr10!
 Missing character: There is no ≥ in font cmr10!
- [7]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1298.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1298.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps Graphic file 
 (type eps)
+
 </home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps>
-Overfull \hbox (14.97499pt too wide) in paragraph at lines 1309--1311
+Overfull \hbox (14.97499pt too wide) in paragraph at lines 1438--1440
  [] 
  []
 
-[8]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1382 2 10^
-            {14} rads/s which corresponds to a peak in the DOS (see Fig. ).
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1383 
-       
-? 
-
-Overfull \hbox (7.3342pt too wide) in paragraph at lines 1378--1383
-\OT1/cmr/m/n/10 10$[]\OML/cmm/m/it/10 rads=swhichcorrespondstoapeakintheDOS\OT1
-/cmr/m/n/10 (\OML/cmm/m/it/10 seeFig:\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1389 1 10^
+l.1518 1 10^
             {14} rads/s, which corresponds to where the DOS peaks in Fig. .
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1392 
+l.1521 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1388--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1517--1521
 []\OT1/cmr/m/n/10 For a-Si, a tran-si-tion to a con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1388--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1517--1521
 \OT1/cmr/m/n/10 stant life-time plateau oc-curs near 1
  []
 
 
-Overfull \hbox (288.7409pt too wide) in paragraph at lines 1388--1392
+Overfull \hbox (288.7409pt too wide) in paragraph at lines 1517--1521
 \OT1/cmr/m/n/10 10$[]\OML/cmm/m/it/10 rads=s; whichcorrespondstowheretheDOSpeak
 sinFig::Similarbehaviorwasobservedformodeldisorderedlattices:[]$ 
  []
 
+
+Package natbib Warning: Citation `baldi_sound_2010' on page 9 undefined on inpu
+t line 1545.
+
+[9]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no ê in font cmr10!
 Missing character: There is no ∂ in font cmr10!
@@ -858,11 +550,10 @@ Missing character: There is no ª in font cmr10!
 Missing character: There is no œ in font cmr10!
 Missing character: There is no Ω in font cmr10!
 
-Underfull \hbox (badness 1210) in paragraph at lines 1502--1514
+Underfull \hbox (badness 1210) in paragraph at lines 1635--1647
 []\OT1/cmr/m/n/10 At low fre-quen-cies, the AF-predicted and NMD-
  []
 
-[9]
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no ë in font cmr10!
 Missing character: There is no Õ in font cmr10!
@@ -876,30 +567,47 @@ Missing character: There is no ë in font cmr10!
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no í in font cmr10!
 
-Underfull \hbox (badness 2343) in paragraph at lines 1515--1524
+Underfull \hbox (badness 2343) in paragraph at lines 1648--1657
 []\OT1/cmr/m/n/10 In sum-mary, we ob-tain a frequency-independent
  []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+
+Underfull \hbox (badness 1436) in paragraph at lines 1687--1692
+[]\OT1/cmr/m/n/10 Theoretical pre-dic-tions of acous-tic at-ten-u-a-tion in
+ []
+
+[10]
+
+Package natbib Warning: Citation `ruocco_relaxation_2000' on page 11 undefined 
+on input line 1717.
 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_D_3.eps Graphic file (t
 ype eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_D_3.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1572--1574
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1724--1726
  [] 
  []
 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_3.eps Graphic fi
 le (type eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_Lambda_3.eps>
-Overfull \hbox (14.97499pt too wide) in paragraph at lines 1623--1625
+Overfull \hbox (14.97499pt too wide) in paragraph at lines 1775--1777
  [] 
  []
 
-[10]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1664.
+Package natbib Warning: Citation `baldi_thermal_2008' on page 11 undefined on i
+nput line 1805.
+
+[11]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1841.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1664.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1841.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -907,23 +615,23 @@ Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1697 Debye model. k_
+l.1859 Debye model. k_
                       tot = k_phonon + k_AF. For lack of a rigorous definition
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1699 
+l.1861 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1697--1699
+Underfull \hbox (badness 10000) in paragraph at lines 1859--1861
 []\OT1/cmr/m/n/10 Debye model. k$[]\OML/cmm/m/it/10 ot \OT1/cmr/m/n/10 = \OML/c
 mm/m/it/10 k[]honon \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (111.17499pt too wide) in paragraph at lines 1697--1699
+Overfull \hbox (111.17499pt too wide) in paragraph at lines 1859--1861
 \OML/cmm/m/it/10 k[]F:Forlackofarigorousdefinitionofphononvsdiffusion; wewillde
 finek[]hon \OT1/cmr/m/n/10 =
  []
@@ -931,22 +639,22 @@ finek[]hon \OT1/cmr/m/n/10 =
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1700 The relative contribution of k_
+l.1863 The relative contribution of k_
                                       phonon and k_AF is also predicted to
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1702 
+l.1865 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1700--1702
+Underfull \hbox (badness 10000) in paragraph at lines 1863--1865
 []\OT1/cmr/m/n/10 The rel-a-tive con-tri-bu-tion of
  []
 
 
-Overfull \hbox (49.4126pt too wide) in paragraph at lines 1700--1702
+Overfull \hbox (49.4126pt too wide) in paragraph at lines 1863--1865
 \OT1/cmr/m/n/10 k$[]\OML/cmm/m/it/10 hononandk[]Fisalsopredictedtobesimilarfors
 iliconnanowires:[]$ 
  []
@@ -954,48 +662,61 @@ iliconnanowires:[]$
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps Graphic f
 ile (type eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1707--1709
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1870--1872
  [] 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1716 Fig. \ref{FIG:diffusivities}). }
+l.1879 Fig. \ref{FIG:diffusivities}). }
                                        
 ? 
 ! Extra }, or forgotten $.
 \sbox ...hbox {\color@setgroup #2\color@endgroup }
                                                   
-l.1716 Fig. \ref{FIG:diffusivities}). }
+l.1879 Fig. \ref{FIG:diffusivities}). }
                                        
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1716 Fig. \ref{FIG:diffusivities}). }
+l.1879 Fig. \ref{FIG:diffusivities}). }
                                        
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1716 Fig. \ref{FIG:diffusivities}). }
+l.1879 Fig. \ref{FIG:diffusivities}). }
                                        
 ? 
-[11]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps Graph
 ic file (type eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1732--1734
+</home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_sio2.eps>
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1895--1897
  [] 
  []
 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_si.eps Graphic
  file (type eps)
 </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_4_si.eps>
-Overfull \hbox (13.97124pt too wide) in paragraph at lines 1752--1754
+Overfull \hbox (13.97124pt too wide) in paragraph at lines 1915--1917
  [] 
  []
+
+
+Package natbib Warning: Citation `li_effect_2011' on page 12 undefined on input
+ line 1940.
+
+[12]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1941.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1941.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no ë in font cmr10!
@@ -1038,12 +759,16 @@ Missing character: There is no û in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Å in font cmr10!
 Missing character: There is no Ñ in font cmr10!
-[12]
 
-LaTeX Warning: Reference `T:cond_table' on page 13 undefined on input line 1837
+Package natbib Warning: Citation `pohl_lattice_2006' on page 13 undefined on in
+put line 2016.
+
+[13]
+
+LaTeX Warning: Reference `T:cond_table' on page 14 undefined on input line 2023
 .
 
-(./prb_mfp_jl_031113.bbl [13]
+(./prb_mfp_jl_031113.bbl [14]
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
@@ -1211,7 +936,7 @@ Underfull \hbox (badness 1484) in paragraph at lines 380--394
  \OT1/cmr/m/n/9 S. C. San-tucci, F. Sette, et al., Phys. Rev. Lett.
  []
 
-[14]
+[15]
 Missing character: There is no √ in font cmr9!
 Missing character: There is no © in font cmr9!
 
@@ -1352,7 +1077,7 @@ Underfull \hbox (badness 1968) in paragraph at lines 772--777
 7\OT1/cmr/m/n/9 ,
  []
 
-[15]
+[16]
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
@@ -1428,7 +1153,7 @@ Missing character: There is no ì in font cmr9!
 
 Package natbib Warning: There were undefined citations.
 
-[16] (./prb_mfp_jl_031113.aux)
+[17] (./prb_mfp_jl_031113.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1437,12 +1162,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3913 strings out of 495060
- 52363 string characters out of 3182053
- 142112 words of memory out of 3000000
- 7040 multiletter control sequences out of 15000+200000
+ 3917 strings out of 495060
+ 52570 string characters out of 3182053
+ 140402 words of memory out of 3000000
+ 7047 multiletter control sequences out of 15000+200000
  14510 words of font info for 54 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,25n,27p,1363b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_031113.dvi (16 pages, 102648 bytes).
+Output written on prb_mfp_jl_031113.dvi (17 pages, 112764 bytes).

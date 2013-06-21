@@ -1,0 +1,22 @@
+Distribution for GULP 4.0 :
+===========================
+
+The following is a guide to the directories that should be present in this distribution :
+
+Docs        : documentation and information relating to the program
+Examples    : example input files for the program
+Libraries   : library files for the program
+Src         : source code and files relating to the installation of the program
+Utils       : utility routines associated with GULP
+
+To install GULP on most Unix/Linux machines :
+
+(1) Go to Src/
+(2) Type "make"
+(3) If the above fails - edit "getmachine" and correct the settings for your machine
+(4) Set the following environment variables to indicate where the program files can
+    be found:
+
+    GULP_LIB    The location of the Libraries directory
+    GULP_DOC    The location of the Doc directory
+

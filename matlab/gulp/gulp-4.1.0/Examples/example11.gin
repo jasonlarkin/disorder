@@ -1,0 +1,57 @@
+opti dist c6                                                               
+title
+Sodium ion migration in quartz : uses the translate option
+to perform 2-D optimisation for sodium at intervals along 
+the channel within quartz structure
+end
+cell
+4.914730   4.914730   5.406570  90.00  90.00 120.00 0 0 0 0 0 0
+fractional   16
+Si    core   0.000000   0.468200   0.666666   4.000000 1.0000 0.0  0 0 0
+Si    core   0.562283   0.553474   0.985986   4.000000 1.0000 0.0  1 1 1
+Al    core   0.445925   0.991213   0.348165   3.000000 1.0000 0.0  1 1 1
+# Sodium is fixed in direction of translation and marked with T
+Na    core   0.996987   0.272679   0.172946   1.000000 1.0000 0.0  1 1 0 T
+O     core   0.442025   0.289142   0.194695   0.869020 1.0000 0.0  1 1 1
+O     core   0.727571   0.131612   0.581260   0.869020 1.0000 0.0  1 1 1
+O     core   0.900494   0.614677   0.895918   0.869020 1.0000 0.0  1 1 1
+O     core   0.089785   0.698420   0.439177   0.869020 1.0000 0.0  1 1 1
+O     core   0.574325   0.846687   0.110388   0.869020 1.0000 0.0  1 1 1
+O     core   0.293304   0.427050   0.765705   0.869020 1.0000 0.0  1 1 1
+O     shel   0.451160   0.296281   0.182836  -2.869020 1.0000 0.0  1 1 1
+O     shel   0.741396   0.160744   0.575279  -2.869020 1.0000 0.0  1 1 1
+O     shel   0.874954   0.591869   0.883898  -2.869020 1.0000 0.0  1 1 1
+O     shel   0.104617   0.690857   0.457113  -2.869020 1.0000 0.0  1 1 1
+O     shel   0.569630   0.824747   0.110755  -2.869020 1.0000 0.0  1 1 1
+O     shel   0.289597   0.442377   0.777587  -2.869020 1.0000 0.0  1 1 1
+#
+# translate by 1 unit cell in z direction in 10 steps
+#
+translate 0.0 0.0 1.0 10
+#
+species   5
+Na     core    1.000000            
+Al     core    3.000000            
+Si     core    4.000000            
+O      core    0.869020            
+O      shel   -2.869020            
+buck     
+Na    core O     shel    1226.840000 0.306500    0.00000  0.000 10.000
+buck     
+Al    core O     shel    1460.300000 0.299120    0.00000  0.000 10.000
+buck     
+Si    core O     shel    1283.907000 0.320520   10.66158  0.000 12.000
+buck     
+O     shel O     shel   22764.300000 0.149000   27.87900  0.000 12.000
+spring
+O        74.920000
+three      
+Si    core O     shel O     shel   2.097240 109.470000  1.900  1.900  3.500
+three      
+Al    core O     shel O     shel   2.097240 109.470000  1.900  1.900  3.500
+cutd   2.5000
+#
+#  change to rfo minimiser when gnorm drops below 0.1
+#
+switch_min rfo  gnorm     0.1
+dump every   2 example11.grs                 

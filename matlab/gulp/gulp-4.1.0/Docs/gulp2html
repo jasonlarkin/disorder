@@ -1,0 +1,214 @@
+#! /bin/sh
+
+prgname=`basename $0`
+if [ "$1" = "" ]
+then
+  echo "${prgname}: ERROR: Usage: $prgname <gulp_help_file>."
+  exit 1
+fi
+file=$1
+
+case `uname -s` in
+  IRIX*) AWK=nawk
+         ;;
+  *)     AWK=awk
+         ;;
+esac
+
+echo '<HEAD>'
+echo '<TITLE>GULP help file</TITLE>'
+echo '<H1>GULP help file</H1>'
+echo '</HEAD>'
+echo '<BODY>'
+echo '<I>(HTML version generated from '$file', see also <A HREF="$BIOROOT/data/catalysis/ctl_usrdata/gulp/help.txt">GULP plain text file</A>)</I>'
+echo '<I>(Note that line breaks may be missing when viewed in HTML - check help.txt with code.)</I>'
+echo '<HR>'
+echo '<H2>Keywords in alphabetical order</H2>'
+
+grep '^@@' $file | sort | $AWK 'BEGIN {last="a";}
+                                     {label=$1;
+                                      sub("@@", "", label);
+                                      if (substr(label, 1, 1) == last)
+                                      {
+                                        printf("<A HREF=\"#%s\">%s</A>, ", label, label);
+                                      }
+                                      else
+                                      {
+                                        printf("<br>\n");
+                                        printf("<A HREF=\"#%s\">%s</A>, ", label, label);
+                                        last=substr(label, 1, 1);
+                                      }
+                                     }'
+echo '<HR>'
+$AWK 'function printline(header)
+     {
+      if (newrow == 1)
+      {
+        endrow();
+      }
+      printf("<TR><TD WIDTH=\"10%%\">%s</TD><TD>", header);
+      for (i=3; i<=NF; i++)
+      {
+        word=$i;
+        sub("<", "\&lt;", word);
+        sub(">", "\&gt;", word);
+        printf("%s ", word);
+      }
+     }
+
+     function endrow()
+     {
+       printf("</TD></TR>\n");
+       newrow=0;
+     }
+
+     function make_ref(start)
+     {
+       for (i=start; i<=NF-1; i++)
+       {
+         label=$i;
+         if (label == "and")
+         {
+           printf("and ");
+         }
+         else
+         {
+           if (substr(label, length(label), 1) == ",")
+           {
+             label=substr(label, 1, length(label)-1);
+           }
+           printf("<A HREF=\"#%s\">%s</A>, ", label, label);
+         }
+       }
+       label=$NF;
+       if (substr(label, length(label), 1) == ".")
+       {
+         label=substr(label, 1, length(label)-1);
+       }
+       printf("<A HREF=\"#%s\">%s</A>.\n", label, label);
+     }
+ 
+     BEGIN {spacegroup=0;
+		first=1;
+            seealso=0;
+		afterspacegroups=0;}
+     /^@@/ {label=$1;
+            sub("@@", "", label);
+		if (first == 1)
+		{
+		  first=0;
+		}
+		else
+		{
+		  printf("</TABLE>\n");
+		}
+            printf("<A NAME=\"%s\">\n <TABLE>\n", label);
+           }
+     /^Topic/   {if (newrow == 1)
+                 {
+                   endrow();
+                 }
+                 printf("<TR><TD WIDTH=\"10%%\">Topic:</TD><TD><B>%s</B>", $3);
+                 seealso=0;
+                }
+     /^Type/    {newrow=1;
+		     printline("Type:");
+                 seealso=0;}
+     /^Default/ {newrow=1;
+		     printline("Default:");
+                 seealso=0;}
+     /^Format/  {newrow=1;
+		     printline("Format:");
+                 seealso=0;}
+     /^Units/   {newrow=1;
+		     printline("Units:");
+                 seealso=0;}
+     /^Use/     {newrow=1;
+		     printline("Use:");
+                 seealso=0;}
+     /^Info/     {newrow=1;
+		     printline("Info:");
+                 seealso=0;}
+     $1 ~ /:/ {if (NF == 1)
+		   {
+		     printf("<P>\n");
+		   }
+		   for (i=2; i<=NF; i++)
+               {
+                 if (seealso == 1)
+                 {
+                   make_ref(2);
+                 }
+                 else
+                 {
+                   word=$i;
+                   sub("<", "\&lt;", word);
+                   sub(">", "\&gt;", word);
+                   printf("%s ", word);
+                 }
+               }
+               printf("\n");
+               newrow=1;
+              }
+     /^See/   {if (newrow == 1)
+               {
+                 endrow();
+               }
+               seealso=1;
+               printf("<TR><TD WIDTH=\"10%%\">See also:</TD><TD>");
+               make_ref(3);
+              }
+     /^Valid space groups/ {printf("</TABLE>\n%s\n", $0);
+                            spacegroup=1;}
+     /^[ ]*Number/ {if (spacegroup == 1)
+                    {
+                      printf("<TABLE BORDER=1 CELLPADDING=0 CELLSPACING=1>\n");
+                      printf("<TR ALIGN=CENTER>");
+                      for (i=1; i<=NF; i++)
+                      {
+                        printf("<TH>%s</TH>", $i);
+                      }
+                      printf("</TR>\n");
+                    }
+                   }
+     /^[ ]*[1-9]/  {if (spacegroup == 1)
+                    {
+                      printf("<TR ALIGN=CENTER><TD>%s</TD><TD>", $1);
+                      j=$1+1;
+                      done=0;
+                      for (i=2; i<=NF; i++)
+                      {
+                        if ($i == j)
+                        {
+                          if (j == 21 && done == 0)
+                          {
+                            printf("%s ", $i);
+                            done=1;
+                          }
+                          else
+                          {
+                            printf("</TD><TD>%s</TD><TD>", $i);
+                            j++;
+                          }
+                        }
+                        else
+                        {
+                          printf("%s ", $i);
+                        }
+                      }
+                      printf("</TD></TR>\n");
+                    }
+                   }
+    /^Non-standard/ {spacegroup = 0;
+			   afterspacegroups = 1;
+                     printf("</TABLE>\n<P>\n");
+			  }
+    /^[ ]*[A-z]/ {if (afterspacegroups == 1)
+			{
+			  if (substr($1, 1, 1) == "_")
+			    printf("<HR>\n");
+                    else
+			    printf("%s<P>\n", $0);
+                  }
+		     }
+  END {printf("</BODY>\n");}' $file | sed 's/\<lt;/\&lt;/g' | sed 's/\>gt;/\&gt;/g'

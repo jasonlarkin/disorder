@@ -1,0 +1,8 @@
+grad conp 
+cart
+O core 0.0 0.0 0.0  -0.00
+H core 1.0 0.0 0.0   0.40
+H core -0.5 0.8 0.0  0.40
+3coulomb
+O core H core H core 0.5 1.2 1.2 2.4
+dump every example40.grs

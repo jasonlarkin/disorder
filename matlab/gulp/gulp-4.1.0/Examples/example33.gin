@@ -1,0 +1,27 @@
+montecarlo conv
+name hydrogen
+cell
+25.0 25.0 25.0 90.0 90.0 90.0
+#
+cartesian
+temperature 100 K
+#
+mcchemicalpotential -0.042 
+mcmaxdisplacement 0.5
+mcvolume 15625.00  #volume available to H2 molecule
+#
+mccreate 0.333333
+mcdestroy 0.333333
+mcmove 0.333333
+#
+mctrial 2000
+#
+element
+cova He 0.1
+mass He 2.16
+end
+gcmcmolecule 1
+He core 0.0 0.0 0.0  
+#
+lennard epsilon
+He He 0.0028696 2.970 0.0 10.0
