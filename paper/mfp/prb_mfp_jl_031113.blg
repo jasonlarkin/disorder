@@ -4,53 +4,49 @@ The top-level auxiliary file: prb_mfp_jl_031113.aux
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-060313.bib
-Warning--I didn't find a database entry for "von-Gutfeld_heat_1964"
-Warning--I didn't find a database entry for "zink_excess_2006"
-Warning--I didn't find a database entry for "scopigno_observation_2001"
-Warning--I didn't find a database entry for "ashcroft"
-Warning--I didn't find a database entry for "feldman_calculations_2002"
+Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in slack_thermal_1979
-You've used 102 entries,
+You've used 122 entries,
             3411 wiz_defined-function locations,
-            1791 strings with 32217 characters,
-and the built_in function-call counts, 84599 in all, are:
-= -- 4849
-> -- 3018
-< -- 415
-+ -- 2543
-- -- 736
-* -- 11704
-:= -- 8754
-add.period$ -- 102
-call.type$ -- 102
-change.case$ -- 408
-chr.to.int$ -- 100
-cite$ -- 103
-duplicate$ -- 7078
-empty$ -- 6945
-format.name$ -- 1817
-if$ -- 16363
-int.to.chr$ -- 3
-int.to.str$ -- 103
-missing$ -- 1083
-newline$ -- 321
-num.names$ -- 307
-pop$ -- 1704
+            1900 strings with 36538 characters,
+and the built_in function-call counts, 101995 in all, are:
+= -- 5787
+> -- 3732
+< -- 510
++ -- 3160
+- -- 910
+* -- 14214
+:= -- 10510
+add.period$ -- 122
+call.type$ -- 122
+change.case$ -- 488
+chr.to.int$ -- 119
+cite$ -- 123
+duplicate$ -- 8564
+empty$ -- 8331
+format.name$ -- 2237
+if$ -- 19653
+int.to.chr$ -- 4
+int.to.str$ -- 123
+missing$ -- 1310
+newline$ -- 381
+num.names$ -- 367
+pop$ -- 2074
 preamble$ -- 1
-purify$ -- 408
+purify$ -- 488
 quote$ -- 0
-skip$ -- 3524
+skip$ -- 4186
 stack$ -- 0
-substring$ -- 3871
-swap$ -- 5842
-text.length$ -- 373
+substring$ -- 4485
+swap$ -- 7114
+text.length$ -- 460
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 606
+type$ -- 724
 warning$ -- 1
-while$ -- 303
+while$ -- 362
 width$ -- 0
-write$ -- 1112
-(There were 6 warnings)
+write$ -- 1333
+(There were 2 warnings)
