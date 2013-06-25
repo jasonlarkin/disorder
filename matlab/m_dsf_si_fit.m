@@ -28,13 +28,14 @@ for idir = 1:2
 %         end
         
         if ikpt<=1
-            PT_PERC = 0.3;
+            PT_PERC_LEFT = 0.1;
+            PT_PERC_RIGHT = 0.05;
             INV_PERC = 1.0;
         elseif ikpt<=3
-            PT_PERC = 0.3;
+            PT_PERC_LEFT = 0.3; PT_PERC_RIGHT = 0.1;
             INV_PERC = 1.0;
         else
-            PT_PERC = 0.3;
+            PT_PERC_LEFT = 0.3; PT_PERC_RIGHT = 0.1;
             INV_PERC = 1.0;
         end
         
@@ -52,13 +53,13 @@ start =50;
             find(...
             DSF(idir).DSF.SL(start:start+Jmax,ikpt) ...
             <...
-            PT_PERC*DSF(idir).DSF.SL(start+Jmax,ikpt) );
+            PT_PERC_LEFT*DSF(idir).DSF.SL(start+Jmax,ikpt) );
         wleft = start+I(length(I))
 %Find wright
         [I,J] = find(...
             DSF(idir).DSF.SL(start+Jmax:end,ikpt) ...
             <...
-            PT_PERC*DSF(idir).DSF.SL(start+Jmax,ikpt) );
+            PT_PERC_RIGHT*DSF(idir).DSF.SL(start+Jmax,ikpt) );
         wright = start+Jmax + I(1)
 %FIT THE LORENTZIAN(S)
 c0 = [ 1.5*Imax, 5, DSF(idir).DSF.freq_range(start+Jmax)/1e12 ];
@@ -68,8 +69,8 @@ c0 = [ 1.5*Imax, 5, DSF(idir).DSF.freq_range(start+Jmax)/1e12 ];
     ub(3:3:length(c0)) =....
         1000*DSF(idir).DSF.freq_range(length(DSF(idir).DSF.freq_range));
     weights = ones(length(wleft:wright),1);
-    weights(1:30) = INV_PERC/PT_PERC;
-    weights(length(weights)-30:length(weights)) = INV_PERC/PT_PERC;
+    weights(1:30) = INV_PERC/( (PT_PERC_LEFT + PT_PERC_LEFT)/2);
+    weights(length(weights)-30:length(weights)) = INV_PERC/( (PT_PERC_LEFT + PT_PERC_LEFT)/2);
     lor_func = @(c,w)(c(1))./(1 + ( (w - c(3))./ c(2) ).^2 );
     options =...
         optimset(...

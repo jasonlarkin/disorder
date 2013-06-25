@@ -4,49 +4,49 @@ The top-level auxiliary file: prb_mfp_jl_031113.aux
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-060313.bib
-Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "cahill_lower_1994"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in slack_thermal_1979
-You've used 122 entries,
+You've used 95 entries,
             3411 wiz_defined-function locations,
-            1900 strings with 36538 characters,
-and the built_in function-call counts, 101995 in all, are:
-= -- 5787
-> -- 3732
-< -- 510
-+ -- 3160
-- -- 910
-* -- 14214
-:= -- 10510
-add.period$ -- 122
-call.type$ -- 122
-change.case$ -- 488
-chr.to.int$ -- 119
-cite$ -- 123
-duplicate$ -- 8564
-empty$ -- 8331
-format.name$ -- 2237
-if$ -- 19653
+            1750 strings with 31136 characters,
+and the built_in function-call counts, 80184 in all, are:
+= -- 4490
+> -- 3015
+< -- 410
++ -- 2572
+- -- 736
+* -- 11220
+:= -- 8229
+add.period$ -- 95
+call.type$ -- 95
+change.case$ -- 380
+chr.to.int$ -- 92
+cite$ -- 96
+duplicate$ -- 6758
+empty$ -- 6520
+format.name$ -- 1796
+if$ -- 15388
 int.to.chr$ -- 4
-int.to.str$ -- 123
-missing$ -- 1310
-newline$ -- 381
-num.names$ -- 367
-pop$ -- 2074
+int.to.str$ -- 96
+missing$ -- 1032
+newline$ -- 300
+num.names$ -- 286
+pop$ -- 1629
 preamble$ -- 1
-purify$ -- 488
+purify$ -- 380
 quote$ -- 0
-skip$ -- 4186
+skip$ -- 3285
 stack$ -- 0
-substring$ -- 4485
-swap$ -- 7114
-text.length$ -- 460
+substring$ -- 3391
+swap$ -- 5637
+text.length$ -- 372
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 724
+type$ -- 562
 warning$ -- 1
-while$ -- 362
+while$ -- 281
 width$ -- 0
-write$ -- 1333
+write$ -- 1035
 (There were 2 warnings)
