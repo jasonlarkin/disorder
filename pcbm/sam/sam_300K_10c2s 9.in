@@ -1,0 +1,73 @@
+#NEMD simulation, Constant Heat Flux
+#NOTE: For a description of any command, Google "LAMMPS command".
+
+#------------SET SIM SEED--------------------------------------------------
+variable    seed    equal 64576
+
+#------------READ STRUCTURE------------------------------------------------
+units			metal              #Use Metal style units
+atom_style		molecular          #Use 'molecular' style for solids,molecules
+boundary		p p p           #Periodic BC on x, y, z
+read_data		sam_coord_in.data     #Use lattice structure from file
+
+group moving all
+
+variable	M_Zero  equal 0.00
+
+#------------DEFINE HYBRID - MORSE & LJ POTENTIALS-------------------------------------------
+pair_style lj/cut 9
+special_bonds lj 0.0 0.0 0.0
+
+pair_coeff 1 1 lj/cut 0.017240 4.250000 #LJ pair potential interaction for S-S
+pair_coeff 2 2 lj/cut 0.005130 3.914000 #LJ pair potential interaction for C-C
+pair_coeff 1 2 lj/cut 0.007500 3.732000 #LJ pair potential interaction for C-S
+pair_modify shift yes
+
+#------------DEFINE HARMONIC POTENTIAL FOR C-C BOND-------------------------------------------
+bond_style	  harmonic                   #Harmonic bond type
+bond_coeff      1 11.27 1.54           #Number of bonds, spring constant, equilibrium distance
+
+#------------DEFINE HARMONIC POTENTIAL FOR C-S BOND-------------------------------------------
+bond_coeff      2 9.54 1.815           #Number of bonds, spring constant, equilibrium distance
+
+#------------DEFINE HARMONIC ANGLE POTENTIAL FOR C-C-C BOND-------------------------------------------
+angle_style	  harmonic                   #Harmonic cosine bond type
+angle_coeff      1 2.6940 109.5            #Spring constant, equilibrium angle
+
+#------------DEFINE HARMONIC ANGLE POTENTIAL FOR S-C-C BOND-------------------------------------------
+angle_coeff      2 2.6940 114.4            #Spring constant, equilibrium angle
+
+#------------DEFINE TORSION ANGLE POTENTIAL FOR S-C-C-C and C-C-C-C BONDS-------------------------------------------
+dihedral_style  multi/harmonic             #Harmonic bond type
+dihedral_coeff      1 0.09617 -0.125988 -0.13598 0.0317 0.27196 0.32642   #Dihedral coefficients
+
+#------------DEFINE VARIABLES----------------------------------------------
+
+#------------thermo Parameters
+variable	T_run   equal 300                    #Run temperature (K)
+variable	alat    equal 16.08                 #This variable is four times the lattice constant
+variable    V       equal vol                   #The volume is the volume
+variable	heat    equal 0.1                #The heat to be added and removed per time step
+variable   	dt      equal 10e-4                 #The simulation timestep in (s)
+
+    #--------DEFINE CUSTOM COMPUTES---------------------------------------- 
+	compute 	movingTemp moving temp                                      #Define a compute to compute the temperature of moving atoms
+	compute		stressPerAtom sample stress/atom                            #Define a compute to compute the stress per atom of sample atoms
+	compute		p sample reduce sum c_stressPerAtom[1] c_stressPerAtom[2] c_stressPerAtom[3] #Compute the components of pressure of sample atoms
+
+
+log log_300K_NVT.lammps
+#--------NVT RESCALE --------------------------------------------------
+    velocity 		moving create ${T_run} ${seed} rot yes dist gaussian    #Set initial velocities of moving atoms to sampling of gaussian distribution at 50K
+    fix             1 sample nvt temp ${T_run} ${T_run} 10                                               #Fix NVT ensemble
+    	variable		samplePressX equal -(c_p[1])/(vol*7/10)
+	variable		samplePressY equal -(c_p[2])/(vol*7/10)
+	variable		samplePressZ equal -(c_p[3])/(vol*7/10)
+    thermo_style    custom step c_movingTemp v_samplePressX v_samplePressY v_samplePressZ press etotal pe ke vol    #Log
+    thermo          1000
+
+	timestep		${dt}
+    run             500000
+    unfix           1                                                       #Unfix NVE
+    
+

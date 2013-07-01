@@ -3,7 +3,7 @@
 %--------------------------------------------------------------------------
 addpath('/home/jason/disorder/matlab/')
 str.main = '/home/jason/disorder/matlab/gulp/';
-name = 'x0_4atom.data';
+name = 'x0_256.data';
 x0 = m_x0_read( strcat(str.main , name) );
 %--------------------------------------------------------------------------
 %lj
@@ -23,7 +23,7 @@ mass(1) = 1.0; mass(2) = 3.0;
 %af
 %--------------------------------------------------------------------------
 [AF.freq AF.Di AF.kappa ] =...
-    m_af_lj_debug( x0 , 1.0 , str.main , 'true' );
+    m_af_lj( x0 , 1.0 , 1.0, str.main , 'true' );
 
 
 

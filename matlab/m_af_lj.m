@@ -1,5 +1,9 @@
-function [freq Di kappa] = m_af_lj( x0 , eps , str_main , tf_eig )
+function [freq Di kappa] = m_af_lj( x0 , eps , B_FACTOR, str_main , tf_eig )
 %[freq Di kappa] = m_af_lj( x0 , eps , str_main , tf_eig )
+
+%--------------------------------------------------------------------------
+AF.timing.af.tstart = tic;
+%--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
 %AF settings
@@ -28,7 +32,7 @@ LD.eps = eps;
 %--------------------------------------------------------------------------
 %BEGIN: DYNAM
 %--------------------------------------------------------------------------
-AF.timing.dynam.tstart = tic;
+
 %--------------------------------------------------------------------------
 %i,j pairs and find rij
     LD.tempx = repmat(LD.x',size(LD.x',2),1);
@@ -175,8 +179,8 @@ LD.freq = sqrt(diag(LD.eigval));
 LD=rmfield(LD,'eigval');
 
 %--------------------------------------------------------------------------
-AF.timing.dynam.telapsed = toc(AF.timing.dynam.tstart);
-AF.timing.dynam.telapsed
+% AF.timing.dynam.telapsed = toc(AF.timing.dynam.tstart);
+% AF.timing.dynam.telapsed
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 %END: DYNAM
@@ -185,15 +189,12 @@ AF.timing.dynam.telapsed
 %--------------------------------------------------------------------------
 %BEGIN: AF
 %--------------------------------------------------------------------------
-%--------------------------------------------------------------------------
-AF.timing.af.tstart = tic;
-%--------------------------------------------------------------------------
 
 %Lorentzian
 LD.dw_avg = real(mean(LD.freq(2:LD.NUM_MODES)-LD.freq(1:LD.NUM_MODES-1)));
 LD.delwij = ...
     repmat(LD.freq,1,LD.NUM_MODES) - repmat(LD.freq',LD.NUM_MODES,1 ) ;
-LD.lor = (1.0/pi)*(LD.dw_avg./( LD.delwij.^2 + LD.dw_avg^2 ) );
+LD.lor = (1.0/pi)*(B_FACTOR*LD.dw_avg./( LD.delwij.^2 + LD.dw_avg^2 ) );
 %apply lor cutoff
 I = find(LD.deltaL>LD.lor); LD.lor(I) = 0;
 %--------------------------------------------------------------------------
