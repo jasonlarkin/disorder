@@ -15,7 +15,7 @@
 *  molecule     - molecule option activated, Coulomb subtract within molecule  *
 ********************************************************************************
 
-  Job Started  at 13:00.46  1st July       2013                               
+  Job Started  at 13:01.05  1st July       2013                               
 
   Number of CPUs =     1
 
@@ -272,7 +272,7 @@ Coefficients (eV) =    -0.125988   -0.135980    0.031700    0.271960    0.326420
 
   Start of bulk optimisation :
 
-  Cycle:      0 Energy:        -0.041713  Gnorm:      0.927875  CPU:    0.028
+  Cycle:      0 Energy:        -0.041713  Gnorm:      0.927875  CPU:    0.032
   ** Hessian calculated **
   Cycle:      1 Energy:        -0.044698  Gnorm:      0.009205  CPU:    0.032
 
@@ -612,11 +612,10 @@ Coefficients (eV) =    -0.125988   -0.135980    0.031700    0.271960    0.326420
 --------------------------------------------------------------------------------
   Task / Subroutine                                          Time (Seconds)
 --------------------------------------------------------------------------------
-  Calculation of three-body energy and derivatives                0.0080
-  Calculation of four-body energy and derivatives                 0.0080
+  Calculation of real space energy and derivatives                0.0040
+  Calculation of three-body energy and derivatives                0.0040
+  Calculation of four-body energy and derivatives                 0.0040
   Calculation of molecules and connectivity                       0.0040
-  Calculation of phonons                                          0.0040
-  Calculation of scattering                                       0.0000
 --------------------------------------------------------------------------------
   Total CPU time                                                  0.0400
 --------------------------------------------------------------------------------
@@ -625,5 +624,5 @@ Coefficients (eV) =    -0.125988   -0.135980    0.031700    0.271960    0.326420
   LAMMPS file written on channel 26
 
 
-  Job Finished at 13:00.46  1st July       2013                               
+  Job Finished at 13:01.05  1st July       2013                               
 

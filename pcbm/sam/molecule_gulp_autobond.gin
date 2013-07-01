@@ -1,4 +1,4 @@
-molecule connectivity bond angle torsion phon #optimise
+molecule connectivity bond angle torsion phon optimise
 
 output lammps
 
@@ -6,27 +6,27 @@ output lammps
 #-------------------------Organic Molecule Harm/Cov Potential---------------------------------------------------
 #########################################################################################
 
-#three-body cosine intra bond single
+three-body cosine intra bond single
 ##C core H core H core 4.8770 109.471
 ##C core H core C core 4.8770 109.471
-#C core C core C core 5.3880 109.471
-#C core S core C core 5.3880 114.400
+C1 core C1 core C1 core 5.3880 109.471
+C1 core S1 core C1 core 5.3880 114.400
 
-#ryckaert 5 bond single
-#S core C core C core C core 0.09617 
-#-0.125988 -0.13598 0.0317 0.27196 0.32642
-#C core C core C core C core 0.09617 
-#-0.125988 -0.13598 0.0317 0.27196 0.32642
+ryckaert 5 bond single
+S1 core C1 core C1 core C1 core 0.09617 
+-0.125988 -0.13598 0.0317 0.27196 0.32642
+C1 core C1 core C1 core C1 core 0.09617 
+-0.125988 -0.13598 0.0317 0.27196 0.32642
 
-#harmonic intra bond single
+harmonic intra bond single
 ##C core H core 30.3503 1.09
-#C core C core 22.54 1.54 
-#C core S core 19.08 1.815
+C1 core C1 core 22.54 1.54 
+C1 core S1 core 19.08 1.815
 
 lennard epsilon zero 12 6 intra x13
-C core C core 0.00513 3.914 0 10.0
-C core S core 0.0075 3.732 0.0 10.0
-S core S core 0.01724 4.250 0.0 10.0
+C1 core C1 core 0.00513 3.914 0 10.0
+C1 core S1 core 0.0075 3.732 0.0 10.0
+S1 core S1 core 0.01724 4.250 0.0 10.0
 
 #connect 1 2 single 0 0  
 #connect 2 3 single 0 0
