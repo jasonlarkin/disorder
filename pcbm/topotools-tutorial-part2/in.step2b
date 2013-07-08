@@ -1,0 +1,64 @@
+# input script for topotools tutorial step 2b
+units real
+boundary p p p
+atom_style full
+
+read_data data.step2b
+
+# interaction styles
+pair_style lj/cut/coul/cut 12.0
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+pair_modify mix geometric tail yes
+
+# OPLS considers 1-4 interactions with 50%. 
+special_bonds lj/coul 0.0 0.0 0.5
+
+# force field parameters
+# missing nonbonded parameters are inferred from mixing.
+pair_coeff   1 1  0.066 3.5      # CT
+pair_coeff   2 2  0.03 2.5      # HC
+bond_coeff   1   268.0 1.529    # CT-CT
+bond_coeff   2   340.0 1.09     # CT-HC
+angle_coeff  1    37.5 110.7    # CT-CT-HC
+angle_coeff  2    33.0 107.8    # HC-CT-HC
+dihedral_coeff 1 0.000 0.000 0.318 0.000 # HC-CT-CT-HC
+
+# initialize random velocities and run a few steps 
+# of MD to break symmetries.
+velocity all create 100.0 53244 dist gaussian mom no rot no
+fix 1 all nve
+run 100
+# and minimize for a bit to get a near 0K structure
+minimize 1.0e-4 1.0e-6 100 1000
+
+# write out restart for starting a new calculation
+# or to convert it back into a data file.
+write_restart stepr2b-min.restart
+
+# equilibration. real ethane freezes at 89K and boils at 184K
+# so we hope the force field has it as a liquid at 120K.
+timestep 0.25
+reset_timestep 0
+neigh_modify every 10 delay 20 check yes
+thermo 400
+thermo_style multi
+
+# rescale velocities to target temperature
+velocity all scale 120.0
+# and add a langevin thermostat to dissipate "hot spots".
+fix 2 all langevin 120.0 120.0 50.0 6243
+
+# equilibration trajectory
+dump 1 all dcd 400 48xethane-eq.dcd
+dump_modify 1 unwrap yes
+
+# 20.0ps
+run 80000
+
+# keep a restart of this, too.
+write_restart stepr2b-eq.restart
+# this still has not been relaxed for pressure,
+# but it should be pretty close.
+

@@ -1,6 +1,7 @@
 molecule connectivity bond angle torsion phon optimise
 
 output freq text freq.gout
+output lammps
 output xyz
 
 ###########################################################################

@@ -1,0 +1,1872 @@
+********************************************************************************
+*                       GENERAL UTILITY LATTICE PROGRAM                        *
+*                                 Julian Gale                                  *
+*                      Nanochemistry Research Institute                        *
+*                           Department of Chemistry                            *
+*                    Curtin University, Western Australia                      *
+********************************************************************************
+* Version = 4.1.0 * Last modified =  21st June 2013                            *
+********************************************************************************
+
+**** Warning - inter/intra/both directive given on potential line ****
+**** but the molecule directive is currently inactive             ****
+
+**** Warning - inter/intra/both directive given on potential line ****
+**** but the molecule directive is currently inactive             ****
+
+**** Warning - inter/intra/both directive given on potential line ****
+**** but the molecule directive is currently inactive             ****
+
+**** Warning - inter/intra/both directive given on potential line ****
+**** but the molecule directive is currently inactive             ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+
+**** Warning - inter/intra/both/bond directive given on potential line ****
+**** but the molecule directive is currently inactive                  ****
+*  optimise     - perform optimisation run                                     *
+*  phonon       - calculate phonons for final geometry                         *
+*  thermal      - calculate thermal conductivity for final geometry            *
+********************************************************************************
+
+  Job Started  at 21:10.17  7th July       2013                               
+
+  Number of CPUs =     1
+
+
+  Total number of configurations input =   1
+
+********************************************************************************
+*  Input for Configuration =   1                                               *
+********************************************************************************
+
+  Formula = C72O2H14                                                    
+
+  Number of irreducible atoms/shells =      88
+
+
+  Total number atoms/shells =      88
+
+  Dimensionality = 3               :  Bulk   
+
+
+
+  Cartesian lattice vectors (Angstroms) :
+
+      100.000000    0.000000    0.000000
+        0.000000  100.000000    0.000000
+        0.000000    0.000000  100.000000
+
+  Cell parameters (Angstroms/Degrees):
+
+  a =     100.0000    alpha =  90.0000
+  b =     100.0000    beta  =  90.0000
+  c =     100.0000    gamma =  90.0000
+
+  Initial cell volume =     1000000.000000 Angs**3
+
+  Temperature of configuration = 0.5000E+05 K 
+
+  Pressure of configuration =         0.000 GPa 
+
+  Fractional coordinates of asymmetric unit :
+
+--------------------------------------------------------------------------------
+   No.  Atomic       x           y          z         Charge      Occupancy
+        Label      (Frac)      (Frac)     (Frac)        (e)         (Frac)  
+--------------------------------------------------------------------------------
+      1 C1    c    0.509930    0.530670    0.572150     0.00000    1.000000    
+      2 C1    c    0.506450 *  0.521040 *  0.559520 *   0.00000    1.000000    
+      3 C1    c    0.494670 *  0.512100 *  0.561460 *   0.00000    1.000000    
+      4 C1    c    0.488070 *  0.510710 *  0.573510 *   0.00000    1.000000    
+      5 C1    c    0.491250 *  0.519410 *  0.584940 *   0.00000    1.000000    
+      6 C1    c    0.500860 *  0.529150 *  0.583900 *   0.00000    1.000000    
+      7 C1    c    0.498250 *  0.542330 *  0.589170 *   0.00000    1.000000    
+      8 C1    c    0.503860 *  0.552170 *  0.580140 *   0.00000    1.000000    
+      9 C1    c    0.509970 *  0.545160 *  0.569060 *   0.00000    1.000000    
+     10 C1    c    0.508850 *  0.550420 *  0.556430 *   0.00000    1.000000    
+     11 C1    c    0.505550 *  0.541690 *  0.544960 *   0.00000    1.000000    
+     12 C1    c    0.503770 *  0.528150 *  0.546730 *   0.00000    1.000000    
+     13 C1    c    0.492710 *  0.521620 *  0.540160 *   0.00000    1.000000    
+     14 C1    c    0.487090 *  0.511860 *  0.549230 *   0.00000    1.000000    
+     15 C1    c    0.473460 *  0.509420 *  0.549120 *   0.00000    1.000000    
+     16 C1    c    0.466560 *  0.507600 *  0.561700 *   0.00000    1.000000    
+     17 C1    c    0.473710 *  0.508420 *  0.573570 *   0.00000    1.000000    
+     18 C1    c    0.468000 *  0.515440 *  0.584950 *   0.00000    1.000000    
+     19 C1    c    0.478740 *  0.522290 *  0.591870 *   0.00000    1.000000    
+     20 C1    c    0.476550 *  0.534820 *  0.597430 *   0.00000    1.000000    
+     21 C1    c    0.486470 *  0.545160 *  0.596060 *   0.00000    1.000000    
+     22 C1    c    0.479810 *  0.557870 *  0.594150 *   0.00000    1.000000    
+     23 C1    c    0.485210 *  0.567240 *  0.585480 *   0.00000    1.000000    
+     24 C1    c    0.497540 *  0.564450 *  0.578360 *   0.00000    1.000000    
+     25 C1    c    0.496590 *  0.569970 *  0.565170 *   0.00000    1.000000    
+     26 C1    c    0.501980 *  0.563030 *  0.554330 *   0.00000    1.000000    
+     27 C1    c    0.494660 *  0.562250 *  0.541870 *   0.00000    1.000000    
+     28 C1    c    0.496880 *  0.549180 *  0.536190 *   0.00000    1.000000    
+     29 C1    c    0.486540 *  0.542670 *  0.529410 *   0.00000    1.000000    
+     30 C1    c    0.484440 *  0.528640 *  0.531480 *   0.00000    1.000000    
+     31 C1    c    0.470100 *  0.526210 *  0.531500 *   0.00000    1.000000    
+     32 C1    c    0.464740 *  0.516760 *  0.540160 *   0.00000    1.000000    
+     33 C1    c    0.452430 *  0.519570 *  0.547270 *   0.00000    1.000000    
+     34 C1    c    0.453520 *  0.514010 *  0.560580 *   0.00000    1.000000    
+     35 C1    c    0.448070 *  0.520700 *  0.571370 *   0.00000    1.000000    
+     36 C1    c    0.455490 *  0.521530 *  0.583860 *   0.00000    1.000000    
+     37 C1    c    0.453200 *  0.534570 *  0.589590 *   0.00000    1.000000    
+     38 C1    c    0.463530 *  0.541180 *  0.596290 *   0.00000    1.000000    
+     39 C1    c    0.465530 *  0.555400 *  0.594270 *   0.00000    1.000000    
+     40 C1    c    0.457150 *  0.562450 *  0.585670 *   0.00000    1.000000    
+     41 C1    c    0.462820 *  0.572310 *  0.576570 *   0.00000    1.000000    
+     42 C1    c    0.476550 *  0.574670 *  0.576500 *   0.00000    1.000000    
+     43 C1    c    0.483610 *  0.576330 *  0.563910 *   0.00000    1.000000    
+     44 C1    c    0.476620 *  0.575570 *  0.551950 *   0.00000    1.000000    
+     45 C1    c    0.482250 *  0.568490 *  0.540680 *   0.00000    1.000000    
+     46 C1    c    0.471430 *  0.561690 *  0.533660 *   0.00000    1.000000    
+     47 C1    c    0.473560 *  0.549210 *  0.528160 *   0.00000    1.000000    
+     48 C1    c    0.463450 *  0.538880 *  0.529510 *   0.00000    1.000000    
+     49 C1    c    0.451590 *  0.541610 *  0.536280 *   0.00000    1.000000    
+     50 C1    c    0.445950 *  0.531770 *  0.545340 *   0.00000    1.000000    
+     51 C1    c    0.440240 *  0.538830 *  0.556670 *   0.00000    1.000000    
+     52 C1    c    0.441350 *  0.533390 *  0.569390 *   0.00000    1.000000    
+     53 C1    c    0.444480 *  0.542000 *  0.580700 *   0.00000    1.000000    
+     54 C1    c    0.446500 *  0.555520 *  0.578690 *   0.00000    1.000000    
+     55 C1    c    0.445420 *  0.561220 *  0.565340 *   0.00000    1.000000    
+     56 C1    c    0.442340 *  0.553010 *  0.554640 *   0.00000    1.000000    
+     57 C1    c    0.449340 *  0.554730 *  0.542010 *   0.00000    1.000000    
+     58 C1    c    0.459080 *  0.564550 *  0.540670 *   0.00000    1.000000    
+     59 C1    c    0.462300 *  0.573130 *  0.552080 *   0.00000    1.000000    
+     60 C1    c    0.455520 *  0.571500 *  0.564110 *   0.00000    1.000000    
+     61 C7    c    0.519650 *  0.520240 *  0.566960 *  -0.03000    1.000000    
+     62 C3    c    0.522020 *  0.508200 *  0.575620 *   0.00000    1.000000    
+     63 C2    c    0.524960 *  0.509820 *  0.589150 *  -0.11500    1.000000    
+     64 C2    c    0.527600 *  0.498750 *  0.597210 *  -0.11500    1.000000    
+     65 C2    c    0.527450 *  0.486060 *  0.591720 *  -0.11500    1.000000    
+     66 C2    c    0.524650 *  0.484340 *  0.578270 *  -0.11500    1.000000    
+     67 O1    c    0.533060 *  0.541600 *  0.530860 *  -0.50000    1.000000    
+     68 O2    c    0.554430 *  0.546430 *  0.535800 *  -0.17000    1.000000    
+     69 C2    c    0.521840 *  0.495330 *  0.570270 *  -0.11500    1.000000    
+     70 C5    c    0.532010 *  0.525510 *  0.559570 *  -0.12000    1.000000    
+     71 C5    c    0.535750 *  0.517570 *  0.547080 *  -0.12000    1.000000    
+     72 C5    c    0.547400 *  0.524250 *  0.539610 *  -0.12000    1.000000    
+     73 C4    c    0.543910 *  0.538170 *  0.534990 *   0.70000    1.000000    
+     74 C6    c    0.551990 *  0.560270 *  0.531980 *  -0.18000    1.000000    
+     75 H1    c    0.525080 *  0.519310 *  0.592870 *   0.11500    1.000000    
+     76 H1    c    0.530130 *  0.500250 *  0.607030 *   0.11500    1.000000    
+     77 H1    c    0.529870 *  0.478130 *  0.597470 *   0.11500    1.000000    
+     78 H1    c    0.524110 *  0.475330 *  0.574030 *   0.11500    1.000000    
+     79 H1    c    0.519350 *  0.493060 *  0.560520 *   0.11500    1.000000    
+     80 H2    c    0.530150 *  0.535050 *  0.556900 *   0.06000    1.000000    
+     81 H2    c    0.540310 *  0.525630 *  0.566560 *   0.06000    1.000000    
+     82 H2    c    0.527630 *  0.517030 *  0.540280 *   0.06000    1.000000    
+     83 H2    c    0.538250 *  0.508070 *  0.549830 *   0.06000    1.000000    
+     84 H2    c    0.555400 *  0.524800 *  0.545380 *   0.06000    1.000000    
+     85 H2    c    0.549990 *  0.519230 *  0.531120 *   0.06000    1.000000    
+     86 H2    c    0.547500 *  0.560700 *  0.523500 *   0.06000    1.000000    
+     87 H2    c    0.545650 *  0.564520 *  0.539440 *   0.06000    1.000000    
+     88 H2    c    0.561570 *  0.564260 *  0.531430 *   0.06000    1.000000    
+--------------------------------------------------------------------------------
+
+
+  Brillouin zone sampling points :
+
+--------------------------------------------------------------------------------
+  Point number          x          y          z            Weight
+--------------------------------------------------------------------------------
+        1           0.000000   0.000000   0.000000         1.0000
+--------------------------------------------------------------------------------
+
+
+********************************************************************************
+*  General input information                                                   *
+********************************************************************************
+
+  Species output for all configurations : 
+
+--------------------------------------------------------------------------------
+  Species    Type    Atomic    Atomic    Charge       Radii (Angs)     Library
+                     Number     Mass       (e)     Cova   Ionic  VDW   Symbol
+--------------------------------------------------------------------------------
+    C1       Core        6      12.01   0.000000   0.770  0.000  1.530          
+    C7       Core        6      12.01  -0.030000   0.770  0.000  1.530          
+    C3       Core        6      12.01   0.000000   0.770  0.000  1.530          
+    C2       Core        6      12.01  -0.115000   0.770  0.000  1.530          
+    O1       Core        8      16.00  -0.500000   0.730  0.000  1.360          
+    O2       Core        8      16.00  -0.170000   0.730  0.000  1.360          
+    C5       Core        6      12.01  -0.120000   0.770  0.000  1.530          
+    C4       Core        6      12.01   0.700000   0.770  0.000  1.530          
+    C6       Core        6      12.01  -0.180000   0.770  0.000  1.530          
+    H1       Core        1       1.01   0.115000   0.370  0.000  1.080          
+    H2       Core        1       1.01   0.060000   0.370  0.000  1.080          
+--------------------------------------------------------------------------------
+
+
+  Lattice summation method = Wolf et al
+
+  Modified method - smoothed energy only / correct forces
+
+  Eta    =     0.223000 Angstrom**-1
+  Cutoff =    12.000000 Angstrom
+
+  Time limit = Infinity
+
+  Maximum range for interatomic potentials =    100000.000000 Angstroms
+
+  General interatomic potentials :
+
+--------------------------------------------------------------------------------
+Atom  Types   Potential         A         B         C         D     Cutoffs(Ang)
+  1     2                                                            Min    Max 
+--------------------------------------------------------------------------------
+C2   c C2   c Harmonic       40.7      1.40      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C2   c C3   c Harmonic       40.7      1.40      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C3   c C7   c Harmonic       27.5      1.51      0.00      0.00     0.000 1 Bond
+                                                                    single      
+H1   c C2   c Harmonic       31.8      1.08      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C5   c C7   c Harmonic       23.2      1.53      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C5   c C5   c Harmonic       23.2      1.53      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C1   c C7   c Harmonic       27.5      1.51      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C4   c C5   c Harmonic       27.5      1.51      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C6   c O2   c Harmonic       27.8      1.41      0.00      0.00     0.000 1 Bond
+                                                                    single      
+H2   c C5   c Harmonic       29.5      1.09      0.00      0.00     0.000 1 Bond
+                                                                    single      
+H2   c C6   c Harmonic       29.5      1.09      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C4   c O1   c Harmonic       45.1      1.23      0.00      0.00     0.000 1 Bond
+                                                                    single      
+C4   c O2   c Harmonic       18.6      1.33      0.00      0.00     0.000 1 Bond
+                                                                    single      
+--------------------------------------------------------------------------------
+
+  General Three-body potentials :
+
+  Cosine Harmonic form:
+
+--------------------------------------------------------------------------------
+Atom    Atom    Atom           Force Constants            Theta     Cutoffs  
+  1       2       3               (eV)                    (deg)  1-2  1-3  2-3
+--------------------------------------------------------------------------------
+C2    c C2    c C2    c                  5.4639184       120.000     Bonded
+C3    c C2    c C2    c                  5.4639184       120.000     Bonded
+C2    c C3    c C7    c                  6.0710205       120.000     Bonded
+C2    c H1    c C2    c                  3.0355102       120.000     Bonded
+C3    c H1    c C2    c                  3.0355102       120.000     Bonded
+C7    c C5    c C5    c                  5.0606292       112.700     Bonded
+C5    c C5    c C5    c                  5.0606292       112.700     Bonded
+C5    c C3    c C7    c                  5.4639184       114.000     Bonded
+C5    c C1    c C7    c                  5.4639184       114.000     Bonded
+C1    c C1    c C7    c                  3.4691546       109.500     Bonded
+C5    c C4    c C5    c                  5.4639184       111.100     Bonded
+C7    c H2    c C5    c                  3.2523324       110.700     Bonded
+C5    c H2    c C5    c                  3.2523324       110.700     Bonded
+C6    c H2    c C6    c                  3.2523324       110.700     Bonded
+C4    c H2    c C5    c                  3.0355102       109.500     Bonded
+O2    c H2    c C6    c                  3.0355102       109.500     Bonded
+H2    c H2    c C5    c                  2.8620525       107.800     Bonded
+C1    c C5    c C7    c                  5.4639184       111.100     Bonded
+C1    c C3    c C7    c                  3.4691546       109.500     Bonded
+C5    c C4    c O2    c                  7.0250380       111.400     Bonded
+C5    c C4    c O1    c                  6.9383091       120.400     Bonded
+O2    c C4    c O1    c                  7.1984957       123.400     Bonded
+C4    c C6    c O2    c                  7.1984957       116.900     Bonded
+C1    c C1    c C7    c                  6.0710205       120.000     Bonded
+--------------------------------------------------------------------------------
+
+  General Four-body potentials :
+
+  Standard form:
+
+--------------------------------------------------------------------------------
+         Atom Types             Force cst Sign Phase Phi0         Cutoffs
+   1       2       3       4       (eV)                     1-2  2-3  3-4  4-1
+--------------------------------------------------------------------------------
+H1    c C2    c C2    c H1    c  0.3144     -   2     0.00  Bonded              
+H1    c C2    c C2    c C2    c  0.3144     -   2     0.00  Bonded              
+H1    c C2    c C2    c C3    c  0.3144     -   2     0.00  Bonded              
+H1    c C2    c C3    c C7    c  0.3144     -   2     0.00  Bonded              
+C7    c C5    c C5    c C5    c  0.2819E-01 +   1     0.00  Bonded              
+C7    c C5    c C5    c C5    c  -.1084E-02 -   2     0.00  Bonded              
+C7    c C5    c C5    c C5    c  0.4336E-02 +   3     0.00  Bonded              
+C5    c C5    c C5    c H2    c  0.6505E-02 +   3     0.00  Bonded              
+C7    c C5    c C5    c H2    c  0.6505E-02 +   3     0.00  Bonded              
+H2    c C5    c C5    c H2    c  0.6505E-02 +   3     0.00  Bonded              
+O1    c C4    c C5    c C5    c  -.6006E-02 +   1     0.00  Bonded              
+O1    c C4    c C5    c C5    c  0.2663E-01 -   2     0.00  Bonded              
+O1    c C4    c C5    c C5    c  -.1505E-01 +   3     0.00  Bonded              
+O2    c C4    c C5    c C5    c  -.1199E-01 -   2     0.00  Bonded              
+O2    c C4    c C5    c H2    c  0.2862E-02 -   2     0.00  Bonded              
+C5    c C4    c O2    c C6    c  0.1012     +   1     0.00  Bonded              
+C5    c C4    c O2    c C6    c  0.1111     -   2     0.00  Bonded              
+O1    c C4    c O2    c C6    c  0.1111     -   2     0.00  Bonded              
+C4    c O2    c C6    c H2    c  0.4293E-02 +   3     0.00  Bonded              
+C1    c C7    c C5    c C5    c  0.2819E-01 +   1     0.00  Bonded              
+C1    c C7    c C5    c C5    c  -.1084E-02 -   2     0.00  Bonded              
+C1    c C7    c C5    c C5    c  0.4336E-02 +   3     0.00  Bonded              
+C1    c C7    c C5    c H2    c  0.6505E-02 +   3     0.00  Bonded              
+C1    c C1    c C7    c C3    c  0.3144     -   2     0.00  Bonded              
+C1    c C1    c C7    c C5    c  0.3144     -   2     0.00  Bonded              
+--------------------------------------------------------------------------------
+
+  Bond-order two-body potentials :
+
+--------------------------------------------------------------------------------
+Atom  Types                 A                 B                  Cutoffs(Ang)   
+  1     2                 ZetaA             ZetaB                Taper    Max   
+--------------------------------------------------------------------------------
+C1   c C1   c          1393.6000000000       346.7000000000     1.8000   2.1000
+                          3.487900000          2.211900000    
+--------------------------------------------------------------------------------
+
+  Bond-order repulsive :
+
+--------------------------------------------------------------------------------
+Atom    Type         Alpha            N             Lambda          M           
+ 1/2     1/2                                                                    
+--------------------------------------------------------------------------------
+C1   c             0.00000000       0.72751000       2.21190000       3
+C1   c
+--------------------------------------------------------------------------------
+
+  Bond-order attractive :
+
+--------------------------------------------------------------------------------
+Atom    Type         Alpha            N             Lambda          M           
+ 1/2     1/2           C              D                H                        
+--------------------------------------------------------------------------------
+C1   c  Theta       0.00000016       0.72751000       2.21190000       3
+C1   c          38049.00000000       4.38400000      -0.57058000
+--------------------------------------------------------------------------------
+
+********************************************************************************
+*  Output for configuration   1                                                *
+********************************************************************************
+
+
+  Components of energy : 
+
+--------------------------------------------------------------------------------
+  Interatomic potentials     =           0.00000000 eV
+  Three-body potentials      =           0.00000000 eV
+  Four-body potentials       =           0.00000000 eV
+  Out of plane potentials    =           0.00000000 eV
+  Bond-order potentials      =        -398.05680766 eV
+  Monopole - monopole (real) =          -4.81805134 eV
+  Monopole - monopole (recip)=           0.00000000 eV
+  Monopole - monopole (total)=          -4.81805134 eV
+  Wolf sum self energy       =          -1.82999609 eV
+--------------------------------------------------------------------------------
+  Total lattice energy       =        -404.70485510 eV
+--------------------------------------------------------------------------------
+  Total lattice energy       =          -39047.8320 kJ/(mole unit cells)
+--------------------------------------------------------------------------------
+
+
+  Number of variables =      261
+
+  Maximum number of calculations  =          1000
+  Maximum Hessian update interval =            10
+  Maximum step size               =   1.000000000
+  Maximum parameter tolerance     =   0.000010000
+  Maximum function  tolerance     =   0.000010000
+  Maximum gradient  tolerance     =   0.001000000
+  Maximum gradient  component     =   0.010000000
+
+  Symmetry not applied to optimisation
+
+  Newton-Raphson optimiser to be used
+
+  BFGS hessian update to be used
+
+  Start of bulk optimisation :
+
+  Cycle:      0 Energy:      -404.704855  Gnorm:      7.145415  CPU:    0.040
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      1 Energy:      -405.065668  Gnorm:      7.116155  CPU:    0.076
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      2 Energy:      -405.115282  Gnorm:      7.167679  CPU:    0.116
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      3 Energy:      -405.441121  Gnorm:      5.222007  CPU:    0.168
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      4 Energy:      -405.441472  Gnorm:      5.239382  CPU:    0.212
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      5 Energy:      -405.742222  Gnorm:      5.019022  CPU:    0.252
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      6 Energy:      -408.918371  Gnorm:     28.435636  CPU:    0.308
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      7 Energy:      -408.938499  Gnorm:     28.046192  CPU:    0.352
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      8 Energy:      -410.433049  Gnorm:     27.613108  CPU:    0.404
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:      9 Energy:      -411.265361  Gnorm:     31.506582  CPU:    0.460
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     10 Energy:      -412.599838  Gnorm:     28.242781  CPU:    0.508
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     11 Energy:      -419.028557  Gnorm:    263.885648  CPU:    0.552
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     12 Energy:      -419.472486  Gnorm:    282.580795  CPU:    0.588
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     13 Energy:      -420.363864  Gnorm:    302.172689  CPU:    0.628
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     14 Energy:      -423.602368  Gnorm:    518.987324  CPU:    0.668
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     15 Energy:      -426.418447  Gnorm:    729.292793  CPU:    0.716
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     16 Energy:      -586.859733  Gnorm: 100334.128749  CPU:    0.768
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     17 Energy:      -586.942127  Gnorm: 100518.855774  CPU:    0.808
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     18 Energy:      -588.377386  Gnorm: 103091.481144  CPU:    0.844
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     19 Energy:      -592.596629  Gnorm: 106272.234081  CPU:    0.876
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     20 Energy:      -613.183027  Gnorm: 136774.055882  CPU:    0.916
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     21 Energy:      -632.779958  Gnorm: 159102.944337  CPU:    0.956
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     22 Energy:      -647.751360  Gnorm: 190702.925467  CPU:    0.992
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     23 Energy:      -660.402931  Gnorm: 202510.024869  CPU:    1.032
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     24 Energy:      -670.015347  Gnorm: 228562.899615  CPU:    1.080
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     25 Energy:      -677.878850  Gnorm: 235010.057036  CPU:    1.116
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     26 Energy:      -681.858665  Gnorm: 249619.286330  CPU:    1.148
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     27 Energy:      -684.260879  Gnorm: 247491.059727  CPU:    1.184
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     28 Energy:      -687.366727  Gnorm: 260415.376570  CPU:    1.216
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     29 Energy:      -689.160520  Gnorm: 257624.964508  CPU:    1.252
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     30 Energy:      -691.313313  Gnorm: 268045.797506  CPU:    1.288
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     31 Energy:      -692.521244  Gnorm: 265023.009128  CPU:    1.320
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     32 Energy:      -693.846673  Gnorm: 272925.360535  CPU:    1.360
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     33 Energy:      -694.696335  Gnorm: 270383.541556  CPU:    1.400
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     34 Energy:      -695.250937  Gnorm: 274982.438097  CPU:    1.436
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     35 Energy:      -695.597792  Gnorm: 272898.191729  CPU:    1.476
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     36 Energy:      -695.826165  Gnorm: 275633.294662  CPU:    1.512
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     37 Energy:      -695.972334  Gnorm: 274125.465889  CPU:    1.548
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     38 Energy:      -696.063031  Gnorm: 275730.894852  CPU:    1.580
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     39 Energy:      -696.118052  Gnorm: 274746.158145  CPU:    1.616
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     40 Energy:      -696.150026  Gnorm: 275666.844865  CPU:    1.652
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     41 Energy:      -696.170485  Gnorm: 275048.347150  CPU:    1.684
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     42 Energy:      -696.181572  Gnorm: 275583.788691  CPU:    1.716
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     43 Energy:      -696.189210  Gnorm: 275203.412908  CPU:    1.752
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     44 Energy:      -696.192969  Gnorm: 275518.036570  CPU:    1.788
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     45 Energy:      -696.195867  Gnorm: 275286.816256  CPU:    1.820
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     46 Energy:      -696.197091  Gnorm: 275472.958699  CPU:    1.856
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     47 Energy:      -696.198222  Gnorm: 275333.333337  CPU:    1.888
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     48 Energy:      -696.198589  Gnorm: 275443.940743  CPU:    1.924
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     49 Energy:      -696.199049  Gnorm: 275359.947762  CPU:    1.956
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     50 Energy:      -696.199137  Gnorm: 275425.847841  CPU:    1.992
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     51 Energy:      -696.199335  Gnorm: 275375.434499  CPU:    2.024
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     52 Energy:      -696.199341  Gnorm: 275414.761663  CPU:    2.060
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     53 Energy:      -696.199432  Gnorm: 275384.542979  CPU:    2.092
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+  Cycle:     54 Energy:      -696.199432  Gnorm: 275384.542979  CPU:    2.128
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : ill conditioned Hessian - using diagonal elements only
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ** Hessian calculated **
+
+  XYZ File written as gulp.xyz                                
+
+
+
+  **** Conditions for a minimum have not been satisfied. However ****
+  **** no lower point can be found - treat results with caution  ****
+  **** unless gradient norm is small (less than 0.1)             ****
+
+
+  Final energy =    -696.19943176 eV
+  Final Gnorm  =  275384.54297865
+
+  Components of energy : 
+
+--------------------------------------------------------------------------------
+  Interatomic potentials     =           0.00000000 eV
+  Three-body potentials      =           0.00000000 eV
+  Four-body potentials       =           0.00000000 eV
+  Out of plane potentials    =           0.00000000 eV
+  Bond-order potentials      =        -368.06849102 eV
+  Monopole - monopole (real) =        -326.30094465 eV
+  Monopole - monopole (recip)=           0.00000000 eV
+  Monopole - monopole (total)=        -326.30094465 eV
+  Wolf sum self energy       =          -1.82999609 eV
+--------------------------------------------------------------------------------
+  Total lattice energy       =        -696.19943176 eV
+--------------------------------------------------------------------------------
+  Total lattice energy       =          -67172.6028 kJ/(mole unit cells)
+--------------------------------------------------------------------------------
+
+  Final fractional coordinates of atoms :
+
+--------------------------------------------------------------------------------
+   No.  Atomic        x           y          z          Radius
+        Label       (Frac)      (Frac)     (Frac)       (Angs) 
+--------------------------------------------------------------------------------
+     1  C1    c     0.509930    0.530670    0.572150    0.000000
+     2  C1    c     0.505674    0.519663    0.558026    0.000000
+     3  C1    c     0.494031    0.513055    0.562102    0.000000
+     4  C1    c     0.488361    0.511002    0.572897    0.000000
+     5  C1    c     0.491688    0.520252    0.585243    0.000000
+     6  C1    c     0.499617    0.528403    0.583418    0.000000
+     7  C1    c     0.497770    0.542101    0.589214    0.000000
+     8  C1    c     0.503428    0.552554    0.579832    0.000000
+     9  C1    c     0.507193    0.545083    0.568178    0.000000
+    10  C1    c     0.507999    0.550755    0.557284    0.000000
+    11  C1    c     0.504620    0.540971    0.544691    0.000000
+    12  C1    c     0.503346    0.529076    0.547010    0.000000
+    13  C1    c     0.492649    0.522025    0.540136    0.000000
+    14  C1    c     0.486743    0.511882    0.549613    0.000000
+    15  C1    c     0.473820    0.510385    0.548994    0.000000
+    16  C1    c     0.466736    0.508592    0.562043    0.000000
+    17  C1    c     0.473617    0.509227    0.573022    0.000000
+    18  C1    c     0.467735    0.515841    0.584782    0.000000
+    19  C1    c     0.478644    0.522814    0.591779    0.000000
+    20  C1    c     0.476701    0.534440    0.595913    0.000000
+    21  C1    c     0.486531    0.545262    0.595186    0.000000
+    22  C1    c     0.479858    0.558109    0.593308    0.000000
+    23  C1    c     0.485066    0.566571    0.585704    0.000000
+    24  C1    c     0.497429    0.564165    0.578207    0.000000
+    25  C1    c     0.496607    0.569356    0.565146    0.000000
+    26  C1    c     0.501586    0.562909    0.554508    0.000000
+    27  C1    c     0.494217    0.562165    0.541954    0.000000
+    28  C1    c     0.496532    0.549089    0.536435    0.000000
+    29  C1    c     0.486767    0.542500    0.530384    0.000000
+    30  C1    c     0.484631    0.528678    0.532272    0.000000
+    31  C1    c     0.469867    0.526088    0.532347    0.000000
+    32  C1    c     0.464905    0.517294    0.540029    0.000000
+    33  C1    c     0.452481    0.519964    0.547381    0.000000
+    34  C1    c     0.453404    0.514736    0.560897    0.000000
+    35  C1    c     0.448456    0.520620    0.570956    0.000000
+    36  C1    c     0.455977    0.521706    0.583846    0.000000
+    37  C1    c     0.453535    0.534574    0.589311    0.000000
+    38  C1    c     0.463376    0.541187    0.595371    0.000000
+    39  C1    c     0.465435    0.555513    0.593433    0.000000
+    40  C1    c     0.457354    0.562096    0.585752    0.000000
+    41  C1    c     0.463242    0.571938    0.576444    0.000000
+    42  C1    c     0.476236    0.573909    0.576455    0.000000
+    43  C1    c     0.483467    0.575127    0.563589    0.000000
+    44  C1    c     0.476837    0.574647    0.552210    0.000000
+    45  C1    c     0.482487    0.568206    0.541013    0.000000
+    46  C1    c     0.471384    0.561109    0.533635    0.000000
+    47  C1    c     0.473506    0.549749    0.529669    0.000000
+    48  C1    c     0.463297    0.538894    0.530452    0.000000
+    49  C1    c     0.452133    0.541581    0.536345    0.000000
+    50  C1    c     0.446545    0.531564    0.545477    0.000000
+    51  C1    c     0.441366    0.538800    0.556987    0.000000
+    52  C1    c     0.442514    0.533404    0.568989    0.000000
+    53  C1    c     0.445108    0.542495    0.580610    0.000000
+    54  C1    c     0.446847    0.554917    0.578729    0.000000
+    55  C1    c     0.445867    0.560996    0.564845    0.000000
+    56  C1    c     0.442991    0.553105    0.555079    0.000000
+    57  C1    c     0.449879    0.554995    0.542238    0.000000
+    58  C1    c     0.458974    0.563896    0.540579    0.000000
+    59  C1    c     0.462224    0.572611    0.552578    0.000000
+    60  C1    c     0.455700    0.571047    0.563922    0.000000
+    61  C7    c     0.512363    0.126558    0.524101    0.000000
+    62  C3    c     0.522020    0.508200    0.575620    0.000000
+    63  C2    c     0.525150    0.520451    0.591068    0.000000
+    64  C2    c     0.537219    0.505683    0.597253    0.000000
+    65  C2    c     0.528254    0.487820    0.575375    0.000000
+    66  C2    c     0.520309    0.477530    0.581929    0.000000
+    67  O1    c     0.541215    0.542210    0.529327    0.000000
+    68  O2    c     0.570618    0.539784    0.539343    0.000000
+    69  C2    c     0.525819    0.496968    0.580271    0.000000
+    70  C5    c     0.543931    0.520227    0.581038    0.000000
+    71  C5    c     0.528483    0.484944    0.560092    0.000000
+    72  C5    c     0.546561    0.520547    0.529875    0.000000
+    73  C4    c     0.544423    0.542788    0.530612    0.000000
+    74  C6    c     0.541315    0.536066    0.531392    0.000000
+    75  H1    c     0.525148    0.520449    0.591063    0.000000
+    76  H1    c     0.527739    0.929977    0.603699    0.000000
+    77  H1    c     0.526390    0.492201    0.575652    0.000000
+    78  H1    c     0.519715    0.475007    0.574973    0.000000
+    79  H1    c     0.523633    0.503225    0.571368    0.000000
+    80  H2    c     0.532771    0.566624    0.564198    0.000000
+    81  H2    c     0.545177    0.523644    0.571438    0.000000
+    82  H2    c     0.530776    0.555268    0.535399    0.000000
+    83  H2    c     0.563212    0.520261    0.851457    0.000000
+    84  H2    c     0.966841    0.552865    0.623310    0.000000
+    85  H2    c     0.550021    0.521984    0.529402    0.000000
+    86  H2    c     0.534055    0.777324    0.541063    0.000000
+    87  H2    c     0.523672    0.559234    0.920501    0.000000
+    88  H2    c     0.572238    0.540025    0.538684    0.000000
+--------------------------------------------------------------------------------
+
+  Final Cartesian lattice vectors (Angstroms) :
+
+      100.000000    0.000000    0.000000
+        0.000000  100.000000    0.000000
+        0.000000    0.000000  100.000000
+
+
+  Final cell parameters and derivatives :
+
+--------------------------------------------------------------------------------
+       a          100.000000 Angstrom     dE/de1(xx)     0.000000 eV/strain
+       b          100.000000 Angstrom     dE/de2(yy)     0.000000 eV/strain
+       c          100.000000 Angstrom     dE/de3(zz)     0.000000 eV/strain
+       alpha       90.000000 Degrees      dE/de4(yz)     0.000000 eV/strain
+       beta        90.000000 Degrees      dE/de5(xz)     0.000000 eV/strain
+       gamma       90.000000 Degrees      dE/de6(xy)     0.000000 eV/strain
+--------------------------------------------------------------------------------
+
+  Primitive cell volume =       1000000.000000 Angs**3
+
+  Density of cell =      0.001513 g/cm**3
+
+  Non-primitive cell volume =       1000000.000000 Angs**3
+
+
+  Final internal derivatives :
+
+--------------------------------------------------------------------------------
+   No.  Atomic          a             b             c           Radius
+        Label          (eV)          (eV)          (eV)        (eV/Angs)
+--------------------------------------------------------------------------------
+      1 C1    c       0.000000      0.000000      0.000000      0.000000
+      2 C1    c    -777.427974  -1117.386785  -1326.313579      0.000000
+      3 C1    c    -263.049248    479.162248   1689.069075      0.000000
+      4 C1    c     560.826639    -32.135827  -1588.458039      0.000000
+      5 C1    c    1718.752775   2439.593794    255.430712      0.000000
+      6 C1    c   -2010.525800  -2390.773019   -265.812214      0.000000
+      7 C1    c    -685.377482   -236.871952    424.106948      0.000000
+      8 C1    c    -251.216216    723.107230   -211.466377      0.000000
+      9 C1    c    -251.187033    291.967790  -1792.128427      0.000000
+     10 C1    c    -288.779030    191.536513   1845.484024      0.000000
+     11 C1    c    -981.691432  -2069.255748   -550.945315      0.000000
+     12 C1    c     413.009212   2028.936109    546.751309      0.000000
+     13 C1    c    -303.728618    574.477235   -473.057654      0.000000
+     14 C1    c    -715.764082   -358.605479    544.858672      0.000000
+     15 C1    c     888.373001    547.408775   -537.212125      0.000000
+     16 C1    c     324.211683    151.367696    929.302832      0.000000
+     17 C1    c    -295.053329     32.338551   -896.146767      0.000000
+     18 C1    c    -726.396721    266.101911   -163.200012      0.000000
+     19 C1    c    -396.368733   1032.697310    444.459548      0.000000
+     20 C1    c     550.524778  -1406.701204   -801.458784      0.000000
+     21 C1    c     543.396315    284.581174   -435.985427      0.000000
+     22 C1    c     201.518637    937.300369   -814.404870      0.000000
+     23 C1    c    -230.275002  -1137.588435    783.794434      0.000000
+     24 C1    c     161.439900   -315.158096   -245.369567      0.000000
+     25 C1    c     365.955067   -589.237072     23.484855      0.000000
+     26 C1    c    -319.165847    137.625968    159.173570      0.000000
+     27 C1    c    -635.003696     58.442994   -170.274933      0.000000
+     28 C1    c    -302.100313    162.553011     -4.727583      0.000000
+     29 C1    c     661.639792   -443.339182    428.972635      0.000000
+     30 C1    c     477.358158   -180.361619    484.390959      0.000000
+     31 C1    c    -483.792353   -699.230259    742.771730      0.000000
+     32 C1    c     286.071645    721.230785   -551.900498      0.000000
+     33 C1    c    -227.022701    465.204914     60.578643      0.000000
+     34 C1    c    -602.269709    822.068994    683.451246      0.000000
+     35 C1    c     491.362996   -528.315522   -803.715162      0.000000
+     36 C1    c     699.761673     64.422211    265.714545      0.000000
+     37 C1    c     411.537176   -151.371707     49.194785      0.000000
+     38 C1    c    -586.097654     64.713747   -382.977253      0.000000
+     39 C1    c    -377.252815    417.690435   -562.138008      0.000000
+     40 C1    c     390.864210   -552.342989    470.110399      0.000000
+     41 C1    c     811.578080     76.346219   -158.427056      0.000000
+     42 C1    c    -740.477801   -246.294503    135.255034      0.000000
+     43 C1    c    -223.293824   -250.854024   -725.861287      0.000000
+     44 C1    c     396.674857   -125.385130    342.782280      0.000000
+     45 C1    c     613.366013    -99.043622    435.925803      0.000000
+     46 C1    c     -16.847391  -1457.635018   -579.480547      0.000000
+     47 C1    c    -149.449267   1840.599376    894.046572      0.000000
+     48 C1    c    -727.413154   -106.180604    469.087615      0.000000
+     49 C1    c     847.204512    -14.629954   -380.097935      0.000000
+     50 C1    c     471.037205   -607.008522     81.130751      0.000000
+     51 C1    c     150.366495    -87.683608    571.372207      0.000000
+     52 C1    c     208.999109   -120.097660   -750.566612      0.000000
+     53 C1    c     405.820092   1267.889780     56.422130      0.000000
+     54 C1    c     -82.172707  -1205.921733    159.412801      0.000000
+     55 C1    c     145.401822   -167.738917  -1071.539291      0.000000
+     56 C1    c     111.286170    272.734502    864.396756      0.000000
+     57 C1    c     641.949809    859.774685    224.965606      0.000000
+     58 C1    c    -481.147075  -1004.784564   -238.534606      0.000000
+     59 C1    c    -304.144996   -121.821350    848.008489      0.000000
+     60 C1    c      62.981786   -141.440474   -445.363212      0.000000
+     61 C7    c       0.000000      0.000000      0.000000      0.000000
+     62 C3    c       0.000000      0.000000      0.000000      0.000000
+     63 C2    c ******************************************      0.000000
+     64 C2    c      -0.136403     -0.092571     -3.316278      0.000000
+     65 C2    c      31.294307    -68.212818      2.103543      0.000000
+     66 C2    c       7.882008     16.762136     28.827093      0.000000
+     67 O1    c   -3738.717935   -988.105731  -1410.487695      0.000000
+     68 O2    c    -428.040204    -66.920574    177.617829      0.000000
+     69 C2    c       5.818207      7.342527     35.404040      0.000000
+     70 C5    c      -1.747392     -6.302849     11.789804      0.000000
+     71 C5    c       2.542250     -0.450610      2.583180      0.000000
+     72 C5    c     -70.489211    -23.685147      9.456687      0.000000
+     73 C4    c    3871.549869    995.312494   1472.766287      0.000000
+     74 C6    c    -136.116496    -11.162377    -64.356345      0.000000
+     75 H1    c ******************************************      0.000000
+     76 H1    c       0.000000      0.000000      0.000000      0.000000
+     77 H1    c     -33.714048     59.049965    -27.854014      0.000000
+     78 H1    c      -8.198510    -17.365236    -30.085413      0.000000
+     79 H1    c      -4.693730      5.533423    -10.028211      0.000000
+     80 H2    c       0.044185     -0.059444     -0.538962      0.000000
+     81 H2    c       0.981002      3.964588     -9.471715      0.000000
+     82 H2    c       1.825657      2.330055      1.450077      0.000000
+     83 H2    c      -0.001479      0.001458      0.002583      0.000000
+     84 H2    c       0.000000      0.000000      0.000000      0.000000
+     85 H2    c      68.719582     26.918997     -9.379098      0.000000
+     86 H2    c       0.000000      0.000000      0.000000      0.000000
+     87 H2    c       0.001479     -0.001458     -0.002583      0.000000
+     88 H2    c     431.197440     65.144578   -176.478410      0.000000
+--------------------------------------------------------------------------------
+  Maximum abs   ******************************************      0.000000
+--------------------------------------------------------------------------------
+
+
+  Born effective charge tensors : 
+
+-------------------------------------------------------------------------------
+  Atom             x           y             z
+-------------------------------------------------------------------------------
+   1 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   2 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   3 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   4 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   5 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   6 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   7 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   8 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+   9 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  10 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  11 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  12 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  13 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  14 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  15 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  16 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  17 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  18 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  19 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  20 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  21 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  22 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  23 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  24 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  25 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  26 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  27 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  28 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  29 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  30 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  31 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  32 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  33 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  34 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  35 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  36 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  37 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  38 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  39 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  40 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  41 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  42 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  43 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  44 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  45 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  46 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  47 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  48 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  49 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  50 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  51 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  52 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  53 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  54 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  55 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  56 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  57 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  58 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  59 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  60 C1    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  61 C7    x      -0.0300      0.0000      0.0000
+           y       0.0000     -0.0300      0.0000
+           z       0.0000      0.0000     -0.0300
+-------------------------------------------------------------------------------
+  62 C3    x       0.0000      0.0000      0.0000
+           y       0.0000      0.0000      0.0000
+           z       0.0000      0.0000      0.0000
+-------------------------------------------------------------------------------
+  63 C2    x      -0.1150      0.0000      0.0000
+           y       0.0000     -0.1150      0.0000
+           z       0.0000      0.0000     -0.1150
+-------------------------------------------------------------------------------
+  64 C2    x      -0.1150      0.0000      0.0000
+           y       0.0000     -0.1150      0.0000
+           z       0.0000      0.0000     -0.1150
+-------------------------------------------------------------------------------
+  65 C2    x      -0.1150      0.0000      0.0000
+           y       0.0000     -0.1150      0.0000
+           z       0.0000      0.0000     -0.1150
+-------------------------------------------------------------------------------
+  66 C2    x      -0.1150      0.0000      0.0000
+           y       0.0000     -0.1150      0.0000
+           z       0.0000      0.0000     -0.1150
+-------------------------------------------------------------------------------
+  67 O1    x      -0.5000      0.0000      0.0000
+           y       0.0000     -0.5000      0.0000
+           z       0.0000      0.0000     -0.5000
+-------------------------------------------------------------------------------
+  68 O2    x      -0.1700      0.0000      0.0000
+           y       0.0000     -0.1700      0.0000
+           z       0.0000      0.0000     -0.1700
+-------------------------------------------------------------------------------
+  69 C2    x      -0.1150      0.0000      0.0000
+           y       0.0000     -0.1150      0.0000
+           z       0.0000      0.0000     -0.1150
+-------------------------------------------------------------------------------
+  70 C5    x      -0.1200      0.0000      0.0000
+           y       0.0000     -0.1200      0.0000
+           z       0.0000      0.0000     -0.1200
+-------------------------------------------------------------------------------
+  71 C5    x      -0.1200      0.0000      0.0000
+           y       0.0000     -0.1200      0.0000
+           z       0.0000      0.0000     -0.1200
+-------------------------------------------------------------------------------
+  72 C5    x      -0.1200      0.0000      0.0000
+           y       0.0000     -0.1200      0.0000
+           z       0.0000      0.0000     -0.1200
+-------------------------------------------------------------------------------
+  73 C4    x       0.7000      0.0000      0.0000
+           y       0.0000      0.7000      0.0000
+           z       0.0000      0.0000      0.7000
+-------------------------------------------------------------------------------
+  74 C6    x      -0.1800      0.0000      0.0000
+           y       0.0000     -0.1800      0.0000
+           z       0.0000      0.0000     -0.1800
+-------------------------------------------------------------------------------
+  75 H1    x       0.1150      0.0000      0.0000
+           y       0.0000      0.1150      0.0000
+           z       0.0000      0.0000      0.1150
+-------------------------------------------------------------------------------
+  76 H1    x       0.1150      0.0000      0.0000
+           y       0.0000      0.1150      0.0000
+           z       0.0000      0.0000      0.1150
+-------------------------------------------------------------------------------
+  77 H1    x       0.1150      0.0000      0.0000
+           y       0.0000      0.1150      0.0000
+           z       0.0000      0.0000      0.1150
+-------------------------------------------------------------------------------
+  78 H1    x       0.1150      0.0000      0.0000
+           y       0.0000      0.1150      0.0000
+           z       0.0000      0.0000      0.1150
+-------------------------------------------------------------------------------
+  79 H1    x       0.1150      0.0000      0.0000
+           y       0.0000      0.1150      0.0000
+           z       0.0000      0.0000      0.1150
+-------------------------------------------------------------------------------
+  80 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  81 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  82 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  83 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  84 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  85 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  86 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  87 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+  88 H2    x       0.0600      0.0000      0.0000
+           y       0.0000      0.0600      0.0000
+           z       0.0000      0.0000      0.0600
+-------------------------------------------------------------------------------
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! WARNING : Properties cannot be calculated - matrix is singular
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  Phonon Calculation : 
+
+  Number of k points for this configuration =        1
+
+--------------------------------------------------------------------------------
+  K point      1 =   0.000000  0.000000  0.000000  Weight =    1.000
+--------------------------------------------------------------------------------
+
+ Frequencies (cm-1) : 
+
+********-3914.69-3052.42-1213.58-1069.48-1060.26 -841.88 -740.52 -538.30
+ -519.40 -463.08 -399.47 -329.98 -254.04 -241.72 -221.19 -196.00 -138.97
+ -134.97 -127.15 -118.68  -60.72  -47.59  -36.69  -36.48  -34.20  -28.39
+  -28.06  -27.45  -25.30  -24.03  -21.79  -14.72  -11.91   -5.74   -1.87
+   -1.70   -1.43   -1.42   -0.81   -0.34   -0.25   -0.11   -0.06   -0.02
+   -0.01   -0.00   -0.00   -0.00   -0.00    0.00    0.00    0.00    0.00
+    0.00    0.00    0.00    0.00    0.00    0.01    0.01    0.05    0.11
+    0.13    0.15    0.88    4.16    4.26   18.34   21.89   24.72   25.79
+   29.86   35.02   43.18   45.18   49.41  100.96  112.22  136.06  164.25
+  169.04  173.27  192.41  199.35  260.98  277.73  291.04  304.34  312.52
+  328.08  340.95  345.89  367.49  375.04  382.76  388.53  390.84  396.13
+  400.16  406.02  414.96  419.38  425.74  427.74  441.08  447.90  452.80
+  459.64  462.15  464.83  469.26  481.06  487.26  489.91  503.45  509.07
+  518.12  528.71  547.35  564.53  574.97  582.78  590.34  614.28  627.28
+  637.12  638.55  651.35  661.00  665.05  669.28  675.14  679.16  691.26
+  695.70  700.91  703.62  707.53  713.47  727.59  737.78  746.41  751.34
+  752.37  757.26  772.46  779.81  799.65  807.17  815.45  840.51  877.16
+  887.57  896.01  914.06  926.22  936.26  939.84  958.46  967.30  985.73
+  995.08 1050.75 1080.19 1085.23 1094.92 1102.93 1111.73 1115.41 1128.63
+ 1162.16 1176.95 1180.92 1201.57 1209.31 1219.06 1227.40 1238.58 1252.29
+ 1259.41 1278.39 1285.29 1293.27 1297.89 1300.70 1321.14 1331.84 1335.85
+ 1351.16 1356.39 1373.32 1433.23 1445.13 1469.99 1493.21 1503.68 1530.62
+ 1561.44 1595.63 1695.27 1712.04 1718.59 1734.71 1743.04 1779.81 1807.44
+ 1818.77 1845.47 1857.17 1884.05 1927.46 1934.02 1951.85 1961.42 1986.17
+ 2005.12 2013.32 2044.39 2051.56 2062.47 2069.80 2094.49 2110.68 2118.84
+ 2136.52 2141.55 2148.31 2150.18 2158.53 2161.83 2178.67 2189.19 2199.58
+ 2212.29 2219.93 2224.11 2230.75 2257.09 2265.42 2273.29 2297.25 2302.71
+ 2331.70 2333.47 2354.99 2363.60 2369.39 2373.38 2388.17 2418.53 2427.48
+ 2460.95 2519.21 2519.80 2548.88 2588.15 2602.53 2632.36 2767.74 2768.33
+ 2928.66****************
+
+
+
+  Thermal conductivity: 
+
+  Lorentzian broadening factor = 11849.3708 cm-1
+
+--------------------------------------------------------------------------------
+ Mode    : Frequency (cm-1)         Thermal conductivity (cm**2/s)              
+--------------------------------------------------------------------------------
+    60        0.0130                  0.00000000000000
+    61        0.0140                  0.00000000000000
+    62        0.0484                  0.00000000000000
+    63        0.1087                  0.00000000000000
+    64        0.1338                  0.00000000000000
+    65        0.1508                  0.00000000000000
+    66        0.8846                  0.00000000000000
+    67        4.1595                  0.00000000000000
+    68        4.2566                  0.00000000000000
+    69       18.3415                  0.00000000000000
+    70       21.8897                  0.00000000000000
+    71       24.7234                  0.00000000000000
+    72       25.7854                  0.00000000000000
+    73       29.8634                  0.00000000000000
+    74       35.0182                  0.00000000000000
+    75       43.1812                  0.00000000000000
+    76       45.1751                  0.00000000000000
+    77       49.4062                  0.00000000000000
+    78      100.9572                  0.00000000000000
+    79      112.2183                  0.00000000000000
+    80      136.0551                  0.00000000000000
+    81      164.2521                  0.00000000000000
+    82      169.0434                  0.00000000000000
+    83      173.2687                  0.00000000000000
+    84      192.4084                  0.00000000000000
+    85      199.3481                  0.00000000000000
+    86      260.9836                  0.00000000000000
+    87      277.7273                  0.00000000000000
+    88      291.0432                  0.00000000000000
+    89      304.3362                  0.00000000000000
+    90      312.5203                  0.00000000000000
+    91      328.0810                  0.00000000000000
+    92      340.9476                  0.00000000000000
+    93      345.8853                  0.00000000000000
+    94      367.4913                  0.00000000000000
+    95      375.0423                  0.00000000000000
+    96      382.7644                  0.00000000000000
+    97      388.5334                  0.00000000000000
+    98      390.8447                  0.00000000000000
+    99      396.1338                  0.00000000000000
+   100      400.1587                  0.00000000000000
+   101      406.0181                  0.00000000000000
+   102      414.9588                  0.00000000000000
+   103      419.3806                  0.00000000000000
+   104      425.7421                  0.00000000000000
+   105      427.7410                  0.00000000000000
+   106      441.0760                  0.00000000000000
+   107      447.9009                  0.00000000000000
+   108      452.8048                  0.00000000000000
+   109      459.6379                  0.00000000000000
+   110      462.1514                  0.00000000000000
+   111      464.8251                  0.00000000000000
+   112      469.2591                  0.00000000000000
+   113      481.0596                  0.00000000000000
+   114      487.2618                  0.00000000000000
+   115      489.9087                  0.00000000000000
+   116      503.4471                  0.00000000000000
+   117      509.0659                  0.00000000000000
+   118      518.1186                  0.00000000000000
+   119      528.7104                  0.00000000000000
+   120      547.3508                  0.00000000000000
+   121      564.5275                  0.00000000000000
+   122      574.9670                  0.00000000000000
+   123      582.7811                  0.00000000000000
+   124      590.3418                  0.00000000000000
+   125      614.2820                  0.00000000000000
+   126      627.2802                  0.00000000000000
+   127      637.1219                  0.00000000000000
+   128      638.5518                  0.00000000000000
+   129      651.3487                  0.00000000000000
+   130      660.9973                  0.00000000000000
+   131      665.0520                  0.00000000000000
+   132      669.2760                  0.00000000000000
+   133      675.1367                  0.00000000000000
+   134      679.1628                  0.00000000000000
+   135      691.2626                  0.00000000000000
+   136      695.6995                  0.00000000000000
+   137      700.9126                  0.00000000000000
+   138      703.6183                  0.00000000000000
+   139      707.5293                  0.00000000000000
+   140      713.4745                  0.00000000000000
+   141      727.5944                  0.00000000000000
+   142      737.7813                  0.00000000000000
+   143      746.4057                  0.00000000000000
+   144      751.3382                  0.00000000000000
+   145      752.3712                  0.00000000000000
+   146      757.2583                  0.00000000000000
+   147      772.4568                  0.00000000000000
+   148      779.8141                  0.00000000000000
+   149      799.6500                  0.00000000000000
+   150      807.1744                  0.00000000000000
+   151      815.4537                  0.00000000000000
+   152      840.5100                  0.00000000000000
+   153      877.1598                  0.00000000000000
+   154      887.5655                  0.00000000000000
+   155      896.0102                  0.00000000000000
+   156      914.0598                  0.00000000000000
+   157      926.2189                  0.00000000000000
+   158      936.2606                  0.00000000000000
+   159      939.8404                  0.00000000000000
+   160      958.4575                  0.00000000000000
+   161      967.2998                  0.00000000000000
+   162      985.7302                  0.00000000000000
+   163      995.0753                  0.00000000000000
+   164     1050.7506                  0.00000000000000
+   165     1080.1852                  0.00000000000000
+   166     1085.2341                  0.00000000000000
+   167     1094.9171                  0.00000000000000
+   168     1102.9257                  0.00000000000000
+   169     1111.7261                  0.00000000000000
+   170     1115.4103                  0.00000000000000
+   171     1128.6257                  0.00000000000000
+   172     1162.1595                  0.00000000000000
+   173     1176.9487                  0.00000000000000
+   174     1180.9203                  0.00000000000000
+   175     1201.5733                  0.00000000000000
+   176     1209.3096                  0.00000000000000
+   177     1219.0556                  0.00000000000000
+   178     1227.3998                  0.00000000000000
+   179     1238.5844                  0.00000000000000
+   180     1252.2904                  0.00000000000000
+   181     1259.4094                  0.00000000000000
+   182     1278.3855                  0.00000000000000
+   183     1285.2930                  0.00000000000000
+   184     1293.2694                  0.00000000000000
+   185     1297.8927                  0.00000000000000
+   186     1300.6983                  0.00000000000000
+   187     1321.1395                  0.00000000000000
+   188     1331.8375                  0.00000000000000
+   189     1335.8500                  0.00000000000000
+   190     1351.1615                  0.00000000000000
+   191     1356.3905                  0.00000000000000
+   192     1373.3189                  0.00000000000000
+   193     1433.2289                  0.00000000000000
+   194     1445.1340                  0.00000000000000
+   195     1469.9873                  0.00000000000000
+   196     1493.2078                  0.00000000000000
+   197     1503.6775                  0.00000000000000
+   198     1530.6240                  0.00000000000000
+   199     1561.4424                  0.00000000000000
+   200     1595.6304                  0.00000000000000
+   201     1695.2670                  0.00000000000000
+   202     1712.0441                  0.00000000000000
+   203     1718.5924                  0.00000000000000
+   204     1734.7052                  0.00000000000000
+   205     1743.0407                  0.00000000000000
+   206     1779.8054                  0.00000000000000
+   207     1807.4431                  0.00000000000000
+   208     1818.7742                  0.00000000000000
+   209     1845.4747                  0.00000000000000
+   210     1857.1717                  0.00000000000000
+   211     1884.0492                  0.00000000000000
+   212     1927.4630                  0.00000000000000
+   213     1934.0223                  0.00000000000000
+   214     1951.8528                  0.00000000000000
+   215     1961.4151                  0.00000000000000
+   216     1986.1749                  0.00000000000000
+   217     2005.1153                  0.00000000000000
+   218     2013.3204                  0.00000000000000
+   219     2044.3877                  0.00000000000000
+   220     2051.5613                  0.00000000000000
+   221     2062.4734                  0.00000000000000
+   222     2069.8019                  0.00000000000000
+   223     2094.4894                  0.00000000000000
+   224     2110.6819                  0.00000000000000
+   225     2118.8414                  0.00000000000000
+   226     2136.5161                  0.00000000000000
+   227     2141.5502                  0.00000000000000
+   228     2148.3127                  0.00000000000000
+   229     2150.1772                  0.00000000000000
+   230     2158.5297                  0.00000000000000
+   231     2161.8255                  0.00000000000000
+   232     2178.6692                  0.00000000000000
+   233     2189.1941                  0.00000000000000
+   234     2199.5753                  0.00000000000000
+   235     2212.2868                  0.00000000000000
+   236     2219.9258                  0.00000000000000
+   237     2224.1080                  0.00000000000000
+   238     2230.7497                  0.00000000000000
+   239     2257.0867                  0.00000000000000
+   240     2265.4236                  0.00000000000000
+   241     2273.2934                  0.00000000000000
+   242     2297.2515                  0.00000000000000
+   243     2302.7092                  0.00000000000000
+   244     2331.6993                  0.00000000000000
+   245     2333.4694                  0.00000000000000
+   246     2354.9911                  0.00000000000000
+   247     2363.5970                  0.00000000000000
+   248     2369.3924                  0.00000000000000
+   249     2373.3811                  0.00000000000000
+   250     2388.1710                  0.00000000000000
+   251     2418.5342                  0.00000000000000
+   252     2427.4793                  0.00000000000000
+   253     2460.9465                  0.00000000000000
+   254     2519.2071                  0.00000000000000
+   255     2519.8014                  0.00000000000000
+   256     2548.8783                  0.00000000000000
+   257     2588.1510                  0.00000000000000
+   258     2602.5295                  0.00000000000000
+   259     2632.3636                  0.00000000000000
+   260     2767.7351                  0.00000000000000
+   261     2768.3256                  0.00000000000000
+   262     2928.6556                  0.00000000000000
+   263  ************                  0.00000000000000
+   264  ************                  0.00000000000000
+--------------------------------------------------------------------------------
+  Thermal conductivity =     0.000000 W/(m.K) 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Phonon properties (per mole of unit cells): Temperature =  50000.000 K
+--------------------------------------------------------------------------------
+  Zero point energy            =     1946.276942 eV
+  Entropy                      =        0.080634 eV/K
+                               =     7779.901381 J/(mol.K)
+  Helmholtz free-energy        =    -1951.334398 eV
+                               =  -188273.924066 kJmol-1
+  Free energy (equipartition)  =    -3830.703553 eV
+  - T*S       (equipartition)  =    -3987.620397 eV
+  Uvib        (equipartition)  =      853.116275 eV
+  Mean kinetic energy          =     2198.419466 eV
+  Heat capacity - const volume =        0.016888 eV/K
+                               =     1629.398689 J/(mol.K)
+--------------------------------------------------------------------------------
+
+  Phonon density of states : 
+
+--------------------------------------------------------------------------------
+ Frequency (cm-1) Density of States                                             
+--------------------------------------------------------------------------------
+    0.00000 |***********************************************************   0.990
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.000
+*********** |                                                              0.010
+--------------------------------------------------------------------------------
+
+
+
+  Time to end of optimisation =       2.9160 seconds
+
+
+  Peak dynamic memory used =       2.18 MB 
+
+
+  Timing analysis for GULP :
+
+--------------------------------------------------------------------------------
+  Task / Subroutine                                          Time (Seconds)
+--------------------------------------------------------------------------------
+  Calculation of real space energy and derivatives                0.3800
+  Calculation of three-body energy and derivatives                0.2880
+  Calculation of four-body energy and derivatives                 0.0120
+  Calculation of Bond Order energy and derivatives                0.9720
+  Calculation of phonons                                          0.7320
+  Calculation of scattering                                       0.0000
+  Calculation of matrix inversion                                 0.4200
+--------------------------------------------------------------------------------
+  Total CPU time                                                  2.9160
+--------------------------------------------------------------------------------
+
+
+  LAMMPS file written on channel 26
+
+
+
+  **** GULP has completed with  23 warnings - beware! ****
+
+  Job Finished at 21:10.20  7th July       2013                               
+
