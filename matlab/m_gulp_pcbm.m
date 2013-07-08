@@ -1,13 +1,13 @@
 clear
 path(path,'/home/jason/disorder/matlab/');
 lj = m_lj; constant = m_constant;
-str.main = '/home/jason/disorder/pcbm/pcbm_pdb/isolated/';
+str.main = '/home/jason/disorder/pcbm/pcbm_pdb/isolated/pcbm28/';
 str.matlab = '/home/jason/disorder/matlab/';
 str.gin = 'gulp_af_pcbm.tmp';
 %--------------------------------------------------------------------------
 %x0
 %--------------------------------------------------------------------------
-x0 = m_x0_read([str.main 'p1d1_1a1b1c.isolated.data']);
+x0 = m_x0_read([str.main 'pcbm28.data']);
 %--------------------------------------------------------------------------
 %gulp
 %--------------------------------------------------------------------------

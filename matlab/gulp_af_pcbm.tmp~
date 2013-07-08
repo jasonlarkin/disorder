@@ -1,10 +1,11 @@
-phon dispersion optimise thermalconductivity
-
-temperature
-
+molecule compare phon dispersion optimise thermalconductivity
+maxcyc 10000
+temperature 50000.0
 output freq text freq.gout
 output xyz
+output movie
 output lammps
+
 
 ###########################################################################
 #------------------------OLPS----------------------------------------------

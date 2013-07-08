@@ -30,19 +30,20 @@ O2    core -0.17
 H1    core  0.115
 H2    core  0.060
 qwolf 0.223 12.0
-#epsilon #C1   0.070       3.550
-#C2   0.070       3.550
-#C3   0.070       3.550
-#C4   0.105       3.750
-#C5   0.066       3.500
-#C6   0.066       3.500
-#C7   0.066       3.500
-#O1   0.210       2.960
-#O2   0.140       2.900
-#H1   0.030       2.420
-#H2   0.030       2.500
-#lennard epsilon zero product 12 6 kcal all
-#0.0 12.0
+epsilon 
+C1   0.070       3.550 
+C2   0.070       3.550 
+C3   0.070       3.550 
+C4   0.105       3.750 
+C5   0.066       3.500 
+C6   0.066       3.500 
+#C7   0.066       3.500 
+#O1   0.210       2.960 
+#O2   0.140       2.900 
+#H1   0.030       2.420 
+H2   0.030       2.500
+lennard epsilon zero product 12 6 inter kcal all
+0.0 12.0
 harmonic intra bond kcal single
 C2  core C2  core 938.0  1.40
 C2  core C3  core 938.0  1.40
@@ -111,26 +112,26 @@ C7  core C5  core C5  core C5   0.1    +3 0.0  2.0  2.0  2.0  2.0 1
 torsion intra bond kcal
 C5  core C5  core C5  core H2   0.15   +3 0.0  2.0  2.0  2.0  2.0 1
 C7  core C5  core C5  core H2   0.15   +3 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 H2  core C5  core C5  core H2   0.15   +3 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 O1  core C4  core C5  core C5  -0.1385 +1 0.0  2.0  2.0  2.0  2.0 1
 O1  core C4  core C5  core C5   0.6140 -2 0.0  2.0  2.0  2.0  2.0 1
 O1  core C4  core C5  core C5  -0.3470 +3 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 O2  core C4  core C5  core C5  -0.2765 -2 0.0  2.0  2.0  2.0  2.0 1
 O2  core C4  core C5  core H2   0.066  -2 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 C5  core C4  core O2  core C6   2.3345 +1 0.0  2.0  2.0  2.0  2.0 1
 C5  core C4  core O2  core C6   2.5620 -2 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 O1  core C4  core O2  core C6   2.5620 -2 0.0  2.0  2.0  2.0  2.0 1
 C4  core O2  core C6  core H2   0.0990 +3 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 C1  core C7  core C5  core C5   0.650  +1 0.0  2.0  2.0  2.0  2.0 1
 C1  core C7  core C5  core C5  -0.025  -2 0.0  2.0  2.0  2.0  2.0 1
 C1  core C7  core C5  core C5   0.100  +3 0.0  2.0  2.0  2.0  2.0 1
-torsion kcal intra bond
+torsion intra bond kcal
 C1  core C7  core C5  core H2   0.150  +3 0.0  2.0  2.0  2.0  2.0 1
 C1  core C1  core C7  core C3   7.250  -2 0.0  2.0  2.0  2.0  2.0 1
 C1  core C1  core C7  core C5   7.250  -2 0.0  2.0  2.0  2.0  2.0 1
