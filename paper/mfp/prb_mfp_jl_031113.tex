@@ -622,116 +622,94 @@ ENDALAN
 \subsection{\label{S:Theory:Thermal}Vibrational Thermal Conductivity}
 %--------------------------------------------------------------------------
 
-BEGINALAN
-
 To calculate the total vibrational thermal conductivity $k_{vib}$ 
 of amorphous solids, we predict 
-the contributions from $k_{ph}$ and $k_{AF}$, 
+the contributions from $k_{pr}$ and $k_{AF}$, 
 \begin{equation}\label{EQ:kvib}
 \begin{split}
-k_{vib} = k_{ph} + k_{AF},
+k_{vib} = k_{pr} + k_{AF},
 \end{split}
 \end{equation}
-where $k_{ph}$\cite{ashcroft_solid_1976,dove_introduction_1993,
-ziman_electrons_2001} is the contribution from phonons or 
-phonon-like modes and $k_{AF}$ is the contribution from the 
-Allen-Feldman (AF) theory of diffusons.
+where $k_{pr}$\cite{ashcroft_solid_1976,dove_introduction_1993,
+ziman_electrons_2001} is the contribution from phonon-like 
+propagating modes and $k_{AF}$ is the non-propagating contribution 
+from the Allen-Feldman (AF) theory of diffusons.
 \cite{feldman_thermal_1993} The form of Eq. \eqref{EQ:kvib}
 has been used in 
 several previous studies with varying assumptions. The various 
-assumptions all lead to predictions that $k_{ph}$ is a significant 
-fraction($> 20\%$) of $k_{vib}$.(cite)  
+assumptions all lead to predictions that $k_{pr}$ is an negligible 
+($< 10\%$) 
+and non-negligible ($> 20\%$) fraction of $k_{vib}$ 
+for a-SiO2(cite) and a-Si(cite), respectively.  
 
 We predict 
-the contribution $k_{ph}$ using a Debye-like model,
+the contribution $k_{pr}$ using a Debye-like model,(cite) 
 \begin{equation}\label{EQ:kph}
 \begin{split}
-k_{ph} = \frac{1}{V}\int_{0}^{\omega_{cut}} 
-d\omega DOS(\omega) C(\omega) D(\omega),
+k_{pr} = \frac{1}{V}\int_{0}^{\omega_{cut}} 
+d\omega DOS(\omega) C(\omega) D_{pr}(\omega),
 \end{split}
 \end{equation}
-and the diffuson contribution $k_{AF}$ using
-\cite{feldman_thermal_1993,feldman_numerical_1999}
-\begin{equation}\label{EQ:kAF}
-\begin{split}
-k_{AF} = \frac{1}{V}\sum_{\omega_i>\omega_{cut}} C_i(\omega) D_{AF,i}(\omega) 
-\end{split}
-\end{equation}
-The phonon contribution $k_{ph}$ is written as an integral because 
+where $V$ is the system volume, $\omega$ is the vibrational mode 
+frequency, $DOS(\omega)$ is the vibrational 
+density of states, $C(\omega)$ is the vibrational mode specific heat, 
+$\omega_{cut}$ identifies the transition to propagating modes 
+(see Section ), and 
+$D_{pr}(\omega)$ is the propagating mode thermal diffusivity.
+The cut-off frequency $\omega_{cut}$ identifies the transition from 
+propagating (phonon-like) to non-propagating (diffuson) modes 
+(see Section ).
+\cite{feldman_thermal_1993,cahill_thermal_1994,
+feldman_numerical_1999,liu_high_2009,yang_anomalously_2010}
+The propagating contribution $k_{pr}$ is written as an integral because 
 the finite simulation sizes studied in this work (and others)
 \cite{feldman_thermal_1993,feldman_numerical_1999}
 limit the lowest 
-frequency vibrational modes which can be studied. The diffuson contribution 
-$k_{AF}$ is written as a sum because there are enough high-frequency 
-diffuson modes in the finite-size systems studied.
-\cite{feldman_thermal_1993,feldman_numerical_1999}  
-The cut-off frequency $\omega_{cut}$ identifies the transition from 
-phonon-like to diffuson modes.
-\cite{feldman_thermal_1993,cahill_thermal_1994,
-feldman_numerical_1999,liu_high_2009,yang_anomalously_2010}
-
-Phonon-like behavior 
-can be identified for a-Si in this work and others, 
-both experimentally
-\cite{liu_high_2009,yang_anomalously_2010,minnich_thermal_2011,
-regner_broadband_2013} 
-and numerically.
-\cite{feldman_thermal_1993,feldman_numerical_1999,
-mcgaughey_thermal_2004,he_heat_2011} 
-Including the phonon-like contribution $k_{ph}$ 
-for a-Si is not qualitatively sensitive 
-to the choice of model
-\cite{feldman_thermal_1993,feldman_numerical_1999,liu_high_2009} 
-or $\omega_{cut}$.
-\cite{feldman_thermal_1993,feldman_numerical_1999,
-donadio_atomistic_2009,liu_high_2009,yang_anomalously_2010}
-
-In this work, we identify the phonon limit by $\omega_{cut}$ in 
-Eq. \eqref{EQ:kvib}, 
-in Section \ref{S:Diffusivities}. By identifying $\omega_{cut}$   
-the contribution of phonon-like modes in a-Si and 
-a-SiO$_2$ is quantified in Section \ref{S:Bulk} and 
-the thermal conductivity accumulation 
-is predicted in Section \ref{S:Accumulation}. 
-
-ENDALAN
-
-%--------------------------------------------------------------------------
-\subsection{\label{S:Theory:Thermal:Phonons}Phonons}
-%--------------------------------------------------------------------------
-
-BEGINALAN
-
-Eq. \ref{EQ:kph} can be derived starting 
-with the Kubo theory,
-\cite{flicker_lattice_1973,allen_thermal_1993,alam_lattice_2005,
-baldi_thermal_2008,yang_anomalously_2010} which is used to derive 
-the Allen-Feldman diffuson theory,\ref{feldman_thermal_1993} 
-and taking the limit 
-of zero phonon self-energy.\cite{baldi_thermal_2008} 
-Eq. \eqref{EQ:kph} can also be obtained using the single-mode relaxation
+frequency vibrational modes which can be studied. 
+Eq. \eqref{EQ:kph} can be obtained using the single-mode relaxation
 time approximation to solve 
-the Boltzmann transport equation.\cite{ziman_electrons_2001}  
-Assumed in Eq. \eqref{EQ:kph} 
+the Boltzmann transport equation for a phonon gas.
+\cite{ziman_electrons_2001}. Assumed in Eq. \eqref{EQ:kph} 
 are isotropy (valid for an amorphous material) and a single phonon 
 polarization,(cite) making the  
 properties a function of the mode frequency $\omega$ only. The 
 choice of a single phonon polarization (i.e., an averaging 
 of the transverse and longitudinal branches)(cite) does not 
 significantly change 
-the results predicted in this work or others.
+the results predicted in this work, or others.
 \cite{feldman_thermal_1993,cahill_thermal_1994,
 feldman_numerical_1999,baldi_thermal_2008,liu_high_2009,
 yang_anomalously_2010} 
 
-For a phonon gas, Eq. \eqref{EQ:kph} has mode diffusivity   
+Under the Debye approximation, 
+which assumes isotropic and linear dispersion (i.e., $v_g = v_s$), 
+the density of states, $DOS(\omega)$, is
+\begin{equation}\label{EQ:DOS_debye}
+DOS(\omega) = \frac{3\pi\omega^2}{2v_{s,DOS}^3},
+\end{equation}
+where $v_s$ is an appropriate sound speed.(cite) 
+Since we use MD simulations, which are classical 
+and obey Maxwell-Boltzmann 
+statistics,\cite{mcquarrie_statistical_2000} we take the phonon and diffuson 
+specific heat to be $C(\omega) = k_{\text{B}}$ in the 
+harmonic limit. This harmonic approximation has been shown to be valid 
+for a-Si modeled using the Stillinger-Weber potential at the temperatures of 
+interest here for low-frequency modes (see Section ).(cite) 
+Taking the classical limit for the specific heat allows for a direct 
+comparison between 
+the MD- and lattice dynamics-based methods. 
+
+In a disordered system, only the diffusivitiy of the low-frequency 
+propagating modes can be written as(cite)     
 \begin{equation}\label{EQ:Dtau}
 \begin{split}
-D(\omega) = \frac{1}{3}v^2_g(\omega)\tau(\omega).
+D_{pr}(\omega) = \frac{1}{3}v^2_g(\omega)\tau(\omega),
 \end{split}
 \end{equation}
+where the mode group velocity $v_g(\omega) = v_s$ and $\tau(\omega)$ is 
+the mode lifetime. 
 The physical picture is of propagating plane waves which 
-travel with velocity $v_g$ for a time $\tau$ before scattering. 
+travel with velocity $v_s$ for a time $\tau$ before scattering. 
 An equivalent physical picture in terms of a scattering length 
 is
 \begin{equation}\label{EQ:DLambda}
@@ -745,148 +723,94 @@ where $\Lambda$ is the phonon mean free path (MFP), defined as
 \Lambda(\omega) = v_{g}(\omega) \tau(\omega).
 \end{split}
 \end{equation}
-Both Eqs. \eqref{EQ:Dtau} and \eqref{EQ:DLambda} are
-valid in the propagating limit, 
-i.e. the Ioffe-Regel (IR) limit.(cite)
-
-In disordered system, Eqs. and  are only valid in the 
+In a disordered system,  is only valid in the 
 low-frequency, long-wavelength limit.(cite) 
-Because of this, we focus on the mode 
-diffusivity $D$ as the fundamental quantity. 
-The phonon thermal diffusivity, $D_{ph}(\omega)$, is modeled using 
+Because Eq. \eqref{EQ:Dtau} is only valid at low frequencies, 
+the mode diffusivity $D$ is the fundamental quantity for modes at all 
+frequencies.(cite)  
+The propagating thermal diffusivity is modeled using 
 \begin{equation}\label{EQ:Dw2}
 \begin{split}
-D_{ph}(\omega) = B\omega^{-2} 
+D_{pr}(\omega) = B\omega^{-n}, 
 \end{split}
 \end{equation}
-which is a scaling predicted for Umklapp phonon-phonon scattering,
-(cite callaway) and
-\begin{equation}\label{EQ:Dw4}
+where $B$ and $n$ are constants.   
+At low frequencies (long wavelengths), $v_g = v_s$ and the scaling of 
+diffusivity with frequency comes from the lifetime, 
+\begin{equation}\label{EQ:tauw2}
 \begin{split}
-D_{ph}(\omega) = B\omega^{-4} 
+\tau(\omega) = B_{\tau} \omega^{-n},
 \end{split}
 \end{equation}
-which is the scaling predicted by Rayleigh scattering.
-\cite{klemens_scattering_1955} Both scalings Eqs. and also assume 
+where $B_{\tau} = B/v_s^2$. For amorphous materials, the scaling exponent has been 
+found to be $2\ge n \le 4$,(cite) 
+where $n=2$ corresponds to 
+Umklapp scattering\cite{callaway_model_1959} and $n=4$ is Rayleigh scattering 
+from point defects in a crystal.\cite{klemens_scattering_1955}
+The form of the $DOS(\omega)$ [Eq. \eqref{EQ:DOS_debye}] 
+and $D(\omega)$ [Eq. \eqref{EQ:Dw2}] with $n\le2$  
+ensures that the 
+thermal conductivity Eq. \eqref{EQ:kph} is finite.(cite) The form for $D(\omega)$ 
+[Eq. \eqref{EQ:Dw4}] with $n>2$ causes the thermal conductivity 
+[Eq. \eqref{EQ:kph}] to diverge 
+in the low-frequency limit as the system size is increased,(cite) 
+which can be fixed using additional anharmonic scattering
+\cite{feldman_thermal_1993,feldman_numerical_1999} or 
+boundary scattering.\cite{cahill_lower_1994,liu_high_2009,yang_anomalously_2010}
 
-Since we use MD simulations, which are classical 
-and obey Maxwell-Boltzmann 
-statistics,\cite{mcquarrie_statistical_2000} we take the phonon and diffuson 
-specific heat to be $C(\omega) = C(\omega_i) = \frac{k_{\text{B}}}{V}$ in the 
-harmonic limit, where $V$ 
-is the system volume. This harmonic approximation has been shown to be valid 
-for a-Si modeled using the Stillinger-Weber potential at the temperatures of 
-interest here.(cite)  
-Taking the classical limit for the specific heat allows for a direct 
-comparison between 
-the MD- and lattice dynamics-based methods. 
-
-Under the Debye approximation, 
-which assumes isotropic and linear dispersion (i.e., $v_g = v_s$), 
-the density of states, $DOS(\omega)$, is
-\begin{equation}\label{EQ:DOS_debye}
-DOS(\omega) = \frac{3\pi\omega^2}{2v_{s,DOS}^3},
+For non-propagating modes in the AF diffuson theory, 
+$D(\omega)$ cannot be written as Eq. \eqref{EQ:Dtau}.\cite{allen_thermal_1993}  
+The diffuson contribution to thermal conductivity, $k_{AF}$, is
+\cite{feldman_thermal_1993,feldman_numerical_1999}
+\begin{equation}\label{EQ:kAF}
+\begin{split}
+k_{AF} = \frac{1}{V}\sum_{\omega_i>\omega_{cut}} C_i(\omega) D_{AF,i}(\omega), 
+\end{split}
 \end{equation}
-where $v_s$ is an appropriate sound speed.(cite)
-
-The form for $D(\omega)$ (Eq. \eqref{EQ:Dw2}) 
-and the $DOS(\omega)$ (Eq. \eqref{EQ:DOS_debye}) 
-cause a cancellation of $\omega$ dependence in 
-Eq. \eqref{EQ:kph} and ensures that the 
-thermal conductivity is finite. The form for $D(\omega)$ 
-(Eq. \eqref{EQ:Dw4}) causes the thermal conductivity 
-(Eq. \eqref{EQ:kph}) to diverge 
-in the low-frequency limit as the system size is increased as 
-$L^{1/4}$.(cite)  
-
-ENDALAN
-
-While the classic limit for the mode specific heat is 
-an over-prediction for the high frequency modes in a-Si, 
-the non-propagating contribution 
-predicted by broadband FTDR matches the prediction from the AF diffuson theory.
-Adjusting the specific heats to include quantum statistical effects...
-
-We can thus focus on the less understood low-frequency propagating contribution. 
-
-Because we use molecular dynamics (MD) simulations, we
-
-In general, the thermal conductivity $k_{ph}$ and group velocity 
-$v_{g}$ depend on the spatial direction $\mathbf{n}$. 
-Since the amorphous materials studied in this work are isotropic, 
-$k_{ph}$ and $v_{g}$ are scalar quantities independent of the direction 
-$\mathbf{n}$. 
-
-%--------------------------------------------------------------------------
-\subsection{\label{S:Theory:Thermal:Diffusons}Diffusons}
-%--------------------------------------------------------------------------
-
-BEGINALAN
-
-For disordered systems, the vibrational modes are no 
-longer pure plane-waves (i.e., phonon modes), except in the low-frequency 
-(long-wavelength) limit.(cite) When applied in the classical limit, 
-the Allen-Feldman (AF) theory computes 
-the contribution of diffusive, non-propagating modes (i.e., diffusons) 
-to thermal conductivity\cite{allen_thermal_1993} 
+where $\omega_i$ is the frequency of the $i$th diffuson mode, $C_i(\omega_i)$ 
+is the diffuson specific heat, and $D_{AF,i}$ is the diffuson diffusivity.
+Eq. \eqref{EQ:kAF} is written as a sum because there are enough high-frequency 
+diffuson modes in the finite-size systems studied in this work (and others).
+\cite{feldman_thermal_1993,feldman_numerical_1999} 
+Written as an integral, Eq. \eqref{EQL:kAF} has the same form as 
+Eq. \ref{EQ:kph}, which can be derived starting 
+with the Kubo theory
+\cite{flicker_lattice_1973,allen_thermal_1993,alam_lattice_2005,
+baldi_thermal_2008,yang_anomalously_2010}  
+and taking the limit 
+of zero phonon self-energy.\cite{baldi_thermal_2008} 
+The AF diffusivities are predicted by\cite{allen_thermal_1993} 
 \begin{equation}\label{EQ:DAF}
 \begin{split}
 D_{AF,i} = \frac{\pi V^2}{\hbar^2\omega^2_i}\sum_{j\neq i}
-|\left< i | J_{x,y,z} | j \right>|^2 \delta(\omega_i - \omega_j)
+|S_{ij}|^2 \delta(\omega_i - \omega_j)
 \end{split}
 \end{equation}
-where $D_{AF,i}$ is the mode diffusivity and $\omega_i$ is the 
-frequency of the $i$th diffuson. The diffusivity of diffusons 
+where $\hbar$ is Planck's constant, $S_{ij}$ is the heat current operator 
+between vibrational modes $i$ and $j$, and $\delta$ is the Dirac delta 
+function. The diffusivity of diffusons 
 can be calculated from harmonic lattice dynamics theory.
 \cite{allen_thermal_1993,feldman_thermal_1993,feldman_numerical_1999} 
-
-ENDALAN
+The heat current opreator $S_{ij}$ measures the thermal 
+coupling between modes $i$ and $j$ based on their frequencies and 
+spatial overlap of eigenvectors (see Section and ). 
+For Eq. \eqref{EQ:DAF}, $S_{ij}$ is directionally averaged because 
+the amorphous materials studied in this work are isotropic
+The diffuson specific heat is taken to be $C_i(\omega) = k_{\text{B}}$ 
+to remain consistent with the same assumption for low-frequency propagating 
+modes and the MD- and LD-based methods compared in this work. The implication 
+of this assumption is discussed in Section .
 
 %--------------------------------------------------------------------------
-\subsection{\label{S:Limits}Thermal Diffusivity and Conductivity Limits}
+\subsection{\label{S:Limits}Thermal Conductivity and Diffusivity Limits}
 %--------------------------------------------------------------------------
 
-BEGINALAN
-
-The relative contribution of $k_{ph}$ and $k_{AF}$ to $k_{vib}$ 
-has been estimated 
-to be approximately equal for a model of a-Si  
-at 300 K,\cite{he_heat_2011} 
-while earlier studies find that $k_{ph}$ is less than half.
-\cite{feldman_thermal_1993,
-feldman_numerical_1999} Assuming a constant contribution  
-$k_{AF} ~ 1$ W/m-K, experimental 
-measurements and estimates show that the contribution from 
-$k_{ph}$ is low as $~20\%$,
-\cite{cahill_thermal_1994,feldman_numerical_1999} 
-$~40\%$,\cite{liu_high_2009} and as high as,
-\cite{yang_anomalously_2010} all depending on the assumed 
-scaling of the low-frequency vibrational scattering. 
-The thermal conductivity $k_{vib}$ has also been estimated for 
-a-GeTe\cite{sosso_thermal_2012}, where $\k_{ph}\approx 0$ and 
-$k_{vib} \approx k_{AF}$, and silicon nanowires,
-\cite{donadio_atomistic_2009} where $k_{ph}\approx k_{AF}$. 
-
-For disordered materials In the low-frequency, long-wavelength limit, 
-the mode thermal diffusivity 
-has the form of Eq. \eqref{EQ:Dw2} or \eqref{EQ:Dw4}.(cite)  
-The mode diffusivities 
-generally decrease with increasing frequency,(cite) often reaching a 
-plateau,(cite) and then decrease exponentially to zero as the modes become 
-localized.(cite) Diffuson thermal diffusivities, 
-Eq. \eqref{EQ:DAF}, cannot 
-in general be 
-expressed as either Eq. \eqref{EQ:Dtau} or \eqref{EQ:DLambda}.  
-For disordered systems, the mode group velocities, 
-lifetimes, MFPs cannot be estimated independently.
-\cite{allen_thermal_1993,feldman_thermal_1993,
-feldman_numerical_1999,allen_evolution_1998,larkin_predicting_2013}
-
-It is useful to consider a high-scatter limit for the mode diffusivity,
+To understand the contribution $k_{AF}$, it is useful to consider a 
+high-scatter limit for the mode diffusivity,
 \begin{equation}\label{EQ:D_HS}
 D_{HS} = \frac{1}{3} v_s a,
 \end{equation}
-where it is assumed that all vibrational modes travel with the sound speed, 
+where it is assumed that all vibrational modes travel with the sound speed  
 $v_s$, and scatter over a distance of the lattice constant, $a$. This 
 diffusivity assumption leads to a high-scatter (HS) limit of thermal 
 conductivity in the classical limit\cite{cahill_lattice_1988} 
@@ -894,45 +818,88 @@ conductivity in the classical limit\cite{cahill_lattice_1988}
 k_{HS} = \frac{k_{\text{B}}}{V_b}b v_s a,
 \end{equation}
 where $V_b$ is the volume of the unit cell and $b$ is the number of atoms 
-in the unit cell. 
-
-For amorphous systems, the 
-spatial disorder creates strong scattering, and $k_{vib}$ tends to be 
-near the high-scatter limit $k_{HS}$.(cite) 
-It was demonstrated by Kittel that  
-the thermal conductivity of glasses above 20 K could be interpreted 
-using a temperature-independent high-scatter diffusivity on the order 
-of Eq. \eqref{EQ:D_HS}.  
-Since this corresponds to a phonon model with MFP $\Lambda = a$, 
-too small to justify use of the model, implies that the dominant 
-modes in most glasses are diffusons and not phonons.(cite)  
-
-One way to interpret this result is to use assume 
-$k_{vib} = k_{AF} = k_{HS}$. Amorphous Lennard-Jones argon is dominated 
-by high-scatter modes,\cite{larkin_predicting_2013} as is a model of 
-a-GeTe, and both their $k_{vib} \approx k_{HS}$.\cite{sosso_thermal_2012} 
-For a-SiO$_2$, $k_{vib} \approx 2k_{HS}$, while it is unclear what the 
-appropriate lattice constant $a$ should be.(cite)   
-For a-Si, the experimentally measured thermal conductivity at 
-300 K $k_{vib} \approx (1-6) k_{HS}$,\cite{cahill_lower_1992}  
-indicating that there may be a large contribution from $k_{ph}$.
-
-While Eqs. and are commonly used to establish a high-scatter limit for 
+in the unit cell.\cite{cahill_lower_1992} 
+The advantage of $k_{HS}$ is a simple 
+functional form of the macroscopic material properties which can 
+be evaluated with experimental measurements or modeling predictions. 
+While Eqs. \eqref{EQ:D_HS} and \eqref{EQ:k_HS} are commonly used to 
+establish a high-scatter limit for 
 diffusivity and thermal conductivity, predictions for a-SiGe alloys 
-demonstrated that these are not true high-scatter limits.
-\cite{feldman_thermal_1993} Recently, the thermal conductivity 
-of several materials has been measured to be significantly below 
-$k_{HS}$.(cite) 
+\cite{feldman_thermal_1993} and experiments 
+demonstrate that these are not true high-scatter limits.  
+However, $k_{HS}$ is a good lower limit for the thermal conductivity 
+of a-SiO2(cite) and a-Si, as well as other glasses.(cite)
 
-By using lattice dynamics calculations and molecular dynamics simulations, 
+It was demonstrated by Kittel that  
+the thermal conductivity of glasses in the high-temperature limit could 
+be interpreted 
+using a temperature-independent high-scatter diffusivity on the order 
+of Eq. \eqref{EQ:D_HS}.\cite{kittel_interpretation_1949}  
+This corresponds to a propagating (phonon) model with MFP $\Lambda = a$, 
+too small to justify use of the model. The success of Kittel's theory 
+implies that the dominant 
+modes in most glasses are diffusons and not phonons,(cite) and  
+$k_{vib} \approx k_{AF} = k_{HS}$. 
+For example, amorphous Lennard-Jones argon is dominated 
+by high-scatter modes,\cite{larkin_predicting_2013} as is a model of 
+a-GeTe,\cite{sosso_thermal_2012} and both their $k_{vib} \approx k_{HS}$. 
+For a-SiO$_2$, $k_{vib} \approx 2k_{HS}$, while it is unclear what the 
+appropriate lattice constant $a$ should be, making a factor of 
+2 reasonably uncertain.(cite) 
+For a-Si, the experimentally measured thermal conductivity at 
+300 K is $k_{vib} \approx (1-6) k_{HS}$,\cite{cahill_lower_1992}  
+indicating that there may be a large contribution from $k_{pr}$.
+
+The relative contributions of $k_{pr}$ and $k_{AF}$ to $k_{vib}$ have 
+been estimated from experiments and modeling for 
+a-Si and a-SiO2. At 300 K for a-Si modeled by the Tersoff potential,   
+$k_{ph} \approx k_{AF}$.\cite{he_heat_2011} Earlier studies using 
+different models of a-Si find 
+that $k_{pr}$ is less than half of 
+$k_{vib}$.\cite{feldman_thermal_1993,
+feldman_numerical_1999} Estimates based on experimental measurements 
+have shown $k_{pr}$ as low as 
+$~20\%$\cite{cahill_thermal_1994,feldman_numerical_1999} 
+and as high as $~80\%$ $k_{vib}$.
+\cite{liu_high_2009,yang_anomalously_2010}
+While different predictions for a-Si 
+depend on the experimental sample preparations
+(cite) 
+and the assumed scaling of the low-frequency 
+vibrational diffusivities (see Section and )(cite), 
+all evidence supports that $k_{pr}$ is a significant fraction 
+of $k_{vib}$.(cite) 
+For a-SiO2, 
+modeling based on experiments show that $k_{pr}$ is less than $10\%$ 
+of $k_{vib}$.(cite) 
+
+Recent broadband FDTR experiments by Regner et al. measured  
+the apprent thermal conductivity change with frequency of a-Si and 
+a-SiO2. By varying the FDTR frequency, 
+the penetration depth of the experiments $L_p$ was varied 
+between $~40$ nm and $1 \mu$m.(cite)  
+They argue that the apparent 
+thermal conducvitiy variation with $L_p$ represent the accumulated 
+thermal conductivity for propagating modes with MFP less than 
+$L_p$. While predictions for $k_{vib}$, $k_{pr}$, and $k_{AF}$ have 
+been made for a-SiO2 and a-Si,(cite) no thermal conductivity 
+accumulation functions have been predicted to compare with Regner. 
+Using lattice dynamics calculations and molecular dynamics simulations 
+of large-scale ($~4000$ atom models), 
 we predict the inputs to Eq. \eqref{EQ:kvib} in Sections \ref{S:DOS}, 
-\ref{S:Structure}, 
-and \ref{S:Diffusivities}. The 
-thermal conductivity $k_{vib}$ is predicted in Section 
-\ref{S:Conductivity}. 
-The MFPs of phonons and diffusons are predicted the thermal 
-conductivity accumulation is predicted in 
-Section \ref{S:Accumulation}.
+\ref{S:Structure}, \ref{S:Diffusivities}, and the bulk thermal 
+conductivity 
+$k_{vib}$ and its contributions $k_{pr}$ and $k_{AF}$ in Section 
+using the mode-by-mode properties. 
+Using very large-scale ($~10,000$ to $1,000,000$ atoms) 
+MD simulations, we predit the thermal 
+thermal conductivity $k_{vib}$ of bulk a-SiO2 and a-Si to compare with 
+the predictions based on the mode-by-mode properties. 
+For the first time, the MFPs of propagating modes in bulk 
+a-SiO2 and a-Si are used with a boundary scattering model 
+to predict the thermal conductivity accumulation, which is and 
+compared with experimental thin film measurements and broadband 
+FDTR measurements of a-SiO2 and a-Si in Section \ref{S:Accumulation}.
 
 ENDALAN
 
@@ -1655,6 +1622,21 @@ identified with vibrational lifetimes.
 \subsection{\label{S:Diffusivities}Diffusivities}
 %--------------------------------------------------------------------------
 
+For disordered materials in the low-frequency limit, 
+the mode thermal diffusivity 
+has the form of Eq. \eqref{EQ:Dw2} or \eqref{EQ:Dw4}.(cite)  
+At low frequency, the mode diffusivities 
+generally decrease with increasing frequency, 
+usually reaching a plateau, and then decrease exponentially 
+to zero as the modes become localized.
+\cite{sheng_heat_1991,feldman_thermal_1993,feldman_numerical_1999,
+xu_energy_2009,vitelli_heat_2010,donadio_atomistic_2009,
+beltukov_ioffe-regel_2013,larkin_predicting_2013}
+For disordered systems, the mode group velocities, 
+lifetimes, MFPs cannot be estimated independently.
+\cite{allen_thermal_1993,feldman_thermal_1993,
+feldman_numerical_1999,allen_evolution_1998,larkin_predicting_2013}
+
 BEGINALAN
 
 Based on the lifetimes predicted from NMD, the diffusivities 
@@ -1969,6 +1951,51 @@ is responsible for the system size dependent thermal conductivity
 predicted by the GK method $k_{GK}$. 
 While our model is best described by 
 quadratic scaling, we are modeling bulk a-Si. 
+
+
+
+Assuming a constant contribution  
+$k_{AF} \approx 1$ W/m-K, experimental 
+measurements and estimates show that the contribution from 
+$k_{pr}$ is $~20\%$,
+
+
+
+While the classic limit for the mode specific heat is 
+an over-prediction for the high frequency modes in a-Si, 
+the non-propagating contribution 
+predicted by broadband FTDR matches the prediction from the AF diffuson theory.
+Adjusting the specific heats to include quantum statistical effects...
+
+We can thus focus on the less understood low-frequency propagating contribution. 
+
+
+
+Phonon-like behavior 
+can be identified for a-Si in this work and others, 
+both experimentally
+\cite{liu_high_2009,yang_anomalously_2010,minnich_thermal_2011,
+regner_broadband_2013} 
+and numerically.
+\cite{feldman_thermal_1993,feldman_numerical_1999,
+mcgaughey_thermal_2004,he_heat_2011} 
+Including the phonon-like contribution $k_{ph}$ 
+for a-Si is not qualitatively sensitive 
+to the choice of model
+\cite{feldman_thermal_1993,feldman_numerical_1999,liu_high_2009} 
+or $\omega_{cut}$.
+\cite{feldman_thermal_1993,feldman_numerical_1999,
+donadio_atomistic_2009,liu_high_2009,yang_anomalously_2010}
+
+In this work, we identify the phonon limit by $\omega_{cut}$ in 
+Eq. \eqref{EQ:kvib}, 
+in Section \ref{S:Diffusivities}. By identifying $\omega_{cut}$   
+the contribution of phonon-like modes in a-Si and 
+a-SiO$_2$ is quantified in Section \ref{S:Bulk} and 
+the thermal conductivity accumulation 
+is predicted in Section \ref{S:Accumulation}. 
+
+
  
 ENDALAN 
 

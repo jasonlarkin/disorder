@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: prb_mfp_jl_070913.aux
+The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-060313.bib
+Warning--I didn't find a database entry for "cahill_lower_1994"
+Warning--I didn't find a database entry for "he_lattice_2013"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty booktitle in slack_thermal_1979
+You've used 99 entries,
+            3411 wiz_defined-function locations,
+            1768 strings with 31532 characters,
+and the built_in function-call counts, 83559 in all, are:
+= -- 4714
+> -- 3087
+< -- 420
++ -- 2629
+- -- 754
+* -- 11627
+:= -- 8592
+add.period$ -- 99
+call.type$ -- 99
+change.case$ -- 396
+chr.to.int$ -- 95
+cite$ -- 100
+duplicate$ -- 6991
+empty$ -- 6820
+format.name$ -- 1838
+if$ -- 16102
+int.to.chr$ -- 5
+int.to.str$ -- 100
+missing$ -- 1069
+newline$ -- 312
+num.names$ -- 298
+pop$ -- 1689
+preamble$ -- 1
+purify$ -- 396
+quote$ -- 0
+skip$ -- 3459
+stack$ -- 0
+substring$ -- 3718
+swap$ -- 5815
+text.length$ -- 381
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 586
+warning$ -- 1
+while$ -- 293
+width$ -- 0
+write$ -- 1073
+(There were 3 warnings)
