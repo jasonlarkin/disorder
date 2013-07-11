@@ -1,5 +1,5 @@
-%\documentclass[aps,prb,twocolumn,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
-\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,twocolumn,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
+%\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
 \usepackage[dvips]{epsfig}
 \usepackage{graphicx}
 \usepackage{ifthen}
@@ -464,7 +464,6 @@ technique. The results could answer the question of whether
 quartic versus quadratic scaling is responsible for the large 
 thickness variation of the thermal conductivity of a-Si thin films. 
 
-ENDALAN
 
 % w4
 % 
@@ -853,57 +852,6 @@ appropriate lattice constant $a$ should be, making a factor of
 For a-Si, the experimentally measured thermal conductivity at 
 300 K is $k_{vib} \approx (1-6) k_{HS}$,\cite{cahill_lower_1992}  
 indicating that there may be a large contribution from $k_{pr}$.
-
-The relative contributions of $k_{pr}$ and $k_{AF}$ to $k_{vib}$ have 
-been estimated from experiments and modeling for 
-a-Si and a-SiO2. At 300 K for a-Si modeled by the Tersoff potential,   
-$k_{ph} \approx k_{AF}$.\cite{he_heat_2011} Earlier studies using 
-different models of a-Si find 
-that $k_{pr}$ is less than half of 
-$k_{vib}$.\cite{feldman_thermal_1993,
-feldman_numerical_1999} Estimates based on experimental measurements 
-have shown $k_{pr}$ as low as 
-$~20\%$\cite{cahill_thermal_1994,feldman_numerical_1999} 
-and as high as $~80\%$ $k_{vib}$.
-\cite{liu_high_2009,yang_anomalously_2010}
-While different predictions for a-Si 
-depend on the experimental sample preparations
-(cite) 
-and the assumed scaling of the low-frequency 
-vibrational diffusivities (see Section and )(cite), 
-all evidence supports that $k_{pr}$ is a significant fraction 
-of $k_{vib}$.(cite) 
-For a-SiO2, 
-modeling based on experiments show that $k_{pr}$ is less than $10\%$ 
-of $k_{vib}$.(cite) 
-
-Recent broadband FDTR experiments by Regner et al. measured  
-the apprent thermal conductivity change with frequency of a-Si and 
-a-SiO2. By varying the FDTR frequency, 
-the penetration depth of the experiments $L_p$ was varied 
-between $~40$ nm and $1 \mu$m.(cite)  
-They argue that the apparent 
-thermal conducvitiy variation with $L_p$ represent the accumulated 
-thermal conductivity for propagating modes with MFP less than 
-$L_p$. While predictions for $k_{vib}$, $k_{pr}$, and $k_{AF}$ have 
-been made for a-SiO2 and a-Si,(cite) no thermal conductivity 
-accumulation functions have been predicted to compare with Regner. 
-Using lattice dynamics calculations and molecular dynamics simulations 
-of large-scale ($~4000$ atom models), 
-we predict the inputs to Eq. \eqref{EQ:kvib} in Sections \ref{S:DOS}, 
-\ref{S:Structure}, \ref{S:Diffusivities}, and the bulk thermal 
-conductivity 
-$k_{vib}$ and its contributions $k_{pr}$ and $k_{AF}$ in Section 
-using the mode-by-mode properties. 
-Using very large-scale ($~10,000$ to $1,000,000$ atoms) 
-MD simulations, we predit the thermal 
-thermal conductivity $k_{vib}$ of bulk a-SiO2 and a-Si to compare with 
-the predictions based on the mode-by-mode properties. 
-For the first time, the MFPs of propagating modes in bulk 
-a-SiO2 and a-Si are used with a boundary scattering model 
-to predict the thermal conductivity accumulation, which is and 
-compared with experimental thin film measurements and broadband 
-FDTR measurements of a-SiO2 and a-Si in Section \ref{S:Accumulation}.
 
 %--------------------------------------------------------------------------
 \section{\label{S:Calculation}Calculation Details}
@@ -1871,13 +1819,13 @@ thermal conductivity
 is relatively inexpensive compared to the NMD and AF methods so  
 large system sizes can be studied (see Section \ref{S:Sample:Si}).  
 Similarly-large 
-systems were studied in Ref. \citenum{he_heat_2011}. The details of the 
-GK method are discussed in Section \ref{S:Simulation}. 
+models of a-Si were studied in Ref. \citenum{he_heat_2011}. The 
+details of the GK method are discussed in Section \ref{S:Simulation}. 
 
 The GK-predicted thermal conductivity $k_{GK}$ is plotted in 
 Fig. \ref{FIG:cond} for 
 varying system sizes $L$. For a-SiO2, there is no apparent dependence 
-of $k_{GK}$ on $L$ and $k_{GK}=2.1 \pm 0.15$ W/m-K. 
+of $k_{GK}$ on $L$ and $k_{GK}=2.10 \pm 0.20$ W/m-K. 
 For a-Si, there is a clear dependence of $k_{GK}$ on 
 $L$. Assuming the DOS has the form of Eq. \eqref{EQ:DOS_debye} 
 and the diffusivity scaling 
@@ -1898,29 +1846,32 @@ the thermal
 conductivity of a given system size above that predicted by Eq. , as 
 was found in Ref \citenum{he_thermal_2011} using the MD-based 
 direct method. This is likely due to the 
-small (512 atom) model used to perform the tiling in that study, 
-while we use a 100,000 atom model. 
+small ($N_a = $ 512) model used to perform the tiling in that study, 
+while we use a large ($N_a = 100,000$) model. 
 The success of 
-Eq. \eqref{EQ:k0} for the dependence of $k_{GK}$ on 
+Eq. \eqref{EQ:k0} for describing the dependence of $k_{GK}$ on 
 $L$ for our model of a-Si is in 
 agreement with the scaling Eq. \eqref{EQ:Dw2} with $n=2$ 
 (Fig. \ref{FIG:diffusivities} 
 and the Debye-scaling of the DOS (Fig. \ref{FIG:DOS}). 
-The extrapolated $k_{bulk} = 1.9 \pm 0.1$ W/m-K
+For a-Si, the extrapolated $k_{bulk} = 1.97 \pm 0.15$ W/m-K
 
 To predict $k_{vib}$ (Eq. ) we use the input parameters 
 $B$, $\omega_{cut}$, and the AF-predicted diffusivities 
 $D_{AF}(\omega)$ obtained in Section . 
-For a-SiO2, $k_{AF} = 1.92$ and $k_{pr} = 0.09$ W/m-K. 
-Baldi et al find that the contribution $k_{ph}~0.1$ W/m-K, which is 
-the same as the contribution $k_{ph}$ predicted in this work for 
-a-SiO2. This contribution 
-$k_{ph}$ is smaller than the error bars in the predictions of $k_{vib}$ 
-and $k_{GK}$ shown in Figs. and .  
-
+For a-SiO2 using Eq. with $n=2$ $k_{AF} = 1.92$, 
+$k_{pr} = 0.09$ W/m-K, and 
+$k_{vib} = 2.01$ W/m-K, which is equal to $k_{bulk}$ within 
+the errors.  
+Baldi et al find that $k_{pr}\approx0.1$ W/m-K, essentially 
+the same as that predicted in this work. We consider the contribution 
+$k_{pr}$ predicted in this work to be an upper-bound considering 
+the lack of definitive scaling of Eq. with $n=2$ (see Fig. ). 
+Within the errors of the predictions, $k_{pr}$ is not a significant 
+fration of $k_{vib}$ for a-SiO2. 
 
 For a-Si with Eq. and $n=2$, 
-$k_{AF} = 1.16$ and $k_{pr} = 0.62$ W/m-K. For Eq. and $n=4$, the 
+$k_{AF} = 1.16$ and $k_{pr} = 0.63$ W/m-K. For Eq. and $n=4$, the 
 diverging conductivity at low frequency is fixed by the 
 use of a simple boundary scattering model based on the Matthiesen 
 rule and the thin-film thickness $t_f$,\cite{sellan_cross-plane_2010} 
@@ -1960,6 +1911,58 @@ non-equillibrium molecular dynamics. In this study He at al find
 that $k_{pr} \approx k_{AF} \approx 1.5$ W/m-K.  Regner et al find 
 a plateau in $k_{vib}$ for large broadband FDTR frequencies 
 implying that $k_{AF} \approx 1$ W/m-K.(cite) 
+
+The relative contributions of $k_{pr}$ and $k_{AF}$ to $k_{vib}$ have 
+been estimated from experiments and modeling for 
+a-Si and a-SiO2. At 300 K for a-Si modeled by the Tersoff potential,   
+$k_{ph} \approx k_{AF}$.\cite{he_heat_2011} Earlier studies using 
+different models of a-Si find 
+that $k_{pr}$ is less than half of 
+$k_{vib}$.\cite{feldman_thermal_1993,
+feldman_numerical_1999} Estimates based on experimental measurements 
+have shown $k_{pr}$ as low as 
+$~20\%$\cite{cahill_thermal_1994,feldman_numerical_1999} 
+and as high as $~80\%$ $k_{vib}$.
+\cite{liu_high_2009,yang_anomalously_2010}
+While different predictions for a-Si 
+depend on the experimental sample preparations
+(cite) 
+and the assumed scaling of the low-frequency 
+vibrational diffusivities (see Section and )(cite), 
+all evidence supports that $k_{pr}$ is a significant fraction 
+of $k_{vib}$.(cite) 
+For a-SiO2, 
+modeling based on experiments show that $k_{pr}$ is less than $10\%$ 
+of $k_{vib}$.(cite) 
+
+Recent broadband FDTR experiments by Regner et al. measured  
+the apprent thermal conductivity change with frequency of a-Si and 
+a-SiO2. By varying the FDTR frequency, 
+the penetration depth of the experiments $L_p$ was varied 
+between $~40$ nm and $1 \mu$m.(cite)  
+They argue that the apparent 
+thermal conducvitiy variation with $L_p$ represent the accumulated 
+thermal conductivity for propagating modes with MFP less than 
+$L_p$. While predictions for $k_{vib}$, $k_{pr}$, and $k_{AF}$ have 
+been made for a-SiO2 and a-Si,(cite) no thermal conductivity 
+accumulation functions have been predicted to compare with Regner. 
+Using lattice dynamics calculations and molecular dynamics simulations 
+of large-scale ($~4000$ atom models), 
+we predict the inputs to Eq. \eqref{EQ:kvib} in Sections \ref{S:DOS}, 
+\ref{S:Structure}, \ref{S:Diffusivities}, and the bulk thermal 
+conductivity 
+$k_{vib}$ and its contributions $k_{pr}$ and $k_{AF}$ in Section 
+using the mode-by-mode properties. 
+Using very large-scale ($~10,000$ to $1,000,000$ atoms) 
+MD simulations, we predit the thermal 
+thermal conductivity $k_{vib}$ of bulk a-SiO2 and a-Si to compare with 
+the predictions based on the mode-by-mode properties. 
+For the first time, the MFPs of propagating modes in bulk 
+a-SiO2 and a-Si are used with a boundary scattering model 
+to predict the thermal conductivity accumulation, which is and 
+compared with experimental thin film measurements and broadband 
+FDTR measurements of a-SiO2 and a-Si in Section \ref{S:Accumulation}.
+
 
 
 Assuming a constant contribution  
