@@ -9,9 +9,9 @@ str='/home/jason/disorder/pcbm/allres/';
 c60.dft.freq = load([str 'c60_vgauss']);
 %c60.dft.freq(:,2) = c60.dft.freq(:,2)*con.c*2*pi; 
 
-[c60.old.dosx c60.old.dosy] = m_dos(c60.old.freq(7:end),15,1,1); 
-[c60.new.dosx c60.new.dosy] = m_dos(c60.new.freq(7:end),15,1,1);
-[c60.dft.dosx c60.dft.dosy] = m_dos(c60.dft.freq(:,2),15,1,1);
+[c60.old.dosx c60.old.dosy] = m_dos(c60.old.freq(7:end),10,1,1); 
+[c60.new.dosx c60.new.dosy] = m_dos(c60.new.freq(7:end),10,1,1);
+[c60.dft.dosx c60.dft.dosy] = m_dos(c60.dft.freq(:,2),10,1,1);
 
 % subplot(2,1,1),...
 %     plot(...
@@ -24,11 +24,11 @@ clf
 
 str='/home/jason/disorder/pcbm/pcbm_pdb/isolated/pcbm28/';
 pcbm28.freq = load([str '/freq.gout']); 
-[pcbm28.dosx pcbm28.dosy] = m_dos(pcbm28.freq(7:end),15,1,1);
+[pcbm28.dosx pcbm28.dosy] = m_dos(pcbm28.freq(7:end),5,1,1);
 
 str='/home/jason/disorder/pcbm/allres/';
 pcbm28.dft.freq = load([str '/pcbm28_vgauss']); 
-[pcbm28.dft.dosx pcbm28.dft.dosy] = m_dos(pcbm28.dft.freq(:,2),15,1,1);
+[pcbm28.dft.dosx pcbm28.dft.dosy] = m_dos(pcbm28.dft.freq(:,2),5,1,1);
 
 clf
 plot(pcbm28.dosx , pcbm28.dosy , pcbm28.dft.dosx , pcbm28.dft.dosy)
@@ -46,6 +46,9 @@ clf
 plot(pcbm.dosx , pcbm.dosy , pcbm.dft.dosx , pcbm.dft.dosy)
 pause
 
+
+
+%OLPS+Tersoff vs DFT
 clf
 subplot(2,1,1),...
 plot(...
@@ -53,15 +56,20 @@ plot(...
     pcbm28.dosx , pcbm28.dosy,...
     pcbm.dosx , pcbm.dosy...
     )
-axis([0 3500 0 0.5])
+axis([0 3500 0 0.4])
 subplot(2,1,2),...
 plot(...
     c60.dft.dosx , c60.dft.dosy,...
     pcbm28.dft.dosx , pcbm28.dft.dosy,...
     pcbm.dft.dosx , pcbm.dft.dosy...
     )
-axis([0 3500 0 0.5])
+axis([0 3500 0 0.4])
 pause
+
+
+
+
+
 
 
 %Di
