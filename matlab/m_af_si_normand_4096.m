@@ -185,7 +185,7 @@ sio2.cond(2,3) = (con.kb / sio2.VOLUME(1,3))*sum(sio2.D(2,3).D(:,3));
 sio2.VOLUME(3,3) = (40.26E-10)^3;
 sio2.D(3,3).D = m_gulp_af_si_readDi('/home/jason/disorder2/sio2/alan/576a/tile/anneal/emin/','Di_b50.gout');
 sio2.D(3,3).D(:,3) = sio2.D(3,3).D(:,3)*(3/4)/10;
-sio2.cond(3,3) = (con.kb / sio2.VOLUME(1,3))*sum(sio2.D(3,3).D(:,3));
+sio2.cond(3,3) = (con.kb / sio2.VOLUME(3,3))*sum(sio2.D(3,3).D(:,3));
 [sio2.D(3,3).dosx sio2.D(3,3).dosy] = m_dos(sio2.D(3,3).D(:,2), 600 , 1, sio2.VOLUME(3,3));
 
 sio2.VOLUME(4,3) = (40.26E-10)^3;
@@ -658,6 +658,16 @@ pause
 %w2
 [debye.Icut1 debye.Jcut1] = find( Di(8,1).Di(:,2) < debye.wcut + 0.0001E12);
 [debye.Icut2 debye.Jcut2] = find( Di(8,1).Di(:,2) > debye.wcut - 0.0001E12);
+
+debye.spec =...
+    con.kb*(...
+    (con.hbar*Di(8,1).Di(:,2)/(2*con.kb*300))./...
+    sinh(con.hbar*Di(8,1).Di(:,2)/(2*con.kb*300))...
+    ).^2;
+
+semilogx(Di(8,1).Di(:,2),debye.spec)
+pause
+
 [SED(1).Icut1 SED(1).Jcut1] = find( SED(1).SED.HLDfreq < 0.0 + 0.0001E12);
 [SED(1).Icut2 SED(1).Jcut2] = find( SED(1).SED.HLDfreq > 0.0 - 0.0001E12);
 VOLUME = (8*5.43E-10)^3;
@@ -666,10 +676,16 @@ debye.cut(2).mfp = sqrt(3*Di(8,1).Di(debye.Icut1,3).*SED(1).SED.life(debye.Icut1
 %debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut1,3)/si.amor.vs_tran;
 sum(debye.cut(1).cond)
 debye.cut(2).cond = (con.kb / VOLUME)*Di(8,1).Di(debye.Icut2,3);
+debye.cut(2).cond_spec = (debye.spec(debye.Icut2) ./ VOLUME).*Di(8,1).Di(debye.Icut2,3);
 debye.cut(2).mfp = sqrt(3*(Di(8,1).Di(debye.Icut2,3)).*SED(1).SED.life(debye.Icut2+4)'*1E-12 );
 %debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
 [Y debye.cut(2).Isort] = sort(debye.cut(2).mfp);
 sum(debye.cut(2).cond)
+sum(debye.cut(2).cond_spec)
+
+
+
+
 SED(1).cut(1).cond = (con.kb / VOLUME)*((1/3))*si.amor.vs_tran^2*(1.0*SED(1).SED.life(SED(1).Jcut1)*1E-12)';
 SED(1).cut(1).mfp = si.amor.vs_tran*SED(1).SED.life(SED(1).Jcut1)*1E-12';
 [Y SED(1).cut(1).Isort] = sort(SED(1).cut(1).mfp);
@@ -696,18 +712,38 @@ sum(debye_w4.cut(2).cond)
 %wcut
 [sio2.debye.Icut1 sio2.debye.Jcut1] = find( sio2.D(3,3).D(:,2) < sio2.debye.wcut + 0.0001E12);
 [sio2.debye.Icut2 sio2.debye.Jcut2] = find( sio2.D(3,3).D(:,2) > sio2.debye.wcut - 0.0001E12);
+
 [sio2.SED(1).Icut1 sio2.SED(1).Jcut1] = find( sio2.SED(1).SED.HLDfreq < sio2.debye.wcut + 0.0001E12);
 [sio2.SED(1).Icut2 sio2.SED(1).Jcut2] = find( sio2.SED(1).SED.HLDfreq > sio2.debye.wcut - 0.0001E12);
-sio2.VOLUME = (31.94E-10)^3;
+sio2.VOLUME = sio2.VOLUME(1,3);
 sio2.debye.cut(1).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut1,3);
 sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut1,3).*sio2.SED(1).SED.life(sio2.debye.Icut1+3)'*1E-12 );
 debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut1,3)/si.amor.vs_tran;
 sum(sio2.debye.cut(1).cond)
-% sio2.debye.cut(2).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut2,3);
-% sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut2,3).*sio2.SED(1).SED.life(sio2.debye.Icut2+3)'*1E-12 );
-% debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
-% [Y sio2.debye.cut(2).Isort] = sort(sio2.debye.cut(2).mfp);
-% sum(sio2.debye.cut(2).cond)
+
+
+sio2.debye.spec =...
+    con.kb*(...
+    (con.hbar*sio2.D(3,3).D(:,2)/(2*con.kb*300))./...
+    sinh(con.hbar*sio2.D(3,3).D(:,2)/(2*con.kb*300))...
+    ).^2;
+
+sio2.debye.cut(2).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut2,3);
+sum(sio2.debye.cut(2).cond)
+sio2.debye.cut(2).cond_spec = (sio2.debye.spec(sio2.debye.Icut2) / sio2.VOLUME).*sio2.D(3,3).D(sio2.debye.Icut2,3);
+sum(sio2.debye.cut(2).cond_spec)
+
+semilogx(Di(8,1).Di(:,2),sio2.debye.spec)
+pause
+
+
+sio2.debye.cut(2).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut2,3);
+sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut2,3).*sio2.SED(1).SED.life(sio2.debye.Icut2+3)'*1E-12 );
+debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
+[Y sio2.debye.cut(2).Isort] = sort(sio2.debye.cut(2).mfp);
+sum(sio2.debye.cut(2).cond)
+
+
 % sio2.SED(1).cut(1).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12)';
 % sio2.SED(1).cut(1).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12';
 % [Y sio2.SED(1).cut(1).Isort] = sort(sio2.SED(1).cut(1).mfp);

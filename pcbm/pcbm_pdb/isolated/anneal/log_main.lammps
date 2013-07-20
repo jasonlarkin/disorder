@@ -1,0 +1,31 @@
+
+velocity 		all create ${T_run} ${seed} rot yes dist gaussian
+velocity 		all create 300 ${seed} rot yes dist gaussian
+velocity 		all create 300 11111 rot yes dist gaussian
+
+#--------------------------------------------------------------------------
+#nvtanneal
+#--------------------------------------------------------------------------
+fix 		1 all nvt temp 400 400 10.0
+dump		1 all xyz 1 lmp.x.dump
+dump_modify 	1 sort id
+compute 	myDis all msd
+thermo_style  	custom step temp press etotal pe ke vol c_myDis[4]
+thermo			1
+timestep		${dt}
+timestep		0.0010000000000000000208
+#run			500000
+run			1000
+Memory usage per processor = 8.93901 Mbytes
+Step Temp Press TotEng PotEng KinEng Volume myDis[4] 
+       0          300    6564686.3    1021148.1    1021144.8    3.3736898      1000000            0 
+       1            0 7.0579267e+09 1.1013205e+09 1.1013205e+09            0      1000000    500.08464 
+       2            0   -26995.128     24356.19     24356.19            0      1000000 1.1797403e+12 
+       3            0   -26238.805    23651.525    23651.525            0      1000000 1.1797403e+12 
+       4            0   -25515.525     22972.72     22972.72            0      1000000 1.1797403e+12 
+       5            0   -24812.269    22313.935    22313.935            0      1000000 1.1797403e+12 
+       6            0   -24141.288    21687.622    21687.622            0      1000000 1.1797403e+12 
+       7            0   -23500.919    21091.169    21091.169            0      1000000 1.1797403e+12 
+       8            0   -22889.527    20522.458    20522.458            0      1000000 1.1797403e+12 
+       9            0   -22305.527    19979.733    19979.733            0      1000000 1.1797403e+12 
+ERROR: Lost atoms: original 88 current 84 (thermo.cpp:389)

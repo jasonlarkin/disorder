@@ -1,7 +1,7 @@
 clear
 
 x.p1d1_1a1b1c =...
-    m_x0_read('/home/jason/disorder/pcbm/pcbm_pdb/p1d1_1a1b1c.matlab');
+    m_x0_read('/home/jason/disorder/pcbm/pcbm_pdb/p1d1_1a1b1c/p1d1_1a1b1c.matlab');
 
 plot3(x.p1d1_1a1b1c.x,x.p1d1_1a1b1c.y,x.p1d1_1a1b1c.z,'.')
 
@@ -13,7 +13,7 @@ type.CT1 = 5; type.CT2 = 6; type.CT3 = 7;
 
 type.O = 8; type.OS = 9;
 
-type.HA = 10; type.HC = 11;
+type.HA = 10; type.HC = 11; type.Cl = 12;
 
 % for iunit = 1:x.p1d1_1a1b1c.NUM_UNITS
 %     plot3(...
@@ -275,11 +275,11 @@ new.solvent.m(iatom)
 pause
 end
 
-new.solvent.type(1) = type.HA; new.solvent.type(1*12+1:1*12+1) = type.HA;
-new.solvent.type(2*12+1:2*12+1) = type.HA; new.solvent.type(3*12+1:3*12+1) = type.HA;
+new.solvent.type(1) = type.Cl; new.solvent.type(1*12+1:1*12+1) = type.Cl;
+new.solvent.type(2*12+1:2*12+1) = type.Cl; new.solvent.type(3*12+1:3*12+1) = type.Cl;
 
-new.solvent.type(2) = type.HA; new.solvent.type(1*12+2:1*12+2) = type.HA;
-new.solvent.type(2*12+2:2*12+2) = type.HA; new.solvent.type(3*12+2:3*12+2) = type.HA;
+new.solvent.type(2) = type.Cl; new.solvent.type(1*12+2:1*12+2) = type.Cl;
+new.solvent.type(2*12+2:2*12+2) = type.Cl; new.solvent.type(3*12+2:3*12+2) = type.Cl;
 
 new.solvent.type(3:8) = type.CA1; new.solvent.type(1*12+3:1*12+8) = type.CA1;
 new.solvent.type(2*12+3:2*12+8) = type.CA1; new.solvent.type(3*12+3:3*12+8) = type.CA1;

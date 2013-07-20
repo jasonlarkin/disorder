@@ -4,7 +4,10 @@ olps.type.CF = 1; olps.type.CA1 = 2; olps.type.CA2 = 3;
 olps.type.C = 4; olps.type.CT1 = 5; olps.type.CT2 = 6; 
 olps.type.CT3 = 7;
 olps.type.O = 8; olps.type.OS = 9;
-olps.type.HA = 10; olps.type.HC = 11;
+olps.type.HA = 10; olps.type.HC = 11; olps.type.Cl = 12;
+
+
+
 
 olps.terms.q(1) = 0.0; olps.terms.eps(1) = 0.07; olps.terms.sig(1) = 3.55; %CF
 olps.terms.q(2) = -0.115; olps.terms.eps(2) = 0.07; olps.terms.sig(2) = 3.55; %CA1
@@ -79,11 +82,32 @@ olps.terms.V1 = olps.terms.V1/2; olps.terms.V2 = olps.terms.V2/2;
 olps.terms.V3 = olps.terms.V3/2; olps.terms.V4 = olps.terms.V4/2;
 
 
+olps.mask.c60(1:60) = olps.type.CF;
 
+olps.mask.pcbm28(1) = olps.type.CT3; olps.mask.pcbm28(2) = olps.type.CA2; 
+olps.mask.pcbm28(3:6) = olps.type.CA1; olps.mask.pcbm28(7) = olps.type.O;
+olps.mask.pcbm28(8) = olps.type.OS; olps.mask.pcbm28(9) = olps.type.CA1;
+olps.mask.pcbm28(10) = olps.type.CT1; olps.mask.pcbm28(11) = olps.type.CT1; 
+olps.mask.pcbm28(12) = olps.type.CT1; olps.mask.pcbm28(13) = olps.type.C; 
+olps.mask.pcbm28(14) = olps.type.CT2; olps.mask.pcbm28(15:19) = olps.type.HA; 
+olps.mask.pcbm28(20:28) = olps.type.HC; 
 
+olps.mask.solvent.MCB(1) = olps.type.Cl; 
+olps.mask.solvent.MCB(2:3) = olps.type.CA1; 
+olps.mask.solvent.MCB(4) = olps.type.HA;
+olps.mask.solvent.MCB(5) = olps.type.CA1; 
+olps.mask.solvent.MCB(6) = olps.type.HA;
+olps.mask.solvent.MCB(7) = olps.type.CA1; 
+olps.mask.solvent.MCB(8) = olps.type.HA;
+olps.mask.solvent.MCB(9) = olps.type.CA1; 
+olps.mask.solvent.MCB(10) = olps.type.HA;
+olps.mask.solvent.MCB(11) = olps.type.CA1; 
+olps.mask.solvent.MCB(12) = olps.type.HA;
 
-
-
+olps.mask.solvent.oDCB(1) = olps.type.Cl; 
+olps.mask.solvent.oDCB(2) = olps.type.Cl; 
+olps.mask.solvent.oDCB(3:8) = olps.type.CA1;
+olps.mask.solvent.oDCB(9:12) = olps.type.HA;
 
 end
 

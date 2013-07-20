@@ -1,0 +1,133 @@
+LAMMPS (19 Feb 2013)
+# buckingham potential
+units 			metal
+atom_style		full
+read_data		fort.26
+  3 = max bonds/atom
+  8 = max angles/atom
+  11 = max dihedrals/atom
+  triclinic box = (0 0 0) to (13.757 16.634 18.4017) with tilt (0 -5.03069 0)
+  1 by 1 by 1 MPI processor grid
+  400 atoms
+  168 bonds
+  312 angles
+  316 dihedrals
+  4 = max # of 1-2 neighbors
+  7 = max # of 1-3 neighbors
+  14 = max # of 1-4 neighbors
+  16 = max # of special neighbors
+#--------------------------------------------------------------------------
+#OLPS
+#--------------------------------------------------------------------------
+#neighbor 2.0 bin
+#neigh_modify delay 10
+
+################################################################################
+#### Tersoff
+################################################################################
+
+
+################################################################################
+#### Covalent bond parameters
+################################################################################
+bond_style harmonic
+bond_coeff   1     20.337919      1.4000000
+bond_coeff   2     20.337919      1.4000000
+bond_coeff   3     13.746525      1.5100000
+bond_coeff   4     15.914747      1.0800000
+bond_coeff   5     15.914747      1.0800000
+bond_coeff   6     11.621668      1.5290000
+bond_coeff   7     11.621668      1.5290000
+bond_coeff   8     13.746525      1.5100000
+bond_coeff   9     13.746525      1.5100000
+bond_coeff  10     13.876618      1.4100000
+bond_coeff  11     14.743907      1.0900000
+bond_coeff  12     14.743907      1.0900000
+bond_coeff  13     22.549505      1.2290000
+bond_coeff  14      9.279988      1.3270000
+################################################################################
+#### Covalent angle parameters
+################################################################################
+angle_style harmonic
+angle_coeff 1 5.4639184       120.000
+angle_coeff 2 5.4639184       120.000
+angle_coeff 3 5.4639184       120.000
+angle_coeff 4 6.0710205       120.000
+angle_coeff 5 3.0355102       120.000
+angle_coeff 6 3.0355102       120.000
+angle_coeff 7 3.0355102       120.000
+angle_coeff 8 5.0606292       112.700
+angle_coeff 9 5.0606292       112.700
+angle_coeff 10 5.4639184       114.000
+angle_coeff 11 5.4639184       114.000
+angle_coeff 12 3.4691546       109.500
+angle_coeff 13 5.4639184       111.100
+angle_coeff 14 3.2523324       110.700
+angle_coeff 15 3.2523324       110.700
+angle_coeff 16 3.0355102       109.500
+angle_coeff 17 3.0355102       109.500
+angle_coeff 18 2.8620525       107.800
+angle_coeff 19 2.8620525       107.800
+angle_coeff 20 5.4639184       111.100
+angle_coeff 21 3.4691546       109.500
+angle_coeff 22 7.0250380       111.400
+angle_coeff 23 6.9383091       120.400
+angle_coeff 24 7.1984957       123.400
+angle_coeff 25 7.1984957       116.900
+angle_coeff 26 6.0710205       120.000
+################################################################################
+#### Covalent torsion parameters
+################################################################################
+dihedral_style charmm
+dihedral_coeff   1        0.31439213   2   180   0.0
+dihedral_coeff   2        0.31439213   2   180   0.0
+dihedral_coeff   3        0.31439213   2   180   0.0
+dihedral_coeff   4        0.31439213   2   180   0.0
+dihedral_coeff   5        0.31439213   2   180   0.0
+dihedral_coeff   6        0.31439213   2   180   0.0
+dihedral_coeff   7        0.02818688   1     0   0.0
+dihedral_coeff   8       -0.00108411   2   180   0.0
+dihedral_coeff   9        0.00433644   3     0   0.0
+dihedral_coeff  10        0.00650466   3     0   0.0
+dihedral_coeff  11        0.00650466   3     0   0.0
+dihedral_coeff  12        0.00650466   3     0   0.0
+dihedral_coeff  13       -0.00600597   1     0   0.0
+dihedral_coeff  14        0.02662576   2   180   0.0
+dihedral_coeff  15       -0.01504746   3     0   0.0
+dihedral_coeff  16       -0.01199027   2   180   0.0
+dihedral_coeff  17        0.00286205   2   180   0.0
+dihedral_coeff  18        0.10123427   1     0   0.0
+dihedral_coeff  19        0.11109967   2   180   0.0
+dihedral_coeff  20        0.11109967   2   180   0.0
+dihedral_coeff  21        0.00429308   3     0   0.0
+dihedral_coeff  22        0.02818688   1     0   0.0
+dihedral_coeff  23       -0.00108411   2   180   0.0
+dihedral_coeff  24        0.00433644   3     0   0.0
+dihedral_coeff  25        0.00650466   3     0   0.0
+dihedral_coeff  26        0.31439213   2   180   0.0
+dihedral_coeff  27        0.31439213   2   180   0.0
+################################################################################
+#### Covalent improper dihedral parameters
+################################################################################
+
+################################################################################
+#### Pair potentials
+################################################################################
+pair_style hybrid/overlay tersoff lj/cut 12.0 coul/wolf 0.223 12.0
+pair_coeff * * tersoff C.tersoff 1 NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL
+pair_coeff * * coul/wolf
+pair_coeff 1 1 lj/cut 0.0700000000 3.5500000000
+pair_coeff 2 2 lj/cut 0.0660000000 3.5000000000
+pair_coeff 3 3 lj/cut 0.0700000000 3.5500000000
+pair_coeff 4 4 lj/cut 0.0700000000 3.5500000000
+pair_coeff 5 5 lj/cut 0.2100000000 2.9600000000
+pair_coeff 6 6 lj/cut 0.1400000000 2.9000000000
+pair_coeff 7 7 lj/cut 0.0660000000 3.5000000000
+pair_coeff 8 8 lj/cut 0.1050000000 3.7500000000
+pair_coeff 9 9 lj/cut 0.0660000000 3.5000000000
+pair_coeff 10 10 lj/cut 0.0300000000 2.4200000000
+pair_coeff 11 11 lj/cut 0.0300000000 2.5000000000
+pair_coeff 12 12 lj/cut 0.0300000000 2.4200000000
+pair_modify mix geometric
+special_bonds lj 0.0 0.0 0.0 coul 0.0 0.0 0.0 tersoff 1.0 1.0 1.0
+ERROR: Illegal special_bonds command (force.cpp:626)

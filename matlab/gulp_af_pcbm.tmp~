@@ -1,11 +1,11 @@
-molecule compare phon dispersion optimise thermalconductivity
+molecule compare phon dispersion optimise thermalconductivity nomodcoord
 maxcyc 10000
-temperature 50000.0
+temperature 300.0
 output freq text freq.gout
 output xyz
-output movie
 output lammps
 
+broaden 0.005
 
 ###########################################################################
 #------------------------OLPS----------------------------------------------

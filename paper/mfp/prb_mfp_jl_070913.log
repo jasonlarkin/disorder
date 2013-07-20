@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  12 JUL 2013 16:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  20 JUL 2013 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -289,17 +289,16 @@ LaTeX Warning: Command \r invalid in math mode on input line 875.
 LaTeX Warning: Command \r invalid in math mode on input line 889.
 
 [9]
-File: /home/jason/disorder/si/amor/init216_combined.eps Graphic file (type eps)
-
- </home/jason/disorder/si/amor/init216_combined.eps> [10] [11]
+File: /home/jason/disorder/si/amor/a288_init216.eps Graphic file (type eps)
+ </home/jason/disorder/si/amor/a288_init216.eps> [10] [11]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps Graphic file 
 (type eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps> [12]
+</home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps>
 
 LaTeX Warning: Command \r invalid in math mode on input line 1152.
 
-[13] [14] [15]
+[12] [13] [14] [15]
 
 LaTeX Warning: Reference `EQ:M:k_AF,HS' on page 16 undefined on input line 1299
 .
@@ -324,10 +323,9 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 1396.
 LaTeX Warning: Reference `S:Sample:Si' on page 19 undefined on input line 1526.
 
 
-[19]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps Graphic file 
 (type eps)
- </home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps> [20]
+</home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps> [19] [20]
 
 LaTeX Warning: Reference `feldman_numerical_1999' on page 21 undefined on input
  line 1612.
@@ -367,25 +365,23 @@ Package natbib Warning: Citation `feldman_thermal_1999' on page 25 undefined on
 
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps Graphic f
 ile (type eps)
-</home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps>
+</home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_2.eps> [25]
 ! Undefined control sequence.
 l.2027 \frac{1}{V}\sum_{\Lambda{\AF
                                    } < \Lambda_{cut}} kb v_{AF}\Lambda_{AF},
 ? 
-[25] [26]
+[26]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_5_sio2.eps Graph
 ic file (type eps)
-
-</home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_5_sio2.eps>
+ </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_5_sio2.eps>
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_6_si.eps Graphic
  file (type eps)
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_6_si.eps> [27]
-[28]
 
-LaTeX Warning: Reference `matth' on page 29 undefined on input line 2176.
+LaTeX Warning: Reference `matth' on page 28 undefined on input line 2176.
 
-[29] (./prb_mfp_jl_070913.bbl [30]
+[28] [29] (./prb_mfp_jl_070913.bbl [30]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -536,12 +532,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3876 strings out of 495060
- 51216 string characters out of 3182053
- 126284 words of memory out of 3000000
- 7006 multiletter control sequences out of 15000+200000
+ 3877 strings out of 495060
+ 51218 string characters out of 3182053
+ 127305 words of memory out of 3000000
+ 7007 multiletter control sequences out of 15000+200000
  17251 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,25n,32p,1310b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_070913.dvi (36 pages, 110136 bytes).
+Output written on prb_mfp_jl_070913.dvi (36 pages, 110140 bytes).
