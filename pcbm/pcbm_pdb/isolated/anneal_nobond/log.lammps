@@ -1,10 +1,25 @@
+LAMMPS (19 Feb 2013)
 ###########################################################################
 #x0
 ###########################################################################
 units 			metal
 atom_style		full
 read_data		fort.26
+  3 = max bonds/atom
+  7 = max angles/atom
+  11 = max dihedrals/atom
+  triclinic box = (0 0 0) to (100 100 100) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  88 atoms
+  30 bonds
+  53 angles
+  53 dihedrals
+  4 = max # of 1-2 neighbors
+  7 = max # of 1-3 neighbors
+  14 = max # of 1-4 neighbors
+  16 = max # of special neighbors
 group         		C type = 1
+60 atoms in group C
 ###########################################################################
 #OLPS
 ###########################################################################
@@ -31,7 +46,7 @@ bond_coeff  13      9.279988      1.3270000
 ################################################################################
 #### Covalent angle parameters
 ################################################################################
-angle_style harmonic 
+angle_style harmonic
 angle_coeff 1 5.4639184       120.000
 angle_coeff 2 5.4639184       120.000
 angle_coeff 3 5.4639184       120.000
@@ -42,21 +57,19 @@ angle_coeff 7 5.0606292       112.700
 angle_coeff 8 5.0606292       112.700
 angle_coeff 9 5.4639184       114.000
 angle_coeff 10 5.4639184       114.000
-angle_coeff 11 3.4691546       109.500
-angle_coeff 12 5.4639184       111.100
+angle_coeff 11 5.4639184       111.100
+angle_coeff 12 3.2523324       110.700
 angle_coeff 13 3.2523324       110.700
-angle_coeff 14 3.2523324       110.700
+angle_coeff 14 3.0355102       109.500
 angle_coeff 15 3.0355102       109.500
-angle_coeff 16 3.0355102       109.500
+angle_coeff 16 2.8620525       107.800
 angle_coeff 17 2.8620525       107.800
-angle_coeff 18 2.8620525       107.800
-angle_coeff 19 5.4639184       111.100
-angle_coeff 20 3.4691546       109.500
-angle_coeff 21 7.0250380       111.400
-angle_coeff 22 6.9383091       120.400
-angle_coeff 23 7.1984957       123.400
-angle_coeff 24 7.1984957       116.900
-angle_coeff 25 6.0710205       120.000
+angle_coeff 18 5.4639184       111.100
+angle_coeff 19 3.4691546       109.500
+angle_coeff 20 7.0250380       111.400
+angle_coeff 21 6.9383091       120.400
+angle_coeff 22 7.1984957       123.400
+angle_coeff 23 7.1984957       116.900
 ################################################################################
 #### Covalent torsion parameters
 ################################################################################
@@ -84,29 +97,27 @@ dihedral_coeff  20        0.02818688   1     0   0.0
 dihedral_coeff  21       -0.00108411   2   180   0.0
 dihedral_coeff  22        0.00433644   3     0   0.0
 dihedral_coeff  23        0.00650466   3     0   0.0
-dihedral_coeff  24        0.31439213   2   180   0.0
-dihedral_coeff  25        0.31439213   2   180   0.0
 ################################################################################
 #### Covalent improper dihedral parameters
 ################################################################################
- 
+
 ################################################################################
 #### Pair potentials
 ################################################################################
 pair_style hybrid/overlay tersoff lj/cut 12.0 coul/wolf 0.223 12.0
 pair_coeff * * tersoff C.tersoff C NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL
 pair_coeff * * coul/wolf
-pair_coeff 1 1 lj/cut 0.0700000000 3.5500000000  
-pair_coeff 2 2 lj/cut 0.0660000000 3.5000000000  
-pair_coeff 3 3 lj/cut 0.0700000000 3.5500000000  
-pair_coeff 4 4 lj/cut 0.0700000000 3.5500000000  
-pair_coeff 5 5 lj/cut 0.2100000000 2.9600000000  
-pair_coeff 6 6 lj/cut 0.1400000000 2.9000000000  
-pair_coeff 7 7 lj/cut 0.0660000000 3.5000000000  
-pair_coeff 8 8 lj/cut 0.1050000000 3.7500000000   
-pair_coeff 9 9 lj/cut 0.0660000000 3.5000000000   
-pair_coeff 10 10 lj/cut 0.0300000000 2.4200000000   
-pair_coeff 11 11 lj/cut 0.0300000000 2.5000000000    
+pair_coeff 1 1 lj/cut 0.0700000000 3.5500000000
+pair_coeff 2 2 lj/cut 0.0660000000 3.5000000000
+pair_coeff 3 3 lj/cut 0.0700000000 3.5500000000
+pair_coeff 4 4 lj/cut 0.0700000000 3.5500000000
+pair_coeff 5 5 lj/cut 0.2100000000 2.9600000000
+pair_coeff 6 6 lj/cut 0.1400000000 2.9000000000
+pair_coeff 7 7 lj/cut 0.0660000000 3.5000000000
+pair_coeff 8 8 lj/cut 0.1050000000 3.7500000000
+pair_coeff 9 9 lj/cut 0.0660000000 3.5000000000
+pair_coeff 10 10 lj/cut 0.0300000000 2.4200000000
+pair_coeff 11 11 lj/cut 0.0300000000 2.5000000000
 pair_modify mix geometric
 special_bonds lj 0.0 0.0 0.0 coul 0.0 0.0 0.0
 
@@ -121,6 +132,8 @@ variable 	T_run 		equal 300
 variable 	seed 		equal 11111
 
 velocity 		all create ${T_run} ${seed} rot yes dist gaussian
+velocity 		all create 300 ${seed} rot yes dist gaussian
+velocity 		all create 300 11111 rot yes dist gaussian
 
 #--------------------------------------------------------------------------
 #nvtanneal
@@ -128,11 +141,22 @@ velocity 		all create ${T_run} ${seed} rot yes dist gaussian
 fix 		1 all nvt temp 400 400 10.0
 dump		1 all xyz 1 dump.xyz
 dump_modify 	1 sort id
-compute 	myDis all msd 
+compute 	myDis all msd
 thermo_style  	custom step temp press etotal pe ke vol c_myDis[4]
 thermo			1
 timestep		${dt}
+timestep		0.0010000000000000000208
 #run			500000
 run			1000
-unfix 			1
-uncompute 		myDis
+Memory usage per processor = 8.7846 Mbytes
+Step Temp Press TotEng PotEng KinEng Volume myDis[4] 
+       0          300    6549159.7    1018719.9    1018716.5    3.3736898      1000000            0 
+       1 2.3790027e+09     28538577     26786771    33380.127     26753390      1000000    496.56015 
+       2 2.1300945e+09     25437981     24089909     135649.4     23954260      1000000      1926.53 
+       3 1.8756147e+09     22224078     21373952    281477.71     21092474      1000000    4111.1104 
+       4 1.6659531e+09     19528852     19180516     445819.6     18734697      1000000    6918.4236 
+       5 1.4564058e+09     16840047     16983763    605558.34     16378205      1000000    10212.912 
+       6 1.2637323e+09     14377974     14954401    742931.02     14211470      1000000    13855.882 
+       7 1.0983303e+09     12278132     13199429    848010.31     12351419      1000000    17740.093 
+       8 9.5844322e+08     10523421     11695334     917033.2     10778300      1000000    21783.888 
+       9 8.4072358e+08    9073463.7     10404595    950126.08    9454468.5      1000000    25923.615 

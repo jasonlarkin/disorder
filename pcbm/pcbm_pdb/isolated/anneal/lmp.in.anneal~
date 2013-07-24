@@ -4,6 +4,7 @@
 units 			metal
 atom_style		full
 read_data		fort.26
+group         		C type = 1
 ###########################################################################
 #OLPS
 ###########################################################################
@@ -18,15 +19,15 @@ bond_coeff   1     20.337919      1.4000000
 bond_coeff   2     20.337919      1.4000000
 bond_coeff   3     13.746525      1.5100000
 bond_coeff   4     15.914747      1.0800000
-bond_coeff   5     15.914747      1.0800000
+bond_coeff   5     11.621668      1.5290000
 bond_coeff   6     11.621668      1.5290000
-bond_coeff   7     11.621668      1.5290000
+bond_coeff   7     13.746525      1.5100000
 bond_coeff   8     13.746525      1.5100000
-bond_coeff   9     13.746525      1.5100000
-bond_coeff  10     13.876618      1.4100000
+bond_coeff   9     13.876618      1.4100000
+bond_coeff  10     14.743907      1.0900000
 bond_coeff  11     14.743907      1.0900000
-bond_coeff  12     14.743907      1.0900000
-bond_coeff  13     22.549505      1.2290000
+bond_coeff  12     22.549505      1.2290000
+bond_coeff  13      9.279988      1.3270000
 ################################################################################
 #### Covalent angle parameters
 ################################################################################
@@ -93,7 +94,7 @@ dihedral_coeff  25        0.31439213   2   180   0.0
 #### Pair potentials
 ################################################################################
 pair_style hybrid/overlay tersoff lj/cut 12.0 coul/wolf 0.223 12.0
-pair_coeff * * tersoff C.tersoff 1 NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL
+pair_coeff * * tersoff C.tersoff C NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL
 pair_coeff * * coul/wolf
 pair_coeff 1 1 lj/cut 0.0700000000 3.5500000000  
 pair_coeff 2 2 lj/cut 0.0660000000 3.5000000000  
@@ -108,6 +109,7 @@ pair_coeff 10 10 lj/cut 0.0300000000 2.4200000000
 pair_coeff 11 11 lj/cut 0.0300000000 2.5000000000    
 pair_modify mix geometric
 special_bonds lj 0.0 0.0 0.0 coul 0.0 0.0 0.0
+
 #special_bonds lj 0.0 0.0  0.00000 coul 0.0 0.0  0.00000 angle yes dihedral yes
 ###########################################################################
 
@@ -118,15 +120,13 @@ variable   	dt 		equal 0.001
 variable 	T_run 		equal 300
 variable 	seed 		equal 11111
 
-log log_main.lammps
-
 velocity 		all create ${T_run} ${seed} rot yes dist gaussian
 
 #--------------------------------------------------------------------------
 #nvtanneal
 #--------------------------------------------------------------------------
 fix 		1 all nvt temp 400 400 10.0
-dump		1 all xyz 1 lmp.x.dump
+dump		1 all xyz 1 dump.xyz
 dump_modify 	1 sort id
 compute 	myDis all msd 
 thermo_style  	custom step temp press etotal pe ke vol c_myDis[4]

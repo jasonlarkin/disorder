@@ -12,6 +12,11 @@ group         		C type = 1
 #neigh_modify delay 10
 
 ################################################################################
+#### Tersoff
+################################################################################
+
+
+################################################################################
 #### Covalent bond parameters
 ################################################################################
 bond_style harmonic
@@ -32,31 +37,30 @@ bond_coeff  13      9.279988      1.3270000
 #### Covalent angle parameters
 ################################################################################
 angle_style harmonic 
-angle_coeff 1 5.4639184       120.000
-angle_coeff 2 5.4639184       120.000
-angle_coeff 3 5.4639184       120.000
-angle_coeff 4 6.0710205       120.000
-angle_coeff 5 3.0355102       120.000
-angle_coeff 6 3.0355102       120.000
-angle_coeff 7 5.0606292       112.700
-angle_coeff 8 5.0606292       112.700
-angle_coeff 9 5.4639184       114.000
-angle_coeff 10 5.4639184       114.000
-angle_coeff 11 3.4691546       109.500
-angle_coeff 12 5.4639184       111.100
-angle_coeff 13 3.2523324       110.700
-angle_coeff 14 3.2523324       110.700
-angle_coeff 15 3.0355102       109.500
-angle_coeff 16 3.0355102       109.500
-angle_coeff 17 2.8620525       107.800
-angle_coeff 18 2.8620525       107.800
-angle_coeff 19 5.4639184       111.100
-angle_coeff 20 3.4691546       109.500
-angle_coeff 21 7.0250380       111.400
-angle_coeff 22 6.9383091       120.400
-angle_coeff 23 7.1984957       123.400
-angle_coeff 24 7.1984957       116.900
-angle_coeff 25 6.0710205       120.000
+angle_coeff 1 5.4639184       120.000    
+angle_coeff 2 5.4639184       120.000     
+angle_coeff 3 5.4639184       120.000     
+angle_coeff 4 6.0710205       120.000     
+angle_coeff 5 3.0355102       120.000     
+angle_coeff 6 3.0355102       120.000     
+angle_coeff 7 5.0606292       112.700     
+angle_coeff 8 5.0606292       112.700     
+angle_coeff 9 5.4639184       114.000     
+angle_coeff 10 5.4639184       114.000     
+angle_coeff 11 5.4639184       111.100     
+angle_coeff 12 3.2523324       110.700     
+angle_coeff 13 3.2523324       110.700     
+angle_coeff 14 3.0355102       109.500     
+angle_coeff 15 3.0355102       109.500     
+angle_coeff 16 2.8620525       107.800     
+angle_coeff 17 2.8620525       107.800     
+angle_coeff 18 5.4639184       111.100     
+angle_coeff 19 3.4691546       109.500     
+angle_coeff 20 7.0250380       111.400     
+angle_coeff 21 6.9383091       120.400     
+angle_coeff 22 7.1984957       123.400     
+angle_coeff 23 7.1984957       116.900     
+
 ################################################################################
 #### Covalent torsion parameters
 ################################################################################
@@ -84,8 +88,6 @@ dihedral_coeff  20        0.02818688   1     0   0.0
 dihedral_coeff  21       -0.00108411   2   180   0.0
 dihedral_coeff  22        0.00433644   3     0   0.0
 dihedral_coeff  23        0.00650466   3     0   0.0
-dihedral_coeff  24        0.31439213   2   180   0.0
-dihedral_coeff  25        0.31439213   2   180   0.0
 ################################################################################
 #### Covalent improper dihedral parameters
 ################################################################################
@@ -106,19 +108,21 @@ pair_coeff 7 7 lj/cut 0.0660000000 3.5000000000
 pair_coeff 8 8 lj/cut 0.1050000000 3.7500000000   
 pair_coeff 9 9 lj/cut 0.0660000000 3.5000000000   
 pair_coeff 10 10 lj/cut 0.0300000000 2.4200000000   
-pair_coeff 11 11 lj/cut 0.0300000000 2.5000000000    
+pair_coeff 11 11 lj/cut 0.0300000000 2.5000000000   
 pair_modify mix geometric
 special_bonds lj 0.0 0.0 0.0 coul 0.0 0.0 0.0
 
 #special_bonds lj 0.0 0.0  0.00000 coul 0.0 0.0  0.00000 angle yes dihedral yes
-###########################################################################
+#--------------------------------------------------------------------------
 
-###########################################################################
-#run parameters
-###########################################################################
+
+
+#--------------------------------------------------------------------------
 variable   	dt 		equal 0.001
 variable 	T_run 		equal 300
 variable 	seed 		equal 11111
+
+log log_main.lammps
 
 velocity 		all create ${T_run} ${seed} rot yes dist gaussian
 
@@ -126,7 +130,7 @@ velocity 		all create ${T_run} ${seed} rot yes dist gaussian
 #nvtanneal
 #--------------------------------------------------------------------------
 fix 		1 all nvt temp 400 400 10.0
-dump		1 all xyz 1 dump.xyz
+dump		1 all xyz 1 output.xyz
 dump_modify 	1 sort id
 compute 	myDis all msd 
 thermo_style  	custom step temp press etotal pe ke vol c_myDis[4]
