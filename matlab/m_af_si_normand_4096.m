@@ -738,20 +738,20 @@ pause
 
 
 sio2.debye.cut(2).cond = (con.kb / sio2.VOLUME)*sio2.D(3,3).D(sio2.debye.Icut2,3);
-sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut2,3).*sio2.SED(1).SED.life(sio2.debye.Icut2+3)'*1E-12 );
+sio2.debye.cut(2).mfp = sqrt(3*sio2.D(3,3).D(sio2.debye.Icut2,3).*sio2.SED(2).SED.life(sio2.debye.Icut2+3)*1E-12 );
 debye.cut(2).mfp = 3*Di(8,1).Di(debye.Icut2,3)/si.amor.vs_tran;
 [Y sio2.debye.cut(2).Isort] = sort(sio2.debye.cut(2).mfp);
 sum(sio2.debye.cut(2).cond)
 
 
-% sio2.SED(1).cut(1).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12)';
-% sio2.SED(1).cut(1).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12';
-% [Y sio2.SED(1).cut(1).Isort] = sort(sio2.SED(1).cut(1).mfp);
-% sio2.SED(1).SED.cut(2).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12)';
-% sio2.SED(1).SED.cut(2).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12';
-% [Y sio2.SED(1).SED.cut(2).Isort] = sort(sio2.SED(1).SED.cut(2).mfp);
-% sum(sio2.SED(1).SED.cut(1).cond)
-% sum(sio2.SED(1).SED.cut(2).cond)
+sio2.SED(1).cut(1).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12)';
+sio2.SED(1).cut(1).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut1)*1E-12';
+[Y sio2.SED(1).cut(1).Isort] = sort(sio2.SED(1).cut(1).mfp);
+sio2.SED(1).SED.cut(2).cond = (con.kb / sio2.VOLUME)*((1/3))*siO2.vs_tran^2*(1.0*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12)';
+sio2.SED(1).SED.cut(2).mfp = siO2.vs_tran*sio2.SED(1).SED.life(sio2.SED(1).Jcut2)*1E-12';
+[Y sio2.SED(1).SED.cut(2).Isort] = sort(sio2.SED(1).SED.cut(2).mfp);
+sum(sio2.SED(1).SED.cut(1).cond)
+sum(sio2.SED(1).SED.cut(2).cond)
 
 %semilogx(Di(8,1).Di(:,2),cumtrapz((con.kb / VOLUME)*Di(8,1).Di(:,3) ),'.')
 %semilogx(flipdim(debye.mfp,2),sum(debye.cond) + sum(SED.cut(1).cond)+cumtrapz(debye.cond))
@@ -794,8 +794,11 @@ galli = m_si_amor_galli_k_tf;
 %     )
 
 semilogx(...
-    sio2.debye.mfp_film_1000(sio2.debye.Isort) , 1.92 + cumtrapz(sio2.debye.cond_film_1000(sio2.debye.Isort)),...
-    regner.sio2.cond(:,1)*1e-6,regner.sio2.cond(:,2)*1.4,'.'...
+    sio2.debye.mfp_film_1000(sio2.debye.Isort) , 1.44 + cumtrapz(sio2.debye.cond_film_1000(sio2.debye.Isort)),...
+    regner.sio2.cond(:,1)*1e-6,regner.sio2.cond(:,2)*1.4,'.',...
+    [200E-9 500E-9 1000E-9],[1.25 1.34 1.37],'.',...
+    [32E-9 190E-9],[0.87 1.3],'.',...
+    [1e-11;sio2.debye.mfp_film_1000(sio2.debye.Isort)';1E-5],1.44*[1;ones(length(sio2.debye.mfp_film_1000(sio2.debye.Isort)),1);1]...
     )
 
 
