@@ -27,7 +27,7 @@ galli.tf = ...
     80
     ];
 
-galli.sputtered.tf = [0.1 0.3 0.52 1.0 4.0 ]*1000*1E-9;
+galli.sputtered.tf = [0.1 0.3 0.52 0.4 2.0 ]*1000*1E-9;
 galli.sputtered.k = [1.8 1.8 2.0 1.0 4.0];
 
 galli.ebeam.tf = [ 0.13 0.27 ]*1000*1E-9;

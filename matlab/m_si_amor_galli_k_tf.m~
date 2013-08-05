@@ -27,21 +27,21 @@ galli.tf = ...
     80
     ];
 
-galli.sputtered.tf = [0.1 0.3 0.52 1.0 4.0 ];
+galli.sputtered.tf = [0.1 0.3 0.52 1.0 4.0 ]*1000*1E-9;
 galli.sputtered.k = [1.8 1.8 2.0 1.0 4.0];
 
-galli.ebeam.tf = [ 0.13 0.27 ];
+galli.ebeam.tf = [ 0.13 0.27 ]*1000*1E-9;
 galli.ebeam.k = [2.0 1.8];
 
-galli.cvd.tf = [ 0.2 0.5 1.6 2.0 2.8 ];
-galli.cvd.k = [2.0 1.5 1.6 0];
+galli.cvd.tf = [0.05 0.097 0.2 0.2 0.5 1.6 2.0 2.0 2.8 3.6 80 ]*1000*1E-9;
+galli.cvd.k = [1.4   1.5   2.4 2.0 1.5 4.0 2.4 4.8 6.0 4.8 4.0];          
 
 galli.tf = galli.tf*1000*1E-9;
 
 galli.moon.k=[...
+    1.4
     1.5
-    1.6
-    2.4...
+    2.25...
     ];
 galli.moon.tf=[...
     50*1E-9
