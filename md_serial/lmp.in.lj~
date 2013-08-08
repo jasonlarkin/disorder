@@ -1,0 +1,50 @@
+#--------------------------------------------------------------------------
+units			lj
+atom_style		atomic
+read_data		input.lmp.txt
+#--------------------------------------------------------------------------
+#mass           	1  1.0
+#group         		Ar type = 1
+#--------------------------------------------------------------------------
+pair_style		lj/cut 2.5
+pair_coeff		* * 1.0 1.0
+pair_modify          	shift yes
+#pair_modify   	tail no
+
+#--------------------------------------------------------------------------
+#LJ Parameters
+variable    	kB 		equal 1.3806504e-23 	# [J/K] Boltzmann
+variable	sigma_Ar 	equal 3.4e-10 		# m
+variable	eps_Ar		equal 1.67e-21		# J
+variable	mass_Ar		equal 6.63e-26		# kg
+variable	tau_Ar		equal 2.1423e-12	# s
+#thermo Parameters
+variable    	T_100 		equal 100*(${kB}/${eps_Ar})
+variable   	dt 		equal 0.002
+variable	seed		equal 11111
+
+#--------------------------------------------------------------------------	
+variable 	T_run 		equal ${T_100}
+#--------------------------------------------------------------------------
+velocity 		all create ${T_run} ${seed} rot yes dist gaussian
+#--------------------------------------------------------------------------
+#nve
+#--------------------------------------------------------------------------
+	fix 			1 all nve
+	fix 			2 all temp/rescale 1 ${T_run} ${T_run} 0.01 1.0
+	timestep		${dt}
+	thermo_style  		custom step temp press etotal vol
+	thermo			100
+	run             	1000
+	unfix 			1
+	unfix 			2
+#--------------------------------------------------------------------------
+#nve
+#--------------------------------------------------------------------------
+	fix 			1 all nve
+	timestep		${dt}
+	thermo_style  		custom step temp press etotal vol
+	thermo			10
+	run             	5000	
+	unfix 			1
+

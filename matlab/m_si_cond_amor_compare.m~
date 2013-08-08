@@ -1,9 +1,41 @@
 clear
 
-gk = m_si_cond_amor_gk_results
+gk(1).gk = m_si_cond_amor_gk_results;
 
-af = m_si_cond_amor_af_results
+gk(2).gk = m_sio2_cond_amor_gk_results;
 
-plot(...
-1./gk.size,gk.cond,'.',...
-1./af.size,af.cond,'.')
+%af = m_si_cond_amor_af_results
+
+si.extrap.size = [54300000];
+si.extrap.cond = [1.8 0.2];
+
+sio2.extrap.size = [54300000];
+sio2.extrap.cond = [2.1 0.2];
+
+
+clf
+subplot(2,1,1),...
+h1 = errorbar(...
+    1./[gk(2).gk.size],gk(2).gk.cond(:,1),gk(2).gk.cond(:,2),'o')
+set(h1, 'MarkerSize', 6);
+errorbar_tick(h1, 30);
+axis([-0.01 0.12 1.15 2.5])
+hold on
+
+subplot(2,1,2),...
+    h
+h2 = errorbar(...
+    1./[gk(1).gk.size],...
+    [gk(1).gk.cond(:,1)],...
+    gk(1).gk.cond(:,2),...
+    'o');
+set(h2, 'MarkerSize', 10);
+errorbar_tick(h2, 30);
+axis([-0.01 0.12 1.15 2.5])
+h12 = errorbar(...
+    1./[gk(2).gk.size(end)],si.extrap.cond(1,1),si.extrap.cond(1,2),'o')
+set(h12, 'MarkerSize', 10);
+errorbar_tick(h12, 30);
+
+
+
