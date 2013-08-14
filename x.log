@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  24 JUN 2013 14:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  13 AUG 2013 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**prb_mfp_jl_031113.tex
+**prb_mfp_jl_081113.tex
 (/usr/share/texlive/texmf-dist/tex/latex/tools/x.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -18,8 +18,8 @@ and deduce the truth by order and method.
 
  ) 
 Here is how much of TeX's memory you used:
- 7 strings out of 495060
- 262 string characters out of 3182053
+ 8 strings out of 495060
+ 263 string characters out of 3182053
  45057 words of memory out of 3000000
  3288 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000

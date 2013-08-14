@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  13 AUG 2013 22:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  13 AUG 2013 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,51 +259,51 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1] [2] [3] [4]
 [5]
 
-LaTeX Warning: Command \r invalid in math mode on input line 728.
-
-
 LaTeX Warning: Command \r invalid in math mode on input line 729.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 732.
+LaTeX Warning: Command \r invalid in math mode on input line 730.
 
 
 LaTeX Warning: Command \r invalid in math mode on input line 733.
 
+
+LaTeX Warning: Command \r invalid in math mode on input line 734.
+
 [6]
 
-LaTeX Warning: Command \r invalid in math mode on input line 760.
+LaTeX Warning: Command \r invalid in math mode on input line 761.
 
 File: /home/jason/disorder/si/amor/a288_init216_20s_3.eps Graphic file (type ep
 s)
 </home/jason/disorder/si/amor/a288_init216_20s_3.eps>
 
-LaTeX Warning: Command \r invalid in math mode on input line 794.
+LaTeX Warning: Command \r invalid in math mode on input line 795.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 794.
+LaTeX Warning: Command \r invalid in math mode on input line 795.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 794.
+LaTeX Warning: Command \r invalid in math mode on input line 795.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 794.
+LaTeX Warning: Command \r invalid in math mode on input line 795.
 
 [7] [8]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps Graphic file 
 (type eps)
  </home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps>
-Underfull \hbox (badness 1264) in paragraph at lines 910--935
+Underfull \hbox (badness 1264) in paragraph at lines 911--936
 \OT1/cmr/m/n/12 po-lar-iza-tion. This ap-proach has been pre-vi-ously used to p
 re-dict ef-fec-tive dis-per-
  []
 
 [9] [10]
 
-LaTeX Warning: Command \r invalid in math mode on input line 997.
+LaTeX Warning: Command \r invalid in math mode on input line 998.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 1004.
+LaTeX Warning: Command \r invalid in math mode on input line 1005.
 
 [11]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps Graphic
@@ -314,10 +314,10 @@ e (type eps)
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps>
 
-LaTeX Warning: Command \r invalid in math mode on input line 1064.
+LaTeX Warning: Command \r invalid in math mode on input line 1065.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 1064.
+LaTeX Warning: Command \r invalid in math mode on input line 1065.
 
 [12] [13] [14]
 Missing character: There is no Â in font cmr12!
@@ -344,7 +344,7 @@ File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_si.eps Graphic
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_si.eps>
 
-LaTeX Warning: Float too large for page by 29.96779pt on input line 1955.
+LaTeX Warning: Float too large for page by 29.96779pt on input line 1956.
 
 [26] [27] [28] (./prb_mfp_jl_081113.bbl
 Missing character: There is no â in font cmr10!
@@ -539,4 +539,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  33i,25n,36p,1251b,547s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_081113.dvi (37 pages, 108948 bytes).
+Output written on prb_mfp_jl_081113.dvi (37 pages, 109016 bytes).
