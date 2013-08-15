@@ -1,4 +1,4 @@
-\begin{thebibliography}{124}
+\begin{thebibliography}{121}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -102,7 +102,7 @@
   \bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Sellan}},
   \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Su}},
   \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
-  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{{McGaughey}}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{Malen}},
   \bibinfo{journal}{Nat Commun} \textbf{\bibinfo{volume}{4}},
   \bibinfo{pages}{1640} (\bibinfo{year}{2013}{\natexlab{a}}),
@@ -146,16 +146,12 @@
   \bibinfo{pages}{214309} (\bibinfo{year}{2008}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.77.214309}.
 
-\bibitem[{\citenamefont{Shenogin et~al.}(2009)\citenamefont{Shenogin, Bodapati,
-  Keblinski, and {McGaughey}}}]{shenogin_predicting_2009}
-\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shenogin}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodapati}},
-  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Keblinski}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
-  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Journal of Applied Physics}
-  \textbf{\bibinfo{volume}{105}}, \bibinfo{pages}{034906}
-  (\bibinfo{year}{2009}),
-  \urlprefix\url{http://link.aip.org/link/?JAP/105/034906/1}.
+\bibitem[{\citenamefont{Koh and Cahill}(2007)}]{koh_frequency_2007}
+\bibinfo{author}{\bibfnamefont{Y.~K.} \bibnamefont{Koh}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{76}},
+  \bibinfo{pages}{075207} (\bibinfo{year}{2007}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.76.075207}.
 
 \bibitem[{\citenamefont{Dames and Chen}(2005)}]{dames_thermal_2005}
 \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Dames}} \bibnamefont{and}
@@ -395,14 +391,6 @@
   \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{91}},
   \bibinfo{pages}{9772–9776} (\bibinfo{year}{2002}),
   \urlprefix\url{http://link.aip.org/link/?JAP/91/9772/1}.
-
-\bibitem[{\citenamefont{Barkema and
-  Mousseau}(2000)}]{barkema_high-quality_2000}
-\bibinfo{author}{\bibfnamefont{G.~T.} \bibnamefont{Barkema}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Mousseau}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{62}},
-  \bibinfo{pages}{4985–4990} (\bibinfo{year}{2000}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.62.4985}.
 
 \bibitem[{\citenamefont{Ashcroft and Mermin}(1976)}]{ashcroft_solid_1976}
 \bibinfo{author}{\bibfnamefont{N.~W.} \bibnamefont{Ashcroft}} \bibnamefont{and}
@@ -686,6 +674,14 @@
   (\bibinfo{year}{1995}), ISSN \bibinfo{issn}{0021-9991},
   \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S002199918571039X}.
 
+\bibitem[{\citenamefont{Barkema and
+  Mousseau}(2000)}]{barkema_high-quality_2000}
+\bibinfo{author}{\bibfnamefont{G.~T.} \bibnamefont{Barkema}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Mousseau}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{62}},
+  \bibinfo{pages}{4985–4990} (\bibinfo{year}{2000}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.62.4985}.
+
 \bibitem[{\citenamefont{Stillinger and Weber}(1985)}]{stillinger_computer_1985}
 \bibinfo{author}{\bibfnamefont{F.~H.} \bibnamefont{Stillinger}}
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.~A.} \bibnamefont{Weber}},
@@ -804,6 +800,17 @@
   \bibinfo{pages}{051404} (\bibinfo{year}{2011}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.83.051404}.
 
+\bibitem[{\citenamefont{Biswas et~al.}(1988)\citenamefont{Biswas, Bouchard,
+  Kamitakahara, Grest, and Soukoulis}}]{biswas_vibrational_1988}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Biswas}},
+  \bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
+  \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}},
+  \bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Grest}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Soukoulis}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{60}},
+  \bibinfo{pages}{2280–2283} (\bibinfo{year}{1988}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.60.2280}.
+
 \bibitem[{\citenamefont{Volz and Chen}(2000)}]{volz_molecular-dynamics_2000}
 \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Volz}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chen}},
@@ -874,17 +881,6 @@
   \emph{\bibinfo{title}{Crystal structures}}, vol.~\bibinfo{volume}{1}
   (\bibinfo{publisher}{Interscience publishers New York},
   \bibinfo{year}{1963}).
-
-\bibitem[{\citenamefont{Biswas et~al.}(1988)\citenamefont{Biswas, Bouchard,
-  Kamitakahara, Grest, and Soukoulis}}]{biswas_vibrational_1988}
-\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Biswas}},
-  \bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Bouchard}},
-  \bibinfo{author}{\bibfnamefont{W.~A.} \bibnamefont{Kamitakahara}},
-  \bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Grest}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Soukoulis}},
-  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{60}},
-  \bibinfo{pages}{2280–2283} (\bibinfo{year}{1988}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.60.2280}.
 
 \bibitem[{\citenamefont{Duda et~al.}(2011)\citenamefont{Duda, English, Jordan,
   Norris, and Soffa}}]{duda_reducing_2011}
@@ -996,10 +992,14 @@
   \bibinfo{journal}{Journal of Computational and Theoretical Nanoscience}
   \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{1–12} (\bibinfo{year}{2008}).
 
-\bibitem[{\citenamefont{Turney}(2009)}]{turney_predicting_2009-1}
+\bibitem[{\citenamefont{Turney et~al.}(2009)\citenamefont{Turney, Landry,
+  {McGaughey}, and Amon}}]{turney_predicting_2009}
 \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
-  \bibinfo{type}{{PhD} thesis}, \bibinfo{school}{Carnegie Mellon University},
-  \bibinfo{address}{Pittsburgh, {PA}} (\bibinfo{year}{2009}).
+  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
+  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{064301} (\bibinfo{year}{2009}).
 
 \bibitem[{\citenamefont{He et~al.}(2012)\citenamefont{He, Savic, Donadio, and
   Galli}}]{he_lattice_2012}
@@ -1063,6 +1063,17 @@
   \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{59}},
   \bibinfo{pages}{13707–13711} (\bibinfo{year}{1999}).
 
+\bibitem[{\citenamefont{Shenogin et~al.}(2009)\citenamefont{Shenogin, Bodapati,
+  Keblinski, and {McGaughey}}}]{shenogin_predicting_2009}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shenogin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodapati}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Keblinski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.~H.}
+  \bibnamefont{{McGaughey}}}, \bibinfo{journal}{Journal of Applied Physics}
+  \textbf{\bibinfo{volume}{105}}, \bibinfo{pages}{034906}
+  (\bibinfo{year}{2009}),
+  \urlprefix\url{http://link.aip.org/link/?JAP/105/034906/1}.
+
 \bibitem[{\citenamefont{Shiomi et~al.}(2011)\citenamefont{Shiomi, Esfarjani,
   and Chen}}]{shiomi_thermal_2011}
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Shiomi}},
@@ -1086,40 +1097,6 @@
   \citenum{he_heat_2011} using the MD-based direct method. This finding is
   likely due to the small model used to perform the tiling in that study (512
   atoms), while we use a large model (100,000 atoms).}
-
-\bibitem[{\citenamefont{Sellan et~al.}(2010)\citenamefont{Sellan, Turney,
-  {McGaughey}, and Amon}}]{sellan_cross-plane_2010}
-\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Sellan}},
-  \bibinfo{author}{\bibfnamefont{J.~E.} \bibnamefont{Turney}},
-  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
-  \bibinfo{journal}{Journal of Applied Physics} \textbf{\bibinfo{volume}{108}},
-  \bibinfo{pages}{113524} (\bibinfo{year}{2010}).
-
-\bibitem[{\citenamefont{Koh and Cahill}(2007)}]{koh_frequency_2007}
-\bibinfo{author}{\bibfnamefont{Y.~K.} \bibnamefont{Koh}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{D.~G.} \bibnamefont{Cahill}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{76}},
-  \bibinfo{pages}{075207} (\bibinfo{year}{2007}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.76.075207}.
-
-\bibitem[{\citenamefont{{McGaughey} et~al.}(2011)\citenamefont{{McGaughey},
-  Landry, Sellan, and Amon}}]{mcgaughey_size-dependent_2011}
-\bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
-  \bibinfo{author}{\bibfnamefont{E.~S.} \bibnamefont{Landry}},
-  \bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Sellan}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~H.} \bibnamefont{Amon}},
-  \bibinfo{journal}{Applied Physics Letters} \textbf{\bibinfo{volume}{99}},
-  \bibinfo{pages}{131904} (\bibinfo{year}{2011}).
-
-\bibitem[{\citenamefont{Jain et~al.}(2013)\citenamefont{Jain, Yu, and
-  {McGaughey}}}]{jain_phonon_2013}
-\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Jain}},
-  \bibinfo{author}{\bibfnamefont{Y.-J.} \bibnamefont{Yu}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{A.~J.~H.} \bibnamefont{{McGaughey}}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{87}},
-  \bibinfo{pages}{195301} (\bibinfo{year}{2013}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.87.195301}.
 
 \bibitem[{\citenamefont{Regner et~al.}(2013{\natexlab{b}})\citenamefont{Regner,
   Majumdar, and Malen}}]{regner_instrumentation_2013}

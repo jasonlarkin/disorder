@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  13 AUG 2013 22:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  14 AUG 2013 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,51 +259,51 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1] [2] [3] [4]
 [5]
 
-LaTeX Warning: Command \r invalid in math mode on input line 729.
+LaTeX Warning: Command \r invalid in math mode on input line 702.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 730.
+LaTeX Warning: Command \r invalid in math mode on input line 703.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 733.
+LaTeX Warning: Command \r invalid in math mode on input line 706.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 734.
+LaTeX Warning: Command \r invalid in math mode on input line 707.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 735.
 
 [6]
-
-LaTeX Warning: Command \r invalid in math mode on input line 761.
-
 File: /home/jason/disorder/si/amor/a288_init216_20s_3.eps Graphic file (type ep
 s)
-</home/jason/disorder/si/amor/a288_init216_20s_3.eps>
+ </home/jason/disorder/si/amor/a288_init216_20s_3.eps>
 
-LaTeX Warning: Command \r invalid in math mode on input line 795.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 795.
+LaTeX Warning: Command \r invalid in math mode on input line 769.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 795.
+LaTeX Warning: Command \r invalid in math mode on input line 769.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 795.
+LaTeX Warning: Command \r invalid in math mode on input line 769.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 769.
 
 [7] [8]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps Graphic file 
 (type eps)
  </home/jason/disorder/si/amor/m_af_si_normand_4096_DOS_3.eps>
-Underfull \hbox (badness 1264) in paragraph at lines 911--936
+Underfull \hbox (badness 1264) in paragraph at lines 885--910
 \OT1/cmr/m/n/12 po-lar-iza-tion. This ap-proach has been pre-vi-ously used to p
 re-dict ef-fec-tive dis-per-
  []
 
 [9] [10]
 
-LaTeX Warning: Command \r invalid in math mode on input line 998.
+LaTeX Warning: Command \r invalid in math mode on input line 972.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 1005.
+LaTeX Warning: Command \r invalid in math mode on input line 979.
 
 [11]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_disp_sio2_2.eps Graphic
@@ -314,39 +314,64 @@ e (type eps)
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_disp_si.eps>
 
-LaTeX Warning: Command \r invalid in math mode on input line 1065.
+LaTeX Warning: Command \r invalid in math mode on input line 1038.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 1065.
+LaTeX Warning: Command \r invalid in math mode on input line 1038.
 
-[12] [13] [14]
+[12] [13]
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
- [15] [16] [17]
+ [14] [15] [16]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps Graphic file 
 (type eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps> [18] [19]
+</home/jason/disorder/si/amor/m_af_si_normand_4096_tau_2.eps> [17] [18]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_D_4.eps Graphic file (t
 ype eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_D_4.eps> [20] [21] [22]
+</home/jason/disorder/si/amor/m_af_si_normand_4096_D_4.eps> [19] [20] [21]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_4.eps Graphic f
 ile (type eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_4.eps> [23] [24]
-[25]
+</home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_4.eps> [22] [23]
+[24]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_sio2_2.eps Gra
 phic file (type eps)
  </home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_sio2_2.eps>
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_si.eps Graphic
  file (type eps)
 
-</home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_si.eps>
-
-LaTeX Warning: Float too large for page by 29.96779pt on input line 1956.
-
-[26] [27] [28] (./prb_mfp_jl_081113.bbl
+</home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_si.eps> [25]
+[26] [27] (./prb_mfp_jl_081113.bbl
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [28]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -378,18 +403,6 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
  [30]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -403,25 +416,6 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
- [31]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 Missing character: There is no â in font cmr10!
@@ -435,14 +429,39 @@ Missing character: There is no ¶ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [32]
 Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no “ in font cmbx10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
+ [31]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [32]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -465,41 +484,19 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
- [34]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
- [35]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 4467) in paragraph at lines 978--984
+Underfull \hbox (badness 4467) in paragraph at lines 974--980
 []\OT1/cmr/m/n/10.95 R. Vacher, H. Suss-ner, and M. Schmidt, Solid State Com-mu
 -ni-ca-tions \OT1/cmr/bx/n/10.95 34\OT1/cmr/m/n/10.95 , 279
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 978--984
+Underfull \hbox (badness 1688) in paragraph at lines 974--980
 \OT1/cmr/m/n/10.95 (1980), ISSN 0038-1098, URL $\OT1/cmtt/m/n/10.95 http : / / 
 www . sciencedirect . com / science / article / pii /
  []
 
+[34]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -524,19 +521,24 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[36])
+ [35])
 
 Class revtex4 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-[37] (./prb_mfp_jl_081113.aux) ) 
+[36] (./prb_mfp_jl_081113.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
 Here is how much of TeX's memory you used:
- 3937 strings out of 495060
- 53358 string characters out of 3182053
- 132836 words of memory out of 3000000
- 7071 multiletter control sequences out of 15000+200000
+ 3924 strings out of 495060
+ 53019 string characters out of 3182053
+ 133275 words of memory out of 3000000
+ 7058 multiletter control sequences out of 15000+200000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,25n,36p,1251b,547s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,25n,36p,1436b,538s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_081113.dvi (37 pages, 109016 bytes).
+Output written on prb_mfp_jl_081113.dvi (36 pages, 105904 bytes).
