@@ -1168,7 +1168,7 @@ Longitudinal & 7,840 & 8,271 & 8,047 & \\
 \endgroup
 \end{center}
 %--------------------------------------------------------------------------
-
+\vspace{10mm}
 
 %--------------------------------------------------------------------------
 \subsection{\label{S:Life}Lifetimes}
@@ -1771,12 +1771,14 @@ We note that building the accumulation function using MFPs from
 Eq. \eqref{EQ:LambdaMatth} ignores modes 
 that propagate in a direction that is not perpendicular to the 
 cross-plane film direction that may have MFPs larger than the film 
-thickness. Equation \eqref{EQ:LambdaMatth} reduces the MFP of modes 
-with $\Lambda \sim t_f$, which makes plotting MFP and 
-film thickness on the same horizontal axis an approximation. 
+thickness. Using Eq. \eqref{EQ:LambdaMatth} For modes with $\Lambda$ near $t_f$
+which makes plotting $\Lambda$ and $t_f$ on the same horizontal axis 
+an approximation
+
+
 Since we consider inifite (a-SiO$_2$) and 
 80 $\mu$m (a-Si) film thickness in evaluating 
-Eq. \eqref{EQ:LambdaMatth}, these effects are not important for the 
+Eq. \eqref{EQ:LambdaMatth}, the effect is not important for the 
 range of film thickness and MFPs shown in 
 Figs. \ref{FIG:sio2_accum}(a) and \ref{FIG:sio2_accum}(b). 
 
