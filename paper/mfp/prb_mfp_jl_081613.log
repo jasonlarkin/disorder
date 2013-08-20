@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  16 AUG 2013 18:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  19 AUG 2013 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,6 +335,12 @@ File: /home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_4.eps Graphic f
 ile (type eps)
 
 </home/jason/disorder/si/amor/m_af_si_normand_4096_gk_cond_4.eps> [22] [23]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no › in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no — in font cmr12!
+
 [24]
 File: /home/jason/disorder/si/amor/m_af_si_normand_4096_kLamba_7_sio2_2.eps Gra
 phic file (type eps)
@@ -525,10 +531,10 @@ Missing character: There is no “ in font cmr10!
 Here is how much of TeX's memory you used:
  3922 strings out of 495060
  52998 string characters out of 3182053
- 133192 words of memory out of 3000000
+ 133891 words of memory out of 3000000
  7056 multiletter control sequences out of 15000+200000
  16902 words of font info for 62 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,25n,36p,1436b,538s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_081613.dvi (35 pages, 104072 bytes).
+Output written on prb_mfp_jl_081613.dvi (35 pages, 105228 bytes).

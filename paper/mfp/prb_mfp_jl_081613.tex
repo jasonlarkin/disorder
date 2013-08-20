@@ -248,7 +248,7 @@ non-propagating modes and the total thermal conductivity for a-Si are in
 agreement with Regner et al.'s measurements. The accumulation in the 
 experimental measurements, however, takes place over a narrower band of 
 mean free paths (100 nm - 1 $\mu$m) than that predicted 
-(10 $\mu$m - 1 $\mu$m).
+(10 nm - 1 $\mu$m).
 \end{abstract}
 %--------------------------------------------------------------------------
 \maketitle
@@ -304,7 +304,7 @@ Notably, using broadband frequency domain thermoreflectance,
 Regner et al. measured how the thermal conductivity of a-SiO$_2$ and 
 a-Si thin films at a temperature of 300 K change with the penetration 
 depth associated with the 
-heating laser pulse.\cite{regner_broadband_2013} 
+heating laser.\cite{regner_broadband_2013} 
 Following the suggestion of Koh and Cahill,\cite{koh_frequency_2007} 
 they interpret the 
 measured thermal conductivity at a given penetration depth to be 
@@ -320,7 +320,7 @@ suggesting that any propagating modes that contribute to thermal
 conductivity have MFPs below 57 nm. For a-Si, they find that the 
 thermal conductivities of films with thicknesses of 500 and 2000 nm 
 vary by 
-40$\%$ between penetration depths of 44 and 968 nm, suggesting 
+40$\%$ between penetration depths of 100 and 968 nm, suggesting 
 that propagating modes with MFPs in this range contribute 
 significantly to thermal conductivity.  
 
@@ -520,7 +520,7 @@ We will evaluate Eq. \eqref{EQ:kph} under the Debye approximation,
 which assumes isotropic and linear dispersion such that the 
 the DOS is
 \begin{equation}\label{EQ:DOS_debye}
-DOS(\omega) = \frac{3\pi\omega^2}{2v_{s}^3},
+DOS(\omega) = \frac{3V\omega^2}{2\pi^2v_{s}^3},
 \end{equation}
 where $v_s$ is an appropriate sound speed.\cite{ashcroft_solid_1976} 
 
@@ -834,7 +834,7 @@ propagating (i.e., phonon-like).
 \end{center}
 \caption{\label{FIG:DOS} Vibrational DOS of a-SiO$_2$ and a-Si 
 plotted on a log-log scale. Both models 
-show an $\omega^{-2}$ scaling at low frequency. The DOS for 
+show an $\omega^{2}$ scaling at low frequency. The DOS for 
 a-Si has two peaks similar to the 
 DOS of the crystalline phase.\cite{landry_effect_2010} 
 The DOS for a-SiO$_2$ is flat over most of the spectrum, with a high 
@@ -1367,7 +1367,8 @@ of the Debye scaling of the DOS (Fig. \ref{FIG:DOS}).
 The constant $B$ in Eq. \eqref{EQ:tauw2} for $n=2$ 
 is then fit to the AF-predicted diffusivities for 
 frequencies below the cutoff by dividing the diffusivities 
-by $v_{s,DOS}$. The fit value is $B=2.95\times10^{13}$ s$^{-2}$.
+by $v_{s,DOS}$. The fit value is $B=5.65\times10^{13}$ 
+rads$^2$s$^{-1}$.
 
 For a-Si, the mode diffusivities predicted by NMD at 
 low frequencies show a clear $\omega^{-2}$ scaling. 
@@ -1402,7 +1403,7 @@ to the average AF-predicted diffusivity at the cutoff frequency.
 The resulting values are 
 $\omega_{cut}=1.16 \times 10^{13}$ rads$/$s (which is at the onset 
 of the Debye scaling of the DOS, Fig. \ref{FIG:DOS})  
-and $B=2.76\times10^{14}$ s$^{-2}$. This choice 
+and $B=2.76\times10^{14}$ rads$^2$s$^{-1}$. This choice 
 allows Eq. \eqref{EQ:Dtau} to pass reasonably well through both 
 the AF- and NMD-predicted diffusivities. 
 
@@ -1424,7 +1425,7 @@ we use a cutoff frequency of 1.52 $\times 10^{13}$ rads$/$s
 of the Debye scaling of the DOS, Fig. \ref{FIG:DOS}) 
 based on Refs. \citenum{feldman_thermal_1993} and 
 \citenum{cahill_thermal_1994} 
-and choose $B=2.07\times10^{40}$ $s^{-4}$ so that 
+and choose $B=2.07\times10^{40}$ rads$^4$s$^{-3}$ so that 
 Eq. \eqref{EQ:Dtau} is equal to the average 
 AF-predicted diffusivity at the cutoff frequency. 
 
@@ -1576,7 +1577,8 @@ bulk a-Si experimentally,\cite{vacher_attenuation_1980}
 our extrapolated bulk value 
 is in reasonable agreement with experimental values for a wide 
 range of thin film thicknesses (see Fig. \ref{FIG:sio2_accum} in 
-Section \ref{S:Accumulation}). 
+Section \ref{S:Accumulation}). experiments have focused on thin 
+film measurements. 
 
 To predict thermal conductivity from Eq. \eqref{EQ:kvib}, 
 we use the parameters $B$ and $\omega_{cut}$ specified 
@@ -1743,7 +1745,7 @@ $k_{vib}$ (quantum) & 1.5 $\pm$ 0.1 & 1.6 $\pm$ 0.2 & \\
 
 In their broadband frequency domain thermoreflectance 
 measurements, Regner et al.,\cite{regner_broadband_2013}  
-following the suggestion of Koh and Cahill,\cite{koh_frequency_2007} 
+adopting the convention of Koh and Cahill,\cite{koh_frequency_2007} 
 interpret the  
 measured thermal conductivity at a given penetration depth 
 to be representative of the thermal conductivity accumulation 
@@ -1773,6 +1775,24 @@ thickness. Since we consider inifite (a-SiO$_2$) and
 Eq. \eqref{EQ:LambdaMatth}, the effect is not important for the 
 range of film thickness and MFPs shown in 
 Figs. \ref{FIG:sio2_accum}(a) and \ref{FIG:sio2_accum}(b). 
+
+Accumulation function on a common axis, 
+
+When using the Matthiessen rule to predict thermal conductivity 
+accumulation functions for varying film thicknesses, there are 
+two approximations when plotting the film thickness and Λ∗ on the 
+same horizontal scale. First, for varying film thickness, Eq. (25) 
+predicts varying lifetimes, though we note that the thermal 
+conductivity accumulation for varying tf follows closely the 
+accumulation for an infinite film thickness. Second, the assumption 
+ignores the ability of modes to propagate in a direction which is 
+not perpendicular to the thin film direction, which can lead to MFPs 
+larger than the film thickness.120,122,123
+
+
+
+
+
 
 Based on the results in Section \ref{S:Diffusivities}, we build 
 thermal conductivity accumulation functions for a-SiO$_2$ and a-Si 
@@ -1826,6 +1846,11 @@ the thermal conductivity accumulation
 saturates at $1$ $\mu$m, in good agreement with where the measurements 
 of Regner et al. saturate for their 500 nm thick film. The 2000 nm 
 thick film accumulation shows no sign of saturation. 
+
+The film thickness data shows just as strong as Regner's...
+
+The film thickness dependence is just as strong as the 2000 nm 
+film thickness measurements by Regner
 
 
 %--------------------------------------------------------------------------
