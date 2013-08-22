@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: prb_mfp_jl_082013.aux
+The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-072613.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 122 entries,
+            3411 wiz_defined-function locations,
+            1890 strings with 36526 characters,
+and the built_in function-call counts, 95956 in all, are:
+= -- 5543
+> -- 3363
+< -- 462
++ -- 2807
+- -- 817
+* -- 13307
+:= -- 10009
+add.period$ -- 122
+call.type$ -- 122
+change.case$ -- 491
+chr.to.int$ -- 115
+cite$ -- 128
+duplicate$ -- 8198
+empty$ -- 7914
+format.name$ -- 2053
+if$ -- 18449
+int.to.chr$ -- 8
+int.to.str$ -- 123
+missing$ -- 1250
+newline$ -- 381
+num.names$ -- 359
+pop$ -- 2037
+preamble$ -- 1
+purify$ -- 488
+quote$ -- 0
+skip$ -- 3838
+stack$ -- 0
+substring$ -- 4046
+swap$ -- 6712
+text.length$ -- 413
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 722
+warning$ -- 0
+while$ -- 355
+width$ -- 0
+write$ -- 1323
