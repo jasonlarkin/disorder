@@ -1,5 +1,5 @@
 phon thermalconductivity
-broaden 10.0
+broaden 1.0
 temperature 1000
 
 output freq text freq.gout
@@ -20,7 +20,6 @@ Ar core Ar core 99497.66760 64.40793836 0.0 8.5
 
 cell 21.4839 21.4839 21.4839 90.0 90.0 90.0 1 1 1 1 1 1
 cartesian
-
 Ar core 10.708      7.36066      21.3921 0 1 1 1 
 Ar core 17.596      13.5442      13.2634 0 1 1 1 
 Ar core 13.8339      2.21255     0.887672 0 1 1 1 
