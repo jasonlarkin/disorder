@@ -9,9 +9,9 @@ clear
 % str.main='/home/jason/disorder2/si/amor/normand/best100k/gk/';
 % GK.SEEDS=[1:5];
 
-GK.Nx = 2;
-str.main='/home/jason/Dropbox/pcbm_pdb/crys_c60/aligned/2x/anneal/gk/';
-GK.SEEDS=[1:5];
+GK.Nx = 1;
+str.main='/home/jason/Dropbox/pcbm_pdb/crys_c60/aligned/anneal/gk/';
+GK.SEEDS=[1:6];
 
 %--------------------------------------------------------------------------
 GK.Lx = GK.Nx*14.4;
@@ -88,7 +88,7 @@ GK.JJ(:,1) = GK.JJ(:,1)*con.s2ps;
 
 plot(GK.JJ(:,1),GK.JJ(:,2))
 %--------------------------------------------------------------------------
-%pause
+pause
 %-------------------------------------------------------------------------- 
                     
 GK.intJJ( 1:size(GK.JJ(:,1)) ) = 0;    
