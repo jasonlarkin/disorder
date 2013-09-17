@@ -9,8 +9,8 @@ clear
 % str.main='/home/jason/disorder2/si/amor/normand/best100k/gk/';
 % GK.SEEDS=[1:5];
 
-GK.Nx = 1;
-str.main='/home/jason/Dropbox/pcbm_pdb/crys_c60/aligned/anneal/gk/';
+GK.Nx = 2;
+str.main='/home/jason/Dropbox/pcbm_pdb/crys_c60/aligned/2x/anneal/gk/';
 GK.SEEDS=[1:6];
 
 %--------------------------------------------------------------------------
