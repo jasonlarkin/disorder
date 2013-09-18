@@ -1,7 +1,7 @@
+
+Turbulent Fluid Flow: outfile.avi
 Speed-up animation and visualization:
-
 1) a tool to filter out when NUM_PTS > 1E6
-
 2) improve rendering speed and save to disk speed
 
 
