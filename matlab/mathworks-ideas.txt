@@ -1,21 +1,36 @@
-
-Turbulent Fluid Flow: outfile.avi
+(1)Turbulent Fluid Flow: outfile.avi
 Speed-up animation and visualization:
-1) a tool to filter out when NUM_PTS > 1E6
-2) improve rendering speed and save to disk speed
+1) a tool to filter out when NUM_PTS >> 1E4 to improve rendering speed.
+137
+
+(2)AF calculation: just as fast as Fortran
+https://github.com/jasonlarkin/disorder/blob/master/matlab/m_af_lj.m
+cmuthesis_jlarkin.pdf
+158
+
+(3) plots
+atomistic models
+123
+79
+vmd quality
+vesta quality
+http://jasonlarkin.github.io/projects-phd-pcbm.html
 
 
-Parallel Computing
-
-1) OpenMP or MPI?
+(4)HPC Computing
+(4,1)OpenMP or MPI?
 http://www.ll.mit.edu/mission/isr/matlabmpi/matlabmpi.html
-For one of my projects, I need OpenMP (10-100 GB).
+I need OpenMP (10-100 GB).
 
-HPC Computing
-
-1) run jobs from any device, combination of github + dropbox.
-2) Plotting on any device (PC, Tablet, Smart Phone)
-
+(4,2) run jobs/view results from any device, github + dropbox.
+(PC, Tablet, Smart Phone)
 cluster(data(large_data)/code(src,scripts)/plots(small_data)) 
 <---> 
 all_other_devices(code(src,scripts)/plots)
+
+(5)Symbolic Representation
+$\sum_i^N \exp{j\theta_i \dot{\kappa x} }$
+=
+sum(exp(j k(1:N).*x(1:N) ),2)
+
+
