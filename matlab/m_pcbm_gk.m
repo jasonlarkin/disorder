@@ -9,12 +9,12 @@ clear
 % str.main='/home/jason/disorder2/si/amor/normand/best100k/gk/';
 % GK.SEEDS=[1:5];
 
-GK.Nx = 2;
-str.main='/home/jason/Dropbox/pcbm_pdb/crys_c60/aligned/2x/anneal/gk/';
-GK.SEEDS=[1:6];
+GK.Nx = 1;
+str.main='/home/jason/Dropbox/pcbm_pdb/crys_c60/aligned/anneal/gk/gk14/';
+GK.SEEDS=[1:4];
 
 %--------------------------------------------------------------------------
-GK.Lx = GK.Nx*14.4;
+GK.Lx = GK.Nx*14.5;
 GK.VOLUME = GK.Lx*GK.Lx*GK.Lx;
 %--------------------------------------------------------------------------
 
