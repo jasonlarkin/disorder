@@ -1,0 +1,141 @@
+#NEMD simulation, Constant Heat Flux
+#NOTE: For a description of any command, Google "LAMMPS command".
+
+#------------SET SIM SEED--------------------------------------------------
+#SED parameters
+variable	w_step		equal T_STEP		
+variable	w_total		equal T_FFT
+variable	t_total		equal T_TOTAL
+variable	num_ffts	equal ${t_total}/${w_total}
+##########SEED##########################################################
+variable iseed equal ISEED_TMP
+variable seed equal SEED_TMP
+
+#------------READ STRUCTURE------------------------------------------------
+units			metal              #Use Metal style units
+atom_style		molecular          #Use 'molecular' style for solids,molecules
+boundary		p p p           #Periodic BC on x, y, z
+read_data		IN.X0     #Use lattice structure from file
+
+group           moving id > 0 #All non-fixed atoms
+
+#------------DEFINE HYBRID - MORSE & LJ POTENTIALS-------------------------------------------
+pair_style lj/cut 10.0
+pair_coeff 1 1 0.01724 4.25 #LJ pair potential interaction for S-S #luo
+pair_coeff 1 2 0.007455 3.7275 #LJ pair potential interaction for C-S (CH2)
+pair_coeff 1 3 0.009079 3.7275 #LJ pair potential interaction for C-S (CH3)
+
+pair_coeff 2 2 0.005117 3.905 #LJ pair potential interaction for C-C (CH2-CH2)
+pair_coeff 2 3 0.006232 3.905 #LJ pair potential interaction for C-C (CH3-CH2)
+
+pair_coeff 3 3 0.00759 3.905 #LJ pair potential interaction for C-C (CH3)
+
+pair_modify shift yes
+special_bonds lj 0.0 0.0 0.0
+
+#------------DEFINE HARMONIC POTENTIAL FOR C-C BOND-------------------------------------------
+bond_style	  harmonic                   #Harmonic bond type
+bond_coeff      2 11.27 1.54 #9.25 1.54 #  #was 30+ for K         #Number of bonds, spring constant, equilibrium distance
+
+#------------DEFINE HARMONIC POTENTIAL FOR C-S BOND-------------------------------------------
+bond_coeff      1 9.627 1.815 #7.00112 1.815 # #was 14+ for K          #Number of bonds, spring constant, equilibrium distance
+
+#------------DEFINE HARMONIC ANGLE POTENTIAL FOR C-C-C BOND-------------------------------------------
+angle_style	  harmonic #cosine/squared                   #Harmonic cosine bond type
+angle_coeff      2 2.6940 109.5            #Spring constant, equilibrium angle
+
+#------------DEFINE HARMONIC ANGLE POTENTIAL FOR S-C-C BOND-------------------------------------------
+angle_coeff      1 2.6940 114.4            #Spring constant, equilibrium angle
+
+#------------DEFINE TORSION ANGLE POTENTIAL FOR S-C-C-C and C-C-C-C BONDS-------------------------------------------
+dihedral_style  multi/harmonic             #Harmonic bond type
+#dihedral_coeff      1 0.09617 0.125988 -0.13598 -0.0317 0.27196 -0.32642  #Dihedral coefficients
+dihedral_coeff      1 0.09617 -0.125988 -0.13598 0.0317 0.27196 0.32642  #Dihedral coefficients Correct ones
+
+#------------DEFINE VARIABLES----------------------------------------------
+
+#------------thermo Parameters
+variable	T_run   equal 150                    #Run temperature (K)
+variable	alat    equal 16.08                 #This variable is four times the lattice constant
+variable    V       equal vol                   #The volume is the volume
+variable	heat    equal 1e-1                 #The heat to be added and removed per time step
+variable   	dt      equal 1e-3                 #The simulation timestep in (ps)
+variable	runNo	equal 2^17
+variable	runNo2	equal 2^10
+
+#----------------------- Minimize Energy ---------------------
+#	fix centre cAtom setforce NULL NULL NULL
+#	reset_timestep  	0	#Reset the timestep counter to zero
+#	minimize		0.0 0.0 100000 100000 
+
+    #--------DEFINE CUSTOM COMPUTES---------------------------------------- 
+	compute 	movingTemp moving temp                                      #Define a compute to compute the temperature of moving atoms
+	compute	stressPerAtom moving stress/atom                            #Define a compute to compute the stress per atom of sample atoms
+	compute	p moving reduce sum c_stressPerAtom[1] c_stressPerAtom[2] c_stressPerAtom[3] #Compute the components of pressure of sample atoms
+	variable	samplePressX equal -(c_p[1])/(vol)
+	variable	samplePressY equal -(c_p[2])/(vol)
+	variable	samplePressZ equal -(c_p[3])/(vol)
+
+   	velocity 	moving create ${T_run} ${seed} rot yes dist gaussian    #Set initial velocities of moving atoms to sampling of gaussian distribution at 50K
+	
+log 	log_main_${iseed}.lammps
+    #--------NVE RESCALE --------------------------------------------------
+#	reset_timestep  	0	#Reset the timestep counter to zero
+    	fix           1 all nve
+    	fix           2 all temp/rescale 1 ${T_run} ${T_run} 0.01 1.0         #Perform a velocity rescale to fix temperature
+	fix_modify	2 temp movingTemp
+	variable	samplePressX equal -(c_p[1])/(vol)
+	variable	samplePressY equal -(c_p[2])/(vol)
+	variable	samplePressZ equal -(c_p[3])/(vol)
+    	thermo_style	custom step c_movingTemp v_samplePressX v_samplePressY v_samplePressZ press etotal pe ke vol    #Log
+	thermo        1000
+	timestep	${dt}
+	dump 		1 all  xyz 100000 z_nveRescale_T${T_run}.xyz
+	run           500000
+#	run	      1000
+    	unfix         1                                                       #Unfix NVE
+	unfix         2                                                       #Unfix velocity rescale
+	#unfix		end1
+	undump		1
+
+    #--------NVE --------------------------------------------------
+	#To remove artifical effect of velocity rescale
+#	reset_timestep  	0	#Reset the timestep counter to zero
+    	fix           1 all nve
+	variable	samplePressX equal -(c_p[1])/(vol)
+	variable	samplePressY equal -(c_p[2])/(vol)
+	variable	samplePressZ equal -(c_p[3])/(vol)
+    	thermo_style	custom step c_movingTemp v_samplePressX v_samplePressY v_samplePressZ press etotal pe ke vol    #Log
+	thermo        1000
+	timestep	${dt}
+	#dump 		1 all  xyz 100000 z_nve_T${T_run}.xyz
+	run           500000
+#	run	      1000
+    	unfix         1                                                       #Unfix NVE
+	#unfix		end1
+	#undump		1
+
+
+#------SED-------------------------------------------------------------------------
+label loop_fft
+variable ifft loop ${num_ffts}
+
+log 	log_SED_${iseed}_${ifft}.lammps
+#	reset_timestep  	0
+	fix 			1 all nve
+	dump 			vel all custom ${w_step} dump_${iseed}_${ifft}.vel vx vy vz
+	dump_modify 		vel sort id
+#	dump 			pos all custom ${w_step} dump_${iseed}_${ifft}.pos xu yu zu
+#	dump_modify 		pos sort id
+	compute 		myDis all msd
+	thermo_style 		custom step temp press etotal vol c_myDis[4]
+	thermo			5000
+	timestep		${dt}
+	run			${w_total}
+	unfix			1
+	undump			vel
+#	undump			pos
+	uncompute		myDis
+
+next ifft
+jump LMP_TMP loop_fft

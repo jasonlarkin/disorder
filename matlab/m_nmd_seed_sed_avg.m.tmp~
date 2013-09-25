@@ -7,7 +7,7 @@ NMD=load('./nmd.mat');
 %modes
     SED.modemaster = NMD.modemaster;
 %Input SED
-%    SED.sed( 1:NMD.NUM_TSTEPS/2,1:NMD.NUM_MODES ) = 0.0;
+    SED.sed( 1:NMD.NUM_TSTEPS/2,1:NMD.NUM_MODES ) = 0.0;
 
 for imode = 1:NMD.NUM_MODES
 %--------------------------------------------------------------------------
