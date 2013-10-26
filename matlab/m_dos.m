@@ -1,6 +1,6 @@
 function [dosx dosy] = m_dos(freq, NUM_BINS , broaden, VOLUME)
 %--------------------------------------------------------------------------
-%[DOSX DOSY] = m_dos(freq, DOS_BIN, broaden)
+%[DOSX DOSY] = m_dos(freq, NUM_BINS , broaden, VOLUME)
 %--------------------------------------------------------------------------
 
 constant = m_constant; lj = m_lj;
