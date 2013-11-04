@@ -1,0 +1,15 @@
+format of *.data
+
+NUM_ATOMS NUM_ATOMS_UCELL LX LY LZ
+atom_id atom_type x y z (Ang)
+
+
+x0_init216.data = 216 atom sample number 1
+x0_initb216.data = 216 atom sample number 2
+
+x0_perfect2_keating.data = 1000 atom sample number 2
+x0_perfect3_keating.data = 1000 atom sample number 3
+
+x0_perf4096_keating.data = 4096 atom sample
+
+x0_best100K.data = 100,000 atom sample
