@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  26 OCT 2013 17:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  10 NOV 2013 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -235,61 +235,94 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfig@top=\skip54
 \subfig@bottom=\skip55
 )
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (./prb_mfp_jl_101513.aux)
 \openout1 = `prb_mfp_jl_101513.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-Class revtex4 Info: Patching array package. on input line 221.
-Class revtex4 Info: cite was not loaded (OK!) on input line 221.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 221.
-LaTeX Font Info:    Try loading font information for U+msa on input line 236.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+Class revtex4 Info: Patching array package. on input line 222.
+Class revtex4 Info: cite was not loaded (OK!) on input line 222.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 222.
+LaTeX Font Info:    Try loading font information for U+msa on input line 238.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 236.
+LaTeX Font Info:    Try loading font information for U+msb on input line 238.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1] [2] [3] [4]
-[5]
+) [1]
 
-LaTeX Warning: Command \r invalid in math mode on input line 660.
+Package natbib Warning: Citation `durandurdu_<i>ab_2002 feldman_tight-binding_2
+004' on page 2 undefined on input line 403.
 
+[2] [3] [4] [5]
 
-LaTeX Warning: Command \r invalid in math mode on input line 661.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 664.
+LaTeX Warning: Command \r invalid in math mode on input line 679.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 665.
+LaTeX Warning: Command \r invalid in math mode on input line 680.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 695.
+LaTeX Warning: Command \r invalid in math mode on input line 683.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 684.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 716.
 
 [6]
-File: /home/jason/disorder/si/amor/m_sio2_rdf.eps Graphic file (type eps)
- </home/jason/disorder/si/amor/m_sio2_rdf.eps> [7] [8]
+File: /home/jason/disorder/si/amor/m_sio2_rdf_structures.eps Graphic file (type
+ eps)
+ </home/jason/disorder/si/amor/m_sio2_rdf_structures.eps>
+
+LaTeX Warning: Command \r invalid in math mode on input line 766.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 766.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 766.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 766.
+
+[7] [8]
 File: fig2.eps Graphic file (type eps)
- <fig2.eps> [9]
-[10]
+ <fig2.eps> [9] [10]
 
-LaTeX Warning: Command \r invalid in math mode on input line 939.
+LaTeX Warning: Command \r invalid in math mode on input line 971.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 946.
+LaTeX Warning: Command \r invalid in math mode on input line 978.
 
 [11]
 File: fig3b.eps Graphic file (type eps)
@@ -297,10 +330,10 @@ File: fig3b.eps Graphic file (type eps)
 File: fig3a.eps Graphic file (type eps)
  <fig3a.eps>
 
-LaTeX Warning: Command \r invalid in math mode on input line 1005.
+LaTeX Warning: Command \r invalid in math mode on input line 1037.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 1005.
+LaTeX Warning: Command \r invalid in math mode on input line 1037.
 
 [12] [13] [14]
 Missing character: There is no Â in font cmr12!
@@ -323,7 +356,7 @@ File: fig7b.eps Graphic file (type eps)
 
 <fig7b.eps>
 
-LaTeX Warning: Float too large for page by 4.63295pt on input line 1897.
+LaTeX Warning: Float too large for page by 4.63295pt on input line 1936.
 
 [26] [27] [28] (./prb_mfp_jl_101513.bbl
 Missing character: There is no â in font cmr10!
@@ -486,14 +519,18 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-) [36] (./prb_mfp_jl_101513.aux) ) 
+)
+
+Package natbib Warning: There were undefined citations.
+
+[36] (./prb_mfp_jl_101513.aux) ) 
 Here is how much of TeX's memory you used:
- 3925 strings out of 495060
- 52237 string characters out of 3182053
- 132022 words of memory out of 3000000
- 7052 multiletter control sequences out of 15000+200000
+ 4388 strings out of 495060
+ 57495 string characters out of 3182053
+ 142086 words of memory out of 3000000
+ 7508 multiletter control sequences out of 15000+200000
  22006 words of font info for 81 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,25n,36p,1435b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_101513.dvi (36 pages, 104952 bytes).
+Output written on prb_mfp_jl_101513.dvi (36 pages, 113636 bytes).

@@ -12,6 +12,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{subfigure}
+\usepackage{xcolor}
 %\usepackage{wrapfig}
 
 %Definition of new commands
@@ -220,7 +221,8 @@
 %--------------------------------------------------------------------------
 \begin{document}
 %--------------------------------------------------------------------------
-\title{Thermal Conductivity Accumulation in a-SiO$_2$ and a-Si}
+\title{\textcolor{red}{Thermal Conductivity 
+Accumulation in a-SiO$_2$ and a-Si}}
 %--------------------------------------------------------------------------
 \author{Jason M. Larkin}
 \author{Alan J. H. McGaughey}
@@ -382,6 +384,23 @@ wada_thermal_1996,moon_thermal_2002,zink_thermal_2006,zink_excess_2006,
 liu_high_2009,yang_anomalously_2010}
 suggesting both $\omega^{-2}$ and $\omega^{-4}$ scalings.
 \cite{feldman_thermal_1993,feldman_numerical_1999}  
+\textcolor{red}{
+Overall, experimental measurements of the temperature-varying 
+and film thickness-varying thermal conductivity of a-Si show a large 
+variation that depends on the deposition method and impurity 
+concentration (e.g. H, C, and O).
+\cite{liu_high_2009,yang_anomalously_2010,vacher_attenuation_1980,
+li_effect_2011} 
+In our present study, these effects are not included because 
+the necessary empirical potentials do not exist and 
+computationally-expensive density functional theory calculations 
+limit the model sizes accessible,
+\cite{buchenau_structural_1988,feldman_thermal_1993,
+feldman_numerical_1999,durandurdu_<i>ab_2002
+feldman_tight-binding_2004,bernstein_structural_2006,
+liu_high_2009,yang_anomalously_2010} 
+which prevents the study of low-frequency propagating modes.
+}
 
 The objective of this work is to investigate the propagating 
 and non-propagating contributions to the thermal conductivity 
@@ -672,12 +691,14 @@ performed using the MD package
 LAMMPS and a time step of 0.905 fs.\cite{plimpton_fast_1995} 
 The resulting a-SiO$_2$ structure is built from a network 
 of rigidly-bonded SiO$_4$ tetrahedral sub-units that are weakly 
-bonded via shared oxygen atoms. The radial distribution function, 
+bonded via shared oxygen atoms, 
+as shown in Fig. \ref{FIG:supercell} (a). 
+\textcolor{red}{The radial distribution function, 
 $g(r)$,\cite{mcquarrie_statistical_2000} for the 4608 atom 
-sample is shown in Fig. \ref{FIG:supercell} (a). 
-Also shown in Fig. \ref{FIG:supercell} (a) is an experimental 
-measurement of $g(r)$ from Ref. \citenum{lorch_neutron_1969} which 
-compares well with our current sample. 
+sample is shown in Fig. \ref{FIG:supercell} (a) along with an 
+experimental measurement of $g(r)$ from 
+Ref. \citenum{lorch_neutron_1969}, which 
+compares well with our current sample.}
 
 For a-Si, we use samples 
 with 216, 1000, 4096, and 100000 atoms, 
@@ -696,14 +717,14 @@ crystal with a lattice constant of 5.43 $\AA$.
 The Stillinger-Weber (SW) potential is used to model the atomic 
 interactions.\cite{stillinger_computer_1985} The MD simulations 
 are performed using LAMMPS with a time step of 0.5 fs. 
-The radial distribution function for the 4096 atom 
+\textcolor{red}{The radial distribution function for the 4096 atom 
 sample is shown in Fig. \ref{FIG:supercell} (b). 
 Also shown in Fig. \ref{FIG:supercell} (b) is an experimental 
 measurement of $g(r)$ from Ref. \citenum{laaziri_high-energy_1999} 
 which compares well with our current sample, but with a noticeable 
 broadening in the first peak. The radial distribution function 
 for our current sample is essentially identical to the sample from 
-Ref. \citenum{barkema_high-quality_2000}. 
+Ref. \citenum{barkema_high-quality_2000}.}
 
 Amorphous materials may have many different atomic 
 configurations with nearly equivalent potential energies, 
@@ -723,20 +744,25 @@ during the annealing.
 %--------------------------------------------------------------------------
 \begin{figure}
 \begin{center}
-\includegraphics[scale=1.0]
-{/home/jason/disorder/si/amor/m_sio2_rdf.eps}
+\includegraphics[scale=0.65]
+{/home/jason/disorder/si/amor/m_sio2_rdf_structures.eps}
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:supercell} 
+\textcolor{red}{
 (a) Radial distribution function, $g(r)$, for the 4608 atom a-SiO$_2$ 
 structure created from a melt-quench technique. The radial distribution 
 function compares well with the experimental measurement from 
-Ref. \citenum{lorch_neutron_1969}. 
+Ref. \citenum{lorch_neutron_1969}. Inset: Small sample of the 
+a-SiO$_2$ structure showing the Si-O tetrahedral 
+bond network. Bond lengths range between 1.6 and 1.8 $\AA$.
 (b) Radial distribution function for the 4096 atom a-Si 
 structure created by the modified WWW 
 algorithm. The radial distribution 
 function compares well with the experimental measurement from 
-Ref. \citenum{laaziri_high-energy_1999}. 
+Ref. \citenum{laaziri_high-energy_1999}. Inset: Small sample of 
+the a-Si structure. Bond lengths range between 2.3 and 2.7 $\AA$. 
+}
 }
 \end{figure}
 %--------------------------------------------------------------------------
@@ -837,14 +863,17 @@ propagating (i.e., phonon-like).
 \vspace*{-5mm}
 \end{center}
 \caption{\label{FIG:DOS} Vibrational DOS of a-SiO$_2$ and a-Si 
-plotted on a log-log scale. Both models 
-show an $\omega^{2}$ scaling at low frequency, where the dashed lines 
-indicate an extrapolation of the DOS based on this scaling. The DOS for 
-a-Si has two peaks similar to the 
+plotted on a log-log scale. 
+\textcolor{red}{
+Both models show an $\omega^{2}$ scaling at low frequency, where the 
+dashed lines indicate an extrapolation of the DOS based on this scaling. 
+The DOS for a-Si has two peaks similar to the 
 DOS of the crystalline phase.\cite{landry_effect_2010} 
 The DOS for a-SiO$_2$ is flat over most of the spectrum, with a high 
 frequency gap in the DOS that separates 
-the modes involving Si-O interactions.\cite{mcgaughey_thermal_2004} }
+the modes involving Si-O interactions.\cite{mcgaughey_thermal_2004} 
+}
+}
 \end{figure}
 %--------------------------------------------------------------------------
 %\clearpage
@@ -854,11 +883,14 @@ the modes involving Si-O interactions.\cite{mcgaughey_thermal_2004} }
 \subsection{\label{S:Structure}Structure Factor}
 %--------------------------------------------------------------------------
 
+\textcolor{red}{
 Calculating the structure factors of the 
 disordered modes of the supercell at the Gamma point 
 is a method to test for their propagating (i.e., plane-wave)  
 character at a particular wavevector and 
-polarization. This approach has been previously used to predict 
+polarization. 
+}
+This approach has been previously used to predict 
 effective dispersion curves of disordered and amorphous materials 
 experimentally
 \cite{benassi_evidence_1996,ruocco_high-frequency_2001,
@@ -1113,8 +1145,7 @@ is within $15\%$ of the predictions from our models.
 It is clear that the experimentally-measured sound speeds for a-Si 
 show a wide range which depends on the deposition method and impurity 
 concentration (e.g. H, C, and O).
-\cite{vacher_attenuation_1980,liu_high_2009,yang_anomalously_2010} 
-These effects are not included in our model.
+\cite{vacher_attenuation_1980,liu_high_2009,yang_anomalously_2010}
 
 The sound speed $v_{s,DOS}$ will be used for both 
 a-SiO$_2$ and a-Si for the rest of this work, allowing 
@@ -1241,12 +1272,14 @@ For a-SiO$_2$, the NMD lifetimes are larger than
 the Ioffe-Regel (IR) limit $\tau = 2\pi/\omega$,
 \cite{taraskin_determination_1999} and are bounded by  
 this limit at low frequencies. Similarly for a-Si, the IR limit is 
-a lower limit for the lifetimes predicted by NMD. While lifetimes 
+a lower limit for the lifetimes predicted by NMD. 
+\textcolor{red}{
+While lifetimes 
 predicted near the IR limit do not satisfy the constraint 
 $\Gamma(\nu) << \omega_0(\nu)$, only a limited number of these 
 lifetimes are used to perform the necessary extrapolation procedure 
 (see Figs. \ref{FIG:diffusivities} (a) and (b)). 
-
+}
 There is no clear evidence for an 
 $\omega^{-2}$ scaling, which would correspond to propagating modes.  
 At mid-frequencies, the NMD lifetimes are approximately constant and  
@@ -1254,7 +1287,8 @@ there is a peak near 2 $\times 10^{14}$ rads$/$s, which corresponds to
 the peak in the DOS (see Fig. \ref{FIG:DOS}). 
 The lifetimes predicted from the 
 structure factor fall below the NMD-predicted lifetimes 
-and the IR limit. These low values result because the structure factors 
+and the IR limit by up to one order of magnitude. 
+These low values result because the structure factors 
 for a-SiO$_2$ are evaluated for wavevectors where the resulting 
 wavepackets are formed by non-propagating modes.
 \cite{feldman_thermal_1993,feldman_numerical_1999,allen_diffusons_1999}
@@ -1350,11 +1384,14 @@ from the DOS (Table \ref{T:vs}), the NMD-predicted lifetimes
 for a-SiO$_2$ and a-Si are used to predict the mode diffusivities with 
 Eq. \eqref{EQ:Dtau}. The results are plotted in 
 Figs. \ref{FIG:diffusivities}(a) and \ref{FIG:diffusivities}(b).  
+\textcolor{red}{
 The mode diffusivities are predicted from the NMD lifetimes for the 
 low-frequency modes where the DOS scales as $\omega^2$ 
-(Fig. \ref{FIG:DOS}). The AF theory is used to predict the mode 
+(Fig. \ref{FIG:DOS}). 
+The AF theory is used to predict the mode 
 diffusivities for all frequencies and the results are plotted in 
 Figs. \ref{FIG:diffusivities}(a) and \ref{FIG:diffusivities}(b). 
+}
 
 For a-SiO$_2$, the mode diffusivities predicted by NMD and AF agree 
 well at low frequency. The AF diffusivities at 
@@ -1585,12 +1622,14 @@ Our extrapolated bulk value
 is in reasonable agreement with experimental values for a wide 
 range of thin film thicknesses (see Fig. \ref{FIG:sio2_accum} in 
 Section \ref{S:Accumulation}). 
+\textcolor{red}{
 Amorphous silicon, however, can be prepared only in thin films, 
 where voids and other inhomogeneities are unavoidable
 \cite{vacher_attenuation_1980,feldman_thermal_1993,liu_high_2009,
 yang_anomalously_2010,li_effect_2011} and can influence the 
 vibrational structure at low frequencies.
 \cite{feldman_tight-binding_2004,liu_high_2009}
+}
 
 To predict thermal conductivity from Eq. \eqref{EQ:kvib}, 
 we use the parameters $B$ and $\omega_{cut}$ specified 
@@ -1826,7 +1865,7 @@ Overall, the film-thickness dependent measurements show a large
 variation which depends on the deposition method and impurity 
 concentration (e.g. H, C, and O).
 \cite{vacher_attenuation_1980,liu_high_2009,yang_anomalously_2010,
-li_effect_2011} These effects are not included in our model. 
+li_effect_2011} 
 The measurements of Regner et al. show sharper accumulations 
 than either the $\omega^{-2}$ or $\omega^{-4}$ scalings, 
 particularly for the $2000$ nm film. 
