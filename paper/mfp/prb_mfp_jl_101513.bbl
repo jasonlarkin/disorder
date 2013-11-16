@@ -1,4 +1,4 @@
-\begin{thebibliography}{113}
+\begin{thebibliography}{112}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -215,24 +215,6 @@
   \bibinfo{pages}{035437} (\bibinfo{year}{2013}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.87.035437}.
 
-\bibitem[{\citenamefont{Christianson et~al.}(2008)\citenamefont{Christianson,
-  Lumsden, Delaire, Stone, Abernathy, {McGuire}, Sefat, Jin, Sales, Mandrus
-  et~al.}}]{christianson_phonon_2008}
-\bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{Christianson}},
-  \bibinfo{author}{\bibfnamefont{M.~D.} \bibnamefont{Lumsden}},
-  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Delaire}},
-  \bibinfo{author}{\bibfnamefont{M.~B.} \bibnamefont{Stone}},
-  \bibinfo{author}{\bibfnamefont{D.~L.} \bibnamefont{Abernathy}},
-  \bibinfo{author}{\bibfnamefont{M.~A.} \bibnamefont{{McGuire}}},
-  \bibinfo{author}{\bibfnamefont{A.~S.} \bibnamefont{Sefat}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Jin}},
-  \bibinfo{author}{\bibfnamefont{B.~C.} \bibnamefont{Sales}},
-  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Mandrus}},
-  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
-  \textbf{\bibinfo{volume}{101}}, \bibinfo{pages}{157004}
-  (\bibinfo{year}{2008}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.101.157004}.
-
 \bibitem[{\citenamefont{Zeller and Pohl}(1971)}]{zeller_thermal_1971}
 \bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Zeller}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{R.~O.} \bibnamefont{Pohl}},
@@ -381,6 +363,68 @@
   \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{74}},
   \bibinfo{pages}{205209} (\bibinfo{year}{2006}{\natexlab{b}}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.74.205209}.
+
+\bibitem[{\citenamefont{Vacher et~al.}(1980)\citenamefont{Vacher, Sussner, and
+  Schmidt}}]{vacher_attenuation_1980}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Vacher}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Sussner}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Schmidt}},
+  \bibinfo{journal}{Solid State Communications} \textbf{\bibinfo{volume}{34}},
+  \bibinfo{pages}{279 } (\bibinfo{year}{1980}), ISSN \bibinfo{issn}{0038-1098},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/0038109880905578}.
+
+\bibitem[{\citenamefont{Li et~al.}(2011)\citenamefont{Li, Jiang, Wu, Wu, Ying,
+  Wang, Li, and Salamo}}]{li_effect_2011}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Jiang}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wu}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Wu}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ying}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Li}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.~J.} \bibnamefont{Salamo}},
+  \bibinfo{journal}{Applied Surface Science} \textbf{\bibinfo{volume}{257}},
+  \bibinfo{pages}{8326 } (\bibinfo{year}{2011}), ISSN
+  \bibinfo{issn}{0169-4332},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0169433211004715}.
+
+\bibitem[{\citenamefont{Buchenau et~al.}(1988)\citenamefont{Buchenau, Zhou,
+  Nucker, Gilroy, and Phillips}}]{buchenau_structural_1988}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Buchenau}},
+  \bibinfo{author}{\bibfnamefont{H.~M.} \bibnamefont{Zhou}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Nucker}},
+  \bibinfo{author}{\bibfnamefont{K.~S.} \bibnamefont{Gilroy}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.}
+  \bibnamefont{Phillips}}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{60}}, \bibinfo{pages}{1318–1321}
+  (\bibinfo{year}{1988}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.60.1318}.
+
+\bibitem[{\citenamefont{Durandurdu and Drabold}(2002)}]{durandurdu_<i>ab_2002}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Durandurdu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Drabold}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{66}},
+  \bibinfo{pages}{155205} (\bibinfo{year}{2002}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.66.155205}.
+
+\bibitem[{\citenamefont{Feldman et~al.}(2004)\citenamefont{Feldman, Bernstein,
+  Papaconstantopoulos, and Mehl}}]{feldman_tight-binding_2004}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bernstein}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Papaconstantopoulos}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Mehl}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{165201} (\bibinfo{year}{2004}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.165201}.
+
+\bibitem[{\citenamefont{Bernstein et~al.}(2006)\citenamefont{Bernstein,
+  Feldman, and Fornari}}]{bernstein_structural_2006}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bernstein}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Fornari}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{74}},
+  \bibinfo{pages}{205202} (\bibinfo{year}{2006}),
+  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.74.205202}.
 
 \bibitem[{\citenamefont{Ashcroft and Mermin}(1976)}]{ashcroft_solid_1976}
 \bibinfo{author}{\bibfnamefont{N.~W.} \bibnamefont{Ashcroft}} \bibnamefont{and}
@@ -663,34 +707,6 @@
   \bibinfo{pages}{13520–13533} (\bibinfo{year}{1999}),
   \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.60.13520}.
 
-\bibitem[{\citenamefont{Buchenau et~al.}(1988)\citenamefont{Buchenau, Zhou,
-  Nucker, Gilroy, and Phillips}}]{buchenau_structural_1988}
-\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Buchenau}},
-  \bibinfo{author}{\bibfnamefont{H.~M.} \bibnamefont{Zhou}},
-  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Nucker}},
-  \bibinfo{author}{\bibfnamefont{K.~S.} \bibnamefont{Gilroy}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~A.}
-  \bibnamefont{Phillips}}, \bibinfo{journal}{Phys. Rev. Lett.}
-  \textbf{\bibinfo{volume}{60}}, \bibinfo{pages}{1318–1321}
-  (\bibinfo{year}{1988}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.60.1318}.
-
-\bibitem[{\citenamefont{Durandurdu and Drabold}(2002)}]{durandurdu_<i>ab_2002}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Durandurdu}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Drabold}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{66}},
-  \bibinfo{pages}{155205} (\bibinfo{year}{2002}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.66.155205}.
-
-\bibitem[{\citenamefont{Bernstein et~al.}(2006)\citenamefont{Bernstein,
-  Feldman, and Fornari}}]{bernstein_structural_2006}
-\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bernstein}},
-  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Fornari}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{74}},
-  \bibinfo{pages}{205202} (\bibinfo{year}{2006}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.74.205202}.
-
 \bibitem[{\citenamefont{Chen et~al.}(2010)\citenamefont{Chen, Zhang, and
   Li}}]{chen_how_2010}
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Chen}},
@@ -869,15 +885,6 @@
   \textbf{\bibinfo{volume}{54}}, \bibinfo{pages}{1392–1395}
   (\bibinfo{year}{1985}).
 
-\bibitem[{\citenamefont{Vacher et~al.}(1980)\citenamefont{Vacher, Sussner, and
-  Schmidt}}]{vacher_attenuation_1980}
-\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Vacher}},
-  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Sussner}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Schmidt}},
-  \bibinfo{journal}{Solid State Communications} \textbf{\bibinfo{volume}{34}},
-  \bibinfo{pages}{279 } (\bibinfo{year}{1980}), ISSN \bibinfo{issn}{0038-1098},
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/0038109880905578}.
-
 \bibitem[{\citenamefont{Ladd et~al.}(1986)\citenamefont{Ladd, Moran, and
   Hoover}}]{ladd_lattice_1986}
 \bibinfo{author}{\bibfnamefont{A.~J.~C.} \bibnamefont{Ladd}},
@@ -999,36 +1006,11 @@
   likely due to the small model used to perform the tiling in that study (512
   atoms), while we use a large model (100,000 atoms).}
 
-\bibitem[{\citenamefont{Li et~al.}(2011)\citenamefont{Li, Jiang, Wu, Wu, Ying,
-  Wang, Li, and Salamo}}]{li_effect_2011}
-\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Li}},
-  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Jiang}},
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wu}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Wu}},
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ying}},
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wang}},
-  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Li}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{G.~J.} \bibnamefont{Salamo}},
-  \bibinfo{journal}{Applied Surface Science} \textbf{\bibinfo{volume}{257}},
-  \bibinfo{pages}{8326 } (\bibinfo{year}{2011}), ISSN
-  \bibinfo{issn}{0169-4332},
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0169433211004715}.
-
-\bibitem[{\citenamefont{Feldman et~al.}(2004)\citenamefont{Feldman, Bernstein,
-  Papaconstantopoulos, and Mehl}}]{feldman_tight-binding_2004}
-\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Feldman}},
-  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bernstein}},
-  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Papaconstantopoulos}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Mehl}},
-  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{70}},
-  \bibinfo{pages}{165201} (\bibinfo{year}{2004}),
-  \urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.70.165201}.
-
 \bibitem[{mfp({\natexlab{c}})}]{mfp_fn3}
 \bibinfo{note}{We note that building the accumulation function ignores modes
   that propagate in a direction that is not perpendicular to the cross-plane
   film direction that have MFPs larger than the film thickness. Furthermore,
-  Eq. \eqref{EQ:LambdaMatth} reduces the MFP of modes with $\Lambda \sim t_f$
+  Eq. \eqref{EQ:LambdaMatth} reduces the MFP of modes with $\Lambda \sim t_f$,
   such that plotting MFP and film thickness on the same horizontal axis is an
   approximation. Since we consider inifite (a-SiO$_2$) and 80 $\mu$m (a-Si)
   film thickness in evaluating Eq. \eqref{EQ:LambdaMatth}, these effects are
