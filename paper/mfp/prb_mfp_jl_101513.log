@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  2 DEC 2013 14:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  2 DEC 2013 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,10 +338,10 @@ LaTeX Warning: Command \r invalid in math mode on input line 762.
 
 [3]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 791.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 822.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 791.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 822.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -351,16 +351,6 @@ File: fig2.eps Graphic file (type eps)
 Overfull \hbox (10.96pt too wide) in paragraph at lines 858--860
  [] 
  []
-
-[4]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 879.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 879.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 
 Underfull \hbox (badness 1448) in paragraph at lines 888--905
@@ -372,15 +362,15 @@ Underfull \hbox (badness 1953) in paragraph at lines 888--905
 \OT1/cmr/m/n/10 char-ac-ter at a par-tic-u-lar wavevec-tor and po-lar-iza-
  []
 
+[4]
 
 LaTeX Warning: Command \r invalid in math mode on input line 967.
 
 
 LaTeX Warning: Command \r invalid in math mode on input line 974.
 
-[5]
 File: fig3b.eps Graphic file (type eps)
- <fig3b.eps>
+<fig3b.eps>
 File: fig3a.eps Graphic file (type eps)
  <fig3a.eps>
 
@@ -395,45 +385,45 @@ LaTeX Warning: Command \r invalid in math mode on input line 1033.
 
 LaTeX Warning: Command \r invalid in math mode on input line 1033.
 
-[6]
+[5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1074.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1074.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ­ in font cmr10!
-
+[6]
 Underfull \hbox (badness 1043) in paragraph at lines 1245--1247
 \OT1/cmr/m/n/10 dicted by fit-ting each mode's spec-tral en-ergy to a
  []
 
 [7]
 File: fig4.eps Graphic file (type eps)
- <fig4.eps> [8]
+ <fig4.eps>
 Underfull \hbox (badness 1910) in paragraph at lines 1466--1475
 \OT1/cmr/m/n/10 quen-cies where the AF-predicted mode dif-fu-siv-i-ties
  []
 
+[8]
 File: fig5.eps Graphic file (type eps)
-<fig5.eps>
+ <fig5.eps>
 Overfull \hbox (5.94125pt too wide) in paragraph at lines 1501--1503
  [] 
  []
 
 [9]
 File: fig6.eps Graphic file (type eps)
- <fig6.eps> [10]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1730.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 1730.
-
-
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
+ <fig6.eps>
 Underfull \hbox (badness 2980) in paragraph at lines 1785--1808
 []\OT1/cmr/m/n/10 In their broad-band fre-quency do-main ther-more-
  []
 
-
+[10]
 Underfull \hbox (badness 2213) in paragraph at lines 1830--1838
 []\OT1/cmr/m/n/10 The pre-dicted ther-mal con-duc-tiv-ity ac-cu-mu-la-tion
  []
@@ -443,16 +433,15 @@ Underfull \hbox (badness 1033) in paragraph at lines 1830--1838
 \OT1/cmr/m/n/10 ther-mal pen-e-tra-tion depth-independent ther-mal con-
  []
 
-[11]
 File: fig7a.eps Graphic file (type eps)
- <fig7a.eps>
+<fig7a.eps>
 File: fig7b.eps Graphic file (type eps)
  <fig7b.eps>
 Overfull \hbox (1.92625pt too wide) in paragraph at lines 1891--1895
  [] 
  []
 
-[12]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 2009--2017
 []\OT1/cmr/m/n/10 This work was sup-ported by AFOSR award
  []
@@ -501,7 +490,7 @@ Missing character: There is no “ in font cmr9!
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
-[13]
+[12]
 Underfull \hbox (badness 1824) in paragraph at lines 172--182
  []\OT1/cmr/m/n/9 G. Baldi, V. M. Gior-dano, G. Monaco, F. Sette,
  []
@@ -684,7 +673,7 @@ Missing character: There is no ¶ in font cmr9!
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
-[14]
+[13]
 Missing character: There is no â in font cmbx9!
 Missing character: There is no € in font cmbx9!
 Missing character: There is no “ in font cmbx9!
@@ -834,7 +823,7 @@ Missing character: There is no “ in font cmr9!
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
-[15]
+[14]
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
@@ -867,19 +856,19 @@ Underfull \hbox (badness 4328) in paragraph at lines 959--967
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
-) [16] (./prb_mfp_jl_101513.aux)
+) [15] (./prb_mfp_jl_101513.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
 
  ) 
 Here is how much of TeX's memory you used:
- 4357 strings out of 495060
- 56692 string characters out of 3182053
- 151411 words of memory out of 3000000
- 7481 multiletter control sequences out of 15000+200000
+ 4358 strings out of 495060
+ 56701 string characters out of 3182053
+ 153089 words of memory out of 3000000
+ 7482 multiletter control sequences out of 15000+200000
  14859 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,25n,36p,1431b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on prb_mfp_jl_101513.dvi (16 pages, 117436 bytes).
+Output written on prb_mfp_jl_101513.dvi (15 pages, 117256 bytes).
