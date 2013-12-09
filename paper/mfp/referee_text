@@ -1,0 +1,130 @@
+1. I cannot recommend publication of this paper as a regular article in 
+Phys. Rev. B as it is far too long and conveys little new physics. 
+
+The topic of thermal conductivity of amorphous materials has a long 
+history, with different views on the nature and role of vibrational 
+modes. This paper claims to predict the properties of the propagating 
+and non-propagating vibrational modes in a-SiO2 and a-Si, based upon 
+the application of molecular dynamics simulations. 
+
+There is too much detail of mathematical stuff already published in 
+several books and articles. 
+
+%------------------------------------------------------
+
+2. The structural model employed in the lattice dynamical calculations 
+has not been defended. Why has Eq. (2) been evaluated using Eq. (3) 
+when lattice dynamical calculations have been performed? 
+
+%------------------------------------------------------
+
+3. Use of Eq. (3) is too simplistic to obtain any firm conclusion 
+regarding vibrational lifetimes. It does not include any temperature 
+dependence, and only employs a single adjustable parameter. Either the 
+authors do not differentiate between 'anharmonic processes' and 
+'Umklapp processes' or indeed do not appreciate that an Umklapp 
+process is only valid for a crystalline structure. 
+
+%------------------------------------------------------
+
+4. The term 'supercell Gamma modes' has not been explained.
+
+%------------------------------------------------------
+
+5. While use of Eq. (25) is technically correct, the authors should 
+realize that the 'bulk' term should also include 'size or thickness' 
+term. In the present context, the use of the formula for the 
+'thickness' contribution seems rather too simple. 
+
+%------------------------------------------------------
+
+6. There are too many references for the amount of contribution made.
+
+%------------------------------------------------------
+
+1) The title should be more specific. “…accumulation in a-SiO2 and 
+a-Si”. Only two materials have been studied. 
+
+%------------------------------------------------------
+
+2) 121 papers are cited. I’m sure the authors believe they are being 
+thorough but I am left with the impression that they have failed to 
+critically consider which work in the literature has been most 
+valuable for advancing the field. It is simple task to cite everything 
+that has ever been published on a subject but a more difficult and 
+valuable task to be selective. 
+
+%------------------------------------------------------
+
+3) The authors should keep in mind that while a-SiO2 is a well-defined 
+material that can be accurately reproduced in every lab, a-Si is not. 
+The atomic-scale, nanometer-scale, and micrometer-scale structure of 
+a-Si varies with deposition method, deposition temperature, and 
+impurity content such as C, O, and, of course, hydrogen. Hydrogen 
+content is sometimes intentional and sometimes not. All a-Si has some 
+hydrogen content. The author’s model has none.
+
+%------------------------------------------------------
+
+4) The authors state at the bottom of page 2 that INS can only be 
+applied to bulk single crystals but I don’t think that is true. I’m 
+sure that INS has been applied to a-SiO2, by Buchenau and by others if 
+I recall correctly. The volume of a-Si is typically too small to study 
+by INS but I think a-Si (or maybe a-Ge) was studied by INS about 30 
+years ago by Lannin and maybe also by Buchenau. 
+
+%------------------------------------------------------
+
+5) Evaluating Eq. 1 is a clear and focused goal for the paper but the 
+work reported in the paper seems to include many aspects of the 
+problem that are not related to Eq. 1. 
+
+%------------------------------------------------------
+
+6) Figure 1 is not useful. There is nothing quantitative presented in 
+this figure. If the authors could comment on how the PDF of their 
+model compares with the experimental PDF, that would be helpful. 
+
+%------------------------------------------------------
+
+7) It seems that the authors are forcing the density of a-Si to be the 
+same as crystalline Si. That should be stated more clearly. The 
+density of the a-SiO2 model should also be stated. 
+
+%------------------------------------------------------
+
+8) On page 8, I do not know what a “top-down” thermal conductivity is.
+
+%------------------------------------------------------
+
+9) The caption to Figure 2 should state that the dashed lines are 
+extrapolations. In the caption, the sentence that ends with “….with a 
+gap that separates…the interactions” doesn’t make sense.
+
+%------------------------------------------------------
+
+10) The discussion of lifetimes is very confusing. In Figure 4, the 
+authors plot the lifetimes derived from MD/NMD and from analysis of 
+dynamic structure factor. The difference is nearly a factor of 30 for 
+a-SiO2. The authors say almost nothing about this. In fact, they state 
+earlier that neither approach is valid when the linewidth is broad. I 
+strongly encourage to the authors to only present results that are 
+rigorously meaningful and omit the rest. I assume one approach is 
+better than the other. If so, I encourage the authors to present 
+results from the best approach and only comment on the results from 
+other approaches and then state why one is better than the other. The 
+results in the section are doubly confusing because the authors don't 
+seem to use the results of NMD at high frequencies to achieve their 
+stated goal of analyzing the fraction of heat carried by propagating 
+modes. If the results are never used, I do not see any reason to 
+present those results. 
+
+%------------------------------------------------------
+
+11) I am similarly confused about Figure 5. The authors seem to be 
+taking the NMD lifetimes from Figure 4 and multiplying by a constant 
+velocity and comparing those mode diffusivities to the predictions of 
+the AF theory. I do not see how that is valid comparison except at the 
+very lowest frequencies.
+
+

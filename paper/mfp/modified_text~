@@ -1,0 +1,149 @@
+Thermal Conductivity 
+Accumulation in Amorphous Silica and Amorphous Silicon
+
+%------------------------------------------------------
+
+Overall, experimental measurements of the temperature-varying 
+and film thickness-varying thermal conductivity of a-Si show a large 
+variation that depends on the deposition method and impurity 
+concentration (e.g. H, C, and O).
+\cite{liu_high_2009,yang_anomalously_2010,vacher_attenuation_1980,
+li_effect_2011} 
+In this study and in line with previous modeling efforts, 
+these effects are not included because (i) 
+the necessary empirical potentials do not exist and (ii) 
+computationally-expensive density functional theory calculations 
+limit the model sizes accessible,
+\cite{buchenau_structural_1988,feldman_thermal_1993,
+feldman_numerical_1999,durandurdu_<i>ab_2002,
+feldman_tight-binding_2004,bernstein_structural_2006,
+liu_high_2009,yang_anomalously_2010} 
+preventing the study of the important low-frequency propagating 
+modes.
+
+%------------------------------------------------------
+
+The radial distribution function, 
+$g(r)$,\cite{mcquarrie_statistical_2000} for the 4608 atom 
+sample is shown in Fig. \ref{FIG:supercell} (a) along with an 
+experimental measurement,\cite{lorch_neutron_1969} which 
+compares well with our sample.
+
+%------------------------------------------------------
+
+The radial distribution function for the 4096 atom 
+sample is shown in Fig. \ref{FIG:supercell} (b). 
+Also shown in Fig. \ref{FIG:supercell} (b) is an experimental 
+measurement,\cite{laaziri_high-energy_1999} 
+which compares well with our current sample, but with a slight 
+broadening in the first peak.
+
+%------------------------------------------------------
+
+(a) Radial distribution function, $g(r)$, for the 4608 atom a-SiO$_2$ 
+structure created from a melt-quench technique. The radial distribution 
+function compares well with the experimental measurement from 
+Ref. \citenum{lorch_neutron_1969}. Inset: Small sample of the 
+a-SiO$_2$ structure showing the Si-O tetrahedral 
+bond network. Bond lengths range between 1.6 and 1.8 $\AA$.
+(b) Radial distribution function for the 4096 atom a-Si 
+structure created by the modified WWW 
+algorithm. The radial distribution 
+function compares well with the experimental measurement from 
+Ref. \citenum{laaziri_high-energy_1999}. Inset: Small sample of 
+the a-Si structure. Bond lengths range between 2.3 and 2.7 $\AA$.
+
+%------------------------------------------------------
+
+Both models show an $\omega^{2}$ scaling at low frequency. The 
+dashed lines indicate an extrapolation of the DOS based on this scaling. 
+The DOS for a-Si has two peaks similar to the 
+DOS of the crystalline phase.\cite{landry_effect_2010} 
+The DOS for a-SiO$_2$ is flat over most of the spectrum, with a high 
+frequency gap that separates 
+the modes involving Si-O interactions.\cite{mcgaughey_thermal_2004} 
+
+%------------------------------------------------------
+
+Calculating the structure factors of the 
+disordered modes of the supercell at the Gamma point 
+is a method to test for their propagating (i.e., plane-wave)  
+character at a particular wavevector and 
+polarization. 
+
+%------------------------------------------------------
+
+While lifetimes 
+predicted near the IR limit do not satisfy the constraint 
+$\Gamma(\nu) << \omega_0(\nu)$, only a limited number of these 
+lifetimes are used to determine the coefficient of the low-frequency 
+scaling [see Figs. \ref{FIG:diffusivities} (a) and (b)].
+
+%------------------------------------------------------
+
+The mode diffusivities are predicted from the NMD lifetimes for the 
+low-frequency modes where the DOS scales as $\omega^2$ 
+(Fig. \ref{FIG:DOS}). The AF theory is used to predict the mode 
+diffusivities for all frequencies and the results are also plotted in 
+Figs. \ref{FIG:diffusivities}(a) and \ref{FIG:diffusivities}(b).
+
+%------------------------------------------------------
+
+We note that a-Si can be only prepared experimentally as a thin film, 
+where voids and other inhomogeneities are unavoidable
+\cite{vacher_attenuation_1980,feldman_thermal_1993,liu_high_2009,
+yang_anomalously_2010,li_effect_2011} and can influence the 
+vibrational structure at low frequencies.
+\cite{feldman_tight-binding_2004,liu_high_2009}
+
+%------------------------------------------------------
+
+
+
+%------------------------------------------------------
+
+Because Eq. (1) is the sum of Eqs. (2) and (9), there are many inputs that we must predict from atomistic models and methods.  An additional focus of this work is the comparison of the predicted mode properties and thermal conductivities of a-SiO2 and a-Si, which requires a careful comparison with the large body of literature that exists for these two materials. As such, we do not feel that any of the content is superfluous. Furthermore, we believe that the level of detail provided will be of benefit to future researchers trying to perform similar calculations on different materials.
+
+%------------------------------------------------------
+
+
+We assume that by “PDF” the referee is referring to the radial distribution function (RDF). We predicted and compared the RDF for our models of a-SiO2 and a-Si with previous experimental work. The results are now plotted in Figs. 1 (a) and 1(b). Our models compare well with the experimental measurements. 
+
+%------------------------------------------------------
+
+We state in Section II.A (page 6):
+“The three smallest a-SiO2 samples are the same as those used in Ref. 64 and contain 288, 576, and 972 atoms at a density of 2350 kg/m3.”
+and on page 7:
+“All a-Si structures have a density of 2330 kg/m3 , equivalent to the perfect crystal with a lattice constant of 5.43 Å.”
+
+%------------------------------------------------------
+
+We changed the wording to read:
+“The Green-Kubo (GK) method is used to predict a thermal conductivity kGK without using Eq. (1).[46]”
+
+%------------------------------------------------------
+
+We clarified that the dashed lines are extrapolations and changed the wording to:
+“...with a high-frequency gap that separates the modes involving Si-O interactions.”
+
+%------------------------------------------------------
+
+The static structure factor [Eq. (12)] predicts the timescale for dispersion of a wavepacket with well-defined wavevector, while the NMD method predicts the lifetimes of individual modes. Because they predict different quantities, neither method is “better.” Our objective was to compare these two quantities as a means to further understand how thermal transport is different in a-SiO2 and a-Si. We note that only the NMD method is constrained by Γ << ω0.
+In Fig. 4, we plot the timescales predicted by the static structure factor and the lifetimes predicted by the NMD method. We commented on the large difference for a-SiO2 in Section IV.D (page 17):
+“The timescales predicted from the structure factor fall below the NMD-predicted lifetimes and the IR limit by up to one order of magnitude. These low values result because the structure factors for a-SiO2 are evaluated for wavevectors where the resulting wavepackets are formed by non-propagating modes.[2,4,6]”
+For a-Si, we commented on the good agreement on page 17:
+“The agreement between the NMD-predicted lifetimes and the structure factor timescales for a-Si at low frequencies indicates that these modes are plane-wave-like and that the wavepackets formed by these modes are propagating.[2,4,6]”
+For a-SiO2, modes with 4 x 1012 < ω < 2 x 1013 rads/s are affected by the linewidth constraint. Because of the good agreement between the NMD-predicted and AF-predicted diffusivities at low frequencies, we believe that the NMD-predicted lifetimes are not significantly affected by the linewidth constraint. For a-Si, only modes with 7 x 1012 < ω < 1.5 x1013 rads/s are affected by the constraint. We added a comment on page 17:
+“While lifetimes predicted near the IR limit do not
+ satisfy the constraint Γ(ν) << ω0 (ν), only a limited number of these lifetimes are used to
+ determine the coefficient of the low-frequency scaling [see Figs. 5 (a) and (b)].”
+We did not use the NMD-predicted lifetimes of modes with ω > ωcut to predict thermal conductivity because there is no accepted theoretical method to predict the group velocities of these modes, which are diffusons. The mode diffusivity is the fundamental quantity for diffusons, which is accurately predicted by the AF diffuson theory. We do use the NMD-predicted lifetimes of the diffusons to estimate the order of magnitude of the effective diffuson mean free paths using Eq. (24). 
+
+%------------------------------------------------------
+
+We agree. The comparison between NMD and AF-predicted diffusivities was helpful in determining ωcut. To avoid potential confusion, in the revised manuscript we omitted the NMD-predicted diffusivities for ω > ωcut from Figs. 5 (a) and 5(b). This point is addressed in Section IV.E. (page 19):
+“Using the sound speeds predicted from the DOS (Table I), the NMD-predicted lifetimes for a-SiO2 and a-Si are used to predict the mode diffusivities with Eq. (5). The results are plotted in Figs. 5(a) and 5(b) for the low-frequency modes where the DOS scales as -2 (Fig. 2).”
+
+
+
+

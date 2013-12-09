@@ -1,0 +1,101 @@
+Thermal Conductivity 
+Accumulation in Amorphous Silica and Amorphous Silicon
+
+%------------------------------------------------------
+
+Overall, experimental measurements of the temperature-varying 
+and film thickness-varying thermal conductivity of a-Si show a large 
+variation that depends on the deposition method and impurity 
+concentration (e.g. H, C, and O).
+\cite{liu_high_2009,yang_anomalously_2010,vacher_attenuation_1980,
+li_effect_2011} 
+In this study and in line with previous modeling efforts, 
+these effects are not included because (i) 
+the necessary empirical potentials do not exist and (ii) 
+computationally-expensive density functional theory calculations 
+limit the model sizes accessible,
+\cite{buchenau_structural_1988,feldman_thermal_1993,
+feldman_numerical_1999,durandurdu_<i>ab_2002,
+feldman_tight-binding_2004,bernstein_structural_2006,
+liu_high_2009,yang_anomalously_2010} 
+preventing the study of the important low-frequency propagating 
+modes.
+
+%------------------------------------------------------
+
+The radial distribution function, 
+$g(r)$,\cite{mcquarrie_statistical_2000} for the 4608 atom 
+sample is shown in Fig. \ref{FIG:supercell} (a) along with an 
+experimental measurement,\cite{lorch_neutron_1969} which 
+compares well with our sample.
+
+%------------------------------------------------------
+
+The radial distribution function for the 4096 atom 
+sample is shown in Fig. \ref{FIG:supercell} (b). 
+Also shown in Fig. \ref{FIG:supercell} (b) is an experimental 
+measurement,\cite{laaziri_high-energy_1999} 
+which compares well with our current sample, but with a slight 
+broadening in the first peak.
+
+%------------------------------------------------------
+
+(a) Radial distribution function, $g(r)$, for the 4608 atom a-SiO$_2$ 
+structure created from a melt-quench technique. The radial distribution 
+function compares well with the experimental measurement from 
+Ref. \citenum{lorch_neutron_1969}. Inset: Small sample of the 
+a-SiO$_2$ structure showing the Si-O tetrahedral 
+bond network. Bond lengths range between 1.6 and 1.8 $\AA$.
+(b) Radial distribution function for the 4096 atom a-Si 
+structure created by the modified WWW 
+algorithm. The radial distribution 
+function compares well with the experimental measurement from 
+Ref. \citenum{laaziri_high-energy_1999}. Inset: Small sample of 
+the a-Si structure. Bond lengths range between 2.3 and 2.7 $\AA$.
+
+%------------------------------------------------------
+
+Both models show an $\omega^{2}$ scaling at low frequency. The 
+dashed lines indicate an extrapolation of the DOS based on this scaling. 
+The DOS for a-Si has two peaks similar to the 
+DOS of the crystalline phase.\cite{landry_effect_2010} 
+The DOS for a-SiO$_2$ is flat over most of the spectrum, with a high 
+frequency gap that separates 
+the modes involving Si-O interactions.\cite{mcgaughey_thermal_2004} 
+
+%------------------------------------------------------
+
+Calculating the structure factors of the 
+disordered modes of the supercell at the Gamma point 
+is a method to test for their propagating (i.e., plane-wave)  
+character at a particular wavevector and 
+polarization. 
+
+%------------------------------------------------------
+
+While lifetimes 
+predicted near the IR limit do not satisfy the constraint 
+$\Gamma(\nu) << \omega_0(\nu)$, only a limited number of these 
+lifetimes are used to determine the coefficient of the low-frequency 
+scaling [see Figs. \ref{FIG:diffusivities} (a) and (b)].
+
+%------------------------------------------------------
+
+The mode diffusivities are predicted from the NMD lifetimes for the 
+low-frequency modes where the DOS scales as $\omega^2$ 
+(Fig. \ref{FIG:DOS}). The AF theory is used to predict the mode 
+diffusivities for all frequencies and the results are also plotted in 
+Figs. \ref{FIG:diffusivities}(a) and \ref{FIG:diffusivities}(b).
+
+%------------------------------------------------------
+
+We note that a-Si can be only prepared experimentally as a thin film, 
+where voids and other inhomogeneities are unavoidable
+\cite{vacher_attenuation_1980,feldman_thermal_1993,liu_high_2009,
+yang_anomalously_2010,li_effect_2011} and can influence the 
+vibrational structure at low frequencies.
+\cite{feldman_tight-binding_2004,liu_high_2009}
+
+%------------------------------------------------------
+
+

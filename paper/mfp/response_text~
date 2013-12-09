@@ -1,0 +1,112 @@
+We believe that our manuscript presents important new physics concerning the behavior of diffusive and propagating modes in a-SiO2 and a-Si. Notably, our comparison with the recent work of Regner et al., who reported the first-ever experimental measurements of thermal conductivity accumulation in a-SiO2 and a-Si, raises important questions about their interpretation of the experimental data. Furthermore, the parallel study of a-SiO2 and a-SI allows for a comparison and explanation of their very different thermal transport behaviors. Our work indicates that the differences emerge from the extent over which the density of states remains Debye-like, allowing more phonon-like modes to exist in a-Si compared to a-SiO2. This difference is in turn related to differences in the bonding structure in these two amorphous materials.
+
+The manuscript is long because we present, for the first time, a detailed comparison of the mode properties, thermal conductivity, and thermal conductivity accumulation functions for a-SiO2 and a-Si at the same time using realistic atomistic models. Previous studies focused on just one of these two materials. The manuscript is also long because we present a thorough and self-consistent method for making these calculations using three different predictive methods (NMD, AF, and GK), all of which require explanation. Such detail is important so that future researchers can apply the techniques to other materials. With a trend in research towards using disordered materials for diverse applications, our study is timely for the thermal transport community in general. 
+
+%------------------------------------------------------
+
+The use of Eq. (3) is explained in Section II (page 4):
+“When using mode properties obtained from calculations on finite-sized systems, it is common to write Eq. (2) as a summation over the available modes.[4,6] We choose the integral form because the required use of finite-sized simulation cells limits the lowest frequency modes that can be accessed. An extrapolation must be made to the zero-frequency limit that is more easily handled with the integral.[4–8,15,18]”
+We use the Debye DOS, Eq. (3), where the lattice dynamics-predicted DOS is Debye-like [see Section IV.A (page 9) and Fig. 2]. 
+To validate our structural models of a-SiO2 and a-Si, we computed the radial distribution functions and compared them with experimental measurements in the new Figs. 1 (a) and 1(b). Our models compare well with the experimental measurements. Further comparison of our models with experiment is the subject of the rest of the manuscript. 
+
+%------------------------------------------------------
+
+Eq. (3), which is the density of states, does not predict the vibrational mode lifetimes. The lifetimes are obtained from the MD-based NMD method. We make no assumptions about the lifetimes at this stage of our manuscript. 
+The temperature-dependent DOS does not show significant deviation from the DOS obtained from lattice dynamics calculations (i.e., the zero-temperature limit). See, for example, Fig. 11 of Ref. [6]. As such, we do not think that the temperature-dependent DOS plays an important role in our predicted thermal conductivities or accumulation functions.
+Eq. (3) only assumes a single phonon polarization, which is supported by the predicted mode lifetimes and diffusivities in Figs. 4 and 5, which do not show distinct or separate scalings for longitudinal and transverse polarizations. Using multiple polarizations does not change our predicted accumulation functions significantly, either qualitatively or quantitatively. We commented on this point in Section II (page 4):
+“The choice of a single polarization (i.e., an averaging of the transverse and longitudinal branches) does not significantly change the results predicted in this work or in that of others.[4–8,18]”
+We do not differentiate between different anharmonic processes. Umklapp processes are anharmonic and, like normal processes, occur strictly in crystalline materials. Umkalpp scattering processes are usually discussed in the context of disordered materials because it has been shown experimentally and numerically (Refs. 6,9,25,36) that the low-frequency lifetimes scale as -2, a scaling sometimes referred to as “Umklapp”. Other than when it is introduced on page 5, we avoided the use of this terminology throughout the manuscript and focused on the scaling itself.
+
+%------------------------------------------------------
+
+We changed this terminology in Section IV. B (page 10) to read:
+“disordered modes of the supercell at the Gamma point”
+
+%------------------------------------------------------
+
+Eq. (25) does take into account the thickness dependence, albeit in a simple manner.  Because we use an infinite film thickness for a-SiO2 and an 80 μm film thickness for a-Si, Eq. (25) modifies the NMD-predicted bulk lifetimes by less than one percent. Eq. (25) is used to ensure that the thermal conductivity predicted using an ω-4 scaling for Eq. (8) Is finite. While it is simple, Eq. (25) has been used in Refs. 4, 5, and 7 to predict the thermal conductivity of a-Si thin films using an ω-4 scaling of the lifetimes. Using a more complicated model does not change the predicted thermal conductivity accumulation function significantly, qualitatively or quantitatively. 
+
+%------------------------------------------------------
+
+This comment is fair and was also noted by the Second Referee. We note that the unusual number of references is due to several factors:
+(a) We study two materials, a-SiO2 and a-Si, each of which has a large body of literature that is nearly exclusive (only Ref. [107] studied both a-SiO2 and a-Si).
+(b) We use several predictive techniques: lattice dynamics, MD-based NMD, MD-based GK, AF theory, all of which have a large body of literature.  
+(c) We attempt to clarify recently published works (Refs. 9, 79, 87-90), which predict the mode group velocities using questionable theoretical techniques, and work reporting very large mode lifetimes and mean free paths for a-Si (Ref. 9) We feel that it is important to highlight well-accepted works that disagree with these recently published results.
+Based on the referees’ comments, we removed references regarding point (c) that are not concerned with a-Si or a-SiO2.  The total number of references is now 112, which includes some new references based on the referees’ comments.
+
+%------------------------------------------------------
+
+We thank the referee for their positive and constructive comments about our manuscript.
+
+%------------------------------------------------------
+
+We changed the title to:
+“Thermal Conductivity Accumulation in Amorphous Silica and Amorphous Silicon”
+
+%------------------------------------------------------
+
+This comment is fair and was also noted by the First Referee. We note that the unusual number of references is due to several factors:
+(a) We study two materials, a-SiO2 and a-Si, each of which has a large body of literature that is nearly exclusive (only Ref. 106 studied both a-SiO2 and a-Si).
+(b) We use several predictive techniques: lattice dynamics, MD-based NMD, MD-based GK, AF theory, all of which have a large body of literature.  
+(c) We attempt to clarify recently published works (Refs. 9, 79, 87-90), which predict the mode group velocities using questionable theoretical techniques, and work reporting very large mode lifetimes and mean free paths for a-Si (Ref. 9) We feel that it is important to highlight well-accepted works that disagree with these recently published results.
+Based on the referees’ comments, we removed references regarding point (c) that are not concerned with a-Si or a-SiO2.  The total number of references is now 112, which includes some new references based on the referees’ comments.
+
+%------------------------------------------------------
+
+We addressed this important comment in the revised manuscript in the Introduction (page 3):
+“Overall, experimental measurements of the temperature- and film thickness-varying thermal conductivity of a-Si show a large range that depends on the deposition method and impurity concentration (e.g. H, C, and O).[7,8,37,38] In this study, in-line with previous modeling efforts, these effects are not included because (i) the necessary empirical potentials do not exist and (II) computationally-expensive density functional theory calculations limit the model sizes accessible,[4,6–8,39-42] preventing the study of the important low-frequency propagating modes.”
+Related comments are also included on pages 15 and 26.
+A comment on the difficulty of producing bulk a-Si is in Section V.A (page 22):
+“We note that a-Si can be only prepared experimentally as a thin film, where voids and other inhomogeneities are unavoidable[4,7,8,37,38] and can influence the vibrational structure at low frequencies.[7,41]”
+
+%------------------------------------------------------
+
+We removed the comment regarding the limited applicability of INS. 
+
+%------------------------------------------------------
+
+Because Eq. (1) is the sum of Eqs. (2) and (9), there are many inputs that we must predict from atomistic models and methods.  An additional focus of this work is the comparison of the predicted mode properties and thermal conductivities of a-SiO2 and a-Si, which requires a careful comparison with the large body of literature that exists for these two materials. As such, we do not feel that any of the content is superfluous. Furthermore, we believe that the level of detail provided will be of benefit to future researchers trying to perform similar calculations on different materials.
+
+%------------------------------------------------------
+
+
+We assume that by “PDF” the referee is referring to the radial distribution function (RDF). We predicted and compared the RDF for our models of a-SiO2 and a-Si with previous experimental work. The results are now plotted in Figs. 1 (a) and 1(b). Our models compare well with the experimental measurements. 
+
+%------------------------------------------------------
+
+We state in Section II.A (page 6):
+“The three smallest a-SiO2 samples are the same as those used in Ref. 64 and contain 288, 576, and 972 atoms at a density of 2350 kg/m3.”
+and on page 7:
+“All a-Si structures have a density of 2330 kg/m3 , equivalent to the perfect crystal with a lattice constant of 5.43 Å.”
+
+%------------------------------------------------------
+
+We changed the wording to read:
+“The Green-Kubo (GK) method is used to predict a thermal conductivity kGK without using Eq. (1).[46]”
+
+%------------------------------------------------------
+
+We clarified that the dashed lines are extrapolations and changed the wording to:
+“...with a high-frequency gap that separates the modes involving Si-O interactions.”
+
+%------------------------------------------------------
+
+The static structure factor [Eq. (12)] predicts the timescale for dispersion of a wavepacket with well-defined wavevector, while the NMD method predicts the lifetimes of individual modes. Because they predict different quantities, neither method is “better.” Our objective was to compare these two quantities as a means to further understand how thermal transport is different in a-SiO2 and a-Si. We note that only the NMD method is constrained by Γ << ω0.
+In Fig. 4, we plot the timescales predicted by the static structure factor and the lifetimes predicted by the NMD method. We commented on the large difference for a-SiO2 in Section IV.D (page 17):
+“The timescales predicted from the structure factor fall below the NMD-predicted lifetimes and the IR limit by up to one order of magnitude. These low values result because the structure factors for a-SiO2 are evaluated for wavevectors where the resulting wavepackets are formed by non-propagating modes.[2,4,6]”
+For a-Si, we commented on the good agreement on page 17:
+“The agreement between the NMD-predicted lifetimes and the structure factor timescales for a-Si at low frequencies indicates that these modes are plane-wave-like and that the wavepackets formed by these modes are propagating.[2,4,6]”
+For a-SiO2, modes with 4 x 1012 < ω < 2 x 1013 rads/s are affected by the linewidth constraint. Because of the good agreement between the NMD-predicted and AF-predicted diffusivities at low frequencies, we believe that the NMD-predicted lifetimes are not significantly affected by the linewidth constraint. For a-Si, only modes with 7 x 1012 < ω < 1.5 x1013 rads/s are affected by the constraint. We added a comment on page 17:
+“While lifetimes predicted near the IR limit do not
+ satisfy the constraint Γ(ν) << ω0 (ν), only a limited number of these lifetimes are used to
+ determine the coefficient of the low-frequency scaling [see Figs. 5 (a) and (b)].”
+We did not use the NMD-predicted lifetimes of modes with ω > ωcut to predict thermal conductivity because there is no accepted theoretical method to predict the group velocities of these modes, which are diffusons. The mode diffusivity is the fundamental quantity for diffusons, which is accurately predicted by the AF diffuson theory. We do use the NMD-predicted lifetimes of the diffusons to estimate the order of magnitude of the effective diffuson mean free paths using Eq. (24). 
+
+%------------------------------------------------------
+
+We agree. The comparison between NMD and AF-predicted diffusivities was helpful in determining ωcut. To avoid potential confusion, in the revised manuscript we omitted the NMD-predicted diffusivities for ω > ωcut from Figs. 5 (a) and 5(b). This point is addressed in Section IV.E. (page 19):
+“Using the sound speeds predicted from the DOS (Table I), the NMD-predicted lifetimes for a-SiO2 and a-Si are used to predict the mode diffusivities with Eq. (5). The results are plotted in Figs. 5(a) and 5(b) for the low-frequency modes where the DOS scales as -2 (Fig. 2).”
+
+
+
+
