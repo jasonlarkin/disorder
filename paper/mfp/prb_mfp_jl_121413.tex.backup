@@ -599,13 +599,13 @@ baldi_sound_2010,yang_anomalously_2010,baldi_elastic_2011,
 he_heat_2011,ayrinhac_subterahertz_2011,
 baldi_emergence_2013}
 A value of two corresponds to 
-anharmonic scattering,\cite{callaway_model_1959} while a value of four 
+Umklapp-like scattering,\cite{callaway_model_1959} while a value of four 
 corresponds to Rayleigh-like scattering from point defects.
 \cite{klemens_scattering_1955}
 Combined with Eq. \eqref{EQ:DOS_debye}, choosing $n\le2$ ensures 
 that the thermal conductivity evaluated from Eq. \eqref{EQ:kph} is finite. 
-\textcolor{red}{Choosing $n>2$ causes the thermal conductivity to diverge 
-in the zero frequency limit,}   
+Choosing $n>2$ causes the thermal conductivity to diverge in the zero 
+frequency limit,   
 which can be fixed using additional anharmonic
 \cite{feldman_thermal_1993,feldman_numerical_1999} 
 or boundary scattering terms.
