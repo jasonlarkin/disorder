@@ -6,44 +6,44 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: /home/jason/Dropbox/ntpl-paper/ntpl-072613.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 112 entries,
+You've used 87 entries,
             3411 wiz_defined-function locations,
-            1835 strings with 34314 characters,
-and the built_in function-call counts, 87817 in all, are:
-= -- 5085
-> -- 3050
-< -- 419
-+ -- 2541
-- -- 741
-* -- 12173
-:= -- 9167
-add.period$ -- 112
-call.type$ -- 112
-change.case$ -- 451
-chr.to.int$ -- 105
-cite$ -- 118
-duplicate$ -- 7488
-empty$ -- 7260
-format.name$ -- 1863
-if$ -- 16900
-int.to.chr$ -- 8
-int.to.str$ -- 113
-missing$ -- 1144
-newline$ -- 351
-num.names$ -- 329
-pop$ -- 1869
+            1697 strings with 28883 characters,
+and the built_in function-call counts, 67596 in all, are:
+= -- 3954
+> -- 2299
+< -- 318
++ -- 1910
+- -- 559
+* -- 9305
+:= -- 7083
+add.period$ -- 87
+call.type$ -- 87
+change.case$ -- 351
+chr.to.int$ -- 83
+cite$ -- 93
+duplicate$ -- 5759
+empty$ -- 5604
+format.name$ -- 1410
+if$ -- 13039
+int.to.chr$ -- 5
+int.to.str$ -- 88
+missing$ -- 876
+newline$ -- 276
+num.names$ -- 254
+pop$ -- 1425
 preamble$ -- 1
-purify$ -- 448
+purify$ -- 348
 quote$ -- 0
-skip$ -- 3503
+skip$ -- 2722
 stack$ -- 0
-substring$ -- 3758
-swap$ -- 6130
-text.length$ -- 374
+substring$ -- 2969
+swap$ -- 4692
+text.length$ -- 282
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 662
+type$ -- 518
 warning$ -- 0
-while$ -- 326
+while$ -- 254
 width$ -- 0
-write$ -- 1216
+write$ -- 945

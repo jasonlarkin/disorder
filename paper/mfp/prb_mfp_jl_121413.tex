@@ -1,5 +1,5 @@
-%\documentclass[aps,prb,twocolumn,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
-\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
+\documentclass[aps,prb,twocolumn,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
+%\documentclass[aps,prb,onecolumn,preprint,superscriptaddress,footinbib,amsmath,amssymb,floatfix]{revtex4}
 \usepackage[dvips]{epsfig}
 \usepackage{graphicx}
 \usepackage{ifthen}
@@ -14,6 +14,16 @@
 \usepackage{subfigure}
 \usepackage{xcolor}
 %\usepackage{wrapfig}
+
+% \newcounter{refs}
+% \makeatletter
+% \defbibenvironment{counter}
+%   {\setcounter{refs}{0}
+%   \renewcommand{\blx@driver}[1]{}
+%   }
+%   {Nous avons \therefs}
+%   {\stepcounter{refs}}
+% \makeatother
 
 %Definition of new commands
 \newcommand{\f}[2]{\ensuremath{\frac{\displaystyle{#1}}{\displaystyle{#2}}}}
@@ -316,8 +326,7 @@ given thermal penetration depth to be representative
 of the phonons with mean free paths (MFP) less than that value, 
 allowing for the 
 construction of the thermal conductivity accumulation 
-function.\cite{dames_thermal_2005,minnich_thermal_2011,
-yang_mean_2013} 
+function.\cite{dames_thermal_2005,yang_mean_2013} 
 For a-SiO$_2$, the thermal conductivity of a 1000 nm thick 
 film did not vary for thermal penetration depths between 
 100 and 1000 nm. This result suggests 
@@ -335,7 +344,7 @@ from the non-propagating modes.
 Traditionally, empirical expressions and
 simple models have been the only means
 to estimate MFPs in amorphous materials,
-\cite{zeller_thermal_1971,graebner_phonon_1986,
+\cite{graebner_phonon_1986,
 freeman_thermal_1986,cahill_lattice_1988,cahill_heat_1989} 
 while the Allen-Feldman (AF) theory can be used to model the 
 non-propagating modes.\cite{allen_thermal_1993,feldman_thermal_1993}
@@ -345,20 +354,13 @@ requires the group velocities and lifetimes
 of the low-frequency propagating modes.
 \cite{freeman_thermal_1986,graebner_phonon_1986,
 love_estimate_1990,feldman_thermal_1993,cahill_thermal_1994,
-feldman_numerical_1999,baldi_thermal_2008,liu_high_2009,
-yang_anomalously_2010} It is typically assumed that 
-the group velocity of these modes 
-is equal to the sound speed.\cite{zeller_thermal_1971,
-freeman_thermal_1986,graebner_phonon_1986,cahill_lattice_1988,
-cahill_heat_1989,love_estimate_1990,feldman_thermal_1993,
-cahill_thermal_1994,feldman_numerical_1999} To 
-evaluate a expressions and models for the low-frequency 
-mode lifetimes requires knowledge of how the lifetimes 
-scale with frequency.
-\cite{freeman_thermal_1986,graebner_phonon_1986,
-love_estimate_1990,feldman_thermal_1993,cahill_thermal_1994,
 feldman_numerical_1999,zink_thermal_2006,baldi_thermal_2008,
 liu_high_2009,yang_anomalously_2010,hondongwa_ultrasonic_2011} 
+It is typically assumed that 
+the group velocity of these modes is equal to the sound speed. 
+To evaluate a expressions and models for the low-frequency 
+mode lifetimes requires knowledge of how the lifetimes 
+scale with frequency.
 % Experimental measurements of the thermal conductivity of
 % thin films of a-SiO$_2$ and a-Si at varying temperatures 
 % gives indirect information about the low-frequency scaling 
@@ -373,17 +375,14 @@ second $\omega^{-2}$ regime as the mode frequency, $\omega$,
 increases from $3.14$ to $6.28$ $\times 10^{12}$ rads/s.
 \cite{masciovecchio_evidence_2006,
 baldi_sound_2010,baldi_elastic_2011,baldi_emergence_2013} 
-For a-Si, the scaling is not well understood,
-\cite{feldman_thermal_1993,cahill_thermal_1994,
-feldman_numerical_1999,zink_thermal_2006,liu_high_2009,
-yang_anomalously_2010,he_heat_2011,hondongwa_ultrasonic_2011} 
-with temperature-dependent\cite{pompe_thermal_1988,zink_thermal_2006,
-liu_high_2009} and film thickness-varying measurements
-\cite{hasselman_thermal_1989,kuo_thermal_1992,cahill_thermal_1994,
-wada_thermal_1996,moon_thermal_2002,zink_thermal_2006,zink_excess_2006,
-liu_high_2009,yang_anomalously_2010}
+For a-Si, the scaling is not well understood, 
+with temperature-dependent and film thickness-varying measurements
 suggesting both $\omega^{-2}$ and $\omega^{-4}$ scalings.
-\cite{feldman_thermal_1993,feldman_numerical_1999}  
+\cite{pompe_thermal_1988,hasselman_thermal_1989,
+kuo_thermal_1992,feldman_thermal_1993,cahill_thermal_1994,
+wada_thermal_1996,feldman_numerical_1999,moon_thermal_2002,
+zink_thermal_2006,zink_excess_2006,liu_high_2009,
+yang_anomalously_2010,he_heat_2011,hondongwa_ultrasonic_2011} 
 \textcolor{red}{
 Overall, experimental measurements of the temperature-varying 
 and film thickness-varying thermal conductivity of a-Si show a large 
@@ -396,16 +395,14 @@ these effects are not included because (i)
 the necessary empirical potentials do not exist and (ii) 
 computationally-expensive density functional theory calculations 
 limit the model sizes accessible,
-\cite{buchenau_structural_1988,feldman_thermal_1993,
-feldman_numerical_1999,durandurdu_<i>ab_2002,
-feldman_tight-binding_2004,bernstein_structural_2006,
-liu_high_2009,yang_anomalously_2010} 
+\cite{feldman_thermal_1993,feldman_numerical_1999,
+bernstein_structural_2006,liu_high_2009,yang_anomalously_2010} 
 preventing the study of the important low-frequency propagating 
 modes.}
 
 The objective of this work is to investigate the propagating 
 and non-propagating contributions to the thermal conductivity 
-of a-SiO2 and a-Si   
+of a-SiO$_2$ and a-Si   
 by predicting the MFPs and thermal conductivity 
 accumulation functions for realistic models and comparing the 
 predictions to experimental measurements. 
@@ -469,17 +466,13 @@ k_{vib} = k_{pr} + k_{AF},
 \end{split}
 \end{equation}
 where $k_{pr}$ is the contribution from propagating modes
-\cite{ashcroft_solid_1976,dove_introduction_1993,ziman_electrons_2001} 
+\cite{ziman_electrons_2001} 
 and $k_{AF}$ is the contribution from non-propagating modes predicted 
 by the AF theory.\cite{feldman_thermal_1993} Mode-level 
 properties obtained from molecular dynamics (MD) simulations and 
 lattice dynamics calculations will be used as inputs. 
 Equation \eqref{EQ:kvib} has been used in 
-previous studies of amorphous materials,
-\cite{graebner_phonon_1986,freeman_thermal_1986,
-love_estimate_1990,feldman_thermal_1993,cahill_thermal_1994,
-feldman_numerical_1999,baldi_thermal_2008,
-liu_high_2009,yang_anomalously_2010} 
+previous studies of amorphous materials, 
 leading to predictions that while $k_{pr}$ is a negligible 
 fraction of $k_{vib}$ for a-SiO$_2$ ($< 10\%$),
 \cite{graebner_phonon_1986,freeman_thermal_1986,
@@ -535,11 +528,10 @@ which assumes isotropic and linear dispersion such that the DOS is
 \begin{equation}\label{EQ:DOS_debye}
 DOS(\omega) = \frac{3V\omega^2}{2\pi^2v_{s}^3},
 \end{equation}
-where $v_s$ is an appropriate sound speed.\cite{ashcroft_solid_1976} 
+where $v_s$ is an appropriate sound speed. 
 
 The specific heat in the classical, harmonic limit is 
-$k_{\text{B}}$, where $k_{\text{B}}$ is the Boltzmann constant.
-\cite{mcquarrie_statistical_2000}
+$k_{\text{B}}$, where $k_{\text{B}}$ is the Boltzmann constant. 
 Taking this classical limit allows for a direct 
 comparison between the lattice dynamics-based 
 predictions and those from the classical MD simulations. 
@@ -556,8 +548,8 @@ C(\omega) = k_{\text{B}}\left[\frac{\hbar\omega/2k_{\text{B}}T}
 {\text{sinh}(\hbar\omega/2k_{\text{B}}T)}\right]^2,
 \end{split}
 \end{equation} 
-where $\hbar$ is the Planck constant divided by 2$\pi$.
-\cite{ashcroft_solid_1976} The quantum specific heat will be used 
+where $\hbar$ is the Planck constant divided by 2$\pi$. 
+The quantum specific heat will be used 
 for the non-propagating modes to compare the $k_{AF}$ predictions 
 to experimental measurements in Sections \ref{S:Bulk} 
 and \ref{S:Accumulation}. 
@@ -569,7 +561,7 @@ D_{pr}(\omega) = \frac{1}{3}v^2_s\tau(\omega) = \frac{1}{3}v_s \Lambda(\omega),
 \end{split}
 \end{equation}
 where $\tau(\omega)$ is the frequency-dependent mode 
-lifetime and $\Lambda(\omega)$ is the MFP,\cite{ziman_electrons_2001} 
+lifetime and $\Lambda(\omega)$ is the MFP, 
 defined as $\Lambda(\omega) = v_{s} \tau(\omega)$. 
 The lifetimes will be modeled using 
 \begin{equation}\label{EQ:tauw2}
@@ -577,27 +569,18 @@ The lifetimes will be modeled using
 \tau(\omega) = B \omega^{-n},
 \end{split}
 \end{equation}
-\textcolor{red}{where $B$ is a constant coefficient which incorporates 
+\textcolor{red}{where $B$ is a constant coefficient that incorporates 
 the effect of temperature.} 
 By using a constant sound speed, the lifetime and diffusivity 
 frequency scalings will be the same. 
 For amorphous materials, the scaling exponent $n$ 
 has been found experimentally and numerically to be 
 between two and four.
-\cite{
-feldman_thermal_1993,morath_phonon_1996,benassi_evidence_1996,
-feldman_numerical_1999,taraskin_determination_1999,
-taraskin_propagation_2000,
-ruocco_high-frequency_2001,horbach_high_2001,
-matic_sound_2001,
-feldman_calculations_2002,ruffle_observation_2003,
-masciovecchio_evidence_2006,schirmacher_acoustic_2007,
-christie_vibrational_2007,xu_energy_2009,
-liu_high_2009,ganter_rayleigh_2010,
-vitelli_heat_2010,
+\cite{feldman_numerical_1999,horbach_high_2001,
+feldman_calculations_2002,masciovecchio_evidence_2006,
+christie_vibrational_2007,liu_high_2009,
 baldi_sound_2010,yang_anomalously_2010,baldi_elastic_2011,
-he_heat_2011,ayrinhac_subterahertz_2011,
-baldi_emergence_2013}
+he_heat_2011,baldi_emergence_2013}
 A value of two corresponds to 
 anharmonic scattering,\cite{callaway_model_1959} while a value of four 
 corresponds to Rayleigh-like scattering from point defects.
@@ -624,7 +607,7 @@ $C(\omega_i)$ is the diffuson specific heat, and $D_{AF}(\omega_i)$
 is the diffuson diffusivity. Equation \eqref{EQ:kAF} is written as a 
 sum because there are enough high-frequency diffusons in the 
 finite-size systems studied here to ensure a converged 
-value.\cite{feldman_thermal_1993,feldman_numerical_1999} 
+value.  
 % Written as an integral, Eq. \eqref{EQL:kAF} has the same form as 
 % Eq. \ref{EQ:kph}, which can be derived starting 
 % with the Kubo theory
@@ -644,8 +627,7 @@ function.\cite{mfp_fn1}
 The heat current operator $S_{ij}$, which measures the thermal coupling 
 between vibrational modes $i$ and $j$ based on their frequencies and 
 spatial overlap of eigenvectors, 
-can be calculated from harmonic lattice dynamics theory.
-\cite{allen_thermal_1993,feldman_thermal_1993,feldman_numerical_1999} 
+can be calculated from harmonic lattice dynamics theory.  
 For Eq. \eqref{EQ:DAF}, $S_{ij}$ is directionally averaged because 
 amorphous materials are isotropic. 
 
@@ -686,7 +668,7 @@ of rigidly-bonded SiO$_4$ tetrahedral sub-units that are weakly
 bonded via shared oxygen atoms, 
 as shown in Fig. \ref{FIG:supercell} (a). 
 \textcolor{red}{The radial distribution function, 
-$g(r)$,\cite{mcquarrie_statistical_2000} for the 4608 atom 
+$g(r)$, for the 4608 atom 
 sample is shown in Fig. \ref{FIG:supercell} (a) along with an 
 experimental measurement,\cite{lorch_neutron_1969} which 
 compares well with our sample.}
@@ -696,8 +678,8 @@ with 216, 1000, 4096, and 100000 atoms, generated from the
 modified Wooten-Winer-Weaire (WWW) algorithm 
 from Ref. \citenum{barkema_high-quality_2000}. 
 The resulting a-Si structure is a rigid, predominantly 
-tetrahedrally-bonded network\cite{barkema_high-quality_2000} 
-and is shown in Fig. \ref{FIG:supercell} (b).  
+tetrahedrally-bonded network and is shown in 
+Fig. \ref{FIG:supercell} (b).  
 A larger sample was created from the 100000 atom sample 
 by tiling it twice in all directions to create an 
 800000 atom sample with a side length of 24.81 nm.  
@@ -717,8 +699,7 @@ broadening in the first peak.}
 Amorphous materials may have many different atomic 
 configurations with nearly equivalent potential energies, 
 leading to potential metastability during MD simulations.
-\cite{buchenau_structural_1988,feldman_numerical_1999,
-durandurdu_<i>ab_2002,bernstein_structural_2006,he_heat_2011} 
+\cite{feldman_numerical_1999,bernstein_structural_2006,he_heat_2011} 
 This meta-stability can 
 cause errors when predicting vibrational lifetimes using NMD 
 (see Section \ref{S:Life}). 
@@ -769,8 +750,8 @@ for $2^{21}$ time steps, where the atomic trajectories are sampled
 every $2^{8}$ time steps. Ten MD simulations with different initial 
 conditions are run and the predictions are ensemble-averaged. 
 
-The Green-Kubo (GK) method is used to predict a thermal 
-conductivity, $k_{GK}$,\cite{mcquarrie_statistical_2000} 
+The Green-Kubo (GK) method\cite{mcquarrie_statistical_2000} 
+is used to predict a thermal conductivity, $k_{GK}$, 
 without using Eq. \eqref{EQ:kvib} using the 
 first-avalanche method to specify the converged value of the integral 
 of the heat current autocorrelation function (Section \ref{S:Bulk}).
@@ -806,8 +787,7 @@ $5\delta\omega_{avg}$ for a-Si,
 where $\delta\omega_{avg}$ is the average mode 
 frequency spacing 
 [$\delta\omega_{avg} = 1.8 \times 10^{10}$ rads$/$s (a-SiO$_2$) 
-and $1.0 \times 10^{10}$ rads$/$s (a-Si)].
-\cite{feldman_thermal_1993,feldman_numerical_1999}  
+and $1.0 \times 10^{10}$ rads$/$s (a-Si)].   
 Varying the broadening by 10$\%$ around these values does not 
 change $k_{AF}$ within its uncertainty 
 (Section \ref{S:Bulk}).
@@ -828,11 +808,11 @@ where a unit step function of width $100\delta\omega_{avg}$
 is used to broaden $\delta(\omega_i - \omega)$.   
 The results for a-SiO$_2$ and a-Si are plotted in Fig. \ref{FIG:DOS}. 
 The DOS for a-Si is similar to that of crystalline silicon,
-\cite{allen_diffusons_1999,donadio_atomistic_2009} with 
+\cite{donadio_atomistic_2009} with 
 peaks at mid- and high-frequencies. The DOS for 
 a-SiO$_2$ is constant over most of the frequency-range, 
 with a gap that separates the high-frequency Si-O
-interactions.\cite{mcgaughey_thermal_2004} 
+interactions. 
 There is a clear $\omega^{-2}$ scaling for both 
 a-Si and a-SiO$_2$ at the lowest frequencies. 
 The onset of this scaling occurs at a higher frequency 
@@ -923,7 +903,6 @@ $\alpha$ labels the Cartesian coordinates, and
 $\hat{\pmb{\kappa}}$ is a unit vector.  
 The vibrational mode shape is contained in the 
 $3N_a$ components of its eigenvector, $e\kgvba$.
-\cite{dove_introduction_1993}
 
 The transverse and longitudinal structure factors are plotted in Figs. 
 \ref{FIG:disp}(a) and \ref{FIG:disp}(b) for 
@@ -948,7 +927,7 @@ plotting the $\omega_0(\pmb{\kappa})$ values in the middle panels of
 Figs. \ref{FIG:disp}(a) and \ref{FIG:disp}(b), 
 where the error bars indicate the linewidths. 
 For a-Si, Lorentzian fits to the structure factor peaks 
-have coefficients of determination\cite{cowpe_temporally_2008} 
+have coefficients of determination 
 greater than 0.8 for $|\pmb{\kappa}|/\kappa_{max} \le$ 0.75 and less 
 than 0.7 for $|\pmb{\kappa}|/\kappa_{max} >$ 0.75, 
 where $\kappa_{max} = 2\pi/a$ and $a$ is the lattice constant 
@@ -960,7 +939,7 @@ larger wavevectors, where the structure factors peaks are less
 than an order of magnitude larger than the background. 
 To evaluate $\kappa_{max}$ for a-SiO$_2$, we use a lattice 
 constant of 4.8 $\AA$, which corresponds to the $a$-direction 
-of quartz.\cite{wyckoff_crystal_1963} 
+of quartz.\cite{van_Beest_force_1990} 
 
 For a-Si, the extracted dispersion is 
 nearly linear at small wavevectors with a slight 
@@ -975,11 +954,9 @@ is well-described by the so-called
 ``dispersion law for diffusons,'' where $\omega \propto \kappa^2$.
 \cite{beltukov_ioffe-regel_2013} This large concave-up dispersion has 
 been observed in experimental measurements and numerical models of 
-amorphous materials
-\cite{taraskin_determination_1999,horbach_high_2001,
-feldman_calculations_2002,ruzicka_evidence_2004,baldi_thermal_2008} 
+amorphous materials 
 including a-SiO$_2$.\cite{taraskin_determination_1999,horbach_high_2001,
-ruzicka_evidence_2004,baldi_thermal_2008} 
+feldman_calculations_2002,ruzicka_evidence_2004,baldi_thermal_2008} 
 We note that at frequencies lower than $10^{12}$ rads/s, 
 experimental measurements of a-SiO$_2$ recover a linear dispersion.
 \cite{ruocco_high-frequency_2001,ruzicka_evidence_2004,
@@ -989,12 +966,12 @@ range is not accessible with the a-SiO$_2$ models studied in this work.
 The atomic structures of a-SiO$_2$ and a-Si play an important role 
 in determining the differences in the low-frequency mode properties. 
 The weakly-bonded network of tetrahedra in a-SiO$_2$
-\cite{van_Beest_force_1990,kramer_interatomic_1991,
-guissani_numerical_1996,mcgaughey_thermal_2004} results in a Debye 
+\cite{van_Beest_force_1990,kramer_interatomic_1991} 
+results in a Debye 
 scaling of the DOS that occurs at a lower frequency than in a-Si 
 (Fig. \ref{FIG:DOS}), 
 which is a network of strongly-bonded tetrahedra.
-\cite{stillinger_computer_1985,biswas_vibrational_1988,
+\cite{stillinger_computer_1985,
 allen_diffusons_1999,barkema_high-quality_2000} 
 The lower-frequency onset of the Debye-scaling of the DOS 
 for a-SiO$_2$ leads to the strong non-linear dispersion 
@@ -1018,7 +995,7 @@ and (b) a-Si.
 The wavevectors are normalized by $\kappa_{max} = 2\pi/a$, where $a$ 
 is 4.8 $\AA$ (a-SiO$_2$) and 5.43 $\AA$ (a-Si), based 
 on the lattice constants of the crystalline phases.
-\cite{wyckoff_crystal_1963,stillinger_computer_1985} }
+\cite{stillinger_computer_1985,van_Beest_force_1990} }
 \end{figure}
 %--------------------------------------------------------------------------
 %\clearpage
@@ -1036,14 +1013,14 @@ While the structure factor gives the frequency spectrum needed to
 construct a propagating state with pure wavevector $\pmb{\kappa}$,
 the individual mode spectra $E^{T}\kv$ and $E^{L}\kv$ predict the
 plane-wave character of each mode.
-\cite{biswas_vibrational_1988,allen_diffusons_1999}
+\cite{allen_diffusons_1999}
 It is not generally possible
 to assign a unique wavevector to individual modes, even at low frequency,
-\cite{biswas_vibrational_1988,allen_diffusons_1999}
+\cite{allen_diffusons_1999}
 which makes predicting their group velocities challenging.
 While attempts have been made to predict individual mode group velocities,
 \cite{duda_reducing_2011,donadio_atomistic_2009,
-he_heat_2011,he_thermal_2011,he_morphology_2011,hori_phonon_2013}
+he_heat_2011,hori_phonon_2013}
 there is no theoretical basis for the proposed methods.
 
 We now use the DOS and structure factors predicted in
@@ -1089,13 +1066,12 @@ current correlation function for a model with
 values predicted by the structure factors and DOS 
 result from the concave-down dispersion seen at low 
 wavevector (i.e., we are not able to reach 
-the linear portion of the dispersion curve).\cite{horbach_high_2001} 
+the linear portion of the dispersion curve). 
 Experimental measurements of the sound speeds of a-SiO$_2$ 
 using Brillouin light and inelastic x-ray 
 scattering range between 3800 to 4000 m/s (transverse) and 
 6000 to 6400 m/s (longitudinal).
-\cite{vacher_ultrasonic_1981,benassi_evidence_1996,
-ruocco_high-frequency_2001,polian_elastic_2002,
+\cite{ruocco_high-frequency_2001,polian_elastic_2002,
 ruzicka_evidence_2004} Differences between our predictions and 
 experimental measurements may be related to limitations of the 
 BKS potential.
@@ -1143,8 +1119,7 @@ frequencies compared to the longitudinal modes.
 The transverse sound speed predicted for our model of 
 a-SiO$_2$ is $85\%$ of that predicted by 
 the other methods (Table \ref{T:vs}) and that measured by experiment.
-\cite{vacher_ultrasonic_1981,benassi_evidence_1996,
-ruocco_high-frequency_2001,polian_elastic_2002,
+\cite{ruocco_high-frequency_2001,polian_elastic_2002,
 ruzicka_evidence_2004} 
 While using a smaller transverse sound speed 
 leads to an underprediction of the
@@ -1194,16 +1169,11 @@ Longitudinal &  & 8,047 & 7,840 & 8,271 \\
 %--------------------------------------------------------------------------
 
 We now predict the lifetimes of all vibrational modes in our 
-models of a-SiO$_2$ and a-Si using the MD simulation-based NMD method,
-\cite{ladd_lattice_1986,mcgaughey_quantitative_2004,henry_spectral_2008,
-turney_predicting_2009,
-he_heat_2011,larkin_comparison_2012,hori_phonon_2013} 
+models of a-SiO$_2$ and a-Si using the MD simulation-based NMD method, 
 which explicitly includes the disorder in the supercell.
-\cite{he_heat_2011,he_thermal_2011,he_morphology_2011,
-he_lattice_2012,larkin_predicting_2013} In NMD, the 
-atomic trajectories from an MD simulation are first mapped onto the 
-vibrational mode coordinate time derivatives,
-\cite{dove_introduction_1993}
+\cite{ladd_lattice_1986,he_heat_2011,larkin_predicting_2013} 
+In NMD, the atomic trajectories from an MD simulation are first 
+mapped onto the vibrational mode coordinate time derivatives,
 \begin{equation}\label{EQ:qdot}
 \begin{split}
 \dot{q}\kgvt{}{}{}=&\SUM{0}{}\sqrt{\frac{m_b}{N}}\dot{u}_{\alpha}
@@ -1241,7 +1211,7 @@ each mode's spectral energy to a Lorentzian function,
 where the constant $C_0(\nu)$ is related to the average energy of 
 each mode. This expression is valid when the linewidth  
 $\Gamma(\nu) << \omega_0(\nu)$.\cite{larkin_comparison_2012} 
-The mode lifetime is\cite{ladd_lattice_1986,turney_predicting_2009} 
+The mode lifetime is\cite{ladd_lattice_1986} 
 \begin{equation}\label{EQ:NMD_life}
 \begin{split}
 \tau(\nu) = \frac{1}{2\Gamma(\nu)}.
@@ -1277,7 +1247,7 @@ and the IR limit by up to one order of magnitude.
 These low values result because the structure factors 
 for a-SiO$_2$ are evaluated for wavevectors where the resulting 
 wavepackets are formed by non-propagating modes.
-\cite{feldman_thermal_1993,feldman_numerical_1999,allen_diffusons_1999}
+\cite{feldman_thermal_1993,feldman_numerical_1999}
 
 For a-Si, the NMD lifetimes show a clear $\omega^{-2}$ 
 scaling at low frequency. 
@@ -1286,7 +1256,7 @@ over a wider range of frequencies than for a-SiO$_2$, with two peaks
 corresponding to the peaks in the DOS (see Fig. \ref{FIG:DOS}). 
 A similar plateau of lifetimes at high frequencies has been 
 reported for disordered lattices
-\cite{sheng_heat_1991,he_lattice_2012,larkin_predicting_2013} and in 
+\cite{sheng_heat_1991,larkin_predicting_2013} and in 
 another study of a-Si.\cite{he_heat_2011} 
 The transition from the low-frequency scaling to 
 the plateau region occurs near 
@@ -1303,7 +1273,7 @@ The agreement between the
 NMD-predicted lifetimes and the structure factor timescales for a-Si 
 at low frequencies indicates that these modes are plane-wave-like 
 and that the wavepackets formed by these modes are propagating.
-\cite{feldman_thermal_1993,feldman_numerical_1999,allen_diffusons_1999}
+\cite{feldman_thermal_1993,feldman_numerical_1999}
 
 The NMD-predicted lifetimes for a-Si range from 0.5 to 10 ps 
 and are similar in magnitude to 
@@ -1568,9 +1538,9 @@ but larger than the MD-based direct-method predictions in Ref.
 Shenogin et al. predicted the total thermal 
 conductivity of a-SiO$_2$ using 
 non-equilibrium MD simulations of the same small structures 
-used in this work. They find 2.0 W/m-K for their 
-largest system, which was based on a 972 atom model 
-tiled six times in one direction.\cite{shenogin_predicting_2009}
+used in this work.\cite{shenogin_predicting_2009} 
+They find 2.0 W/m-K for their largest system, which was based on a 
+972 atom model tiled six times in one direction. 
 Our GK-predicted value is larger than experimental 
 measurements, which range between 
 1.3 and 1.5 W/m-K,
@@ -1603,7 +1573,6 @@ where voids and other inhomogeneities are unavoidable
 \cite{vacher_attenuation_1980,feldman_thermal_1993,liu_high_2009,
 yang_anomalously_2010,li_effect_2011} and can influence the 
 vibrational structure at low frequencies.
-\cite{feldman_tight-binding_2004,liu_high_2009}
 }
 
 To predict thermal conductivity from Eq. \eqref{EQ:kvib}, 
@@ -1663,10 +1632,7 @@ gives a propagating contribution of 0.6 W/m-K (i.e., there is
 no change from the bulk value). 
 While predictions for $k_{pr}$ for a-Si  
 vary based on the assumed scaling of the low-frequency 
-vibrational lifetimes
-\cite{feldman_thermal_1993,cahill_thermal_1994,
-feldman_numerical_1999,liu_high_2009,yang_anomalously_2010,
-he_heat_2011} 
+vibrational lifetimes 
 all evidence supports that $k_{pr}$ is a significant fraction 
 of the total thermal conductivity.
 \cite{feldman_thermal_1993,cahill_thermal_1994,
@@ -1776,8 +1742,7 @@ adopting the convention of Koh and Cahill,\cite{koh_frequency_2007}
 interpret the  
 measured thermal conductivity at a given thermal penetration depth 
 to be representative of the thermal conductivity accumulation 
-function at a MFP equal to the thermal penetration depth.
-\cite{dames_thermal_2005,yang_mean_2013} 
+function at a MFP equal to the thermal penetration depth.  
 Their results are plotted in Fig. \ref{FIG:sio2_accum}(a) 
 for a 1000 nm thick film of a-SiO$_2$ 
 and in Fig. \ref{FIG:sio2_accum}(b) for 500 nm and 
@@ -1936,13 +1901,9 @@ and the effective dispersion extracted from the structure factors
 [Fig. \ref{FIG:disp}(a)]. This smaller maximum frequency of 
 propagating modes is due, in part, 
 to the weak bonding that exists between the SiO$_4$ 
-tetrahedra in a-SiO$_2$,
-\cite{van_Beest_force_1990,kramer_interatomic_1991,
-guissani_numerical_1996,mcgaughey_thermal_2004} 
+tetrahedra in a-SiO$_2$, 
 while a-Si is formed by a network 
-of strongly-bonded tetrahedra.
-\cite{stillinger_computer_1985,biswas_vibrational_1988,
-allen_diffusons_1999,barkema_high-quality_2000} 
+of strongly-bonded tetrahedra. 
 The structural differences are also 
 apparent in the low-frequency scalings of the mode lifetimes (Fig. 
 \ref{FIG:Lifetimes}) which show a clear $\omega^{-2}$ dependance 
@@ -1964,9 +1925,10 @@ of our model makes it difficult to identify a clear scaling
 of the low-frequency lifetime scaling, experiments show that 
 both $\omega^{-2}$ and $\omega^{-4}$ scalings exist in 
 a-SiO$_2$.\cite{masciovecchio_evidence_2006,baldi_sound_2010,
-baldi_emergence_2013} In all cases, the propagating contribution to 
-thermal conductivity is negligible.\cite{love_estimate_1990,
-lee_heat_1997,yamane_measurement_2002,baldi_thermal_2008}
+baldi_emergence_2013} Still, in previous studies the propagating 
+contribution to thermal conductivity has been found to be 
+negligible.\cite{love_estimate_1990,lee_heat_1997,
+yamane_measurement_2002}
 
 For our model of a-Si, 
 the thermal conductivity has a significant ($\sim$35$\%$) 
@@ -1975,23 +1937,15 @@ described by a lifetime scaling of $\omega^{-2}$. Our predicted
 non-propagating thermal conductivity contribution is in good 
 agreement with the plateau at low-MFP for both films studied by 
 Regner et al. For both films, the thermal conductivities accumulate 
-much faster than our predictions. 
-The large range of thermal conductivity measurements on 
-a-Si thin films suggest that a comprehensive 
-experimental study using recently developed thermoreflectance 
-techniques\cite{koh_frequency_2007,minnich_thermal_2011,
-regner_broadband_2013,regner_instrumentation_2013} 
-on varying film thicknesses and preparation techniques is necessary.  
+much faster than our predictions. The large range of thermal 
+conductivity measurements on a-Si thin films suggest that a 
+comprehensive experimental study using thermoreflectance 
+techniques on varying film thicknesses and preparation 
+techniques is necessary.  
 It may be particularly helpful to perform the experiments 
 at temperatures less than $10$ K, where the propagating contribution 
 dominates for both a-SiO$_2$ and a-Si and the low-frequency 
 lifetime scaling, which is still under debate, can be better resolved. 
-\cite{graebner_phonon_1986,freeman_thermal_1986,cahill_lattice_1988,
-love_estimate_1990,feldman_thermal_1993,
-cahill_thermal_1994,feldman_numerical_1999,
-zink_excess_2006,zink_thermal_2006,baldi_thermal_2008,
-liu_high_2009,yang_anomalously_2010,baldi_sound_2010,
-baldi_elastic_2011,baldi_emergence_2013} 
 
 \begin{acknowledgments}
 This work was supported by AFOSR award FA95501010098 and by a grant 
