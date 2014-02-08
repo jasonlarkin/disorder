@@ -1,0 +1,746 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.23)  8 FEB 2014 17:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**prb_mfp_jl_020814.tex
+(./prb_mfp_jl_020814.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./revtex4.cls
+Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count90
+\c@table=\count91
+
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count92
+)
+\widetext@top=\box32
+\widetext@bot=\box33
+ (./revsymb.sty
+Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Info: Redefining \frak on input line 99.
+LaTeX Info: Redefining \Bbb on input line 101.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen102
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip11
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks18
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks19
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks20
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (./aps.rtx.tex
+File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(./10pt.rtx.tex
+File: 10pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+\epsfxsize=\dimen113
+\epsfysize=\dimen114
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+) (./multirow.sty
+\bigstrutjot=\dimen117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen118
+\lightrulewidth=\dimen119
+\cmidrulewidth=\dimen120
+\belowrulesep=\dimen121
+\belowbottomsep=\dimen122
+\aboverulesep=\dimen123
+\abovetopsep=\dimen124
+\cmidrulesep=\dimen125
+\cmidrulekern=\dimen126
+\defaultaddspace=\dimen127
+\@cmidla=\count105
+\@cmidlb=\count106
+\@aboverulesep=\dimen128
+\@belowrulesep=\dimen129
+\@thisruleclass=\count107
+\@lastruleclass=\count108
+\@thisrulewidth=\dimen130
+)
+(./subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen131
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen132
+\subfiglabelskip=\skip53
+\c@subfigure=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@lotdepth=\count112
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(./prb_mfp_jl_020814.aux)
+\openout1 = `prb_mfp_jl_020814.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+Class revtex4 Info: Patching array package. on input line 232.
+Class revtex4 Info: cite was not loaded (OK!) on input line 232.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 232.
+LaTeX Font Info:    Try loading font information for U+msa on input line 248.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 248.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1] [2]
+
+LaTeX Warning: Command \r invalid in math mode on input line 652.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 653.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 656.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 657.
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+LaTeX Warning: Command \r invalid in math mode on input line 698.
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 686--708
+\OT1/cmr/m/n/10 re-sult-ing a-Si struc-ture is a rigid, pre-dom-i-nantly
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 709--722
+\OT1/cmr/m/n/10 gies, lead-ing to po-ten-tial metasta-bil-ity dur-ing MD
+ []
+
+File: fig1.eps Graphic file (type eps)
+<fig1.eps>
+
+LaTeX Warning: Command \r invalid in math mode on input line 743.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 743.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 743.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 743.
+
+[3]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 802.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 802.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+File: fig2.eps Graphic file (type eps)
+<fig2.eps>
+Overfull \hbox (10.96pt too wide) in paragraph at lines 838--840
+ [] 
+ []
+
+[4]
+
+LaTeX Warning: Command \r invalid in math mode on input line 938.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 945.
+
+File: fig3b.eps Graphic file (type eps)
+<fig3b.eps>
+File: fig3a.eps Graphic file (type eps)
+ <fig3a.eps>
+
+LaTeX Warning: Command \r invalid in math mode on input line 1002.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 1002.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 1002.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 1002.
+
+[5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1047.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1047.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ­ in font cmr10!
+[6]
+Underfull \hbox (badness 1043) in paragraph at lines 1208--1210
+\OT1/cmr/m/n/10 dicted by fit-ting each mode's spec-tral en-ergy to a
+ []
+
+[7]
+File: fig4.eps Graphic file (type eps)
+ <fig4.eps>
+Underfull \hbox (badness 1910) in paragraph at lines 1436--1445
+\OT1/cmr/m/n/10 quen-cies where the AF-predicted mode dif-fu-siv-i-ties
+ []
+
+[8]
+File: fig5.eps Graphic file (type eps)
+ <fig5.eps>
+Overfull \hbox (5.94125pt too wide) in paragraph at lines 1471--1473
+ [] 
+ []
+
+[9]
+File: fig6.eps Graphic file (type eps)
+ <fig6.eps>
+Underfull \hbox (badness 2980) in paragraph at lines 1749--1771
+[]\OT1/cmr/m/n/10 In their broad-band fre-quency do-main ther-more-
+ []
+
+[10]
+Underfull \hbox (badness 2213) in paragraph at lines 1793--1801
+[]\OT1/cmr/m/n/10 The pre-dicted ther-mal con-duc-tiv-ity ac-cu-mu-la-tion
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 1793--1801
+\OT1/cmr/m/n/10 ther-mal pen-e-tra-tion depth-independent ther-mal con-
+ []
+
+File: fig7a.eps Graphic file (type eps)
+<fig7a.eps>
+File: fig7b.eps Graphic file (type eps)
+ <fig7b.eps>
+Overfull \hbox (1.92625pt too wide) in paragraph at lines 1854--1858
+ [] 
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 1961--1969
+[]\OT1/cmr/m/n/10 This work was sup-ported by AFOSR award
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 1961--1969
+\OT1/cmr/m/n/10 FA95501010098 and by a grant of com-puter time
+ []
+
+(./prb_mfp_jl_020814.bbl
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1342) in paragraph at lines 65--76
+ \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
+103 / PhysRevLett .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1527) in paragraph at lines 125--130
+ []\OT1/cmr/m/n/9 J. J. Free-man and A. C. An-der-son, Phys. Rev. B
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1571) in paragraph at lines 148--153
+ \OT1/cmr/m/n/9 18451847 (1990), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
+rg / doi / 10 .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+[12]
+Underfull \hbox (badness 2401) in paragraph at lines 184--189
+ []\OT1/cmr/m/n/9 Y. K. Koh and D. G. Cahill, Phys. Rev. B \OT1/cmr/bx/n/9 76\O
+T1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 4120) in paragraph at lines 199--204
+ []\OT1/cmr/m/n/9 F. Yang and C. Dames, Phys-i-cal Re-view B \OT1/cmr/bx/n/9 87
+\OT1/cmr/m/n/9 ,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1014) in paragraph at lines 206--212
+ \OT1/cmr/m/n/9 ca-tions \OT1/cmr/bx/n/9 70\OT1/cmr/m/n/9 , 927  930 (1989), IS
+SN 0038-1098, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--212
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article / pii
+ /
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 224--233
+ \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
+103 / PhysRevB . 83 .
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 237--251
+ []\OT1/cmr/m/n/9 C. Mas-ciovec-chio, G. Baldi, S. Caponi, L. Comez,
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 237--251
+ \OT1/cmr/m/n/9 URL $\OT1/cmtt/m/n/9 http : / / link . aps . org / doi / 10 . 1
+103 / PhysRevLett .
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 296--306
+ []\OT1/cmr/m/n/9 L. Wiec-zorek, H. Goldsmid, and G. Paul, in \OT1/cmr/m/it/9 T
+her-
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 296--306
+ \OT1/cmr/m/it/9 mal Con-duc-tiv-ity 20\OT1/cmr/m/n/9 , edited by D. Has-sel-ma
+n and
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 296--306
+ \OT1/cmr/m/n/9 J. Thomas, J.R. (Springer US, 1989), pp. 235--241,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1603) in paragraph at lines 328--336
+ \OT1/cmr/m/n/9 los, In-ter-na-tional Jour-nal of Heat and Mass Trans-
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 328--336
+ \OT1/cmr/m/n/9 fer \OT1/cmr/bx/n/9 45\OT1/cmr/m/n/9 , 2439  2447 (2002), ISSN 
+0017-9310, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--336
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article / pii
+ /
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 349--355
+ []\OT1/cmr/m/n/9 R. Vacher, H. Suss-ner, and M. Schmidt, Solid
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 349--355
+ \OT1/cmr/m/n/9 State Com-mu-ni-ca-tions \OT1/cmr/bx/n/9 34\OT1/cmr/m/n/9 , 279
+  (1980), ISSN 0038-
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 349--355
+ \OT1/cmr/m/n/9 1098, URL $\OT1/cmtt/m/n/9 http : / / www . sciencedirect . com
+ / science /
+ []
+
+Missing character: There is no â in font cmbx9!
+Missing character: There is no € in font cmbx9!
+Missing character: There is no “ in font cmbx9!
+
+Underfull \hbox (badness 5862) in paragraph at lines 413--418
+ []\OT1/cmr/m/n/9 J. L. Feld-man, Jour-nal of Non-Crystalline Solids
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--418
+ \OT1/cmr/bx/n/9 307310\OT1/cmr/m/n/9 , 128  (2002), ISSN 0022-3093, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--418
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article /
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 421--428
+ []\OT1/cmr/m/n/9 J. K. Christie, S. N. Taraskin, and S. R. El-liott,
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--498
+ []\OT1/cmr/m/n/9 S. Plimp-ton, Jour-nal of Com-pu-ta-tional Physics
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 493--498
+ \OT1/cmr/bx/n/9 117\OT1/cmr/m/n/9 , 1  19 (1995), ISSN 0021-9991, URL $\OT1/cm
+tt/m/n/9 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--498
+ \OT1/cmtt/m/n/9 / / www . sciencedirect . com / science / article / pii /
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 1571) in paragraph at lines 507--512
+ \OT1/cmr/m/n/9 49854990 (2000), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
+rg / doi / 10 .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+[13]
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 4366) in paragraph at lines 539--546
+ []\OT1/cmr/m/n/9 J. Chen, G. Zhang, and B. Li, Physics Let-ters
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 539--546
+ \OT1/cmr/m/n/9 A \OT1/cmr/bx/n/9 374\OT1/cmr/m/n/9 , 23922396 (2010), ISSN 037
+5-9601, URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--546
+ \OT1/cmtt/m/n/9 http : / / www . sciencedirect . com / science / article /
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 3000) in paragraph at lines 645--650
+ []\OT1/cmr/m/n/9 M. D. Kluge and J. R. Ray, Phys. Rev. B \OT1/cmr/bx/n/9 37\OT
+1/cmr/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 645--650
+ \OT1/cmr/m/n/9 41324136 (1988), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
+rg / doi / 10 .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--683
+ \OT1/cmtt/m/n/9 http : / / www . sciencemag . org / content / 253 / 5019 / 539
+ .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+
+Underfull \hbox (badness 2582) in paragraph at lines 707--712
+ []\OT1/cmr/m/n/9 J. Fabian and P. B. Allen, Phys. Rev. Lett. \OT1/cmr/bx/n/9 7
+7\OT1/cmr/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 707--712
+ \OT1/cmr/m/n/9 38393842 (1996), URL $\OT1/cmtt/m/n/9 http : / / link . aps . o
+rg / doi / 10 .
+ []
+
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no “ in font cmr9!
+) [14] (./prb_mfp_jl_020814.aux) ) 
+Here is how much of TeX's memory you used:
+ 4285 strings out of 495060
+ 54600 string characters out of 3182053
+ 172343 words of memory out of 3000000
+ 7409 multiletter control sequences out of 15000+200000
+ 14859 words of font info for 55 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 32i,25n,36p,1431b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on prb_mfp_jl_020814.dvi (14 pages, 110140 bytes).
